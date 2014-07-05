@@ -1,0 +1,29 @@
+\name{lsegments}
+\alias{lsegments}
+\title{Create a Line Segment Plot}
+\description{Creae a simple plot showing a line segment.}
+\usage{
+lsegments(x = c(3, 7), l = "o", r = "c", ticks = TRUE, labs = 1,
+          add = 0, ylim = c(-0.75, 0.25))
+}
+\arguments{
+  \item{x}{The endpoints of the interval. Values larger (smaller) than 999 (-999) will be interpreted as (negative) infinity.}
+  \item{l}{Indicate whether the left end point should be open (\code{"o"}) or closed (\code{"c"}).}
+  \item{r}{Indicate whether the right end point should be open (\code{"o"}) or closed (\code{"c"}).}
+  \item{ticks}{Indicate whether to show tick marks (\code{TRUE}) or not (\code{FALSE}).}
+  \item{labs}{The position for the point labels. Set to \code{0} if no labels should be shown.}
+  \item{add}{Indicate whether the line segment should be added to an existing plot (\code{TRUE}) or a new plot should be created (\code{FALSE}).}
+  \item{ylim}{A vector of length 2 specifying the vertical plotting limits, which may be useful for fine-tuning plots. The default is \code{c(-0.75,0.25)}.}
+}
+\references{ OpenIntro, \href{http://www.openintro.org/alge}{openintro.org} }
+\author{ David Diez }
+\seealso{ \code{\link{dlsegments}}, \code{\link{CCP}}, \code{\link{ArrowLines}} }
+\examples{
+lsegments(c(2,7), "o", "c", ylim=c(-0.3, 0.2))
+
+lsegments(c(5,7), "c", "c", ylim=c(-0.3, 0.2))
+
+lsegments(c(4,1000), "o", "o", ylim=c(-0.3, 0.2))
+}
+\keyword{ Line Segment }
+\keyword{ Algebra }

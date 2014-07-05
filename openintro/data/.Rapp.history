@@ -1,0 +1,352 @@
+load("/Users/ddiez/Dropbox/oiStatistics/openintro/data/mlbSalaries.rda")
+mlbSalary <- mlbSalaries
+save(MLBsalary=mlbSalary, file="MLBsalary.rda")
+MLBsalary <- mlbSalaries
+save(MLBsalary, file="MLBsalary.rda")
+prompt(MLBsalary)
+MLBsalary$player <- as.character(MLBsalary$player)
+par(mfrow=c(2,2))#
+histPlot(MLBsalary$salary)#
+histPlot(log(MLBsalary$salary))#
+histPlot(log(MLBsalary$salary), axes=FALSE)#
+x <- 10^5*round(exp(seq(1,20,1))/10^5)#
+axis(1, at=log(x), x)#
+dotPlot(MLBsalary$salary, MLBsalary$team)
+library(openintro)
+par(mfrow=c(2,2))#
+histPlot(MLBsalary$salary)#
+histPlot(log(MLBsalary$salary))#
+histPlot(log(MLBsalary$salary), axes=FALSE)#
+x <- 10^5*round(exp(seq(1,20,1))/10^5)#
+axis(1, at=log(x), x)#
+dotPlot(MLBsalary$salary, MLBsalary$team)
+data(MLBsalary)#
+par(mfrow=c(2,2))#
+histPlot(MLBsalary$salary)#
+histPlot(log(MLBsalary$salary))#
+histPlot(log(MLBsalary$salary), axes=FALSE)#
+x <- 10^5*round(exp(seq(2,20,1))/10^5)#
+axis(1, at=log(x), x)#
+dotPlot(log(MLBsalary$salary), MLBsalary$team, vertical=TRUE)
+data(MLBsalary)#
+par(mfrow=c(2,2))#
+histPlot(MLBsalary$salary)#
+histPlot(log(MLBsalary$salary))#
+histPlot(log(MLBsalary$salary), axes=FALSE)#
+x <- 10^5*round(exp(seq(2,20,2))/10^5)#
+axis(1, at=log(x), x)#
+dotPlot(log(MLBsalary$salary), MLBsalary$team, vertical=TRUE)
+load("/Users/ddiez/Dropbox/oiStatistics/openintro/data/MLB.rda")
+prompt(MLB)
+load("/Users/ddiez/Dropbox/oiStatistics/openintro/data/mlbBat10.rda")
+prompt(mlbBat10.rda)
+prompt(mlbBat10)
+load("/Users/ddiez/Dropbox/oiStatistics/openintro/data/MLB.rda")
+ls()
+load("/Users/ddiez/Dropbox/oiStatistics/openintro/data/MLBsalary.rda")
+MLBsalary
+ls()
+identical(MLB, MLBsalary)
+dim(MLB)
+dim(MLBsalary)
+names(MLB)
+names(MLBsalary)
+MLB - MLBsalary
+MLB[1:5,]
+MLBsalary[1:5,]
+library(ssvs)
+?ssvs
+library(help=ssvs)
+data(apData)
+apData[[1]][1:5,]
+lm(PM25_Mass ~ ., apData)
+glm(apData$PM25_Mass ~ apData[,-"PM25_Mass"])
+glm(apData$PM25_Mass ~ apData[,-16])
+lm(PM25_Mass ~ ., apData[[1]])
+glm(PM25_Mass ~ ., apData[[1]])
+glm(PM25_Mass ~ ., apData[[1]], family=binomial) -> hold
+unique(apData[[1]]$PM25_Mass)
+=====> Preprocessing <=====##
+rm(list=ls())#
+library(ssvs)#
+library(openintro)#
+data(apData)#
+data(apSummary)#
+data(spec.terms)#
+data(scIQR)#
+data(coInfo)#
+siteNames      <- names(apData)#
+nsiteNames     <- length(apData)#
+outcome        <- "CVD"#
+colsOfInterest <- c(outcome, "RESP", "date", "dptp", "tmpd", "denom", spec.terms, "dow", "rmtmpd", "rmdptp")#
+doNotRun       <- c(46)
+i <- 1
+d       <- apData[[siteNames[i]]][,colsOfInterest]
+d[1:5,]
+sName   <- paste(rep("0", 5-nchar(siteNames[i])), siteNames[i], sep="")#
+	years   <- as.POSIXlt(d$date)$year + 1900#
+	temp    <- apSummary[sName,]#
+	keep    <- years >= temp['start'] & years <= temp['end']#
+	d       <- na.omit(d[keep,])
+d[1:5,]
+colsOfInterest <- c(outcome, "RESP", "date", "dptp", "tmpd", "denom", spec.terms, "PM25_Mass", "dow", "rmtmpd", "rmdptp")#
+doNotRun       <- c(46)
+d       <- apData[[siteNames[i]]][,colsOfInterest]#
+	sName   <- paste(rep("0", 5-nchar(siteNames[i])), siteNames[i], sep="")#
+	years   <- as.POSIXlt(d$date)$year + 1900#
+	temp    <- apSummary[sName,]#
+	keep    <- years >= temp['start'] & years <= temp['end']#
+	d       <- na.omit(d[keep,])
+d[1:5,]
+glm(PM25_Mass ~ ., d, family=binomial) -> hold
+lm(PM25_Mass ~ su + ni + si + ec + oc + so, d, family=binomial) -> hold
+lm(PM25_Mass ~ su + ni + si + ec + oc + so, d) -> hold
+hold
+summary(hold)
+lm(PM25_Mass ~ offset(su) + offset(ni) + offset(si) + offset(ec) + offset(oc) + so, d) -> hold
+summary(hold)
+lm(PM25_Mass ~ offset(su) + offset(ni) + offset(si) + offset(ec) + oc + so, d) -> hold
+summary(hold)
+load("/Users/ddiez/Dropbox/openintro/Textbook/openintro/data/county.rda")
+names(county)
+p00 <- county$pop2000#
+p10 <- county$pop2010#
+hist((p10 - p00)/p00)
+countyComplete[1:2,]
+load("/Users/ddiez/Dropbox/openintro/Textbook/openintro/data/countyComplete.rda")
+countyComplete[1:2,]
+library(RCurl)#
+load("counties.RData")#
+states     <- read.delim("stateDelim.txt", sep="\t")#
+stateFIPS  <- substr(as.character(states$page), 1, 2)#
+countyFIPS <- c()#
+cNames  <- c()#
+CountyMat <- data.frame(matrix(0, 1, 61))[-1,]#
+state   <- c()#
+for(i in 1:(nrow(states) - 1)){#
+  s  <- as.character(states$state[i])#
+  fn <- paste("states/", s, ".txt", sep="")#
+  county     <- read.delim(fn, sep="\t")#
+  countyInfo <- list()#
+  fn <- paste("county/", states$state[i], ".rda", sep="")#
+  load(fn)#
+  cc   <- as.character(county$county[1])#
+  coun <- rep(as.character(county$county[1]), nrow(countyInfo[[cc]]))#
+  vars <- as.character(countyInfo[[cc]][,1])#
+  vals <- as.character(countyInfo[[cc]][,2])#
+  Vars <- vars#
+  cNames <- append(cNames, as.character(county$county))#
+  state  <- append(state, rep(s, length(county$county)))#
+  t1         <- as.numeric(stateFIPS[i])#
+  t2         <- as.character(countyInfo[[cc]][60,2])#
+  t3         <- paste(t1, t2, sep="")#
+  countyFIPS <- append(countyFIPS, t3)#
+  if(nrow(county) > 1){#
+   for(j in 2:nrow(county)){#
+    cc <- as.character(county$county[j])#
+    #===> County Information <===##
+    temp <- as.character(cc)#
+    coun <- append(coun, rep(temp, nrow(countyInfo[[cc]])))#
+    temp <- as.character(countyInfo[[cc]][,1])#
+    vars <- append(vars, temp)#
+    if(any(temp != Vars, rm.na=TRUE)){#
+      cat(i, j, "\n")#
+    }#
+    temp <- as.character(countyInfo[[cc]][,2])#
+    vals <- append(vals, temp)#
+    t1         <- as.numeric(stateFIPS[i])#
+    t2         <- as.character(countyInfo[[cc]][60,2])#
+    t3         <- paste(t1, t2, sep="")#
+    countyFIPS <- append(countyFIPS, t3)#
+    cat("\r", i, "of", nrow(states), "-", j, "of", nrow(county), "  ")#
+   }#
+  }#
+  CountyMat <- rbind(CountyMat, matrix(vals, nrow(county), byrow=TRUE))#
+}
+load("/Users/ddiez/Dropbox/openintro/textbook/openintro/data/spam.rda")
+dim(spam)
+names(spam)
+spam[,21:22]
+spam$small_number[spam$big_number == 1] <- 0
+save(spam, file="spam.rda")
+load("/Users/ddiez/Dropbox/openintro/textbook/openintro/data/spam.rda")
+?email50
+library(openintro)
+?email50
+data(email50)#
+data(spam)#
+set.seed(2)#
+dd <- spam[substr(spam$time, 1, 7) %in% c("2012-01", "2012-02"),]#
+d  <- dd[sample(nrow(dd), 50),]#
+identical(d, email50)
+d
+plot(d$num_char, d$lines)
+plot(d$num_char, d$lines, log="xy")
+email50 <- d
+save(email50, file="email50.rda")
+?email
+dim(dd)
+email <- dd
+save(email, file="email.rda")
+load("/Users/ddiez/Dropbox/openintro/textbook/openintro/data/spam.rda")
+ls()
+spam[1:2,]
+library(openintro)
+?email50
+load("/Users/ddiez/Dropbox/openintro/textbook/openintro/data/county.rda")
+county$smoking_ban
+county$ban
+load("/Users/ddiez/Dropbox/openintro/Textbook (Share)/package/openintro/data/email.rda")
+email[1:2,]
+load("/Users/ddiez/Dropbox/OpenIntro/textbook (share)/package/openintro/data/email.rda")
+dim(email)
+dim(email_sent)
+load("/Users/ddiez/Dropbox/OpenIntro/textbook (share)/package/openintro/data/email_test.rda")
+dim(email_test)
+load("/Users/ddiez/Dropbox/OpenIntro/textbook (share)/package/openintro/data/run10Samp.rda")
+run10Samp$time <- run10Samp$time + 0.09
+mean(run10Samp$time)
+save(run10Samp, file="run10Samp.rda")
+load("/Users/ddiez/Dropbox/openintro/textbook (share)/package/openintro/data/census.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/hsb2.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/infMortRate.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/oscars.rda")
+oscars
+oscars$movie
+oscars$movie <- as.character(oscars$movie)
+oscars$movie
+oscars$movie[c(20,39,40)]
+oscars$movie[c(20,39,40, 48, 49, 54)]
+oscars$movie[c(20,39,40, 48, 49, 54)] <- c("The Farmer's Daughter", "Who's Afraid of Virginia Wolf", "Guess Who's Coming to Dinner", "Alice Doesn't Live Here Anymore", "One Flew Over the Cockoo's Nest", "Coal Miner's Daughter")
+save(oscars, file="oscars.rda")
+oscars$birth_pl
+barplot(oscars$birth_pl)
+barplot(as.character(oscars$birth_pl))
+barplot(table(oscars$birth_pl))
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/census.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/countyComplete.rda")
+rm(list=ls())
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/house.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/houseRace10.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/ipod.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/mammals.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/marathon.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/marioKart.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/MLB.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/mlbBat10.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/gradesTV.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/possum.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/births.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/president.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/prRace08.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/poker.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/run10_09.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/run10.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/run10Samp.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/satGPA.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/senateRace10.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/smoking.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/textbooks.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/tips.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/unempl.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/ageAtMar.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/ballBearing.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/cars.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/census.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/classData.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/COL.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/county.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/ccHousing.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/countyComplete.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/credits.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/email_test.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/email.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/email50.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/govRace10.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/heartTr.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/infMortRate.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/ageAtMar.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/ballBearing.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/births.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/cars.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/ccHousing.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/classData.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/COL.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/county.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/credits.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/email_test.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/email.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/email50.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/govRace10.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/gradesTV.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/heartTr.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/house.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/houseRace10.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/ipod.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/mammals.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/marathon.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/marioKart.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/MLB.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/mlbBat10.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/poker.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/possum.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/president.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/prRace08.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/run10_09.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/run10.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/run10Samp.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/satGPA.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/senateRace10.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/smoking.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/textbooks.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/tips.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/unempl.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/bdims.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/house.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/houseRace10.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/ipod.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/mammals.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/marathon.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/marioKart.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/MLB.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/mlbBat10.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/gradesTV.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/possum.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/births.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/president.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/prRace08.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/poker.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/run10_09.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/run10.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/run10Samp.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/satGPA.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/senateRace10.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/smoking.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/textbooks.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/tips.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/unempl.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/ageAtMar.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/ballBearing.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/cars.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/census.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/classData.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/COL.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/county.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/ccHousing.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/countyComplete.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/credits.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/email_test.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/email.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/email50.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/govRace10.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/heartTr.rda")
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/infMortRate.rda")
+ls()
+list.files()
+load("/Users/ddiez/Dropbox/Second Edition/package/openintro/data/run10_09.rda")
+list.files() -> hold
+for(f in list.files()){#
+  load(f)#
+}
+ls()
+list.files()

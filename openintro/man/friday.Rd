@@ -1,0 +1,35 @@
+\name{friday}
+\alias{friday}
+\docType{data}
+\title{
+Friday the 13th
+}
+\description{
+This data set addresses issues of how superstitions regarding Friday the 13th affect human behavior, and whether Friday the 13th is an unlucky day. Scanlon, et al. collected data on traffic and shopping patterns and accident frequency for Fridays the 6th and 13th between October of 1989 and November of 1992. 
+
+There are three types of observations: traffic, shopping, and accident. For traffic, the researchers obtained information from the British Department of Transport regarding the traffic flows between junctions 7 to 8 and junctions 9 to 10 of the M25 motorway. For shopping, they collected the numbers of shoppers in nine different supermarkets in southeast England. For accidents, they collected numbers of emergency admissions to hospitals due to transport accidents.
+}
+\usage{data(friday)}
+\format{
+  A data frame with 61 observations and 6 variables.
+  \describe{
+	\item{\code{type}}{Type of observation, \code{traffic}, \code{shopping}, or \code{accident}.}
+	\item{\code{date}}{Year and month of observation.}
+	\item{\code{sixth}}{Counts on the 6th of the month.}
+	\item{\code{thirteenth}}{Counts on the 13th of the month.}
+	\item{\code{diff}}{Difference between the sixth and the thirteenth.}
+	\item{\code{location}}{Location where data is collected.}
+ 	}
+}
+\source{
+Scanlon, T.J., Luben, R.N., Scanlon, F.L., Singleton, N. (1993), "Is Friday the 13th Bad For Your Health?," BMJ, 307, 1584-1586.
+
+\url{http://lib.stat.cmu.edu/DASL/Datafiles/Fridaythe13th.html}
+}
+\examples{
+data(friday)
+par(mfrow = c(1,2))
+boxPlot(friday$sixth[friday $type == "traffic"], xlab = "sixth")
+boxPlot(friday$thirteenth[friday $type == "traffic"], xlab = "thirteenth")
+}
+\keyword{datasets}

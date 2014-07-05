@@ -1,0 +1,35 @@
+\name{CCP}
+\alias{CCP}
+\title{ Plot a Cartesian Coordinate Plane}
+\description{ Create a Cartesian Coordinate Plane. }
+\usage{
+CCP(xlim = c(-4, 4), ylim = c(-4, 4), mar = rep(0, 4), length = 0.1, tcl = 0.007, xylab = FALSE, ticks = 1, ticklabs = 1, xpos = 1, ypos = 2, cex.coord = 1, cex.xylab = 1.5, add = FALSE)
+}
+\arguments{
+  \item{xlim}{ The x-limits for the plane (vector of length 2). }
+  \item{ylim}{ The y-limits for the plane (vector of length 2). }
+  \item{mar}{ Plotting margins. }
+  \item{length}{ The \code{length} argument is passed to the \code{\link[graphics]{arrows}} function and is used to control the size of the arrow. }
+  \item{tcl}{ Tick size. }
+  \item{xylab}{ Whether x and y should be shown next to the labels. }
+  \item{ticks}{ How frequently tick marks should be shown on the axes. If a vector of length 2, the first argument will correspond to the x-axis and the second to the y-axis. }
+  \item{ticklabs}{ How frequently tick labels should be shown on the axes. If a vector of length 2, the first argument will correspond to the x-axis and the second to the y-axis. }
+  \item{xpos}{ The position of the labels on the x-axis. See the \code{pos} argument in the \code{\link[graphics]{text}} function for additional details. }
+  \item{ypos}{ The position of the labels on the y-axis. See the \code{pos} argument in the \code{\link[graphics]{text}} function for additional details. }
+  \item{cex.coord}{ Inflation factor for font size of the coordinates, where any value larger than zero is acceptable and \code{1} corresponds to the default. }
+  \item{cex.xylab}{ Inflation factor for font size of the x and y labels, where any value larger than zero is acceptable and \code{1} corresponds to the default. }
+  \item{add}{ Indicate whether a new plot should be created (\code{FALSE}, the default) or if the Cartesian Coordinate Plane should be added to the existing plot. }
+}
+\references{ OpenIntro, \href{http://www.openintro.org/alge}{openintro.org} }
+\author{ David Diez }
+\seealso{ \code{\link{lsegments}}, \code{\link{dlsegments}}, \code{\link{ArrowLines}} }
+\examples{
+CCP()
+
+CCP(xylab=TRUE, ylim=c(-3.5, 2), xpos=3, cex.coord=1)
+
+CCP(xlim=c(-8, 8), ylim=c(-10, 6), ticklabs=c(2,2), cex.xylab=0.8)
+}
+\keyword{ Cartesian Coordinate Plane }
+\keyword{ Plane }
+\keyword{ Algebra }

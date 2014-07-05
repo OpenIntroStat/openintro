@@ -1,0 +1,65 @@
+\name{lmPlot}
+\alias{lmPlot}
+\title{
+Linear regression plot with residual plot
+}
+\description{
+Plot data, the linear model, and a residual plot simultaneously.
+}
+\usage{
+lmPlot(x, y, xAxis = 0, yAxis = 4, resAxis = 3, resSymm = TRUE,
+	wBox = TRUE, wLine = TRUE, lCol = "#00000088", lty = 1,
+	lwd = 1, xlab = "", ylab = "", marRes = NULL,
+	col = "#22558888", pch = 20, cex = 1.5, xR = 0.02,
+	yR = 0.1, xlim = NULL, ylim = NULL, subset = NULL,
+	parCustom = FALSE, myHeight = c(1, 0.45),
+	plots = c("both", "mainOnly", "resOnly"), highlight = NULL,
+	hlCol = NULL, hlCex = 1.5, hlPch = 20, na.rm=TRUE, ...)
+}
+\arguments{
+  \item{x}{The x coordinates of points in the plot.}
+  \item{y}{The y coordinates of points in the plot.}
+  \item{xAxis}{The maximum number of x axis labels.}
+  \item{yAxis}{The maximum number of y axis labels.}
+  \item{resAxis}{The maximum number of y axis labels in the residual plot.}
+  \item{resSymm}{Boolean determining whether the range of the residual plot should be symmetric about zero.}
+  \item{wBox}{Boolean determining whether a box should be added around each plot.}
+  \item{wLine}{Boolean determining whether to add a regression line to the plot.}
+  \item{lCol}{The color of the regression line to be added.}
+  \item{lty}{The line type of the regression line to be added.}
+  \item{lwd}{The line width of the regression line to be added.}
+  \item{xlab}{A label for the x axis.}
+  \item{ylab}{A label for the y axis}
+  \item{marRes}{Margin specified for the residuals.}
+  \item{col}{Color of points.}
+  \item{pch}{Plotting character.}
+  \item{cex}{Plotting character size.}
+  \item{xR}{Scaling the limits of the x axis. Ignored if \code{xlim} specified.}
+  \item{yR}{Scaling the limits of the y axis. Ignored if \code{ylim} specified.}
+  \item{xlim}{Limits for the x axis.}
+  \item{ylim}{Limits for the y axis.}
+  \item{subset}{A subset of the data to be used for the linear model.}
+  \item{parCustom}{If \code{TRUE}, then the plotting margins are not modified automatically. This value should also be \code{TRUE} if the plots are being placed within a plot of multiple panels.}
+  \item{myHeight}{A numerical vector of length 2 representing the ratio of the primary plot to the residual plot, in height.}
+  \item{plots}{Not currently utilized.}
+  \item{highlight}{Numerical vector specifying particular points to highlight.}
+  \item{hlCol}{Color of highlighted points.}
+  \item{hlCex}{Size of highlighted points.}
+  \item{hlPch}{Plotting characters of highlighted points.}
+  \item{na.rm}{Remove cases with \code{NA} values.}
+  \item{\dots}{Additional arguments to \code{plot}.}
+}
+\author{
+David M Diez <david.m.diez@gmail.com>
+}
+\seealso{\code{\link{makeTube}}}
+\examples{
+data(satGPA)
+lmPlot(satGPA$SATSum, satGPA$FYGPA)
+
+data(gradesTV)
+lmPlot(gradesTV$TV, gradesTV$Grades, xAxis=4,
+	xlab='time watching TV', yR=0.2, highlight=c(1,15,20))
+}
+\keyword{linear model}
+\keyword{residuals}
