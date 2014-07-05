@@ -1,0 +1,13 @@
+Package: openintro
+Type: Package
+Title: OpenIntro data sets and supplemental functions
+Version: 1.5.0
+Date: 2013-10-28
+Author: David M Diez, Christopher D Barr, and Mine Cetinkaya-Rundel
+Maintainer: David M Diez <david@openintro.org>
+Description: This package is a supplement to OpenIntro Statistics, which is a free textbook available at openintro.org (at cost paperbacks are also available for under $10 on Amazon). The package contains data sets used in the textbook along with custom plotting functions for reproducing book figures. Note that many functions and examples include color transparency. Some plotting elements may not show up properly (or at all) in some Windows versions.
+License: GPL-2 | GPL-3
+LazyLoad: yes
+LazyData: yes
+URL: http://www.openintro.org/
+Depends: graphics, grDevices, stats, utils, R (>= 2.10)
