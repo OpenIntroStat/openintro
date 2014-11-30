@@ -1,1 +1,0 @@
-This package was produced as part of the OpenIntro project. For the accompanying textbook, please visit openintro.org. A PDF of the textbook is 100% free and paperbacks can be purchased online for $9.94 per copy (they are sold at cost).
