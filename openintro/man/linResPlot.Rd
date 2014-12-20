@@ -20,6 +20,7 @@ linResPlot(x, y, axes = FALSE, wBox = TRUE, wLine = TRUE,
   \item{lCol}{Line color.}
   \item{lty}{Line type.}
   \item{lwd}{Line width.}
+  \item{main}{Title for the top plot.}
   \item{xlab}{x-label.}
   \item{ylab}{y-label.}
   \item{marRes}{Margin for the residuals plot.}
