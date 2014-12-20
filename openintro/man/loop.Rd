@@ -4,7 +4,7 @@
 Output a message while inside a loop
 }
 \description{
-Output a message while inside a for loop to update the user on progress. This function is useful in tracking progress when the number of iterations is large or the procedures in each iteration take a long time.
+(NOTE: \code{\link[utils]{txtProgressBar}} and \code{\link[utils]{setTxtProgressBar}} are better.) Output a message while inside a for loop to update the user on progress. This function is useful in tracking progress when the number of iterations is large or the procedures in each iteration take a long time.
 }
 \usage{
 loop(i, n = NULL, every = 1, extra=NULL)

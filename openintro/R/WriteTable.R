@@ -1,11 +1,26 @@
 
-WriteTable <- function (x, file = "", append = FALSE, quote = FALSE, sep = "\t",
-    eol = "\n", na = "NA", dec = ".", row.names = FALSE, col.names = TRUE,
-    qmethod = c("escape", "double"), fileEncoding = "") {
-  tmp <-
-  write.table(x = x, file = file, append = append, quote = quote,
-              sep = sep, eol = eol, na = na, dec = dec,
-              row.names = row.names, col.names = col.names,
-              qmethod = qmethod, fileEncoding = fileEncoding)
-  invisible(tmp)
+WriteTable <- function (x,
+                        file = "",
+                        append = FALSE,
+                        quote = FALSE,
+                        sep = "\t",
+                        eol = "\n",
+                        na = "NA",
+                        dec = ".",
+                        row.names = FALSE,
+                        col.names = TRUE,
+                        qmethod = c("escape", "double"),
+                        fileEncoding = "") {
+  invisible(write.table(x = x,
+                        file = file,
+                        append = append,
+                        quote = quote,
+                        sep = sep,
+                        eol = eol,
+                        na = na,
+                        dec = dec,
+                        row.names = row.names,
+                        col.names = col.names,
+                        qmethod = qmethod,
+                        fileEncoding = fileEncoding))
 }
