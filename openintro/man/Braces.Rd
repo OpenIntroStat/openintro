@@ -1,0 +1,27 @@
+\name{Braces}
+\alias{Braces}
+\title{Plot a Braces Symbol}
+\description{This function is not yet very flexible.}
+\usage{
+Braces(x, y, face.radians = 0, long = 1, short = 0.2, ...)
+}
+\arguments{
+  \item{x}{x-coordinate of the center of the braces.}
+  \item{y}{y-coordinate of the center of the braces.}
+  \item{face.radians}{Radians of where the braces should face.
+    For example, the default with \code{face.radians = 0} has the
+    braces facing right. Setting to \code{pi / 2} would result in
+    the braces facing up.}
+  \item{long}{The units for the long dimension of the braces.}
+  \item{short}{The units for the short dimension of the braces.
+    This must be less than or equal to half of the long dimension.}
+  \item{\dots}{Arguments passed to \code{\link[graphics]{lines}}.}
+}
+\author{David Diez (david@openintro.org)}
+\seealso{
+\code{\link{dlsegments}}
+}
+\examples{
+plot(0:1, 0:1, type = "n")
+Braces(0.5, 0.5, face.radians = 3 * pi / 2)
+}
