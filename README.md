@@ -1,3 +1,5 @@
+# OpenIntro
+
 To install the `openintro` package:
 
 ``` r
@@ -7,3 +9,16 @@ install_github("OpenIntroOrg/openintro-r-package", subdir = "openintro")
 ```
 
 This package was produced as part of the OpenIntro project. For the accompanying textbook, visit openintro.org. A PDF of the textbook is free and paperbacks can be purchased online (royalty-free).
+
+
+# OIsurv
+
+To install the `OIsurv` package:
+
+``` r
+# install.packages("OIsurv")
+library(devtools)
+install_github("OpenIntroOrg/openintro-r-package", subdir = "OIsurv")
+```
+
+This package was produced for the [Survival Analysis in R guide](https://www.openintro.org/stat/surv.php).
