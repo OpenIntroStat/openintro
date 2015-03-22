@@ -1,0 +1,12 @@
+Package: OIsurv
+Type: Package
+Title: Survival analysis supplement to OpenIntro guide
+Version: 0.2
+Date: 2013-10-16
+Depends: stats, survival, KMsurv
+Author: David M Diez
+Maintainer: David M Diez <david.m.diez@gmail.com>
+Description: Supplemental functions and data for the OpenIntro guide to the survival package in R.
+License: GPL (>= 2)
+URL: http://www.openintro.org/stat/surv.php
+LazyLoad: yes

@@ -1,0 +1,20 @@
+#=====> Export <=====#
+# Makes functions available to users
+export(confBands)
+
+#=====> Import <=====#
+# Make other package elements available
+import("stats", "utils", "graphics", "grDevices",
+	"survival")
+# Packages without namespace wanted to attach: deldir and splancs
+# Import a specific function (may add more than one, i.e. ...)
+
+#=====> On Load <=====#
+# optional
+# .onLoad()
+# optional
+# .onAttach()
+
+#=====> Methods <=====#
+S3method(lines, confBands)
+
