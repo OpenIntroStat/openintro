@@ -16,7 +16,7 @@ This package was produced as part of the OpenIntro project. For the accompanying
 To install the `OIsurv` package:
 
 ``` r
-# install.packages("OIsurv")
+# install.packages("devtools")
 library(devtools)
 install_github("OpenIntroOrg/openintro-r-package", subdir = "OIsurv")
 ```
