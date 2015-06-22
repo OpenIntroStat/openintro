@@ -26,7 +26,7 @@ Survey data on smoking habits from the UK. The data set can be used for analyzin
   }
 }
 \source{
-\url{http://www.stats4schools.gov.uk/large_datasets/smoking/default.asp}
+National STEM Centre, Large Datasets from stats4schools, \url{http://www.nationalstemcentre.org.uk/elibrary/resource/3624/large-datasets-from-stats4schools}.
 }
 \examples{
 data(smoking)
