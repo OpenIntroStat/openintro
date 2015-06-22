@@ -1,7 +1,7 @@
-\name{cars}
-\alias{cars}
+\name{gpa_study_hours}
+\alias{gpa_study_hours}
 \docType{data}
-\title{cars}
+\title{gpa_study_hours}
 \description{
 A data frame with 193 rows and 2 columns. The columns represent the variables \code{gpa} and \code{study_hours} for a sample of 193 undergraduate students who took an introductory statistics course in 2012 at a private US university.
 }
