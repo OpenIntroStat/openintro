@@ -17,6 +17,7 @@
                        xLab = c('number', 'symbol'),
                        cex.axis = 1,
                        xAxisIncr = 1,
+                       add = FALSE,
                        ...) {
   if (is.null(xlim)[1]) {
     xlim <- m + c(-1, 1) * 3.5 * s
@@ -29,15 +30,19 @@
   if (is.null(ylim)[1]) {
     ylim <- range(c(0, y))
   }
-  plot(x, y,
-       type = 'l',
-       xlim = xlim,
-       ylim = ylim,
-       xlab = xlab,
-       ylab = ylab,
-       axes = FALSE,
-       col = curveColor,
-       ...)
+  if (add) {
+    lines(x, y, col = curveColor, ...)
+  } else {
+    plot(x, y,
+         type = 'l',
+         xlim = xlim,
+         ylim = ylim,
+         xlab = xlab,
+         ylab = ylab,
+         axes = FALSE,
+         col = curveColor,
+         ...)
+  }
   if (!is.null(L[1])) {
     these <- (x <= L)
     X <- c(x[these][1], x[these], rev(x[these])[1])
@@ -57,7 +62,7 @@
     polygon(X, Y, border = border, col = col)
   }
 
-  if (axes == 1 || axes > 2) {
+  if (!add && (axes == 1 || axes > 2)) {
     if (xLab[1] == 'symbol') {
       xAt  <- m + (-3:3) * s
       xLab <- expression(mu - 3 * sigma,
@@ -77,12 +82,12 @@
       xLab <- round(xAt, digits = digits)
     }
   }
-  if (axes > 2) {
+  if (!add && axes > 2) {
     axis(1, at = xAt, labels = xLab, cex.axis = cex.axis)
     buildAxis(2, c(y, 0), n = 3, nMax = 3, cex.axis = cex.axis)
-  } else if (axes > 1) {
+  } else if (!add && axes > 1) {
     buildAxis(2, c(y, 0), n = 3, nMax = 3, cex.axis = cex.axis)
-  } else if (axes > 0) {
+  } else if (!add && axes > 0) {
     axis(1, at = xAt, labels = xLab, cex.axis = cex.axis)
   }
   abline(h = 0)
