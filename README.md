@@ -11,6 +11,19 @@ install_github("OpenIntroOrg/openintro-r-package", subdir = "openintro")
 This package was produced as part of the OpenIntro project. For the accompanying textbook, visit openintro.org. A PDF of the textbook is free and paperbacks can be purchased online (royalty-free).
 
 
+# `OIdata` package
+
+To install the `OIdata` package:
+
+``` r
+# install.packages("devtools")
+library(devtools)
+install_github("OpenIntroOrg/openintro-r-package", subdir = "OIdata")
+```
+
+This package contains additional data sets beyond those included in the `openintro` package.
+
+
 # `OIsurv` package
 
 To install the `OIsurv` package:
