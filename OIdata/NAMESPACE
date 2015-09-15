@@ -1,0 +1,7 @@
+#export(getTables)
+exportPattern("*")
+
+import(RCurl, maps)
+
+S3method(print, htmlTables)
+
