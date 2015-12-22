@@ -7,7 +7,7 @@
 \usage{
 linResPlot(x, y, axes = FALSE, wBox = TRUE, wLine = TRUE,
            lCol = "#00000088", lty = 1, lwd = 1,
-           xlab = "", ylab = "", marRes = NULL,
+           main = "", xlab = "", ylab = "", marRes = NULL,
            col = COL[1, 2], pch = 20, cex = 1.5,
            yR = 0.1, ylim = NULL, subset = NULL, ...)
 }
@@ -36,6 +36,7 @@ linResPlot(x, y, axes = FALSE, wBox = TRUE, wLine = TRUE,
 \code{\link{makeTube}}
 }
 \examples{
+# Currently seems broken for this example.
 n <- 25
 x <- runif(n)
 y <- 5 * x + rnorm(n)
@@ -44,9 +45,5 @@ myW <- 1
 myH <- c(1, 0.45)
 par(mar = c(0.35, 0.654, 0.35, 0.654))
 layout(myMat, myW, myH)
-linResPlot(x, y,
-           col = COL[1, 2],
-           subset = ss[[i]],
-           yR = ifelse(i == 1, 0.12, 0.44))
-
+linResPlot(x, y, col = COL[1, 2])
 }

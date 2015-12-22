@@ -5,8 +5,9 @@
   Plot a chi-square distribution and shade the upper tail.
 }
 \usage{
-ChiSquareTail(U, df, xlim = c(0, 10), axes = TRUE,
-              col = fadeColor("black", "22"), ...)
+ChiSquareTail(U, df, xlim = c(0, 10),
+    col = fadeColor("black", "22"),
+    axes = TRUE, ...)
 }
 \arguments{
   \item{U}{Cut off for the upper tail.}

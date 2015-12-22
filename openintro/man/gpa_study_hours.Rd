@@ -19,8 +19,6 @@ GPA ranges from 0 to 4 points, however one student reported a GPA > 4. This is a
 \source{
 Collected at a private US university as part of an anonymous survey in an introductory statistics course.
 }
-\references{
-}
 \examples{
 data(gpa_study_hours)
 

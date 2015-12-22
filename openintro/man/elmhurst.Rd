@@ -28,8 +28,8 @@
 \examples{
 data(elmhurst)
 plot(elmhurst$family_income, elmhurst$gift_aid)
-g <- lm(d$gift_aid ~ d$family_income)
-abline(g)
-summary(g)
+m <- lm(gift_aid ~ family_income, data = elmhurst)
+abline(m)
+summary(m)
 }
 \keyword{datasets}

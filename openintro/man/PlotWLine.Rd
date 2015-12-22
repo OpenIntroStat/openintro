@@ -19,6 +19,7 @@ PlotWLine(x, y, xlab = "", ylab = "",
   \item{n}{The preferred number of axis labels.}
   \item{nMax}{The maximum number of axis labels.}
   \item{yR}{y-limit buffer factor.}
+  \item{axes}{Boolean to indicate whether or not to include axes.}
   \item{\dots}{Passed to \code{plot}.}
 }
 \seealso{

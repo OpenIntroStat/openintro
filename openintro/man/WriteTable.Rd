@@ -22,7 +22,7 @@ WriteTable(x, file = "", append = FALSE, quote = FALSE, sep = "\t",
   \item{na}{The string to use for missing values in the data.}
   \item{dec}{The string to use for decimal points in numeric or complex columns: must be a single character.}
   \item{row.names}{Either a logical value indicating whether the row names of x are to be written along with x, or a character vector of row names to be written.}
-  \item{col.names}{Either a logical value indicating whether the column names of x are to be written along with x, or a character vector of column names to be written. See the section on ‘CSV files’ for the meaning of \code{col.names = NA}.}
+  \item{col.names}{Either a logical value indicating whether the column names of x are to be written along with x, or a character vector of column names to be written. See the section on CSV files for the meaning of \code{col.names = NA}.}
   \item{qmethod}{A character string specifying how to deal with embedded double quote characters when quoting strings.}
   \item{fileEncoding}{Character string: if non-empty declares the encoding to be used on a file (not a connection) so the character data can be re-encoded as they are written.}
 }
