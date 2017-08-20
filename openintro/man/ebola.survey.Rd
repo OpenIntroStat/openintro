@@ -3,7 +3,7 @@
 \docType{data}
 \title{Survey on Ebola quarantine}
 \description{
-  In New York City on October 23rd, 2014, a doctor who had recently been treating Ebola patients in Guinea went to the hospital with a slight fever and was subsequently diagnosed with Ebola. Soon thereafter, an NBC 4 New York/The Wall Street Journal/Marist Poll asked New Yorkers whether they favored a \quot{mandatory 21-day quarantine for anyone who has come in contact with an Ebola patient}. This poll included responses of 1,042 New York adults between October 26th and 28th, 2014. 
+  In New York City on October 23rd, 2014, a doctor who had recently been treating Ebola patients in Guinea went to the hospital with a slight fever and was subsequently diagnosed with Ebola. Soon thereafter, an NBC 4 New York/The Wall Street Journal/Marist Poll asked New Yorkers whether they favored a "mandatory 21-day quarantine for anyone who has come in contact with an Ebola patient". This poll included responses of 1,042 New York adults between October 26th and 28th, 2014. 
 
 }
 \usage{data("ebola.survey")}
