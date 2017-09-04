@@ -1,0 +1,20 @@
+\name{leg_mari}
+\alias{leg_mari}
+\docType{data}
+\title{Legalization of Marijuana Support in 2010 California Survey}
+\description{
+  In a 2010 Survey USA poll, 70% of the 119 respondents between the ages of 18 and 34 said they would vote in the 2010 general election for Prop 19, which would change California law to legalize marijuana and allow it to be regulated and taxed.
+}
+\usage{data("leg_mari")}
+\format{
+  A data frame with 119 observations on the following variable.
+  \describe{
+    \item{\code{response}}{One of two values: \code{oppose} or \code{support}.}
+  }
+}
+\source{Survey USA, Election Poll #16804, data collected July 8-11, 2010.}
+\examples{
+data(leg_mari)
+table(leg_mari)
+}
+\keyword{datasets}
