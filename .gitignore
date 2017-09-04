@@ -16,3 +16,4 @@ main.toc
 *.Rapp.history
 archive/*
 *.DS_Store
+*/man/*.Rd~
