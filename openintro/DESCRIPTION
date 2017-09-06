@@ -1,8 +1,8 @@
 Package: openintro
 Type: Package
 Title: OpenIntro data sets and supplemental functions
-Version: 1.7.0
-Date: 2017-08-19
+Version: 1.7.1
+Date: 2017-09-05
 Author: David M Diez, Christopher D Barr, and Mine Cetinkaya-Rundel
 Maintainer: David M Diez <david@openintro.org>
 Description: This package is a supplement to OpenIntro, which provides free textbooks and resources for introductory statistics at openintro.org. The package contains data sets used in the textbooks along with custom plotting functions for reproducing book figures. Note that many functions and examples include color transparency; some plotting elements may not show up properly (or at all) when run in some versions of Windows operating system.
