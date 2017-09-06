@@ -3,7 +3,7 @@
 \docType{data}
 \title{Healthcare Survey with Two Different Wordings}
 \description{
-  
+  How does survey wording and order of options impact responses?
 }
 \usage{data("healthcare.survey")}
 \format{

@@ -15,10 +15,10 @@ CT2DF(x, rn = row.names(x), cn = colnames(x), dfn = c("row.var", "col.var"))
     Character vector with 2 values for the variable representing the rows and columns.
   }
 }
-\value{Data frame with two columns.}
+\value{A data frame with two columns.}
 \author{David Diez}
 \seealso{
-%% ~~objects to See Also as \code{\link{help}}, ~~~
+  \code{\link{MosaicPlot}}
 }
 \examples{
 a <- matrix(

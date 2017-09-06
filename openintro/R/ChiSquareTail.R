@@ -16,5 +16,5 @@ ChiSquareTail <- function(U,
   these <- which(x >= U)
   X <- x[c(these[1], these, rev(these)[1])]
   Y <- c(0, y[these], 0)
-  polygon(X, Y, col = COL[1])
+  polygon(X, Y, col = col)
 }

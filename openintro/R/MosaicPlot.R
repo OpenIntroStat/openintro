@@ -13,7 +13,7 @@ MosaicPlot <- function(
   if (missing(data)) {
     tab <- table(model.frame(formula))
   } else {
-    tab <- table(model.frame(formula, data = email))
+    tab <- table(model.frame(formula, data = data))
   }
   n1 <- nrow(tab)
   n2 <- ncol(tab)

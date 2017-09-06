@@ -12,7 +12,7 @@
     \item{\code{Hwt}}{a numeric vector}
   }
 }
-\source{W. N. Venables and B. D. Ripley. Modern Applied Statistics with S. Fourth Edition. \url{http://www. stats.ox.ac.uk/pub/MASS4}. New York: Springer, 2002.}
+\source{W. N. Venables and B. D. Ripley. Modern Applied Statistics with S. Fourth Edition. \url{http://www.stats.ox.ac.uk/pub/MASS4}. New York: Springer, 2002.}
 \examples{
 data(cats)
 hist(cats$Bwt)

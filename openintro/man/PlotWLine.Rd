@@ -4,7 +4,7 @@
 \description{Plot data and add a regression line.}
 \usage{
 PlotWLine(x, y, xlab = "", ylab = "",
-          col = COL[1, 2], cex = 1.2,
+          col = fadeColor(4, "88"), cex = 1.2,
           pch = 20, n = 4, nMax = 4,
           yR = 0.1, axes = TRUE, ...)
 }

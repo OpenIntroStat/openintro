@@ -7,7 +7,7 @@
 \format{
   A data frame with 110 observations on the following variable.
   \describe{
-    \item{\code{student.sleep}}{Number of hours slept by this student (simulated).}
+    \item{\code{hours}}{Number of hours slept by this student (simulated).}
   }
 }
 \source{Simulated data.}

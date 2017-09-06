@@ -67,10 +67,10 @@ Data for 3143 counties in the United States.
   }
 }
 \source{
-~~ \url{http://quickfacts.census.gov/qfd/states/} ~~
+  http://quickfacts.census.gov/qfd/states/ (no longer available)
 }
 \references{
-~~ OpenIntro Statistics, \href{http://www.openintro.org/stat}{openintro.org} ~~
+OpenIntro Statistics, \href{http://www.openintro.org/os}{openintro.org/os}
 }
 \examples{
 data(countyComplete)

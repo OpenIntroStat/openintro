@@ -63,7 +63,7 @@
     \item{\code{smoking_ban}}{a factor with levels \code{comprehensive} \code{none} \code{partial}}
   }
 }
-\source{These data were collected from \url{http://quickfacts.census.gov/qfd/states/} and its accompanying pages. Smoking ban data were from a variety of sources.}
+\source{These data were collected from http://quickfacts.census.gov/qfd/states/ (no longer available) and its accompanying pages. Smoking ban data were from a variety of sources.}
 \examples{
 data(county.w.sm.ban)
 }

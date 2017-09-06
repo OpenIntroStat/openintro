@@ -32,7 +32,7 @@ Office of the Clerk of the U.S. House of Representatives Party Divisions:
 
 Data for Congresses 1-111 was recorded from the website above on November 1st, 2010. It appears this page was later moved to
 
-\url{http://artandhistory.house.gov/house_history/partyDiv.aspx}
+http://artandhistory.house.gov/house_history/partyDiv.aspx (no longer available)
 
 where data for Congress 112 was recorded on April 21, 2011.
 }

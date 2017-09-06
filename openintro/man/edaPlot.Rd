@@ -17,10 +17,14 @@ edaPlot(dataFrame, Col=c('#888888', '#FF0000', '#222222',
   \item{dataFrame}{ A data frame. }
   \item{Col}{ A vector containing six colors. The colors may be given in any form. }
 }
-\details{ Below is a screen-capture image of the interface for \code{edaPlot} using the second data set in the examples below. Red is used to highlight the two active variables and plotting type.
-
-\figure{edaPlotMarioKart.png}{EDA Plot for Mario Kart data}
-}
+%\details{
+%  Below is a screen-capture image of the interface for
+%  \code{edaPlot} using the second data set in the examples
+%  below. Red is used to highlight the two active variables
+%  and plotting type.
+%
+%  %\figure{edaPlotMarioKart.png}{EDA Plot for Mario Kart data}
+%}
 \author{David Diez}
 \seealso{ \code{\link{histPlot}}, \code{\link{densityPlot}}, \code{\link{boxPlot}}, \code{\link{dotPlot}} }
 \examples{

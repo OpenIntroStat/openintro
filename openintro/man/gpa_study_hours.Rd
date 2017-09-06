@@ -23,7 +23,9 @@ Collected at a private US university as part of an anonymous survey in an introd
 data(gpa_study_hours)
 
 #===> gap vs. study hours <===#
-plot(gpa_study_hours$gpa ~ gpa_study_hours$study_hours, xlab="Study hours/week", ylab = "GPA", pch=20, col = COL[1,2])
+plot(gpa_study_hours$gpa ~ gpa_study_hours$study_hours,
+    xlab = "Study hours/week", ylab = "GPA",
+    pch = 20, col = COL[1,2])
 
 }
 \keyword{datasets}

@@ -30,9 +30,10 @@ treeDiag(main, p1, p2, out1 = c("Yes", "No"), out2 = c("Yes", "No"),
   \item{showWork}{Whether work should be shown for the solutions}
 }
 \value{
-No value is given. A sample plot is given below:
-
-\figure{treeDiag01.png}{Tree Diagram Example Figure}
+  No value is given.
+%   A sample plot is given below:
+%
+%   \figure{treeDiag01.png}{Tree Diagram Example Figure}
 }
 \references{
 OpenIntro Statistics, Chapter 2.

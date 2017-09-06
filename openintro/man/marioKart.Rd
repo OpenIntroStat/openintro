@@ -24,11 +24,33 @@ Auction data from Ebay for the game Mario Kart for the Nintendo Wii. This data w
   }
 }
 \details{
-There are several interesting features in the data. First off, note that there are two outliers in the data, as shown below. These serve as a nice example of what one should do when encountering an outlier: examine the data point and remove it only if there is a good reason. In these two cases, we can see from the auction titles that they included other items in their auctions besides the game, which justifies removing them from the data set.
+There are several interesting features in the data.
+First off, note that there are two outliers in the data.
+These serve as a nice example of what one should do when
+encountering an outlier: examine the data point and
+remove it only if there is a good reason. In these two
+cases, we can see from the auction titles that they
+included other items in their auctions besides the game,
+which justifies removing them from the data set.
 
-\figure{marioKartOutliers01.png}{Full Mario Kart data set}
+%\figure{marioKartOutliers01.png}{Full Mario Kart data set}
 
-This data set includes all auctions for a full week in October, 2009. Auctions were included in the data set if they satisfied a number of conditions. (1) They were included in a search for "wii mario kart" on ebay.com, (2) items were in the Video Games > Games > Nintendo Wii section of Ebay, (3) the listing was an auction and not exclusively a "Buy it Now" listing (sellers sometimes offer an optional higher price for a buyer to end bidding and win the auction immediately, which is an \emph{optional} Buy it Now auction), (4) the item listed was the actual game, (5) the item was being sold from the US, (6) the item had at least one bidder, (7) there were no other items included in the auction with the exception of racing wheels, either generic or brand-name being acceptable, and (8) the auction did not end with a Buy It Now option.
+This data set includes all auctions for a full week in
+October, 2009. Auctions were included in the data set
+if they satisfied a number of conditions. (1) They were
+included in a search for "wii mario kart" on ebay.com,
+(2) items were in the Video Games > Games > Nintendo Wii
+section of Ebay, (3) the listing was an auction and not
+exclusively a "Buy it Now" listing (sellers sometimes
+offer an optional higher price for a buyer to end
+bidding and win the auction immediately, which is an
+\emph{optional} Buy it Now auction), (4) the item
+listed was the actual game, (5) the item was being sold
+from the US, (6) the item had at least one bidder,
+(7) there were no other items included in the auction
+with the exception of racing wheels, either generic or
+brand-name being acceptable, and (8) the auction did
+not end with a Buy It Now option.
 }
 \references{
 \url{http://www.ebay.com/}

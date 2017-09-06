@@ -62,7 +62,11 @@ g  <- glm(y1 ~ x1, family=binomial)
 
 x  <- pr$pObama[pr$state != "DC"]
 nr <- apply(hr, 1, sum)
-plot(x, hr[,"Democrat"]/nr, pch=19, cex=sqrt(nr), col="#22558844", xlim=c(20, 80), ylim=c(0, 1), xlab="Percent vote for Obama in 2008", ylab="Probability of Democrat winning House seat")
+plot(x, hr[,"Democrat"] / nr,
+    pch = 19, cex = sqrt(nr), col = "#22558844",
+    xlim = c(20, 80), ylim = c(0, 1),
+    xlab = "Percent vote for Obama in 2008",
+    ylab = "Probability of Democrat winning House seat")
 X  <- seq(0, 100, 0.1)
 lo <- -5.6079 + 0.1009*X
 p  <- exp(lo)/(1+exp(lo))

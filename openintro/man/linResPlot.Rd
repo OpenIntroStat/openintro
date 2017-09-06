@@ -8,7 +8,7 @@
 linResPlot(x, y, axes = FALSE, wBox = TRUE, wLine = TRUE,
            lCol = "#00000088", lty = 1, lwd = 1,
            main = "", xlab = "", ylab = "", marRes = NULL,
-           col = COL[1, 2], pch = 20, cex = 1.5,
+           col = fadeColor(4, "88"), pch = 20, cex = 1.5,
            yR = 0.1, ylim = NULL, subset = NULL, ...)
 }
 \arguments{

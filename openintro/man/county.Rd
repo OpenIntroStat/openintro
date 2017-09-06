@@ -32,7 +32,7 @@ Data for 3143 counties in the United States. See the \code{\link{countyComplete}
   }
 }
 \source{
-These data were collected from \url{http://quickfacts.census.gov/qfd/states/} and its accompanying pages.
+These data were collected from http://quickfacts.census.gov/qfd/states/ (no longer available) and its accompanying pages.
 }
 \references{
 ~~ OpenIntro Statistics, \href{http://www.openintro.org/stat}{openintro.org} ~~

@@ -1,7 +1,7 @@
 PlotWLine <- function(x, y,
                       xlab = '',
                       ylab = '',
-                      col = COL[1, 2],
+                      col = fadeColor(4, "88"),
                       cex = 1.2,
                       pch = 20,
                       n = 4,
@@ -14,7 +14,7 @@ PlotWLine <- function(x, y,
   plot(x, y,
        pch = 20,
        cex = cex,
-       col = COL[1,2],
+       col = col,
        xlab = '',
        ylab = '',
        ylim = yR,
@@ -30,5 +30,5 @@ PlotWLine <- function(x, y,
     buildAxis(2, y, n, nMax = nMax)
   }
   g <- lm(y ~ x)
-  abline(g, col = COL[5], lwd = 1.5)
+  abline(g, col = 1, lwd = 1.5)
 }

@@ -25,7 +25,7 @@ babies
 The Child Health and Development Studies investigate a range of topics. One study, in particular, considered all pregnancies between 1960 and 1967 among women in the Kaiser Foundation Health Plan in the San Francisco East Bay area. The goal is to model the weight of the infants (\code{bwt}, in ounces) using variables including length of pregnancy in days (\code{gestation}), mother's age in years (\code{age}), mother's height in inches (\code{height}), whether the child was the first born (\code{parity}), mother's pregnancy weight in pounds (\code{weight}), and whether the mother was a smoker (\code{smoke}).
 }
 \seealso{
-\code{\link[mosaicData]{Gestation}}
+  \code{\link[mosaicData]{Gestation}}
 }
 \keyword{datasets}
 

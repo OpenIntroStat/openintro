@@ -21,19 +21,24 @@ Collected from the following page (and its linked pages) on February 23rd, 2011:
 \examples{
 data(MLB)
 
-#=====> Basic Histogram <=====#
-hist(MLB$salary/1000, main="", breaks=15, xlab="Salary (millions of dollars)", axes=FALSE, ylab="", col="#22558844")
+# _____ Basic Histogram _____ #
+hist(MLB$salary / 1000, breaks = 15,
+    main = "", xlab = "Salary (millions of dollars)", ylab = "",
+    axes = FALSE,
+    col = "#22558844")
 axis(1, seq(0, 40, 10))
 axis(2, c(0, 500))
-axis(2, seq(100, 400, 100), rep("", 4), tcl=-0.2)
+axis(2, seq(100, 400, 100), rep("", 4), tcl = -0.2)
 
-#=====> Histogram on Log Scale <=====#
-hist(log(MLB$salary/1000), main="", breaks=15, xlab="log(Salary)", axes=FALSE, ylab="", col="#22558844")
+# _____ Histogram on Log Scale _____ #
+hist(log(MLB$salary / 1000), breaks=15,
+    main = "", xlab = "log(Salary)", ylab = "",
+    axes = FALSE, col = "#22558844")
 axis(1) #, seq(0, 40, 10))
 axis(2, seq(0, 300, 100))
 
-#=====> Box plot of log(salary) against position <=====#
-par(las=1, mar=c(4, 8, 1, 1))
-boxPlot(log(MLB$salary/1000), MLB$position, horiz=TRUE, ylab="")
+# _____ Box plot of log(salary) against position _____ #
+par(las = 1, mar = c(4, 8, 1, 1))
+boxPlot(log(MLB$salary / 1000), MLB$position, horiz = TRUE, ylab = "")
 }
 \keyword{datasets}

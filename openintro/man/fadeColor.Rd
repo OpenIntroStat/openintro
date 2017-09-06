@@ -11,9 +11,9 @@ fadeColor(col, fade = "FF")
   \item{col}{ An integer, color name, or RGB hexadecimal. }
   \item{fade}{ The amount to fade \code{col}. This value should be a character in hexadecimal from '00' to 'FF'. The smaller the value, the greater the fading. }
 }
-\references{
-\url{http://research.stowers-institute.org/efg/R/Color/Chart/}
-}
+%\references{
+%\url{http://research.stowers-institute.org/efg/R/Color/Chart/}
+%}
 \author{ David Diez }
 \seealso{ \code{\link{dotPlot}} }
 \examples{
