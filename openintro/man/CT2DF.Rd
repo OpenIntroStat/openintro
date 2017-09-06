@@ -1,0 +1,35 @@
+\name{CT2DF}
+\alias{CT2DF}
+\title{Contingency Table to Data Frame}
+\description{
+  Take a 2D contingency table and create a data frame representing the individual cases.
+}
+\usage{
+CT2DF(x, rn = row.names(x), cn = colnames(x), dfn = c("row.var", "col.var"))
+}
+\arguments{
+  \item{x}{Contingency table as a matrix.}
+  \item{rn}{Character vector of the row names.}
+  \item{cn}{Character vector of the column names.}
+  \item{dfn}{
+    Character vector with 2 values for the variable representing the rows and columns.
+  }
+}
+\value{Data frame with two columns.}
+\author{David Diez}
+\seealso{
+%% ~~objects to See Also as \code{\link{help}}, ~~~
+}
+\examples{
+a <- matrix(
+    c(459, 727, 854, 385, 99, 4198, 6245, 4821, 1634, 578),
+    2,
+    byrow = TRUE)
+b <- 
+CT2DF(
+    a,
+    c("No", "Yes"),
+    c("Excellent", "Very good", "Good", "Fair", "Poor"),
+    c("coverage", "health_status"))
+table(b)
+}
