@@ -27,7 +27,7 @@ Best actor and actress Oscar winners from 1929 to 2012.
 Although there have been only 84 Oscar ceremonies until 2012, there are 85 male winners and 85 female winners because ties happened on two occasions (1933 for the best actor and 1969 for the best actress).
 }
 \source{
-Journal of Statistical Education, \url{http://www.amstat.org/publications/jse/datasets/oscar2009.dat.txt}, updated through 2012 using information from Wikipedia.org.
+Journal of Statistical Education, http://www.amstat.org/publications/jse/datasets/oscar2009.dat.txt (no longer valid), updated through 2012 using information from Wikipedia.org.
 }
 \examples{
 data(oscars)
