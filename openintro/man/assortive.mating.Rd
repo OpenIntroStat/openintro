@@ -1,5 +1,6 @@
 \name{assortive.mating}
 \alias{assortive.mating}
+\alias{assortive_mating}
 \docType{data}
 \title{Eye color of couples}
 \description{Colors of the eye colors of male and female partners.}

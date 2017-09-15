@@ -1,5 +1,6 @@
 \name{urban.owner}
 \alias{urban.owner}
+\alias{urban_owner}
 \docType{data}
 \title{Summary of many state-level variables}
 \description{Census data for the 50 states plus DC and Puerto Rico.}

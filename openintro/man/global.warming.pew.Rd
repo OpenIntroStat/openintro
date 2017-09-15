@@ -1,5 +1,6 @@
 \name{global.warming.pew}
 \alias{global.warming.pew}
+\alias{global_warming_pew}
 \docType{data}
 \title{Pew survey on global warming}
 \description{A 2010 Pew Research poll asked 1,306 Americans, ``From what you've read and heard, is there solid evidence that the average temperature on earth has been getting warmer over the past few decades, or not?''}

@@ -1,5 +1,6 @@
 \name{pm25.2011.durham}
 \alias{pm25.2011.durham}
+\alias{pm25_2011_durham}
 \docType{data}
 \title{Air quality for Durham, NC}
 \description{Daily air quality is measured by the air quality index (AQI) reported by the Environmental Protection Agency.}

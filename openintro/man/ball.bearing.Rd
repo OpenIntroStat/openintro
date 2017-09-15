@@ -1,4 +1,6 @@
-\name{ballBearing}
+\name{ball.bearing}
+\alias{ball.bearing}
+\alias{ball_bearing}
 \alias{ballBearing}
 \docType{data}
 \title{
@@ -7,7 +9,7 @@ Lifespan of ball bearings
 \description{
 A simulated data set on lifespan of ball bearings.
 }
-\usage{data(ballBearing)}
+\usage{data(ball.bearing)}
 \format{
   A data frame with 75 observations on the following variable.
   \describe{
@@ -18,9 +20,9 @@ A simulated data set on lifespan of ball bearings.
 Simulated data.
 }
 \examples{
-data(ballBearing)
+data(ball.bearing)
 par(mfrow=c(1,2))
-histPlot(ballBearing$lifeSpan, col='#22558833')
-qqnorm(ballBearing$lifeSpan)
+histPlot(ball.bearing$lifeSpan, col='#22558833')
+qqnorm(ball.bearing$lifeSpan)
 }
 \keyword{datasets, ball bearings, inference on means}

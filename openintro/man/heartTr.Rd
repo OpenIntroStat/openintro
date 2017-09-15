@@ -1,5 +1,6 @@
 \name{heartTr}
 \alias{heartTr}
+\alias{heart_transplant}
 \docType{data}
 \title{
 Heart Transplant Data

@@ -1,5 +1,6 @@
 \name{full.body.scan}
 \alias{full.body.scan}
+\alias{full_body_scan}
 \docType{data}
 \title{Poll about use of full-body airport scanners}
 \description{Poll about use of full-body airport scanners, where about 4-in-5 people supported the use of the scanners.}

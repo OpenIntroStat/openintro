@@ -14,7 +14,7 @@
     \item{\code{Age_Husb_at_Marriage}}{a numeric vector}
     \item{\code{Years_Married}}{a numeric vector}
     \item{\code{Age_Wife_At_Marriage}}{a numeric vector}
-    \item{\code{Duration}}{a factor with levels \code{<= 20} \code{>20}}
+    \item{\code{Duration}}{a factor with levels \code{<=20} \code{>20}}
   }
 }
 \source{D.J. Hand. A handbook of small data sets. Chapman & Hall/CRC, 1994.}

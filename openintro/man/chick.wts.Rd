@@ -1,5 +1,6 @@
 \name{chick.wts}
 \alias{chick.wts}
+\alias{chickwts}
 \docType{data}
 \title{Chicken weights vs feed type}
 \description{Experiment for chick weights and feed type.}
