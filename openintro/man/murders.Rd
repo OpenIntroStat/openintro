@@ -17,9 +17,6 @@
     \item{\code{annual_murders_per_mil}}{Number of murders per year per million people.}
   }
 }
-\source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-}
 \examples{
 data(murders)
 plot(murders$perc_pov, murders$annual_murders_per_mil)

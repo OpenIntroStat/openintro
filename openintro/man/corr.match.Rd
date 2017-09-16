@@ -1,5 +1,6 @@
 \name{corr.match}
 \alias{corr.match}
+\alias{corr_match}
 \docType{data}
 \title{Sample data sets for correlation problems}
 \description{Simulated data.}

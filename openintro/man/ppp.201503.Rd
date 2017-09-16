@@ -7,7 +7,7 @@
 }
 \description{
   A poll of 691 people, with party affiliation collected, asked whether
-  they think it’s better to raise taxes on the rich or raise taxes on the poor.
+  they think it's better to raise taxes on the rich or raise taxes on the poor.
 }
 \usage{data("ppp.201503")}
 \format{

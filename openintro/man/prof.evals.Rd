@@ -81,7 +81,7 @@
 \source{
   Hamermesh DS, Parker A. 2005. "Beauty in the classroom:
   Instructors pulchritude and putative pedagogical productivity".
-  Economics of Education Review 24.4:369–376. 
+  Economics of Education Review 24.4:369-376. 
 }
 \examples{
 data(prof.evals)

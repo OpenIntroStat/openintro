@@ -1,5 +1,6 @@
 \name{offshore.drilling}
 \alias{offshore.drilling}
+\alias{offshore_drilling}
 \docType{data}
 \title{California poll on drilling off the California coast}
 \description{A 2010 survey asking a randomly sample of registered voters in California for their position on drilling for oil and natural gas off the Coast of California.}

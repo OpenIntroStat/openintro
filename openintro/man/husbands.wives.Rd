@@ -1,5 +1,6 @@
 \name{husbands.wives}
 \alias{husbands.wives}
+\alias{husbands_wives}
 \docType{data}
 \title{
   Great Britain: husband and wife pairs
