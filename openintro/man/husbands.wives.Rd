@@ -1,25 +1,33 @@
 \name{husbands.wives}
 \alias{husbands.wives}
 \docType{data}
-\title{Married couples in Great Britain}
-\description{The Great Britain Office of Population Census and Surveys collected a random sample of 170 married couples in Britain.}
+\title{
+  Great Britain: husband and wife pairs
+}
+\description{
+  The Great Britain Office of Population Census and Surveys
+  once collected data on a random sample of 170 married
+  couples in Britain, recording the age (in years) and heights
+  of the husbands and wives.
+}
 \usage{data("husbands.wives")}
 \format{
   A data frame with 199 observations on the following 8 variables.
   \describe{
-    \item{\code{Age_Husband}}{a numeric vector}
-    \item{\code{Ht_Husband}}{a numeric vector}
-    \item{\code{Age_Wife}}{a numeric vector}
-    \item{\code{Ht_Wife}}{a numeric vector}
-    \item{\code{Age_Husb_at_Marriage}}{a numeric vector}
-    \item{\code{Years_Married}}{a numeric vector}
-    \item{\code{Age_Wife_At_Marriage}}{a numeric vector}
-    \item{\code{Duration}}{a factor with levels \code{<=20} \code{>20}}
+    \item{\code{age_husband}}{Age of husband.}
+    \item{\code{age_wife}}{Age of wife.}
+    \item{\code{ht_husband}}{Height of husband (mm).}
+    \item{\code{ht_wife}}{Height of wife (mm).}
+    \item{\code{age_husb_at_marriage}}{Age of husband at the time they married.}
+    \item{\code{age_wife_at_marriage}}{Age of wife at the time they married.}
+    \item{\code{years_married}}{Number of years married.}
   }
 }
-\source{D.J. Hand. A handbook of small data sets. Chapman & Hall/CRC, 1994.}
+\source{
+  Hand DJ. 1994. A handbook of small data sets. Chapman & Hall/CRC.
+}
 \examples{
 data(husbands.wives)
-## maybe str(husbands.wives) ; plot(husbands.wives) ...
+plot(husbands.wives$ht_husband, husbands.wives$ht_wife)
 }
 \keyword{datasets}
