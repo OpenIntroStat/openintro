@@ -78,4 +78,7 @@
 data(prof.evaltns.beauty.public)
 ## maybe str(prof.evaltns.beauty.public) ; plot(prof.evaltns.beauty.public) ...
 }
+\seealso{
+See also \code{\link{evals}} for simplified version of dataset.
+}
 \keyword{datasets}
