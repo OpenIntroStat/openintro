@@ -1,7 +1,7 @@
 Package: openintro
 Type: Package
 Title: Data Sets and Supplemental Functions from 'OpenIntro' Textbooks
-Version: 1.7.2
+Version: 1.7.3
 Date: 2017-09-16
 Author: David M Diez, Christopher D Barr, and Mine Cetinkaya-Rundel
 Maintainer: David M Diez <david@openintro.org>
