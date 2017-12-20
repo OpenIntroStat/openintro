@@ -86,4 +86,7 @@
 \examples{
 data(prof.evals)
 }
+\seealso{
+See also \code{\link{evals}} for simplified version of dataset.
+}
 \keyword{datasets}
