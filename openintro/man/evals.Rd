@@ -5,7 +5,13 @@
   Professor evaluations and beauty
 }
 \description{
-  The data are gathered from end of semester student evaluations for a large sample of professors from the University of Texas at Austin. In addition, six students rate the professors' physical appearance. The result is a data frame where each row contains a different course and each column has information on either the course or the professor. \url{https://www.openintro.org/stat/data/?data=evals}
+  The data are gathered from end of semester student evaluations
+  for a large sample of professors from the University of Texas
+  at Austin. In addition, six students rate the professors'
+  physical appearance. The result is a data frame where each
+  row contains a different course and each column has information
+  on either the course or the professor.
+  \url{https://www.openintro.org/stat/data/?data=evals}
 }
 \usage{data("evals")}
 \format{
@@ -31,11 +37,11 @@
     \item{\code{bty_m2upper}}{Beauty rating of professor from second upper level male: (1) lowest - (10) highest.}
     \item{\code{bty_avg}}{Average beauty rating of professor.}
     \item{\code{pic_outfit}}{Outfit of professor in picture: not formal, formal.}
-    \item{\code{pic_color}}{Color of professor’s picture: color, black & white.}
+    \item{\code{pic_color}}{Color of professor's picture: color, black & white.}
   }
 }
 \source{
-  Çetinkaya-Rundel M, Morgan KL, Stangl D. 2013. Looking Good on Course Evaluations. CHANCE 26(2). \url{http://chance.amstat.org/2013/04/looking-good/}
+  Cetinkaya-Rundel M, Morgan KL, Stangl D. 2013. Looking Good on Course Evaluations. CHANCE 26(2). http://chance.amstat.org/2013/04/looking-good/
 }
 \examples{
 data(evals)
