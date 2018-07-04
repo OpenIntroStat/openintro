@@ -44,8 +44,8 @@
     }
     \item{\code{METminwk}}{
       Metabolic equivalent units score (activity level).
-      A score of \code{0} means \quote{no activity} while
-      \code{3000} is considered \quote{high activity}.
+      A score of \code{0} means \dQuote{no activity} while
+      \code{3000} is considered \dQuote{high activity}.
     }
     \item{\code{IPAQgrp}}{
       Classification of \code{METminwk} into \code{Low} or \code{High}.
