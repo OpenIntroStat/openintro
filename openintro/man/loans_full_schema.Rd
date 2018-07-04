@@ -1,5 +1,5 @@
-\name{loans}
-\alias{loans}
+\name{loans_full_schema}
+\alias{loans_full_schema}
 \docType{data}
 \title{
   Loan data from Lending Club
@@ -18,9 +18,9 @@
   represents loans actually made, i.e. do not mistake this
   data for loan applications!
 }
-\usage{data("loans")}
+\usage{data("loans_full_schema")}
 \format{
-  A data frame with 10000 observations on the following 60 variables.
+  A data frame with 107,866 observations on the following 56 variables.
   \describe{
     \item{\code{emp_title}}{Job title.}
     \item{\code{emp_length}}{Number of years in the job, rounded down.
@@ -133,7 +133,7 @@
   who received loans through their platform.
 }
 \examples{
-data(loans)
+data(loans_full_schema)
 
 }
 \keyword{datasets}
