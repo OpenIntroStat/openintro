@@ -1,5 +1,5 @@
-\name{resume}
-\alias{resume}
+\name{law_resume}
+\alias{law_resume}
 \docType{data}
 \title{
   Gender, Socioeconomic Class, and Interview Invites
@@ -15,7 +15,7 @@
   activity of sailing team vs track and field). The outcome
   variable was whether the candidate was received an interview.
 }
-\usage{data("resume")}
+\usage{data("law_resume")}
 \format{
   A data frame with 316 observations on the following 3 variables.
   Each row represents a resume sent a top law firm for this experiment.
@@ -45,9 +45,9 @@
   \url{http://journals.sagepub.com/doi/abs/10.1177/0003122416668154}.
 }
 \examples{
-data(resume)
-tapply(resume$outcome == "interview", resume[, c("class", "gender")], mean)
-m <- glm(I(outcome == "interview") ~ gender * class, data = resume, family = binomial)
+data(law_resume)
+tapply(law_resume$outcome == "interview", law_resume[, c("class", "gender")], mean)
+m <- glm(I(outcome == "interview") ~ gender * class, data = law_resume, family = binomial)
 summary(m)
 predict(m, type = "response")
 }
