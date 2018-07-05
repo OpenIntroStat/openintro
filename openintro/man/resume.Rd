@@ -186,12 +186,13 @@
   and explore!
 }
 \source{
-  \href{http://www.nber.org/papers/w9873}
-  {Bertrand M, Mullainathan S. 2004.
-  \dQuote{Are Emily and Greg More Employable than
-    Lakisha and Jamal? A Field Experiment on Labor
-    Market Discrimination}.
-  The American Economic Review 94:4 (991-1013).}
+  \href{http://www.nber.org/papers/w9873}{
+    Bertrand M, Mullainathan S. 2004.
+    \dQuote{Are Emily and Greg More Employable than
+      Lakisha and Jamal? A Field Experiment on Labor
+      Market Discrimination}.
+    The American Economic Review 94:4 (991-1013).
+  }
 }
 \seealso{
   \code{\link{resume}}
