@@ -44,57 +44,57 @@
       Unique ID associated with the advertisement.
     }
     \item{\code{job_city}}{
-    	City where the job was located.
+      City where the job was located.
     }
     \item{\code{job_industry}}{
-    	Industry of the job.
+      Industry of the job.
     }
     \item{\code{job_type}}{
-    	Type of role.
+      Type of role.
     }
     \item{\code{job_fed_contractor}}{
-    	Indicator for if the employer is a federal
-    	contractor.
+      Indicator for if the employer is a federal
+      contractor.
     }
     \item{\code{job_equal_opp_employer}}{
-    	Indicator for if the employer is an Equal
-    	Opportunity Employer.
+      Indicator for if the employer is an Equal
+      Opportunity Employer.
     }
     \item{\code{job_ownership}}{
-    	The type of company, e.g. a nonprofit
-    	or a private company.
+      The type of company, e.g. a nonprofit
+      or a private company.
     }
     \item{\code{job_req_any}}{
-    	Indicator for if any job requirements are
-    	listed. If so, the other \code{job_req_*}
-    	fields give more detail.
+      Indicator for if any job requirements are
+      listed. If so, the other \code{job_req_*}
+      fields give more detail.
     }
     \item{\code{job_req_communication}}{
-    	Indicator for if communication skills
-    	are required.
+      Indicator for if communication skills
+      are required.
     }
     \item{\code{job_req_education}}{
-    	Indicator for if some level of education
-    	is required.
+      Indicator for if some level of education
+      is required.
     }
     \item{\code{job_req_min_experience}}{
-    	Amount of experience required.
+      Amount of experience required.
     }
     \item{\code{job_req_computer}}{
-    	Indicator for if computer skills are
-    	required.
+      Indicator for if computer skills are
+      required.
     }
     \item{\code{job_req_organization}}{
-    	Indicator for if organization skills
-    	are required.
+      Indicator for if organization skills
+      are required.
     }
     \item{\code{job_req_school}}{
-    	Level of education required.
+      Level of education required.
     }
     \item{\code{received_callback}}{
-    	Indicator for if there was a callback
-    	from the job posting for the person
-    	listed on this resume.
+      Indicator for if there was a callback
+      from the job posting for the person
+      listed on this resume.
     }
     \item{\code{firstname}}{
       The first name used on the resume.
@@ -104,54 +104,54 @@
       name on the resume.
     }
     \item{\code{gender}}{
-    	Inferred gender associated with the
-    	first name on the resume.
+      Inferred gender associated with the
+      first name on the resume.
     }
     \item{\code{years_college}}{
-    	Years of college education listed
-    	on the resume.
+      Years of college education listed
+      on the resume.
     }
     \item{\code{college_degree}}{
-    	Indicator for if the resume listed
-    	a college degree.
+      Indicator for if the resume listed
+      a college degree.
     }
     \item{\code{honors}}{
-    	Indicator for if the resume listed that
-    	the candidate has been awarded some honors.
+      Indicator for if the resume listed that
+      the candidate has been awarded some honors.
     }
     \item{\code{worked_during_school}}{
-    	Indicator for if the resume listed working
-    	while in school.
+      Indicator for if the resume listed working
+      while in school.
     }
     \item{\code{years_experience}}{
-    	Years of experience listed on the resume.
+      Years of experience listed on the resume.
     }
     \item{\code{computer_skills}}{
-    	Indicator for if computer skills were
-    	listed on the resume. These skills were
-    	adapted for listings, though the skills
-    	were assigned independently of other
-    	details on the resume.
+      Indicator for if computer skills were
+      listed on the resume. These skills were
+      adapted for listings, though the skills
+      were assigned independently of other
+      details on the resume.
     }
     \item{\code{special_skills}}{
-    	Indicator for if any special skills were
-    	listed on the resume.
+      Indicator for if any special skills were
+      listed on the resume.
     }
     \item{\code{volunteer}}{
-    	Indicator for if volunteering was listed
-    	on the resume.
+      Indicator for if volunteering was listed
+      on the resume.
     }
     \item{\code{military}}{
-    	Indicator for if military experience was
-    	listed on the resume.
+      Indicator for if military experience was
+      listed on the resume.
     }
     \item{\code{employment_holes}}{
-    	Indicator for if there were holes in the
-    	person's employment history.
+      Indicator for if there were holes in the
+      person's employment history.
     }
     \item{\code{has_email_address}}{
-    	Indicator for if the resume lists an
-    	email address.
+      Indicator for if the resume lists an
+      email address.
     }
     \item{\code{resume_quality}}{
       Each resume was generally classified as
