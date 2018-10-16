@@ -23,6 +23,8 @@ This is a random sample of 1,000 cases from this data set.
     \item{\code{premie}}{Whether the birth was classified as
         premature (premie) or full-term. }
     \item{\code{visits}}{Number of hospital visits during pregnancy.}
+    \item{\code{marital}}{Whether mother is \code{married} or
+        \code{not married} at birth.}
     \item{\code{gained}}{Weight gained by mother during pregnancy
         in pounds.}
     \item{\code{weight}}{Weight of the baby at birth in pounds.}
