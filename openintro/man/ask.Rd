@@ -3,10 +3,12 @@
 \docType{data}
 \title{How important is it to ask pointed questions?}
 \description{
+  Something is wrong with this data set.
+
   In this experiment, each individual was asked to be a seller of an iPod
   (a product commonly used to store music on before smart phones...).
   They participant received $10 + 5\% of the sale price for participating.
-  The iPod they were selling had frozen twice in the past inexplicitly but
+  The iPod they were selling had frozen twice in the past inexplicably but
   otherwise worked fine. The prospective buyer starts off and then asks
   one of three final questions, depending on the seller's treatment group.
 
@@ -34,6 +36,7 @@
 }
 \source{
   Minson JA, Ruedy NE, Schweitzer ME. There \emph{is} such a thing as a stupid question: Question disclosure in strategic communication.
+  \url{http://opim.wharton.upenn.edu/DPlab/papers/workingPapers/Minson_working_Ask\%20(the\%20Right\%20Way)\%20and\%20You\%20Shall\%20Receive.pdf}
 }
 \examples{
 data(ask)
