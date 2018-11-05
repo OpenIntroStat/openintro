@@ -2,10 +2,12 @@
 \alias{countyComplete}
 \docType{data}
 \title{
-United States Counties
+  United States Counties
 }
 \description{
-Data for 3143 counties in the United States.
+  Data for 3143 counties in the United States.
+  This data set is deprecated, and the updated data set
+  with additional variables is \code{\link{county_complete}}.
 }
 \usage{data(countyComplete)}
 \format{
@@ -43,7 +45,7 @@ Data for 3143 counties in the United States.
     \item{\code{persons_per_household}}{Persons per household (2006-2010).}
     \item{\code{per_capita_income}}{Per capita money income in past 12 months (2010 dollars, 2006-2010)}
     \item{\code{median_household_income}}{Median household income (2006-2010).}
-    \item{\code{poverty}}{Percent below poverty level (2006-2010).}
+    \item{\code{poverty}}{Percent of population below poverty level (2006-2010).}
     \item{\code{private_nonfarm_establishments}}{Private nonfarm establishments (2009).}
     \item{\code{private_nonfarm_employment}}{Private nonfarm employment (2009).}
     \item{\code{percent_change_private_nonfarm_employment}}{Private nonfarm employment, percent change from 2000 to 2009.}
@@ -71,6 +73,9 @@ Data for 3143 counties in the United States.
 }
 \references{
 OpenIntro Statistics, \href{http://www.openintro.org/os}{openintro.org/os}
+}
+\seealso{
+\code{\link{county_complete}}, \code{\link{county}}
 }
 \examples{
 data(countyComplete)

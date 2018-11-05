@@ -1,12 +1,14 @@
 \name{loans_full_schema}
 \alias{loans_full_schema}
+\alias{loan50}
 \docType{data}
 \title{
   Loan data from Lending Club
 }
 \description{
-  This data set represents thousands of loans made through the
-  Lending Club platform, which is a platform that allows
+  The data sets represented here cover thousands of loans
+  through the Lending Club platform,
+  which is a platform that allows
   individuals to lend to other individuals. Of course, not all
   loans are created equal. Someone who is a essentially a sure
   bet to pay back a loan will have an easier time getting
@@ -20,7 +22,10 @@
 }
 \usage{data("loans_full_schema")}
 \format{
-  A data frame with 107,866 observations on the following 56 variables.
+  \code{loans_full_schema} is a data frame with
+  10,000 observations on the following 56 variables.
+  \code{loans50} is a data frame with 50 observations
+  that includes 15 of the following variables.
   \describe{
     \item{\code{emp_title}}{Job title.}
     \item{\code{emp_length}}{Number of years in the job, rounded down.
@@ -135,6 +140,6 @@
 }
 \examples{
 data(loans_full_schema)
-
+head(loans50)
 }
 \keyword{datasets}
