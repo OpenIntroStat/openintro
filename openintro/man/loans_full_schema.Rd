@@ -140,6 +140,6 @@
 }
 \examples{
 data(loans_full_schema)
-head(loans50)
+head(loan50)
 }
 \keyword{datasets}

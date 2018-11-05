@@ -24,8 +24,8 @@ AxisInPercent(side, at, include.symbol = TRUE, simplify = TRUE, ...)
   }
   \item{simplify}{
     For dollars, simplify the amount to use abbreviations of
-    \code{\quote{k}}, \code{\quote{m}}, \code{\quote{b}},
-    or \code{\quote{t}} when numbers tend to be in the
+    \code{"k"}, \code{"m"}, \code{"b"}, or \code{"t"}
+    when numbers tend to be in the
     thousands, millions, billions, or trillions, respectively.
   }
   \item{\dots}{Arguments passed to \code{\link{axis}}.}
