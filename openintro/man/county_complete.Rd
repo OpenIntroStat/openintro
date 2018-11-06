@@ -148,9 +148,56 @@ OpenIntro Statistics, \href{http://www.openintro.org/os}{openintro.org/os}
 \examples{
 data(county_complete)
 d <- county_complete
+head(d, 3)
+
+d$pop_change <- 100 * (d$pop2017 / d$pop2013 - 1)
+
+plot(d$poverty_2016, d$pop_change,
+    cex = sqrt(d$pop2017) / 1e3,
+    col = ifelse(d$metro_2013 == 1, COL[1, 4], COL[2, 4]),
+    pch = 19,
+    ylim = c(-10, 25))
+subset(d, pop_change < -10 | pop_change > 25, na.rm = TRUE)
+
+plot(d$metro_2013 + rnorm(nrow(d), sd = 0.1), d$pop2013,
+    ylim = c(min(d$pop2013, na.rm = TRUE), 1e6),
+    log = "y")
+
+plot(d$poverty_2016, d$median_household_income_2016,
+    cex = sqrt(d$pop2017) / 1e3,
+    col = ifelse(d$metro_2013 == 1, COL[1, 4], COL[2, 4]),
+    pch = 19)
+
+plot(d$unemployment_rate_2017, d$poverty_2016,
+    cex = sqrt(d$pop2017) / 1e3,
+    col = ifelse(d$metro_2013 == 1, COL[1, 4], COL[2, 4]),
+    pch = 19)
+
+
+county_new <- data.frame(
+    name = d$name,
+    state = d$state,
+    pop = d$pop2017,
+    pop_change = round(d$pop_change, 2),
+    poverty = d$poverty_2016,
+    unemployment_rate = d$unemployment_rate_2017,
+    metro = ifelse(d$metro_2013 == 1, "yes", "no"),  # Categorical, ordinal
+    median_educ = factor(
+        ifelse(d$hs_grad_2016 < 50, "below_hs",
+            ifelse(d$some_college_2016 + d$bachelors_2016 < 50 & d$hs_grad_2016, "hs_diploma",
+            ifelse(d$bachelors_2016 > 50, "bachelors", "some_college"))),
+        levels = c("below_hs", "hs_diploma", "some_college", "bachelors")),
+    median_hh_income = d$median_household_income_2016)
+
+boxplot(county_new$median_hh_income ~ county_new$median_educ,
+    ylim = c(0, max(county_new$median_hh_income)))
+
 
 \dontrun{
 library(ggplot2)
+qplot(unemployment_rate_2017, pop_change, data = d, geom = c("point", "smooth"))
+qplot(poverty_2016, pop_change, data = d, geom = c("point", "smooth"))
+qplot(poverty_2016, pop_change, data = d, geom = c("point", "smooth"))
 qplot(
     hs_grad_2010,
     hs_grad_2016 / hs_grad_2010,
