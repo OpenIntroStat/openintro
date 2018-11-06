@@ -75,6 +75,7 @@
     \item{\code{fed_spending_2009}}{Federal spending (2009).}
     \item{\code{area_2010}}{Land area in square miles (2010).}
     \item{\code{density_2010}}{Persons per square mile (2010).}
+    \item{\code{smoking_ban_2010}}{Describes whether the type of county-level smoking ban in place in 2010, taking one of the values \code{"none"}, \code{"partial"}, or \code{"comprehensive"}.}
     \item{\code{poverty_2010}}{Percent of population below poverty level (2006-2010).}
     \item{\code{poverty_2016}}{Percent of population below poverty level (2012-2016).}
     \item{\code{civilian_labor_force_2007}}{Civilian labor force in 2007.}
@@ -174,23 +175,32 @@ plot(d$unemployment_rate_2017, d$poverty_2016,
     pch = 19)
 
 
-county_new <- data.frame(
+county <- data.frame(
     name = d$name,
     state = d$state,
-    pop = d$pop2017,
+    pop2000 = d$pop2000,
+    pop2010 = d$pop2010,
+    pop2017 = d$pop2017,
+    fed_spend = d$fed_spend,
     pop_change = round(d$pop_change, 2),
     poverty = d$poverty_2016,
+    home_ownership = d$home_ownership_2010,
+    multi_unit = d$housing_multi_unit_2010,
     unemployment_rate = d$unemployment_rate_2017,
     metro = ifelse(d$metro_2013 == 1, "yes", "no"),  # Categorical, ordinal
     median_educ = factor(
         ifelse(d$hs_grad_2016 < 50, "below_hs",
-            ifelse(d$some_college_2016 + d$bachelors_2016 < 50 & d$hs_grad_2016, "hs_diploma",
-            ifelse(d$bachelors_2016 > 50, "bachelors", "some_college"))),
+            ifelse(d$some_college_2016 + d$bachelors_2016 < 50 & d$hs_grad_2016,
+                "hs_diploma",
+                ifelse(d$bachelors_2016 > 50, "bachelors", "some_college"))),
         levels = c("below_hs", "hs_diploma", "some_college", "bachelors")),
-    median_hh_income = d$median_household_income_2016)
+    median_hh_income = d$median_household_income_2016,
+    smoking_ban = factor(d$smoking_ban_2010,
+        levels = c("none", "partial", "complete")))
 
-boxplot(county_new$median_hh_income ~ county_new$median_educ,
-    ylim = c(0, max(county_new$median_hh_income)))
+
+boxplot(county$median_hh_income ~ county$median_educ,
+    ylim = c(0, max(county$median_hh_income)))
 
 
 \dontrun{
