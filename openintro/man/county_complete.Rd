@@ -5,11 +5,11 @@
   United States Counties
 }
 \description{
-  Data for 3143 counties in the United States.
+  Data for 3139 counties in the United States.
 }
 \usage{data("county_complete")}
 \format{
-  A data frame with 3139 observations on the following 110 variables.
+  A data frame with 3139 observations on the following 111 variables.
   \describe{
     \item{\code{state}}{State.}
     \item{\code{name}}{County name.}
@@ -72,7 +72,8 @@
     \item{\code{sales_per_capita_2007}}{Retail sales per capita, 2007.}
     \item{\code{accommodation_food_service_2007}}{Accommodation and food services sales, 2007 ($1000).}
     \item{\code{building_permits_2010}}{Building permits (2010).}
-    \item{\code{fed_spending_2009}}{Federal spending (2009).}
+    \item{\code{fed_spending_2009}}{Federal spending,
+    	    in thousands of dollars (2009).}
     \item{\code{area_2010}}{Land area in square miles (2010).}
     \item{\code{density_2010}}{Persons per square mile (2010).}
     \item{\code{smoking_ban_2010}}{Describes whether the type of county-level smoking ban in place in 2010, taking one of the values \code{"none"}, \code{"partial"}, or \code{"comprehensive"}.}
@@ -146,6 +147,7 @@
 \references{
 OpenIntro Statistics, \href{http://www.openintro.org/os}{openintro.org/os}
 }
+\seealso{\code{\link{county}}}
 \examples{
 data(county_complete)
 d <- county_complete
@@ -174,21 +176,20 @@ plot(d$unemployment_rate_2017, d$poverty_2016,
     col = ifelse(d$metro_2013 == 1, COL[1, 4], COL[2, 4]),
     pch = 19)
 
-
+# Definition for the `county` data set.
 county <- data.frame(
     name = d$name,
     state = d$state,
     pop2000 = d$pop2000,
     pop2010 = d$pop2010,
     pop2017 = d$pop2017,
-    fed_spend = d$fed_spend,
     pop_change = round(d$pop_change, 2),
     poverty = d$poverty_2016,
     home_ownership = d$home_ownership_2010,
     multi_unit = d$housing_multi_unit_2010,
     unemployment_rate = d$unemployment_rate_2017,
     metro = ifelse(d$metro_2013 == 1, "yes", "no"),  # Categorical, ordinal
-    median_educ = factor(
+    median_edu = factor(
         ifelse(d$hs_grad_2016 < 50, "below_hs",
             ifelse(d$some_college_2016 + d$bachelors_2016 < 50 & d$hs_grad_2016,
                 "hs_diploma",
