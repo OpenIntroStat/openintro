@@ -3,12 +3,12 @@
 \docType{data}
 \title{United States Counties}
 \description{
-  Data for 3139 counties in the United States. See the
+  Data for 3143 counties in the United States. See the
   \code{\link{county_complete}} data set for additional variables.
 }
 \usage{data(county)}
 \format{
-  A data frame with 3139 observations on the following 14 variables.
+  A data frame with 3143 observations on the following 14 variables.
   \describe{
     \item{\code{name}}{County names.}
     \item{\code{state}}{State names.}
@@ -17,7 +17,7 @@
     \item{\code{pop2017}}{Population in 2017.}
     \item{\code{pop_change}}{Population change from 2010 to 2017.}
     \item{\code{poverty}}{Percent of population in poverty in 2016.}
-    \item{\code{home_ownership}}{Homeownership rate, 2006-2010.}
+    \item{\code{homeownership}}{Homeownership rate, 2006-2010.}
     \item{\code{multi_unit}}{Percent of housing units in
         multi-unit structures, 2006-2010.}
     \item{\code{unemployment_rate}}{Unemployment rate in 2017.}

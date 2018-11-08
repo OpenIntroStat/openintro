@@ -5,11 +5,11 @@
   United States Counties
 }
 \description{
-  Data for 3139 counties in the United States.
+  Data for 3143 counties in the United States.
 }
 \usage{data("county_complete")}
 \format{
-  A data frame with 3139 observations on the following 111 variables.
+  A data frame with 3143 observations on the following 111 variables.
   \describe{
     \item{\code{state}}{State.}
     \item{\code{name}}{County name.}
@@ -46,7 +46,7 @@
     \item{\code{veterans_2010}}{Percent of population that are veterans (2006-2010).}
     \item{\code{mean_work_travel_2010}}{Mean travel time to work (2006-2010).}
     \item{\code{housing_units_2010}}{Number of housing units (2010).}
-    \item{\code{home_ownership_2010}}{Homeownership rate (2006-2010).}
+    \item{\code{homeownership_2010}}{Homeownership rate (2006-2010).}
     \item{\code{housing_multi_unit_2010}}{Housing units in multi-unit structures (2006-2010).}
     \item{\code{median_val_owner_occupied_2010}}{Median value of owner-occupied housing units (2006-2010).}
     \item{\code{households_2010}}{Households (2006-2010).}
@@ -185,7 +185,7 @@ county <- data.frame(
     pop2017 = d$pop2017,
     pop_change = round(d$pop_change, 2),
     poverty = d$poverty_2016,
-    home_ownership = d$home_ownership_2010,
+    homeownership = d$homeownership_2010,
     multi_unit = d$housing_multi_unit_2010,
     unemployment_rate = d$unemployment_rate_2017,
     metro = ifelse(d$metro_2013 == 1, "yes", "no"),  # Categorical, ordinal
@@ -200,8 +200,8 @@ county <- data.frame(
         levels = c("none", "partial", "complete")))
 
 
-boxplot(county$median_hh_income ~ county$median_educ,
-    ylim = c(0, max(county$median_hh_income)))
+boxplot(county$median_hh_income ~ county$median_edu,
+    ylim = c(0, max(county$median_hh_income, na.rm = TRUE)))
 
 
 \dontrun{
