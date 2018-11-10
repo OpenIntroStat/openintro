@@ -10,11 +10,14 @@ AxisInDollars <- function(
     if (triple.order > 0) {
       char <- switch(triple.order,
           `1` = "k", `2` = "m", `3` = "b", `4` = "t")
-      at. <- paste0(at. / 10^(3 * triple.order), ifelse(at. > 0, char, ""))
+      at. <- paste0(at. / 10^(3 * triple.order), ifelse(abs(at.) > 0, char, ""))
     }
   }
   if (include.symbol) {
-    at. <- paste0("$", at.)
+    at. <- paste0(
+        ifelse(at < 0, "-", ""),
+        "$",
+        gsub("-", "", at., fixed = TRUE))
   }
   axis(side, at, at., ...)
 }
