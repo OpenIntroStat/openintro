@@ -135,11 +135,36 @@
 \source{
   This data comes from Lending Club
   (\url{https://www.lendingclub.com/info/download-data.action}),
-  which provides a very large, open set of data on the people
+  which provides a large set of data on the people
   who received loans through their platform.
 }
 \examples{
-data(loans_full_schema)
+head(loans_full_schema)
 head(loan50)
+
+x <- loans_full_schema$homeownership
+
+## # Considered but not pursued.
+## y <- factor(as.character(loans_full_schema$verified_income),
+##     c("Not Verified", "Source Verified", "Verified"))
+## y <- loans_full_schema$grade %in% c("A", "B")
+## y <- loans_full_schema$loan_purpose %in%
+##     c("credit_card", "debt_consolidation")
+
+y <- loans_full_schema$application_type
+
+(t1 <- table(x, y))
+apply(t1, 1, sum)
+prop.table(t1, 1)
+prop.table(t1, 2)
+barplot(t1)
+barplot(t1, beside = TRUE)
+barplot(prop.table(t1, 2))
+mosaicplot(apply(t1, 2, sum))
+mosaicplot(t(t1))
+mosaicplot(t1)
+pie(apply(t1, 1, sum))
+barplot(apply(t1, 1, sum))
+
 }
 \keyword{datasets}

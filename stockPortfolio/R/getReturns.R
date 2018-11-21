@@ -1,10 +1,19 @@
-`getReturns` <-
-function(ticker, freq=c('month', 'week', 'day'),
-get=c('overlapOnly', 'all'),
-start='1970-01-01', end=NULL){
+`getReturns` <- function(
+    ticker,
+    url,
+    freq = c('month', 'week', 'day'),
+    get = c('overlapOnly', 'all'),
+    start = '2000-01-01',
+    end = NULL){
   
   #______ Cleaning, Checking, and Initialization ______#
-  startURL <- 'http://ichart.finance.yahoo.com/table.csv?s='
+  startURL <- 'https://query1.finance.yahoo.com/v7/finance/download/'
+  if (missing(url)) {
+    stop("Need to provide a fresh URL of one Yahoo! Finance download link.")
+  } else {
+    crumb <- strsplit(url, "crumb=", fixed = TRUE)[[1]][2]
+  }
+
   URL      <- list()
   full     <- list()
   r        <- list()
@@ -12,34 +21,37 @@ start='1970-01-01', end=NULL){
   ticker   <- as.character(ticker)
   n        <- length(ticker)
   start    <- as.Date(start)
-  if(class(start) != "Date"){
+  start.o  <- start
+  if (class(start) != "Date") {
     stop('Cannot read the start date.\n')
-  }
-  start    <- c(format(as.Date(start), "%m"),
-                format(as.Date(start), "%d"),
-                format(as.Date(start), "%Y"))
-  start    <- as.numeric(start)
-  if(is.null(end)[1]){
-    end <- ''
   } else {
-    end  <- as.Date(end)
-    if(class(end) != "Date"){
+    start <- as.numeric(as.POSIXct(start))
+  }
+  if (is.null(end)[1]) {
+    end <- as.Date(Sys.time())
+  } else {
+    end <- as.Date(end)
+    if (class(end) != "Date") {
       stop('Cannot read the end date.\n')
     }
-    end <- c(format(as.Date(end), "%m"),
-              format(as.Date(end), "%d"),
-              format(as.Date(end), "%Y"))
-    end <- as.numeric(end)
-    end <- paste('&d=',end[1]-1, '&e=',end[2], '&f=',end[3], sep='')
   }
+  end.o <- end
+  end <- as.numeric(as.POSIXct(end))
   
   #______ Data Retrieval ______#
+  # https://query1.finance.yahoo.com/v7/finance/download/CAT?period1=1447574400&period2=1542268800&interval=1mo&events=history&crumb=BN7Z7hcasct
   N       <- rep(-1, n)
   period  <- freq[1]
-  freq    <- substr(freq[1],1,1)
-  start   <- paste('&a=',start[1]-1, '&b=',start[2], '&c=',start[3], sep='')
-  endURL  <- paste(start, end, "&g=", freq, "&ignore=.csv", sep="")
+  freq    <- switch(period, day = "d", week = "wk", month = "mo")
+  freq    <- paste0("interval=1", freq)
+  period1 <- paste0("period1=", start)
+  period2 <- paste0("period2=", end)
+  endURL  <- paste(period1, period2, freq,
+      "events=history", # paste0("crumb=", crumb),
+      sep = "&")
   minDate <- as.Date('2499-12-31')
+  h <- new_handle()
+  req <- curl_fetch_memory("https://finance.yahoo.com", handle = h)
   for(i in 1:n){
     URL        <- paste(startURL, ticker[i], endURL, sep='')
     d          <- read.delim(URL, TRUE, sep=',')
@@ -112,8 +124,13 @@ start='1970-01-01', end=NULL){
   colnames(R) <- ticker
   start <- rownames(R)[dim(R)[1]]
   end   <- rownames(R)[1]
-  temp  <- list(R=R, ticker=ticker, period=period,
-                start=start, end=end, full=full)
+  temp  <- list(
+      R = R,
+      ticker = ticker,
+      period = period,
+      start = start.o,
+      end = end.o,
+      full = full)
   class(temp) <- "stockReturns"
   return(temp)
 }
