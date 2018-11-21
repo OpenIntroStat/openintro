@@ -2,11 +2,11 @@
 \alias{stocks_18}
 \docType{data}
 \title{
-  Monthly Returns for GOOG and CAT
+  Monthly Returns for a few stocks
 }
 \description{
-  Monthly return data on the Google and Caterpillar stock prices
-  for November 2015 through October 2018.
+  Monthly return data for a few stocks, which covers stock prices
+  from November 2015 through October 2018.
 }
 \usage{data("stocks_18")}
 \format{
