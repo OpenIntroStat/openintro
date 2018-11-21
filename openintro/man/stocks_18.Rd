@@ -1,5 +1,5 @@
-\name{stocks_goog_cat}
-\alias{stocks_goog_cat}
+\name{stocks_18}
+\alias{stocks_18}
 \docType{data}
 \title{
   Monthly Returns for GOOG and CAT
@@ -8,7 +8,7 @@
   Monthly return data on the Google and Caterpillar stock prices
   for November 2015 through October 2018.
 }
-\usage{data("stocks_goog_cat")}
+\usage{data("stocks_18")}
 \format{
   A data frame with 36 observations on the following 3 variables.
   \describe{
@@ -21,11 +21,10 @@
 \source{
 Yahoo! Finance, direct download.
 }
-\references{
-%%  ~~ possibly secondary sources and usages ~~
-}
 \examples{
-data(stocks_goog_cat)
-## maybe str(stocks_goog_cat) ; plot(stocks_goog_cat) ...
+d <- stocks_18
+dim(d)
+apply(d[, 2:3], 2, mean)
+apply(d[, 2:3], 2, sd)
 }
 \keyword{datasets}
