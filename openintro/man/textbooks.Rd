@@ -5,7 +5,13 @@
 Textbook data for UCLA Bookstore and Amazon
 }
 \description{
-A random sample was taken of nearly 10\% of UCLA courses. The most expensive textbook for each course was identified, and its new price at the UCLA Bookstore and on Amazon.com were recorded.
+  For a more recent data set, please see
+  \code{\link{ucla_textbooks_f18}}.
+
+  A random sample was taken of nearly 10\% of UCLA courses.
+  The most expensive textbook for each course was identified,
+  and its new price at the UCLA Bookstore and on Amazon.com
+  were recorded.
 }
 \usage{data(textbooks)}
 \format{
