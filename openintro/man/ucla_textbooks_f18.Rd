@@ -118,21 +118,22 @@
   \code{\link{textbooks}}, \code{\link{ucla_f18}}
 }
 \examples{
+d <- ucla_textbooks_f18
 plot(d$bookstore_new, d$amazon_new, log = "")
 a <- c(0.01, 10000)
 lines(a, a)
 
 # The following outliers were double checked for accuracy.
-these <- abs(price_diff) > 20
+d$price_diff <- d$bookstore_new - d$amazon_new
+these <- abs(d$price_diff) > 20
 these <- these &
-    !is.na(abs(price_diff) > 20)
+    !is.na(abs(d$price_diff) > 20)
 d[these, ]
 
-price_diff <- d$bookstore_new - d$amazon_new
-table(is.na(price_diff))
-hist(price_diff)
-qqnorm(price_diff)
-t.test(price_diff)
+table(is.na(d$price_diff))
+hist(d$price_diff)
+qqnorm(d$price_diff)
+t.test(d$price_diff)
 
 }
 \keyword{datasets}

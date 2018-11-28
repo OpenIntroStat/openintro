@@ -16,6 +16,7 @@
     	    to the returns.}
     \item{\code{goog}}{Google stock price change.}
     \item{\code{cat}}{Caterpillar stock price change.}
+    \item{\code{xom}}{Exxon Mobil stock price change.}
   }
 }
 \source{
