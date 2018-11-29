@@ -94,104 +94,11 @@
       excluding the first 2 years of follow-up.
     }
   }
- $ major_cardio_event            : num [1:2, 1:2] 12547 12519 386 419
-  ..- attr(*, "dimnames")=List of 2
-  .. ..$ : chr [1:2] "fish_oil" "placebo"
-  .. ..$ : chr [1:2] "major_cardio_event" "no_event"
- $ cardio_event_expanded         : num [1:2, 1:2] 12406 12371 527 567
-  ..- attr(*, "dimnames")=List of 2
-  .. ..$ : chr [1:2] "fish_oil" "placebo"
-  .. ..$ : chr [1:2] "cardio_event_expanded" "no_event"
- $ myocardioal_infarction        : num [1:2, 1:2] 12788 12738 145 200
-  ..- attr(*, "dimnames")=List of 2
-  .. ..$ : chr [1:2] "fish_oil" "placebo"
-  .. ..$ : chr [1:2] "myocardioal_infarction" "no_event"
- $ stroke                        : num [1:2, 1:2] 12785 12796 148 142
-  ..- attr(*, "dimnames")=List of 2
-  .. ..$ : chr [1:2] "fish_oil" "placebo"
-  .. ..$ : chr [1:2] "stroke" "no_event"
- $ cardio_death                  : num [1:2, 1:2] 12791 12790 142 148
-  ..- attr(*, "dimnames")=List of 2
-  .. ..$ : chr [1:2] "fish_oil" "placebo"
-  .. ..$ : chr [1:2] "cardio_death" "no_event"
- $ PCI                           : num [1:2, 1:2] 12771 12730 162 208
-  ..- attr(*, "dimnames")=List of 2
-  .. ..$ : chr [1:2] "fish_oil" "placebo"
-  .. ..$ : chr [1:2] "PCI" "not_performed"
- $ CABG                          : num [1:2, 1:2] 12848 12852 85 86
-  ..- attr(*, "dimnames")=List of 2
-  .. ..$ : chr [1:2] "fish_oil" "placebo"
-  .. ..$ : chr [1:2] "CABG" "not_performed"
- $ total_coronary_heart_disease  : num [1:2, 1:2] 12625 12568 308 370
-  ..- attr(*, "dimnames")=List of 2
-  .. ..$ : chr [1:2] "fish_oil" "placebo"
-  .. ..$ : chr [1:2] "total_coronary_heart_disease" "not_present"
- $ ischemic_stroke               : num [1:2, 1:2] 12822 12822 111 116
-  ..- attr(*, "dimnames")=List of 2
-  .. ..$ : chr [1:2] "fish_oil" "placebo"
-  .. ..$ : chr [1:2] "ischemic_stroke" "not_present"
- $ hemorrhagic_stroke            : num [1:2, 1:2] 12908 12919 25 19
-  ..- attr(*, "dimnames")=List of 2
-  .. ..$ : chr [1:2] "fish_oil" "placebo"
-  .. ..$ : chr [1:2] "hemorrhagic_stroke" "not_present"
- $ chd_death                     : num [1:2, 1:2] 12896 12889 37 49
-  ..- attr(*, "dimnames")=List of 2
-  .. ..$ : chr [1:2] "fish_oil" "placebo"
-  .. ..$ : chr [1:2] "chd_death" "not_present"
- $ myocardial_infarction_death   : num [1:2, 1:2] 12920 12912 13 26
-  ..- attr(*, "dimnames")=List of 2
-  .. ..$ : chr [1:2] "fish_oil" "placebo"
-  .. ..$ : chr [1:2] "myocardial_infarction_death" "not_present"
- $ stroke_death                  : num [1:2, 1:2] 12911 12918 22 20
-  ..- attr(*, "dimnames")=List of 2
-  .. ..$ : chr [1:2] "fish_oil" "placebo"
-  .. ..$ : chr [1:2] "stroke_death" "not_present"
- $ invasive_cancer               : num [1:2, 1:2] 12113 12141 820 797
-  ..- attr(*, "dimnames")=List of 2
-  .. ..$ : chr [1:2] "fish_oil" "placebo"
-  .. ..$ : chr [1:2] "invasive_cancer" "not_present"
- $ breast_cancer                 : num [1:2, 1:2] 12816 12809 117 129
-  ..- attr(*, "dimnames")=List of 2
-  .. ..$ : chr [1:2] "fish_oil" "placebo"
-  .. ..$ : chr [1:2] "breast_cancer" "not_present"
- $ prostate_cancer               : num [1:2, 1:2] 12714 12746 219 192
-  ..- attr(*, "dimnames")=List of 2
-  .. ..$ : chr [1:2] "fish_oil" "placebo"
-  .. ..$ : chr [1:2] "prostate_cancer" "not_present"
- $ colorectal_cancer             : num [1:2, 1:2] 12879 12894 54 44
-  ..- attr(*, "dimnames")=List of 2
-  .. ..$ : chr [1:2] "fish_oil" "placebo"
-  .. ..$ : chr [1:2] "colorectal_cancer" "not_present"
- $ cancer_death                  : num [1:2, 1:2] 12765 12765 168 173
-  ..- attr(*, "dimnames")=List of 2
-  .. ..$ : chr [1:2] "fish_oil" "placebo"
-  .. ..$ : chr [1:2] "cancer_death" "no_cancer_death"
- $ death                         : num [1:2, 1:2] 12440 12453 493 485
-  ..- attr(*, "dimnames")=List of 2
-  .. ..$ : chr [1:2] "fish_oil" "placebo"
-  .. ..$ : chr [1:2] "death" "alive"
- $ major_cardio_event_after_2y   : num [1:2, 1:2] 12664 12637 269 301
-  ..- attr(*, "dimnames")=List of 2
-  .. ..$ : chr [1:2] "fish_oil" "placebo"
-  .. ..$ : chr [1:2] "major_cardio_event_after_2y" "no_event"
- $ myocardial_infarction_after_2y: num [1:2, 1:2] 12839 12807 94 131
-  ..- attr(*, "dimnames")=List of 2
-  .. ..$ : chr [1:2] "fish_oil" "placebo"
-  .. ..$ : chr [1:2] "myocardial_infarction_after_2y" "no_event"
- $ invasive_cancer_after_2y      : num [1:2, 1:2] 12397 12462 536 476
-  ..- attr(*, "dimnames")=List of 2
-  .. ..$ : chr [1:2] "fish_oil" "placebo"
-  .. ..$ : chr [1:2] "invasive_cancer_after_2y" "no_event"
- $ cancer_death_after_2y         : num [1:2, 1:2] 12807 12803 126 135
-  ..- attr(*, "dimnames")=List of 2
-  .. ..$ : chr [1:2] "fish_oil" "placebo"
-  .. ..$ : chr [1:2] "cancer_death_after_2y" "no_event"
- $ death_after_2y                : num [1:2, 1:2] 12562 12557 371 381
-  ..- attr(*, "dimnames")=List of 2
-  .. ..$ : chr [1:2] "fish_oil" "placebo"
-  .. ..$ : chr [1:2] "death_after_2y" "remained_alive"
 }
 \source{
+  Manson JE, et al. 2018. Marine n-3 Fatty Acids and Prevention
+  of Cardiovascular Disease and Cancer. NEJMoa1811403.
+  
   \url{https://www.nejm.org/doi/full/10.1056/NEJMoa1811403}
 }
 \examples{
