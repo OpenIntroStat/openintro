@@ -27,12 +27,12 @@ Two new functions, \code{\link{myPDF}} and \code{\link{myPNG}}, were created in 
 }
 \author{
 David M Diez, Christopher D Barr, Mine Cetinkaya-Rundel
-
-Maintainer: DM Diez <david.m.diez@gmail.com>
+%Maintainer: DM Diez <david.m.diez@gmail.com>
 }
 \keyword{ package }
 \examples{
 
+\dontrun{
 #===> boxPlot <===#
 data(run10)
 par(mfrow=1:2)
@@ -122,6 +122,7 @@ normTail(102, 4, xlim=c(97,110), M=c(100,103))
 normTail(-10.0, 5.192, M=c(-5,2), digits=1, xAxisIncr=2)
 
 #===> Exploratory Data Analysis Plot <===#
-data(mlbBat10)
-#edaPlot(mlbBat10)
+# data(mlbBat10)
+# edaPlot(mlbBat10)
+}
 }

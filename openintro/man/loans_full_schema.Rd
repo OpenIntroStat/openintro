@@ -141,18 +141,12 @@
 \examples{
 head(loans_full_schema)
 head(loan50)
+d <- loans_full_schema
 
-x <- loans_full_schema$homeownership
 
-## # Considered but not pursued.
-## y <- factor(as.character(loans_full_schema$verified_income),
-##     c("Not Verified", "Source Verified", "Verified"))
-## y <- loans_full_schema$grade %in% c("A", "B")
-## y <- loans_full_schema$loan_purpose %in%
-##     c("credit_card", "debt_consolidation")
-
-y <- loans_full_schema$application_type
-
+# _____ Summarizing Data Sections _____ #
+x <- d$homeownership
+y <- d$application_type
 (t1 <- table(x, y))
 apply(t1, 1, sum)
 prop.table(t1, 1)
@@ -165,6 +159,78 @@ mosaicplot(t(t1))
 mosaicplot(t1)
 pie(apply(t1, 1, sum))
 barplot(apply(t1, 1, sum))
+
+
+# _____ Multiple regression, initial fit and variable selection _____ #
+d$unemployed <- is.na(d$emp_length)
+d$emp_length[is.na(d$emp_length)] <- 0
+d$loan_over_income <- d$loan_amount / d$annual_income
+dim(d)
+
+par(mfrow = c(2, 4))
+boxPlot(d$interest_rate, d$verified_income)
+plot(d$debt_to_income, d$interest_rate)
+boxPlot(d$interest_rate, d$term)
+plot(d$current_installment_accounts, d$interest_rate)
+boxPlot(d$interest_rate, d$issue_month)
+plot(d$total_debit_limit, d$interest_rate)
+plot(d$inquiries_last_12m, d$interest_rate)
+d <- subset(d, loan_over_income < 1000)
+
+co <- c( 
+    "verified_income", "debt_to_income", "term",
+    "current_installment_accounts", "issue_month",
+    "total_debit_limit", "inquiries_last_12m")
+F <- function(x, sub = 1:length(x)) {
+  as.formula(paste("interest_rate ~", paste(x[sub], collapse = "+")))
+}
+AdjR2 <- function(x) {
+  summary(x)$adj.r.squared
+}
+m <- lm(F(co), data = d); summary(m); AdjR2(m)
+m <- lm(F(co, c(1:3, 4, 6:7)), data = d); summary(m); AdjR2(m)
+m <- lm(F(co, c(1:3, 5, 6:7)), data = d); summary(m); AdjR2(m)
+m <- lm(F(co, c(1:3, 6:7)), data = d); summary(m); AdjR2(m)
+
+
+# Diagnostics
+\dontrun{
+# Normality (not critical here)
+qqnorm(m$residuals)
+qqline(m$residuals)
+
+# Homoskedasticity
+library(ggplot2)
+my_geom <- c("point", "smooth")
+qplot(m$fitted, abs(m$residuals), geom = my_geom)
+
+# Residuals against predictors
+dropped <- m$na.action
+# boxPlot(m$residuals, d$verified_income[-dropped])
+qplot(d$debt_to_income[-dropped], m$residuals, geom = my_geom)
+# boxPlot(m$residuals, d$term[-dropped])
+qplot(d$total_debit_limit[-dropped], m$residuals, geom = my_geom)
+qplot(d$inquiries_last_12m[-dropped], m$residuals, geom = my_geom)
+}
+
+
+# Refitting with square root of debit limit.
+d$debt_to_income_capped_at_50 <- ifelse(d$debt_to_income > 50, 50, d$debt_to_income)
+co <- c( 
+    "verified_income", "debt_to_income_capped_at_50",
+    "term",
+    "current_installment_accounts", "issue_month",
+    "sqrt(total_debit_limit)", "inquiries_last_12m")
+m <- lm(F(co), data = d); summary(m); AdjR2(m)
+m <- lm(F(co, c(1:3, 4, 6:7)), data = d); summary(m); AdjR2(m)
+
+# Diagnostics for refitted model
+\dontrun{
+dropped <- m$na.action
+qplot(d$debt_to_income_capped_at_50[-dropped], m$residuals, geom = my_geom)
+qplot(d$current_installment_accounts[-dropped], m$residuals, geom = my_geom)
+qplot(sqrt(d$total_debit_limit[-dropped]), m$residuals, geom = my_geom)
+}
 
 }
 \keyword{datasets}
