@@ -23,12 +23,12 @@
   }
 }
 \details{
-  The hypothetical ML algorithm has a precision of 96\%,
-  meaning of those photos it claims are fashion, about 96\%
+  The hypothetical ML algorithm has a precision of 90\%,
+  meaning of those photos it claims are fashion, about 90\%
   of them are actually about fashion.
-  The recall of the ML algorithm is about 65\%, meaning
+  The recall of the ML algorithm is about 64\%, meaning
   of the photos that are about fashion, it correctly
-  predicts that they are about fashion about 65\% of the time.
+  predicts that they are about fashion about 64\% of the time.
 }
 \source{
   The data are simulated / hypothetical.
