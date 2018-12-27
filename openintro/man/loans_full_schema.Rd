@@ -162,9 +162,9 @@ barplot(apply(t1, 1, sum))
 
 
 # _____ Multiple regression, initial fit and variable selection _____ #
-d$unemployed <- is.na(d$emp_length)
-d$emp_length[is.na(d$emp_length)] <- 0
-d$loan_over_income <- d$loan_amount / d$annual_income
+d$credit_util <- round(ifelse(d$total_credit_limit == 0, 0,
+    d$total_credit_utilized / d$total_credit_limit), 4)
+d$past_bankr <- (d$public_record_bankrupt > 0) + 0
 dim(d)
 
 par(mfrow = c(2, 4))
@@ -175,12 +175,27 @@ plot(d$current_installment_accounts, d$interest_rate)
 boxPlot(d$interest_rate, d$issue_month)
 plot(d$total_debit_limit, d$interest_rate)
 plot(d$inquiries_last_12m, d$interest_rate)
-d <- subset(d, loan_over_income < 1000)
 
-co <- c( 
-    "verified_income", "debt_to_income", "term",
-    "current_installment_accounts", "issue_month",
-    "total_debit_limit", "inquiries_last_12m")
+
+# Renaming some variables for convenience
+d$ver_income <- ifelse(d$verified_income == "Verified", "verified",
+    ifelse(d$verified_income == "Not Verified", "not", "source_only"))
+d$credit_checks <- d$inquiries_last_12m
+d$issued <- gsub("-", "", d$issue_month, fixed = TRUE)
+these <- d$annual_income %in% 0:1
+d$debt_to_income[these] <- d$total_credit_utilized[these] /
+    d$annual_income_joint[these]
+# Variables for the model
+co <- c(
+    "ver_income",
+    "debt_to_income",
+    "credit_util",
+    "past_bankr",
+    "term",
+    "issued",
+    # "total_debit_limit",
+    "credit_checks")
+head(d[, c("interest_rate", co)])
 F <- function(x, sub = 1:length(x)) {
   as.formula(paste("interest_rate ~", paste(x[sub], collapse = "+")))
 }
@@ -188,9 +203,9 @@ AdjR2 <- function(x) {
   summary(x)$adj.r.squared
 }
 m <- lm(F(co), data = d); summary(m); AdjR2(m)
-m <- lm(F(co, c(1:3, 4, 6:7)), data = d); summary(m); AdjR2(m)
-m <- lm(F(co, c(1:3, 5, 6:7)), data = d); summary(m); AdjR2(m)
-m <- lm(F(co, c(1:3, 6:7)), data = d); summary(m); AdjR2(m)
+# m <- lm(F(co, -4), data = d); summary(m); AdjR2(m)
+m <- lm(F(co, -6), data = d); summary(m); AdjR2(m)
+# m <- lm(F(co, -c(4, 6)), data = d); summary(m); AdjR2(m)
 
 
 # Diagnostics
@@ -205,31 +220,39 @@ my_geom <- c("point", "smooth")
 qplot(m$fitted, abs(m$residuals), geom = my_geom)
 
 # Residuals against predictors
-dropped <- m$na.action
-# boxPlot(m$residuals, d$verified_income[-dropped])
-qplot(d$debt_to_income[-dropped], m$residuals, geom = my_geom)
-# boxPlot(m$residuals, d$term[-dropped])
-qplot(d$total_debit_limit[-dropped], m$residuals, geom = my_geom)
-qplot(d$inquiries_last_12m[-dropped], m$residuals, geom = my_geom)
+# boxPlot(m$residuals, d$ver_income)
+qplot(d$debt_to_income, m$residuals, geom = my_geom)
+qplot(d$credit_util, m$residuals, geom = my_geom)
+# boxPlot(m$residuals, d$past_bankr)
+# boxPlot(m$residuals, d$term)
+qplot(d$total_debit_limit, m$residuals, geom = my_geom)
+qplot(d$credit_checks, m$residuals, geom = my_geom)
 }
 
 
 # Refitting with square root of debit limit.
-d$debt_to_income_capped_at_50 <- ifelse(d$debt_to_income > 50, 50, d$debt_to_income)
-co <- c( 
-    "verified_income", "debt_to_income_capped_at_50",
+d$debt_to_income_capped_at_50 <-
+    ifelse(d$debt_to_income > 50, 50, d$debt_to_income)
+co <- c(
+    "ver_income",
+    "debt_to_income_capped_at_50",
+    "credit_util",
+    "past_bankr",
     "term",
-    "current_installment_accounts", "issue_month",
-    "sqrt(total_debit_limit)", "inquiries_last_12m")
+    "issued",
+    # "sqrt(total_debit_limit)",
+    "credit_checks")
 m <- lm(F(co), data = d); summary(m); AdjR2(m)
-m <- lm(F(co, c(1:3, 4, 6:7)), data = d); summary(m); AdjR2(m)
+# m <- lm(F(co, -4), data = d); summary(m); AdjR2(m)
+m <- lm(F(co, -6), data = d); summary(m); AdjR2(m)
+# m <- lm(F(co, -c(4, 6)), data = d); summary(m); AdjR2(m)
 
 # Diagnostics for refitted model
 \dontrun{
-dropped <- m$na.action
-qplot(d$debt_to_income_capped_at_50[-dropped], m$residuals, geom = my_geom)
-qplot(d$current_installment_accounts[-dropped], m$residuals, geom = my_geom)
-qplot(sqrt(d$total_debit_limit[-dropped]), m$residuals, geom = my_geom)
+qplot(d$debt_to_income_capped_at_50, m$residuals, geom = my_geom)
+qplot(d$credit_util, m$residuals, geom = my_geom)
+qplot(sqrt(d$total_debit_limit), m$residuals, geom = my_geom)
+qplot(d$credit_checks, m$residuals, geom = my_geom)
 }
 
 }
