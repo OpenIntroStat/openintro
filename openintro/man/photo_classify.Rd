@@ -18,7 +18,7 @@
     \item{\code{mach_learn}}{The prediction by the machine
     	    learning system as to whether the photo is about
     	    fashion or not.}
-    \item{\code{actual}}{The actual classification of the
+    \item{\code{truth}}{The actual classification of the
     	    photo by a team of humans.}
   }
 }
