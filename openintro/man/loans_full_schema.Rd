@@ -172,7 +172,7 @@ boxPlot(d$interest_rate, d$verified_income)
 plot(d$debt_to_income, d$interest_rate)
 boxPlot(d$interest_rate, d$term)
 plot(d$current_installment_accounts, d$interest_rate)
-boxPlot(d$interest_rate, d$issue_month)
+# boxPlot(d$interest_rate, d$issue_month)
 plot(d$total_debit_limit, d$interest_rate)
 plot(d$inquiries_last_12m, d$interest_rate)
 
