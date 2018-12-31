@@ -18,7 +18,7 @@
 \examples{
 data(toy_anova)
 by(toy_anova$outcome, toy_anova$group, mean)
-these <- toy_anova$group %in% c("I", "II", "III")
+these <- toy_anova$group \%in\% c("I", "II", "III")
 anova(lm(outcome ~ group, toy_anova[these, ]))
 anova(lm(outcome ~ group, toy_anova[!these, ]))
 }

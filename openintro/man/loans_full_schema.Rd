@@ -182,7 +182,7 @@ d$ver_income <- ifelse(d$verified_income == "Verified", "verified",
     ifelse(d$verified_income == "Not Verified", "not", "source_only"))
 d$credit_checks <- d$inquiries_last_12m
 d$issued <- gsub("-", "", d$issue_month, fixed = TRUE)
-these <- d$annual_income %in% 0:1
+these <- d$annual_income \%in\% 0:1
 d$debt_to_income[these] <- d$total_credit_utilized[these] /
     d$annual_income_joint[these]
 # Variables for the model
