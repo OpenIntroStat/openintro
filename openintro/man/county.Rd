@@ -16,7 +16,7 @@
     \item{\code{pop2010}}{Population in 2010.}
     \item{\code{pop2017}}{Population in 2017.}
     \item{\code{pop_change}}{Population change from 2010 to 2017.}
-    \item{\code{poverty}}{Percent of population in poverty in 2016.}
+    \item{\code{poverty}}{Percent of population in poverty in 2017.}
     \item{\code{homeownership}}{Homeownership rate, 2006-2010.}
     \item{\code{multi_unit}}{Percent of housing units in
         multi-unit structures, 2006-2010.}
