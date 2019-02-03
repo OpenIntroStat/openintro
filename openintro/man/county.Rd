@@ -3,12 +3,12 @@
 \docType{data}
 \title{United States Counties}
 \description{
-  Data for 3143 counties in the United States. See the
+  Data for 3142 counties in the United States. See the
   \code{\link{county_complete}} data set for additional variables.
 }
 \usage{data(county)}
 \format{
-  A data frame with 3143 observations on the following 14 variables.
+  A data frame with 3142 observations on the following 14 variables.
   \describe{
     \item{\code{name}}{County names.}
     \item{\code{state}}{State names.}
@@ -22,7 +22,8 @@
         multi-unit structures, 2006-2010.}
     \item{\code{unemployment_rate}}{Unemployment rate in 2017.}
     \item{\code{metro}}{Whether the county contains a metropolitan area.}
-    \item{\code{median_edu}}{Median education level.}
+    \item{\code{median_edu}}{Median education level (2013-2017).}
+    \item{\code{per_capita_income}}{Per capita (per person) income (2013-2017).}
     \item{\code{median_hh_income}}{Median household income.}
     \item{\code{smoking_ban}}{Describes whether the type of
           county-level smoking ban in place in 2010,

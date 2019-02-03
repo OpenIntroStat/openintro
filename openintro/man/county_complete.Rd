@@ -5,11 +5,11 @@
   United States Counties
 }
 \description{
-  Data for 3143 counties in the United States.
+  Data for 3142 counties in the United States.
 }
 \usage{data("county_complete")}
 \format{
-  A data frame with 3143 observations on the following 111 variables.
+  A data frame with 3142 observations on the following 111 variables.
   \describe{
     \item{\code{state}}{State.}
     \item{\code{name}}{County name.}
@@ -56,6 +56,7 @@
     \item{\code{hs_grad_2016}}{Percent of population that is a high school graduate (2012-2016).}
     \item{\code{hs_grad_2017}}{Percent of population that is a high school graduate (2013-2017).}
     \item{\code{some_college_2016}}{Percent of population with some college education (2012-2016).}
+    \item{\code{some_college_2017}}{Percent of population with some college education (2013-2017).}
     \item{\code{bachelors_2010}}{Percent of population that earned a bachelor's degree (2006-2010).}
     \item{\code{bachelors_2016}}{Percent of population that earned a bachelor's degree (2012-2016).}
     \item{\code{bachelors_2017}}{Percent of population that earned a bachelor's degree (2013-2017).}
@@ -70,7 +71,9 @@
     \item{\code{housing_multi_unit_2010}}{Housing units in multi-unit structures (2006-2010).}
     \item{\code{median_val_owner_occupied_2010}}{Median value of owner-occupied housing units (2006-2010).}
     \item{\code{households_2010}}{Households (2006-2010).}
+    \item{\code{households_2017}}{Number of households (average over 2013-2017).}
     \item{\code{persons_per_household_2010}}{Persons per household (2006-2010).}
+    \item{\code{persons_per_household_2017}}{Number of households (average over 2013-2017).}
     \item{\code{per_capita_income_2010}}{Per capita money income in past 12 months (2010 dollars, 2006-2010)}
     \item{\code{per_capita_income_2017}}{Per capita money income in past 12 months (2017 dollars, 2013-2017)}
     \item{\code{metro_2013}}{Whether the county contained a metropolitan area in 2013.}
@@ -219,12 +222,13 @@ county <- data.frame(
     unemployment_rate = d$unemployment_rate_2017,
     metro = ifelse(d$metro_2013 == 1, "yes", "no"),  # Categorical, ordinal
     median_edu = factor(
-        ifelse(d$hs_grad_2016 < 50, "below_hs",
-            ifelse(d$some_college_2016 + d$bachelors_2016 < 50 & d$hs_grad_2016,
+        ifelse(d$hs_grad_2017 < 50, "below_hs",
+            ifelse(d$some_college_2017 + d$bachelors_2017 < 50 & d$hs_grad_2017,
                 "hs_diploma",
-                ifelse(d$bachelors_2016 > 50, "bachelors", "some_college"))),
+                ifelse(d$bachelors_2017 > 50, "bachelors", "some_college"))),
         levels = c("below_hs", "hs_diploma", "some_college", "bachelors")),
-    median_hh_income = d$median_household_income_2016,
+    per_capita_income = d$per_capita_income_2017,
+    median_hh_income = d$median_household_income_2017,
     smoking_ban = factor(d$smoking_ban_2010,
         levels = c("none", "partial", "complete")))
 
