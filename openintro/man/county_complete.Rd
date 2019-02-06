@@ -229,7 +229,6 @@ county <- data.frame(
         levels = c("below_hs", "hs_diploma", "some_college", "bachelors")),
     per_capita_income = d$per_capita_income_2017,
     median_hh_income = d$median_household_income_2017,
-    fed_spending = d$fed_spending_2009,
     smoking_ban = factor(d$smoking_ban_2010,
         levels = c("none", "partial", "complete")))
 

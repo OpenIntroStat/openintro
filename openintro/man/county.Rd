@@ -25,7 +25,6 @@
     \item{\code{median_edu}}{Median education level (2013-2017).}
     \item{\code{per_capita_income}}{Per capita (per person) income (2013-2017).}
     \item{\code{median_hh_income}}{Median household income.}
-    \item{\code{fed_spending}}{Federal spending, in thousands of dollars (2009).}
     \item{\code{smoking_ban}}{Describes whether the type of
           county-level smoking ban in place in 2010,
           taking one of the values \code{"none"},
