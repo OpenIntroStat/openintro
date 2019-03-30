@@ -1,4 +1,5 @@
-\name{classData}
+\name{class_data}
+\alias{class_data}
 \alias{classData}
 \docType{data}
 \title{
