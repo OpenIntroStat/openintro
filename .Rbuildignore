@@ -1,3 +1,5 @@
+^docs$
+^_pkgdown\.yml$
 ^CODE_OF_CONDUCT\.md$
 ^data-raw$
 ^README\.Rmd$
