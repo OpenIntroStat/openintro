@@ -3,6 +3,7 @@
 export(ArrowLines)
 export(AxisInDollars)
 export(AxisInPercent)
+export(BG)
 export(Braces)
 export(CCP)
 export(CT2DF)
