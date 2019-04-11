@@ -2,14 +2,14 @@
 % Please edit documentation in R/AxisInPercent.R
 \name{AxisInPercent}
 \alias{AxisInPercent}
-\title{Build Better Looking Axis Labels for US Dollars and Percentages}
+\title{Build Better Looking Axis Labels for Percentages}
 \usage{
 AxisInPercent(side, at, include.symbol = TRUE, simplify = TRUE, ...)
 }
 \arguments{
 \item{side}{An integer specifying which side of the plot the axis is to be
-drawn on. The axis is place as follows: 1=below, 2=left, 3=above and
-4=right.}
+drawn on. The axis is place as follows: 1 = below, 2 = left, 3 = above and
+4 = right.}
 
 \item{at}{The points at which tick-marks are to be drawn.}
 
@@ -37,7 +37,7 @@ AxisInDollars(1, pretty(x))
 
 }
 \seealso{
-\code{\link{buildAxis}} \code{\link{AxisInDollars}}
+\code{\link{buildAxis}} \code{\link{AxisInDollars}} \code{\link{AxisInDollars}}
 }
 \author{
 David M Diez

@@ -5,21 +5,31 @@
 \alias{mlb_players_18}
 \title{Batter Statistics for 2018 Major League Baseball (MLB) Season}
 \format{A data frame with 1270 observations on the following 19 variables.
-\describe{ \item{list("name")}{Player name} \item{list("team")}{Team
-abbreviation} \item{list("position")}{Position abbreviation: \code{1B} =
-first base, \code{2B} = second base, \code{3B} = third base, \code{C} =
-catcher, \code{CF} = center field (outfield), \code{DH} = designated hitter,
-\code{LF} = left field (outfield), \code{P} = pitcher, \code{RF} = right
-field (outfield), \code{SS} = shortstop.} \item{list("games")}{Number of
-games played.} \item{list("AB")}{At bats.} \item{list("R")}{Runs.}
-\item{list("H")}{Hits.} \item{list("doubles")}{Doubles.}
-\item{list("triples")}{Triples.} \item{list("HR")}{Home runs.}
-\item{list("RBI")}{Runs batted in.} \item{list("walks")}{Walks.}
-\item{list("strike_outs")}{Strike outs.} \item{list("stolen_bases")}{Stolen
-bases.} \item{list("caught_stealing_base")}{Number of times caught stealing
-a base.} \item{list("AVG")}{Batting average.} \item{list("OBP")}{On-base
-percentage.} \item{list("SLG")}{Slugging percentage.}
-\item{list("OPS")}{On-base percentage plus slugging percentage.} }}
+\describe{
+  \item{name}{Player name}
+  \item{team}{Team abbreviation}
+  \item{position}{Position abbreviation: \code{1B} = first base,
+\code{2B} = second base, \code{3B} = third base, \code{C} = catcher,
+\code{CF} = center field (outfield), \code{DH} = designated hitter,
+\code{LF} = left field (outfield), \code{P} = pitcher,
+\code{RF} = right field (outfield), \code{SS} = shortstop.}
+  \item{games}{Number of games played.}
+  \item{AB}{At bats.}
+  \item{R}{Runs.}
+  \item{H}{Hits.}
+  \item{doubles}{Doubles.}
+  \item{triples}{Triples.}
+  \item{HR}{Home runs.}
+  \item{RBI}{Runs batted in.}
+  \item{walks}{Walks.}
+  \item{strike_outs}{Strike outs.}
+  \item{stolen_bases}{Stolen bases.}
+  \item{caught_stealing_base}{Number of times caught stealing a base.}
+  \item{AVG}{Batting average.}
+  \item{OBP}{On-base percentage.}
+  \item{SLG}{Slugging percentage.}
+  \item{OPS}{On-base percentage plus slugging percentage.}
+  }}
 \source{
 \url{http://mlb.mlb.com/stats}
 }

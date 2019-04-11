@@ -5,10 +5,13 @@
 \alias{midterms_house}
 \title{President's party performance and unemployment rate}
 \format{A data frame with 29 observations on the following 5 variables.
-\describe{ \item{list("year")}{a numeric vector} \item{list("potus")}{The
-president in office.} \item{list("party")}{President's party.}
-\item{list("unemp")}{Unemployment rate.} \item{list("house_change")}{ Change
-in House seats for the president's party.  } }}
+\describe{
+  \item{year}{a numeric vector}
+  \item{potus}{The president in office.}
+  \item{party}{President's party.}
+  \item{unemp}{Unemployment rate.}
+  \item{house_change}{Change in House seats for the president's party.}
+  }}
 \source{
 Wikipedia.
 }
