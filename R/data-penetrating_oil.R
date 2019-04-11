@@ -1,10 +1,10 @@
 #' What's the best way to loosen a rusty bolt?
-#' 
+#'
 #' The channel Project Farm on YouTube investigated penetrating oils and other
 #' options for loosening rusty bolts. Eight options were evaluated, including a
 #' control group, to determine which was most effective.
-#' 
-#' 
+#'
+#'
 #' @name penetrating_oil
 #' @docType data
 #' @format A data frame with 30 observations on the following 2 variables.
@@ -16,16 +16,16 @@
 #' @source https://www.youtube.com/watch?v=xUEob2oAKVs
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' m <- lm(torque ~ treatment, data = d)
 #' anova(m)
-#' 
+#'
 #' # There are 28 pairwise comparisons to be made.
 #' xbar <- tapply(d$torque, d$treatment, mean)
 #' n <- tapply(d$torque, d$treatment, length)
 #' s <- summary(m)$sigma
 #' df <- summary(m)$df[1]
-#' 
+#'
 #' diff <- c()
 #' se <- c()
 #' k <- 0
@@ -47,13 +47,13 @@
 #'     }
 #'   }
 #' }
-#' 
+#'
 #' # Smallest p-value using Bonferroni
 #' min(2 * K * pt(-abs(diff / se), df))
-#' 
-#' 
+#'
+#'
 #' # Better pairwise comparison method.
-#' anova(m1 <- aov(torque ~ treatment, data = d))
+#' anova(m1 <- aov(torque ~ treatment, data = penetrating_oil))
 #' TukeyHSD(m1)
-#' 
+#'
 "penetrating_oil"
