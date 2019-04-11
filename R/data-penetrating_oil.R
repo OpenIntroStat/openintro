@@ -17,12 +17,12 @@
 #' @keywords datasets
 #' @examples
 #'
-#' m <- lm(torque ~ treatment, data = d)
+#' m <- lm(torque ~ treatment, data = penetrating_oil)
 #' anova(m)
 #'
 #' # There are 28 pairwise comparisons to be made.
-#' xbar <- tapply(d$torque, d$treatment, mean)
-#' n <- tapply(d$torque, d$treatment, length)
+#' xbar <- tapply(penetrating_oil$torque, penetrating_oil$treatment, mean)
+#' n <- tapply(penetrating_oil$torque, penetrating_oil$treatment, length)
 #' s <- summary(m)$sigma
 #' df <- summary(m)$df[1]
 #'
