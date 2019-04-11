@@ -1,3 +1,0 @@
-exportPattern("^[[:alpha:]]+")
-
-import(graphics, grDevices, stats, utils)
