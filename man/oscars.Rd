@@ -3,8 +3,8 @@
 \docType{data}
 \name{oscars}
 \alias{oscars}
-\title{Oscar winners, 1929 to 2012}
-\format{A tibble with 170 observations on the following 10 variables.
+\title{Oscar winners, 1929 to 2018}
+\format{A tibble with 182 observations on the following 10 variables.
 \describe{\item{gender}{Gender of winner, \code{female} or
 \code{male}.} \item{oscar_no}{Denotes which Oscar ceremony.}
 \item{oscar_yr}{Denotes which Oscar year.} \item{name}{Name
@@ -23,7 +23,7 @@ valid), updated through 2012 using information from Wikipedia.org.
 oscars
 }
 \description{
-Best actor and actress Oscar winners from 1929 to 2012.
+Best actor and actress Oscar winners from 1929 to 2018
 }
 \details{
 Although there have been only 84 Oscar ceremonies until 2012, there are 85
