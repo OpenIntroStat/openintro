@@ -1,3 +1,4 @@
+#' @export
 AxisInDollars <- function(
     side,
     at,
