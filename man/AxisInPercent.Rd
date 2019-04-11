@@ -8,7 +8,8 @@ AxisInPercent(side, at, include.symbol = TRUE, simplify = TRUE, ...)
 }
 \arguments{
 \item{side}{An integer specifying which side of the plot the axis is to be
-drawn on. The axis is place as follows: 1=below, 2=left, 3=above and 4=right.}
+drawn on. The axis is place as follows: 1=below, 2=left, 3=above and
+4=right.}
 
 \item{at}{The points at which tick-marks are to be drawn.}
 
