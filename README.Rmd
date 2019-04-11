@@ -1,0 +1,57 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "80%"
+)
+```
+# openintro
+
+Supplemental functions and data for 'OpenIntro' resources, which includes 
+open-source textbooks and resources for introductory statistics at 
+[openintro.org](https://www.openintro.org/). The package contains data sets used 
+in our open-source textbooks along with custom plotting functions for reproducing 
+book figures. Note that many functions and examples include color transparency; 
+some plotting elements may not show up properly (or at all) when run in some 
+versions of Windows operating system.
+
+## Installation
+
+You can install the released version of openintro from [CRAN](https://CRAN.R-project.org) with:
+
+``` r
+install.packages("openintro")
+```
+
+You can install the development version of openintro from GitHub with:
+
+``` r
+# install.packages("devtools")
+library(devtools)
+install_github("OpenIntroStat/openintro-r-package")
+```
+
+This package was produced as part of the OpenIntro project. For the accompanying 
+textbook, visit openintro.org. A PDF of the textbook is free and paperbacks can 
+be purchased online (royalty-free).
+
+## Example
+
+This is a basic example for using one of the package functions, `treeDiag()`.
+
+```{r treeDiag}
+library(openintro)
+treeDiag(c("Flight on time?","Luggage on time?"),
+         c(0.8, 0.2), list(c(0.97, 0.03), c(0.15, 0.85)))
+```
+
+## Code of Conduct
+
+Please note that the 'openintro' project is released with a [Contributor Code of Conduct](CODE_OF_CONDUCT.md). By contributing to this project, you agree to abide by its terms.
