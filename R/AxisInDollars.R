@@ -5,7 +5,7 @@ AxisInDollars <- function(
     simplify = TRUE, ...) {
   at. <- at
   if (simplify) {
-    order.of.magnitude <- log10(median(at))
+    order.of.magnitude <- log10(stats::median(at))
     triple.order <- floor(order.of.magnitude / 3)
     if (triple.order > 0) {
       char <- switch(triple.order,

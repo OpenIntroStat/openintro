@@ -1,8 +1,8 @@
-BG <- function(col = COL[5, 9]) {
+BG <- function(col = openintro::COL[5, 9]) {
   rect(
-      par("usr")[1],
-      par("usr")[3],
-      par("usr")[2],
-      par("usr")[4],
+      graphics::par("usr")[1],
+      graphics::par("usr")[3],
+      graphics::par("usr")[2],
+      graphics::par("usr")[4],
       col = col)
 }
