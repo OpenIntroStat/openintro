@@ -1,9 +1,9 @@
 #' President's party performance and unemployment rate
-#' 
+#'
 #' Covers midterm elections.
-#' 
-#' An older version of this data is at \code{\link{unemploy.pres}}.
-#' 
+#'
+#' An older version of this data is at \code{\link{unemploy_pres}}.
+#'
 #' @name midterms_house
 #' @docType data
 #' @format A data frame with 29 observations on the following 5 variables.
@@ -14,8 +14,8 @@
 #' @source Wikipedia.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' data(midterms_house)
 #' plot(midterms_house$unemp, midterms_house$change)
-#' 
+#'
 "midterms_house"

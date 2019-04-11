@@ -19,7 +19,7 @@ midterms_house
 Covers midterm elections.
 }
 \details{
-An older version of this data is at \code{\link{unemploy.pres}}.
+An older version of this data is at \code{\link{unemploy_pres}}.
 }
 \examples{
 

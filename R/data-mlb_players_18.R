@@ -1,8 +1,8 @@
 #' Batter Statistics for 2018 Major League Baseball (MLB) Season
-#' 
+#'
 #' Batter statistics for 2018 Major League Baseball season.
-#' 
-#' 
+#'
+#'
 #' @name mlb_players_18
 #' @docType data
 #' @format A data frame with 1270 observations on the following 19 variables.
@@ -21,27 +21,27 @@
 #' a base.} \item{list("AVG")}{Batting average.} \item{list("OBP")}{On-base
 #' percentage.} \item{list("SLG")}{Slugging percentage.}
 #' \item{list("OPS")}{On-base percentage plus slugging percentage.} }
-#' @seealso \code{\link{mlbBat10}}, \code{\link{MLB}}
+#' @seealso \code{\link{mlbbat10}}, \code{\link{mlb}}
 #' @source \url{http://mlb.mlb.com/stats}
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' d <- subset(mlb_players_18, !position %in% c("P", "DH") & AB >= 100)
 #' dim(d)
-#' 
+#'
 #' # _____ Per Position, No Further Grouping _____ #
 #' plot(d$OBP ~ as.factor(d$position))
 #' model <- lm(OBP ~ as.factor(position), d)
 #' summary(model)
 #' anova(model)
-#' 
+#'
 #' # _____ Simplified Analysis, Fewer Positions _____ #
 #' pos <- list(c("LF", "CF", "RF"),
 #'     c("1B", "2B", "3B", "SS"),
 #'     "C")
 #' POS <- c("OF", "IF", "C")
 #' table(d$position)
-#' 
+#'
 #' # _____ On-Base Percentage Across Positions _____ #
 #' out <- c()
 #' gp  <- c()
@@ -53,5 +53,5 @@
 #' plot(out ~ as.factor(gp))
 #' summary(lm(out ~ as.factor(gp)))
 #' anova(lm(out ~ as.factor(gp)))
-#' 
+#'
 "mlb_players_18"

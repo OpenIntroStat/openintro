@@ -61,6 +61,6 @@ anova(lm(out ~ as.factor(gp)))
 
 }
 \seealso{
-\code{\link{mlbBat10}}, \code{\link{MLB}}
+\code{\link{mlbbat10}}, \code{\link{mlb}}
 }
 \keyword{datasets}
