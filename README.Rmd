@@ -11,7 +11,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-# openintro <a href="https://www.openintro.org/"><img src="man/figures/openintro-hex.jpg" align="right" height="139" /></a>
+# openintro <a href="https://www.openintro.org/"><img src="https://github.com/OpenIntroStat/openintro-r-package/blob/master/man/figures/openintro-hex.jpg?raw=true" align="right" height="139" /></a>
 
 <!-- badges: start -->
 [![CRAN status](https://www.r-pkg.org/badges/version/openintro)](https://cran.r-project.org/package=openintro)
@@ -46,15 +46,16 @@ This package was produced as part of the OpenIntro project. For the accompanying
 textbook, visit openintro.org. A PDF of the textbook is free and paperbacks can 
 be purchased online (royalty-free).
 
-## Example
+## Datasets
 
-This is a basic example for using one of the package functions, `treeDiag()`.
+The following are all the datasets in the package.
 
 ```{r treeDiag}
+library(printr)
 library(openintro)
-treeDiag(c("Flight on time?","Luggage on time?"),
-         c(0.8, 0.2), list(c(0.97, 0.03), c(0.15, 0.85)))
+data(package = "openintro")
 ```
+
 
 ## Code of Conduct
 
