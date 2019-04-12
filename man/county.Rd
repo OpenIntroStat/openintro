@@ -4,7 +4,7 @@
 \name{county}
 \alias{county}
 \title{United States Counties}
-\format{A data frame with 3142 observations on the following 14 variables.
+\format{A tibble with 3142 observations on the following 14 variables.
 \describe{
   \item{name}{County names.}
   \item{state}{State names.}
