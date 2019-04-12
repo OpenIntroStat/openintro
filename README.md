@@ -1,5 +1,5 @@
 
-# openintro <a href="https://www.openintro.org/"><img src="https://github.com/OpenIntroStat/openintro-r-package/blob/master/man/figures/openintro-hex.jpg?raw=true" align="right" height="139" /></a>
+# openintro <a href="https://www.openintro.org/"><img src="man/figures/openintro-hex.png" align="right" height="139"></a>
 
 <!-- badges: start -->
 
