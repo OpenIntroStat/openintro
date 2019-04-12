@@ -2,8 +2,6 @@
 output: github_document
 ---
 
-<!-- README.md is generated from README.Rmd. Please edit that file -->
-
 ```{r setup, include = FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
@@ -12,8 +10,13 @@ knitr::opts_chunk$set(
   out.width = "80%"
 )
 ```
-# openintro
 
+# openintro <a href="https://www.openintro.org/"><img src="man/figures/openintro-hex.jpg" align="right" height="139" /></a>
+
+<!-- badges: start -->
+[![CRAN status](https://www.r-pkg.org/badges/version/openintro)](https://cran.r-project.org/package=openintro)
+<!-- badges: end -->
+?
 Supplemental functions and data for 'OpenIntro' resources, which includes 
 open-source textbooks and resources for introductory statistics at 
 [openintro.org](https://www.openintro.org/). The package contains data sets used 

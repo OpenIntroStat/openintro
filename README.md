@@ -1,16 +1,18 @@
 
-<!-- README.md is generated from README.Rmd. Please edit that file -->
+# openintro <a href="https://www.openintro.org/"><img src="man/figures/openintro-hex.jpg" align="right" height="139" /></a>
 
-# openintro
+<!-- badges: start -->
 
-Supplemental functions and data for ‘OpenIntro’ resources, which
-includes open-source textbooks and resources for introductory statistics
-at [openintro.org](https://www.openintro.org/). The package contains
-data sets used in our open-source textbooks along with custom plotting
-functions for reproducing book figures. Note that many functions and
-examples include color transparency; some plotting elements may not show
-up properly (or at all) when run in some versions of Windows operating
-system.
+[![CRAN
+status](https://www.r-pkg.org/badges/version/openintro)](https://cran.r-project.org/package=openintro)
+<!-- badges: end --> ? Supplemental functions and data for ‘OpenIntro’
+resources, which includes open-source textbooks and resources for
+introductory statistics at [openintro.org](https://www.openintro.org/).
+The package contains data sets used in our open-source textbooks along
+with custom plotting functions for reproducing book figures. Note that
+many functions and examples include color transparency; some plotting
+elements may not show up properly (or at all) when run in some versions
+of Windows operating system.
 
 ## Installation
 
@@ -40,6 +42,12 @@ This is a basic example for using one of the package functions,
 
 ``` r
 library(openintro)
+#> Please visit openintro.org for free statistics materials
+#> 
+#> Attaching package: 'openintro'
+#> The following object is masked from 'package:datasets':
+#> 
+#>     cars
 treeDiag(c("Flight on time?","Luggage on time?"),
          c(0.8, 0.2), list(c(0.97, 0.03), c(0.15, 0.85)))
 ```
