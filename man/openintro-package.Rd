@@ -14,6 +14,14 @@ Supplemental functions and data for 'OpenIntro' resources, which
     may not show up properly (or at all) when run in some versions of Windows 
     operating system.
 }
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/OpenIntroStat/openintro-r-package}
+  \item Report bugs at \url{https://github.com/OpenIntroStat/openintro-r-package/issues}
+}
+
+}
 \author{
 \strong{Maintainer}: Mine Çetinkaya-Rundel \email{mine@rstudio.com} (0000-0001-6452-2420)
 
