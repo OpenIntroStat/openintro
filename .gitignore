@@ -2,3 +2,5 @@
 .RData
 .Rproj.user
 .Rapp.history
+.gitignore~
+.DS_Store
