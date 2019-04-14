@@ -7,3 +7,4 @@
 ^openintro\.Rproj$
 ^\.Rproj\.user$
 unused/
+netlify.toml
