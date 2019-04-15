@@ -30,7 +30,7 @@
 #' library(ggplot2)
 #' library(dplyr)
 #'
-#' ggplot(oscars, aes(x = gender, y = age)) +
+#' ggplot(oscars, aes(x = award, y = age)) +
 #'   geom_boxplot()
 #'
 #' ggplot(oscars, aes(x = factor(birth_mo))) +
