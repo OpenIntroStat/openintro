@@ -1,12 +1,13 @@
+# load packages ----------------------------------------------------------------
 library(openintro)
 library(tidyverse)
 library(lubridate)
 library(glue)
+library(usethis)
 
 # load old version of data -----------------------------------------------------
 
-data(oscars)
-oscars_old <- oscars
+oscars_old <- read_csv(here::here("data-raw/oscars", "oscars-old.csv"))
 
 # fix Sandra Bullock's birthday ------------------------------------------------
 
@@ -18,22 +19,26 @@ oscars_old_fixed <- oscars_old %>%
 
 # add recent data --------------------------------------------------------------
 
-oscars_recent <- read_csv("data-raw/oscars/oscars.csv")
+oscars_new <- read_csv("data-raw/oscars/oscars-new.csv")
 
 # combine ----------------------------------------------------------------------
 
-oscars_new <- bind_rows(oscars_old_fixed, oscars_recent)
+oscars_combined <- bind_rows(oscars_old_fixed, oscars_new)
 
-# make age difference between award year and birth year ------------------------
+# fixes ------------------------------------------------------------------------
 
-oscars <- oscars_new %>%
+oscars <- oscars_combined %>%
   mutate(
+    ## make age difference between award year and birth year
     birth_date = glue("{birth_y}-{birth_mo}-{birth_d})") %>% ymd(),
     # assume Oscars on Jan 1
     oscar_date = glue("{oscar_yr}-01-01") %>% ymd(),
-    age = (decimal_date(oscar_date) - decimal_date(birth_date)) %>% floor()
+    age = (decimal_date(oscar_date) - decimal_date(birth_date)) %>% floor(),
+    ## gender -> award
+    award = ifelse(gender == "male", "Best actor", "Best actress")
     ) %>%
-  select(-oscar_date)
+  select(oscar_no, oscar_yr, award, name, movie, age, birth_pl,
+         birth_date, birth_mo, birth_d, birth_y)
 
 # Save -------------------------------------------------------------------------
 use_data(oscars, overwrite = TRUE)

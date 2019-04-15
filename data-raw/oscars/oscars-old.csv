@@ -1,0 +1,171 @@
+gender,oscar_no,oscar_yr,name,movie,age,birth_pl,birth_mo,birth_d,birth_y
+female,1,1929,Janet Gaynor,7th Heaven,22,Pennsylvania,10,6,1906
+female,2,1930,Mary Pickford,Coquette,37,Canada,4,8,1892
+female,3,1931,Norma Shearer,The Divorcee,28,Canada,8,10,1902
+female,4,1932,Marie Dressler,Min and Bill,63,Canada,11,9,1868
+female,5,1933,Helen Hayes,The Sin of Madelon Claudet,32,Washington DC,10,10,1900
+female,6,1934,Katharine Hepburn,Morning Glory,26,Connecticut,5,12,1907
+female,7,1935,Claudette Colbert,It Happened One Night,31,France,9,13,1903
+female,8,1936,Bette Davis,Dangerous,27,Massachusetts,4,5,1908
+female,9,1937,Luise Rainer,The Great Zeigfeld,26,Germany,1,12,1910
+female,10,1938,Luise Rainer,The Good Earth,27,Germany,1,12,1910
+female,11,1939,Bette Davis,Jezebel,30,Massachusetts,4,5,1908
+female,12,1940,Vivien Leigh,Gone With the Wind,26,India,11,5,1913
+female,13,1941,Ginger Rogers,Kitty Foyle,29,Missouri,7,16,1911
+female,14,1942,Joan Fontaine,Suspicion,24,Japan,10,22,1917
+female,15,1943,Greer Garson,Mrs. Miniver,38,England,9,29,1904
+female,16,1944,Jennifer Jones,The Song of Bernadette,24,Oklahoma,3,2,1919
+female,17,1945,Ingrid Bergman,Gaslight,29,Sweden,8,29,1915
+female,18,1946,Joan Crawford,Mildred Pierce,33,Texas,3,23,1912
+female,19,1947,Olivia de Havilland,To Each His Own,30,Japan,7,1,1916
+female,20,1948,Loretta Young,The Farmer's Daughter,34,Utah,1,6,1913
+female,21,1949,Jane Wyman,Johnny Belinda,34,Missouri,1,4,1914
+female,22,1950,Olivia de Havilland,The Heiress,33,Japan,7,1,1916
+female,23,1951,Judy Holliday,Born Yesterday,29,New York,6,21,1921
+female,24,1952,Vivien Leigh,A Streetcar Named Desire,38,India,11,5,1913
+female,25,1953,Shirley Booth,"Come Back, Little Sheba",54,New York,8,30,1898
+female,26,1954,Audrey Hepburn,Roman Holiday,24,Belgium,5,4,1929
+female,27,1955,Grace Kelly,The Country Girl,25,Philly,11,12,1929
+female,28,1956,Anna Magnani,The Rose Tattoo,47,Italy,3,7,1908
+female,29,1957,Ingrid Bergman,Anastasia,41,Sweden,8,29,1915
+female,30,1958,Joanne Woodward,The Three Faces of Eve,27,Georgia,2,27,1930
+female,31,1959,Susan Hayward,I Want to Live!,41,New York,6,30,1917
+female,32,1960,Simone Signoret,Room at the Top,38,Germany,3,25,1921
+female,33,1961,Elisabeth Taylor,Butterfield 8,28,England,2,27,1932
+female,34,1962,Sophia Loren,Two Women,27,Italy,9,20,1934
+female,35,1963,Anne Bancroft,The Miracle Worker,31,New York,9,17,1931
+female,36,1964,Patricia Neal,Hud,37,Kentucky,1,20,1926
+female,37,1965,Julie Andrews,Mary Poppins,29,England,10,1,1935
+female,38,1966,Julie Christie,Darling,25,India,4,14,1940
+female,39,1967,Elizabeth Taylor,Who's Afraid of Virginia Wolf,34,England,2,27,1932
+female,40,1968,Katharine Hepburn,Guess Who's Coming to Dinner,60,Connecticut,5,12,1907
+female,41,1969,Barbra Streisand,Funny Girl,26,New York,4,24,1942
+female,41,1969,Katharine Hepburn,The Lion in Winter,61,Connecticut,5,12,1907
+female,42,1970,Maggie Smith,The Prime of Miss Jean Brodie,35,England,12,28,1934
+female,43,1971,Glenda Jackson,Women In Love,34,England,5,9,1936
+female,44,1972,Jane Fonda,Klute,34,New York,12,21,1937
+female,45,1973,Liza Minnelli,Cabaret,26,California,3,12,1946
+female,46,1974,Glenda Jackson,A Touch of Class,37,England,5,9,1936
+female,47,1975,Ellen Burstyn,Alice Doesn't Live Here Anymore,42,Michigan,12,7,1932
+female,48,1976,Louise Fletcher,One Flew Over the Cockoo's Nest,41,Alabama,7,22,1934
+female,49,1977,Faye Dunaway,Network,35,Florida,1,14,1941
+female,50,1978,Diane Keaton,Annie Hall,31,California,1,5,1946
+female,51,1979,Jane Fonda,Coming Home,41,New York,12,21,1937
+female,52,1980,Sally Field,Norma Rae,33,California,11,6,1946
+female,53,1981,Sissy Spacek,Coal Miner's Daughter,31,Texas,12,25,1949
+female,54,1982,Katharine Hepburn,On Golden Pond,74,Connecticut,5,12,1907
+female,55,1983,Meryl Streep,Sophies Choice,33,New Jersey,6,22,1949
+female,56,1984,Shirley MacLaine,Terms of Endearment,49,Virginia,4,24,1934
+female,57,1985,Sally Field,Places in the Heart,38,California,11,6,1946
+female,58,1986,Geraldine Page,Trip to Bountiful,61,Missouri,11,22,1924
+female,59,1987,Marlee Matlin,Children of a Lesser God,21,Illinois,8,24,1965
+female,60,1988,Cher,Moonstruck,41,California,5,20,1946
+female,61,1989,Jodie Foster,The Accused,26,California,11,19,1962
+female,62,1990,Jessica Tandy,Driving Miss Daisy,80,England,6,7,1909
+female,63,1991,Kathy Bates,Misery,42,Tennessee,6,28,1948
+female,64,1992,Jodie Foster,The Silence of the Lambs,29,California,11,19,1962
+female,65,1993,Emma Thompson,Howards End,33,England,4,15,1959
+female,66,1994,Holly Hunter,The Piano,35,Georgia,3,20,1958
+female,67,1995,Jessica Lange,Blue Sky,45,Minnesota,4,20,1949
+female,68,1996,Susan Sarandon,Dead Man Walking,49,New York,10,4,1946
+female,69,1997,Frances McDormand,Fargo,39,Illinois,6,23,1957
+female,70,1998,Helen Hunt,As Good As It Gets,34,California,6,15,1963
+female,71,1999,Gwyneth Paltrow,Shakespeare in Love,26,California,9,28,1972
+female,72,2000,Hilary Swank,Boys Don't Cry,25,Washington,7,30,1974
+female,73,2001,Julia Roberts,Erin Brockovich,33,Georgia,10,28,1967
+female,74,2002,Halle Berry,Monster's Ball,35,Ohio,8,14,1966
+female,75,2003,Nicole Kidman,The Hours,35,Australia,6,20,1967
+female,76,2004,Charlize Theron,Monster,28,South Africa,8,7,1975
+female,77,2005,Hilary Swank,Million Dollar Baby,30,Washington,7,30,1974
+female,78,2006,Reese Witherspoon,Walk the Line,29,Louisiana,3,22,1976
+female,79,2007,Helen Mirren,The Queen,61,England,7,26,1945
+female,80,2008,Marion Cotillard,La Vie en Rose,32,France,9,30,1975
+female,81,2009,Kate Winslet,The Reader,33,England,10,5,1975
+female,82,2010,Sandra Bullock,The Blind Side,45,Virginia,26,7,1964
+female,83,2011,Natalie Portman,Black Swan,29,Israel,9,6,1981
+female,84,2012,Meryl Streep,The Iron Lady,62,New Jersey,6,22,1949
+male,1,1929,Emil Jannings,The Way of All Flesh & The Las,44,Switzerland,7,23,1884
+male,2,1930,Warner Baxter,In Old Arizona,40,Ohio,3,29,1889
+male,3,1931,George Arliss,Disraeli,62,England,4,10,1868
+male,4,1932,Lionel Barrymore,A Free Soul,53,Pennsylvania,4,28,1878
+male,5,1933,Fredric March,Dr. Jekyll and Mr. Hyde,35,Wisconsin,8,31,1897
+male,5,1933,Wallace Beery,The Champ,47,Missouri,4,1,1885
+male,6,1934,Charles Laughton,The Private Life of Henry VIII,34,England,7,1,1899
+male,7,1935,Clark Gable,It Happened One Night,33,Ohio,2,1,1901
+male,8,1936,Victor McLaglen,The Informer,52,England,12,11,1883
+male,9,1937,Paul Muni,The Story of Louis Pasteur,41,Poland,9,22,1895
+male,10,1938,Spencer Tracy,Captains Courageous,37,Wisconsin,4,5,1900
+male,11,1939,Spencer Tracy,Boys Town,38,Wisconsin,4,5,1900
+male,12,1940,Robert Donat,"Goodbye, Mr. Chips",34,England,3,18,1905
+male,13,1941,James Stewart,The Philadelphia Story,32,Pennsylvania,5,20,1908
+male,14,1942,Gary Cooper,Sergeant York,40,Montana,5,7,1901
+male,15,1943,James Cagney,Yankee Doodle Dandy,43,New York,7,17,1899
+male,16,1944,Paul Lukas,Watch on the Rhine,48,Hungary,5,26,1895
+male,17,1945,Bing Crosby,Going My Way,41,Washington,5,3,1903
+male,18,1946,Ray Milland,The Lost Weekend,40,Wales,1,3,1905
+male,19,1947,Fredric March,The Best Years of Our Lives,49,Wisconsin,8,31,1897
+male,20,1948,Ronald Colman,A Double Life,56,England,2,9,1891
+male,21,1949,Laurence Olivier,Hamlet,41,England,5,22,1907
+male,22,1950,Broderick Crawford,All the King's Men,38,Pennsylvania,12,9,1911
+male,23,1951,Jose Ferrer,Cyrano de Bergerac,41,Puerto Rico,1,8,1909
+male,24,1952,Humphrey Bogart,The African Queen,52,New York,12,25,1899
+male,25,1953,Gary Cooper,High Noon,51,Montana,5,7,1901
+male,26,1954,William Holden,Stalag 17,35,Illinois,4,17,1918
+male,27,1955,Marlon Brando,On The Waterfront,30,Nebraska,4,3,1924
+male,28,1956,Ernest Borgnine,Marty,38,Connecticut,1,24,1917
+male,29,1957,Yul Brynner,The King and I,41,Russia,7,7,1915
+male,30,1958,Alec Guinness,The Bridge On The River Kwai,43,England,4,2,1914
+male,31,1959,David Niven,Separate Tables,48,Wales,3,1,1910
+male,32,1960,Charlton Heston,Ben-Hur,36,Illinois,10,4,1923
+male,33,1961,Burt Lancaster,Elmer Gantry,47,New York,11,2,1913
+male,34,1962,Maximilian Schell,Judgment at Nuremburg,31,Austria,12,8,1930
+male,35,1963,Gregory Peck,To Kill a Mockingbird,46,California,4,5,1916
+male,36,1964,Sidney Poitier,Lilies of the Field,36,Florida,2,20,1927
+male,37,1965,Rex Harrison,My Fair Lady,56,England,3,5,1908
+male,38,1966,Lee Marvin,Cat Ballou,41,New York,2,19,1924
+male,39,1967,Paul Scofield,A Man for All Seasons,44,England,1,21,1922
+male,40,1968,Rod Steiger,In the Heat of the Night,42,New York,4,14,1925
+male,41,1969,Cliff Robertson,Charly,43,California,9,9,1925
+male,42,1970,John Wayne,True Grit,62,Iowa,5,26,1907
+male,43,1971,George C. Scott,Patton,43,Virginia,10,18,1927
+male,44,1972,Gene Hackman,The French Connection,41,California,1,30,1930
+male,45,1973,Marlon Brando,The Godfather,48,Nebraska,4,3,1924
+male,46,1974,Jack Lemmon,Save the Tiger,48,Massachusetts,2,8,1925
+male,47,1975,Art Carney,Harry and Tonto,56,New York,11,4,1918
+male,48,1976,Jack Nicholson,One Flew Over The Cuckoo's Nes,38,New York,4,22,1937
+male,49,1977,Peter Finch,Network,60,England,9,28,1916
+male,50,1978,Richard Dreyfuss,The Goodbye Girl,30,New York,10,29,1947
+male,51,1979,Jon Voight,Coming Home,40,New York,12,29,1938
+male,52,1980,Dustin Hoffman,Kramer vs. Kramer,42,California,8,8,1937
+male,53,1981,Robert De Niro,Raging Bull,37,New York,8,17,1943
+male,54,1982,Henry Fonda,On Golden Pond,76,Nebraska,5,16,1905
+male,55,1983,Ben Kingsley,Ghandi,39,England,12,31,1943
+male,56,1984,Robert Duvall,Tender Mercies,52,California,1,5,1931
+male,57,1985,F. Murray Abraham,Amadeus,45,Pennsylvania,10,24,1939
+male,58,1986,William Hurt,Kiss of the Spider Woman,35,Washington DC,3,20,1950
+male,59,1987,Paul Newman,The Color of Money,61,Ohio,1,26,1925
+male,60,1988,Michael Douglas,Wall Street,43,New Jersey,9,25,1944
+male,61,1989,Dustin Hoffman,Rain Man,51,California,8,8,1937
+male,62,1990,Daniel Day-Lewis,My Left Foot,32,England,4,29,1957
+male,63,1991,Jeremy Irons,Reversal of Fortune,42,Isle of Wight,9,19,1948
+male,64,1992,Anthony Hopkins,The Silence of the Lambs,54,Wales,12,31,1937
+male,65,1993,Al Pacino,Scent of a Woman,52,New York,4,25,1940
+male,66,1994,Tom Hanks,Philadelphia,37,California,7,9,1956
+male,67,1995,Tom Hanks,Forest Gump,38,California,7,9,1956
+male,68,1996,Nicolas Cage,Leaving Las Vegas,31,California,1,7,1964
+male,69,1997,Geoffrey Rush,Shine,45,Australia,7,6,1951
+male,70,1998,Jack Nicholson,As Good as It Gets,60,New York,4,22,1937
+male,71,1999,Roberto Benigni,Life is Beautiful,46,Italy,10,27,1952
+male,72,2000,Kevin Spacey,American Beauty,40,New Jersey,7,26,1959
+male,73,2001,Russell Crowe,Gladiator,36,New Zealand,4,7,1964
+male,74,2002,Denzel Washington,Training Day,47,New York,12,28,1954
+male,75,2003,Adrien Brody,The Pianist,29,New York,4,14,1973
+male,76,2004,Sean Penn,Mystic River,43,California,8,17,1960
+male,77,2005,Jamie Foxx,Ray,37,Texas,12,13,1967
+male,78,2006,Philip Hoffman,Capote,38,New York,7,23,1967
+male,79,2007,Forest Whitaker,The Last King of Scotland,45,California,7,15,1961
+male,80,2008,Daniel Day-Lewis,There Will Be Blood,50,England,4,29,1957
+male,81,2009,Sean Penn,Milk,48,California,8,17,1960
+male,82,2010,Jeff Bridges,Crazy Heart,60,California,12,4,1949
+male,83,2011,Colin Firth,The King's Speech,50,England,10,9,1960
+male,84,2012,Jean Dujardin,The Artist,39,France,7,19,1972

@@ -9,18 +9,21 @@
 #' @name oscars
 #' @docType data
 #' @format A tibble with 182 observations on the following 10 variables.
-#' \describe{\item{gender}{Gender of winner, \code{female} or
-#' \code{male}.} \item{oscar_no}{Denotes which Oscar ceremony.}
-#' \item{oscar_yr}{Denotes which Oscar year.} \item{name}{Name
-#' of winning actor or actress.} \item{movie}{Name of movie actor or
-#' actress got the Oscar for.} \item{age}{Age at which the actor or
-#' actress won the Oscar.} \item{birth_pl}{State where the actor or
-#' actress was born, country if foreign.} \item{birth_mo}{Birth month
-#' of actor or actress.} \item{birth_d}{Birth day of actor or actress.}
-#' \item{birth_y}{Birth year of actor or actress.} }
+#' \describe{
+#' \item{oscar_no}{Oscar ceremony number.}
+#' \item{oscar_yr}{Year the Oscar ceremony was held.}
+#' \item{award}{\code{Best actress} or \code{Best actor}.}
+#' \item{name}{Name of winning actor or actress.}
+#' \item{movie}{Name of movie actor or actress got the Oscar for.}
+#' \item{age}{Age at which the actor or actress won the Oscar.}
+#' \item{birth_pl}{US State where the actor or actress was born, country if foreign.}
+#' \item{birth_mo}{Birth month of actor or actress.}
+#' \item{birth_d}{Birth day of actor or actress.}
+#' \item{birth_y}{Birth year of actor or actress.}
+#' }
 #' @source Journal of Statistical Education,
-#' http://www.amstat.org/publications/jse/datasets/oscar2009.dat.txt (no longer
-#' valid), updated through 2012 using information from Wikipedia.org.
+#' http://jse.amstat.org/datasets/oscars.dat.txt, updated through 2019 using
+#' information from Oscars.org and Wikipedia.org.
 #' @keywords datasets
 #' @examples
 #'
