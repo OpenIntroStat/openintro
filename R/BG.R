@@ -38,5 +38,6 @@ BG <- function(col = openintro::COL[5, 9]) {
       graphics::par("usr")[3],
       graphics::par("usr")[2],
       graphics::par("usr")[4],
-      col = col)
+      col = col,
+      border = NA)
 }
