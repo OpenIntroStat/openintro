@@ -35,9 +35,6 @@ table(email[,c("spam", "sent_email")])
 contTable(email[,c("spam", "sent_email")])
 
 }
-\references{
-OpenIntro, \href{http://www.openintro.org}{openintro.org}
-}
 \seealso{
 \code{\link{email}}, \code{\link{cars}}, \code{\link{possum}},
 \code{\link{mariokart}}

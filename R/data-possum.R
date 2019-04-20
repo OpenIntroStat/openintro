@@ -19,7 +19,6 @@
 #'   \item{total_l}{Total length, in cm.}
 #'   \item{tail_l}{Tail length, in cm.}
 #'   }
-#' @references \url{http://www.openintro.org/}
 #' @source Lindenmayer, D. B., Viggers, K. L., Cunningham, R. B., and Donnelly,
 #' C. F. 1995. Morphological variation among columns of the mountain brushtail
 #' possum, Trichosurus caninus Ogilby (Phalangeridae: Marsupiala). Australian

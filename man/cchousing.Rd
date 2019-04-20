@@ -20,8 +20,4 @@ students at a community college.
 hist(cchousing$price)
 
 }
-\references{
-OpenIntro Statistics,
-\href{http://www.openintro.org/stat/textbook.php}{openintro.org}
-}
 \keyword{datasets}

@@ -21,7 +21,6 @@
 #' @author David Diez
 #' @seealso \code{\link{dlsegments}}, \code{\link{CCP}},
 #' \code{\link{ArrowLines}}
-#' @references OpenIntro, \href{http://www.openintro.org}{openintro.org}
 #' @keywords Line Segment Algebra
 #' @export
 #' @examples

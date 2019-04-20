@@ -5,8 +5,9 @@
 \alias{poker}
 \title{Poker winnings during 50 sessions}
 \format{A tibble with 49 observations on the following variable.
-\describe{\item{winnings}{Poker winnings and losses, in US
-dollars.} }}
+\describe{
+  \item{winnings}{Poker winnings and losses, in US dollars.}
+  }}
 \source{
 Anonymity has been requested by the player.
 }
@@ -23,9 +24,5 @@ library(ggplot2)
 ggplot(poker, aes(x = winnings)) +
   geom_histogram(binwidth = 250)
 
-}
-\references{
-OpenIntro Statistics,
-hrefhttp://www.openintro.org/stat/textbook.phpopenintro.org
 }
 \keyword{datasets}

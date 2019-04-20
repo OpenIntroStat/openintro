@@ -23,8 +23,6 @@
 #'   means "yes, additional books were required").}
 #'   \item{diff}{The UCLA Bookstore price minus the Amazon.com price for each book.}
 #'   }
-#' @references See Section 5.1 of the Open Intro Statistics textbook:
-#' \url{http://www.openintro.org/}
 #' @source This data was collected by David M Diez on April 24th.
 #' @keywords datasets
 #' @examples

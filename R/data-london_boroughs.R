@@ -28,7 +28,6 @@
 #' \item{y}{The "northing" component of the coordinate, see details.}
 #' }
 #' @seealso london_murders
-#' @references OpenIntro, \url{http://www.openintro.org}.
 #' @source
 #' \url{https://www.ordnancesurvey.co.uk/opendatadownload/products.html}
 #'

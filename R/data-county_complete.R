@@ -125,7 +125,6 @@
 #'   \item{unemployed_2017}{Number of civilians unemployed in 2017.}
 #'   \item{unemployment_rate_2017}{Unemployment rate in 2017.}
 #'   }
-#' @references OpenIntro Statistics, \href{http://www.openintro.org/os}{openintro.org/os}
 #' @source The data prior to 2011 was from \url{http://census.gov},
 #' though the exact page it came from is no longer available.
 #'

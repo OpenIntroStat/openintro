@@ -94,9 +94,6 @@ pipa \%>\%
        color = "For PIPA")
 
 }
-\references{
-OpenIntro, \url{http://www.openintro.org}
-}
 \keyword{Congress}
 \keyword{PIPA}
 \keyword{SOPA}

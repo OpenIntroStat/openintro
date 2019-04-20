@@ -29,7 +29,6 @@
 #' \code{"partial"}, or \code{"comprehensive"}.}
 #' }
 #' @seealso \code{\link{county_complete}}
-#' @references OpenIntro Statistics, \href{http://www.openintro.org/stat}{openintro.org}
 #' @source These data were collected from
 #' http://quickfacts.census.gov/qfd/states/ (no longer available) and its
 #' accompanying pages.

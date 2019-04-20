@@ -53,9 +53,6 @@ ggplot(teacher, aes(x = years, y = base, color = degree)) +
        color = "Degree")
 
 }
-\references{
-OpenIntro, \url{http://www.openintro.org}
-}
 \keyword{Michigan}
 \keyword{datasets}
 \keyword{degree}

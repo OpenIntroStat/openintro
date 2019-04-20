@@ -102,9 +102,6 @@ ggplot(states_map, aes(map_id = region)) +
 
 
 }
-\references{
-OpenIntro, \url{http://www.openintro.org}
-}
 \keyword{States}
 \keyword{United}
 \keyword{crime}

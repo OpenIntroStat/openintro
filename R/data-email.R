@@ -45,8 +45,6 @@
 #'   number (under 1 million), or a big number.}
 #'   }
 #' @seealso \code{\link{email50}}, \code{\link{county}}
-#' @references ~~ OpenIntro Statistics,
-#' \href{http://www.openintro.org/stat/textbook.php}{openintro.org} ~~
 #' @source David Diez's Gmail Account, early months of 2012. All personally
 #' identifiable information has been removed.
 #' @keywords datasets

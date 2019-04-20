@@ -45,9 +45,6 @@ dim(county)
 head(county)
 
 }
-\references{
-OpenIntro Statistics, \href{http://www.openintro.org/stat}{openintro.org}
-}
 \seealso{
 \code{\link{county_complete}}
 }

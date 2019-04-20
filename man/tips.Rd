@@ -48,7 +48,4 @@ ggplot(tips, aes(x = tip, fill = factor(day))) +
  labs(x = "Tip", y = "Density", fill = "Day")
 
 }
-\references{
-\url{http://www.openintro.org/}
-}
 \keyword{datasets}

@@ -33,9 +33,6 @@ the dot plot are returned from the function in a list.
 #
 
 }
-\references{
-OpenIntro, \href{http://www.openintro.org}{openintro.org}
-}
 \seealso{
 \code{\link{dotPlot}}, \code{\link{histPlot}}
 }

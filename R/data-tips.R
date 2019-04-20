@@ -19,7 +19,6 @@
 #'   \item{bill}{Total bill for the group.}
 #'   \item{tip}{Total tip from the group.}
 #'   }
-#' @references \url{http://www.openintro.org/}
 #' @source Simulated data set.
 #' @keywords datasets
 #' @examples

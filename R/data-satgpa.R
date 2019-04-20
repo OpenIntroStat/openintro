@@ -15,11 +15,7 @@
 #'   \item{fy_gpa}{First year (college) grade point average.}
 #'   }
 #' @references Data retrieved from
-#'
 #' \url{https://www.dartmouth.edu/~chance/course/Syllabi/Princeton96/Class12.html}
-#'
-#' Data utilized in Chapter 7 of the Open Intro Statistics book:
-#' \url{http://www.openintro.org/}
 #' @source Educational Testing Service originally collected the data.
 #' @keywords datasets
 #' @examples

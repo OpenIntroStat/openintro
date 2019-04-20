@@ -10,8 +10,6 @@
 #' \describe{
 #'   \item{price}{Monthly housing price, simulated.}
 #'   }
-#' @references OpenIntro Statistics,
-#' \href{http://www.openintro.org/stat/textbook.php}{openintro.org}
 #' @keywords datasets
 #' @examples
 #'

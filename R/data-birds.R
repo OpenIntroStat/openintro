@@ -46,7 +46,6 @@
 #' \item{birds_struck}{Number of birds/wildlife struck: \code{0},
 #' \code{1}, \code{2-10}, \code{11-100}, \code{Over 100}.}
 #' }
-#' @references OpenIntro, \url{http://www.openintro.org}.
 #' @source
 #' \url{http://opendata.socrata.com/Government/1990-1999-Reported-Aircraft-Wildlife-Bird-Strikes/inea-i3an}.
 #' Original data from \url{http://wildlife-mitigation.tc.faa.gov/wildlife/default.aspxfaa.gov}.

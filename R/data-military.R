@@ -25,7 +25,6 @@
 #' \item{rank}{The numeric rank of the service member (higher number indicates
 #' higher rank).}
 #' }
-#' @references OpenIntro, \url{http://www.openintro.org}.
 #' @source Data provided by the Department of Defense and made available at
 #' \url{https://explore.data.gov/Population/Personnel-Trends-by-Gender-Race/zqae-ad8kdata.gov}.
 #' Retrieval date: Feb 20, 2012.

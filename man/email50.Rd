@@ -59,10 +59,6 @@ identical(d, email50)
 # the "[c(1,26,2:25,27:50),]" was added to reorder the cases
 
 }
-\references{
-~~ OpenIntro Statistics,
-\href{http://www.openintro.org/stat/textbook.php}{openintro.org} ~~
-}
 \seealso{
 \code{\link{email}}, \code{\link{county}}
 }

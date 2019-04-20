@@ -28,8 +28,6 @@
 #'   \item{div_place}{Division place, also broken up by gender.}
 #'   \item{div_tot}{Total number of people in the division (again, also split by gender).}
 #'   }
-#' @references ~~ OpenIntro Statistics
-#' (\href{http://www.openintro.org/stat/textbook.php}{openintro.org}) ~~
 #' @source \href{http://www.cherryblossom.org/}{cherryblossom.org}
 #' @keywords datasets
 #' @examples

@@ -35,7 +35,6 @@
 #' not a factor.}
 #' \item{unempl}{Unemployment rate (February 2012, preliminary).}
 #' }
-#' @references OpenIntro, \url{http://www.openintro.org}
 #' @source Please note that we have not validated the Infochimps data. The
 #' other data were collected directly from the corresponding websites.
 #'

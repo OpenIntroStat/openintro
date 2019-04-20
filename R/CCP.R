@@ -35,7 +35,6 @@
 #' @author David Diez
 #' @seealso \code{\link{lsegments}}, \code{\link{dlsegments}},
 #' \code{\link{ArrowLines}}
-#' @references OpenIntro, \href{http://www.openintro.org}{openintro.org}
 #' @keywords Cartesian Coordinate Plane Plane Algebra
 #' @export
 #' @examples

@@ -81,9 +81,6 @@ birds \%>\%
     coord_flip()
 
 }
-\references{
-OpenIntro, \url{http://www.openintro.org}.
-}
 \keyword{airplane}
 \keyword{bird}
 \keyword{datasets}

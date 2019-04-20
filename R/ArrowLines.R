@@ -27,7 +27,6 @@
 #' @author David Diez
 #' @seealso \code{\link{lsegments}}, \code{\link{dlsegments}},
 #' \code{\link{CCP}}
-#' @references OpenIntro, \href{http://www.openintro.org}{openintro.org}
 #' @keywords Line Segment Algebra
 #' @export
 #' @examples

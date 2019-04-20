@@ -27,6 +27,9 @@ All prices are in US dollars.
   character on screen to turn.}
   \item{title}{The title of the auctions.}
 }}
+\source{
+\url{http://www.ebay.com}
+}
 \usage{
 mariokart
 }
@@ -109,10 +112,5 @@ ggplot(aug_m3, aes(x = wheels, y = .resid)) +
   labs(x = "Number of wheels", y = "Residuals",
        main = "Notice curvature")
 
-}
-\references{
-\url{http://www.ebay.com}
-
-\url{http://www.openintro.org/}
 }
 \keyword{datasets}

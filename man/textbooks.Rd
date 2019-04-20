@@ -43,8 +43,4 @@ ggplot(textbooks, aes(x = diff)) +
 t.test(textbooks$diff)
 
 }
-\references{
-See Section 5.1 of the Open Intro Statistics textbook:
-\url{http://www.openintro.org/}
-}
 \keyword{datasets}

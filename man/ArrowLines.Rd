@@ -65,9 +65,6 @@ y <- x^2 - 3
 points(x, y, col=COL[1], pch=19, cex=1.2)
 
 }
-\references{
-OpenIntro, \href{http://www.openintro.org}{openintro.org}
-}
 \seealso{
 \code{\link{lsegments}}, \code{\link{dlsegments}},
 \code{\link{CCP}}

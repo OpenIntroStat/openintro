@@ -16,7 +16,6 @@
 #' stacked dot plot.
 #' @author David Diez
 #' @seealso \code{\link{dotPlot}}, \code{\link{histPlot}}
-#' @references OpenIntro, \href{http://www.openintro.org}{openintro.org}
 #' @keywords stacked dot plot dot plot
 #' @export
 #' @examples

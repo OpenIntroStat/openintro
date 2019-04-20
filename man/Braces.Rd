@@ -35,5 +35,5 @@ Braces(0.5, 0.5, face.radians = 3 * pi / 2)
 \code{\link{dlsegments}}
 }
 \author{
-David Diez (david@openintro.org)
+David Diez
 }

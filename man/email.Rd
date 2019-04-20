@@ -106,10 +106,6 @@ lines(htmlNo, col=4)
 lines(htmlYes, lwd=2, col=2)
 
 }
-\references{
-~~ OpenIntro Statistics,
-\href{http://www.openintro.org/stat/textbook.php}{openintro.org} ~~
-}
 \seealso{
 \code{\link{email50}}, \code{\link{county}}
 }

@@ -37,7 +37,6 @@
 #' \item{chamber}{Whether the legislator is a member of either the
 #' \code{house} or \code{senate}.}
 #' }
-#' @references OpenIntro, \url{http://www.openintro.org}
 #' @source \url{http://projects.propublica.org/sopa}
 #'
 #' The list may be slightly out of date since many politician's perspectives on

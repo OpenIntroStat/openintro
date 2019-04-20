@@ -23,7 +23,6 @@
 #' \item{total}{Total annual salary of the teacher, resulting from the
 #' sum of base salary + fica + retirement, in dollars.}
 #' }
-#' @references OpenIntro, \url{http://www.openintro.org}
 #' @source Posted on
 #' \href{https://opendata.socrata.com/Education/St-Louis-Teachers-Salaries-2009-2010-/nvag-9887}{opendata.socrata.com}
 #' by Jeff Kowalski.

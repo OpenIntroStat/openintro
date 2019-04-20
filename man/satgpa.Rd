@@ -39,10 +39,6 @@ abline(g)
 }
 \references{
 Data retrieved from
-
 \url{https://www.dartmouth.edu/~chance/course/Syllabi/Princeton96/Class12.html}
-
-Data utilized in Chapter 7 of the Open Intro Statistics book:
-\url{http://www.openintro.org/}
 }
 \keyword{datasets}

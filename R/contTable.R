@@ -17,7 +17,6 @@
 #' @author David Diez
 #' @seealso \code{\link{email}}, \code{\link{cars}}, \code{\link{possum}},
 #' \code{\link{mariokart}}
-#' @references OpenIntro, \href{http://www.openintro.org}{openintro.org}
 #' @keywords table LaTeX
 #' @export
 #' @examples

@@ -9,8 +9,6 @@
 #' @docType data
 #' @format A \code{7-by-4} matrix of 7 colors with four fading scales: blue,
 #' green, yellow, red, black, gray, and light gray.
-#' @references OpenIntro Statistics, Second Edition,
-#' \href{http://www.openintro.org}{openintro.org}.
 #' @source Colors selected by OpenIntro's in-house graphic designer,
 #' \href{http://www.meenalpatel.com}{Meenal Patel}.
 #' @keywords datasets

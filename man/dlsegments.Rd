@@ -60,9 +60,6 @@ dlsegments(c(-3,3), c(1, 1000),
            r=c("o", "o"), l=c("c", "o"), type="in", COL=COL[4])
 
 }
-\references{
-OpenIntro, \href{http://www.openintro.org}{openintro.org}
-}
 \seealso{
 \code{\link{lsegments}}, \code{\link{CCP}},
 \code{\link{ArrowLines}}

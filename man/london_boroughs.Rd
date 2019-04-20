@@ -59,9 +59,6 @@ ggplot(london_boroughs_murders) +
   labs(x = "Easting", y = "Northing", fill = "Number of murders")
 
 }
-\references{
-OpenIntro, \url{http://www.openintro.org}.
-}
 \seealso{
 london_murders
 }

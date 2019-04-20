@@ -221,9 +221,6 @@ boxplot(county$median_hh_income ~ county$median_edu,
 }
 
 }
-\references{
-OpenIntro Statistics, \href{http://www.openintro.org/os}{openintro.org/os}
-}
 \seealso{
 \code{\link{county}}
 }

@@ -66,9 +66,6 @@ military \%>\%
   )
 
 }
-\references{
-OpenIntro, \url{http://www.openintro.org}.
-}
 \keyword{datasets}
 \keyword{demographics}
 \keyword{military}

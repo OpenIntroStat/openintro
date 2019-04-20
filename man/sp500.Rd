@@ -61,9 +61,6 @@ ggplot(sp500, aes(x = ev_over_rev, y = forward_pe)) +
        y = "Market cap / forecasted earnings, logged")
 
 }
-\references{
-OpenIntro, \url{http://www.openintro.org}
-}
 \keyword{500}
 \keyword{SP}
 \keyword{datasets}

@@ -56,8 +56,4 @@ ggplot(run10, aes(y = time, x = gender)) +
 run10samp
 
 }
-\references{
-~~ OpenIntro Statistics
-(\href{http://www.openintro.org/stat/textbook.php}{openintro.org}) ~~
-}
 \keyword{datasets}

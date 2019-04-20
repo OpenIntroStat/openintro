@@ -12,7 +12,7 @@
 #' @param short The units for the short dimension of the braces.  This must be
 #' less than or equal to half of the long dimension.
 #' @param \dots Arguments passed to \code{\link[graphics]{lines}}.
-#' @author David Diez (david@@openintro.org)
+#' @author David Diez
 #' @seealso \code{\link{dlsegments}}
 #' @export
 #' @examples

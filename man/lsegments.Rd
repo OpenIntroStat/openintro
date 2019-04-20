@@ -42,9 +42,6 @@ lsegments(c(5,7), "c", "c", ylim=c(-0.3, 0.2))
 lsegments(c(4,1000), "o", "o", ylim=c(-0.3, 0.2))
 
 }
-\references{
-OpenIntro, \href{http://www.openintro.org}{openintro.org}
-}
 \seealso{
 \code{\link{dlsegments}}, \code{\link{CCP}},
 \code{\link{ArrowLines}}
