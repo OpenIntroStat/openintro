@@ -22,7 +22,7 @@
   e.g. `Jan thru Mar`.}
   }}
 \source{
-<http://www.census.gov/acs>
+\url{http://www.census.gov/acs}
 }
 \usage{
 acs12

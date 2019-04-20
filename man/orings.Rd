@@ -8,7 +8,7 @@
 \describe{\item{temp}{Temperature, in Fahrenheit.}
 \item{damage}{Number of damaged O-rings (out of 6).} }}
 \source{
-https://archive.ics.uci.edu/ml/datasets/Challenger+USA+Space+Shuttle+O-Ring
+\url{https://archive.ics.uci.edu/ml/datasets/Challenger+USA+Space+Shuttle+O-Ring}
 }
 \usage{
 orings

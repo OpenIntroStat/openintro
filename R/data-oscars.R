@@ -22,7 +22,7 @@
 #' \item{birth_y}{Birth year of actor or actress.}
 #' }
 #' @source Journal of Statistical Education,
-#' http://jse.amstat.org/datasets/oscars.dat.txt, updated through 2019 using
+#' \url{http://jse.amstat.org/datasets/oscars.dat.txt}, updated through 2019 using
 #' information from Oscars.org and Wikipedia.org.
 #' @keywords datasets
 #' @examples

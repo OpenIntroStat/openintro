@@ -30,7 +30,7 @@
 #'   }
 #' @references ~~ OpenIntro Statistics
 #' (\href{http://www.openintro.org/stat/textbook.php}{openintro.org}) ~~
-#' @source ~~ \href{http://www.cherryblossom.org/}{cherryblossom.org} ~~
+#' @source \href{http://www.cherryblossom.org/}{cherryblossom.org}
 #' @keywords datasets
 #' @examples
 #'

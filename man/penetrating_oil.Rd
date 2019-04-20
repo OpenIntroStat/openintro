@@ -14,7 +14,7 @@ Purple}, and \code{WD-40}.}
 which was measured in foot-pounds.}
 }}
 \source{
-https://www.youtube.com/watch?v=xUEob2oAKVs
+\url{https://www.youtube.com/watch?v=xUEob2oAKVs}
 }
 \usage{
 penetrating_oil

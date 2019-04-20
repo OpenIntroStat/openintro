@@ -43,7 +43,7 @@ Aeronautics Board.  Code U is for airports not receiving this scheduled
 service.}
 }}
 \source{
-Downloaded from https://www.faa.gov/airports/airport_safety/airportdata_5010/menu/
+Downloaded from \url{https://www.faa.gov/airports/airport_safety/airportdata_5010/menu}
 on 2018-08-13.
 }
 \usage{

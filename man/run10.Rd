@@ -28,7 +28,7 @@ observations on 9 variables, which are featured with an asterisk.
   \item{div_tot}{Total number of people in the division (again, also split by gender).}
   }}
 \source{
-~~ \href{http://www.cherryblossom.org/}{cherryblossom.org} ~~
+\href{http://www.cherryblossom.org/}{cherryblossom.org}
 }
 \usage{
 run10

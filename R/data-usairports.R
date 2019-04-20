@@ -3,7 +3,7 @@
 #' Airports located in all regions with Federal Aviation Administration (FAA)
 #' oversight.
 #'
-#' @source Downloaded from https://www.faa.gov/airports/airport_safety/airportdata_5010/menu/
+#' @source Downloaded from \url{https://www.faa.gov/airports/airport_safety/airportdata_5010/menu}
 #' on 2018-08-13.
 #' @format A tibble with 19615 rows and 14 variables:
 #' \describe{

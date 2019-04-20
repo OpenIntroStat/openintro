@@ -15,7 +15,7 @@
 #'   \item{race}{a factor with levels \code{1}, \code{2}, \code{3}, \code{4},
 #'   \code{5}, \code{6}, and \code{7+}}
 #'   }
-#' @source http://www.google.com/finance
+#' @source \url{http://www.google.com/finance}
 #' @keywords datasets
 #' @examples
 #'

@@ -30,7 +30,7 @@
   }}
 \source{
 US Environmental Protection Agency, AirData, 2011.
-http://www3.epa.gov/airdata/ad_data_daily.html
+\url{http://www3.epa.gov/airdata/ad_data_daily.html}
 }
 \usage{
 pm25_2011_durham

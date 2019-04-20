@@ -37,6 +37,6 @@ boxplot(vote_nsa$money / 1000 ~ vote_nsa$phone_spy_vote,
 \references{
 Article by Wired: \emph{Lawmakers Who Upheld NSA Phone Spying
 Received Double the Defense Industry Cash}.
-\url{http://www.wired.com/threatlevel/2013/07/money-nsa-vote/}
+\url{http://www.wired.com/threatlevel/2013/07/money-nsa-vote}
 }
 \keyword{datasets}

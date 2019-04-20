@@ -45,7 +45,7 @@ Earth Science Information Network (CIESIN), Columbia University
 In collaboration with: World Economic Forum, Geneva, Switzerland Joint
 Research Centre of the European Commission, Ispra, Italy.
 
-Available at \url{http://www.yale.edu/esi/}.
+Available at \url{http://www.yale.edu/esi}.
 }
 \usage{
 esi

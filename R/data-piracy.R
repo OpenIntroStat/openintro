@@ -38,7 +38,7 @@
 #' \code{house} or \code{senate}.}
 #' }
 #' @references OpenIntro, \url{http://www.openintro.org}
-#' @source \url{http://projects.propublica.org/sopa/}
+#' @source \url{http://projects.propublica.org/sopa}
 #'
 #' The list may be slightly out of date since many politician's perspectives on
 #' the legislation were in flux at the time of data collection.

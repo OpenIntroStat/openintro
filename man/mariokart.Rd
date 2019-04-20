@@ -111,7 +111,7 @@ ggplot(aug_m3, aes(x = wheels, y = .resid)) +
 
 }
 \references{
-\url{http://www.ebay.com/}
+\url{http://www.ebay.com}
 
 \url{http://www.openintro.org/}
 }

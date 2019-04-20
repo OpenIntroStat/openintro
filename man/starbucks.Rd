@@ -17,7 +17,7 @@
   \code{sandwich}}
   }}
 \source{
-http://www.starbucks.com/menu/nutrition (March 10, 2011)
+\url{http://www.starbucks.com/menu/nutrition}, Doenloaded March 10, 2011
 }
 \usage{
 starbucks

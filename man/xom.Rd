@@ -15,7 +15,7 @@
   \item{adj_close}{a numeric vector}
   }}
 \source{
-http://finance.yahoo.com
+\url{http://finance.yahoo.com}
 }
 \usage{
 xom

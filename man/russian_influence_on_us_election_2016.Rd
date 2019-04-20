@@ -11,7 +11,7 @@
   United States.}
 }}
 \source{
-\url{http://www.pewglobal.org/2018/08/21/russians-say-their-government-did-not-try-to-influence-u-s-presidential-election/}
+\url{http://www.pewglobal.org/2018/08/21/russians-say-their-government-did-not-try-to-influence-u-s-presidential-election}
 }
 \usage{
 russian_influence_on_us_election_2016

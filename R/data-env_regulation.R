@@ -24,7 +24,7 @@
 #'   and \code{"Don't know"}.}
 #'   }
 #' @source
-#' \url{http://www.pewinternet.org/2017/05/16/public-divides-over-environmental-regulation-and-energy-policy/}
+#' \url{http://www.pewinternet.org/2017/05/16/public-divides-over-environmental-regulation-and-energy-policy}
 #' @keywords datasets
 #' @examples
 #'

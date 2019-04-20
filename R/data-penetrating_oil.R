@@ -16,7 +16,7 @@
 #'   \item{torque}{Torque required to loosen the rusty bolt,
 #' which was measured in foot-pounds.}
 #' }
-#' @source https://www.youtube.com/watch?v=xUEob2oAKVs
+#' @source \url{https://www.youtube.com/watch?v=xUEob2oAKVs}
 #' @keywords datasets
 #' @examples
 #'

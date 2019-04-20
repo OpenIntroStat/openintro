@@ -17,7 +17,7 @@
 #'   \code{hot breakfast}, \code{parfait}, \code{petite}, \code{salad}, and
 #'   \code{sandwich}}
 #'   }
-#' @source http://www.starbucks.com/menu/nutrition (March 10, 2011)
+#' @source \url{http://www.starbucks.com/menu/nutrition}, Doenloaded March 10, 2011
 #' @keywords datasets
 #' @examples
 #'

@@ -31,7 +31,7 @@
 #'   \item{site_longitude}{a numeric vector}
 #'   }
 #' @source US Environmental Protection Agency, AirData, 2011.
-#' http://www3.epa.gov/airdata/ad_data_daily.html
+#' \url{http://www3.epa.gov/airdata/ad_data_daily.html}
 #' @keywords datasets
 #' @examples
 #'

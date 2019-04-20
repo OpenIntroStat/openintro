@@ -23,7 +23,7 @@ PIPA/SOPA: computer and internet companies.}
 \code{house} or \code{senate}.}
 }}
 \source{
-\url{http://projects.propublica.org/sopa/}
+\url{http://projects.propublica.org/sopa}
 
 The list may be slightly out of date since many politician's perspectives on
 the legislation were in flux at the time of data collection.

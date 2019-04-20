@@ -18,7 +18,7 @@
 #'   \item{last_updated}{Date estimate was last updated.}
 #'}
 #' @source Fueleconomy.gov,
-#' https://www.fueleconomy.gov/mpg/MPG.do?action=mpgData&vehicleID=38531&browser=true&details=on,
+#' \url{https://www.fueleconomy.gov/mpg/MPG.do?action=mpgData&vehicleID=38531&browser=true&details=on},
 #' retrieved on April 14, 2019.
 #' @keywords datasets
 #' @examples

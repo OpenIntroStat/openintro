@@ -55,7 +55,7 @@
 #'
 #' National Highway Traffic Safety Administration
 #' (\href{http://www-fars.nhtsa.dot.gov/QueryTool/QuerySection/SelectFields.aspx}{\code{tr_deaths},
-#' \code{tr_deaths_no_alc}}), \url{http://www-fars.nhtsa.dot.gov/}
+#' \code{tr_deaths_no_alc}}), \url{http://www-fars.nhtsa.dot.gov}
 #'
 #' Bureau of Labor Statistics (\code{unempl}),
 #' \url{http://www.bls.gov/web/laus/laumstrk.htm}

@@ -1,10 +1,10 @@
 #' United States House of Representatives historical make-up
-#' 
+#'
 #' The make-up of the United States House of Representatives every two years
 #' since 1789. The last Congress included is the 112th Congress, which
 #' completes its term in 2013.
-#' 
-#' 
+#'
+#'
 #' @name house
 #' @docType data
 #' @format A tibble with 112 observations on the following 12 variables.
@@ -17,20 +17,20 @@
 #' \item{del}{Delegate} \item{res}{Resident commissioner} }
 #' @source Office of the Clerk of the U.S. House of Representatives Party
 #' Divisions:
-#' 
+#'
 #' \url{http://clerk.house.gov/art_history/house_history/partyDiv.html}
-#' 
+#'
 #' Data for Congresses 1-111 was recorded from the website above on November
 #' 1st, 2010. It appears this page was later moved to
-#' 
+#'
 #' http://artandhistory.house.gov/house_history/partyDiv.aspx (no longer
 #' available)
-#' 
+#'
 #' where data for Congress 112 was recorded on April 21, 2011.
 #' @keywords datasets
 #' @examples
-#' 
-#' 
+#'
+#'
 #' #=====> Examine two-party relationship since 1855 <=====#
 #' these <- 34:112
 #' COL   <- c("#EEDDBB", "#DDEEBB", "#DDDDDD",
@@ -55,6 +55,6 @@
 #'       c("Civil War", "World War I", "Great Depression", "World War II",
 #'         "Vietnam War Start", "Vietnam War Escalated"),
 #'       bg="#FFFFFF", border="#FFFFFF")
-#' 
-#' 
+#'
+#'
 "house"

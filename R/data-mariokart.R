@@ -48,7 +48,7 @@
 #'   character on screen to turn.}
 #'   \item{title}{The title of the auctions.}
 #' }
-#' @references \url{http://www.ebay.com/}
+#' @references \url{http://www.ebay.com}
 #'
 #' \url{http://www.openintro.org/}
 #' @keywords datasets

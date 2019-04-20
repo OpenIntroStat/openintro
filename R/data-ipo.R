@@ -16,7 +16,7 @@
 #' contains the line-by-line text of the IPO Prospectus of Facebook, Google,
 #' and LinkedIn, respectively.
 #' @references
-#' \url{http://blogs.wsj.com/totalreturn/2012/02/06/mark-zuckerberg-ceo-for-life/}
+#' \url{http://blogs.wsj.com/totalreturn/2012/02/06/mark-zuckerberg-ceo-for-life}
 #'
 #' Credit to Qian Liu at the
 #' \href{http://eng.wealthfront.com/2012/02/visualize-facebooks-ipo-prospectus.html}{Wealthfront Blog}

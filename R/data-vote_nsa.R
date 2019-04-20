@@ -20,7 +20,7 @@
 #'   }
 #' @references Article by Wired: \emph{Lawmakers Who Upheld NSA Phone Spying
 #' Received Double the Defense Industry Cash}.
-#' \url{http://www.wired.com/threatlevel/2013/07/money-nsa-vote/}
+#' \url{http://www.wired.com/threatlevel/2013/07/money-nsa-vote}
 #' @source Maplight (\url{maplight.org}).
 #' \url{http://s3.documentcloud.org/documents/741074/amash-amendment-vote-maplight.pdf}
 #' @keywords datasets

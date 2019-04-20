@@ -10,7 +10,7 @@
   \code{5}, \code{6}, and \code{7+}}
   }}
 \source{
-http://www.google.com/finance
+\url{http://www.google.com/finance}
 }
 \usage{
 sp500_seq

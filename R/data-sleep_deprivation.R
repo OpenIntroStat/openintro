@@ -15,7 +15,7 @@
 #'   }
 #' @source National Sleep Foundation, 2012 Sleep in America Poll:
 #' Transportation Workers' Sleep, 2012.
-#' https://sleepfoundation.org/sleep-polls-data/sleep-in-america-poll/2012-transportation-workers-and-sleep
+#' \url{https://sleepfoundation.org/sleep-polls-data/sleep-in-america-poll/2012-transportation-workers-and-sleep}
 #' @keywords datasets
 #' @examples
 #'

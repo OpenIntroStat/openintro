@@ -21,7 +21,7 @@ present}, \code{Never married/single}, \code{Separated} and \code{Widowed}.}
   \item{total_personal_income}{Total personal income (in U.S. dollars).}
 }}
 \source{
-\url{http://factfinder.census.gov/}
+\url{http://factfinder.census.gov}
 }
 \usage{
 census
