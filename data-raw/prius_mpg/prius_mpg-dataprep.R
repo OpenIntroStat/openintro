@@ -10,4 +10,4 @@ prius_mpg <- prius_mpg_raw %>%
   mutate(last_updated = mdy(last_updated))
 
 # save -------------------------------------------------------------------------
-use_data(prius_mpg)
+use_data(prius_mpg, overwrite = TRUE)
