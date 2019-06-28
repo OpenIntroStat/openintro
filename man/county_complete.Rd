@@ -6,7 +6,7 @@
 \title{United States Counties}
 \format{A tibble with 3143 observations on the following 111 variables.
 \describe{
-#'   \item{state}{State.}
+  \item{state}{State.}
   \item{name}{County name.}
   \item{FIPS}{FIPS code.}
   \item{pop2000}{2000 population.}

@@ -12,7 +12,7 @@
 #'   \item{age}{Age a first marriage.}
 #'   }
 #' @source National Survey of Family Growth, 2006-2010 cycle,
-#' <http://www.cdc.gov/nchs/nsfg/nsfg_2006_2010_puf.htm>.
+#' \url{http://www.cdc.gov/nchs/nsfg/nsfg_2006_2010_puf.htm}.
 #' @keywords datasets
 #' @examples
 #'
