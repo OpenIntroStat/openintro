@@ -22,11 +22,11 @@ Suggests:
     broom,
     dplyr,
     forcats,
-    ggplot2 (>= 2.2.1),
     lubridate,
     testthat,
     tidyr
 Imports: 
+    ggplot2 (>= 2.2.1),
     graphics,
     tibble
 Depends: 
