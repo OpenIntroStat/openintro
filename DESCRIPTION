@@ -5,6 +5,9 @@ Authors@R: c(
     person("Mine", "\u00C7etinkaya-Rundel", email = "mine@rstudio.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0001-6452-2420")),
     person("David", "Diez", email = "david.m.diez@gmail.com", role = c("aut")),
     person("Andrew", "Bray", email = "abray@reed.edu", role = c("aut")),
+    person("Albert", "Kim", email = "albert.ys.kim@gmail.com", role = c("aut")),
+    person("Ben", "Baumer", email = "ben.baumer@gmail.com", role = c("aut")),
+    person("Chester", "Ismay", email = "chester.ismay@gmail.com", role = c("aut")),
     person("Christopher", "Barr", role = c("aut"))
     )
 Description: Supplemental functions and data for 'OpenIntro' resources, which 

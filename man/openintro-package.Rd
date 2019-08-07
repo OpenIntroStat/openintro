@@ -29,6 +29,9 @@ Authors:
 \itemize{
   \item David Diez \email{david.m.diez@gmail.com}
   \item Andrew Bray \email{abray@reed.edu}
+  \item Albert Kim \email{albert.ys.kim@gmail.com}
+  \item Ben Baumer \email{ben.baumer@gmail.com}
+  \item Chester Ismay \email{chester.ismay@gmail.com}
   \item Christopher Barr
 }
 
