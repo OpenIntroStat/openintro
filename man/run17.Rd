@@ -3,6 +3,7 @@
 \docType{data}
 \name{run17}
 \alias{run17}
+\alias{run17samp}
 \title{Cherry Blossom Run data, 2017}
 \format{A tibble with 19961 observations on the following 9 variables.
 \describe{
@@ -42,6 +43,9 @@ library(ggplot2)
 ggplot(run17, aes(x = pace_sec)) +
   geom_histogram(binwidth = 100) +
   facet_wrap(~event)
+
+# set.seed(50)
+# run17samp <- run17[sample(1:nrow(run17), 100), ]
 
 }
 \keyword{datasets}

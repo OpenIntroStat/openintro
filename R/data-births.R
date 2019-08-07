@@ -18,8 +18,7 @@
 #'   \item{sex_baby}{Gender of the baby.}
 #'   \item{smoke}{Whether or not the mother was a smoker.}
 #'   }
-#' @references Birth records released by North Carolina in 2004.
-#' @source These birth records were
+#' @source Birth records released by North Carolina in 2004.
 #' @keywords datasets
 #' @examples
 #'

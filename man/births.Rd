@@ -17,7 +17,7 @@
   \item{smoke}{Whether or not the mother was a smoker.}
   }}
 \source{
-These birth records were
+Birth records released by North Carolina in 2004.
 }
 \usage{
 births
@@ -33,8 +33,5 @@ library(ggplot2)
 ggplot(births, aes(x = smoke, y = weight)) +
   geom_boxplot()
 
-}
-\references{
-Birth records released by North Carolina in 2004.
 }
 \keyword{datasets}
