@@ -1,0 +1,65 @@
+---
+title: "Lab 1: Intro to R"
+author: "Name"
+date: "Date of lab session"
+output: oilabs::lab_report
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(oilabs)
+```
+
+* * *
+
+```{r}
+data(arbuthnot)
+```
+
+
+### Exercise 1: 
+
+```{r eval = FALSE}
+arbuthnot$girls
+```
+
+
+### Exercise 2:
+
+```{r}
+
+```
+
+
+### Exercise 3:
+
+```{r echo = FALSE}
+
+```
+
+
+### Exercise 4:
+
+```{r}
+
+```
+
+
+### Exercise 5:
+
+
+
+### Exercise 6:
+
+```{r}
+
+```
+
+
+### Exercise 7:
+
+```{r}
+
+```
+

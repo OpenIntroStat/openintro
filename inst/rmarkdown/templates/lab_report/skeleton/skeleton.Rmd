@@ -1,0 +1,24 @@
+---
+title: "Generic Lab Name"
+author: "Name"
+date: "Date of lab session"
+output: oilabs::lab_report
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(oilabs)
+```
+
+* * *
+
+### Exercise 1: 
+
+```{r}
+
+```
+
+
+
+

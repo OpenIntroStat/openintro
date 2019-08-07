@@ -1,0 +1,5 @@
+name: Lab Report
+description: >
+ Template for creating labs from OpenIntro textbook
+create_dir: true
+
