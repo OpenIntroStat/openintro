@@ -22,7 +22,8 @@ Supplemental functions and data for 'OpenIntro' resources, which includes
 open-source textbooks and resources for introductory statistics at 
 [openintro.org](https://www.openintro.org/). The package contains data sets used 
 in our open-source textbooks along with custom plotting functions for reproducing 
-book figures. Note that many functions and examples include color transparency; 
+book figures. The package also contains the datasets used in OpenIntro labs. 
+Note that many functions and examples include color transparency; 
 some plotting elements may not show up properly (or at all) when run in some 
 versions of Windows operating system.
 
@@ -43,18 +44,8 @@ install_github("OpenIntroStat/openintro-r-package")
 ```
 
 This package was produced as part of the OpenIntro project. For the accompanying 
-textbook, visit openintro.org. A PDF of the textbook is free and paperbacks can 
+textbook, visit [openintro.org](https://openintro.org). A PDF of the textbook is free and paperbacks can 
 be purchased online (royalty-free).
-
-## Datasets
-
-The following are all the datasets in the package.
-
-```{r treeDiag}
-library(printr)
-library(openintro)
-data(package = "openintro")
-```
 
 
 ## Code of Conduct

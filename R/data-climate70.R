@@ -30,17 +30,17 @@
 #' # This geographic limitation may be due to the particular
 #' # years considered, since locations without both 1948 and
 #' # 2018 were discarded for this (simple) data set.
-#' plot(d.$longitude, d.$latitude)
+#' plot(climate70$longitude, climate70$latitude)
 #'
 #' par(mfrow = c(2, 2))
-#' plot(d.$dx70_1948, d.$dx70_2018)
+#' plot(climate70$dx70_1948, climate70$dx70_2018)
 #' abline(0, 1, lty = 2)
-#' plot(d.$dx90_1948, d.$dx90_2018)
+#' plot(climate70$dx90_1948, climate70$dx90_2018)
 #' abline(0, 1, lty = 2)
-#' hist(d.$dx70_2018 - d.$dx70_1948)
-#' hist(d.$dx90_2018 - d.$dx90_1948)
+#' hist(climate70$dx70_2018 - climate70$dx70_1948)
+#' hist(climate70$dx90_2018 - climate70$dx90_1948)
 #'
-#' t.test(d.$dx70_2018 - d.$dx70_1948)
-#' t.test(d.$dx90_2018 - d.$dx90_1948)
+#' t.test(climate70$dx70_2018 - climate70$dx70_1948)
+#' t.test(climate70$dx90_2018 - climate70$dx90_1948)
 #'
-NULL
+"climate70"

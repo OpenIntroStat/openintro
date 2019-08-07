@@ -15,7 +15,9 @@ Random sample based on Food Commodity Intake Database distribution
 \examples{
 
 
+
 male_heights
+
 
 
 }

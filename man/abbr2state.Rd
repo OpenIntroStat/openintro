@@ -2,15 +2,12 @@
 % Please edit documentation in R/abbr2state.R
 \name{abbr2state}
 \alias{abbr2state}
-\alias{state2abbr}
-\title{Convert state names to abbreviations and back again}
+\title{Convert state abbreviations to names}
 \usage{
 abbr2state(abbr)
 }
 \arguments{
 \item{abbr}{A vector of state abbreviation.}
-
-\item{state}{A vector of state name, where there is a little fuzzy matching.}
 }
 \value{
 Returns a vector of the same length with the corresponding state
@@ -22,15 +19,11 @@ and the second does the opposite.
 }
 \examples{
 
-state2abbr("Minnesota")
 abbr2state("MN")
-
-#_____ Some Spelling/Capitalization Errors Okay _____#
-state2abbr("mINnesta")
 
 }
 \seealso{
-\code{\link{county}}, \code{\link{county_complete}}
+\code{\link{state2abbr}}, \code{\link{county}}, \code{\link{county_complete}}
 }
 \author{
 David Diez

@@ -20,4 +20,4 @@
 #'
 #' country_iso
 #'
-NULL
+"country_iso"

@@ -20,4 +20,4 @@
 #' family_college %>%
 #'   count(teen, parents)
 #'
-NULL
+"family_college"

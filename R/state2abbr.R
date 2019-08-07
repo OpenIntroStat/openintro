@@ -1,3 +1,23 @@
+#' Convert state names to abbreviations
+#'
+#' Two utility functions. One converts state names to the state abbreviations,
+#' and the second does the opposite.
+#'
+#'
+#' @param state A vector of state name, where there is a little fuzzy matching.
+#' @return Returns a vector of the same length with the corresponding state
+#' names or abbreviations.
+#' @author David Diez
+#' @seealso \code{\link{abbr2state}}, \code{\link{county}}, \code{\link{county_complete}}
+#' @keywords State Abbreviation
+#' @export
+#' @examples
+#'
+#' state2abbr("Minnesota")
+#'
+#' # Some spelling/capitalization errors okay
+#' state2abbr("mINnesta")
+#'
 #' @export
 state2abbr <- function(state){
   ab <- tolower(c("AL",
