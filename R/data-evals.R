@@ -1,10 +1,10 @@
 #' Professor evaluations and beauty
 #'
 #' The data are gathered from end of semester student evaluations for 463 courses
-#' taught by a sample of 94 unique professors from the University of Texas at Austin. In addition,
+#' taught by a sample of 94 professors from the University of Texas at Austin. In addition,
 #' six students rate the professors' physical appearance. The result is a data
 #' frame where each row contains a different course and each column has
-#' information on the course and particular professor who taught that course.
+#' information on the course and the professor who taught that course.
 #' \url{https://www.openintro.org/stat/data/?data=evals}
 #'
 #'
@@ -13,7 +13,7 @@
 #' @format A tibble with 463 observations on the following 23 variables.
 #' \describe{
 #'   \item{course_id}{Variable identifying the course (out of 463 courses).}
-#'   \item{prof_id}{Variable identifying the professor who taught course (out of 94 professor).}
+#'   \item{prof_id}{Variable identifying the professor who taught the course (out of 94 professors).}
 #'   \item{score}{Average professor evaluation score: (1) very unsatisfactory -
 #'   (5) excellent.}
 #'   \item{rank}{Rank of professor: teaching, tenure track, tenured.}
