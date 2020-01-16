@@ -4,8 +4,15 @@
 \alias{lsegments}
 \title{Create a Line Segment Plot}
 \usage{
-lsegments(x = c(3, 7), l = "o", r = "c", ticks = TRUE, labs = 1,
-  add = 0, ylim = c(-0.75, 0.25))
+lsegments(
+  x = c(3, 7),
+  l = "o",
+  r = "c",
+  ticks = TRUE,
+  labs = 1,
+  add = 0,
+  ylim = c(-0.75, 0.25)
+)
 }
 \arguments{
 \item{x}{The endpoints of the interval. Values larger (smaller) than 999

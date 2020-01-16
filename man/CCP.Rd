@@ -4,10 +4,21 @@
 \alias{CCP}
 \title{Plot a Cartesian Coordinate Plane}
 \usage{
-CCP(xlim = c(-4, 4), ylim = c(-4, 4), mar = rep(0, 4),
-  length = 0.1, tcl = 0.007, xylab = FALSE, ticks = 1,
-  ticklabs = 1, xpos = 1, ypos = 2, cex.coord = 1,
-  cex.xylab = 1.5, add = FALSE)
+CCP(
+  xlim = c(-4, 4),
+  ylim = c(-4, 4),
+  mar = rep(0, 4),
+  length = 0.1,
+  tcl = 0.007,
+  xylab = FALSE,
+  ticks = 1,
+  ticklabs = 1,
+  xpos = 1,
+  ypos = 2,
+  cex.coord = 1,
+  cex.xylab = 1.5,
+  add = FALSE
+)
 }
 \arguments{
 \item{xlim}{The x-limits for the plane (vector of length 2).}

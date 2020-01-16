@@ -4,8 +4,7 @@
 \alias{buildAxis}
 \title{Axis function substitute}
 \usage{
-buildAxis(side, limits, n, nMin = 2, nMax = 10, extend = 2,
-  eps = 10^-12, ...)
+buildAxis(side, limits, n, nMin = 2, nMax = 10, extend = 2, eps = 10^-12, ...)
 }
 \arguments{
 \item{side}{The side of the plot where to add the axis.}
@@ -110,7 +109,7 @@ x <- rnorm(50, m, s)
 hist(x, axes=FALSE)
 buildAxis(1, limits=x, n=5, nMin=4, nMax=6, eps=10^-12)
 if(diff(range(x)) < 10^-12){
-	cat("too small\\n")
+	cat("too small\n")
 }
 
 

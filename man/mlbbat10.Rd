@@ -23,7 +23,7 @@
   \item{stolen_base}{Number of stolen bases}
   \item{caught_stealing}{Number of times caught stealing}
   \item{obp}{On base percentage}
-  \item{slg}{Slugging percentage (TB / AB)}
+  \item{slg}{Slugging percentage (total_base / at_bat)}
   \item{bat_avg}{Batting average}
 }}
 \source{

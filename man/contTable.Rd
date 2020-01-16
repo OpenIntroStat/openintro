@@ -4,8 +4,7 @@
 \alias{contTable}
 \title{Generate Contingency Tables for LaTeX}
 \usage{
-contTable(x, prop = c("none", "row", "col"), show = FALSE,
-  digits = 3)
+contTable(x, prop = c("none", "row", "col"), show = FALSE, digits = 3)
 }
 \arguments{
 \item{x}{A data frame (with two columns) or a table.}

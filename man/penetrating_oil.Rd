@@ -46,13 +46,13 @@ for (i in 1:(N - 1)) {
     diff[k] <- xbar[i] - xbar[j]
     se[k] <- s * sqrt(1 / n[i] + 1 / n[j])
     if (2 * K * pt(-abs(diff[k] / se[k]), df) < 0.05) {
-      cat("0.05 - ", names(n)[c(i, j)], "\\n")
+      cat("0.05 - ", names(n)[c(i, j)], "\n")
     } else if (2 * K * pt(-abs(diff[k] / se[k]), df) < 0.1) {
-      cat("0.1 - ", names(n)[c(i, j)], "\\n")
+      cat("0.1 - ", names(n)[c(i, j)], "\n")
     } else if (2 * K * pt(-abs(diff[k] / se[k]), df) < 0.2) {
-      cat("0.2 - ", names(n)[c(i, j)], "\\n")
+      cat("0.2 - ", names(n)[c(i, j)], "\n")
     } else if (2 * K * pt(-abs(diff[k] / se[k]), df) < 0.3) {
-      cat("0.3 - ", names(n)[c(i, j)], "\\n")
+      cat("0.3 - ", names(n)[c(i, j)], "\n")
     }
   }
 }

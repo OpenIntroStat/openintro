@@ -4,8 +4,7 @@
 \alias{CT2DF}
 \title{Contingency Table to Data Frame}
 \usage{
-CT2DF(x, rn = row.names(x), cn = colnames(x), dfn = c("row.var",
-  "col.var"))
+CT2DF(x, rn = row.names(x), cn = colnames(x), dfn = c("row.var", "col.var"))
 }
 \arguments{
 \item{x}{Contingency table as a matrix.}

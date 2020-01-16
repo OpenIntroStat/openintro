@@ -4,10 +4,21 @@
 \alias{makeTube}
 \title{Regression tube}
 \usage{
-makeTube(x, y, Z = 2, R = 1, col = "#00000022",
-  border = "#00000000", type = c("lin", "quad", "robust"),
-  stDev = c("constant", "linear", "other"), length.out = 99,
-  bw = "default", plotTube = TRUE, addLine = TRUE, ...)
+makeTube(
+  x,
+  y,
+  Z = 2,
+  R = 1,
+  col = "#00000022",
+  border = "#00000000",
+  type = c("lin", "quad", "robust"),
+  stDev = c("constant", "linear", "other"),
+  length.out = 99,
+  bw = "default",
+  plotTube = TRUE,
+  addLine = TRUE,
+  ...
+)
 }
 \arguments{
 \item{x}{\code{x} coordinates.}

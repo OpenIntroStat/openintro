@@ -4,8 +4,18 @@
 \alias{ArrowLines}
 \title{Create a Line That may have Arrows on the Ends}
 \usage{
-ArrowLines(x, y, lty = 1, lwd = 2.5, col = 1, length = 0.1,
-  af = 3, cex.pch = 1.2, ends = c("a", "a"), ...)
+ArrowLines(
+  x,
+  y,
+  lty = 1,
+  lwd = 2.5,
+  col = 1,
+  length = 0.1,
+  af = 3,
+  cex.pch = 1.2,
+  ends = c("a", "a"),
+  ...
+)
 }
 \arguments{
 \item{x}{A vector of the x-coordinates of the line to be drawn.}

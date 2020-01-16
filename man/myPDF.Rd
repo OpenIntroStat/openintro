@@ -5,8 +5,16 @@
 \alias{myPNG}
 \title{Custom PDF function}
 \usage{
-myPDF(fileName, width = 5, height = 3, mar = c(3.9, 3.9, 1, 1),
-  mgp = c(2.8, 0.55, 0), las = 1, tcl = -0.3, ...)
+myPDF(
+  fileName,
+  width = 5,
+  height = 3,
+  mar = c(3.9, 3.9, 1, 1),
+  mgp = c(2.8, 0.55, 0),
+  las = 1,
+  tcl = -0.3,
+  ...
+)
 }
 \arguments{
 \item{fileName}{File name for the image to be output. The name should end in

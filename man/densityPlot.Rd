@@ -4,13 +4,32 @@
 \alias{densityPlot}
 \title{Density plot}
 \usage{
-densityPlot(x, fact = NULL, bw = "nrd0", histo = c("none", "faded",
-  "hollow"), breaks = "Sturges", fading = "0E", fadingBorder = "25",
-  lty = NULL, lwd = 1, col = c("black", "red", "blue"), key = NULL,
-  add = FALSE, adjust = 1, kernel = c("gaussian", "epanechnikov",
-  "rectangular", "triangular", "biweight", "cosine", "optcosine"),
-  weights = NULL, n = 512, from, to, na.rm = FALSE, xlim = NULL,
-  ylim = NULL, main = "", ...)
+densityPlot(
+  x,
+  fact = NULL,
+  bw = "nrd0",
+  histo = c("none", "faded", "hollow"),
+  breaks = "Sturges",
+  fading = "0E",
+  fadingBorder = "25",
+  lty = NULL,
+  lwd = 1,
+  col = c("black", "red", "blue"),
+  key = NULL,
+  add = FALSE,
+  adjust = 1,
+  kernel = c("gaussian", "epanechnikov", "rectangular", "triangular", "biweight",
+    "cosine", "optcosine"),
+  weights = NULL,
+  n = 512,
+  from,
+  to,
+  na.rm = FALSE,
+  xlim = NULL,
+  ylim = NULL,
+  main = "",
+  ...
+)
 }
 \arguments{
 \item{x}{A numerical vector.}

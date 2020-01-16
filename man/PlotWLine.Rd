@@ -4,9 +4,20 @@
 \alias{PlotWLine}
 \title{Plot data and add a regression line}
 \usage{
-PlotWLine(x, y, xlab = "", ylab = "", col = fadeColor(4, "88"),
-  cex = 1.2, pch = 20, n = 4, nMax = 4, yR = 0.1, axes = TRUE,
-  ...)
+PlotWLine(
+  x,
+  y,
+  xlab = "",
+  ylab = "",
+  col = fadeColor(4, "88"),
+  cex = 1.2,
+  pch = 20,
+  n = 4,
+  nMax = 4,
+  yR = 0.1,
+  axes = TRUE,
+  ...
+)
 }
 \arguments{
 \item{x}{Predictor variable.}

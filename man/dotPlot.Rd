@@ -4,9 +4,21 @@
 \alias{dotPlot}
 \title{Dot plot}
 \usage{
-dotPlot(x, fact = NULL, vertical = FALSE, at = 1, key = NULL,
-  pch = 20, col = fadeColor("black", "66"), cex = 1.5, add = FALSE,
-  axes = TRUE, xlim = NULL, ylim = NULL, ...)
+dotPlot(
+  x,
+  fact = NULL,
+  vertical = FALSE,
+  at = 1,
+  key = NULL,
+  pch = 20,
+  col = fadeColor("black", "66"),
+  cex = 1.5,
+  add = FALSE,
+  axes = TRUE,
+  xlim = NULL,
+  ylim = NULL,
+  ...
+)
 }
 \arguments{
 \item{x}{A numerical vector.}

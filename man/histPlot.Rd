@@ -4,11 +4,25 @@
 \alias{histPlot}
 \title{Histogram or hollow histogram}
 \usage{
-histPlot(x, col = fadeColor("black", "22"), border = "black",
-  breaks = "default", probability = FALSE, hollow = FALSE,
-  add = FALSE, lty = 2, lwd = 1, freqTable = FALSE, right = TRUE,
-  axes = TRUE, xlab = NULL, ylab = NULL, xlim = NULL,
-  ylim = NULL, ...)
+histPlot(
+  x,
+  col = fadeColor("black", "22"),
+  border = "black",
+  breaks = "default",
+  probability = FALSE,
+  hollow = FALSE,
+  add = FALSE,
+  lty = 2,
+  lwd = 1,
+  freqTable = FALSE,
+  right = TRUE,
+  axes = TRUE,
+  xlab = NULL,
+  ylab = NULL,
+  xlim = NULL,
+  ylim = NULL,
+  ...
+)
 }
 \arguments{
 \item{x}{Numerical vector or a frequency table (matrix) where the first

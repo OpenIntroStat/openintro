@@ -82,7 +82,7 @@ ggplot(states_map, aes(map_id = region)) +
   geom_map(aes(fill = unempl), map = states_map) +
   expand_limits(x = states_map$long, y = states_map$lat) +
   scale_fill_viridis_c() +
-  labs(x = "", y = "", fill = "Unemployment\\n(\%)")
+  labs(x = "", y = "", fill = "Unemployment\n(\%)")
 
 # Murder rate map
 states_map \%>\%
@@ -91,14 +91,14 @@ states_map \%>\%
   geom_map(aes(fill = murder), map = states_map) +
   expand_limits(x = states_map$long, y = states_map$lat) +
   scale_fill_viridis_c() +
-  labs(x = "", y = "", fill = "Murders\\nper 100k")
+  labs(x = "", y = "", fill = "Murders\nper 100k")
 
 # Nuclear energy map
 ggplot(states_map, aes(map_id = region)) +
   geom_map(aes(fill = nuclear), map = states_map) +
   expand_limits(x = states_map$long, y = states_map$lat) +
   scale_fill_viridis_c() +
-  labs(x = "", y = "", fill = "Nuclear energy\\n(\%)")
+  labs(x = "", y = "", fill = "Nuclear energy\n(\%)")
 
 
 }

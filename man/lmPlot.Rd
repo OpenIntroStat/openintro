@@ -4,14 +4,39 @@
 \alias{lmPlot}
 \title{Linear regression plot with residual plot}
 \usage{
-lmPlot(x, y, xAxis = 0, yAxis = 4, resAxis = 3, resSymm = TRUE,
-  wBox = TRUE, wLine = TRUE, lCol = "#00000088", lty = 1,
-  lwd = 1, xlab = "", ylab = "", marRes = NULL,
-  col = "#22558888", pch = 20, cex = 1.5, xR = 0.02, yR = 0.1,
-  xlim = NULL, ylim = NULL, subset = NULL, parCustom = FALSE,
-  myHeight = c(1, 0.45), plots = c("both", "mainOnly", "resOnly"),
-  highlight = NULL, hlCol = NULL, hlCex = 1.5, hlPch = 20,
-  na.rm = TRUE, ...)
+lmPlot(
+  x,
+  y,
+  xAxis = 0,
+  yAxis = 4,
+  resAxis = 3,
+  resSymm = TRUE,
+  wBox = TRUE,
+  wLine = TRUE,
+  lCol = "#00000088",
+  lty = 1,
+  lwd = 1,
+  xlab = "",
+  ylab = "",
+  marRes = NULL,
+  col = "#22558888",
+  pch = 20,
+  cex = 1.5,
+  xR = 0.02,
+  yR = 0.1,
+  xlim = NULL,
+  ylim = NULL,
+  subset = NULL,
+  parCustom = FALSE,
+  myHeight = c(1, 0.45),
+  plots = c("both", "mainOnly", "resOnly"),
+  highlight = NULL,
+  hlCol = NULL,
+  hlCex = 1.5,
+  hlPch = 20,
+  na.rm = TRUE,
+  ...
+)
 }
 \arguments{
 \item{x}{The x coordinates of points in the plot.}

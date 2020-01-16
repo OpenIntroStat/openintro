@@ -4,9 +4,18 @@
 \alias{MosaicPlot}
 \title{Custom Mosaic Plot}
 \usage{
-MosaicPlot(formula, data, col = "#00000022", border = 1, dir = c("v",
-  "h"), off = 0.01, cex.axis = 0.7, col.dir = "v", flip = c("v"),
-  ...)
+MosaicPlot(
+  formula,
+  data,
+  col = "#00000022",
+  border = 1,
+  dir = c("v", "h"),
+  off = 0.01,
+  cex.axis = 0.7,
+  col.dir = "v",
+  flip = c("v"),
+  ...
+)
 }
 \arguments{
 \item{formula}{Formula describing the variable relationship.}
@@ -37,7 +46,7 @@ Plot a mosaic plot custom built for a particular figure.
 
 data(email)
 data(COL)
-email$spam <- ifelse(email$spam == 0, "not\\nspam", "spam")
+email$spam <- ifelse(email$spam == 0, "not\nspam", "spam")
 par(las = 1)
 MosaicPlot(number ~ spam, email, col = COL[1:3], off = 0.02)
 

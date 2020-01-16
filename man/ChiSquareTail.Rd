@@ -4,8 +4,14 @@
 \alias{ChiSquareTail}
 \title{Plot upper tail in chi-square distribution}
 \usage{
-ChiSquareTail(U, df, xlim = c(0, 10), col = fadeColor("black", "22"),
-  axes = TRUE, ...)
+ChiSquareTail(
+  U,
+  df,
+  xlim = c(0, 10),
+  col = fadeColor("black", "22"),
+  axes = TRUE,
+  ...
+)
 }
 \arguments{
 \item{U}{Cut off for the upper tail.}

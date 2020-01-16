@@ -23,7 +23,7 @@ Useful links:
 
 }
 \author{
-\strong{Maintainer}: Mine Çetinkaya-Rundel \email{mine@rstudio.com} (0000-0001-6452-2420)
+\strong{Maintainer}: Mine Çetinkaya-Rundel \email{mine@rstudio.com} (\href{https://orcid.org/0000-0001-6452-2420}{ORCID})
 
 Authors:
 \itemize{

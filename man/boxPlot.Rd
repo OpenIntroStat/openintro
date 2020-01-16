@@ -4,11 +4,27 @@
 \alias{boxPlot}
 \title{Box plot}
 \usage{
-boxPlot(x, fact = NULL, horiz = FALSE, width = 2/3, lwd = 1,
-  lcol = "black", medianLwd = 2, pch = 20, pchCex = 1.8,
-  col = grDevices::rgb(0, 0, 0, 0.25), add = FALSE, key = NULL,
-  axes = TRUE, xlab = "", ylab = "", xlim = NULL, ylim = NULL,
-  na.rm = TRUE, ...)
+boxPlot(
+  x,
+  fact = NULL,
+  horiz = FALSE,
+  width = 2/3,
+  lwd = 1,
+  lcol = "black",
+  medianLwd = 2,
+  pch = 20,
+  pchCex = 1.8,
+  col = grDevices::rgb(0, 0, 0, 0.25),
+  add = FALSE,
+  key = NULL,
+  axes = TRUE,
+  xlab = "",
+  ylab = "",
+  xlim = NULL,
+  ylim = NULL,
+  na.rm = TRUE,
+  ...
+)
 }
 \arguments{
 \item{x}{A numerical vector.}

@@ -4,10 +4,27 @@
 \alias{linResPlot}
 \title{Create simple regression plot with residual plot}
 \usage{
-linResPlot(x, y, axes = FALSE, wBox = TRUE, wLine = TRUE,
-  lCol = "#00000088", lty = 1, lwd = 1, main = "", xlab = "",
-  ylab = "", marRes = NULL, col = fadeColor(4, "88"), pch = 20,
-  cex = 1.5, yR = 0.1, ylim = NULL, subset = NULL, ...)
+linResPlot(
+  x,
+  y,
+  axes = FALSE,
+  wBox = TRUE,
+  wLine = TRUE,
+  lCol = "#00000088",
+  lty = 1,
+  lwd = 1,
+  main = "",
+  xlab = "",
+  ylab = "",
+  marRes = NULL,
+  col = fadeColor(4, "88"),
+  pch = 20,
+  cex = 1.5,
+  yR = 0.1,
+  ylim = NULL,
+  subset = NULL,
+  ...
+)
 }
 \arguments{
 \item{x}{Predictor variable.}

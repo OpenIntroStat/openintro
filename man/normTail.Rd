@@ -4,11 +4,29 @@
 \alias{normTail}
 \title{Normal distribution tails}
 \usage{
-normTail(m = 0, s = 1, L = NULL, U = NULL, M = NULL, df = 1000,
-  curveColor = 1, border = 1, col = "#CCCCCC", xlim = NULL,
-  ylim = NULL, xlab = "", ylab = "", digits = 2, axes = 1,
-  detail = 999, xLab = c("number", "symbol"), cex.axis = 1,
-  xAxisIncr = 1, add = FALSE, ...)
+normTail(
+  m = 0,
+  s = 1,
+  L = NULL,
+  U = NULL,
+  M = NULL,
+  df = 1000,
+  curveColor = 1,
+  border = 1,
+  col = "#CCCCCC",
+  xlim = NULL,
+  ylim = NULL,
+  xlab = "",
+  ylab = "",
+  digits = 2,
+  axes = 1,
+  detail = 999,
+  xLab = c("number", "symbol"),
+  cex.axis = 1,
+  xAxisIncr = 1,
+  add = FALSE,
+  ...
+)
 }
 \arguments{
 \item{m}{Numerical value for the distribution mean.}

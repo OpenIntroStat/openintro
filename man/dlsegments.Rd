@@ -4,9 +4,18 @@
 \alias{dlsegments}
 \title{Create a Double Line Segment Plot}
 \usage{
-dlsegments(x1 = c(3, 7), x2 = c(5, 9), l = c("o", "o"), r = c("c",
-  "c"), type = c("n", "u", "i"), COL = 2, lwd = 2.224,
-  ylim = c(-0.35, 2), mar = rep(0, 4), hideOrig = FALSE)
+dlsegments(
+  x1 = c(3, 7),
+  x2 = c(5, 9),
+  l = c("o", "o"),
+  r = c("c", "c"),
+  type = c("n", "u", "i"),
+  COL = 2,
+  lwd = 2.224,
+  ylim = c(-0.35, 2),
+  mar = rep(0, 4),
+  hideOrig = FALSE
+)
 }
 \arguments{
 \item{x1}{The endpoints of the first interval. Values larger (smaller) than

@@ -4,10 +4,23 @@
 \alias{treeDiag}
 \title{Construct tree diagrams}
 \usage{
-treeDiag(main, p1, p2, out1 = c("Yes", "No"), out2 = c("Yes", "No"),
-  textwd = 0.15, solwd = 0.2, SBS = c(TRUE, TRUE), showSol = TRUE,
-  solSub = NULL, digits = 4, textadj = 0.015, cex.main = 1.3,
-  col.main = "#999999", showWork = FALSE)
+treeDiag(
+  main,
+  p1,
+  p2,
+  out1 = c("Yes", "No"),
+  out2 = c("Yes", "No"),
+  textwd = 0.15,
+  solwd = 0.2,
+  SBS = c(TRUE, TRUE),
+  showSol = TRUE,
+  solSub = NULL,
+  digits = 4,
+  textadj = 0.015,
+  cex.main = 1.3,
+  col.main = "#999999",
+  showWork = FALSE
+)
 }
 \arguments{
 \item{main}{Character vector with two variable names, descriptions, or
