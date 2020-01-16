@@ -9,8 +9,10 @@
 \alias{makePlotIcon}
 \title{Exploratory data analysis plot}
 \usage{
-edaPlot(dataFrame, Col = c("#888888", "#FF0000", "#222222", "#FFFFFF",
-  "#CCCCCC", "#3377AA"))
+edaPlot(
+  dataFrame,
+  Col = c("#888888", "#FF0000", "#222222", "#FFFFFF", "#CCCCCC", "#3377AA")
+)
 }
 \arguments{
 \item{dataFrame}{A data frame.}
@@ -24,7 +26,7 @@ Explore different plotting methods using a click interface.
 \examples{
 
 data(mlbbat10)
-bat <- mlbbat10[mlbbat10$AB > 200,]
+bat <- mlbbat10[mlbbat10$at_bat > 200,]
 #edaPlot(bat)
 
 data(mariokart)

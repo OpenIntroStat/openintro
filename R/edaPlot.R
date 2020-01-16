@@ -15,7 +15,7 @@
 #' @examples
 #'
 #' data(mlbbat10)
-#' bat <- mlbbat10[mlbbat10$AB > 200,]
+#' bat <- mlbbat10[mlbbat10$at_bat > 200,]
 #' #edaPlot(bat)
 #'
 #' data(mariokart)
