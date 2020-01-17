@@ -31,6 +31,7 @@ Suggests:
 Imports: 
     ggplot2 (>= 2.2.1),
     graphics,
+    rmarkdown,
     tibble
 Depends: 
     R (>= 2.10)

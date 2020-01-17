@@ -1,24 +1,24 @@
 ---
-title: "Generic Lab Name"
-author: "Name"
-date: "Date of lab session"
-output: oilabs::lab_report
+title: "Lab Name"
+author: "Author Name"
+date: "`r Sys.Date()`"
+output: openintro::lab_report
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+```{r load-packages, message=FALSE}
 library(tidyverse)
-library(oilabs)
+library(openintro)
 ```
 
-* * *
+### Exercise 1.
 
-### Exercise 1: 
+Insert any text here.
 
-```{r}
-
+```{r code-chunk-label}
+# Insert code for Exercise 1 here
 ```
 
+### Exercise 2.
 
-
+...
 
