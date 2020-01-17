@@ -35,7 +35,7 @@ Insert any text here.
 ```
 
 
-### Exercise 4:
+### Exercise 4
 
 Insert any text here.
 
@@ -44,7 +44,7 @@ Insert any text here.
 ```
 
 
-### Exercise 5:
+### Exercise 5
 
 Insert any text here.
 
@@ -53,7 +53,7 @@ Insert any text here.
 ```
 
 
-### Exercise 6:
+### Exercise 6
 
 Insert any text here.
 
@@ -62,7 +62,7 @@ Insert any text here.
 ```
 
 
-### Exercise 7:
+### Exercise 7
 
 Insert any text here.
 

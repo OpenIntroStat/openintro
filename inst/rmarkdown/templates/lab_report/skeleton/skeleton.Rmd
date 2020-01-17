@@ -10,7 +10,7 @@ library(tidyverse)
 library(openintro)
 ```
 
-### Exercise 1.
+### Exercise 1
 
 Insert any text here.
 
@@ -18,7 +18,7 @@ Insert any text here.
 # Insert code for Exercise 1 here
 ```
 
-### Exercise 2.
+### Exercise 2
 
 ...
 
