@@ -55,7 +55,7 @@ state2abbr <- function(state){
   state <- gsub("dakota", "dakota1234", state)
   state <- gsub("arkansas", "9899arkansas", state)
   state <- gsub("alaska", "alaska56789", state)
-  ST    <- rep(0, length(state))
+  ST    <- rep(NA, length(state))
   for (i in 1:length(st)) {
     ST[agrep(st[i], state, 0.2)] <- i
   }
