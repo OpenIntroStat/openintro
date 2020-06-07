@@ -8,23 +8,29 @@
 
 <title>Prison isolation experiment — prison • openintro</title>
 
+
 <!-- jquery -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <!-- Bootstrap -->
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha256-bZLfwXAP04zRMK2BjiO8iu9pf4FbLqX6zitd+tIvLhE=" crossorigin="anonymous" />
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
+
+<!-- bootstrap-toc -->
+<link rel="stylesheet" href="../bootstrap-toc.css">
+<script src="../bootstrap-toc.js"></script>
 
 <!-- Font Awesome icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/all.min.css" integrity="sha256-nAmazAk6vS34Xqo0BSrTb+abbtFlgsFK7NKSi6o7Y78=" crossorigin="anonymous" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/v4-shims.min.css" integrity="sha256-6qHlizsOWFskGlwVOKuns+D1nB6ssZrHQrNj1wGplHc=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous" />
 
 <!-- clipboard.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" integrity="sha256-FiZwavyI2V6+EXO1U+xzLG3IKldpiTFf3153ea9zikQ=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script>
 
 <!-- headroom.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/headroom.min.js" integrity="sha256-DJFC1kqIhelURkuza0AvYal5RxMtpzLjFhsnVIeuk+U=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script>
 
 <!-- pkgdown -->
 <link href="../pkgdown.css" rel="stylesheet">
@@ -32,15 +38,15 @@
 
 
 
-<meta property="og:title" content="Prison isolation experiment — prison" />
 
+<meta property="og:title" content="Prison isolation experiment — prison" />
 <meta property="og:description" content="Subjects from Central Prison in Raleigh, NC, volunteered for an experiment
 involving an &quot;isolation&quot; experience. The goal of the experiment was to find
 a treatment that reduces subjects' psychopathic deviant T scores. This score
 measures a person's need for control or their rebellion against control, and
 it is part of a commonly used mental health test called the Minnesota
 Multiphasic Personality Inventory (MMPI) test." />
-<meta name="twitter:card" content="summary" />
+
 
 
 
@@ -57,7 +63,7 @@ Multiphasic Personality Inventory (MMPI) test." />
 
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target="#toc">
     <div class="container template-reference-topic">
       <header>
       <div class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -87,10 +93,9 @@ Multiphasic Personality Inventory (MMPI) test." />
   <a href="../news/index.html">Changelog</a>
 </li>
       </ul>
-      
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="https://github.com/OpenIntroStat/openintro-r-package">
+  <a href="https://github.com/OpenIntroStat/openintro/">
     <span class="fab fa fab fa-github fa-lg"></span>
      
   </a>
@@ -109,80 +114,72 @@ Multiphasic Personality Inventory (MMPI) test." />
   <div class="col-md-9 contents">
     <div class="page-header">
     <h1>Prison isolation experiment</h1>
-    <small class="dont-index">Source: <a href='https://github.com/OpenIntroStat/openintro-r-package/blob/master/R/data-prison.R'><code>R/data-prison.R</code></a></small>
+    <small class="dont-index">Source: <a href='https://github.com/OpenIntroStat/openintro/blob/master/R/data-prison.R'><code>R/data-prison.R</code></a></small>
     <div class="hidden name"><code>prison.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    
     <p>Subjects from Central Prison in Raleigh, NC, volunteered for an experiment
 involving an "isolation" experience. The goal of the experiment was to find
 a treatment that reduces subjects' psychopathic deviant T scores. This score
 measures a person's need for control or their rebellion against control, and
 it is part of a commonly used mental health test called the Minnesota
 Multiphasic Personality Inventory (MMPI) test.</p>
-    
     </div>
 
     <pre class="usage"><span class='no'>prison</span></pre>
-        
+
+
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>A tibble with 14 observations on the following 6 variables.</p><dl class='dl-horizontal'>
+    <p>A data frame with 14 observations on the following 6 variables.</p><dl'>
  <dt>PostTrt1</dt><dd><p>Post-treatment
 1.</p></dd> <dt>PreTrt2</dt><dd><p>Pre-treatment 2.</p></dd> <dt>PostTrt2</dt><dd><p>Post-treatment 2.</p></dd>
-<dt>PreTrt3</dt><dd><p>Pre-treatment 3.</p></dd> <dt>PostTrt3</dt><dd><p>Post-treatment 3.</p></dd> </dl>
-    
+<dt>PreTrt3</dt><dd><p>Pre-treatment 3.</p></dd> <dt>PostTrt3</dt><dd><p>Post-treatment 3.</p></dd> 
+</dl>
+
     <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
 
     <p><a href='http://stat.duke.edu/resources/datasets/prison-isolation'>http://stat.duke.edu/resources/datasets/prison-isolation</a></p>
-    
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
 
-<span class='no'>prison</span></div><div class='output co'>#&gt; <span style='color: #555555;'># A tibble: 14 x 6</span><span>
+<span class='no'>prison</span></div><div class='output co'>#&gt; # A tibble: 14 x 6
 #&gt;    pre_trt1 post_trt1 pre_trt2 post_trt2 pre_trt3 post_trt3
-#&gt;       </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span>     </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span>    </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span>     </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span>    </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span>     </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span>
-#&gt; </span><span style='color: #555555;'> 1</span><span>       67        74       88        79       86        90
-#&gt; </span><span style='color: #555555;'> 2</span><span>       86        50       79        81       53        53
-#&gt; </span><span style='color: #555555;'> 3</span><span>       64        64       67        83       81       102
-#&gt; </span><span style='color: #555555;'> 4</span><span>       69        76       83        74       69        67
-#&gt; </span><span style='color: #555555;'> 5</span><span>       67        64       79        76       81        76
-#&gt; </span><span style='color: #555555;'> 6</span><span>       79        81       76        69       76        81
-#&gt; </span><span style='color: #555555;'> 7</span><span>       67        74       71        71       74        69
-#&gt; </span><span style='color: #555555;'> 8</span><span>       67        50       67        75       60        60
-#&gt; </span><span style='color: #555555;'> 9</span><span>       69        60       69        64       67        69
-#&gt; </span><span style='color: #555555;'>10</span><span>       57        57       67        64       86        83
-#&gt; </span><span style='color: #555555;'>11</span><span>       76        62       67        64       86       107
-#&gt; </span><span style='color: #555555;'>12</span><span>       90        76       74        71       74        71
-#&gt; </span><span style='color: #555555;'>13</span><span>       71        71       81        74       71        71
-#&gt; </span><span style='color: #555555;'>14</span><span>       93        76       81        64       71        81</div><div class='input'>
+#&gt;       &lt;int&gt;     &lt;int&gt;    &lt;int&gt;     &lt;int&gt;    &lt;int&gt;     &lt;int&gt;
+#&gt;  1       67        74       88        79       86        90
+#&gt;  2       86        50       79        81       53        53
+#&gt;  3       64        64       67        83       81       102
+#&gt;  4       69        76       83        74       69        67
+#&gt;  5       67        64       79        76       81        76
+#&gt;  6       79        81       76        69       76        81
+#&gt;  7       67        74       71        71       74        69
+#&gt;  8       67        50       67        75       60        60
+#&gt;  9       69        60       69        64       67        69
+#&gt; 10       57        57       67        64       86        83
+#&gt; 11       76        62       67        64       86       107
+#&gt; 12       90        76       74        71       74        71
+#&gt; 13       71        71       81        74       71        71
+#&gt; 14       93        76       81        64       71        81</div><div class='input'>
 
-</div></span></pre>
+</div></pre>
   </div>
-  <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
-    <h2>Contents</h2>
-    <ul class="nav nav-pills nav-stacked">
-      
-      <li><a href="#format">Format</a></li>
-
-      <li><a href="#source">Source</a></li>
-      
-      <li><a href="#examples">Examples</a></li>
-    </ul>
-
+  <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
+    <nav id="toc" data-toggle="toc" class="sticky-top">
+      <h2 data-toc-skip>Contents</h2>
+    </nav>
   </div>
 </div>
 
 
       <footer>
       <div class="copyright">
-  <p>Developed by Mine Çetinkaya-Rundel, David Diez, Andrew Bray, Christopher Barr.</p>
+  <p>Developed by Mine Çetinkaya-Rundel, David Diez, Andrew Bray, Albert Kim, Ben Baumer, Chester Ismay, Christopher Barr.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.3.0.9100.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
 </div>
 
       </footer>

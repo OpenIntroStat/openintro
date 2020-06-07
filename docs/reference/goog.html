@@ -8,23 +8,29 @@
 
 <title>Google stock data — goog • openintro</title>
 
+
 <!-- jquery -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <!-- Bootstrap -->
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha256-bZLfwXAP04zRMK2BjiO8iu9pf4FbLqX6zitd+tIvLhE=" crossorigin="anonymous" />
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
+
+<!-- bootstrap-toc -->
+<link rel="stylesheet" href="../bootstrap-toc.css">
+<script src="../bootstrap-toc.js"></script>
 
 <!-- Font Awesome icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/all.min.css" integrity="sha256-nAmazAk6vS34Xqo0BSrTb+abbtFlgsFK7NKSi6o7Y78=" crossorigin="anonymous" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/v4-shims.min.css" integrity="sha256-6qHlizsOWFskGlwVOKuns+D1nB6ssZrHQrNj1wGplHc=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous" />
 
 <!-- clipboard.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" integrity="sha256-FiZwavyI2V6+EXO1U+xzLG3IKldpiTFf3153ea9zikQ=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script>
 
 <!-- headroom.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/headroom.min.js" integrity="sha256-DJFC1kqIhelURkuza0AvYal5RxMtpzLjFhsnVIeuk+U=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script>
 
 <!-- pkgdown -->
 <link href="../pkgdown.css" rel="stylesheet">
@@ -32,11 +38,11 @@
 
 
 
-<meta property="og:title" content="Google stock data — goog" />
 
+<meta property="og:title" content="Google stock data — goog" />
 <meta property="og:description" content="Google stock data from 2006 to early 2014, where data from the first day
 each month was collected." />
-<meta name="twitter:card" content="summary" />
+
 
 
 
@@ -53,7 +59,7 @@ each month was collected." />
 
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target="#toc">
     <div class="container template-reference-topic">
       <header>
       <div class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -83,10 +89,9 @@ each month was collected." />
   <a href="../news/index.html">Changelog</a>
 </li>
       </ul>
-      
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="https://github.com/OpenIntroStat/openintro-r-package">
+  <a href="https://github.com/OpenIntroStat/openintro/">
     <span class="fab fa fab fa-github fa-lg"></span>
      
   </a>
@@ -105,72 +110,64 @@ each month was collected." />
   <div class="col-md-9 contents">
     <div class="page-header">
     <h1>Google stock data</h1>
-    <small class="dont-index">Source: <a href='https://github.com/OpenIntroStat/openintro-r-package/blob/master/R/data-goog.R'><code>R/data-goog.R</code></a></small>
+    <small class="dont-index">Source: <a href='https://github.com/OpenIntroStat/openintro/blob/master/R/data-goog.R'><code>R/data-goog.R</code></a></small>
     <div class="hidden name"><code>goog.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    
     <p>Google stock data from 2006 to early 2014, where data from the first day
 each month was collected.</p>
-    
     </div>
 
     <pre class="usage"><span class='no'>goog</span></pre>
-        
+
+
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>A tibble with 98 observations on the following 7 variables.</p><dl class='dl-horizontal'>
+    <p>A data frame with 98 observations on the following 7 variables.</p><dl'>
  <dt>Open</dt><dd><p>a numeric vector</p></dd>
 <dt>High</dt><dd><p>a numeric vector</p></dd> <dt>Low</dt><dd><p>a numeric vector</p></dd>
 <dt>Close</dt><dd><p>a numeric vector</p></dd> <dt>Volume</dt><dd><p>a numeric
-vector</p></dd> <dt>Adj.Close</dt><dd><p>a numeric vector</p></dd> </dl>
-    
+vector</p></dd> <dt>Adj.Close</dt><dd><p>a numeric vector</p></dd> 
+</dl>
+
     <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
 
     <p>Yahoo! Finance.</p>
-    
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
-<span class='no'>goog</span></div><div class='output co'>#&gt; <span style='color: #555555;'># A tibble: 98 x 7</span><span>
+<span class='no'>goog</span></div><div class='output co'>#&gt; # A tibble: 98 x 7
 #&gt;    date        open  high   low close  volume adj_close
-#&gt;    </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span>      </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span> </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span> </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span> </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>   </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span>     </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>
-#&gt; </span><span style='color: #555555;'> 1</span><span> 2014-02-03 </span><span style='text-decoration: underline;'>1</span><span>179. </span><span style='text-decoration: underline;'>1</span><span>213. </span><span style='text-decoration: underline;'>1</span><span>128. </span><span style='text-decoration: underline;'>1</span><span>204. 2</span><span style='text-decoration: underline;'>409</span><span>900     </span><span style='text-decoration: underline;'>1</span><span>204.
-#&gt; </span><span style='color: #555555;'> 2</span><span> 2014-01-02 </span><span style='text-decoration: underline;'>1</span><span>115. </span><span style='text-decoration: underline;'>1</span><span>187. </span><span style='text-decoration: underline;'>1</span><span>082. </span><span style='text-decoration: underline;'>1</span><span>181. 2</span><span style='text-decoration: underline;'>860</span><span>800     </span><span style='text-decoration: underline;'>1</span><span>181.
-#&gt; </span><span style='color: #555555;'> 3</span><span> 2013-12-02 </span><span style='text-decoration: underline;'>1</span><span>064. </span><span style='text-decoration: underline;'>1</span><span>121  </span><span style='text-decoration: underline;'>1</span><span>049. </span><span style='text-decoration: underline;'>1</span><span>121. 1</span><span style='text-decoration: underline;'>675</span><span>400     </span><span style='text-decoration: underline;'>1</span><span>121.
-#&gt; </span><span style='color: #555555;'> 4</span><span> 2013-11-01 </span><span style='text-decoration: underline;'>1</span><span>032. </span><span style='text-decoration: underline;'>1</span><span>068  </span><span style='text-decoration: underline;'>1</span><span>005  </span><span style='text-decoration: underline;'>1</span><span>060. 1</span><span style='text-decoration: underline;'>372</span><span>400     </span><span style='text-decoration: underline;'>1</span><span>060.
-#&gt; </span><span style='color: #555555;'> 5</span><span> 2013-10-01  880. </span><span style='text-decoration: underline;'>1</span><span>042.  843. </span><span style='text-decoration: underline;'>1</span><span>031. 2</span><span style='text-decoration: underline;'>472</span><span>300     </span><span style='text-decoration: underline;'>1</span><span>031.
-#&gt; </span><span style='color: #555555;'> 6</span><span> 2013-09-03  854.  906.  854.  876. 1</span><span style='text-decoration: underline;'>742</span><span>200      876.
-#&gt; </span><span style='color: #555555;'> 7</span><span> 2013-08-01  895   910.  846.  847. 1</span><span style='text-decoration: underline;'>606</span><span>700      847.
-#&gt; </span><span style='color: #555555;'> 8</span><span> 2013-07-01  886.  928   876.  888. 2</span><span style='text-decoration: underline;'>428</span><span>100      888.
-#&gt; </span><span style='color: #555555;'> 9</span><span> 2013-06-03  873   911.  847.  880. 2</span><span style='text-decoration: underline;'>546</span><span>400      880.
-#&gt; </span><span style='color: #555555;'>10</span><span> 2013-05-01  823.  921.  816.  871. 2</span><span style='text-decoration: underline;'>335</span><span>700      871.
-#&gt; </span><span style='color: #555555;'># … with 88 more rows</span><span></div><div class='input'>
-</div></span></pre>
+#&gt;    &lt;fct&gt;      &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;   &lt;int&gt;     &lt;dbl&gt;
+#&gt;  1 2014-02-03 1179. 1213. 1128. 1204. 2409900     1204.
+#&gt;  2 2014-01-02 1115. 1187. 1082. 1181. 2860800     1181.
+#&gt;  3 2013-12-02 1064. 1121  1049. 1121. 1675400     1121.
+#&gt;  4 2013-11-01 1032. 1068  1005  1060. 1372400     1060.
+#&gt;  5 2013-10-01  880. 1042.  843. 1031. 2472300     1031.
+#&gt;  6 2013-09-03  854.  906.  854.  876. 1742200      876.
+#&gt;  7 2013-08-01  895   910.  846.  847. 1606700      847.
+#&gt;  8 2013-07-01  886.  928   876.  888. 2428100      888.
+#&gt;  9 2013-06-03  873   911.  847.  880. 2546400      880.
+#&gt; 10 2013-05-01  823.  921.  816.  871. 2335700      871.
+#&gt; # … with 88 more rows</div><div class='input'>
+</div></pre>
   </div>
-  <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
-    <h2>Contents</h2>
-    <ul class="nav nav-pills nav-stacked">
-      
-      <li><a href="#format">Format</a></li>
-
-      <li><a href="#source">Source</a></li>
-      
-      <li><a href="#examples">Examples</a></li>
-    </ul>
-
+  <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
+    <nav id="toc" data-toggle="toc" class="sticky-top">
+      <h2 data-toc-skip>Contents</h2>
+    </nav>
   </div>
 </div>
 
 
       <footer>
       <div class="copyright">
-  <p>Developed by Mine Çetinkaya-Rundel, David Diez, Andrew Bray, Christopher Barr.</p>
+  <p>Developed by Mine Çetinkaya-Rundel, David Diez, Andrew Bray, Albert Kim, Ben Baumer, Chester Ismay, Christopher Barr.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.3.0.9100.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
 </div>
 
       </footer>

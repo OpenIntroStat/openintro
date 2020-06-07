@@ -8,23 +8,29 @@
 
 <title>Body measurements of 507 physically active individuals. — bdims • openintro</title>
 
+
 <!-- jquery -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <!-- Bootstrap -->
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha256-bZLfwXAP04zRMK2BjiO8iu9pf4FbLqX6zitd+tIvLhE=" crossorigin="anonymous" />
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
+
+<!-- bootstrap-toc -->
+<link rel="stylesheet" href="../bootstrap-toc.css">
+<script src="../bootstrap-toc.js"></script>
 
 <!-- Font Awesome icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/all.min.css" integrity="sha256-nAmazAk6vS34Xqo0BSrTb+abbtFlgsFK7NKSi6o7Y78=" crossorigin="anonymous" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/v4-shims.min.css" integrity="sha256-6qHlizsOWFskGlwVOKuns+D1nB6ssZrHQrNj1wGplHc=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous" />
 
 <!-- clipboard.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" integrity="sha256-FiZwavyI2V6+EXO1U+xzLG3IKldpiTFf3153ea9zikQ=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script>
 
 <!-- headroom.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/headroom.min.js" integrity="sha256-DJFC1kqIhelURkuza0AvYal5RxMtpzLjFhsnVIeuk+U=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script>
 
 <!-- pkgdown -->
 <link href="../pkgdown.css" rel="stylesheet">
@@ -32,15 +38,15 @@
 
 
 
-<meta property="og:title" content="Body measurements of 507 physically active individuals. — bdims" />
 
+<meta property="og:title" content="Body measurements of 507 physically active individuals. — bdims" />
 <meta property="og:description" content="Body girth measurements and skeletal diameter measurements, as well as age,
 weight, height and gender, are given for 507 physically active individuals -
 247 men and 260 women. These data can be used to provide statistics students
 practice in the art of data analysis. Such analyses range from simple
 descriptive displays to more complicated multivariate analyses such as
 multiple regression and discriminant analysis." />
-<meta name="twitter:card" content="summary" />
+
 
 
 
@@ -57,7 +63,7 @@ multiple regression and discriminant analysis." />
 
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target="#toc">
     <div class="container template-reference-topic">
       <header>
       <div class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -87,10 +93,9 @@ multiple regression and discriminant analysis." />
   <a href="../news/index.html">Changelog</a>
 </li>
       </ul>
-      
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="https://github.com/OpenIntroStat/openintro-r-package">
+  <a href="https://github.com/OpenIntroStat/openintro/">
     <span class="fab fa fab fa-github fa-lg"></span>
      
   </a>
@@ -109,26 +114,25 @@ multiple regression and discriminant analysis." />
   <div class="col-md-9 contents">
     <div class="page-header">
     <h1>Body measurements of 507 physically active individuals.</h1>
-    <small class="dont-index">Source: <a href='https://github.com/OpenIntroStat/openintro-r-package/blob/master/R/data-bdims.R'><code>R/data-bdims.R</code></a></small>
+    <small class="dont-index">Source: <a href='https://github.com/OpenIntroStat/openintro/blob/master/R/data-bdims.R'><code>R/data-bdims.R</code></a></small>
     <div class="hidden name"><code>bdims.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    
     <p>Body girth measurements and skeletal diameter measurements, as well as age,
 weight, height and gender, are given for 507 physically active individuals -
 247 men and 260 women. These data can be used to provide statistics students
 practice in the art of data analysis. Such analyses range from simple
 descriptive displays to more complicated multivariate analyses such as
 multiple regression and discriminant analysis.</p>
-    
     </div>
 
     <pre class="usage"><span class='no'>bdims</span></pre>
-        
+
+
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>A tibble with 507 observations on the following 25 variables.</p><dl class='dl-horizontal'>
+    <p>A data frame with 507 observations on the following 25 variables.</p><dl'>
   <dt>bia.di</dt><dd><p>A numerical vector, respondent's biacromial diameter in
   centimeters.</p></dd>
   <dt>bii.di</dt><dd><p>A numerical vector, respondent's biiliac diameter
@@ -182,13 +186,13 @@ multiple regression and discriminant analysis.</p>
   <dt>hgt</dt><dd><p>A numerical vector, respondent's height in centimeters.</p></dd>
   <dt>sex</dt><dd><p>A categorical vector, 1 if the respondent is male,
   0 if female.</p></dd>
-  </dl>
-    
+  
+</dl>
+
     <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
 
     <p>Heinz G, Peterson LJ, Johnson RW, Kerk CJ. 2003. Exploring
 Relationships in Body Dimensions. Journal of Statistics Education 11(2).</p>
-    
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
@@ -205,28 +209,21 @@ Relationships in Body Dimensions. Journal of Statistics Education 11(2).</p>
   <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='st'>"Height"</span>, <span class='kw'>y</span> <span class='kw'>=</span> <span class='st'>"Hip girth"</span>)</div><div class='img'><img src='bdims-4.png' alt='' width='700' height='433' /></div><div class='input'>
 </div></pre>
   </div>
-  <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
-    <h2>Contents</h2>
-    <ul class="nav nav-pills nav-stacked">
-      
-      <li><a href="#format">Format</a></li>
-
-      <li><a href="#source">Source</a></li>
-      
-      <li><a href="#examples">Examples</a></li>
-    </ul>
-
+  <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
+    <nav id="toc" data-toggle="toc" class="sticky-top">
+      <h2 data-toc-skip>Contents</h2>
+    </nav>
   </div>
 </div>
 
 
       <footer>
       <div class="copyright">
-  <p>Developed by Mine Çetinkaya-Rundel, David Diez, Andrew Bray, Christopher Barr.</p>
+  <p>Developed by Mine Çetinkaya-Rundel, David Diez, Andrew Bray, Albert Kim, Ben Baumer, Chester Ismay, Christopher Barr.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.3.0.9100.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
 </div>
 
       </footer>

@@ -8,23 +8,29 @@
 
 <title>Wii Mario Kart auctions from Ebay — mariokart • openintro</title>
 
+
 <!-- jquery -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <!-- Bootstrap -->
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha256-bZLfwXAP04zRMK2BjiO8iu9pf4FbLqX6zitd+tIvLhE=" crossorigin="anonymous" />
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
+
+<!-- bootstrap-toc -->
+<link rel="stylesheet" href="../bootstrap-toc.css">
+<script src="../bootstrap-toc.js"></script>
 
 <!-- Font Awesome icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/all.min.css" integrity="sha256-nAmazAk6vS34Xqo0BSrTb+abbtFlgsFK7NKSi6o7Y78=" crossorigin="anonymous" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/v4-shims.min.css" integrity="sha256-6qHlizsOWFskGlwVOKuns+D1nB6ssZrHQrNj1wGplHc=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous" />
 
 <!-- clipboard.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" integrity="sha256-FiZwavyI2V6+EXO1U+xzLG3IKldpiTFf3153ea9zikQ=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script>
 
 <!-- headroom.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/headroom.min.js" integrity="sha256-DJFC1kqIhelURkuza0AvYal5RxMtpzLjFhsnVIeuk+U=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script>
 
 <!-- pkgdown -->
 <link href="../pkgdown.css" rel="stylesheet">
@@ -32,11 +38,11 @@
 
 
 
-<meta property="og:title" content="Wii Mario Kart auctions from Ebay — mariokart" />
 
+<meta property="og:title" content="Wii Mario Kart auctions from Ebay — mariokart" />
 <meta property="og:description" content="Auction data from Ebay for the game Mario Kart for the Nintendo Wii. This
 data was collected in early October, 2009." />
-<meta name="twitter:card" content="summary" />
+
 
 
 
@@ -53,7 +59,7 @@ data was collected in early October, 2009." />
 
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target="#toc">
     <div class="container template-reference-topic">
       <header>
       <div class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -83,10 +89,9 @@ data was collected in early October, 2009." />
   <a href="../news/index.html">Changelog</a>
 </li>
       </ul>
-      
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="https://github.com/OpenIntroStat/openintro-r-package">
+  <a href="https://github.com/OpenIntroStat/openintro/">
     <span class="fab fa fab fa-github fa-lg"></span>
      
   </a>
@@ -105,23 +110,22 @@ data was collected in early October, 2009." />
   <div class="col-md-9 contents">
     <div class="page-header">
     <h1>Wii Mario Kart auctions from Ebay</h1>
-    <small class="dont-index">Source: <a href='https://github.com/OpenIntroStat/openintro-r-package/blob/master/R/data-mariokart.R'><code>R/data-mariokart.R</code></a></small>
+    <small class="dont-index">Source: <a href='https://github.com/OpenIntroStat/openintro/blob/master/R/data-mariokart.R'><code>R/data-mariokart.R</code></a></small>
     <div class="hidden name"><code>mariokart.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    
     <p>Auction data from Ebay for the game Mario Kart for the Nintendo Wii. This
 data was collected in early October, 2009.</p>
-    
     </div>
 
     <pre class="usage"><span class='no'>mariokart</span></pre>
-        
+
+
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>A tibble with 143 observations on the following 12 variables.
-All prices are in US dollars.</p><dl class='dl-horizontal'>
+    <p>A data frame with 143 observations on the following 12 variables.
+All prices are in US dollars.</p><dl'>
   <dt>id</dt><dd><p>Auction ID assigned by Ebay.</p></dd>
   <dt>duration</dt><dd><p>Auction length, in days.</p></dd>
   <dt>n_bids</dt><dd><p>Number of bids.</p></dd>
@@ -141,12 +145,12 @@ All prices are in US dollars.</p><dl class='dl-horizontal'>
   game. When used with the controller, turning the wheel actually causes the
   character on screen to turn.</p></dd>
   <dt>title</dt><dd><p>The title of the auctions.</p></dd>
+
 </dl>
-    
+
     <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
 
     <p><a href='http://www.ebay.com'>http://www.ebay.com</a></p>
-    
     <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
 
     <p>There are several interesting features in the data. First off, note that
@@ -167,7 +171,6 @@ being sold from the US, (6) the item had at least one bidder, (7) there were
 no other items included in the auction with the exception of racing wheels,
 either generic or brand-name being acceptable, and (8) the auction did not
 end with a Buy It Now option.</p>
-    
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
@@ -188,27 +191,27 @@ end with a Buy It Now option.</p>
 <span class='co'># Fit a multiple regression models</span>
 <span class='no'>mariokart_no</span> <span class='kw'>&lt;-</span> <span class='no'>mariokart</span> <span class='kw'>%&gt;%</span> <span class='fu'><a href='https://dplyr.tidyverse.org/reference/filter.html'>filter</a></span>(<span class='no'>total_pr</span> <span class='kw'>&lt;</span> <span class='fl'>80</span>)
 <span class='no'>m1</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/stats/lm.html'>lm</a></span>(<span class='no'>total_pr</span> ~ <span class='no'>cond</span> + <span class='no'>stock_photo</span> + <span class='no'>duration</span> + <span class='no'>wheels</span>, <span class='kw'>data</span> <span class='kw'>=</span> <span class='no'>mariokart_no</span>)
-<span class='fu'><a href='https://rdrr.io/pkg/broom/man/reexports.html'>tidy</a></span>(<span class='no'>m1</span>)</div><div class='output co'>#&gt; <span style='color: #555555;'># A tibble: 5 x 5</span><span>
+<span class='fu'><a href='https://rdrr.io/pkg/broom/man/reexports.html'>tidy</a></span>(<span class='no'>m1</span>)</div><div class='output co'>#&gt; # A tibble: 5 x 5
 #&gt;   term           estimate std.error statistic  p.value
-#&gt;   </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>             </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>     </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>     </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>    </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>
-#&gt; </span><span style='color: #555555;'>1</span><span> (Intercept)     41.3        1.71     24.2   4.87</span><span style='color: #555555;'>e</span><span style='color: #BB0000;'>-51</span><span>
-#&gt; </span><span style='color: #555555;'>2</span><span> condused        -</span><span style='color: #BB0000;'>5.13</span><span>       1.05     -</span><span style='color: #BB0000;'>4.88</span><span>  2.91</span><span style='color: #555555;'>e</span><span style='color: #BB0000;'>- 6</span><span>
-#&gt; </span><span style='color: #555555;'>3</span><span> stock_photoyes   1.08       1.06      1.02  3.08</span><span style='color: #555555;'>e</span><span style='color: #BB0000;'>- 1</span><span>
-#&gt; </span><span style='color: #555555;'>4</span><span> duration        -</span><span style='color: #BB0000;'>0.026</span><span style='color: #BB0000;text-decoration: underline;'>8</span><span>     0.190    -</span><span style='color: #BB0000;'>0.141</span><span> 8.88</span><span style='color: #555555;'>e</span><span style='color: #BB0000;'>- 1</span><span>
-#&gt; </span><span style='color: #555555;'>5</span><span> wheels           7.29       0.555    13.1   5.89</span><span style='color: #555555;'>e</span><span style='color: #BB0000;'>-26</span><span></div><div class='input'><span class='no'>m2</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/stats/lm.html'>lm</a></span>(<span class='no'>total_pr</span> ~ <span class='no'>cond</span> + <span class='no'>stock_photo</span> + <span class='no'>wheels</span>, <span class='kw'>data</span> <span class='kw'>=</span> <span class='no'>mariokart_no</span>)
-<span class='fu'><a href='https://rdrr.io/pkg/broom/man/reexports.html'>tidy</a></span>(<span class='no'>m2</span>)</div><div class='output co'>#&gt; </span><span style='color: #555555;'># A tibble: 4 x 5</span><span>
+#&gt;   &lt;chr&gt;             &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;
+#&gt; 1 (Intercept)     41.3        1.71     24.2   4.87e-51
+#&gt; 2 condused        -5.13       1.05     -4.88  2.91e- 6
+#&gt; 3 stock_photoyes   1.08       1.06      1.02  3.08e- 1
+#&gt; 4 duration        -0.0268     0.190    -0.141 8.88e- 1
+#&gt; 5 wheels           7.29       0.555    13.1   5.89e-26</div><div class='input'><span class='no'>m2</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/stats/lm.html'>lm</a></span>(<span class='no'>total_pr</span> ~ <span class='no'>cond</span> + <span class='no'>stock_photo</span> + <span class='no'>wheels</span>, <span class='kw'>data</span> <span class='kw'>=</span> <span class='no'>mariokart_no</span>)
+<span class='fu'><a href='https://rdrr.io/pkg/broom/man/reexports.html'>tidy</a></span>(<span class='no'>m2</span>)</div><div class='output co'>#&gt; # A tibble: 4 x 5
 #&gt;   term           estimate std.error statistic  p.value
-#&gt;   </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>             </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>     </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>     </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>    </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>
-#&gt; </span><span style='color: #555555;'>1</span><span> (Intercept)       41.2      1.49      27.6  6.64</span><span style='color: #555555;'>e</span><span style='color: #BB0000;'>-58</span><span>
-#&gt; </span><span style='color: #555555;'>2</span><span> condused          -</span><span style='color: #BB0000;'>5.18</span><span>     0.996     -</span><span style='color: #BB0000;'>5.20</span><span> 7.21</span><span style='color: #555555;'>e</span><span style='color: #BB0000;'>- 7</span><span>
-#&gt; </span><span style='color: #555555;'>3</span><span> stock_photoyes     1.12     1.02       1.10 2.75</span><span style='color: #555555;'>e</span><span style='color: #BB0000;'>- 1</span><span>
-#&gt; </span><span style='color: #555555;'>4</span><span> wheels             7.30     0.545     13.4  1.11</span><span style='color: #555555;'>e</span><span style='color: #BB0000;'>-26</span><span></div><div class='input'><span class='no'>m3</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/stats/lm.html'>lm</a></span>(<span class='no'>total_pr</span> ~ <span class='no'>cond</span> + <span class='no'>wheels</span>, <span class='kw'>data</span> <span class='kw'>=</span> <span class='no'>mariokart_no</span>)
-<span class='fu'><a href='https://rdrr.io/pkg/broom/man/reexports.html'>tidy</a></span>(<span class='no'>m3</span>)</div><div class='output co'>#&gt; </span><span style='color: #555555;'># A tibble: 3 x 5</span><span>
+#&gt;   &lt;chr&gt;             &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;
+#&gt; 1 (Intercept)       41.2      1.49      27.6  6.64e-58
+#&gt; 2 condused          -5.18     0.996     -5.20 7.21e- 7
+#&gt; 3 stock_photoyes     1.12     1.02       1.10 2.75e- 1
+#&gt; 4 wheels             7.30     0.545     13.4  1.11e-26</div><div class='input'><span class='no'>m3</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/stats/lm.html'>lm</a></span>(<span class='no'>total_pr</span> ~ <span class='no'>cond</span> + <span class='no'>wheels</span>, <span class='kw'>data</span> <span class='kw'>=</span> <span class='no'>mariokart_no</span>)
+<span class='fu'><a href='https://rdrr.io/pkg/broom/man/reexports.html'>tidy</a></span>(<span class='no'>m3</span>)</div><div class='output co'>#&gt; # A tibble: 3 x 5
 #&gt;   term        estimate std.error statistic  p.value
-#&gt;   </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>          </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>     </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>     </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>    </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>
-#&gt; </span><span style='color: #555555;'>1</span><span> (Intercept)    42.4      1.07      39.8  1.75</span><span style='color: #555555;'>e</span><span style='color: #BB0000;'>-77</span><span>
-#&gt; </span><span style='color: #555555;'>2</span><span> condused       -</span><span style='color: #BB0000;'>5.58</span><span>     0.925     -</span><span style='color: #BB0000;'>6.04</span><span> 1.35</span><span style='color: #555555;'>e</span><span style='color: #BB0000;'>- 8</span><span>
-#&gt; </span><span style='color: #555555;'>3</span><span> wheels          7.23     0.542     13.3  1.29</span><span style='color: #555555;'>e</span><span style='color: #BB0000;'>-26</span><span></div><div class='input'>
+#&gt;   &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;
+#&gt; 1 (Intercept)    42.4      1.07      39.8  1.75e-77
+#&gt; 2 condused       -5.58     0.925     -6.04 1.35e- 8
+#&gt; 3 wheels          7.23     0.542     13.3  1.29e-26</div><div class='input'>
 <span class='co'># Fit diagnostics</span>
 <span class='no'>aug_m3</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/pkg/broom/man/reexports.html'>augment</a></span>(<span class='no'>m3</span>)
 
@@ -231,32 +234,23 @@ end with a Buy It Now option.</p>
   <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_point.html'>geom_point</a></span>() +
   <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='st'>"Number of wheels"</span>, <span class='kw'>y</span> <span class='kw'>=</span> <span class='st'>"Residuals"</span>,
        <span class='kw'>main</span> <span class='kw'>=</span> <span class='st'>"Notice curvature"</span>)</div><div class='img'><img src='mariokart-7.png' alt='' width='700' height='433' /></div><div class='input'>
-</div></span></pre>
+</div></pre>
   </div>
-  <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
-    <h2>Contents</h2>
-    <ul class="nav nav-pills nav-stacked">
-      
-      <li><a href="#format">Format</a></li>
-
-      <li><a href="#source">Source</a></li>
-
-      <li><a href="#details">Details</a></li>
-      
-      <li><a href="#examples">Examples</a></li>
-    </ul>
-
+  <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
+    <nav id="toc" data-toggle="toc" class="sticky-top">
+      <h2 data-toc-skip>Contents</h2>
+    </nav>
   </div>
 </div>
 
 
       <footer>
       <div class="copyright">
-  <p>Developed by Mine Çetinkaya-Rundel, David Diez, Andrew Bray, Christopher Barr.</p>
+  <p>Developed by Mine Çetinkaya-Rundel, David Diez, Andrew Bray, Albert Kim, Ben Baumer, Chester Ismay, Christopher Barr.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.3.0.9100.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
 </div>
 
       </footer>

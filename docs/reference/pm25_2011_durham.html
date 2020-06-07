@@ -8,23 +8,29 @@
 
 <title>Air quality for Durham, NC — pm25_2011_durham • openintro</title>
 
+
 <!-- jquery -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <!-- Bootstrap -->
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha256-bZLfwXAP04zRMK2BjiO8iu9pf4FbLqX6zitd+tIvLhE=" crossorigin="anonymous" />
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
+
+<!-- bootstrap-toc -->
+<link rel="stylesheet" href="../bootstrap-toc.css">
+<script src="../bootstrap-toc.js"></script>
 
 <!-- Font Awesome icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/all.min.css" integrity="sha256-nAmazAk6vS34Xqo0BSrTb+abbtFlgsFK7NKSi6o7Y78=" crossorigin="anonymous" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/v4-shims.min.css" integrity="sha256-6qHlizsOWFskGlwVOKuns+D1nB6ssZrHQrNj1wGplHc=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous" />
 
 <!-- clipboard.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" integrity="sha256-FiZwavyI2V6+EXO1U+xzLG3IKldpiTFf3153ea9zikQ=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script>
 
 <!-- headroom.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/headroom.min.js" integrity="sha256-DJFC1kqIhelURkuza0AvYal5RxMtpzLjFhsnVIeuk+U=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script>
 
 <!-- pkgdown -->
 <link href="../pkgdown.css" rel="stylesheet">
@@ -32,11 +38,11 @@
 
 
 
-<meta property="og:title" content="Air quality for Durham, NC — pm25_2011_durham" />
 
+<meta property="og:title" content="Air quality for Durham, NC — pm25_2011_durham" />
 <meta property="og:description" content="Daily air quality is measured by the air quality index (AQI) reported by the
 Environmental Protection Agency." />
-<meta name="twitter:card" content="summary" />
+
 
 
 
@@ -53,7 +59,7 @@ Environmental Protection Agency." />
 
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target="#toc">
     <div class="container template-reference-topic">
       <header>
       <div class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -83,10 +89,9 @@ Environmental Protection Agency." />
   <a href="../news/index.html">Changelog</a>
 </li>
       </ul>
-      
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="https://github.com/OpenIntroStat/openintro-r-package">
+  <a href="https://github.com/OpenIntroStat/openintro/">
     <span class="fab fa fab fa-github fa-lg"></span>
      
   </a>
@@ -105,22 +110,21 @@ Environmental Protection Agency." />
   <div class="col-md-9 contents">
     <div class="page-header">
     <h1>Air quality for Durham, NC</h1>
-    <small class="dont-index">Source: <a href='https://github.com/OpenIntroStat/openintro-r-package/blob/master/R/data-pm25_2011_durham.R'><code>R/data-pm25_2011_durham.R</code></a></small>
+    <small class="dont-index">Source: <a href='https://github.com/OpenIntroStat/openintro/blob/master/R/data-pm25_2011_durham.R'><code>R/data-pm25_2011_durham.R</code></a></small>
     <div class="hidden name"><code>pm25_2011_durham.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    
     <p>Daily air quality is measured by the air quality index (AQI) reported by the
 Environmental Protection Agency.</p>
-    
     </div>
 
     <pre class="usage"><span class='no'>pm25_2011_durham</span></pre>
-        
+
+
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>A tibble with 449 observations on the following 20 variables.</p><dl class='dl-horizontal'>
+    <p>A data frame with 449 observations on the following 20 variables.</p><dl'>
   <dt>date</dt><dd><p>Date</p></dd>
   <dt>aqs_site_id</dt><dd><p>a factor with levels <code>37-063-0015</code></p></dd>
   <dt>poc</dt><dd><p>a numeric vector</p></dd>
@@ -141,58 +145,51 @@ Environmental Protection Agency.</p>
   <dt>county</dt><dd><p>a factor with levels <code>Durham</code></p></dd>
   <dt>site_latitude</dt><dd><p>a numeric vector</p></dd>
   <dt>site_longitude</dt><dd><p>a numeric vector</p></dd>
-  </dl>
-    
+  
+</dl>
+
     <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
 
     <p>US Environmental Protection Agency, AirData, 2011.
 <a href='http://www3.epa.gov/airdata/ad_data_daily.html'>http://www3.epa.gov/airdata/ad_data_daily.html</a></p>
-    
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
-<span class='no'>pm25_2011_durham</span></div><div class='output co'>#&gt; <span style='color: #555555;'># A tibble: 449 x 20</span><span>
+<span class='no'>pm25_2011_durham</span></div><div class='output co'>#&gt; # A tibble: 449 x 20
 #&gt;    date  aqs_site_id   poc daily_mean_pm2_… units daily_aqi_value
-#&gt;    </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span> </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span>       </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span>            </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span> </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span>           </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>
-#&gt; </span><span style='color: #555555;'> 1</span><span> 1/3/… 37-063-0015     1              5.9 ug/m…              19
-#&gt; </span><span style='color: #555555;'> 2</span><span> 1/6/… 37-063-0015     1             10.4 ug/m…              34
-#&gt; </span><span style='color: #555555;'> 3</span><span> 1/9/… 37-063-0015     1              5.6 ug/m…              18
-#&gt; </span><span style='color: #555555;'> 4</span><span> 1/10… 37-063-0015     1              6.2 ug/m…              20
-#&gt; </span><span style='color: #555555;'> 5</span><span> 1/18… 37-063-0015     1              9.4 ug/m…              31
-#&gt; </span><span style='color: #555555;'> 6</span><span> 1/21… 37-063-0015     1              5   ug/m…              16
-#&gt; </span><span style='color: #555555;'> 7</span><span> 1/24… 37-063-0015     1             11.5 ug/m…              37
-#&gt; </span><span style='color: #555555;'> 8</span><span> 1/27… 37-063-0015     1              9.8 ug/m…              32
-#&gt; </span><span style='color: #555555;'> 9</span><span> 1/30… 37-063-0015     1             12.5 ug/m…              41
-#&gt; </span><span style='color: #555555;'>10</span><span> 2/2/… 37-063-0015     1              5.5 ug/m…              18
-#&gt; </span><span style='color: #555555;'># … with 439 more rows, and 14 more variables: daily_obs_count </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span style='color: #555555;'>,
-#&gt; #   percent_complete </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span style='color: #555555;'>, aqs_parameter_code </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span style='color: #555555;'>, aqs_parameter_desc </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span style='color: #555555;'>,
-#&gt; #   csa_code </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span style='color: #555555;'>, csa_name </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span style='color: #555555;'>, cbsa_code </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span style='color: #555555;'>, cbsa_name </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span style='color: #555555;'>,
-#&gt; #   state_code </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span style='color: #555555;'>, state </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span style='color: #555555;'>, county_code </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span style='color: #555555;'>, county </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span style='color: #555555;'>,
-#&gt; #   site_latitude </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, site_longitude </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span></div><div class='input'>
-</div></span></pre>
+#&gt;    &lt;fct&gt; &lt;fct&gt;       &lt;int&gt;            &lt;dbl&gt; &lt;fct&gt;           &lt;dbl&gt;
+#&gt;  1 1/3/… 37-063-0015     1              5.9 ug/m…              19
+#&gt;  2 1/6/… 37-063-0015     1             10.4 ug/m…              34
+#&gt;  3 1/9/… 37-063-0015     1              5.6 ug/m…              18
+#&gt;  4 1/10… 37-063-0015     1              6.2 ug/m…              20
+#&gt;  5 1/18… 37-063-0015     1              9.4 ug/m…              31
+#&gt;  6 1/21… 37-063-0015     1              5   ug/m…              16
+#&gt;  7 1/24… 37-063-0015     1             11.5 ug/m…              37
+#&gt;  8 1/27… 37-063-0015     1              9.8 ug/m…              32
+#&gt;  9 1/30… 37-063-0015     1             12.5 ug/m…              41
+#&gt; 10 2/2/… 37-063-0015     1              5.5 ug/m…              18
+#&gt; # … with 439 more rows, and 14 more variables: daily_obs_count &lt;int&gt;,
+#&gt; #   percent_complete &lt;int&gt;, aqs_parameter_code &lt;int&gt;, aqs_parameter_desc &lt;fct&gt;,
+#&gt; #   csa_code &lt;int&gt;, csa_name &lt;fct&gt;, cbsa_code &lt;int&gt;, cbsa_name &lt;fct&gt;,
+#&gt; #   state_code &lt;int&gt;, state &lt;fct&gt;, county_code &lt;int&gt;, county &lt;fct&gt;,
+#&gt; #   site_latitude &lt;dbl&gt;, site_longitude &lt;dbl&gt;</div><div class='input'>
+</div></pre>
   </div>
-  <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
-    <h2>Contents</h2>
-    <ul class="nav nav-pills nav-stacked">
-      
-      <li><a href="#format">Format</a></li>
-
-      <li><a href="#source">Source</a></li>
-      
-      <li><a href="#examples">Examples</a></li>
-    </ul>
-
+  <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
+    <nav id="toc" data-toggle="toc" class="sticky-top">
+      <h2 data-toc-skip>Contents</h2>
+    </nav>
   </div>
 </div>
 
 
       <footer>
       <div class="copyright">
-  <p>Developed by Mine Çetinkaya-Rundel, David Diez, Andrew Bray, Christopher Barr.</p>
+  <p>Developed by Mine Çetinkaya-Rundel, David Diez, Andrew Bray, Albert Kim, Ben Baumer, Chester Ismay, Christopher Barr.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.3.0.9100.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
 </div>
 
       </footer>

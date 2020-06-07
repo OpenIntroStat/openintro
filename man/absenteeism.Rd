@@ -3,7 +3,7 @@
 \docType{data}
 \name{absenteeism}
 \alias{absenteeism}
-\title{Absenteeism}
+\title{Absenteeism from school in New South Wales}
 \format{
 A data frame with 146 observations on the following 5 variables.
 \describe{

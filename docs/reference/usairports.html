@@ -8,23 +8,29 @@
 
 <title>US Airports — usairports • openintro</title>
 
+
 <!-- jquery -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <!-- Bootstrap -->
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha256-bZLfwXAP04zRMK2BjiO8iu9pf4FbLqX6zitd+tIvLhE=" crossorigin="anonymous" />
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
+
+<!-- bootstrap-toc -->
+<link rel="stylesheet" href="../bootstrap-toc.css">
+<script src="../bootstrap-toc.js"></script>
 
 <!-- Font Awesome icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/all.min.css" integrity="sha256-nAmazAk6vS34Xqo0BSrTb+abbtFlgsFK7NKSi6o7Y78=" crossorigin="anonymous" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/v4-shims.min.css" integrity="sha256-6qHlizsOWFskGlwVOKuns+D1nB6ssZrHQrNj1wGplHc=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous" />
 
 <!-- clipboard.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" integrity="sha256-FiZwavyI2V6+EXO1U+xzLG3IKldpiTFf3153ea9zikQ=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script>
 
 <!-- headroom.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/headroom.min.js" integrity="sha256-DJFC1kqIhelURkuza0AvYal5RxMtpzLjFhsnVIeuk+U=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script>
 
 <!-- pkgdown -->
 <link href="../pkgdown.css" rel="stylesheet">
@@ -32,11 +38,11 @@
 
 
 
-<meta property="og:title" content="US Airports — usairports" />
 
+<meta property="og:title" content="US Airports — usairports" />
 <meta property="og:description" content="Airports located in all regions with Federal Aviation Administration (FAA)
 oversight." />
-<meta name="twitter:card" content="summary" />
+
 
 
 
@@ -53,7 +59,7 @@ oversight." />
 
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target="#toc">
     <div class="container template-reference-topic">
       <header>
       <div class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -83,10 +89,9 @@ oversight." />
   <a href="../news/index.html">Changelog</a>
 </li>
       </ul>
-      
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="https://github.com/OpenIntroStat/openintro-r-package">
+  <a href="https://github.com/OpenIntroStat/openintro/">
     <span class="fab fa fab fa-github fa-lg"></span>
      
   </a>
@@ -105,22 +110,21 @@ oversight." />
   <div class="col-md-9 contents">
     <div class="page-header">
     <h1>US Airports</h1>
-    <small class="dont-index">Source: <a href='https://github.com/OpenIntroStat/openintro-r-package/blob/master/R/data-usairports.R'><code>R/data-usairports.R</code></a></small>
+    <small class="dont-index">Source: <a href='https://github.com/OpenIntroStat/openintro/blob/master/R/data-usairports.R'><code>R/data-usairports.R</code></a></small>
     <div class="hidden name"><code>usairports.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    
     <p>Airports located in all regions with Federal Aviation Administration (FAA)
 oversight.</p>
-    
     </div>
 
     <pre class="usage"><span class='no'>usairports</span></pre>
-        
+
+
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>A tibble with 19615 rows and 14 variables:</p><dl class='dl-horizontal'>
+    <p>A data frame with 19615 rows and 14 variables:</p><dl'>
 <dt>effective_date</dt><dd><p>Information effective date. This date
 coincides with the 56-day charting and publication cycle date.</p></dd>
 <dt>state</dt><dd><p>Associated state post office code standard two letter
@@ -156,54 +160,47 @@ limited certification under CFR Part 139.  Code S is for Airports receiving
 scheduled air carrier service from carriers certificated by the Civil
 Aeronautics Board.  Code U is for airports not receiving this scheduled
 service.</p></dd>
+
 </dl>
-    
+
     <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
 
     <p>Downloaded from <a href='https://www.faa.gov/airports/airport_safety/airportdata_5010/menu'>https://www.faa.gov/airports/airport_safety/airportdata_5010/menu</a>
 on 2018-08-13.</p>
-    
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='no'>usairports</span></div><div class='output co'>#&gt; <span style='color: #555555;'># A tibble: 19,615 x 14</span><span>
+    <pre class="examples"><div class='input'><span class='no'>usairports</span></div><div class='output co'>#&gt; # A tibble: 19,615 x 14
 #&gt;    effective_date state region ado   city  county facility_name ownership use  
-#&gt;    </span><span style='color: #555555;font-style: italic;'>&lt;date&gt;</span><span>         </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span> </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>  </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span> </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span> </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>  </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>         </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>     </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>
-#&gt; </span><span style='color: #555555;'> 1</span><span> 2018-07-19     AK    AAL    NONE  ADAK… ALEUT… ADAK          PU        PU   
-#&gt; </span><span style='color: #555555;'> 2</span><span> 2018-07-19     AK    AAL    NONE  AKHI… KODIA… AKHIOK        PU        PU   
-#&gt; </span><span style='color: #555555;'> 3</span><span> 2018-07-19     AK    AAL    NONE  AKIA… BETHEL AKIACHAK      PU        PU   
-#&gt; </span><span style='color: #555555;'> 4</span><span> 2018-07-19     AK    AAL    NONE  AKIA… BETHEL AKIACHAK      PU        PU   
-#&gt; </span><span style='color: #555555;'> 5</span><span> 2018-07-19     AK    AAL    NONE  AKIAK BETHEL AKIAK         PU        PU   
-#&gt; </span><span style='color: #555555;'> 6</span><span> 2018-07-19     AK    AAL    NONE  AKUT… ALEUT… AKUTAN        PU        PU   
-#&gt; </span><span style='color: #555555;'> 7</span><span> 2018-07-19     AK    AAL    NONE  AKUT… ALEUT… AKUTAN        PU        PU   
-#&gt; </span><span style='color: #555555;'> 8</span><span> 2018-07-19     AK    AAL    NONE  ALAK… KUSIL… ALAKANUK      PU        PU   
-#&gt; </span><span style='color: #555555;'> 9</span><span> 2018-07-19     AK    AAL    NONE  ALEK… BRIST… ALEKNAGIK     PR        PU   
-#&gt; </span><span style='color: #555555;'>10</span><span> 2018-07-19     AK    AAL    NONE  ALEK… DILLI… ALEKNAGIK /N… PU        PU   
-#&gt; </span><span style='color: #555555;'># … with 19,605 more rows, and 5 more variables: location_id </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span style='color: #555555;'>,
-#&gt; #   site_number </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span style='color: #555555;'>, arp_latitude </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span style='color: #555555;'>, arp_longitude </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span style='color: #555555;'>,
-#&gt; #   cert_type_date </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span></div></span></pre>
+#&gt;    &lt;date&gt;         &lt;chr&gt; &lt;chr&gt;  &lt;chr&gt; &lt;chr&gt; &lt;chr&gt;  &lt;chr&gt;         &lt;chr&gt;     &lt;chr&gt;
+#&gt;  1 2018-07-19     AK    AAL    NONE  ADAK… ALEUT… ADAK          PU        PU   
+#&gt;  2 2018-07-19     AK    AAL    NONE  AKHI… KODIA… AKHIOK        PU        PU   
+#&gt;  3 2018-07-19     AK    AAL    NONE  AKIA… BETHEL AKIACHAK      PU        PU   
+#&gt;  4 2018-07-19     AK    AAL    NONE  AKIA… BETHEL AKIACHAK      PU        PU   
+#&gt;  5 2018-07-19     AK    AAL    NONE  AKIAK BETHEL AKIAK         PU        PU   
+#&gt;  6 2018-07-19     AK    AAL    NONE  AKUT… ALEUT… AKUTAN        PU        PU   
+#&gt;  7 2018-07-19     AK    AAL    NONE  AKUT… ALEUT… AKUTAN        PU        PU   
+#&gt;  8 2018-07-19     AK    AAL    NONE  ALAK… KUSIL… ALAKANUK      PU        PU   
+#&gt;  9 2018-07-19     AK    AAL    NONE  ALEK… BRIST… ALEKNAGIK     PR        PU   
+#&gt; 10 2018-07-19     AK    AAL    NONE  ALEK… DILLI… ALEKNAGIK /N… PU        PU   
+#&gt; # … with 19,605 more rows, and 5 more variables: location_id &lt;chr&gt;,
+#&gt; #   site_number &lt;chr&gt;, arp_latitude &lt;chr&gt;, arp_longitude &lt;chr&gt;,
+#&gt; #   cert_type_date &lt;chr&gt;</div></pre>
   </div>
-  <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
-    <h2>Contents</h2>
-    <ul class="nav nav-pills nav-stacked">
-      
-      <li><a href="#format">Format</a></li>
-
-      <li><a href="#source">Source</a></li>
-      
-      <li><a href="#examples">Examples</a></li>
-    </ul>
-
+  <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
+    <nav id="toc" data-toggle="toc" class="sticky-top">
+      <h2 data-toc-skip>Contents</h2>
+    </nav>
   </div>
 </div>
 
 
       <footer>
       <div class="copyright">
-  <p>Developed by Mine Çetinkaya-Rundel, David Diez, Andrew Bray, Christopher Barr.</p>
+  <p>Developed by Mine Çetinkaya-Rundel, David Diez, Andrew Bray, Albert Kim, Ben Baumer, Chester Ismay, Christopher Barr.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.3.0.9100.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
 </div>
 
       </footer>

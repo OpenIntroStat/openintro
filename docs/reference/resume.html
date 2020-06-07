@@ -8,23 +8,29 @@
 
 <title>Which resume attributes drive job callbacks?  (Race and gender under study.) — resume • openintro</title>
 
+
 <!-- jquery -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <!-- Bootstrap -->
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha256-bZLfwXAP04zRMK2BjiO8iu9pf4FbLqX6zitd+tIvLhE=" crossorigin="anonymous" />
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
+
+<!-- bootstrap-toc -->
+<link rel="stylesheet" href="../bootstrap-toc.css">
+<script src="../bootstrap-toc.js"></script>
 
 <!-- Font Awesome icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/all.min.css" integrity="sha256-nAmazAk6vS34Xqo0BSrTb+abbtFlgsFK7NKSi6o7Y78=" crossorigin="anonymous" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/v4-shims.min.css" integrity="sha256-6qHlizsOWFskGlwVOKuns+D1nB6ssZrHQrNj1wGplHc=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous" />
 
 <!-- clipboard.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" integrity="sha256-FiZwavyI2V6+EXO1U+xzLG3IKldpiTFf3153ea9zikQ=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script>
 
 <!-- headroom.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/headroom.min.js" integrity="sha256-DJFC1kqIhelURkuza0AvYal5RxMtpzLjFhsnVIeuk+U=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script>
 
 <!-- pkgdown -->
 <link href="../pkgdown.css" rel="stylesheet">
@@ -32,8 +38,8 @@
 
 
 
-<meta property="og:title" content="Which resume attributes drive job callbacks?  (Race and gender under study.) — resume" />
 
+<meta property="og:title" content="Which resume attributes drive job callbacks?  (Race and gender under study.) — resume" />
 <meta property="og:description" content="This experiment data comes from a study that sought to understand the
 influence of race and gender on job application callback rates. The study
 monitored job postings in Boston and Chicago for several months during 2001
@@ -47,7 +53,7 @@ recognized as belonging to black or white individuals. For example, Lakisha
 was a name that their survey indicated would be interpretted as a black
 woman, while Greg was a name that would generally be interpretted to be
 associated with a white male." />
-<meta name="twitter:card" content="summary" />
+
 
 
 
@@ -64,7 +70,7 @@ associated with a white male." />
 
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target="#toc">
     <div class="container template-reference-topic">
       <header>
       <div class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -94,10 +100,9 @@ associated with a white male." />
   <a href="../news/index.html">Changelog</a>
 </li>
       </ul>
-      
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="https://github.com/OpenIntroStat/openintro-r-package">
+  <a href="https://github.com/OpenIntroStat/openintro/">
     <span class="fab fa fab fa-github fa-lg"></span>
      
   </a>
@@ -116,12 +121,11 @@ associated with a white male." />
   <div class="col-md-9 contents">
     <div class="page-header">
     <h1>Which resume attributes drive job callbacks?  (Race and gender under study.)</h1>
-    <small class="dont-index">Source: <a href='https://github.com/OpenIntroStat/openintro-r-package/blob/master/R/data-resume.R'><code>R/data-resume.R</code></a></small>
+    <small class="dont-index">Source: <a href='https://github.com/OpenIntroStat/openintro/blob/master/R/data-resume.R'><code>R/data-resume.R</code></a></small>
     <div class="hidden name"><code>resume.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    
     <p>This experiment data comes from a study that sought to understand the
 influence of race and gender on job application callback rates. The study
 monitored job postings in Boston and Chicago for several months during 2001
@@ -135,16 +139,16 @@ recognized as belonging to black or white individuals. For example, Lakisha
 was a name that their survey indicated would be interpretted as a black
 woman, while Greg was a name that would generally be interpretted to be
 associated with a white male.</p>
-    
     </div>
 
     <pre class="usage"><span class='no'>resume</span></pre>
-        
+
+
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>A tibble with 4870 observations, representing 4870 resumes, over
+    <p>A data frame with 4870 observations, representing 4870 resumes, over
 30 different variables that describe the job details, the outcome
-(<code>received_callback</code>), and attributes of the resume.</p><dl class='dl-horizontal'>
+(<code>received_callback</code>), and attributes of the resume.</p><dl'>
 <dt>job_ad_id</dt><dd><p>Unique ID associated with the advertisement.</p></dd>
 <dt>job_city</dt><dd><p>City where the job was located.</p></dd>
 <dt>job_industry</dt><dd><p>Industry of the job.</p></dd>
@@ -179,14 +183,14 @@ listed on the resume.</p></dd> <dt>employment_holes</dt><dd><p>Indicator for if
 there were holes in the person's employment history.</p></dd>
 <dt>has_email_address</dt><dd><p>Indicator for if the resume lists an email
 address.</p></dd> <dt>resume_quality</dt><dd><p>Each resume was generally
-classified as either lower or higher quality.</p></dd> </dl>
-    
+classified as either lower or higher quality.</p></dd> 
+</dl>
+
     <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
 
     <p>Bertrand M, Mullainathan S. 2004. "Are Emily and Greg More Employable
 than Lakisha and Jamal? A Field Experiment on Labor Market Discrimination".
 The American Economic Review 94:4 (991-1013). <a href='http://www.nber.org/papers/w9873'>http://www.nber.org/papers/w9873</a></p>
-    
     <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
 
     <p>Because this is an experiment, where the race and gender attributes are
@@ -207,31 +211,29 @@ conclusions from this study may not apply? The article summarizing the
 results was exceptionally well-written, and it addresses many potential
 concerns about the study's approach. So if you're feeling skeptical about
 the conclusions, please find the link below and explore!</p>
-    
     <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
 
     <div class='dont-index'><p><code>resume</code></p></div>
-    
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
-<span class='fu'><a href='https://rdrr.io/r/utils/head.html'>head</a></span>(<span class='no'>resume</span>, <span class='fl'>5</span>)</div><div class='output co'>#&gt; <span style='color: #555555;'># A tibble: 5 x 30</span><span>
+<span class='fu'><a href='https://rdrr.io/r/utils/head.html'>head</a></span>(<span class='no'>resume</span>, <span class='fl'>5</span>)</div><div class='output co'>#&gt; # A tibble: 5 x 30
 #&gt;   job_ad_id job_city job_industry job_type job_fed_contrac… job_equal_opp_e…
-#&gt;       </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span> </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>    </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>        </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>               </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>            </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>
-#&gt; </span><span style='color: #555555;'>1</span><span>       384 Chicago  manufacturi… supervi…               </span><span style='color: #BB0000;'>NA</span><span>                1
-#&gt; </span><span style='color: #555555;'>2</span><span>       384 Chicago  manufacturi… supervi…               </span><span style='color: #BB0000;'>NA</span><span>                1
-#&gt; </span><span style='color: #555555;'>3</span><span>       384 Chicago  manufacturi… supervi…               </span><span style='color: #BB0000;'>NA</span><span>                1
-#&gt; </span><span style='color: #555555;'>4</span><span>       384 Chicago  manufacturi… supervi…               </span><span style='color: #BB0000;'>NA</span><span>                1
-#&gt; </span><span style='color: #555555;'>5</span><span>       385 Chicago  other_servi… secreta…                0                1
-#&gt; </span><span style='color: #555555;'># … with 24 more variables: job_ownership </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span style='color: #555555;'>, job_req_any </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>,
-#&gt; #   job_req_communication </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, job_req_education </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>,
-#&gt; #   job_req_min_experience </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span style='color: #555555;'>, job_req_computer </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>,
-#&gt; #   job_req_organization </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, job_req_school </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span style='color: #555555;'>, received_callback </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>,
-#&gt; #   firstname </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span style='color: #555555;'>, race </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span style='color: #555555;'>, gender </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span style='color: #555555;'>, years_college </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span style='color: #555555;'>,
-#&gt; #   college_degree </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, honors </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span style='color: #555555;'>, worked_during_school </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span style='color: #555555;'>,
-#&gt; #   years_experience </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span style='color: #555555;'>, computer_skills </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span style='color: #555555;'>, special_skills </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span style='color: #555555;'>,
-#&gt; #   volunteer </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span style='color: #555555;'>, military </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span style='color: #555555;'>, employment_holes </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span style='color: #555555;'>,
-#&gt; #   has_email_address </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span style='color: #555555;'>, resume_quality </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span></div><div class='input'>
+#&gt;       &lt;dbl&gt; &lt;chr&gt;    &lt;chr&gt;        &lt;chr&gt;               &lt;dbl&gt;            &lt;dbl&gt;
+#&gt; 1       384 Chicago  manufacturi… supervi…               NA                1
+#&gt; 2       384 Chicago  manufacturi… supervi…               NA                1
+#&gt; 3       384 Chicago  manufacturi… supervi…               NA                1
+#&gt; 4       384 Chicago  manufacturi… supervi…               NA                1
+#&gt; 5       385 Chicago  other_servi… secreta…                0                1
+#&gt; # … with 24 more variables: job_ownership &lt;chr&gt;, job_req_any &lt;dbl&gt;,
+#&gt; #   job_req_communication &lt;dbl&gt;, job_req_education &lt;dbl&gt;,
+#&gt; #   job_req_min_experience &lt;chr&gt;, job_req_computer &lt;dbl&gt;,
+#&gt; #   job_req_organization &lt;dbl&gt;, job_req_school &lt;chr&gt;, received_callback &lt;dbl&gt;,
+#&gt; #   firstname &lt;chr&gt;, race &lt;chr&gt;, gender &lt;chr&gt;, years_college &lt;int&gt;,
+#&gt; #   college_degree &lt;dbl&gt;, honors &lt;int&gt;, worked_during_school &lt;int&gt;,
+#&gt; #   years_experience &lt;int&gt;, computer_skills &lt;int&gt;, special_skills &lt;int&gt;,
+#&gt; #   volunteer &lt;int&gt;, military &lt;int&gt;, employment_holes &lt;int&gt;,
+#&gt; #   has_email_address &lt;int&gt;, resume_quality &lt;chr&gt;</div><div class='input'>
 <span class='co'># Some checks to confirm balance between race and</span>
 <span class='co'># other attributes of a resume. There should be</span>
 <span class='co'># some minor differences due to randomness, but</span>
@@ -358,34 +360,23 @@ the conclusions, please find the link below and explore!</p>
 # hold. However, it is possible that we'll find
 # more interesting results with the gender investigation.
 
-</div></span></pre>
+</div></pre>
   </div>
-  <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
-    <h2>Contents</h2>
-    <ul class="nav nav-pills nav-stacked">
-      
-      <li><a href="#format">Format</a></li>
-
-      <li><a href="#source">Source</a></li>
-
-      <li><a href="#details">Details</a></li>
-
-      <li><a href="#see-also">See also</a></li>
-      
-      <li><a href="#examples">Examples</a></li>
-    </ul>
-
+  <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
+    <nav id="toc" data-toggle="toc" class="sticky-top">
+      <h2 data-toc-skip>Contents</h2>
+    </nav>
   </div>
 </div>
 
 
       <footer>
       <div class="copyright">
-  <p>Developed by Mine Çetinkaya-Rundel, David Diez, Andrew Bray, Christopher Barr.</p>
+  <p>Developed by Mine Çetinkaya-Rundel, David Diez, Andrew Bray, Albert Kim, Ben Baumer, Chester Ismay, Christopher Barr.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.3.0.9100.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
 </div>
 
       </footer>

@@ -6,10 +6,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Data Sets and Supplemental Functions from OpenIntro Textbooks and Labs • openintro</title>
-<!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script><!-- Bootstrap --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/all.min.css" integrity="sha256-nAmazAk6vS34Xqo0BSrTb+abbtFlgsFK7NKSi6o7Y78=" crossorigin="anonymous">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/v4-shims.min.css" integrity="sha256-6qHlizsOWFskGlwVOKuns+D1nB6ssZrHQrNj1wGplHc=" crossorigin="anonymous">
-<!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" integrity="sha256-FiZwavyI2V6+EXO1U+xzLG3IKldpiTFf3153ea9zikQ=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/headroom.min.js" integrity="sha256-DJFC1kqIhelURkuza0AvYal5RxMtpzLjFhsnVIeuk+U=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- pkgdown --><link href="pkgdown.css" rel="stylesheet">
+<!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script><!-- Bootstrap --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha256-bZLfwXAP04zRMK2BjiO8iu9pf4FbLqX6zitd+tIvLhE=" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script><!-- bootstrap-toc --><link rel="stylesheet" href="bootstrap-toc.css">
+<script src="bootstrap-toc.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
+<!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- pkgdown --><link href="pkgdown.css" rel="stylesheet">
 <script src="pkgdown.js"></script><meta property="og:title" content="Data Sets and Supplemental Functions from OpenIntro Textbooks and Labs">
 <meta property="og:description" content="Supplemental functions and data for OpenIntro resources, which 
     includes open-source textbooks and resources for introductory statistics at 
@@ -18,14 +19,13 @@
     many functions and examples include color transparency; some plotting elements 
     may not show up properly (or at all) when run in some versions of Windows 
     operating system.">
-<meta name="twitter:card" content="summary">
 <!-- mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-AMS-MML_HTMLorMML.js" integrity="sha256-84DKXVJXs0/F8OTMzX4UR909+jtl4G7SPypPavF+GfA=" crossorigin="anonymous"></script><!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
 </head>
-<body>
-    <div class="container template-article">
+<body data-spy="scroll" data-target="#toc">
+    <div class="container template-home">
       <header><div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
@@ -55,7 +55,7 @@
       </ul>
 <ul class="nav navbar-nav navbar-right">
 <li>
-  <a href="https://github.com/OpenIntroStat/openintro-r-package">
+  <a href="https://github.com/OpenIntroStat/openintro/">
     <span class="fab fa fab fa-github fa-lg"></span>
      
   </a>
@@ -71,596 +71,22 @@
       
 
       </header><div class="row">
-  <div class="col-md-9 contents">
-    
-
-    
-    
-<div id="openintro" class="section level1">
+  <div class="contents col-md-9">
+<div id="openintro-" class="section level1">
 
 <!-- badges: start -->
 
-<p>Supplemental functions and data for ‘OpenIntro’ resources, which includes open-source textbooks and resources for introductory statistics at <a href="https://www.openintro.org/">openintro.org</a>. The package contains data sets used in our open-source textbooks along with custom plotting functions for reproducing book figures. Note that many functions and examples include color transparency; some plotting elements may not show up properly (or at all) when run in some versions of Windows operating system.</p>
+<p>Supplemental functions and data for ‘OpenIntro’ resources, which includes open-source textbooks and resources for introductory statistics at <a href="https://www.openintro.org/">openintro.org</a>. The package contains data sets used in our open-source textbooks along with custom plotting functions for reproducing book figures. The package also contains the datasets used in OpenIntro labs. Note that many functions and examples include color transparency; some plotting elements may not show up properly (or at all) when run in some versions of Windows operating system.</p>
 <div id="installation" class="section level2">
 <h2 class="hasAnchor">
 <a href="#installation" class="anchor"></a>Installation</h2>
 <p>You can install the released version of openintro from <a href="https://CRAN.R-project.org">CRAN</a> with:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="kw"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span>(<span class="st">"openintro"</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="r"><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span>(<span class="st">"openintro"</span>)</pre></div>
 <p>You can install the development version of openintro from GitHub with:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="co"># install.packages("devtools")</span></a>
-<a class="sourceLine" id="cb2-2" data-line-number="2"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span>(devtools)</a>
-<a class="sourceLine" id="cb2-3" data-line-number="3"><span class="kw"><a href="https://rdrr.io/pkg/devtools/man/reexports.html">install_github</a></span>(<span class="st">"OpenIntroStat/openintro-r-package"</span>)</a></code></pre></div>
-<p>This package was produced as part of the OpenIntro project. For the accompanying textbook, visit openintro.org. A PDF of the textbook is free and paperbacks can be purchased online (royalty-free).</p>
-</div>
-<div id="datasets" class="section level2">
-<h2 class="hasAnchor">
-<a href="#datasets" class="anchor"></a>Datasets</h2>
-<p>The following are all the datasets in the package.</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span>(printr)</a>
-<a class="sourceLine" id="cb3-2" data-line-number="2"><span class="co">#&gt; Registered S3 method overwritten by 'printr':</span></a>
-<a class="sourceLine" id="cb3-3" data-line-number="3"><span class="co">#&gt;   method                from     </span></a>
-<a class="sourceLine" id="cb3-4" data-line-number="4"><span class="co">#&gt;   knit_print.data.frame rmarkdown</span></a>
-<a class="sourceLine" id="cb3-5" data-line-number="5"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span>(openintro)</a>
-<a class="sourceLine" id="cb3-6" data-line-number="6"><span class="co">#&gt; Please visit openintro.org for free statistics materials</span></a>
-<a class="sourceLine" id="cb3-7" data-line-number="7"><span class="co">#&gt; </span></a>
-<a class="sourceLine" id="cb3-8" data-line-number="8"><span class="co">#&gt; Attaching package: 'openintro'</span></a>
-<a class="sourceLine" id="cb3-9" data-line-number="9"><span class="co">#&gt; The following objects are masked from 'package:datasets':</span></a>
-<a class="sourceLine" id="cb3-10" data-line-number="10"><span class="co">#&gt; </span></a>
-<a class="sourceLine" id="cb3-11" data-line-number="11"><span class="co">#&gt;     cars, trees</span></a>
-<a class="sourceLine" id="cb3-12" data-line-number="12"><span class="kw"><a href="https://rdrr.io/r/utils/data.html">data</a></span>(<span class="dt">package =</span> <span class="st">"openintro"</span>)</a></code></pre></div>
-<table class="table table">
-<caption>Data sets in openintro</caption>
-<thead><tr class="header">
-<th align="left">Item</th>
-<th align="left">Title</th>
-</tr></thead>
-<tbody>
-<tr class="odd">
-<td align="left">COL</td>
-<td align="left">OpenIntro Statistics colors</td>
-</tr>
-<tr class="even">
-<td align="left">MLB</td>
-<td align="left">Salary data for Major League Baseball (2010)</td>
-</tr>
-<tr class="odd">
-<td align="left">acs12</td>
-<td align="left">American Community Survey, 2012</td>
-</tr>
-<tr class="even">
-<td align="left">ageAtMar</td>
-<td align="left">Age at first marriage of 5,534 US women.</td>
-</tr>
-<tr class="odd">
-<td align="left">ami.occurrences</td>
-<td align="left">Acute Myocardial Infarction (Heart Attack) Events</td>
-</tr>
-<tr class="even">
-<td align="left">association.1.3</td>
-<td align="left">Simulated data for association plots, set 1</td>
-</tr>
-<tr class="odd">
-<td align="left">association.4.6</td>
-<td align="left">Simulated data for association plots, set 2</td>
-</tr>
-<tr class="even">
-<td align="left">association.7.12</td>
-<td align="left">Simulated data for association plots, set 3</td>
-</tr>
-<tr class="odd">
-<td align="left">assortive.mating</td>
-<td align="left">Eye color of couples</td>
-</tr>
-<tr class="even">
-<td align="left">avandia</td>
-<td align="left">Cardiovascular problems for two types of Diabetes medicines</td>
-</tr>
-<tr class="odd">
-<td align="left">babies</td>
-<td align="left">The Child Health and Development Studies</td>
-</tr>
-<tr class="even">
-<td align="left">babies.crawl</td>
-<td align="left">Crawling age</td>
-</tr>
-<tr class="odd">
-<td align="left">bac</td>
-<td align="left">Beer and blood alcohol content</td>
-</tr>
-<tr class="even">
-<td align="left">ballBearing</td>
-<td align="left">Lifespan of ball bearings</td>
-</tr>
-<tr class="odd">
-<td align="left">bdims</td>
-<td align="left">Body measurements of 507 physically active individuals.</td>
-</tr>
-<tr class="even">
-<td align="left">births</td>
-<td align="left">North Carolina births</td>
-</tr>
-<tr class="odd">
-<td align="left">books</td>
-<td align="left">Sample of books on a shelf</td>
-</tr>
-<tr class="even">
-<td align="left">burger</td>
-<td align="left">Burger preferences</td>
-</tr>
-<tr class="odd">
-<td align="left">cancer.in.dogs</td>
-<td align="left">Cancer in dogs</td>
-</tr>
-<tr class="even">
-<td align="left">cards</td>
-<td align="left">Deck of cards</td>
-</tr>
-<tr class="odd">
-<td align="left">cars</td>
-<td align="left">cars</td>
-</tr>
-<tr class="even">
-<td align="left">cats</td>
-<td align="left">Summary of 144 cats</td>
-</tr>
-<tr class="odd">
-<td align="left">ccHousing</td>
-<td align="left">Community college housing (simulated data)</td>
-</tr>
-<tr class="even">
-<td align="left">census</td>
-<td align="left">Random sample of 2000 U.S. Census Data</td>
-</tr>
-<tr class="odd">
-<td align="left">cherry</td>
-<td align="left">Summary information for 31 cherry trees</td>
-</tr>
-<tr class="even">
-<td align="left">chick.wts</td>
-<td align="left">Chicken weights vs feed type</td>
-</tr>
-<tr class="odd">
-<td align="left">china</td>
-<td align="left">Child care hours</td>
-</tr>
-<tr class="even">
-<td align="left">classData</td>
-<td align="left">Simulated class data</td>
-</tr>
-<tr class="odd">
-<td align="left">corr.match</td>
-<td align="left">Sample data sets for correlation problems</td>
-</tr>
-<tr class="even">
-<td align="left">county</td>
-<td align="left">United States Counties</td>
-</tr>
-<tr class="odd">
-<td align="left">county.w.sm.ban</td>
-<td align="left">County data set with smoking ban.</td>
-</tr>
-<tr class="even">
-<td align="left">countyComplete</td>
-<td align="left">United States Counties</td>
-</tr>
-<tr class="odd">
-<td align="left">cpr</td>
-<td align="left">CPR data set</td>
-</tr>
-<tr class="even">
-<td align="left">credits</td>
-<td align="left">College credits.</td>
-</tr>
-<tr class="odd">
-<td align="left">diamonds</td>
-<td align="left">Information on diamond prices</td>
-</tr>
-<tr class="even">
-<td align="left">dream</td>
-<td align="left">Survey on views of the DREAM Act</td>
-</tr>
-<tr class="odd">
-<td align="left">drug.use</td>
-<td align="left">Drug use of students and parents</td>
-</tr>
-<tr class="even">
-<td align="left">ebola.survey</td>
-<td align="left">Survey on Ebola quarantine</td>
-</tr>
-<tr class="odd">
-<td align="left">elmhurst</td>
-<td align="left">Elmhurst College gift aid</td>
-</tr>
-<tr class="even">
-<td align="left">email</td>
-<td align="left">Data frame representing information about a collection of emails</td>
-</tr>
-<tr class="odd">
-<td align="left">email50</td>
-<td align="left">Sample of 50 emails</td>
-</tr>
-<tr class="even">
-<td align="left">email_test</td>
-<td align="left">Data frame representing information about a collection of emails</td>
-</tr>
-<tr class="odd">
-<td align="left">epa2012</td>
-<td align="left">Vehicle info from the EPA</td>
-</tr>
-<tr class="even">
-<td align="left">exams</td>
-<td align="left">Exam scores</td>
-</tr>
-<tr class="odd">
-<td align="left">fcid</td>
-<td align="left">Summary of male heights from USDA Food Commodity Intake Database</td>
-</tr>
-<tr class="even">
-<td align="left">fheights</td>
-<td align="left">Female college student heights, in inches</td>
-</tr>
-<tr class="odd">
-<td align="left">friday</td>
-<td align="left">Friday the 13th</td>
-</tr>
-<tr class="even">
-<td align="left">full.body.scan</td>
-<td align="left">Poll about use of full-body airport scanners</td>
-</tr>
-<tr class="odd">
-<td align="left">gear.company</td>
-<td align="left">Fake data for a gear company example</td>
-</tr>
-<tr class="even">
-<td align="left">gender.discrimination</td>
-<td align="left">Bank manager recommendations based on gender</td>
-</tr>
-<tr class="odd">
-<td align="left">gifted</td>
-<td align="left">Analytical skills of young gifted children</td>
-</tr>
-<tr class="even">
-<td align="left">global.warming.pew</td>
-<td align="left">Pew survey on global warming</td>
-</tr>
-<tr class="odd">
-<td align="left">goog</td>
-<td align="left">Google stock data</td>
-</tr>
-<tr class="even">
-<td align="left">gov.poll</td>
-<td align="left">Pew Research poll on goverment approval ratings</td>
-</tr>
-<tr class="odd">
-<td align="left">govRace10</td>
-<td align="left">Election results for 2010 Governor races in the U.S.</td>
-</tr>
-<tr class="even">
-<td align="left">gpa</td>
-<td align="left">Survey of Duke students on GPA, studying, and more</td>
-</tr>
-<tr class="odd">
-<td align="left">gpa_study_hours</td>
-<td align="left">gpa_study_hours</td>
-</tr>
-<tr class="even">
-<td align="left">gradesTV</td>
-<td align="left">Simulated data for analyzing the relationship between watching TV and grades</td>
-</tr>
-<tr class="odd">
-<td align="left">gsearch</td>
-<td align="left">Simulated Google search experiment</td>
-</tr>
-<tr class="even">
-<td align="left">health_coverage</td>
-<td align="left">Health Coverage and Health Status</td>
-</tr>
-<tr class="odd">
-<td align="left">healthcare.law.survey</td>
-<td align="left">Pew Research Center poll on health care, including question variants</td>
-</tr>
-<tr class="even">
-<td align="left">healthcare.survey</td>
-<td align="left">Healthcare Survey with Two Different Wordings</td>
-</tr>
-<tr class="odd">
-<td align="left">heartTr</td>
-<td align="left">Heart Transplant Data</td>
-</tr>
-<tr class="even">
-<td align="left">helium</td>
-<td align="left">Helium football</td>
-</tr>
-<tr class="odd">
-<td align="left">house</td>
-<td align="left">United States House of Representatives historical make-up</td>
-</tr>
-<tr class="even">
-<td align="left">houseRace10</td>
-<td align="left">Election results for the 2010 U.S. House of Represenatives races</td>
-</tr>
-<tr class="odd">
-<td align="left">housing</td>
-<td align="left">Simulated data set on student housing</td>
-</tr>
-<tr class="even">
-<td align="left">hsb2</td>
-<td align="left">High School and Beyond survey</td>
-</tr>
-<tr class="odd">
-<td align="left">husbands.wives</td>
-<td align="left">Married couples in Great Britain</td>
-</tr>
-<tr class="even">
-<td align="left">immigration</td>
-<td align="left">Poll on illegal workers in the US</td>
-</tr>
-<tr class="odd">
-<td align="left">infMortRate</td>
-<td align="left">Infant Mortality Rates, 2012</td>
-</tr>
-<tr class="even">
-<td align="left">ipod</td>
-<td align="left">Length of songs on an iPod</td>
-</tr>
-<tr class="odd">
-<td align="left">iris</td>
-<td align="left">Iris data (flowers)</td>
-</tr>
-<tr class="even">
-<td align="left">jury</td>
-<td align="left">Simulated juror data set</td>
-</tr>
-<tr class="odd">
-<td align="left">leg_mari</td>
-<td align="left">Legalization of Marijuana Support in 2010 California Survey</td>
-</tr>
-<tr class="even">
-<td align="left">male.heights</td>
-<td align="left">Sample of 100 male heights</td>
-</tr>
-<tr class="odd">
-<td align="left">mammals</td>
-<td align="left">Sleep in Mammals</td>
-</tr>
-<tr class="even">
-<td align="left">mammogram</td>
-<td align="left">Experiment with Mammogram Randomized</td>
-</tr>
-<tr class="odd">
-<td align="left">marathon</td>
-<td align="left">New York City Marathon Times</td>
-</tr>
-<tr class="even">
-<td align="left">marioKart</td>
-<td align="left">Wii Mario Kart auctions from Ebay</td>
-</tr>
-<tr class="odd">
-<td align="left">migraine</td>
-<td align="left">Migraines and acupuncture</td>
-</tr>
-<tr class="even">
-<td align="left">mlbBat10</td>
-<td align="left">Major League Baseball Player Hitting Statistics for 2010</td>
-</tr>
-<tr class="odd">
-<td align="left">nba.heights</td>
-<td align="left">NBA Player heights from 2008-9</td>
-</tr>
-<tr class="even">
-<td align="left">ncbirths</td>
-<td align="left">North Carolina births</td>
-</tr>
-<tr class="odd">
-<td align="left">nuclear.survey</td>
-<td align="left">Nuclear Arms Reduction Survey</td>
-</tr>
-<tr class="even">
-<td align="left">offshore.drilling</td>
-<td align="left">California poll on drilling off the California coast</td>
-</tr>
-<tr class="odd">
-<td align="left">orings</td>
-<td align="left">1986 Challenger disaster and O-rings</td>
-</tr>
-<tr class="even">
-<td align="left">oscars</td>
-<td align="left">Oscar winners, 1929 to 2012</td>
-</tr>
-<tr class="odd">
-<td align="left">outliers</td>
-<td align="left">Simulated data sets for different types of outliers</td>
-</tr>
-<tr class="even">
-<td align="left">pm25.2011.durham</td>
-<td align="left">Air quality for Durham, NC</td>
-</tr>
-<tr class="odd">
-<td align="left">poker</td>
-<td align="left">Poker winnings during 50 sessions</td>
-</tr>
-<tr class="even">
-<td align="left">possum</td>
-<td align="left">possum</td>
-</tr>
-<tr class="odd">
-<td align="left">prRace08</td>
-<td align="left">Election results for the 2008 U.S. Presidential race</td>
-</tr>
-<tr class="even">
-<td align="left">president</td>
-<td align="left">United States Presidental History</td>
-</tr>
-<tr class="odd">
-<td align="left">prof.evaltns.beauty.public</td>
-<td align="left">Instructor beauty scores and instruction ratings</td>
-</tr>
-<tr class="even">
-<td align="left">res.demo.1</td>
-<td align="left">Simulated data for regression</td>
-</tr>
-<tr class="odd">
-<td align="left">res.demo.2</td>
-<td align="left">Simulated data for regression</td>
-</tr>
-<tr class="even">
-<td align="left">run10</td>
-<td align="left">Cherry Blossom 10 mile run data, 2009</td>
-</tr>
-<tr class="odd">
-<td align="left">run10Samp</td>
-<td align="left">Cherry Blossom 10 mile run data, 2009</td>
-</tr>
-<tr class="even">
-<td align="left">run10_09</td>
-<td align="left">Cherry Blossom 10 mile run data, 2009</td>
-</tr>
-<tr class="odd">
-<td align="left">sat.improve</td>
-<td align="left">Simulated data for SAT score improvement</td>
-</tr>
-<tr class="even">
-<td align="left">satGPA</td>
-<td align="left">SAT and GPA data</td>
-</tr>
-<tr class="odd">
-<td align="left">scotus_healthcare</td>
-<td align="left">Public Opinion with SCOTUS ruling on American Healthcare Act</td>
-</tr>
-<tr class="even">
-<td align="left">senateRace10</td>
-<td align="left">Election results for the 2010 U.S. Senate races</td>
-</tr>
-<tr class="odd">
-<td align="left">sinusitis</td>
-<td align="left">Sinusitis and antibiotic experiment</td>
-</tr>
-<tr class="even">
-<td align="left">sleep.deprivation</td>
-<td align="left">Survey on sleep deprivation and transportation workers</td>
-</tr>
-<tr class="odd">
-<td align="left">smoking</td>
-<td align="left">UK Smoking Data</td>
-</tr>
-<tr class="even">
-<td align="left">sp500.seq</td>
-<td align="left">S&amp;P 500 stock data</td>
-</tr>
-<tr class="odd">
-<td align="left">speed.gender.height</td>
-<td align="left">Speed, gender, and height of 1302 students</td>
-</tr>
-<tr class="even">
-<td align="left">stanford</td>
-<td align="left">Stanford heart transplant experiment</td>
-</tr>
-<tr class="odd">
-<td align="left">starbucks</td>
-<td align="left">Starbucks nutrition</td>
-</tr>
-<tr class="even">
-<td align="left">stats.scores</td>
-<td align="left">Final exam scores for twenty students</td>
-</tr>
-<tr class="odd">
-<td align="left">stem.cell</td>
-<td align="left">Embryonic stem cells to treat heart attack (in sheep)</td>
-</tr>
-<tr class="even">
-<td align="left">stem.cells</td>
-<td align="left">Stem Cell Transplant Experiment</td>
-</tr>
-<tr class="odd">
-<td align="left">stent30</td>
-<td align="left">Stents for the treatment of stroke</td>
-</tr>
-<tr class="even">
-<td align="left">stent365</td>
-<td align="left">Stents for the treatment of stroke</td>
-</tr>
-<tr class="odd">
-<td align="left">student.housing</td>
-<td align="left">Community college housing (simulated data, 2015)</td>
-</tr>
-<tr class="even">
-<td align="left">student.sleep</td>
-<td align="left">Sleep for 110 students (simulated)</td>
-</tr>
-<tr class="odd">
-<td align="left">sulphinpyrazone</td>
-<td align="left">Treating heart attacks</td>
-</tr>
-<tr class="even">
-<td align="left">supreme.court</td>
-<td align="left">Supreme Court approval rating</td>
-</tr>
-<tr class="odd">
-<td align="left">textbooks</td>
-<td align="left">Textbook data for UCLA Bookstore and Amazon</td>
-</tr>
-<tr class="even">
-<td align="left">tgSpending</td>
-<td align="left">Thanksgiving spending, simulated based on Gallup poll.</td>
-</tr>
-<tr class="odd">
-<td align="left">tips</td>
-<td align="left">Tip data</td>
-</tr>
-<tr class="even">
-<td align="left">toohey</td>
-<td align="left">Simulated polling data set</td>
-</tr>
-<tr class="odd">
-<td align="left">tourism</td>
-<td align="left">Turkey tourism</td>
-</tr>
-<tr class="even">
-<td align="left">toy.anova</td>
-<td align="left">Simulated data set for ANOVA</td>
-</tr>
-<tr class="odd">
-<td align="left">transplant</td>
-<td align="left">Transplant consultant success rate (fake data)</td>
-</tr>
-<tr class="even">
-<td align="left">trees</td>
-<td align="left">Summary of 32 trees</td>
-</tr>
-<tr class="odd">
-<td align="left">unempl</td>
-<td align="left">Annual unemployment since 1890</td>
-</tr>
-<tr class="even">
-<td align="left">unemploy.pres</td>
-<td align="left">President’s party performance and unemployment rate</td>
-</tr>
-<tr class="odd">
-<td align="left">urban.owner</td>
-<td align="left">Summary of many state-level variables</td>
-</tr>
-<tr class="even">
-<td align="left">urban.rural.pop</td>
-<td align="left">State summary info</td>
-</tr>
-<tr class="odd">
-<td align="left">xom</td>
-<td align="left">Exxon Mobile stock data</td>
-</tr>
-<tr class="even">
-<td align="left">yawn</td>
-<td align="left">Contagiousness of yawning</td>
-</tr>
-<tr class="odd">
-<td align="left">yrbss</td>
-<td align="left">Youth Risk Behavior Surveillance System (YRBSS)</td>
-</tr>
-<tr class="even">
-<td align="left">yrbss.samp</td>
-<td align="left">Sample of Youth Risk Behavior Surveillance System (YRBSS)</td>
-</tr>
-</tbody>
-</table>
+<div class="sourceCode" id="cb2"><pre class="r"><span class="co"># install.packages("devtools")</span>
+<span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="no">devtools</span>)
+<span class="fu"><a href="https://devtools.r-lib.org//reference/remote-reexports.html">install_github</a></span>(<span class="st">"OpenIntroStat/openintro"</span>)</pre></div>
+<p>This package was produced as part of the OpenIntro project. For the accompanying textbook, visit <a href="https://openintro.org">openintro.org</a>. A PDF of the textbook is free and paperbacks can be purchased online (royalty-free).</p>
 </div>
 <div id="code-of-conduct" class="section level2">
 <h2 class="hasAnchor">
@@ -670,15 +96,15 @@
 </div>
   </div>
 
-  <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
+  <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <div class="links">
 <h2>Links</h2>
 <ul class="list-unstyled">
 <li>Download from CRAN at <br><a href="https://cloud.r-project.org/package=openintro">https://​cloud.r-project.org/​package=openintro</a>
 </li>
-<li>Browse source code at <br><a href="https://github.com/OpenIntroStat/openintro-r-package">https://​github.com/​OpenIntroStat/​openintro-r-package</a>
+<li>Browse source code at <br><a href="https://github.com/OpenIntroStat/openintro/">https://​github.com/​OpenIntroStat/​openintro/​</a>
 </li>
-<li>Report a bug at <br><a href="https://github.com/OpenIntroStat/openintro-r-package/issues">https://​github.com/​OpenIntroStat/​openintro-r-package/​issues</a>
+<li>Report a bug at <br><a href="https://github.com/OpenIntroStat/openintro/issues">https://​github.com/​OpenIntroStat/​openintro/​issues</a>
 </li>
 <li>Learn more at <br><a href="https://www.openintro.org">https://​www.openintro.org</a>
 </li>
@@ -700,31 +126,32 @@
 <div class="developers">
 <h2>Developers</h2>
 <ul class="list-unstyled">
-<li>Mine Çetinkaya-Rundel <br><small class="roles"> Author, maintainer </small> <a href="https://orcid.org/0000-0001-6452-2420" target="orcid.widget"><img src="https://members.orcid.org/sites/default/files/vector_iD_icon.svg" class="orcid" alt="ORCID"></a> </li>
+<li>Mine Çetinkaya-Rundel <br><small class="roles"> Author, maintainer </small> <a href="https://orcid.org/0000-0001-6452-2420" target="orcid.widget" aria-label="ORCID"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
 <li>David Diez <br><small class="roles"> Author </small>  </li>
 <li>Andrew Bray <br><small class="roles"> Author </small>  </li>
+<li>Albert Kim <br><small class="roles"> Author </small>  </li>
+<li>Ben Baumer <br><small class="roles"> Author </small>  </li>
+<li>Chester Ismay <br><small class="roles"> Author </small>  </li>
 <li>Christopher Barr <br><small class="roles"> Author </small>  </li>
 </ul>
 </div>
 
-      <div class="dev-status">
+  <div class="dev-status">
 <h2>Dev status</h2>
 <ul class="list-unstyled">
-<li><a href="https://cran.r-project.org/package=openintro"><img src="https://www.r-pkg.org/badges/version/openintro" alt="CRAN status"></a></li>
+<li><a href="https://cran.r-project.org/web/packages/openintro/index.html"><img src="https://www.r-pkg.org/badges/version/openintro" alt="CRAN status"></a></li>
 </ul>
 </div>
 </div>
-
 </div>
-
 
 
       <footer><div class="copyright">
-  <p>Developed by Mine Çetinkaya-Rundel, David Diez, Andrew Bray, Christopher Barr.</p>
+  <p>Developed by Mine Çetinkaya-Rundel, David Diez, Andrew Bray, Albert Kim, Ben Baumer, Chester Ismay, Christopher Barr.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.3.0.9100.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
 </div>
 
       </footer>

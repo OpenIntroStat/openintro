@@ -8,23 +8,29 @@
 
 <title>Professor evaluations and beauty — prof_evals • openintro</title>
 
+
 <!-- jquery -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <!-- Bootstrap -->
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha256-bZLfwXAP04zRMK2BjiO8iu9pf4FbLqX6zitd+tIvLhE=" crossorigin="anonymous" />
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
+
+<!-- bootstrap-toc -->
+<link rel="stylesheet" href="../bootstrap-toc.css">
+<script src="../bootstrap-toc.js"></script>
 
 <!-- Font Awesome icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/all.min.css" integrity="sha256-nAmazAk6vS34Xqo0BSrTb+abbtFlgsFK7NKSi6o7Y78=" crossorigin="anonymous" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/v4-shims.min.css" integrity="sha256-6qHlizsOWFskGlwVOKuns+D1nB6ssZrHQrNj1wGplHc=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous" />
 
 <!-- clipboard.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" integrity="sha256-FiZwavyI2V6+EXO1U+xzLG3IKldpiTFf3153ea9zikQ=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script>
 
 <!-- headroom.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/headroom.min.js" integrity="sha256-DJFC1kqIhelURkuza0AvYal5RxMtpzLjFhsnVIeuk+U=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script>
 
 <!-- pkgdown -->
 <link href="../pkgdown.css" rel="stylesheet">
@@ -32,10 +38,10 @@
 
 
 
-<meta property="og:title" content="Professor evaluations and beauty — prof_evals" />
 
+<meta property="og:title" content="Professor evaluations and beauty — prof_evals" />
 <meta property="og:description" content="Data set from a paper on professor evaluations and beauty scores." />
-<meta name="twitter:card" content="summary" />
+
 
 
 
@@ -52,7 +58,7 @@
 
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target="#toc">
     <div class="container template-reference-topic">
       <header>
       <div class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -82,10 +88,9 @@
   <a href="../news/index.html">Changelog</a>
 </li>
       </ul>
-      
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="https://github.com/OpenIntroStat/openintro-r-package">
+  <a href="https://github.com/OpenIntroStat/openintro/">
     <span class="fab fa fab fa-github fa-lg"></span>
      
   </a>
@@ -104,21 +109,20 @@
   <div class="col-md-9 contents">
     <div class="page-header">
     <h1>Professor evaluations and beauty</h1>
-    <small class="dont-index">Source: <a href='https://github.com/OpenIntroStat/openintro-r-package/blob/master/R/data-prof_evals.R'><code>R/data-prof_evals.R</code></a></small>
+    <small class="dont-index">Source: <a href='https://github.com/OpenIntroStat/openintro/blob/master/R/data-prof_evals.R'><code>R/data-prof_evals.R</code></a></small>
     <div class="hidden name"><code>prof_evals.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    
     <p>Data set from a paper on professor evaluations and beauty scores.</p>
-    
     </div>
 
     <pre class="usage"><span class='no'>prof_evals</span></pre>
-        
+
+
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>A tibble with 463 observations on the following 64 variables.</p><dl class='dl-horizontal'>
+    <p>A data frame with 463 observations on the following 64 variables.</p><dl'>
  <dt>profnumber</dt><dd><p>Professor
 number.</p></dd> <dt>minority</dt><dd><p>Minority.</p></dd> <dt>age</dt><dd><p>Age.</p></dd> <dt>beautyf2upper</dt><dd><p>A
 numeric vector.</p></dd> <dt>beautyflowerdiv</dt><dd><p>A numeric vector.</p></dd>
@@ -148,77 +152,67 @@ evaluation.</p></dd> <dt>female</dt><dd><p>Female indicator.</p></dd> <dt>formal
 <dt>tenuretrack</dt><dd><p>Tenure-track indicator.</p></dd> <dt>blkandwhite</dt><dd><p>Black and
 white.</p></dd> <dt>btystdvariance</dt><dd><p>Beauty standard variance.</p></dd>
 <dt>btystdavepos</dt><dd><p>Beauty standard average position.</p></dd>
-<dt>btystdaveneg</dt><dd><p>Beauty standard average negative.</p></dd> </dl>
-    
+<dt>btystdaveneg</dt><dd><p>Beauty standard average negative.</p></dd> 
+</dl>
+
     <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
 
     <p>Hamermesh DS, Parker A. 2005. "Beauty in the classroom: Instructors
 pulchritude and putative pedagogical productivity". Economics of Education
 Review 24.4:369-376.</p>
-    
     <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
 
     <div class='dont-index'><p>See also <code><a href='evals.html'>evals</a></code> for simplified version of dataset.</p></div>
-    
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
 
-<span class='no'>prof_evals</span></div><div class='output co'>#&gt; <span style='color: #555555;'># A tibble: 463 x 64</span><span>
+<span class='no'>prof_evals</span></div><div class='output co'>#&gt; # A tibble: 463 x 64
 #&gt;    tenured profnumber minority   age beautyf2upper beautyflowerdiv
-#&gt;      </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span>      </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span>    </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span> </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span>         </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span>           </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span>
-#&gt; </span><span style='color: #555555;'> 1</span><span>       0          1        1    36             6               5
-#&gt; </span><span style='color: #555555;'> 2</span><span>       1          2        0    59             2               4
-#&gt; </span><span style='color: #555555;'> 3</span><span>       1          3        0    51             5               5
-#&gt; </span><span style='color: #555555;'> 4</span><span>       1          4        0    40             4               2
-#&gt; </span><span style='color: #555555;'> 5</span><span>       0          5        0    31             9               7
-#&gt; </span><span style='color: #555555;'> 6</span><span>       1          6        0    62             5               6
-#&gt; </span><span style='color: #555555;'> 7</span><span>       0          7        0    33             5               4
-#&gt; </span><span style='color: #555555;'> 8</span><span>       1          8        0    51             6               4
-#&gt; </span><span style='color: #555555;'> 9</span><span>       0          9        0    33             5               3
-#&gt; </span><span style='color: #555555;'>10</span><span>       0         10        0    47             6               5
-#&gt; </span><span style='color: #555555;'># … with 453 more rows, and 58 more variables: beautyfupperdiv </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span style='color: #555555;'>,
-#&gt; #   beautym2upper </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span style='color: #555555;'>, beautymlowerdiv </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span style='color: #555555;'>, beautymupperdiv </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span style='color: #555555;'>,
-#&gt; #   btystdave </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, btystdf2u </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, btystdfl </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, btystdfu </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>,
-#&gt; #   btystdm2u </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, btystdml </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, btystdmu </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, class1 </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span style='color: #555555;'>,
-#&gt; #   class2 </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span style='color: #555555;'>, class3 </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span style='color: #555555;'>, class4 </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span style='color: #555555;'>, class5 </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span style='color: #555555;'>, class6 </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span style='color: #555555;'>,
-#&gt; #   class7 </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span style='color: #555555;'>, class8 </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span style='color: #555555;'>, class9 </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span style='color: #555555;'>, class10 </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span style='color: #555555;'>, class11 </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span style='color: #555555;'>,
-#&gt; #   class12 </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span style='color: #555555;'>, class13 </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span style='color: #555555;'>, class14 </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span style='color: #555555;'>, class15 </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span style='color: #555555;'>, class16 </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span style='color: #555555;'>,
-#&gt; #   class17 </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span style='color: #555555;'>, class18 </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span style='color: #555555;'>, class19 </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span style='color: #555555;'>, class20 </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span style='color: #555555;'>, class21 </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span style='color: #555555;'>,
-#&gt; #   class22 </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span style='color: #555555;'>, class23 </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span style='color: #555555;'>, class24 </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span style='color: #555555;'>, class25 </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span style='color: #555555;'>, class26 </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span style='color: #555555;'>,
-#&gt; #   class27 </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span style='color: #555555;'>, class28 </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span style='color: #555555;'>, class29 </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span style='color: #555555;'>, class30 </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span style='color: #555555;'>,
-#&gt; #   courseevaluation </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, didevaluation </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span style='color: #555555;'>, female </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span style='color: #555555;'>, formal </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span style='color: #555555;'>,
-#&gt; #   fulldept </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span style='color: #555555;'>, lower </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span style='color: #555555;'>, multipleclass </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span style='color: #555555;'>, nonenglish </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span style='color: #555555;'>,
-#&gt; #   onecredit </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span style='color: #555555;'>, percentevaluating </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, profevaluation </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>,
-#&gt; #   students </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span style='color: #555555;'>, tenuretrack </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span style='color: #555555;'>, blkandwhite </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span style='color: #555555;'>, btystdvariance </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>,
-#&gt; #   btystdavepos </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, btystdaveneg </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span></div><div class='input'>
+#&gt;      &lt;int&gt;      &lt;int&gt;    &lt;int&gt; &lt;int&gt;         &lt;int&gt;           &lt;int&gt;
+#&gt;  1       0          1        1    36             6               5
+#&gt;  2       1          2        0    59             2               4
+#&gt;  3       1          3        0    51             5               5
+#&gt;  4       1          4        0    40             4               2
+#&gt;  5       0          5        0    31             9               7
+#&gt;  6       1          6        0    62             5               6
+#&gt;  7       0          7        0    33             5               4
+#&gt;  8       1          8        0    51             6               4
+#&gt;  9       0          9        0    33             5               3
+#&gt; 10       0         10        0    47             6               5
+#&gt; # … with 453 more rows, and 58 more variables: beautyfupperdiv &lt;int&gt;,
+#&gt; #   beautym2upper &lt;int&gt;, beautymlowerdiv &lt;int&gt;, beautymupperdiv &lt;int&gt;,
+#&gt; #   btystdave &lt;dbl&gt;, btystdf2u &lt;dbl&gt;, btystdfl &lt;dbl&gt;, btystdfu &lt;dbl&gt;,
+#&gt; #   btystdm2u &lt;dbl&gt;, btystdml &lt;dbl&gt;, btystdmu &lt;dbl&gt;, class1 &lt;int&gt;,
+#&gt; #   class2 &lt;int&gt;, class3 &lt;int&gt;, class4 &lt;int&gt;, class5 &lt;int&gt;, class6 &lt;int&gt;,
+#&gt; #   class7 &lt;int&gt;, class8 &lt;int&gt;, class9 &lt;int&gt;, class10 &lt;int&gt;, class11 &lt;int&gt;,
+#&gt; #   class12 &lt;int&gt;, class13 &lt;int&gt;, class14 &lt;int&gt;, class15 &lt;int&gt;, class16 &lt;int&gt;,
+#&gt; #   class17 &lt;int&gt;, class18 &lt;int&gt;, class19 &lt;int&gt;, class20 &lt;int&gt;, class21 &lt;int&gt;,
+#&gt; #   class22 &lt;int&gt;, class23 &lt;int&gt;, class24 &lt;int&gt;, class25 &lt;int&gt;, class26 &lt;int&gt;,
+#&gt; #   class27 &lt;int&gt;, class28 &lt;int&gt;, class29 &lt;int&gt;, class30 &lt;int&gt;,
+#&gt; #   courseevaluation &lt;dbl&gt;, didevaluation &lt;int&gt;, female &lt;int&gt;, formal &lt;int&gt;,
+#&gt; #   fulldept &lt;int&gt;, lower &lt;int&gt;, multipleclass &lt;int&gt;, nonenglish &lt;int&gt;,
+#&gt; #   onecredit &lt;int&gt;, percentevaluating &lt;dbl&gt;, profevaluation &lt;dbl&gt;,
+#&gt; #   students &lt;int&gt;, tenuretrack &lt;int&gt;, blkandwhite &lt;int&gt;, btystdvariance &lt;dbl&gt;,
+#&gt; #   btystdavepos &lt;dbl&gt;, btystdaveneg &lt;dbl&gt;</div><div class='input'>
 
-</div></span></pre>
+</div></pre>
   </div>
-  <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
-    <h2>Contents</h2>
-    <ul class="nav nav-pills nav-stacked">
-      
-      <li><a href="#format">Format</a></li>
-
-      <li><a href="#source">Source</a></li>
-
-      <li><a href="#see-also">See also</a></li>
-      
-      <li><a href="#examples">Examples</a></li>
-    </ul>
-
+  <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
+    <nav id="toc" data-toggle="toc" class="sticky-top">
+      <h2 data-toc-skip>Contents</h2>
+    </nav>
   </div>
 </div>
 
 
       <footer>
       <div class="copyright">
-  <p>Developed by Mine Çetinkaya-Rundel, David Diez, Andrew Bray, Christopher Barr.</p>
+  <p>Developed by Mine Çetinkaya-Rundel, David Diez, Andrew Bray, Albert Kim, Ben Baumer, Chester Ismay, Christopher Barr.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.3.0.9100.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
 </div>
 
       </footer>

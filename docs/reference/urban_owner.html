@@ -8,23 +8,29 @@
 
 <title>Summary of many state-level variables — urban_owner • openintro</title>
 
+
 <!-- jquery -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <!-- Bootstrap -->
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha256-bZLfwXAP04zRMK2BjiO8iu9pf4FbLqX6zitd+tIvLhE=" crossorigin="anonymous" />
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
+
+<!-- bootstrap-toc -->
+<link rel="stylesheet" href="../bootstrap-toc.css">
+<script src="../bootstrap-toc.js"></script>
 
 <!-- Font Awesome icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/all.min.css" integrity="sha256-nAmazAk6vS34Xqo0BSrTb+abbtFlgsFK7NKSi6o7Y78=" crossorigin="anonymous" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/v4-shims.min.css" integrity="sha256-6qHlizsOWFskGlwVOKuns+D1nB6ssZrHQrNj1wGplHc=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous" />
 
 <!-- clipboard.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" integrity="sha256-FiZwavyI2V6+EXO1U+xzLG3IKldpiTFf3153ea9zikQ=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script>
 
 <!-- headroom.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/headroom.min.js" integrity="sha256-DJFC1kqIhelURkuza0AvYal5RxMtpzLjFhsnVIeuk+U=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script>
 
 <!-- pkgdown -->
 <link href="../pkgdown.css" rel="stylesheet">
@@ -32,10 +38,10 @@
 
 
 
-<meta property="og:title" content="Summary of many state-level variables — urban_owner" />
 
+<meta property="og:title" content="Summary of many state-level variables — urban_owner" />
 <meta property="og:description" content="Census data for the 50 states plus DC and Puerto Rico." />
-<meta name="twitter:card" content="summary" />
+
 
 
 
@@ -52,7 +58,7 @@
 
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target="#toc">
     <div class="container template-reference-topic">
       <header>
       <div class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -82,10 +88,9 @@
   <a href="../news/index.html">Changelog</a>
 </li>
       </ul>
-      
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="https://github.com/OpenIntroStat/openintro-r-package">
+  <a href="https://github.com/OpenIntroStat/openintro/">
     <span class="fab fa fab fa-github fa-lg"></span>
      
   </a>
@@ -104,21 +109,20 @@
   <div class="col-md-9 contents">
     <div class="page-header">
     <h1>Summary of many state-level variables</h1>
-    <small class="dont-index">Source: <a href='https://github.com/OpenIntroStat/openintro-r-package/blob/master/R/data-urban_owner.R'><code>R/data-urban_owner.R</code></a></small>
+    <small class="dont-index">Source: <a href='https://github.com/OpenIntroStat/openintro/blob/master/R/data-urban_owner.R'><code>R/data-urban_owner.R</code></a></small>
     <div class="hidden name"><code>urban_owner.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    
     <p>Census data for the 50 states plus DC and Puerto Rico.</p>
-    
     </div>
 
     <pre class="usage"><span class='no'>urban_owner</span></pre>
-        
+
+
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>A tibble with 52 observations on the following 28 variables.</p><dl class='dl-horizontal'>
+    <p>A data frame with 52 observations on the following 28 variables.</p><dl'>
   <dt>state</dt><dd><p>State</p></dd>
   <dt>total_housing_units_2000</dt><dd><p>Total housing units available in 2000.</p></dd>
   <dt>total_housing_units_2010</dt><dd><p>Total housing units available in 2010.</p></dd>
@@ -147,59 +151,52 @@
   <dt>area_rural</dt><dd><p>a numeric vector</p></dd>
   <dt>areapct_rural</dt><dd><p>a numeric vector</p></dd>
   <dt>popden_rural</dt><dd><p>a numeric vector</p></dd>
-  </dl>
-    
+  
+</dl>
+
     <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
 
     <p>US Census.</p>
-    
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
-<span class='no'>urban_owner</span></div><div class='output co'>#&gt; <span style='color: #555555;'># A tibble: 52 x 28</span><span>
+<span class='no'>urban_owner</span></div><div class='output co'>#&gt; # A tibble: 52 x 28
 #&gt;    state total_housing_u… total_housing_u… pct_vacant occupied pct_owner_occup…
-#&gt;    </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span> </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span>            </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span>                 </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span> </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span>               </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>
-#&gt; </span><span style='color: #555555;'> 1</span><span> Alab… 1,963,711        2,171,853              13.3 1,883,7…             69.7
-#&gt; </span><span style='color: #555555;'> 2</span><span> Alas… 260,978          306,967                15.9 258,058              63.1
-#&gt; </span><span style='color: #555555;'> 3</span><span> Ariz… 2,189,189        2,844,526              16.3 2,380,9…             66  
-#&gt; </span><span style='color: #555555;'> 4</span><span> Arka… 1,173,043        1,316,299              12.9 1,147,0…             67  
-#&gt; </span><span style='color: #555555;'> 5</span><span> Cali… 12,214,549       13,680,081              8.1 12,577,…             55.9
-#&gt; </span><span style='color: #555555;'> 6</span><span> Colo… 1,808,037        2,212,898              10.8 1,972,8…             65.5
-#&gt; </span><span style='color: #555555;'> 7</span><span> Conn… 1,385,975        1,487,891               7.9 1,371,0…             67.5
-#&gt; </span><span style='color: #555555;'> 8</span><span> Dela… 343,072          405,885                15.7 342,297              72.1
-#&gt; </span><span style='color: #555555;'> 9</span><span> Dist… 274,845          296,719                10.1 266,707              42  
-#&gt; </span><span style='color: #555555;'>10</span><span> Flor… 7,302,947        8,989,580              17.5 7,420,8…             67.4
-#&gt; </span><span style='color: #555555;'># … with 42 more rows, and 22 more variables: pop_st </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span style='color: #555555;'>, area_st </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>,
-#&gt; #   pop_urban </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span style='color: #555555;'>, poppct_urban </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, area_urban </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, areapct_urban </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>,
-#&gt; #   popden_urban </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, pop_ua </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span style='color: #555555;'>, poppct_urban_1 </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, area_ua </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>,
-#&gt; #   areapct_ua </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, popden_ua </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, pop_uc </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span style='color: #555555;'>, poppct_uc </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>,
-#&gt; #   area_uc </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, areapct_uc </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, popden_uc </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, pop_rural </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span style='color: #555555;'>,
-#&gt; #   poppct_rural </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, area_rural </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, areapct_rural </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>,
-#&gt; #   popden_rural </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span></div><div class='input'>
-</div></span></pre>
+#&gt;    &lt;fct&gt; &lt;fct&gt;            &lt;fct&gt;                 &lt;dbl&gt; &lt;fct&gt;               &lt;dbl&gt;
+#&gt;  1 Alab… 1,963,711        2,171,853              13.3 1,883,7…             69.7
+#&gt;  2 Alas… 260,978          306,967                15.9 258,058              63.1
+#&gt;  3 Ariz… 2,189,189        2,844,526              16.3 2,380,9…             66  
+#&gt;  4 Arka… 1,173,043        1,316,299              12.9 1,147,0…             67  
+#&gt;  5 Cali… 12,214,549       13,680,081              8.1 12,577,…             55.9
+#&gt;  6 Colo… 1,808,037        2,212,898              10.8 1,972,8…             65.5
+#&gt;  7 Conn… 1,385,975        1,487,891               7.9 1,371,0…             67.5
+#&gt;  8 Dela… 343,072          405,885                15.7 342,297              72.1
+#&gt;  9 Dist… 274,845          296,719                10.1 266,707              42  
+#&gt; 10 Flor… 7,302,947        8,989,580              17.5 7,420,8…             67.4
+#&gt; # … with 42 more rows, and 22 more variables: pop_st &lt;int&gt;, area_st &lt;dbl&gt;,
+#&gt; #   pop_urban &lt;int&gt;, poppct_urban &lt;dbl&gt;, area_urban &lt;dbl&gt;, areapct_urban &lt;dbl&gt;,
+#&gt; #   popden_urban &lt;dbl&gt;, pop_ua &lt;int&gt;, poppct_urban_1 &lt;dbl&gt;, area_ua &lt;dbl&gt;,
+#&gt; #   areapct_ua &lt;dbl&gt;, popden_ua &lt;dbl&gt;, pop_uc &lt;int&gt;, poppct_uc &lt;dbl&gt;,
+#&gt; #   area_uc &lt;dbl&gt;, areapct_uc &lt;dbl&gt;, popden_uc &lt;dbl&gt;, pop_rural &lt;int&gt;,
+#&gt; #   poppct_rural &lt;dbl&gt;, area_rural &lt;dbl&gt;, areapct_rural &lt;dbl&gt;,
+#&gt; #   popden_rural &lt;dbl&gt;</div><div class='input'>
+</div></pre>
   </div>
-  <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
-    <h2>Contents</h2>
-    <ul class="nav nav-pills nav-stacked">
-      
-      <li><a href="#format">Format</a></li>
-
-      <li><a href="#source">Source</a></li>
-      
-      <li><a href="#examples">Examples</a></li>
-    </ul>
-
+  <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
+    <nav id="toc" data-toggle="toc" class="sticky-top">
+      <h2 data-toc-skip>Contents</h2>
+    </nav>
   </div>
 </div>
 
 
       <footer>
       <div class="copyright">
-  <p>Developed by Mine Çetinkaya-Rundel, David Diez, Andrew Bray, Christopher Barr.</p>
+  <p>Developed by Mine Çetinkaya-Rundel, David Diez, Andrew Bray, Albert Kim, Ben Baumer, Chester Ismay, Christopher Barr.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.3.0.9100.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
 </div>
 
       </footer>

@@ -8,23 +8,29 @@
 
 <title>Temperature Summary Data, Geography Limited — climate70 • openintro</title>
 
+
 <!-- jquery -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <!-- Bootstrap -->
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha256-bZLfwXAP04zRMK2BjiO8iu9pf4FbLqX6zitd+tIvLhE=" crossorigin="anonymous" />
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
+
+<!-- bootstrap-toc -->
+<link rel="stylesheet" href="../bootstrap-toc.css">
+<script src="../bootstrap-toc.js"></script>
 
 <!-- Font Awesome icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/all.min.css" integrity="sha256-nAmazAk6vS34Xqo0BSrTb+abbtFlgsFK7NKSi6o7Y78=" crossorigin="anonymous" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/v4-shims.min.css" integrity="sha256-6qHlizsOWFskGlwVOKuns+D1nB6ssZrHQrNj1wGplHc=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous" />
 
 <!-- clipboard.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" integrity="sha256-FiZwavyI2V6+EXO1U+xzLG3IKldpiTFf3153ea9zikQ=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script>
 
 <!-- headroom.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/headroom.min.js" integrity="sha256-DJFC1kqIhelURkuza0AvYal5RxMtpzLjFhsnVIeuk+U=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script>
 
 <!-- pkgdown -->
 <link href="../pkgdown.css" rel="stylesheet">
@@ -32,12 +38,12 @@
 
 
 
-<meta property="og:title" content="Temperature Summary Data, Geography Limited — climate70" />
 
+<meta property="og:title" content="Temperature Summary Data, Geography Limited — climate70" />
 <meta property="og:description" content="A random set of monitoring locations were taken from NOAA data that had both
 years of interest (1948 and 2018) as well as data for both summary metrics
 of interest (dx70 and dx90, which are described below)." />
-<meta name="twitter:card" content="summary" />
+
 
 
 
@@ -54,7 +60,7 @@ of interest (dx70 and dx90, which are described below)." />
 
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target="#toc">
     <div class="container template-reference-topic">
       <header>
       <div class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -84,10 +90,9 @@ of interest (dx70 and dx90, which are described below)." />
   <a href="../news/index.html">Changelog</a>
 </li>
       </ul>
-      
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="https://github.com/OpenIntroStat/openintro-r-package">
+  <a href="https://github.com/OpenIntroStat/openintro/">
     <span class="fab fa fab fa-github fa-lg"></span>
      
   </a>
@@ -106,23 +111,22 @@ of interest (dx70 and dx90, which are described below)." />
   <div class="col-md-9 contents">
     <div class="page-header">
     <h1>Temperature Summary Data, Geography Limited</h1>
-    <small class="dont-index">Source: <a href='https://github.com/OpenIntroStat/openintro-r-package/blob/master/R/data-climate70.R'><code>R/data-climate70.R</code></a></small>
+    <small class="dont-index">Source: <a href='https://github.com/OpenIntroStat/openintro/blob/master/R/data-climate70.R'><code>R/data-climate70.R</code></a></small>
     <div class="hidden name"><code>climate70.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    
     <p>A random set of monitoring locations were taken from NOAA data that had both
 years of interest (1948 and 2018) as well as data for both summary metrics
 of interest (dx70 and dx90, which are described below).</p>
-    
     </div>
 
     <pre class="usage"><span class='no'>climate70</span></pre>
-        
+
+
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>A data frame with 197 observations on the following 7 variables.</p><dl class='dl-horizontal'>
+    <p>A data frame with 197 observations on the following 7 variables.</p><dl'>
   <dt>station</dt><dd><p>Station ID.</p></dd>
   <dt>latitude</dt><dd><p>Latitude of the station.</p></dd>
   <dt>longitude</dt><dd><p>Longitude of the station.</p></dd>
@@ -130,19 +134,18 @@ of interest (dx70 and dx90, which are described below).</p>
   <dt>dx70_2018</dt><dd><p>Number of days above 70 degrees in 2018.</p></dd>
   <dt>dx90_1948</dt><dd><p>Number of days above 90 degrees in 1948.</p></dd>
   <dt>dx90_2018</dt><dd><p>Number of days above 90 degrees in 2018.</p></dd>
-  </dl>
-    
+  
+</dl>
+
     <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
 
     <p>Retrieved on 2019-04-24.
 <a href='https://www.ncdc.noaa.gov/cdo-web/datasets'>https://www.ncdc.noaa.gov/cdo-web/datasets</a></p>
-    
     <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
 
     <p>Please keep in mind that these are two annual snapshots, and a complete
 analysis would consider much more than two years of data and much additional
 information for those years.</p>
-    
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
@@ -150,36 +153,54 @@ information for those years.</p>
 <span class='co'># This geographic limitation may be due to the particular</span>
 <span class='co'># years considered, since locations without both 1948 and</span>
 <span class='co'># 2018 were discarded for this (simple) data set.</span>
-<span class='fu'><a href='https://rdrr.io/r/graphics/plot.html'>plot</a></span>(<span class='no'>d.</span>$<span class='no'>longitude</span>, <span class='no'>d.</span>$<span class='no'>latitude</span>)</div><div class='output co'>#&gt; <span class='error'>Error in plot(d.$longitude, d.$latitude): object 'd.' not found</span></div><div class='input'>
+<span class='fu'><a href='https://rdrr.io/r/base/plot.html'>plot</a></span>(<span class='no'>climate70</span>$<span class='no'>longitude</span>, <span class='no'>climate70</span>$<span class='no'>latitude</span>)</div><div class='img'><img src='climate70-1.png' alt='' width='700' height='433' /></div><div class='input'>
 <span class='fu'><a href='https://rdrr.io/r/graphics/par.html'>par</a></span>(<span class='kw'>mfrow</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>2</span>, <span class='fl'>2</span>))
-<span class='fu'><a href='https://rdrr.io/r/graphics/plot.html'>plot</a></span>(<span class='no'>d.</span>$<span class='no'>dx70_1948</span>, <span class='no'>d.</span>$<span class='no'>dx70_2018</span>)</div><div class='output co'>#&gt; <span class='error'>Error in plot(d.$dx70_1948, d.$dx70_2018): object 'd.' not found</span></div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/abline.html'>abline</a></span>(<span class='fl'>0</span>, <span class='fl'>1</span>, <span class='kw'>lty</span> <span class='kw'>=</span> <span class='fl'>2</span>)</div><div class='output co'>#&gt; <span class='error'>Error in int_abline(a = a, b = b, h = h, v = v, untf = untf, ...): plot.new has not been called yet</span></div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/plot.html'>plot</a></span>(<span class='no'>d.</span>$<span class='no'>dx90_1948</span>, <span class='no'>d.</span>$<span class='no'>dx90_2018</span>)</div><div class='output co'>#&gt; <span class='error'>Error in plot(d.$dx90_1948, d.$dx90_2018): object 'd.' not found</span></div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/abline.html'>abline</a></span>(<span class='fl'>0</span>, <span class='fl'>1</span>, <span class='kw'>lty</span> <span class='kw'>=</span> <span class='fl'>2</span>)</div><div class='output co'>#&gt; <span class='error'>Error in int_abline(a = a, b = b, h = h, v = v, untf = untf, ...): plot.new has not been called yet</span></div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/hist.html'>hist</a></span>(<span class='no'>d.</span>$<span class='no'>dx70_2018</span> - <span class='no'>d.</span>$<span class='no'>dx70_1948</span>)</div><div class='output co'>#&gt; <span class='error'>Error in hist(d.$dx70_2018 - d.$dx70_1948): object 'd.' not found</span></div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/hist.html'>hist</a></span>(<span class='no'>d.</span>$<span class='no'>dx90_2018</span> - <span class='no'>d.</span>$<span class='no'>dx90_1948</span>)</div><div class='output co'>#&gt; <span class='error'>Error in hist(d.$dx90_2018 - d.$dx90_1948): object 'd.' not found</span></div><div class='input'>
-<span class='fu'><a href='https://rdrr.io/r/stats/t.test.html'>t.test</a></span>(<span class='no'>d.</span>$<span class='no'>dx70_2018</span> - <span class='no'>d.</span>$<span class='no'>dx70_1948</span>)</div><div class='output co'>#&gt; <span class='error'>Error in t.test(d.$dx70_2018 - d.$dx70_1948): object 'd.' not found</span></div><div class='input'><span class='fu'><a href='https://rdrr.io/r/stats/t.test.html'>t.test</a></span>(<span class='no'>d.</span>$<span class='no'>dx90_2018</span> - <span class='no'>d.</span>$<span class='no'>dx90_1948</span>)</div><div class='output co'>#&gt; <span class='error'>Error in t.test(d.$dx90_2018 - d.$dx90_1948): object 'd.' not found</span></div><div class='input'>
+<span class='fu'><a href='https://rdrr.io/r/base/plot.html'>plot</a></span>(<span class='no'>climate70</span>$<span class='no'>dx70_1948</span>, <span class='no'>climate70</span>$<span class='no'>dx70_2018</span>)
+<span class='fu'><a href='https://rdrr.io/r/graphics/abline.html'>abline</a></span>(<span class='fl'>0</span>, <span class='fl'>1</span>, <span class='kw'>lty</span> <span class='kw'>=</span> <span class='fl'>2</span>)
+<span class='fu'><a href='https://rdrr.io/r/base/plot.html'>plot</a></span>(<span class='no'>climate70</span>$<span class='no'>dx90_1948</span>, <span class='no'>climate70</span>$<span class='no'>dx90_2018</span>)
+<span class='fu'><a href='https://rdrr.io/r/graphics/abline.html'>abline</a></span>(<span class='fl'>0</span>, <span class='fl'>1</span>, <span class='kw'>lty</span> <span class='kw'>=</span> <span class='fl'>2</span>)
+<span class='fu'><a href='https://rdrr.io/r/graphics/hist.html'>hist</a></span>(<span class='no'>climate70</span>$<span class='no'>dx70_2018</span> - <span class='no'>climate70</span>$<span class='no'>dx70_1948</span>)
+<span class='fu'><a href='https://rdrr.io/r/graphics/hist.html'>hist</a></span>(<span class='no'>climate70</span>$<span class='no'>dx90_2018</span> - <span class='no'>climate70</span>$<span class='no'>dx90_1948</span>)</div><div class='img'><img src='climate70-2.png' alt='' width='700' height='433' /></div><div class='input'>
+<span class='fu'><a href='https://rdrr.io/r/stats/t.test.html'>t.test</a></span>(<span class='no'>climate70</span>$<span class='no'>dx70_2018</span> - <span class='no'>climate70</span>$<span class='no'>dx70_1948</span>)</div><div class='output co'>#&gt; 
+#&gt; 	One Sample t-test
+#&gt; 
+#&gt; data:  climate70$dx70_2018 - climate70$dx70_1948
+#&gt; t = 2.0558, df = 196, p-value = 0.04113
+#&gt; alternative hypothesis: true mean is not equal to 0
+#&gt; 95 percent confidence interval:
+#&gt;  0.1663027 8.0062861
+#&gt; sample estimates:
+#&gt; mean of x 
+#&gt;  4.086294 
+#&gt; </div><div class='input'><span class='fu'><a href='https://rdrr.io/r/stats/t.test.html'>t.test</a></span>(<span class='no'>climate70</span>$<span class='no'>dx90_2018</span> - <span class='no'>climate70</span>$<span class='no'>dx90_1948</span>)</div><div class='output co'>#&gt; 
+#&gt; 	One Sample t-test
+#&gt; 
+#&gt; data:  climate70$dx90_2018 - climate70$dx90_1948
+#&gt; t = 2.3702, df = 196, p-value = 0.01875
+#&gt; alternative hypothesis: true mean is not equal to 0
+#&gt; 95 percent confidence interval:
+#&gt;  0.4868224 5.3101319
+#&gt; sample estimates:
+#&gt; mean of x 
+#&gt;  2.898477 
+#&gt; </div><div class='input'>
 </div></pre>
   </div>
-  <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
-    <h2>Contents</h2>
-    <ul class="nav nav-pills nav-stacked">
-      
-      <li><a href="#format">Format</a></li>
-
-      <li><a href="#source">Source</a></li>
-
-      <li><a href="#details">Details</a></li>
-      
-      <li><a href="#examples">Examples</a></li>
-    </ul>
-
+  <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
+    <nav id="toc" data-toggle="toc" class="sticky-top">
+      <h2 data-toc-skip>Contents</h2>
+    </nav>
   </div>
 </div>
 
 
       <footer>
       <div class="copyright">
-  <p>Developed by Mine Çetinkaya-Rundel, David Diez, Andrew Bray, Christopher Barr.</p>
+  <p>Developed by Mine Çetinkaya-Rundel, David Diez, Andrew Bray, Albert Kim, Ben Baumer, Chester Ismay, Christopher Barr.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.3.0.9100.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
 </div>
 
       </footer>

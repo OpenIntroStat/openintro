@@ -8,23 +8,29 @@
 
 <title>Function reference • openintro</title>
 
+
 <!-- jquery -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <!-- Bootstrap -->
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha256-bZLfwXAP04zRMK2BjiO8iu9pf4FbLqX6zitd+tIvLhE=" crossorigin="anonymous" />
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
+
+<!-- bootstrap-toc -->
+<link rel="stylesheet" href="../bootstrap-toc.css">
+<script src="../bootstrap-toc.js"></script>
 
 <!-- Font Awesome icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/all.min.css" integrity="sha256-nAmazAk6vS34Xqo0BSrTb+abbtFlgsFK7NKSi6o7Y78=" crossorigin="anonymous" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/v4-shims.min.css" integrity="sha256-6qHlizsOWFskGlwVOKuns+D1nB6ssZrHQrNj1wGplHc=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous" />
 
 <!-- clipboard.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" integrity="sha256-FiZwavyI2V6+EXO1U+xzLG3IKldpiTFf3153ea9zikQ=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script>
 
 <!-- headroom.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/headroom.min.js" integrity="sha256-DJFC1kqIhelURkuza0AvYal5RxMtpzLjFhsnVIeuk+U=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script>
 
 <!-- pkgdown -->
 <link href="../pkgdown.css" rel="stylesheet">
@@ -32,7 +38,9 @@
 
 
 
+
 <meta property="og:title" content="Function reference" />
+
 
 
 
@@ -49,7 +57,7 @@
 
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target="#toc">
     <div class="container template-reference-index">
       <header>
       <div class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -79,10 +87,9 @@
   <a href="../news/index.html">Changelog</a>
 </li>
       </ul>
-      
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="https://github.com/OpenIntroStat/openintro-r-package">
+  <a href="https://github.com/OpenIntroStat/openintro/">
     <span class="fab fa fab fa-github fa-lg"></span>
      
   </a>
@@ -118,997 +125,12 @@
           <p class="section-desc"></p>
         </th>
       </tr>
-      <tr>
-        
-        <td>
-          <p><code><a href="absenteeism.html">absenteeism</a></code> </p>
-        </td>
-        <td><p>Absenteeism</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="acs12.html">acs12</a></code> </p>
-        </td>
-        <td><p>American Community Survey, 2012</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="age_at_mar.html">age_at_mar</a></code> </p>
-        </td>
-        <td><p>Age at first marriage of 5,534 US women.</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="ami_occurrences.html">ami_occurrences</a></code> </p>
-        </td>
-        <td><p>Acute Myocardial Infarction (Heart Attack) Events</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="antibiotics.html">antibiotics</a></code> </p>
-        </td>
-        <td><p>Pre-existing conditions in 92 children</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="arbuthnot.html">arbuthnot</a></code> </p>
-        </td>
-        <td><p>Male and female births in London</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="ask.html">ask</a></code> </p>
-        </td>
-        <td><p>How important is it to ask pointed questions?</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="association.html">association</a></code> </p>
-        </td>
-        <td><p>Simulated data for association plots</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="avandia.html">avandia</a></code> </p>
-        </td>
-        <td><p>Cardiovascular problems for two types of Diabetes medicines</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="babies_crawl.html">babies_crawl</a></code> </p>
-        </td>
-        <td><p>Crawling age</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="babies.html">babies</a></code> </p>
-        </td>
-        <td><p>The Child Health and Development Studies</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="bac.html">bac</a></code> </p>
-        </td>
-        <td><p>Beer and blood alcohol content</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="ball_bearing.html">ball_bearing</a></code> </p>
-        </td>
-        <td><p>Lifespan of ball bearings</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="bdims.html">bdims</a></code> </p>
-        </td>
-        <td><p>Body measurements of 507 physically active individuals.</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="birds.html">birds</a></code> </p>
-        </td>
-        <td><p>Aircraft-Wildlife Collisions</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="births.html">births</a></code> </p>
-        </td>
-        <td><p>North Carolina births</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="books.html">books</a></code> </p>
-        </td>
-        <td><p>Sample of books on a shelf</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="burger.html">burger</a></code> </p>
-        </td>
-        <td><p>Burger preferences</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="cancer_in_dogs.html">cancer_in_dogs</a></code> </p>
-        </td>
-        <td><p>Cancer in dogs</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="cards.html">cards</a></code> </p>
-        </td>
-        <td><p>Deck of cards</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="cars.html">cars</a></code> </p>
-        </td>
-        <td><p>cars</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="cchousing.html">cchousing</a></code> </p>
-        </td>
-        <td><p>Community college housing (simulated data)</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="census.html">census</a></code> </p>
-        </td>
-        <td><p>Random sample of 2000 U.S. Census Data</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="cherry.html">cherry</a></code> </p>
-        </td>
-        <td><p>Summary information for 31 cherry trees</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="children_gender_stereo.html">children_gender_stereo</a></code> </p>
-        </td>
-        <td><p>Gender Stereotypes in 5-7 year old Children</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="china.html">china</a></code> </p>
-        </td>
-        <td><p>Child care hours</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="cia_factbook.html">cia_factbook</a></code> </p>
-        </td>
-        <td><p>CIA Factbook Details on Countries</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="classdata.html">classdata</a></code> </p>
-        </td>
-        <td><p>Simulated class data</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="cle_sac.html">cle_sac</a></code> </p>
-        </td>
-        <td><p>Cleveland and Sacramento</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="coast_starlight.html">coast_starlight</a></code> </p>
-        </td>
-        <td><p>Coast Starlight Amtrak train</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="COL.html">COL</a></code> </p>
-        </td>
-        <td><p>OpenIntro Statistics colors</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="corr_match.html">corr_match</a></code> </p>
-        </td>
-        <td><p>Sample data sets for correlation problems</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="county_complete.html">county_complete</a></code> </p>
-        </td>
-        <td><p>United States Counties</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="county_w_sm_ban.html">county_w_sm_ban</a></code> </p>
-        </td>
-        <td><p>County data set with smoking ban.</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="county.html">county</a></code> </p>
-        </td>
-        <td><p>United States Counties</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="cpr.html">cpr</a></code> </p>
-        </td>
-        <td><p>CPR data set</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="credits.html">credits</a></code> </p>
-        </td>
-        <td><p>College credits.</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="diabetes2.html">diabetes2</a></code> </p>
-        </td>
-        <td><p>Type 2 Diabetes Clinical Trial for Patients 10-17 Years Old</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="dream.html">dream</a></code> </p>
-        </td>
-        <td><p>Survey on views of the DREAM Act</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="drug_use.html">drug_use</a></code> </p>
-        </td>
-        <td><p>Drug use of students and parents</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="ebola_survey.html">ebola_survey</a></code> </p>
-        </td>
-        <td><p>Survey on Ebola quarantine</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="elmhurst.html">elmhurst</a></code> </p>
-        </td>
-        <td><p>Elmhurst College gift aid</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="email.html">email</a></code> </p>
-        </td>
-        <td><p>Data frame representing information about a collection of emails</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="email50.html">email50</a></code> </p>
-        </td>
-        <td><p>Sample of 50 emails</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="env_regulation.html">env_regulation</a></code> </p>
-        </td>
-        <td><p>American Adults on Regulation and Renewable Energy</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="epa2012.html">epa2012</a></code> </p>
-        </td>
-        <td><p>Vehicle info from the EPA</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="esi.html">esi</a></code> </p>
-        </td>
-        <td><p>Environmental Sustainability Index 2005</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="ethanol.html">ethanol</a></code> </p>
-        </td>
-        <td><p>Ethanol Treatment for Tumors Experiment</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="evals.html">evals</a></code> </p>
-        </td>
-        <td><p>Professor evaluations and beauty</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="exams.html">exams</a></code> </p>
-        </td>
-        <td><p>Exam scores</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="exclusive_relationship.html">exclusive_relationship</a></code> </p>
-        </td>
-        <td><p>Number of Exclusive Relationships</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="fcid.html">fcid</a></code> </p>
-        </td>
-        <td><p>Summary of male heights from USDA Food Commodity Intake Database</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="fheights.html">fheights</a></code> </p>
-        </td>
-        <td><p>Female college student heights, in inches</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="friday.html">friday</a></code> </p>
-        </td>
-        <td><p>Friday the 13th</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="full_body_scan.html">full_body_scan</a></code> </p>
-        </td>
-        <td><p>Poll about use of full-body airport scanners</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="gear_company.html">gear_company</a></code> </p>
-        </td>
-        <td><p>Fake data for a gear company example</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="gender_discrimination.html">gender_discrimination</a></code> </p>
-        </td>
-        <td><p>Bank manager recommendations based on gender</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="gifted.html">gifted</a></code> </p>
-        </td>
-        <td><p>Analytical skills of young gifted children</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="global_warming_pew.html">global_warming_pew</a></code> </p>
-        </td>
-        <td><p>Pew survey on global warming</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="goog.html">goog</a></code> </p>
-        </td>
-        <td><p>Google stock data</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="gov_poll.html">gov_poll</a></code> </p>
-        </td>
-        <td><p>Pew Research poll on goverment approval ratings</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="govrace10.html">govrace10</a></code> </p>
-        </td>
-        <td><p>Election results for 2010 Governor races in the U.S.</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="gpa_iq.html">gpa_iq</a></code> </p>
-        </td>
-        <td><p>Sample of students and their GPA and IQ</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="gpa_study_hours.html">gpa_study_hours</a></code> </p>
-        </td>
-        <td><p>gpa_study_hours</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="gpa.html">gpa</a></code> </p>
-        </td>
-        <td><p>Survey of Duke students on GPA, studying, and more</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="gradestv.html">gradestv</a></code> </p>
-        </td>
-        <td><p>Simulated data for analyzing the relationship between watching TV and grades</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="gss2010.html">gss2010</a></code> </p>
-        </td>
-        <td><p>2010 General Social Survey</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="health_coverage.html">health_coverage</a></code> </p>
-        </td>
-        <td><p>Health Coverage and Health Status</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="healthcare_law_survey.html">healthcare_law_survey</a></code> </p>
-        </td>
-        <td><p>Pew Research Center poll on health care, including question variants</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="heart_transplant.html">heart_transplant</a></code> </p>
-        </td>
-        <td><p>Heart Transplant Data</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="helium.html">helium</a></code> </p>
-        </td>
-        <td><p>Helium football</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="helmet.html">helmet</a></code> </p>
-        </td>
-        <td><p>Socioeconomic status and reduced-fee school lunches</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="house.html">house</a></code> </p>
-        </td>
-        <td><p>United States House of Representatives historical make-up</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="houserace10.html">houserace10</a></code> </p>
-        </td>
-        <td><p>Election results for the 2010 U.S. House of Represenatives races</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="housing.html">housing</a></code> </p>
-        </td>
-        <td><p>Simulated data set on student housing</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="hsb2.html">hsb2</a></code> </p>
-        </td>
-        <td><p>High School and Beyond survey</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="husbands_wives.html">husbands_wives</a></code> </p>
-        </td>
-        <td><p>Great Britain: husband and wife pairs</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="immigration.html">immigration</a></code> </p>
-        </td>
-        <td><p>Poll on illegal workers in the US</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="infmortrate.html">infmortrate</a></code> </p>
-        </td>
-        <td><p>Infant Mortality Rates, 2012</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="ipo.html">ipo</a></code> </p>
-        </td>
-        <td><p>Facebook, Google, and LinkedIn IPO filings</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="ipod.html">ipod</a></code> </p>
-        </td>
-        <td><p>Length of songs on an iPod</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="jury.html">jury</a></code> </p>
-        </td>
-        <td><p>Simulated juror data set</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="law_resume.html">law_resume</a></code> </p>
-        </td>
-        <td><p>Gender, Socioeconomic Class, and Interview Invites</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="leg_mari.html">leg_mari</a></code> </p>
-        </td>
-        <td><p>Legalization of Marijuana Support in 2010 California Survey</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="loans_full_schema.html">loans_full_schema</a></code> </p>
-        </td>
-        <td><p>Loan data from Lending Club</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="london_boroughs.html">london_boroughs</a></code> </p>
-        </td>
-        <td><p>London Borough Boundaries</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="london_murders.html">london_murders</a></code> </p>
-        </td>
-        <td><p>London Murders, 2006-2011</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="mail_me.html">mail_me</a></code> </p>
-        </td>
-        <td><p>Influence of a Good Mood on Helpfulness</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="major_survey.html">major_survey</a></code> </p>
-        </td>
-        <td><p>Survey of Duke students and the area of their major</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="male_heights.html">male_heights</a></code> </p>
-        </td>
-        <td><p>Sample of 100 male heights</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="mammals.html">mammals</a></code> </p>
-        </td>
-        <td><p>Sleep in Mammals</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="mammogram.html">mammogram</a></code> </p>
-        </td>
-        <td><p>Experiment with Mammogram Randomized</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="marathon.html">marathon</a></code> </p>
-        </td>
-        <td><p>New York City Marathon Times</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="mariokart.html">mariokart</a></code> </p>
-        </td>
-        <td><p>Wii Mario Kart auctions from Ebay</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="midterms_house.html">midterms_house</a></code> </p>
-        </td>
-        <td><p>President's party performance and unemployment rate</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="migraine.html">migraine</a></code> </p>
-        </td>
-        <td><p>Migraines and acupuncture</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="military.html">military</a></code> </p>
-        </td>
-        <td><p>US Military Demographics</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="mlb_players_18.html">mlb_players_18</a></code> </p>
-        </td>
-        <td><p>Batter Statistics for 2018 Major League Baseball (MLB) Season</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="mlb.html">mlb</a></code> </p>
-        </td>
-        <td><p>Salary data for Major League Baseball (2010)</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="mlbbat10.html">mlbbat10</a></code> </p>
-        </td>
-        <td><p>Major League Baseball Player Hitting Statistics for 2010</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="mtl.html">mtl</a></code> </p>
-        </td>
-        <td><p>Medial temporal lobe (MTL) and other data for 26 participants</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="murders.html">murders</a></code> </p>
-        </td>
-        <td><p>Data for 20 metropolitan areas.</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="nba_heights.html">nba_heights</a></code> </p>
-        </td>
-        <td><p>NBA Player heights from 2008-9</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="ncbirths.html">ncbirths</a></code> </p>
-        </td>
-        <td><p>North Carolina births</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="nuclear_survey.html">nuclear_survey</a></code> </p>
-        </td>
-        <td><p>Nuclear Arms Reduction Survey</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="offshore_drilling.html">offshore_drilling</a></code> </p>
-        </td>
-        <td><p>California poll on drilling off the California coast</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="orings.html">orings</a></code> </p>
-        </td>
-        <td><p>1986 Challenger disaster and O-rings</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="oscars.html">oscars</a></code> </p>
-        </td>
-        <td><p>Oscar winners, 1929 to 2018</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="outliers.html">outliers</a></code> </p>
-        </td>
-        <td><p>Simulated data sets for different types of outliers</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="penetrating_oil.html">penetrating_oil</a></code> </p>
-        </td>
-        <td><p>What's the best way to loosen a rusty bolt?</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="penny_ages.html">penny_ages</a></code> </p>
-        </td>
-        <td><p>Penny Ages</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="piracy.html">piracy</a></code> </p>
-        </td>
-        <td><p>Piracy and PIPA/SOPA</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="pm25_2011_durham.html">pm25_2011_durham</a></code> </p>
-        </td>
-        <td><p>Air quality for Durham, NC</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="poker.html">poker</a></code> </p>
-        </td>
-        <td><p>Poker winnings during 50 sessions</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="possum.html">possum</a></code> </p>
-        </td>
-        <td><p>possum</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="ppp_201503.html">ppp_201503</a></code> </p>
-        </td>
-        <td><p>US Poll on who it is better to raise taxes on</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="president.html">president</a></code> </p>
-        </td>
-        <td><p>United States Presidental History</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="prison.html">prison</a></code> </p>
-        </td>
-        <td><p>Prison isolation experiment</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="prof_evals.html">prof_evals</a></code> </p>
-        </td>
-        <td><p>Professor evaluations and beauty</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="prrace08.html">prrace08</a></code> </p>
-        </td>
-        <td><p>Election results for the 2008 U.S. Presidential race</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="resume.html">resume</a></code> </p>
-        </td>
-        <td><p>Which resume attributes drive job callbacks?  (Race and gender under study.)</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="run10.html">run10</a></code> </p>
-        </td>
-        <td><p>Cherry Blossom 10 mile run data, 2009</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="run17.html">run17</a></code> </p>
-        </td>
-        <td><p>Cherry Blossom Run data, 2017</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="sat_improve.html">sat_improve</a></code> </p>
-        </td>
-        <td><p>Simulated data for SAT score improvement</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="satgpa.html">satgpa</a></code> </p>
-        </td>
-        <td><p>SAT and GPA data</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="scotus_healthcare.html">scotus_healthcare</a></code> </p>
-        </td>
-        <td><p>Public Opinion with SCOTUS ruling on American Healthcare Act</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="senaterace10.html">senaterace10</a></code> </p>
-        </td>
-        <td><p>Election results for the 2010 U.S. Senate races</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="sinusitis.html">sinusitis</a></code> </p>
-        </td>
-        <td><p>Sinusitis and antibiotic experiment</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="sleep_deprivation.html">sleep_deprivation</a></code> </p>
-        </td>
-        <td><p>Survey on sleep deprivation and transportation workers</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="smoking.html">smoking</a></code> </p>
-        </td>
-        <td><p>UK Smoking Data</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="socialexp.html">socialexp</a></code> </p>
-        </td>
-        <td><p>Social experiment</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="solar.html">solar</a></code> </p>
-        </td>
-        <td><p>Energy Output From Two Solar Arrays in San Francisco</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="sp500_seq.html">sp500_seq</a></code> </p>
-        </td>
-        <td><p>S&amp;P 500 stock data</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="sp500.html">sp500</a></code> </p>
-        </td>
-        <td><p>Financial information for 50 S&amp;P 500 companies</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="speed_gender_height.html">speed_gender_height</a></code> </p>
-        </td>
-        <td><p>Speed, gender, and height of 1325 students</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="starbucks.html">starbucks</a></code> </p>
-        </td>
-        <td><p>Starbucks nutrition</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="state_stats.html">state_stats</a></code> </p>
-        </td>
-        <td><p>State-level data</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="stats_scores.html">stats_scores</a></code> </p>
-        </td>
-        <td><p>Final exam scores for twenty students</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="stem_cell.html">stem_cell</a></code> </p>
-        </td>
-        <td><p>Embryonic stem cells to treat heart attack (in sheep)</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="stent30.html">stent30</a></code> </p>
-        </td>
-        <td><p>Stents for the treatment of stroke</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="stent365.html">stent365</a></code> </p>
-        </td>
-        <td><p>Stents for the treatment of stroke</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="student_housing.html">student_housing</a></code> </p>
-        </td>
-        <td><p>Community college housing (simulated data, 2015)</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="student_sleep.html">student_sleep</a></code> </p>
-        </td>
-        <td><p>Sleep for 110 students (simulated)</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="sulphinpyrazone.html">sulphinpyrazone</a></code> </p>
-        </td>
-        <td><p>Treating heart attacks</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="supreme_court.html">supreme_court</a></code> </p>
-        </td>
-        <td><p>Supreme Court approval rating</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="teacher.html">teacher</a></code> </p>
-        </td>
-        <td><p>Teacher Salaries in St. Louis, Michigan</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="textbooks.html">textbooks</a></code> </p>
-        </td>
-        <td><p>Textbook data for UCLA Bookstore and Amazon</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="thanksgiving_spend.html">thanksgiving_spend</a></code> </p>
-        </td>
-        <td><p>Thanksgiving spending, simulated based on Gallup poll.</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="tips.html">tips</a></code> </p>
-        </td>
-        <td><p>Tip data</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="toohey.html">toohey</a></code> </p>
-        </td>
-        <td><p>Simulated polling data set</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="tourism.html">tourism</a></code> </p>
-        </td>
-        <td><p>Turkey tourism</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="toy_anova.html">toy_anova</a></code> </p>
-        </td>
-        <td><p>Simulated data set for ANOVA</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="transplant.html">transplant</a></code> </p>
-        </td>
-        <td><p>Transplant consultant success rate (fake data)</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="ukdemo.html">ukdemo</a></code> </p>
-        </td>
-        <td><p>United Kingdom Demographic Data</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="unempl.html">unempl</a></code> </p>
-        </td>
-        <td><p>Annual unemployment since 1890</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="unemploy_pres.html">unemploy_pres</a></code> </p>
-        </td>
-        <td><p>President's party performance and unemployment rate</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="urban_owner.html">urban_owner</a></code> </p>
-        </td>
-        <td><p>Summary of many state-level variables</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="urban_rural_pop.html">urban_rural_pop</a></code> </p>
-        </td>
-        <td><p>State summary info</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="usairports.html">usairports</a></code> </p>
-        </td>
-        <td><p>US Airports</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="vote_nsa.html">vote_nsa</a></code> </p>
-        </td>
-        <td><p>Predicting Who'd Vote for NSA Mass Surveillance</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="winery_cars.html">winery_cars</a></code> </p>
-        </td>
-        <td><p>Time Between Gondola Cars at Sterling Winery</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="xom.html">xom</a></code> </p>
-        </td>
-        <td><p>Exxon Mobile stock data</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="yawn.html">yawn</a></code> </p>
-        </td>
-        <td><p>Contagiousness of yawning</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="yrbss_samp.html">yrbss_samp</a></code> </p>
-        </td>
-        <td><p>Sample of Youth Risk Behavior Surveillance System (YRBSS)</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="yrbss.html">yrbss</a></code> </p>
-        </td>
-        <td><p>Youth Risk Behavior Surveillance System (YRBSS)</p></td>
-      </tr>
+      
+      
+    </tbody><tbody>
+      
+      
+      
     </tbody><tbody>
       <tr>
         <th colspan="2">
@@ -1116,12 +138,17 @@
           <p class="section-desc"></p>
         </th>
       </tr>
+      
+      
+    </tbody><tbody>
+      
+      
       <tr>
         
         <td>
           <p><code><a href="abbr2state.html">abbr2state()</a></code> </p>
         </td>
-        <td><p>Convert state names to abbreviations and back again</p></td>
+        <td><p>Convert state abbreviations to names</p></td>
       </tr><tr>
         
         <td>
@@ -1164,6 +191,12 @@
           <p><code><a href="buildAxis.html">buildAxis()</a></code> </p>
         </td>
         <td><p>Axis function substitute</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="calc_streak.html">calc_streak()</a></code> </p>
+        </td>
+        <td><p>Calculate hit streaks</p></td>
       </tr><tr>
         
         <td>
@@ -1293,15 +326,21 @@
       </tr><tr>
         
         <td>
-          <p><code><a href="openintro-package.html">openintro-package</a></code> </p>
-        </td>
-        <td><p>openintro: Data Sets and Supplemental Functions from 'OpenIntro' Textbooks and Labs</p></td>
-      </tr><tr>
-        
-        <td>
           <p><code><a href="PlotWLine.html">PlotWLine()</a></code> </p>
         </td>
         <td><p>Plot data and add a regression line</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="qqnormsim.html">qqnormsim()</a></code> </p>
+        </td>
+        <td><p>Generate simulated QQ plots</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="state2abbr.html">state2abbr()</a></code> </p>
+        </td>
+        <td><p>Convert state names to abbreviations</p></td>
       </tr><tr>
         
         <td>
@@ -1313,23 +352,21 @@
     </table>
   </div>
 
-  <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
-    <h2>Contents</h2>
-    <ul class="nav nav-pills nav-stacked">
-      <li><a href="#section-datasets">Datasets</a></li>
-      <li><a href="#section-functions">Functions</a></li>
-    </ul>
+  <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
+    <nav id="toc" data-toggle="toc" class="sticky-top">
+      <h2 data-toc-skip>Contents</h2>
+    </nav>
   </div>
 </div>
 
 
       <footer>
       <div class="copyright">
-  <p>Developed by Mine Çetinkaya-Rundel, David Diez, Andrew Bray, Christopher Barr.</p>
+  <p>Developed by Mine Çetinkaya-Rundel, David Diez, Andrew Bray, Albert Kim, Ben Baumer, Chester Ismay, Christopher Barr.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.3.0.9100.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
 </div>
 
       </footer>

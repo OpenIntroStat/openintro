@@ -8,23 +8,29 @@
 
 <title>Axis function substitute — buildAxis • openintro</title>
 
+
 <!-- jquery -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <!-- Bootstrap -->
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha256-bZLfwXAP04zRMK2BjiO8iu9pf4FbLqX6zitd+tIvLhE=" crossorigin="anonymous" />
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
+
+<!-- bootstrap-toc -->
+<link rel="stylesheet" href="../bootstrap-toc.css">
+<script src="../bootstrap-toc.js"></script>
 
 <!-- Font Awesome icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/all.min.css" integrity="sha256-nAmazAk6vS34Xqo0BSrTb+abbtFlgsFK7NKSi6o7Y78=" crossorigin="anonymous" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/v4-shims.min.css" integrity="sha256-6qHlizsOWFskGlwVOKuns+D1nB6ssZrHQrNj1wGplHc=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous" />
 
 <!-- clipboard.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" integrity="sha256-FiZwavyI2V6+EXO1U+xzLG3IKldpiTFf3153ea9zikQ=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script>
 
 <!-- headroom.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/headroom.min.js" integrity="sha256-DJFC1kqIhelURkuza0AvYal5RxMtpzLjFhsnVIeuk+U=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script>
 
 <!-- pkgdown -->
 <link href="../pkgdown.css" rel="stylesheet">
@@ -32,11 +38,11 @@
 
 
 
-<meta property="og:title" content="Axis function substitute — buildAxis" />
 
+<meta property="og:title" content="Axis function substitute — buildAxis" />
 <meta property="og:description" content="The function buildAxis is built to provide more control of the number
 of labels on the axis. This function is still under development." />
-<meta name="twitter:card" content="summary" />
+
 
 
 
@@ -53,7 +59,7 @@ of labels on the axis. This function is still under development." />
 
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target="#toc">
     <div class="container template-reference-topic">
       <header>
       <div class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -83,10 +89,9 @@ of labels on the axis. This function is still under development." />
   <a href="../news/index.html">Changelog</a>
 </li>
       </ul>
-      
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="https://github.com/OpenIntroStat/openintro-r-package">
+  <a href="https://github.com/OpenIntroStat/openintro/">
     <span class="fab fa fab fa-github fa-lg"></span>
      
   </a>
@@ -105,20 +110,17 @@ of labels on the axis. This function is still under development." />
   <div class="col-md-9 contents">
     <div class="page-header">
     <h1>Axis function substitute</h1>
-    <small class="dont-index">Source: <a href='https://github.com/OpenIntroStat/openintro-r-package/blob/master/R/buildAxis.R'><code>R/buildAxis.R</code></a></small>
+    <small class="dont-index">Source: <a href='https://github.com/OpenIntroStat/openintro/blob/master/R/buildAxis.R'><code>R/buildAxis.R</code></a></small>
     <div class="hidden name"><code>buildAxis.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    
     <p>The function <code>buildAxis</code> is built to provide more control of the number
 of labels on the axis. This function is still under development.</p>
-    
     </div>
 
-    <pre class="usage"><span class='fu'>buildAxis</span>(<span class='no'>side</span>, <span class='no'>limits</span>, <span class='no'>n</span>, <span class='kw'>nMin</span> <span class='kw'>=</span> <span class='fl'>2</span>, <span class='kw'>nMax</span> <span class='kw'>=</span> <span class='fl'>10</span>, <span class='kw'>extend</span> <span class='kw'>=</span> <span class='fl'>2</span>,
-  <span class='kw'>eps</span> <span class='kw'>=</span> <span class='fl'>10</span>^-<span class='fl'>12</span>, <span class='no'>...</span>)</pre>
-    
+    <pre class="usage"><span class='fu'>buildAxis</span>(<span class='no'>side</span>, <span class='no'>limits</span>, <span class='no'>n</span>, <span class='kw'>nMin</span> <span class='kw'>=</span> <span class='fl'>2</span>, <span class='kw'>nMax</span> <span class='kw'>=</span> <span class='fl'>10</span>, <span class='kw'>extend</span> <span class='kw'>=</span> <span class='fl'>2</span>, <span class='kw'>eps</span> <span class='kw'>=</span> <span class='fl'>10</span>^-<span class='fl'>12</span>, <span class='no'>...</span>)</pre>
+
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
@@ -151,15 +153,14 @@ of labels on the axis. This function is still under development.</p>
       <td><p>The smallest increment allowed.</p></td>
     </tr>
     <tr>
-      <th>&#8230;</th>
+      <th>...</th>
       <td><p>Arguments passed to <code>axis</code></p></td>
     </tr>
     </table>
-    
+
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
     <p>A vector of the axis plotted.</p>
-    
     <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
 
     <p>The primary reason behind building this function was to allow a plot to be
@@ -171,12 +172,10 @@ allowing the number of axis labels to be specified and controlled.</p>
 <p>The axis is built by assigning penalties to a variety of potential axis
 setups, ranking them based on these penalties and then selecting the axis
 with the best score.</p>
-    
     <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
 
     <div class='dont-index'><p><code><a href='histPlot.html'>histPlot</a></code>, <code><a href='dotPlot.html'>dotPlot</a></code>,
 <code><a href='boxPlot.html'>boxPlot</a></code>, <code><a href='densityPlot.html'>densityPlot</a></code></p></div>
-    
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
@@ -186,31 +185,31 @@ with the best score.</p>
 <span class='co'>#===&gt; 1 &lt;===#</span>
 <span class='no'>x</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/seq.html'>seq</a></span>(<span class='fl'>0</span>, <span class='fl'>500</span>, <span class='fl'>10</span>)
 <span class='no'>y</span> <span class='kw'>&lt;-</span> <span class='fl'>8</span>*<span class='no'>x</span>+<span class='fu'><a href='https://rdrr.io/r/stats/Normal.html'>rnorm</a></span>(<span class='fu'><a href='https://rdrr.io/r/base/length.html'>length</a></span>(<span class='no'>x</span>), <span class='kw'>mean</span><span class='kw'>=</span><span class='fl'>6000</span>, <span class='kw'>sd</span><span class='kw'>=</span><span class='fl'>200</span>)
-<span class='fu'><a href='https://rdrr.io/r/graphics/plot.html'>plot</a></span>(<span class='no'>x</span>, <span class='no'>y</span>, <span class='kw'>axes</span><span class='kw'>=</span><span class='fl'>FALSE</span>)</div><div class='input'><span class='fu'>buildAxis</span>(<span class='fl'>1</span>, <span class='kw'>limits</span><span class='kw'>=</span><span class='no'>x</span>, <span class='kw'>n</span><span class='kw'>=</span><span class='fl'>5</span>)</div><div class='input'><span class='fu'>buildAxis</span>(<span class='fl'>2</span>, <span class='kw'>limits</span><span class='kw'>=</span><span class='no'>y</span>, <span class='kw'>n</span><span class='kw'>=</span><span class='fl'>3</span>)</div><div class='img'><img src='buildAxis-2.png' alt='' width='700' height='433' /></div><div class='input'>
+<span class='fu'><a href='https://rdrr.io/r/base/plot.html'>plot</a></span>(<span class='no'>x</span>, <span class='no'>y</span>, <span class='kw'>axes</span><span class='kw'>=</span><span class='fl'>FALSE</span>)</div><div class='input'><span class='fu'>buildAxis</span>(<span class='fl'>1</span>, <span class='kw'>limits</span><span class='kw'>=</span><span class='no'>x</span>, <span class='kw'>n</span><span class='kw'>=</span><span class='fl'>5</span>)</div><div class='input'><span class='fu'>buildAxis</span>(<span class='fl'>2</span>, <span class='kw'>limits</span><span class='kw'>=</span><span class='no'>y</span>, <span class='kw'>n</span><span class='kw'>=</span><span class='fl'>3</span>)</div><div class='img'><img src='buildAxis-2.png' alt='' width='700' height='433' /></div><div class='input'>
 <span class='co'>#===&gt; 2 &lt;===#</span>
 <span class='no'>x</span> <span class='kw'>&lt;-</span> <span class='fl'>9528412</span> + <span class='fu'><a href='https://rdrr.io/r/base/seq.html'>seq</a></span>(<span class='fl'>0</span>, <span class='fl'>200</span>, <span class='fl'>10</span>)
 <span class='no'>y</span> <span class='kw'>&lt;-</span> <span class='fl'>8</span>*<span class='no'>x</span>+<span class='fu'><a href='https://rdrr.io/r/stats/Normal.html'>rnorm</a></span>(<span class='fu'><a href='https://rdrr.io/r/base/length.html'>length</a></span>(<span class='no'>x</span>), <span class='kw'>mean</span><span class='kw'>=</span><span class='fl'>6000</span>, <span class='kw'>sd</span><span class='kw'>=</span><span class='fl'>200</span>)
-<span class='fu'><a href='https://rdrr.io/r/graphics/plot.html'>plot</a></span>(<span class='no'>x</span>, <span class='no'>y</span>, <span class='kw'>axes</span><span class='kw'>=</span><span class='fl'>FALSE</span>)</div><div class='input'><span class='no'>temp</span> <span class='kw'>&lt;-</span> <span class='fu'>buildAxis</span>(<span class='fl'>1</span>, <span class='kw'>limits</span><span class='kw'>=</span><span class='no'>x</span>, <span class='kw'>n</span><span class='kw'>=</span><span class='fl'>4</span>)</div><div class='input'><span class='fu'>buildAxis</span>(<span class='fl'>2</span>, <span class='no'>y</span>, <span class='fl'>3</span>)</div><div class='img'><img src='buildAxis-3.png' alt='' width='700' height='433' /></div><div class='input'>
+<span class='fu'><a href='https://rdrr.io/r/base/plot.html'>plot</a></span>(<span class='no'>x</span>, <span class='no'>y</span>, <span class='kw'>axes</span><span class='kw'>=</span><span class='fl'>FALSE</span>)</div><div class='input'><span class='no'>temp</span> <span class='kw'>&lt;-</span> <span class='fu'>buildAxis</span>(<span class='fl'>1</span>, <span class='kw'>limits</span><span class='kw'>=</span><span class='no'>x</span>, <span class='kw'>n</span><span class='kw'>=</span><span class='fl'>4</span>)</div><div class='input'><span class='fu'>buildAxis</span>(<span class='fl'>2</span>, <span class='no'>y</span>, <span class='fl'>3</span>)</div><div class='img'><img src='buildAxis-3.png' alt='' width='700' height='433' /></div><div class='input'>
 <span class='co'>#===&gt; 3 &lt;===#</span>
 <span class='no'>x</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/seq.html'>seq</a></span>(<span class='fl'>367</span>, <span class='fl'>1251</span>, <span class='fl'>10</span>)
 <span class='no'>y</span> <span class='kw'>&lt;-</span> <span class='fl'>7.5</span>*<span class='no'>x</span>+<span class='fu'><a href='https://rdrr.io/r/stats/Normal.html'>rnorm</a></span>(<span class='fu'><a href='https://rdrr.io/r/base/length.html'>length</a></span>(<span class='no'>x</span>), <span class='kw'>mean</span><span class='kw'>=</span><span class='fl'>6000</span>, <span class='kw'>sd</span><span class='kw'>=</span><span class='fl'>800</span>)
-<span class='fu'><a href='https://rdrr.io/r/graphics/plot.html'>plot</a></span>(<span class='no'>x</span>, <span class='no'>y</span>, <span class='kw'>axes</span><span class='kw'>=</span><span class='fl'>FALSE</span>)</div><div class='input'><span class='fu'>buildAxis</span>(<span class='fl'>1</span>, <span class='kw'>limits</span><span class='kw'>=</span><span class='no'>x</span>, <span class='kw'>n</span><span class='kw'>=</span><span class='fl'>4</span>, <span class='kw'>nMin</span><span class='kw'>=</span><span class='fl'>3</span>, <span class='kw'>nMax</span><span class='kw'>=</span><span class='fl'>3</span>)</div><div class='input'><span class='fu'>buildAxis</span>(<span class='fl'>2</span>, <span class='kw'>limits</span><span class='kw'>=</span><span class='no'>y</span>, <span class='kw'>n</span><span class='kw'>=</span><span class='fl'>4</span>, <span class='kw'>nMin</span><span class='kw'>=</span><span class='fl'>3</span>, <span class='kw'>nMax</span><span class='kw'>=</span><span class='fl'>5</span>)</div><div class='img'><img src='buildAxis-4.png' alt='' width='700' height='433' /></div><div class='input'>
+<span class='fu'><a href='https://rdrr.io/r/base/plot.html'>plot</a></span>(<span class='no'>x</span>, <span class='no'>y</span>, <span class='kw'>axes</span><span class='kw'>=</span><span class='fl'>FALSE</span>)</div><div class='input'><span class='fu'>buildAxis</span>(<span class='fl'>1</span>, <span class='kw'>limits</span><span class='kw'>=</span><span class='no'>x</span>, <span class='kw'>n</span><span class='kw'>=</span><span class='fl'>4</span>, <span class='kw'>nMin</span><span class='kw'>=</span><span class='fl'>3</span>, <span class='kw'>nMax</span><span class='kw'>=</span><span class='fl'>3</span>)</div><div class='input'><span class='fu'>buildAxis</span>(<span class='fl'>2</span>, <span class='kw'>limits</span><span class='kw'>=</span><span class='no'>y</span>, <span class='kw'>n</span><span class='kw'>=</span><span class='fl'>4</span>, <span class='kw'>nMin</span><span class='kw'>=</span><span class='fl'>3</span>, <span class='kw'>nMax</span><span class='kw'>=</span><span class='fl'>5</span>)</div><div class='img'><img src='buildAxis-4.png' alt='' width='700' height='433' /></div><div class='input'>
 <span class='co'>#===&gt; 4 &lt;===#</span>
 <span class='no'>x</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/seq.html'>seq</a></span>(<span class='fl'>367</span>, <span class='fl'>367.1</span>, <span class='fl'>0.001</span>)
 <span class='no'>y</span> <span class='kw'>&lt;-</span> <span class='fl'>7.5</span>*<span class='no'>x</span>+<span class='fu'><a href='https://rdrr.io/r/stats/Normal.html'>rnorm</a></span>(<span class='fu'><a href='https://rdrr.io/r/base/length.html'>length</a></span>(<span class='no'>x</span>), <span class='kw'>mean</span><span class='kw'>=</span><span class='fl'>6000</span>, <span class='kw'>sd</span><span class='kw'>=</span><span class='fl'>0.01</span>)
-<span class='fu'><a href='https://rdrr.io/r/graphics/plot.html'>plot</a></span>(<span class='no'>x</span>, <span class='no'>y</span>, <span class='kw'>axes</span><span class='kw'>=</span><span class='fl'>FALSE</span>)</div><div class='input'><span class='fu'>buildAxis</span>(<span class='fl'>1</span>, <span class='kw'>limits</span><span class='kw'>=</span><span class='no'>x</span>, <span class='kw'>n</span><span class='kw'>=</span><span class='fl'>4</span>, <span class='kw'>nMin</span><span class='kw'>=</span><span class='fl'>5</span>, <span class='kw'>nMax</span><span class='kw'>=</span><span class='fl'>6</span>)</div><div class='input'><span class='fu'>buildAxis</span>(<span class='fl'>2</span>, <span class='kw'>limits</span><span class='kw'>=</span><span class='no'>y</span>, <span class='kw'>n</span><span class='kw'>=</span><span class='fl'>2</span>, <span class='kw'>nMin</span><span class='kw'>=</span><span class='fl'>3</span>, <span class='kw'>nMax</span><span class='kw'>=</span><span class='fl'>4</span>)</div><div class='img'><img src='buildAxis-5.png' alt='' width='700' height='433' /></div><div class='input'>
+<span class='fu'><a href='https://rdrr.io/r/base/plot.html'>plot</a></span>(<span class='no'>x</span>, <span class='no'>y</span>, <span class='kw'>axes</span><span class='kw'>=</span><span class='fl'>FALSE</span>)</div><div class='input'><span class='fu'>buildAxis</span>(<span class='fl'>1</span>, <span class='kw'>limits</span><span class='kw'>=</span><span class='no'>x</span>, <span class='kw'>n</span><span class='kw'>=</span><span class='fl'>4</span>, <span class='kw'>nMin</span><span class='kw'>=</span><span class='fl'>5</span>, <span class='kw'>nMax</span><span class='kw'>=</span><span class='fl'>6</span>)</div><div class='input'><span class='fu'>buildAxis</span>(<span class='fl'>2</span>, <span class='kw'>limits</span><span class='kw'>=</span><span class='no'>y</span>, <span class='kw'>n</span><span class='kw'>=</span><span class='fl'>2</span>, <span class='kw'>nMin</span><span class='kw'>=</span><span class='fl'>3</span>, <span class='kw'>nMax</span><span class='kw'>=</span><span class='fl'>4</span>)</div><div class='img'><img src='buildAxis-5.png' alt='' width='700' height='433' /></div><div class='input'>
 <span class='co'>#===&gt; 5 &lt;===#</span>
 <span class='no'>x</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/seq.html'>seq</a></span>(-<span class='fl'>0.05</span>, -<span class='fl'>0.003</span>, <span class='fl'>0.0001</span>)
 <span class='no'>y</span> <span class='kw'>&lt;-</span> <span class='fl'>50</span> + <span class='fl'>20</span>*<span class='no'>x</span> + <span class='fu'><a href='https://rdrr.io/r/stats/Normal.html'>rnorm</a></span>(<span class='fu'><a href='https://rdrr.io/r/base/length.html'>length</a></span>(<span class='no'>x</span>), <span class='kw'>sd</span><span class='kw'>=</span><span class='fl'>0.1</span>)
-<span class='fu'><a href='https://rdrr.io/r/graphics/plot.html'>plot</a></span>(<span class='no'>x</span>, <span class='no'>y</span>, <span class='kw'>axes</span><span class='kw'>=</span><span class='fl'>FALSE</span>)</div><div class='input'><span class='fu'>buildAxis</span>(<span class='fl'>1</span>, <span class='kw'>limits</span><span class='kw'>=</span><span class='no'>x</span>, <span class='kw'>n</span><span class='kw'>=</span><span class='fl'>4</span>, <span class='kw'>nMin</span><span class='kw'>=</span><span class='fl'>5</span>, <span class='kw'>nMax</span><span class='kw'>=</span><span class='fl'>6</span>)</div><div class='input'><span class='fu'>buildAxis</span>(<span class='fl'>2</span>, <span class='kw'>limits</span><span class='kw'>=</span><span class='no'>y</span>, <span class='kw'>n</span><span class='kw'>=</span><span class='fl'>4</span>, <span class='kw'>nMax</span><span class='kw'>=</span><span class='fl'>5</span>)</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/abline.html'>abline</a></span>(<span class='fu'><a href='https://rdrr.io/r/stats/lm.html'>lm</a></span>(<span class='no'>y</span> ~ <span class='no'>x</span>))</div><div class='img'><img src='buildAxis-6.png' alt='' width='700' height='433' /></div><div class='input'>
+<span class='fu'><a href='https://rdrr.io/r/base/plot.html'>plot</a></span>(<span class='no'>x</span>, <span class='no'>y</span>, <span class='kw'>axes</span><span class='kw'>=</span><span class='fl'>FALSE</span>)</div><div class='input'><span class='fu'>buildAxis</span>(<span class='fl'>1</span>, <span class='kw'>limits</span><span class='kw'>=</span><span class='no'>x</span>, <span class='kw'>n</span><span class='kw'>=</span><span class='fl'>4</span>, <span class='kw'>nMin</span><span class='kw'>=</span><span class='fl'>5</span>, <span class='kw'>nMax</span><span class='kw'>=</span><span class='fl'>6</span>)</div><div class='input'><span class='fu'>buildAxis</span>(<span class='fl'>2</span>, <span class='kw'>limits</span><span class='kw'>=</span><span class='no'>y</span>, <span class='kw'>n</span><span class='kw'>=</span><span class='fl'>4</span>, <span class='kw'>nMax</span><span class='kw'>=</span><span class='fl'>5</span>)</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/abline.html'>abline</a></span>(<span class='fu'><a href='https://rdrr.io/r/stats/lm.html'>lm</a></span>(<span class='no'>y</span> ~ <span class='no'>x</span>))</div><div class='img'><img src='buildAxis-6.png' alt='' width='700' height='433' /></div><div class='input'>
 <span class='co'>#===&gt; 6 &lt;===#</span>
 <span class='no'>x</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/seq.html'>seq</a></span>(-<span class='fl'>0.0097</span>, -<span class='fl'>0.008</span>, <span class='fl'>0.0001</span>)
 <span class='no'>y</span> <span class='kw'>&lt;-</span> <span class='fl'>50</span> + <span class='fl'>20</span>*<span class='no'>x</span> + <span class='fu'><a href='https://rdrr.io/r/stats/Normal.html'>rnorm</a></span>(<span class='fu'><a href='https://rdrr.io/r/base/length.html'>length</a></span>(<span class='no'>x</span>), <span class='kw'>sd</span><span class='kw'>=</span><span class='fl'>0.1</span>)
-<span class='fu'><a href='https://rdrr.io/r/graphics/plot.html'>plot</a></span>(<span class='no'>x</span>, <span class='no'>y</span>, <span class='kw'>axes</span><span class='kw'>=</span><span class='fl'>FALSE</span>)</div><div class='input'><span class='fu'>buildAxis</span>(<span class='fl'>1</span>, <span class='kw'>limits</span><span class='kw'>=</span><span class='no'>x</span>, <span class='kw'>n</span><span class='kw'>=</span><span class='fl'>4</span>, <span class='kw'>nMin</span><span class='kw'>=</span><span class='fl'>2</span>, <span class='kw'>nMax</span><span class='kw'>=</span><span class='fl'>5</span>)</div><div class='input'><span class='fu'>buildAxis</span>(<span class='fl'>2</span>, <span class='kw'>limits</span><span class='kw'>=</span><span class='no'>y</span>, <span class='kw'>n</span><span class='kw'>=</span><span class='fl'>4</span>, <span class='kw'>nMax</span><span class='kw'>=</span><span class='fl'>5</span>)</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/abline.html'>abline</a></span>(<span class='fu'><a href='https://rdrr.io/r/stats/lm.html'>lm</a></span>(<span class='no'>y</span> ~ <span class='no'>x</span>))</div><div class='img'><img src='buildAxis-7.png' alt='' width='700' height='433' /></div><div class='input'>
+<span class='fu'><a href='https://rdrr.io/r/base/plot.html'>plot</a></span>(<span class='no'>x</span>, <span class='no'>y</span>, <span class='kw'>axes</span><span class='kw'>=</span><span class='fl'>FALSE</span>)</div><div class='input'><span class='fu'>buildAxis</span>(<span class='fl'>1</span>, <span class='kw'>limits</span><span class='kw'>=</span><span class='no'>x</span>, <span class='kw'>n</span><span class='kw'>=</span><span class='fl'>4</span>, <span class='kw'>nMin</span><span class='kw'>=</span><span class='fl'>2</span>, <span class='kw'>nMax</span><span class='kw'>=</span><span class='fl'>5</span>)</div><div class='input'><span class='fu'>buildAxis</span>(<span class='fl'>2</span>, <span class='kw'>limits</span><span class='kw'>=</span><span class='no'>y</span>, <span class='kw'>n</span><span class='kw'>=</span><span class='fl'>4</span>, <span class='kw'>nMax</span><span class='kw'>=</span><span class='fl'>5</span>)</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/abline.html'>abline</a></span>(<span class='fu'><a href='https://rdrr.io/r/stats/lm.html'>lm</a></span>(<span class='no'>y</span> ~ <span class='no'>x</span>))</div><div class='img'><img src='buildAxis-7.png' alt='' width='700' height='433' /></div><div class='input'>
 <span class='co'>#===&gt; 7 &lt;===#</span>
 <span class='no'>x</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/seq.html'>seq</a></span>(<span class='fl'>0.03</span>, -<span class='fl'>0.003099</span>, -<span class='fl'>0.00001</span>)
 <span class='no'>y</span> <span class='kw'>&lt;-</span> <span class='fl'>50</span> + <span class='fl'>20</span>*<span class='no'>x</span> + <span class='fu'><a href='https://rdrr.io/r/stats/Normal.html'>rnorm</a></span>(<span class='fu'><a href='https://rdrr.io/r/base/length.html'>length</a></span>(<span class='no'>x</span>), <span class='kw'>sd</span><span class='kw'>=</span><span class='fl'>0.1</span>)
-<span class='fu'><a href='https://rdrr.io/r/graphics/plot.html'>plot</a></span>(<span class='no'>x</span>, <span class='no'>y</span>, <span class='kw'>axes</span><span class='kw'>=</span><span class='fl'>FALSE</span>)</div><div class='input'><span class='fu'>buildAxis</span>(<span class='fl'>1</span>, <span class='kw'>limits</span><span class='kw'>=</span><span class='no'>x</span>, <span class='kw'>n</span><span class='kw'>=</span><span class='fl'>4</span>, <span class='kw'>nMin</span><span class='kw'>=</span><span class='fl'>2</span>, <span class='kw'>nMax</span><span class='kw'>=</span><span class='fl'>5</span>)</div><div class='input'><span class='fu'>buildAxis</span>(<span class='fl'>2</span>, <span class='kw'>limits</span><span class='kw'>=</span><span class='no'>y</span>, <span class='kw'>n</span><span class='kw'>=</span><span class='fl'>4</span>, <span class='kw'>nMax</span><span class='kw'>=</span><span class='fl'>6</span>)</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/abline.html'>abline</a></span>(<span class='fu'><a href='https://rdrr.io/r/stats/lm.html'>lm</a></span>(<span class='no'>y</span> ~ <span class='no'>x</span>))</div><div class='img'><img src='buildAxis-8.png' alt='' width='700' height='433' /></div><div class='input'>
+<span class='fu'><a href='https://rdrr.io/r/base/plot.html'>plot</a></span>(<span class='no'>x</span>, <span class='no'>y</span>, <span class='kw'>axes</span><span class='kw'>=</span><span class='fl'>FALSE</span>)</div><div class='input'><span class='fu'>buildAxis</span>(<span class='fl'>1</span>, <span class='kw'>limits</span><span class='kw'>=</span><span class='no'>x</span>, <span class='kw'>n</span><span class='kw'>=</span><span class='fl'>4</span>, <span class='kw'>nMin</span><span class='kw'>=</span><span class='fl'>2</span>, <span class='kw'>nMax</span><span class='kw'>=</span><span class='fl'>5</span>)</div><div class='input'><span class='fu'>buildAxis</span>(<span class='fl'>2</span>, <span class='kw'>limits</span><span class='kw'>=</span><span class='no'>y</span>, <span class='kw'>n</span><span class='kw'>=</span><span class='fl'>4</span>, <span class='kw'>nMax</span><span class='kw'>=</span><span class='fl'>6</span>)</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/abline.html'>abline</a></span>(<span class='fu'><a href='https://rdrr.io/r/stats/lm.html'>lm</a></span>(<span class='no'>y</span> ~ <span class='no'>x</span>))</div><div class='img'><img src='buildAxis-8.png' alt='' width='700' height='433' /></div><div class='input'>
 <span class='co'>#===&gt; 8 - repeat &lt;===#</span>
 <span class='no'>m</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/stats/Uniform.html'>runif</a></span>(<span class='fl'>1</span>)/<span class='fu'><a href='https://rdrr.io/r/stats/Uniform.html'>runif</a></span>(<span class='fl'>1</span>) +
         <span class='fu'><a href='https://rdrr.io/r/stats/GammaDist.html'>rgamma</a></span>(<span class='fl'>1</span>, <span class='fu'><a href='https://rdrr.io/r/stats/Uniform.html'>runif</a></span>(<span class='fl'>1</span>)/<span class='fu'><a href='https://rdrr.io/r/stats/Uniform.html'>runif</a></span>(<span class='fl'>1</span>), <span class='fu'><a href='https://rdrr.io/r/stats/Uniform.html'>runif</a></span>(<span class='fl'>1</span>)/<span class='fu'><a href='https://rdrr.io/r/stats/Uniform.html'>runif</a></span>(<span class='fl'>1</span>))
@@ -220,33 +219,21 @@ with the best score.</p>
         <span class='fu'><a href='https://rdrr.io/r/base/cat.html'>cat</a></span>(<span class='st'>"too small\n"</span>)
 }</div></pre>
   </div>
-  <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
-    <h2>Contents</h2>
-    <ul class="nav nav-pills nav-stacked">
-      <li><a href="#arguments">Arguments</a></li>
-      
-      <li><a href="#value">Value</a></li>
-
-      <li><a href="#details">Details</a></li>
-
-      <li><a href="#see-also">See also</a></li>
-      
-      <li><a href="#examples">Examples</a></li>
-    </ul>
-
-    <h2>Author</h2>
-    <p>David M Diez</p>
+  <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
+    <nav id="toc" data-toggle="toc" class="sticky-top">
+      <h2 data-toc-skip>Contents</h2>
+    </nav>
   </div>
 </div>
 
 
       <footer>
       <div class="copyright">
-  <p>Developed by Mine Çetinkaya-Rundel, David Diez, Andrew Bray, Christopher Barr.</p>
+  <p>Developed by Mine Çetinkaya-Rundel, David Diez, Andrew Bray, Albert Kim, Ben Baumer, Chester Ismay, Christopher Barr.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.3.0.9100.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
 </div>
 
       </footer>

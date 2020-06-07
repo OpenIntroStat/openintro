@@ -8,23 +8,29 @@
 
 <title>Gender Stereotypes in 5-7 year old Children — children_gender_stereo • openintro</title>
 
+
 <!-- jquery -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <!-- Bootstrap -->
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha256-bZLfwXAP04zRMK2BjiO8iu9pf4FbLqX6zitd+tIvLhE=" crossorigin="anonymous" />
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
+
+<!-- bootstrap-toc -->
+<link rel="stylesheet" href="../bootstrap-toc.css">
+<script src="../bootstrap-toc.js"></script>
 
 <!-- Font Awesome icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/all.min.css" integrity="sha256-nAmazAk6vS34Xqo0BSrTb+abbtFlgsFK7NKSi6o7Y78=" crossorigin="anonymous" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/v4-shims.min.css" integrity="sha256-6qHlizsOWFskGlwVOKuns+D1nB6ssZrHQrNj1wGplHc=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous" />
 
 <!-- clipboard.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" integrity="sha256-FiZwavyI2V6+EXO1U+xzLG3IKldpiTFf3153ea9zikQ=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script>
 
 <!-- headroom.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/headroom.min.js" integrity="sha256-DJFC1kqIhelURkuza0AvYal5RxMtpzLjFhsnVIeuk+U=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script>
 
 <!-- pkgdown -->
 <link href="../pkgdown.css" rel="stylesheet">
@@ -32,14 +38,14 @@
 
 
 
-<meta property="og:title" content="Gender Stereotypes in 5-7 year old Children — children_gender_stereo" />
 
+<meta property="og:title" content="Gender Stereotypes in 5-7 year old Children — children_gender_stereo" />
 <meta property="og:description" content="Stereotypes are common, but at what age do they start? This study
 investigates stereotypes in young children aged 5-7 years old. There are
 four studies reported in the
 paper, and all four
 data sets are provided here." />
-<meta name="twitter:card" content="summary" />
+
 
 
 
@@ -56,7 +62,7 @@ data sets are provided here." />
 
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target="#toc">
     <div class="container template-reference-topic">
       <header>
       <div class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -86,10 +92,9 @@ data sets are provided here." />
   <a href="../news/index.html">Changelog</a>
 </li>
       </ul>
-      
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="https://github.com/OpenIntroStat/openintro-r-package">
+  <a href="https://github.com/OpenIntroStat/openintro/">
     <span class="fab fa fab fa-github fa-lg"></span>
      
   </a>
@@ -108,29 +113,28 @@ data sets are provided here." />
   <div class="col-md-9 contents">
     <div class="page-header">
     <h1>Gender Stereotypes in 5-7 year old Children</h1>
-    <small class="dont-index">Source: <a href='https://github.com/OpenIntroStat/openintro-r-package/blob/master/R/data-children_gender_stereo.R'><code>R/data-children_gender_stereo.R</code></a></small>
+    <small class="dont-index">Source: <a href='https://github.com/OpenIntroStat/openintro/blob/master/R/data-children_gender_stereo.R'><code>R/data-children_gender_stereo.R</code></a></small>
     <div class="hidden name"><code>children_gender_stereo.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    
     <p>Stereotypes are common, but at what age do they start? This study
 investigates stereotypes in young children aged 5-7 years old. There are
 four studies reported in the
 <a href='http://science.sciencemag.org/content/355/6323/389'>paper</a>, and all four
 data sets are provided here.</p>
-    
     </div>
 
     <pre class="usage"><span class='no'>children_gender_stereo</span></pre>
-        
+
+
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
     <p>This data object is more unusual than most. It is a list of 4 data
 frames. The four data frames correspond to the data used in Studies 1-4 of
 the referenced
 <a href='http://science.sciencemag.org/content/355/6323/389'>paper</a>, and these
-data frames each have variables (columns) that are among the following:</p><dl class='dl-horizontal'>
+data frames each have variables (columns) that are among the following:</p><dl'>
   <dt>subject</dt><dd><p>Subject ID. Note that Subject 1 in the first data frame
   (data set) does <b>not</b> correspond to Subject 1 in the second data frame.</p></dd>
   <dt>gender</dt><dd><p>Gender of the subject.</p></dd>
@@ -156,8 +160,9 @@ data frames each have variables (columns) that are among the following:</p><dl c
   the game.</p></dd>
   <dt>difference</dt><dd><p>A difference score between the interest of the child in
   the &#8220;smart&#8221; game and their interest in the &#8220;try-hard&#8221; game.</p></dd>
+
 </dl>
-    
+
     <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
 
     <p>Bian L, Leslie SJ, Cimpian A. 2017. "Gender stereotypes about intellectual
@@ -165,7 +170,6 @@ ability emerge early and influence children's interests". Science 355:6323
 (389-391). <a href='http://science.sciencemag.org/content/355/6323/389.'>http://science.sciencemag.org/content/355/6323/389.</a></p>
 <p>The original data may be found
 <a href='https://osf.io/yund6/?view_only=9a8505d4e87b456a89f255b43e21234e'>here</a>.</p>
-    
     <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
 
     <p>The structure of the data object is a little unusual, so we recommend
@@ -174,7 +178,6 @@ reviewing the Examples section before starting your analysis.</p>
 <p>Most of the results in the paper can be reproduced using the data provided
 here.</p>
 <p><!-- % TODO(David) - Add short descriptions of each study. --></p>
-    
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
@@ -188,30 +191,21 @@ here.</p>
 <span class='co'># (d is for data!).</span>
 <span class='no'>d</span> <span class='kw'>&lt;-</span> <span class='no'>children_gender_stereo</span><span class='kw'>[[</span><span class='fl'>2</span>]]</div></pre>
   </div>
-  <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
-    <h2>Contents</h2>
-    <ul class="nav nav-pills nav-stacked">
-      
-      <li><a href="#format">Format</a></li>
-
-      <li><a href="#source">Source</a></li>
-
-      <li><a href="#details">Details</a></li>
-      
-      <li><a href="#examples">Examples</a></li>
-    </ul>
-
+  <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
+    <nav id="toc" data-toggle="toc" class="sticky-top">
+      <h2 data-toc-skip>Contents</h2>
+    </nav>
   </div>
 </div>
 
 
       <footer>
       <div class="copyright">
-  <p>Developed by Mine Çetinkaya-Rundel, David Diez, Andrew Bray, Christopher Barr.</p>
+  <p>Developed by Mine Çetinkaya-Rundel, David Diez, Andrew Bray, Albert Kim, Ben Baumer, Chester Ismay, Christopher Barr.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.3.0.9100.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
 </div>
 
       </footer>

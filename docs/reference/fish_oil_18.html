@@ -8,23 +8,29 @@
 
 <title>Findings on n-3 Fatty Acid Supplement Health Benefits — fish_oil_18 • openintro</title>
 
+
 <!-- jquery -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <!-- Bootstrap -->
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha256-bZLfwXAP04zRMK2BjiO8iu9pf4FbLqX6zitd+tIvLhE=" crossorigin="anonymous" />
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
+
+<!-- bootstrap-toc -->
+<link rel="stylesheet" href="../bootstrap-toc.css">
+<script src="../bootstrap-toc.js"></script>
 
 <!-- Font Awesome icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/all.min.css" integrity="sha256-nAmazAk6vS34Xqo0BSrTb+abbtFlgsFK7NKSi6o7Y78=" crossorigin="anonymous" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/v4-shims.min.css" integrity="sha256-6qHlizsOWFskGlwVOKuns+D1nB6ssZrHQrNj1wGplHc=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous" />
 
 <!-- clipboard.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" integrity="sha256-FiZwavyI2V6+EXO1U+xzLG3IKldpiTFf3153ea9zikQ=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script>
 
 <!-- headroom.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/headroom.min.js" integrity="sha256-DJFC1kqIhelURkuza0AvYal5RxMtpzLjFhsnVIeuk+U=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script>
 
 <!-- pkgdown -->
 <link href="../pkgdown.css" rel="stylesheet">
@@ -32,12 +38,12 @@
 
 
 
-<meta property="og:title" content="Findings on n-3 Fatty Acid Supplement Health Benefits — fish_oil_18" />
 
+<meta property="og:title" content="Findings on n-3 Fatty Acid Supplement Health Benefits — fish_oil_18" />
 <meta property="og:description" content="The results summarize each of the health outcomes for an experiment where
 12,933 subjects received a 1g fish oil supplement daily and 12,938 received
 a placebo daily.  The experiment's duration was 5-years." />
-<meta name="twitter:card" content="summary" />
+
 
 
 
@@ -54,7 +60,7 @@ a placebo daily.  The experiment's duration was 5-years." />
 
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target="#toc">
     <div class="container template-reference-topic">
       <header>
       <div class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -84,10 +90,9 @@ a placebo daily.  The experiment's duration was 5-years." />
   <a href="../news/index.html">Changelog</a>
 </li>
       </ul>
-      
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="https://github.com/OpenIntroStat/openintro-r-package">
+  <a href="https://github.com/OpenIntroStat/openintro/">
     <span class="fab fa fab fa-github fa-lg"></span>
      
   </a>
@@ -106,25 +111,24 @@ a placebo daily.  The experiment's duration was 5-years." />
   <div class="col-md-9 contents">
     <div class="page-header">
     <h1>Findings on n-3 Fatty Acid Supplement Health Benefits</h1>
-    <small class="dont-index">Source: <a href='https://github.com/OpenIntroStat/openintro-r-package/blob/master/R/data-fish_oil_18.R'><code>R/data-fish_oil_18.R</code></a></small>
+    <small class="dont-index">Source: <a href='https://github.com/OpenIntroStat/openintro/blob/master/R/data-fish_oil_18.R'><code>R/data-fish_oil_18.R</code></a></small>
     <div class="hidden name"><code>fish_oil_18.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    
     <p>The results summarize each of the health outcomes for an experiment where
 12,933 subjects received a 1g fish oil supplement daily and 12,938 received
 a placebo daily.  The experiment's duration was 5-years.</p>
-    
     </div>
 
     <pre class="usage"><span class='no'>fish_oil_18</span></pre>
-        
+
+
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
     <p>The format is a list of 24 matrices.  Each matrix is a 2x2 table,
 and below are the named items in the list, which also represent the
-outcomes.</p><dl class='dl-horizontal'>
+outcomes.</p><dl'>
   <dt>major_cardio_event</dt><dd><p>Major cardiovascular event. (Primary end point.)</p></dd>
   <dt>cardio_event_expanded</dt><dd><p>Cardiovascular event in expanded composite endpoint.</p></dd>
   <dt>myocardioal_infarction</dt><dd><p>Total myocardial infarction. (Heart attack.)</p></dd>
@@ -144,24 +148,19 @@ outcomes.</p><dl class='dl-horizontal'>
   <dt>colorectal_cancer</dt><dd><p>Colorectal cancer.</p></dd>
   <dt>cancer_death</dt><dd><p>Death from cancer.</p></dd>
   <dt>death</dt><dd><p>Death from any cause.</p></dd>
-  <dt>major_cardio_event_after_2y</dt><dd><p>Major cardiovascular event, excluding
-  the first 2 years of follow-up.</p></dd>
-  <dt>myocardial_infarction_after_2y</dt><dd><p>Total myocardial infarction, excluding
-  the first 2 years of follow-up.</p></dd>
-  <dt>invasive_cancer_after_2y</dt><dd><p>Invasive cancer of any type, excluding the
-  first 2 years of follow-up.</p></dd>
-  <dt>cancer_death_after_2y</dt><dd><p>Death from cancer, excluding the first 2 years
-  of follow-up.</p></dd>
-  <dt>death_after_2y</dt><dd><p>Death from any cause, excluding the first 2 years of
-  follow-up.</p></dd>
+  <dt>major_cardio_event_after_2y</dt><dd><p>Major cardiovascular event, excluding the first 2 years of follow-up.</p></dd>
+  <dt>myocardial_infarction_after_2y</dt><dd><p>Total myocardial infarction, excluding the first 2 years of follow-up.</p></dd>
+  <dt>invasive_cancer_after_2y</dt><dd><p>Invasive cancer of any type, excluding the first 2 years of follow-up.</p></dd>
+  <dt>cancer_death_after_2y</dt><dd><p>Death from cancer, excluding the first 2 years of follow-up.</p></dd>
+  <dt>death_after_2y</dt><dd><p>Death from any cause, excluding the first 2 years of follow-up.</p></dd>
+
 </dl>
-    
+
     <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
 
     <p>Manson JE, et al. 2018. Marine n-3 Fatty Acids and Prevention of
-Cardiovascular Disease and Cancer. NEJMoa1811403.
-<a href='https://www.nejm.org/doi/full/10.1056/NEJMoa1811403'>https://www.nejm.org/doi/full/10.1056/NEJMoa1811403</a></p>
-    
+Cardiovascular Disease and Cancer. NEJMoa1811403.</p>
+<p><a href='https://www.nejm.org/doi/full/10.1056/NEJMoa1811403'>https://www.nejm.org/doi/full/10.1056/NEJMoa1811403</a></p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
@@ -216,28 +215,21 @@ Cardiovascular Disease and Cancer. NEJMoa1811403.
 #&gt; </div><div class='input'>
 </div></pre>
   </div>
-  <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
-    <h2>Contents</h2>
-    <ul class="nav nav-pills nav-stacked">
-      
-      <li><a href="#format">Format</a></li>
-
-      <li><a href="#source">Source</a></li>
-      
-      <li><a href="#examples">Examples</a></li>
-    </ul>
-
+  <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
+    <nav id="toc" data-toggle="toc" class="sticky-top">
+      <h2 data-toc-skip>Contents</h2>
+    </nav>
   </div>
 </div>
 
 
       <footer>
       <div class="copyright">
-  <p>Developed by Mine Çetinkaya-Rundel, David Diez, Andrew Bray, Christopher Barr.</p>
+  <p>Developed by Mine Çetinkaya-Rundel, David Diez, Andrew Bray, Albert Kim, Ben Baumer, Chester Ismay, Christopher Barr.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.3.0.9100.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
 </div>
 
       </footer>
