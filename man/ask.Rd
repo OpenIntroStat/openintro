@@ -5,7 +5,7 @@
 \alias{ask}
 \title{How important is it to ask pointed questions?}
 \format{
-A tibble with 219 observations on the following 3 variables.
+A data frame with 219 observations on the following 3 variables.
 \describe{
   \item{question_class}{The type of question:
   `general`, `pos_assumption`, and `neg_assumption`.}

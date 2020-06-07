@@ -13,7 +13,7 @@
 #'
 #' @name solar
 #' @docType data
-#' @format A tibble with 284 observations on the following 3 variables.
+#' @format A data frame with 284 observations on the following 3 variables.
 #' Each row represents a single day for one of the arrays.
 #' \describe{
 #'   \item{location}{Location for the array.}

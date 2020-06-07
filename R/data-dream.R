@@ -5,7 +5,7 @@
 #'
 #' @name dream
 #' @docType data
-#' @format A tibble with 910 observations on the following 2 variables.
+#' @format A data frame with 910 observations on the following 2 variables.
 #' \describe{
 #'   \item{ideology}{a factor with levels \code{Conservative} \code{Liberal} \code{Moderate}}
 #'   \item{stance}{a factor with levels \code{No} \code{Not sure} \code{Yes}}

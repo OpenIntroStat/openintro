@@ -6,7 +6,7 @@
 #' @name urban_owner
 #' @aliases urban.owner urban_owner
 #' @docType data
-#' @format A tibble with 52 observations on the following 28 variables.
+#' @format A data frame with 52 observations on the following 28 variables.
 #' \describe{
 #'   \item{state}{State}
 #'   \item{total_housing_units_2000}{Total housing units available in 2000.}

@@ -5,7 +5,7 @@
 \alias{gpa}
 \title{Survey of Duke students on GPA, studying, and more}
 \format{
-A tibble with 55 observations on the following 5 variables.
+A data frame with 55 observations on the following 5 variables.
 \describe{\item{gpa}{a numeric vector} \item{studyweek}{a
 numeric vector} \item{sleepnight}{a numeric vector}
 \item{out}{a numeric vector} \item{gender}{a factor with

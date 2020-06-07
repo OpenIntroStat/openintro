@@ -8,7 +8,7 @@
 #' @name offshore_drilling
 #' @aliases offshore.drilling offshore_drilling
 #' @docType data
-#' @format A tibble with 827 observations on the following 2 variables.
+#' @format A data frame with 827 observations on the following 2 variables.
 #' \describe{\item{position}{a factor with levels \code{do not know}
 #' \code{oppose} \code{support}} \item{college_grad}{a factor with
 #' levels \code{no} \code{yes}} }

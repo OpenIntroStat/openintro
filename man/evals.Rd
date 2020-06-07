@@ -5,7 +5,7 @@
 \alias{evals}
 \title{Professor evaluations and beauty}
 \format{
-A tibble with 463 observations on the following 23 variables.
+A data frame with 463 observations on the following 23 variables.
 \describe{
   \item{course_id}{Variable identifying the course (out of 463 courses).}
   \item{prof_id}{Variable identifying the professor who taught the course (out of 94 professors).}

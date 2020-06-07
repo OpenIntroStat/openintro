@@ -12,7 +12,7 @@
 #'
 #' @name textbooks
 #' @docType data
-#' @format A tibble with 73 observations on the following 7 variables.
+#' @format A data frame with 73 observations on the following 7 variables.
 #' \describe{
 #'   \item{dept_abbr}{Course department (abbreviated).}
 #'   \item{course}{Course number.}

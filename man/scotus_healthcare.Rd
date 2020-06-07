@@ -5,7 +5,7 @@
 \alias{scotus_healthcare}
 \title{Public Opinion with SCOTUS ruling on American Healthcare Act}
 \format{
-A tibble with 1012 observations on the following variable.
+A data frame with 1012 observations on the following variable.
 \describe{
   \item{response}{Response values reported are \code{agree} and \code{other}.}
   }

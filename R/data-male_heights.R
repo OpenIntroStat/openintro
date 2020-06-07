@@ -5,7 +5,7 @@
 #'
 #' @name male_heights
 #' @docType data
-#' @format A tibble with 100 observations on the following variable.
+#' @format A data frame with 100 observations on the following variable.
 #' \describe{\item{heights}{a numeric vector} }
 #' @references \url{http://fcid.foodrisk.org}
 #' @keywords datasets

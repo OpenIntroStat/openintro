@@ -6,7 +6,7 @@
 \alias{ppp.201503}
 \title{US Poll on who it is better to raise taxes on}
 \format{
-A tibble with 691 observations on the following 2 variables.
+A data frame with 691 observations on the following 2 variables.
 \describe{\item{party}{Political party affiliation.} \item{taxes}{Support
 for who to raise taxes on.} }
 }

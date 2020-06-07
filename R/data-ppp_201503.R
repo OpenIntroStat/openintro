@@ -7,7 +7,7 @@
 #' @name ppp_201503
 #' @aliases ppp_201503 ppp.201503
 #' @docType data
-#' @format A tibble with 691 observations on the following 2 variables.
+#' @format A data frame with 691 observations on the following 2 variables.
 #' \describe{\item{party}{Political party affiliation.} \item{taxes}{Support
 #' for who to raise taxes on.} }
 #' @source Public Policy Polling, Americans on College Degrees, Classic

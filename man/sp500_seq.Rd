@@ -5,7 +5,7 @@
 \alias{sp500_seq}
 \title{S&P 500 stock data}
 \format{
-A tibble with 2948 observations on the following variable.
+A data frame with 2948 observations on the following variable.
 \describe{
   \item{race}{a factor with levels \code{1}, \code{2}, \code{3}, \code{4},
   \code{5}, \code{6}, and \code{7+}}

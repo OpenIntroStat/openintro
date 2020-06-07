@@ -5,7 +5,7 @@
 \alias{yawn}
 \title{Contagiousness of yawning}
 \format{
-A tibble with 50 observations on the following 2 variables.
+A data frame with 50 observations on the following 2 variables.
 \describe{
   \item{result}{a factor with levels \code{not yawn} \code{yawn}}
   \item{group}{a factor with levels \code{ctrl} \code{trmt}}

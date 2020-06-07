@@ -5,7 +5,7 @@
 \alias{cancer_in_dogs}
 \title{Cancer in dogs}
 \format{
-A tibble with 1436 observations on the following 2 variables.
+A data frame with 1436 observations on the following 2 variables.
 \describe{
   \item{order}{a factor with levels \code{2,4-D} and \code{no 2,4-D}}
   \item{response}{a factor with levels \code{cancer} and \code{no cancer}}

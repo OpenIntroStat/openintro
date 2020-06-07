@@ -7,7 +7,7 @@
 #'
 #' @name house
 #' @docType data
-#' @format A tibble with 112 observations on the following 12 variables.
+#' @format A data frame with 112 observations on the following 12 variables.
 #' \describe{\item{congress}{The number of that year's Congress}
 #' \item{yearStart}{Starting year} \item{yearEnd}{Ending year}
 #' \item{seats}{Total number of seats} \item{p1}{Name of the first political

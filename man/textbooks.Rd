@@ -5,7 +5,7 @@
 \alias{textbooks}
 \title{Textbook data for UCLA Bookstore and Amazon}
 \format{
-A tibble with 73 observations on the following 7 variables.
+A data frame with 73 observations on the following 7 variables.
 \describe{
   \item{dept_abbr}{Course department (abbreviated).}
   \item{course}{Course number.}

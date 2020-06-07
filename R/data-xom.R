@@ -5,7 +5,7 @@
 #'
 #' @name xom
 #' @docType data
-#' @format A tibble with 98 observations on the following 7 variables.
+#' @format A data frame with 98 observations on the following 7 variables.
 #' \describe{
 #'   \item{date}{Date.}
 #'   \item{open}{a numeric vector}

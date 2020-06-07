@@ -7,7 +7,7 @@
 #'
 #' @name prrace08
 #' @docType data
-#' @format A tibble with 51 observations on the following 7 variables.
+#' @format A data frame with 51 observations on the following 7 variables.
 #' \describe{
 #'   \item{state}{State name abbreviation}
 #'   \item{stateFull}{Full state name}

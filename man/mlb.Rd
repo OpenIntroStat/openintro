@@ -5,7 +5,7 @@
 \alias{mlb}
 \title{Salary data for Major League Baseball (2010)}
 \format{
-A tibble with 828 observations on the following 4 variables.
+A data frame with 828 observations on the following 4 variables.
 \describe{\item{player}{Player name} \item{team}{Team} \item{position}{Field
 position} \item{salary}{Salary (in $1000s)} }
 }

@@ -5,7 +5,7 @@
 \alias{prrace08}
 \title{Election results for the 2008 U.S. Presidential race}
 \format{
-A tibble with 51 observations on the following 7 variables.
+A data frame with 51 observations on the following 7 variables.
 \describe{
   \item{state}{State name abbreviation}
   \item{stateFull}{Full state name}

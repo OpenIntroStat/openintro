@@ -8,7 +8,7 @@
 #' @name antibiotics
 #' @aliases antibiotics.in.children antibiotics_in_children
 #' @docType data
-#' @format A tibble with 92 observations, each representing a child, on the
+#' @format A data frame with 92 observations, each representing a child, on the
 #' following variable.
 #' \describe{
 #'   \item{condition}{Pre-existing medical condition.}

@@ -5,7 +5,7 @@
 \alias{present}
 \title{Birth counts}
 \format{
-A tibble with 63 observations on the following 3 variables.
+A data frame with 63 observations on the following 3 variables.
 \describe{
   \item{year}{Year.}
   \item{boys}{Number of boys born.}

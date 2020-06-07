@@ -6,7 +6,7 @@
 \alias{corr.match}
 \title{Sample data sets for correlation problems}
 \format{
-A tibble with 121 observations on the following 9 variables.
+A data frame with 121 observations on the following 9 variables.
 \describe{
   \item{x}{a numeric vector}
   \item{y1}{a numeric vector}

@@ -18,7 +18,7 @@
 #'
 #' @name gifted
 #' @docType data
-#' @format A tibble with 36 observations and 8 variables.
+#' @format A data frame with 36 observations and 8 variables.
 #' \describe{
 #'   \item{score}{Score in test of analytical skills.}
 #'   \item{fatheriq}{Father's IQ.}

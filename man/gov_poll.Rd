@@ -5,7 +5,7 @@
 \alias{gov_poll}
 \title{Pew Research poll on goverment approval ratings}
 \format{
-A tibble with 4223 observations on the following 2 variables.
+A data frame with 4223 observations on the following 2 variables.
 \describe{\item{poll}{a factor with levels \code{approve}
 \code{disapprove}} \item{eval}{a factor with levels \code{Democrats}
 \code{Obama} \code{Republicans}} }

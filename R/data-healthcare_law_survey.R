@@ -11,7 +11,7 @@
 #' 
 #' @name healthcare_law_survey
 #' @docType data
-#' @format A tibble with 1503 observations on the following 2 variables.
+#' @format A data frame with 1503 observations on the following 2 variables.
 #' \describe{\item{order}{a factor with levels \code{cannot_afford_second}
 #' \code{penalty_second}} \item{response}{a factor with levels \code{approve}
 #' \code{disapprove} \code{other}} }

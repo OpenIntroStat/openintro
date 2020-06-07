@@ -8,7 +8,7 @@
 #'
 #' @name scotus_healthcare
 #' @docType data
-#' @format A tibble with 1012 observations on the following variable.
+#' @format A data frame with 1012 observations on the following variable.
 #' \describe{
 #'   \item{response}{Response values reported are \code{agree} and \code{other}.}
 #'   }

@@ -5,7 +5,7 @@
 #'
 #' @name cards
 #' @docType data
-#' @format A tibble with 52 observations on the following 4 variables.
+#' @format A data frame with 52 observations on the following 4 variables.
 #' \describe{
 #'   \item{value}{a factor with levels \code{10} \code{2} \code{3} \code{4}
 #'   \code{5} \code{6} \code{7} \code{8} \code{9} \code{A} \code{J} \code{K}

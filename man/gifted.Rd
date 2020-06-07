@@ -5,7 +5,7 @@
 \alias{gifted}
 \title{Analytical skills of young gifted children}
 \format{
-A tibble with 36 observations and 8 variables.
+A data frame with 36 observations and 8 variables.
 \describe{
   \item{score}{Score in test of analytical skills.}
   \item{fatheriq}{Father's IQ.}

@@ -5,7 +5,7 @@
 \alias{fastfood}
 \title{Nutrition in fast food}
 \format{
-A tibble with 515 observations on the following 17 variables.
+A data frame with 515 observations on the following 17 variables.
 \describe{
   \item{restaurant}{Name of restaurant}
   \item{calories}{Number of calories}

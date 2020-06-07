@@ -10,7 +10,7 @@
 #'
 #' @name ethanol
 #' @docType data
-#' @format A tibble with 24 observations, each representing one hamster, on
+#' @format A data frame with 24 observations, each representing one hamster, on
 #' the following 2 variables. \describe{\item{treatment}{Treatment
 #' the hamster received.} \item{regress}{a factor with levels \code{no}
 #' \code{yes}} }

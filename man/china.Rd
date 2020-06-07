@@ -5,7 +5,7 @@
 \alias{china}
 \title{Child care hours}
 \format{
-A tibble with 9788 observations on the following 3 variables.
+A data frame with 9788 observations on the following 3 variables.
 \describe{
   \item{gender}{a numeric vector} \item{edu}{a numeric vector}
   \item{child_care}{a numeric vector}

@@ -5,7 +5,7 @@
 \alias{env_regulation}
 \title{American Adults on Regulation and Renewable Energy}
 \format{
-A tibble with 705 observations on the following variable.
+A data frame with 705 observations on the following variable.
 \describe{
   \item{statement}{There were three possible outcomes for each person:
   \code{"Regulations necessary"}, \code{"Private marketplace will ensure"},

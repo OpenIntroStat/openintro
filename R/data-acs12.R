@@ -5,7 +5,7 @@
 #'
 #' @name acs12
 #' @docType data
-#' @format A tibble with 2000 observations on the following 13 variables.
+#' @format A data frame with 2000 observations on the following 13 variables.
 #' \describe{
 #'   \item{income}{Annual income.}
 #'   \item{employment}{Employment status.}

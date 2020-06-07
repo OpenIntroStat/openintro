@@ -5,7 +5,7 @@
 \alias{mtl}
 \title{Medial temporal lobe (MTL) and other data for 26 participants}
 \format{
-A tibble with 35 observations on the following 23 variables.
+A data frame with 35 observations on the following 23 variables.
 \describe{
   \item{subject}{ID for the individual.}
   \item{sex}{Gender, which takes values \code{F} (female) or \code{M} (male).}

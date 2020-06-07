@@ -17,7 +17,7 @@
 #'
 #' @name env_regulation
 #' @docType data
-#' @format A tibble with 705 observations on the following variable.
+#' @format A data frame with 705 observations on the following variable.
 #' \describe{
 #'   \item{statement}{There were three possible outcomes for each person:
 #'   \code{"Regulations necessary"}, \code{"Private marketplace will ensure"},

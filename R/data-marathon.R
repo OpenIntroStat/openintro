@@ -6,7 +6,7 @@
 #'
 #' @name marathon
 #' @docType data
-#' @format A tibble with 60 observations on the following 3 variables.
+#' @format A data frame with 60 observations on the following 3 variables.
 #' \describe{
 #'   \item{year}{Year}
 #'   \item{gender}{Gender}

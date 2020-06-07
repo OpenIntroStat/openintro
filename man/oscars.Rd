@@ -5,7 +5,7 @@
 \alias{oscars}
 \title{Oscar winners, 1929 to 2018}
 \format{
-A tibble with 182 observations on the following 10 variables.
+A data frame with 182 observations on the following 10 variables.
 \describe{
 \item{oscar_no}{Oscar ceremony number.}
 \item{oscar_yr}{Year the Oscar ceremony was held.}

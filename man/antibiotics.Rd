@@ -7,7 +7,7 @@
 \alias{antibiotics_in_children}
 \title{Pre-existing conditions in 92 children}
 \format{
-A tibble with 92 observations, each representing a child, on the
+A data frame with 92 observations, each representing a child, on the
 following variable.
 \describe{
   \item{condition}{Pre-existing medical condition.}

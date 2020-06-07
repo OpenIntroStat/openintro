@@ -8,7 +8,7 @@
 #' 
 #' @name leg_mari
 #' @docType data
-#' @format A tibble with 119 observations on the following variable.
+#' @format A data frame with 119 observations on the following variable.
 #' \describe{\item{response}{One of two values: \code{oppose} or
 #' \code{support}.} }
 #' @source Survey USA, Election Poll #16804, data collected July 8-11, 2010.

@@ -5,7 +5,7 @@
 \alias{run17}
 \title{Cherry Blossom Run data, 2017}
 \format{
-A tibble with 19961 observations on the following 9 variables.
+A data frame with 19961 observations on the following 9 variables.
 \describe{
   \item{bib}{Number on the runner's bib.}
   \item{name}{Name of the runner, with only the initial of their last name.}

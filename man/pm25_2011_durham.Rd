@@ -6,7 +6,7 @@
 \alias{pm25.2011.durham}
 \title{Air quality for Durham, NC}
 \format{
-A tibble with 449 observations on the following 20 variables.
+A data frame with 449 observations on the following 20 variables.
 \describe{
   \item{date}{Date}
   \item{aqs_site_id}{a factor with levels \code{37-063-0015}}

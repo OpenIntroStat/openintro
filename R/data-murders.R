@@ -5,7 +5,7 @@
 #'
 #' @name murders
 #' @docType data
-#' @format A tibble with 20 metropolitan areas on the following 4
+#' @format A data frame with 20 metropolitan areas on the following 4
 #' variables. \describe{\item{population}{Population.}
 #' \item{perc_pov}{Percent in poverty.}
 #' \item{perc_unemp}{Percent unemployed.}

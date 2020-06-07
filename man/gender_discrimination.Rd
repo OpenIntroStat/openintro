@@ -5,7 +5,7 @@
 \alias{gender_discrimination}
 \title{Bank manager recommendations based on gender}
 \format{
-A tibble with 48 observations on the following 2 variables.
+A data frame with 48 observations on the following 2 variables.
 \describe{\item{gender}{a factor with levels \code{female}
 \code{male}} \item{decision}{a factor with levels \code{not}
 \code{promoted}} }

@@ -6,7 +6,7 @@
 \alias{cia.factbook}
 \title{CIA Factbook Details on Countries}
 \format{
-A tibble with 259 observations on the following 11 variables.
+A data frame with 259 observations on the following 11 variables.
 \describe{\item{country}{Country name.} \item{area}{Land
 area, in square kilometers. (1 square kilometer is 0.386 square miles}
 \item{birth_rate}{Birth rate, in births per 1,000 people.}

@@ -6,7 +6,7 @@
 #'
 #' @name credits
 #' @docType data
-#' @format A tibble with 100 observations on the following variable.
+#' @format A data frame with 100 observations on the following variable.
 #' \describe{
 #'   \item{credits}{Number of credits.}
 #'   }

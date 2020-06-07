@@ -5,7 +5,7 @@
 \alias{orings}
 \title{1986 Challenger disaster and O-rings}
 \format{
-A tibble with 23 observations on the following 2 variables.
+A data frame with 23 observations on the following 2 variables.
 \describe{\item{temp}{Temperature, in Fahrenheit.}
 \item{damage}{Number of damaged O-rings (out of 6).} }
 }

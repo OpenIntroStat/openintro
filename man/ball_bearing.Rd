@@ -7,7 +7,7 @@
 \alias{ballBearing}
 \title{Lifespan of ball bearings}
 \format{
-A tibble with 75 observations on the following variable.
+A data frame with 75 observations on the following variable.
 \describe{
   \item{life_span}{Lifespan of ball bearings (in hours).}
   }

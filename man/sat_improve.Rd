@@ -5,7 +5,7 @@
 \alias{sat_improve}
 \title{Simulated data for SAT score improvement}
 \format{
-A tibble with 30 observations on the following variable.
+A data frame with 30 observations on the following variable.
 \describe{
   \item{sat_improve}{a numeric vector}
   }

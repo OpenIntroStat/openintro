@@ -5,7 +5,7 @@
 \alias{yrbss}
 \title{Youth Risk Behavior Surveillance System (YRBSS)}
 \format{
-A tibble with 13583 observations on the following 13 variables.
+A data frame with 13583 observations on the following 13 variables.
 \describe{
   \item{age}{Age, in years.}
   \item{gender}{Gender.}

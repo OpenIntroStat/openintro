@@ -6,7 +6,7 @@
 #'
 #' @name unempl
 #' @docType data
-#' @format A tibble with 121 observations on the following 3 variables.
+#' @format A data frame with 121 observations on the following 3 variables.
 #' \describe{
 #'   \item{year}{Year}
 #'   \item{unemp}{Unemployment rate, in percent}

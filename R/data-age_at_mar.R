@@ -7,7 +7,7 @@
 #' @name age_at_mar
 #' @aliases age.at.mar ageAtMar age_at_mar
 #' @docType data
-#' @format A tibble with 5,534 observations and 1 variable.
+#' @format A data frame with 5,534 observations and 1 variable.
 #' \describe{
 #'   \item{age}{Age a first marriage.}
 #'   }

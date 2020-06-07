@@ -5,7 +5,7 @@
 \alias{bac}
 \title{Beer and blood alcohol content}
 \format{
-A tibble with 16 observations on the following 3 variables.
+A data frame with 16 observations on the following 3 variables.
 \describe{
   \item{student}{a numeric vector}
   \item{beer)}{a numeric vector}

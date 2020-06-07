@@ -6,7 +6,7 @@
 #' 
 #' @name president
 #' @docType data
-#' @format A tibble with 67 observations on the following 5 variables.
+#' @format A data frame with 67 observations on the following 5 variables.
 #' \describe{\item{potus}{President of the United States}
 #' \item{party}{Political party of the president} \item{start}{Start year}
 #' \item{end}{End year} \item{vpotus}{Vice President of the United States} }

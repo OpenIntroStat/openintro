@@ -5,7 +5,7 @@
 \alias{possum}
 \title{possum}
 \format{
-A tibble with 104 observations on the following 8 variables.
+A data frame with 104 observations on the following 8 variables.
 \describe{
   \item{site}{The site number where the possum was trapped.}
   \item{pop}{Population, either \code{Vic} (Victoria) or \code{other}

@@ -5,7 +5,7 @@
 \alias{county_w_sm_ban}
 \title{County data set with smoking ban.}
 \format{
-A tibble with 14444 observations on the following 54 variables.
+A data frame with 14444 observations on the following 54 variables.
 \describe{\item{name}{County name.} \item{state}{State
 name.} \item{FIPS}{a numeric vector} \item{pop2010}{a
 numeric vector} \item{pop2000}{a numeric vector}

@@ -5,7 +5,7 @@
 \alias{marathon}
 \title{New York City Marathon Times}
 \format{
-A tibble with 60 observations on the following 3 variables.
+A data frame with 60 observations on the following 3 variables.
 \describe{
   \item{year}{Year}
   \item{gender}{Gender}

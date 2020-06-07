@@ -7,7 +7,7 @@
 #' @name full_body_scan
 #' @aliases full.body.scan full_body_scan
 #' @docType data
-#' @format A tibble with 1137 observations on the following 2 variables.
+#' @format A data frame with 1137 observations on the following 2 variables.
 #' \describe{\item{answer}{a factor with levels \code{do not know / no
 #' answer} \code{should} \code{should not}} \item{party.affiliation}{a
 #' factor with levels \code{Democrat} \code{Independent} \code{Republican}} }

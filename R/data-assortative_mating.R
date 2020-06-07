@@ -6,7 +6,7 @@
 #' @name assortive_mating
 #' @aliases assortive.mating assortive_mating
 #' @docType data
-#' @format A tibble with 204 observations on the following 2 variables.
+#' @format A data frame with 204 observations on the following 2 variables.
 #' \describe{
 #'   \item{self_male}{a factor with levels `blue`, `brown`, and `green`}
 #'   \item{partner_female}{a factor with `blue`, `brown`, and `green`}

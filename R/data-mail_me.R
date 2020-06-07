@@ -14,7 +14,7 @@
 #' 
 #' @name mail_me
 #' @docType data
-#' @format A tibble with 42 observations on the following 4 variables.
+#' @format A data frame with 42 observations on the following 4 variables.
 #' \describe{ \item{stamped}{a factor with levels \code{no} \code{yes}}
 #' \item{found_coin}{a factor with levels \code{coin} \code{no_coin}}
 #' \item{gender}{a factor with levels \code{female} \code{male}}

@@ -5,7 +5,7 @@
 \alias{absenteeism}
 \title{Absenteeism}
 \format{
-A tibble with 146 observations on the following 5 variables.
+A data frame with 146 observations on the following 5 variables.
 \describe{
   \item{eth}{Ethnicity, representing Aboriginal (`A`) or not (`N`).}
   \item{sex}{Gender.}

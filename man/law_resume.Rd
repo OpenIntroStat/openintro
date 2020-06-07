@@ -5,7 +5,7 @@
 \alias{law_resume}
 \title{Gender, Socioeconomic Class, and Interview Invites}
 \format{
-A tibble with 316 observations on the following 3 variables. Each
+A data frame with 316 observations on the following 3 variables. Each
 row represents a resume sent a top law firm for this experiment.
 \describe{\item{class}{The resume represented irrelevant details suggesting
 either \code{"low"} or \code{"high"} socioeconomic class.} \item{gender}{The

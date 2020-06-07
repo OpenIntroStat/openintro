@@ -6,7 +6,7 @@
 \alias{full.body.scan}
 \title{Poll about use of full-body airport scanners}
 \format{
-A tibble with 1137 observations on the following 2 variables.
+A data frame with 1137 observations on the following 2 variables.
 \describe{\item{answer}{a factor with levels \code{do not know / no
 answer} \code{should} \code{should not}} \item{party.affiliation}{a
 factor with levels \code{Democrat} \code{Independent} \code{Republican}} }

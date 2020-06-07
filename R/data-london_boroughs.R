@@ -21,7 +21,7 @@
 #'
 #' @name london_boroughs
 #' @docType data
-#' @format A tibble with 45341 observations on the following 3 variables.
+#' @format A data frame with 45341 observations on the following 3 variables.
 #' \describe{
 #' \item{borough}{Name of the borough.}
 #' \item{x}{The "easting" component of the coordinate, see details.}

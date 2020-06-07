@@ -6,7 +6,7 @@
 #'
 #' @name ami_occurrences
 #' @docType data
-#' @format A tibble with 365 observations on the following variable.
+#' @format A data frame with 365 observations on the following variable.
 #' \describe{
 #'   \item{ami}{Number of daily occurences of heart attacks in NY City.}
 #' }

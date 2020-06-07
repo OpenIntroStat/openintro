@@ -9,7 +9,7 @@
 #'
 #' @name military
 #' @docType data
-#' @format A tibble with 1414593 observations on the following 6 variables.
+#' @format A data frame with 1414593 observations on the following 6 variables.
 #' \describe{
 #' \item{grade}{The status of the service member as \code{enlisted} \code{officer}
 #' or \code{warrant officer}.}

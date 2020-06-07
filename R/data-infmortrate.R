@@ -9,7 +9,7 @@
 #'
 #' @name infmortrate
 #' @docType data
-#' @format A tibble with 222 observations on the following 2 variables.
+#' @format A data frame with 222 observations on the following 2 variables.
 #' \describe{
 #'   \item{country}{Name of country.}
 #'   \item{inf_mort_rate}{Infant mortality rate per 1,000 live births.}

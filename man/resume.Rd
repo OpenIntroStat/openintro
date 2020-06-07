@@ -5,7 +5,7 @@
 \alias{resume}
 \title{Which resume attributes drive job callbacks?  (Race and gender under study.)}
 \format{
-A tibble with 4870 observations, representing 4870 resumes, over
+A data frame with 4870 observations, representing 4870 resumes, over
 30 different variables that describe the job details, the outcome
 (\code{received_callback}), and attributes of the resume. \describe{
 \item{job_ad_id}{Unique ID associated with the advertisement.}

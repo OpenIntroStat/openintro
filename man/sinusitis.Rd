@@ -5,7 +5,7 @@
 \alias{sinusitis}
 \title{Sinusitis and antibiotic experiment}
 \format{
-A tibble with 166 observations on the following 2 variables.
+A data frame with 166 observations on the following 2 variables.
 \describe{
   \item{group}{a factor with levels \code{control} and  \code{treatment}}
   \item{self.reported_improvement}{a factor with levels \code{no} and \code{yes}}

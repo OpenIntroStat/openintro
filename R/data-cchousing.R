@@ -6,7 +6,7 @@
 #'
 #' @name cchousing
 #' @docType data
-#' @format A tibble with 75 observations on the following variable.
+#' @format A data frame with 75 observations on the following variable.
 #' \describe{
 #'   \item{price}{Monthly housing price, simulated.}
 #'   }

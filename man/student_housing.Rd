@@ -5,7 +5,7 @@
 \alias{student_housing}
 \title{Community college housing (simulated data, 2015)}
 \format{
-A tibble with 175 observations on the following variable.
+A data frame with 175 observations on the following variable.
 \describe{
   \item{price}{Monthly housing price, simulated.}
 }

@@ -8,7 +8,7 @@
 #' 
 #' @name helmet
 #' @docType data
-#' @format A tibble with 12 observations representing neighborhoods on the
+#' @format A data frame with 12 observations representing neighborhoods on the
 #' following 2 variables. \describe{\item{lunch}{Percent of students receiving
 #' reduced-fee school lunches.} \item{helmet}{Percent of bike riders wearing
 #' helmets.} }

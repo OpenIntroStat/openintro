@@ -5,7 +5,7 @@
 \alias{acs12}
 \title{American Community Survey, 2012}
 \format{
-A tibble with 2000 observations on the following 13 variables.
+A data frame with 2000 observations on the following 13 variables.
 \describe{
   \item{income}{Annual income.}
   \item{employment}{Employment status.}

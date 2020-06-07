@@ -5,7 +5,7 @@
 \alias{epa2012}
 \title{Vehicle info from the EPA}
 \format{
-A tibble with 1129 observations on the following 28 variables.
+A data frame with 1129 observations on the following 28 variables.
 \describe{\item{model_yr}{a numeric vector}
 \item{mfr_name}{Manufacturer name.} \item{division}{Vehicle
 division.} \item{carline}{Vehicle line.} \item{mfr_code}{a

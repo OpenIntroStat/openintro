@@ -5,7 +5,7 @@
 #'
 #' @name burger
 #' @docType data
-#' @format A tibble with 500 observations on the following 2 variables.
+#' @format A data frame with 500 observations on the following 2 variables.
 #' \describe{
 #'   \item{best_burger_place}{Burger place.}
 #'   \item{gender}{a factor with levels \code{Female} and \code{Male}}

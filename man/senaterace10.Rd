@@ -5,7 +5,7 @@
 \alias{senaterace10}
 \title{Election results for the 2010 U.S. Senate races}
 \format{
-A tibble with 38 observations on the following 23 variables.
+A data frame with 38 observations on the following 23 variables.
 \describe{
   \item{id}{Unique identifier for the race, which does not overlap with other
   2010 races (see \code{\link{govrace10}} and \code{\link{houserace10}})}

@@ -5,7 +5,7 @@
 \alias{county_complete}
 \title{United States Counties}
 \format{
-A tibble with 3143 observations on the following 111 variables.
+A data frame with 3143 observations on the following 111 variables.
 \describe{
   \item{state}{State.}
   \item{name}{County name.}

@@ -13,7 +13,7 @@
 #'
 #' @name orings
 #' @docType data
-#' @format A tibble with 23 observations on the following 2 variables.
+#' @format A data frame with 23 observations on the following 2 variables.
 #' \describe{\item{temp}{Temperature, in Fahrenheit.}
 #' \item{damage}{Number of damaged O-rings (out of 6).} }
 #' @source

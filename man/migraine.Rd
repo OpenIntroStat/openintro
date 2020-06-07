@@ -5,7 +5,7 @@
 \alias{migraine}
 \title{Migraines and acupuncture}
 \format{
-A tibble with 89 observations on the following 2 variables.
+A data frame with 89 observations on the following 2 variables.
 \describe{\item{group}{a factor with levels \code{control} \code{treatment}}
 \item{pain_free}{a factor with levels \code{no} \code{yes}} }
 }

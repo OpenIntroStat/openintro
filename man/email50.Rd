@@ -5,7 +5,7 @@
 \alias{email50}
 \title{Sample of 50 emails}
 \format{
-A tibble with 50 observations on the following 21 variables.
+A data frame with 50 observations on the following 21 variables.
 \describe{
   \item{spam}{Indicator for whether the email was spam.}
   \item{to_multiple}{Indicator for whether the email was addressed to more

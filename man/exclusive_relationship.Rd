@@ -6,7 +6,7 @@
 \alias{exclusive.relationship}
 \title{Number of Exclusive Relationships}
 \format{
-A tibble with 218 observations on the following variable.
+A data frame with 218 observations on the following variable.
 \describe{\item{num}{Number of exclusive relationships.} }
 }
 \usage{

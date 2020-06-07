@@ -6,7 +6,7 @@
 #'
 #' @name sat_improve
 #' @docType data
-#' @format A tibble with 30 observations on the following variable.
+#' @format A data frame with 30 observations on the following variable.
 #' \describe{
 #'   \item{sat_improve}{a numeric vector}
 #'   }

@@ -7,7 +7,7 @@
 #'
 #' @name cherry
 #' @docType data
-#' @format A tibble with 31 observations on the following 3 variables.
+#' @format A data frame with 31 observations on the following 3 variables.
 #' \describe{
 #'   \item{diam}{diameter in inches (at 54 inches above ground)}
 #'   \item{height}{height is measured in feet}

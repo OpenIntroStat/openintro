@@ -5,7 +5,7 @@
 \alias{ebola_survey}
 \title{Survey on Ebola quarantine}
 \format{
-A tibble with 1042 observations on the following variable.
+A data frame with 1042 observations on the following variable.
 \describe{
   \item{quarantine}{Indicates whether the respondent is in \code{favor} or
   \code{against} the mandatory quarantine.}

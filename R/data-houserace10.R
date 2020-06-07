@@ -8,7 +8,7 @@
 #'
 #' @name houserace10
 #' @docType data
-#' @format A tibble with 435 observations on the following 24 variables.
+#' @format A data frame with 435 observations on the following 24 variables.
 #' \describe{
 #'   \item{id}{Unique identifier for the race, which does not
 #' overlap with other 2010 races (see \code{\link{govrace10}} and

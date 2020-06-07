@@ -6,7 +6,7 @@
 #'
 #' @name present
 #' @docType data
-#' @format A tibble with 63 observations on the following 3 variables.
+#' @format A data frame with 63 observations on the following 3 variables.
 #' \describe{
 #'   \item{year}{Year.}
 #'   \item{boys}{Number of boys born.}

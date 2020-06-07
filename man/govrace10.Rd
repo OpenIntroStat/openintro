@@ -5,7 +5,7 @@
 \alias{govrace10}
 \title{Election results for 2010 Governor races in the U.S.}
 \format{
-A tibble with 37 observations on the following 23 variables.
+A data frame with 37 observations on the following 23 variables.
 \describe{
   \item{id}{Unique identifier for the race, which does not overlap with other
   2010 races (see \code{\link{houserace10}} and \code{\link{senaterace10}})}

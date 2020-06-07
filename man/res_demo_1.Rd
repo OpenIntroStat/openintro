@@ -5,7 +5,7 @@
 \alias{res_demo_1}
 \title{Simulated data for regression}
 \format{
-A tibble with 100 observations on the following 3 variables.
+A data frame with 100 observations on the following 3 variables.
 \describe{
   \item{x}{a numeric vector}
   \item{yLin}{a numeric vector}

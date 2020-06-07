@@ -15,7 +15,7 @@
 #' 
 #' @name helium
 #' @docType data
-#' @format A tibble with 39 observations on the following 3 variables.
+#' @format A data frame with 39 observations on the following 3 variables.
 #' \describe{\item{trial}{Trial number.} \item{air}{Distance in years for
 #' air-filled football.} \item{helium}{Distance in years for helium-filled
 #' football.} }

@@ -12,7 +12,7 @@
 #'
 #' @name mammals
 #' @docType data
-#' @format A tibble with 62 observations on the following 11 variables.
+#' @format A data frame with 62 observations on the following 11 variables.
 #' \describe{
 #'   \item{species}{Species of mammals}
 #'   \item{body_wt}{Total body weight of the mammal (in kg)}

@@ -5,7 +5,7 @@
 \alias{tourism}
 \title{Turkey tourism}
 \format{
-A tibble with 47 observations on the following 3 variables.
+A data frame with 47 observations on the following 3 variables.
 \describe{
   \item{year}{a numeric vector}
   \item{visitor_count_tho}{a numeric vector}

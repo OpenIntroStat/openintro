@@ -6,7 +6,7 @@
 \alias{loan50}
 \title{Loan data from Lending Club}
 \format{
-A tibble with 10,000 observations on the following 55 variables.
+A data frame with 10,000 observations on the following 55 variables.
 \describe{
   \item{emp_title}{Job title.}
   \item{emp_length}{Number of years in the job, rounded down.

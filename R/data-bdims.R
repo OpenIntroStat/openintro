@@ -10,7 +10,7 @@
 #'
 #' @name bdims
 #' @docType data
-#' @format A tibble with 507 observations on the following 25 variables.
+#' @format A data frame with 507 observations on the following 25 variables.
 #' \describe{
 #'   \item{bia.di}{A numerical vector, respondent's biacromial diameter in
 #'   centimeters.}

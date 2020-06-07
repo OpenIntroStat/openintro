@@ -5,7 +5,7 @@
 #'
 #' @name toohey
 #' @docType data
-#' @format A tibble with 500 observations on the following variable.
+#' @format A data frame with 500 observations on the following variable.
 #' \describe{
 #'   \item{vote_for}{a factor with levels \code{no} \code{yes}}
 #' }

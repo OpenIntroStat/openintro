@@ -6,7 +6,7 @@
 #'
 #' @name seattlepets
 #' @docType data
-#' @format A tibble with 52,519 rows and 7 variables:
+#' @format A data frame with 52,519 rows and 7 variables:
 #' \describe{
 #'   \item{license_issue_date}{Date the animal was registered with Seattle}
 #'   \item{license_number}{Unique license number}

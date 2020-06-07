@@ -5,7 +5,7 @@
 \alias{cars}
 \title{cars}
 \format{
-A tibble with 54 observations on the following 6 variables.
+A data frame with 54 observations on the following 6 variables.
 \describe{
   \item{type}{The vehicle type with levels \code{large}, \code{midsize},
   and \code{small}.}
@@ -25,7 +25,7 @@ Education} 1(1).
 cars
 }
 \description{
-A tibble with 54 rows and 6 columns. This data is a subset of the
+A data frame with 54 rows and 6 columns. This data is a subset of the
 \code{Cars93} data set from the \code{MASS} package.
 }
 \details{

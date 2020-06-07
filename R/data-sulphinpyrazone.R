@@ -6,7 +6,7 @@
 #'
 #' @name sulphinpyrazone
 #' @docType data
-#' @format A tibble with 1475 observations on the following 2 variables.
+#' @format A data frame with 1475 observations on the following 2 variables.
 #' \describe{
 #'   \item{group}{a factor with levels \code{control} \code{treatment}}
 #'   \item{outcome}{a factor with levels \code{died} \code{lived}}

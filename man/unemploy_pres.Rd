@@ -5,7 +5,7 @@
 \alias{unemploy_pres}
 \title{President's party performance and unemployment rate}
 \format{
-A tibble with 29 observations on the following 5 variables.
+A data frame with 29 observations on the following 5 variables.
 \describe{
   \item{year}{a numeric vector}
   \item{potus}{The president in office.}

@@ -7,7 +7,7 @@
 #' @name thanksgiving_spend
 #' @aliases thanksgiving.spend thanksgiving_spend tgSpending
 #' @docType data
-#' @format A tibble with 436 observations on the following 1 variable.
+#' @format A data frame with 436 observations on the following 1 variable.
 #' \describe{
 #'   \item{spending}{Amount of spending, in US dollars.}
 #'   }

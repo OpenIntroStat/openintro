@@ -5,7 +5,7 @@
 \alias{credits}
 \title{College credits.}
 \format{
-A tibble with 100 observations on the following variable.
+A data frame with 100 observations on the following variable.
 \describe{
   \item{credits}{Number of credits.}
   }

@@ -6,7 +6,7 @@
 \alias{cle.sac}
 \title{Cleveland and Sacramento}
 \format{
-A tibble with 500 observations representing people on the
+A data frame with 500 observations representing people on the
 following 8 variables.
 \describe{
   \item{year}{Year the data was collected.}

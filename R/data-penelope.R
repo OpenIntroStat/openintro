@@ -5,7 +5,7 @@
 #'
 #' @name penelope
 #' @docType data
-#' @format A tibble with 17,184 observations on the following variable.
+#' @format A data frame with 17,184 observations on the following variable.
 #' \describe{
 #'   \item{weight}{Guesses of Penelope's weight, in pounds.}
 #'}

@@ -5,7 +5,7 @@
 #'
 #' @name fcid
 #' @docType data
-#' @format A tibble with 100 observations on the following 2 variables.
+#' @format A data frame with 100 observations on the following 2 variables.
 #' \describe{\item{height}{a numeric vector}
 #' \item{num_of_adults}{a numeric vector} }
 #' @keywords datasets

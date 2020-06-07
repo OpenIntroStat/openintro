@@ -5,7 +5,7 @@
 #'
 #' @name mlbbat10
 #' @docType data
-#' @format A tibble with 1199 observations on the following 19 variables.
+#' @format A data frame with 1199 observations on the following 19 variables.
 #' \describe{
 #'   \item{name}{Player name}
 #'   \item{team}{Team abbreviation}

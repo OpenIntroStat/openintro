@@ -6,7 +6,7 @@
 #' @name association
 #' @aliases association_1_3, association_4_6, association_7_12
 #' @docType data
-#' @format A tibble with 121 observations on the following 4 variables.
+#' @format A data frame with 121 observations on the following 4 variables.
 #' \describe{
 #'   \item{x1}{a numeric vector}
 #'   \item{x2}{a numeric vector}

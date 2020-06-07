@@ -6,7 +6,7 @@
 \alias{penny.ages}
 \title{Penny Ages}
 \format{
-A tibble with 648 observations on the following 2 variables.
+A data frame with 648 observations on the following 2 variables.
 \describe{
   \item{year}{Penny's year.}
   \item{age}{Age as of 2004.}

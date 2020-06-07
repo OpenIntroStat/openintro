@@ -5,7 +5,7 @@
 \alias{usairports}
 \title{US Airports}
 \format{
-A tibble with 19615 rows and 14 variables:
+A data frame with 19615 rows and 14 variables:
 \describe{
 \item{effective_date}{Information effective date. This date
 coincides with the 56-day charting and publication cycle date.}

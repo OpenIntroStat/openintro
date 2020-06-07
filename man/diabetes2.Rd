@@ -5,7 +5,7 @@
 \alias{diabetes2}
 \title{Type 2 Diabetes Clinical Trial for Patients 10-17 Years Old}
 \format{
-A tibble with 699 observations on the following 2 variables.
+A data frame with 699 observations on the following 2 variables.
 \describe{
   \item{treatment}{The treatment the patient received.}
   \item{outcome}{Whether there patient still needs insulin (\code{failure})

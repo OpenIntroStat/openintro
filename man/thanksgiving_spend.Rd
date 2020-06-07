@@ -7,7 +7,7 @@
 \alias{tgSpending}
 \title{Thanksgiving spending, simulated based on Gallup poll.}
 \format{
-A tibble with 436 observations on the following 1 variable.
+A data frame with 436 observations on the following 1 variable.
 \describe{
   \item{spending}{Amount of spending, in US dollars.}
   }

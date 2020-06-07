@@ -14,7 +14,7 @@
 #'
 #' @name birds
 #' @docType data
-#' @format A tibble with 19302 observations on the following 17 variables.
+#' @format A data frame with 19302 observations on the following 17 variables.
 #' \describe{
 #' \item{opid}{Three letter identification code for the operator
 #' (carrier) of the aircraft.}

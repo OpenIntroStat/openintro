@@ -5,7 +5,7 @@
 \alias{male_heights}
 \title{Sample of 100 male heights}
 \format{
-A tibble with 100 observations on the following variable.
+A data frame with 100 observations on the following variable.
 \describe{\item{heights}{a numeric vector} }
 }
 \usage{

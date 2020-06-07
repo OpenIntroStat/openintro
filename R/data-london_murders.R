@@ -22,7 +22,7 @@
 #'
 #' @name london_murders
 #' @docType data
-#' @format A tibble with 838 observations on the following 5 variables.
+#' @format A data frame with 838 observations on the following 5 variables.
 #' \describe{
 #' \item{forename}{First name(s) of the victim.}
 #' \item{age}{Age of the victim.}

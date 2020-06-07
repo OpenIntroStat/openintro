@@ -5,7 +5,7 @@
 \alias{tips}
 \title{Tip data}
 \format{
-A tibble with 95 observations on the following 5 variables.
+A data frame with 95 observations on the following 5 variables.
 \describe{
   \item{week}{Week number.}
   \item{day}{Day, either \code{Friday} or \code{Tuesday}.}

@@ -5,7 +5,7 @@
 \alias{stem_cell}
 \title{Embryonic stem cells to treat heart attack (in sheep)}
 \format{
-A tibble with 18 observations on the following 3 variables.
+A data frame with 18 observations on the following 3 variables.
 \describe{
   \item{trmt}{a factor with levels \code{ctrl} \code{esc}}
   \item{before}{a numeric vector}

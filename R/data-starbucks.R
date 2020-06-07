@@ -5,7 +5,7 @@
 #'
 #' @name starbucks
 #' @docType data
-#' @format A tibble with 77 observations on the following 7 variables.
+#' @format A data frame with 77 observations on the following 7 variables.
 #' \describe{
 #'   \item{item}{Food item.}
 #'   \item{calories}{Calories.}

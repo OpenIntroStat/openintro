@@ -5,7 +5,7 @@
 #'
 #' @name county_complete
 #' @docType data
-#' @format A tibble with 3143 observations on the following 111 variables.
+#' @format A data frame with 3143 observations on the following 111 variables.
 #' \describe{
 #'   \item{state}{State.}
 #'   \item{name}{County name.}

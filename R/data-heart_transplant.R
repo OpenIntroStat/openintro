@@ -15,7 +15,7 @@
 #' @name heart_transplant
 #' @aliases heartTr heart_transplant
 #' @docType data
-#' @format A tibble with 103 observations on the following 8 variables.
+#' @format A data frame with 103 observations on the following 8 variables.
 #' \describe{
 #'   \item{id}{ID number of the patient.}
 #'   \item{acceptyear}{Year of acceptance as a heart transplant candidate.}

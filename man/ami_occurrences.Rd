@@ -5,7 +5,7 @@
 \alias{ami_occurrences}
 \title{Acute Myocardial Infarction (Heart Attack) Events}
 \format{
-A tibble with 365 observations on the following variable.
+A data frame with 365 observations on the following variable.
 \describe{
   \item{ami}{Number of daily occurences of heart attacks in NY City.}
 }

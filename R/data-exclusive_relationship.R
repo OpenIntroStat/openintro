@@ -8,7 +8,7 @@
 #' @name exclusive_relationship
 #' @aliases exclusive.relationship exclusive_relationship
 #' @docType data
-#' @format A tibble with 218 observations on the following variable.
+#' @format A data frame with 218 observations on the following variable.
 #' \describe{\item{num}{Number of exclusive relationships.} }
 #' @keywords datasets
 #' @examples

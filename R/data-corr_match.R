@@ -6,7 +6,7 @@
 #' @name corr_match
 #' @aliases corr.match corr_match
 #' @docType data
-#' @format A tibble with 121 observations on the following 9 variables.
+#' @format A data frame with 121 observations on the following 9 variables.
 #' \describe{
 #'   \item{x}{a numeric vector}
 #'   \item{y1}{a numeric vector}

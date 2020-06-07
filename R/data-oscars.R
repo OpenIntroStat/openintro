@@ -8,7 +8,7 @@
 #'
 #' @name oscars
 #' @docType data
-#' @format A tibble with 182 observations on the following 10 variables.
+#' @format A data frame with 182 observations on the following 10 variables.
 #' \describe{
 #' \item{oscar_no}{Oscar ceremony number.}
 #' \item{oscar_yr}{Year the Oscar ceremony was held.}

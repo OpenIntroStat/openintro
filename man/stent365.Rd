@@ -5,7 +5,7 @@
 \alias{stent365}
 \title{Stents for the treatment of stroke}
 \format{
-A tibble with 451 observations on the following 2 variables.
+A data frame with 451 observations on the following 2 variables.
 \describe{
   \item{group}{a factor with levels \code{control} and \code{treatment}}
   \item{outcome}{a factor with levels \code{no event} and \code{stroke}}

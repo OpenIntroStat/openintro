@@ -7,7 +7,7 @@
 #' @name major_survey
 #' @aliases major_survey major.survey
 #' @docType data
-#' @format A tibble with 218 observations on the following 2 variables.
+#' @format A data frame with 218 observations on the following 2 variables.
 #' \describe{ \item{gpa}{Grade point average (GPA).} \item{major}{Area of
 #' academic major.} }
 #' @keywords datasets

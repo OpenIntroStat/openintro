@@ -5,7 +5,7 @@
 \alias{bdims}
 \title{Body measurements of 507 physically active individuals.}
 \format{
-A tibble with 507 observations on the following 25 variables.
+A data frame with 507 observations on the following 25 variables.
 \describe{
   \item{bia.di}{A numerical vector, respondent's biacromial diameter in
   centimeters.}

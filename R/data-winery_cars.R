@@ -16,7 +16,7 @@
 #'
 #' @name winery_cars
 #' @docType data
-#' @format A tibble with 52 observations on the following 2 variables.
+#' @format A data frame with 52 observations on the following 2 variables.
 #' \describe{
 #'   \item{obs_number}{The observation number, e.g. observation 3 was immediately
 #'   preceded by observation 2.}

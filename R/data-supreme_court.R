@@ -5,7 +5,7 @@
 #'
 #' @name supreme_court
 #' @docType data
-#' @format A tibble with 976 observations on the following variable.
+#' @format A data frame with 976 observations on the following variable.
 #' \describe{
 #'   \item{answer}{a factor with levels \code{approve} and \code{not}}
 #'   }

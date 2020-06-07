@@ -5,7 +5,7 @@
 \alias{penelope}
 \title{Guesses at the weight of Penelope (a cow)}
 \format{
-A tibble with 17,184 observations on the following variable.
+A data frame with 17,184 observations on the following variable.
 \describe{
   \item{weight}{Guesses of Penelope's weight, in pounds.}
 }

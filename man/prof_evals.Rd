@@ -6,7 +6,7 @@
 \alias{prof.evals}
 \title{Professor evaluations and beauty}
 \format{
-A tibble with 463 observations on the following 64 variables.
+A data frame with 463 observations on the following 64 variables.
 \describe{\item{tenured}{Tenured indicator.} \item{profnumber}{Professor
 number.} \item{minority}{Minority.} \item{age}{Age.} \item{beautyf2upper}{A
 numeric vector.} \item{beautyflowerdiv}{A numeric vector.}

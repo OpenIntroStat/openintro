@@ -9,7 +9,7 @@
 #'
 #' @name stem_cell
 #' @docType data
-#' @format A tibble with 18 observations on the following 3 variables.
+#' @format A data frame with 18 observations on the following 3 variables.
 #' \describe{
 #'   \item{trmt}{a factor with levels \code{ctrl} \code{esc}}
 #'   \item{before}{a numeric vector}

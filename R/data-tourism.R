@@ -5,7 +5,7 @@
 #'
 #' @name tourism
 #' @docType data
-#' @format A tibble with 47 observations on the following 3 variables.
+#' @format A data frame with 47 observations on the following 3 variables.
 #' \describe{
 #'   \item{year}{a numeric vector}
 #'   \item{visitor_count_tho}{a numeric vector}

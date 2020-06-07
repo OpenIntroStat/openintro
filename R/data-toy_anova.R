@@ -6,7 +6,7 @@
 #'
 #' @name toy_anova
 #' @docType data
-#' @format A tibble with 70 observations on the following 3 variables.
+#' @format A data frame with 70 observations on the following 3 variables.
 #' \describe{
 #'   \item{groups}{a factor with levels \code{I} \code{II} \code{III}}
 #'   \item{x1}{a numeric vector}

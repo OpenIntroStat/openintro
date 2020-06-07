@@ -5,7 +5,7 @@
 \alias{immigration}
 \title{Poll on illegal workers in the US}
 \format{
-A tibble with 910 observations on the following 2 variables.
+A data frame with 910 observations on the following 2 variables.
 \describe{ \item{response}{a factor with levels \code{Apply for citizenship}
 \code{Guest worker} \code{Leave the country} \code{Not sure}}
 \item{political}{a factor with levels \code{conservative} \code{liberal}

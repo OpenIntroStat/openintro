@@ -6,7 +6,7 @@
 \alias{heartTr}
 \title{Heart Transplant Data}
 \format{
-A tibble with 103 observations on the following 8 variables.
+A data frame with 103 observations on the following 8 variables.
 \describe{
   \item{id}{ID number of the patient.}
   \item{acceptyear}{Year of acceptance as a heart transplant candidate.}

@@ -5,7 +5,7 @@
 #'
 #' @name satgpa
 #' @docType data
-#' @format A tibble with 1000 observations on the following 6 variables.
+#' @format A data frame with 1000 observations on the following 6 variables.
 #' \describe{
 #'   \item{sex}{Gender of the student.}
 #'   \item{sat_v}{Verbal SAT percentile.}

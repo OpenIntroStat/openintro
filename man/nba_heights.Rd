@@ -5,7 +5,7 @@
 \alias{nba_heights}
 \title{NBA Player heights from 2008-9}
 \format{
-A tibble with 435 observations (players) on the following 4
+A data frame with 435 observations (players) on the following 4
 variables.
 \describe{
   \item{last_name}{Last name.}

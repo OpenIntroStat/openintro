@@ -5,7 +5,7 @@
 \alias{starbucks}
 \title{Starbucks nutrition}
 \format{
-A tibble with 77 observations on the following 7 variables.
+A data frame with 77 observations on the following 7 variables.
 \describe{
   \item{item}{Food item.}
   \item{calories}{Calories.}

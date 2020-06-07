@@ -17,7 +17,7 @@
 #'
 #' @name friday
 #' @docType data
-#' @format A tibble with 61 observations and 6 variables.
+#' @format A data frame with 61 observations and 6 variables.
 #' \describe{
 #'   \item{type}{Type of observation, \code{traffic}, \code{shopping}, or \code{accident}.}
 #'   \item{date}{Year and month of observation.}

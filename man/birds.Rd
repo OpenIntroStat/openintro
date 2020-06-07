@@ -5,7 +5,7 @@
 \alias{birds}
 \title{Aircraft-Wildlife Collisions}
 \format{
-A tibble with 19302 observations on the following 17 variables.
+A data frame with 19302 observations on the following 17 variables.
 \describe{
 \item{opid}{Three letter identification code for the operator
 (carrier) of the aircraft.}

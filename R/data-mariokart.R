@@ -25,7 +25,7 @@
 #'
 #' @name mariokart
 #' @docType data
-#' @format A tibble with 143 observations on the following 12 variables.
+#' @format A data frame with 143 observations on the following 12 variables.
 #' All prices are in US dollars.
 #' \describe{
 #'   \item{id}{Auction ID assigned by Ebay.}

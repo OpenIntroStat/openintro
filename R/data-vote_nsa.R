@@ -8,7 +8,7 @@
 #'
 #' @name vote_nsa
 #' @docType data
-#' @format A tibble with 434 observations on the following 5 variables.
+#' @format A data frame with 434 observations on the following 5 variables.
 #' \describe{
 #'   \item{name}{Name of the Congressional representative.}
 #'   \item{party}{The party of the representative: \code{D} for Democrat and

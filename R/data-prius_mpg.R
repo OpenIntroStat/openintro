@@ -9,7 +9,7 @@
 #'
 #' @name prius_mpg
 #' @docType data
-#' @format A tibble with 19 observations on the following 10 variables.
+#' @format A data frame with 19 observations on the following 10 variables.
 #' \describe{
 #'   \item{average_mpg}{Average mileage as estimated by the user.}
 #'   \item{state}{US State the user lives in.}

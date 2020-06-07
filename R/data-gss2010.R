@@ -5,7 +5,7 @@
 #' 
 #' @name gss2010
 #' @docType data
-#' @format A tibble with 2044 observations on the following 5 variables.
+#' @format A data frame with 2044 observations on the following 5 variables.
 #' \describe{\item{hrsrelax}{After an average work day, about how many hours do
 #' you have to relax or pursue activities that you enjoy?  }
 #' \item{mntlhlth}{For how many days during the past 30 days was your mental

@@ -4,7 +4,7 @@
 #'
 #' @name fastfood
 #' @docType data
-#' @format A tibble with 515 observations on the following 17 variables.
+#' @format A data frame with 515 observations on the following 17 variables.
 #' \describe{
 #'   \item{restaurant}{Name of restaurant}
 #'   \item{calories}{Number of calories}

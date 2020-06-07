@@ -8,7 +8,7 @@
 #' @name global_warming_pew
 #' @aliases global.warming.pew global_warming_pew
 #' @docType data
-#' @format A tibble with 2253 observations on the following 2 variables.
+#' @format A data frame with 2253 observations on the following 2 variables.
 #' \describe{\item{party_or_ideology}{a factor with levels
 #' \code{Conservative Republican} \code{Liberal Democrat} \code{Mod/Cons
 #' Democrat} \code{Mod/Lib Republican}} \item{response}{Response.} }

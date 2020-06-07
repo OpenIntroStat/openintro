@@ -5,7 +5,7 @@
 \alias{births}
 \title{North Carolina births}
 \format{
-A tibble with 150 observations on the following 14 variables.
+A data frame with 150 observations on the following 14 variables.
 \describe{
   \item{f_age}{Father's age.}
   \item{m_age}{Mother's age.}

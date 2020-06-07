@@ -11,7 +11,7 @@
 #'
 #' @name ebola_survey
 #' @docType data
-#' @format A tibble with 1042 observations on the following variable.
+#' @format A data frame with 1042 observations on the following variable.
 #' \describe{
 #'   \item{quarantine}{Indicates whether the respondent is in \code{favor} or
 #'   \code{against} the mandatory quarantine.}

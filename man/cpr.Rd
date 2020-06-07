@@ -5,7 +5,7 @@
 \alias{cpr}
 \title{CPR data set}
 \format{
-A tibble with 90 observations on the following 2 variables.
+A data frame with 90 observations on the following 2 variables.
 \describe{
   \item{group}{a factor with levels \code{control} and \code{treatment}}
   \item{outcome}{a factor with levels \code{died} and \code{survived}}

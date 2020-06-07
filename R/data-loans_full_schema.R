@@ -15,7 +15,7 @@
 #' @name loans_full_schema
 #' @aliases loans_full_schema loan50
 #' @docType data
-#' @format A tibble with 10,000 observations on the following 55 variables.
+#' @format A data frame with 10,000 observations on the following 55 variables.
 #' \describe{
 #'   \item{emp_title}{Job title.}
 #'   \item{emp_length}{Number of years in the job, rounded down.

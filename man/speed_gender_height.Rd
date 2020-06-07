@@ -5,7 +5,7 @@
 \alias{speed_gender_height}
 \title{Speed, gender, and height of 1325 students}
 \format{
-A tibble with 1325 observations on the following 3 variables.
+A data frame with 1325 observations on the following 3 variables.
 \describe{
   \item{speed}{a numeric vector}
   \item{gender}{a factor with levels \code{female} and \code{male}}

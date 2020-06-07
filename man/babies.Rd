@@ -5,7 +5,7 @@
 \alias{babies}
 \title{The Child Health and Development Studies}
 \format{
-A tibble with 1236 rows and 8 variables:
+A data frame with 1236 rows and 8 variables:
 \describe{
   \item{case}{id number}
   \item{bwt}{birthweight, in ounces}

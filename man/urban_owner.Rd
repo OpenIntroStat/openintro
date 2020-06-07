@@ -6,7 +6,7 @@
 \alias{urban.owner}
 \title{Summary of many state-level variables}
 \format{
-A tibble with 52 observations on the following 28 variables.
+A data frame with 52 observations on the following 28 variables.
 \describe{
   \item{state}{State}
   \item{total_housing_units_2000}{Total housing units available in 2000.}

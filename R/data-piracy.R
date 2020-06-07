@@ -19,7 +19,7 @@
 #'
 #' @name piracy
 #' @docType data
-#' @format A tibble with 534 observations on the following 8 variables.
+#' @format A data frame with 534 observations on the following 8 variables.
 #' \describe{
 #' \item{name}{Name of legislator.}
 #' \item{party}{Party affiliation as democrat (\code{D}), Republican

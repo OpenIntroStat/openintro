@@ -5,7 +5,7 @@
 \alias{russian_influence_on_us_election_2016}
 \title{Russians' Opinions on US Election Influence in 2016}
 \format{
-A tibble with 506 observations on the following variable.
+A data frame with 506 observations on the following variable.
 \describe{
   \item{influence_2016}{Response of the Russian survey participant to the question
   of whether their government tried to influence the 2016 election in the

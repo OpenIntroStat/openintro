@@ -7,7 +7,7 @@
 #'
 #' @name smoking
 #' @docType data
-#' @format A tibble with 1691 observations on the following 12 variables.
+#' @format A data frame with 1691 observations on the following 12 variables.
 #' \describe{
 #'   \item{gender}{Gender with levels \code{Female} and \code{Male}.}
 #'   \item{age}{Age.}

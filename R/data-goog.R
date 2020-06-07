@@ -6,7 +6,7 @@
 #'
 #' @name goog
 #' @docType data
-#' @format A tibble with 98 observations on the following 7 variables.
+#' @format A data frame with 98 observations on the following 7 variables.
 #' \describe{\item{Date}{a factor with levels \code{2006-01-03},
 #' \code{2006-02-01}, and so on} \item{Open}{a numeric vector}
 #' \item{High}{a numeric vector} \item{Low}{a numeric vector}

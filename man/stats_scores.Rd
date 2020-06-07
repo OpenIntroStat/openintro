@@ -5,7 +5,7 @@
 \alias{stats_scores}
 \title{Final exam scores for twenty students}
 \format{
-A tibble with 20 observations on the following variable.
+A data frame with 20 observations on the following variable.
 \describe{
   \item{scores}{a numeric vector}
   }

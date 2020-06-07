@@ -7,7 +7,7 @@
 \alias{ageAtMar}
 \title{Age at first marriage of 5,534 US women.}
 \format{
-A tibble with 5,534 observations and 1 variable.
+A data frame with 5,534 observations and 1 variable.
 \describe{
   \item{age}{Age a first marriage.}
   }

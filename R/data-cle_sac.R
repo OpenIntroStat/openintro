@@ -6,7 +6,7 @@
 #' @name cle_sac
 #' @aliases cle.sac cle_sac
 #' @docType data
-#' @format A tibble with 500 observations representing people on the
+#' @format A data frame with 500 observations representing people on the
 #' following 8 variables.
 #' \describe{
 #'   \item{year}{Year the data was collected.}

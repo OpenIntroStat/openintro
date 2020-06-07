@@ -6,7 +6,7 @@
 #' 
 #' @name migraine
 #' @docType data
-#' @format A tibble with 89 observations on the following 2 variables.
+#' @format A data frame with 89 observations on the following 2 variables.
 #' \describe{\item{group}{a factor with levels \code{control} \code{treatment}}
 #' \item{pain_free}{a factor with levels \code{no} \code{yes}} }
 #' @source G. Allais et al. Ear acupuncture in the treatment of migraine

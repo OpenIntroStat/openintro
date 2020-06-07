@@ -5,7 +5,7 @@
 \alias{elmhurst}
 \title{Elmhurst College gift aid}
 \format{
-A tibble with 50 observations on the following 3 variables.
+A data frame with 50 observations on the following 3 variables.
 \describe{
   \item{family_income}{Family income of the student.}
   \item{gift_aid}{Gift aid, in $1000s.}

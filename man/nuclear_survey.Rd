@@ -5,7 +5,7 @@
 \alias{nuclear_survey}
 \title{Nuclear Arms Reduction Survey}
 \format{
-A tibble with 1028 observations on the following variable.
+A data frame with 1028 observations on the following variable.
 \describe{\item{arms_reduction}{Responses of \code{favor} or
 \code{against}.} }
 }

@@ -5,7 +5,7 @@
 \alias{unempl}
 \title{Annual unemployment since 1890}
 \format{
-A tibble with 121 observations on the following 3 variables.
+A data frame with 121 observations on the following 3 variables.
 \describe{
   \item{year}{Year}
   \item{unemp}{Unemployment rate, in percent}

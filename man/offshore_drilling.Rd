@@ -6,7 +6,7 @@
 \alias{offshore.drilling}
 \title{California poll on drilling off the California coast}
 \format{
-A tibble with 827 observations on the following 2 variables.
+A data frame with 827 observations on the following 2 variables.
 \describe{\item{position}{a factor with levels \code{do not know}
 \code{oppose} \code{support}} \item{college_grad}{a factor with
 levels \code{no} \code{yes}} }

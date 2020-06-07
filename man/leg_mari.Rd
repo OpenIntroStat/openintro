@@ -5,7 +5,7 @@
 \alias{leg_mari}
 \title{Legalization of Marijuana Support in 2010 California Survey}
 \format{
-A tibble with 119 observations on the following variable.
+A data frame with 119 observations on the following variable.
 \describe{\item{response}{One of two values: \code{oppose} or
 \code{support}.} }
 }

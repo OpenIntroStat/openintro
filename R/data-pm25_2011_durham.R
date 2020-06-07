@@ -7,7 +7,7 @@
 #' @name pm25_2011_durham
 #' @aliases pm25.2011.durham pm25_2011_durham
 #' @docType data
-#' @format A tibble with 449 observations on the following 20 variables.
+#' @format A data frame with 449 observations on the following 20 variables.
 #' \describe{
 #'   \item{date}{Date}
 #'   \item{aqs_site_id}{a factor with levels \code{37-063-0015}}

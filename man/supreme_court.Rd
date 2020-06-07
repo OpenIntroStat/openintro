@@ -5,7 +5,7 @@
 \alias{supreme_court}
 \title{Supreme Court approval rating}
 \format{
-A tibble with 976 observations on the following variable.
+A data frame with 976 observations on the following variable.
 \describe{
   \item{answer}{a factor with levels \code{approve} and \code{not}}
   }

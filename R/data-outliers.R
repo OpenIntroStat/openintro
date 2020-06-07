@@ -5,7 +5,7 @@
 #'
 #' @name outliers
 #' @docType data
-#' @format A tibble with 50 observations on the following 5 variables.
+#' @format A data frame with 50 observations on the following 5 variables.
 #' \describe{
 #'   \item{x}{a numeric vector}
 #'   \item{y}{a numeric vector}

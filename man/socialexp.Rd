@@ -5,7 +5,7 @@
 \alias{socialexp}
 \title{Social experiment}
 \format{
-A tibble with 45 observations on the following 2 variables.
+A data frame with 45 observations on the following 2 variables.
 \describe{
   \item{intervene}{Whether other diners intervened or not.}
   \item{scenario}{How the woman was dressed.}

@@ -5,7 +5,7 @@
 #'
 #' @name nba_heights
 #' @docType data
-#' @format A tibble with 435 observations (players) on the following 4
+#' @format A data frame with 435 observations (players) on the following 4
 #' variables.
 #' \describe{
 #'   \item{last_name}{Last name.}

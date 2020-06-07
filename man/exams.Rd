@@ -5,7 +5,7 @@
 \alias{exams}
 \title{Exam scores}
 \format{
-A tibble with 19 observations on the following variable.
+A data frame with 19 observations on the following variable.
 \describe{\item{scores}{a numeric vector} }
 }
 \usage{

@@ -13,7 +13,7 @@
 #'
 #' @name hfi
 #' @docType data
-#' @format A tibble with `1458` observations on the following 123 variables.
+#' @format A data frame with `1458` observations on the following 123 variables.
 #' \describe{
 #'   \item{year}{}
 #'   \item{ISO_code}{}

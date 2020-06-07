@@ -5,7 +5,7 @@
 \alias{housing}
 \title{Simulated data set on student housing}
 \format{
-A tibble with 75 observations on the following variable.
+A data frame with 75 observations on the following variable.
 \describe{\item{cost}{a numeric vector} }
 }
 \usage{

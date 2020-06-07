@@ -6,7 +6,7 @@
 #'
 #' @name babies_crawl
 #' @docType data
-#' @format A tibble with 12 observations on the following 5 variables.
+#' @format A data frame with 12 observations on the following 5 variables.
 #' \describe{
 #'   \item{birth_month}{A factor with levels corresponding to months}
 #'   \item{avg_crawling_age}{a numeric vector}

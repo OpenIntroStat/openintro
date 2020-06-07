@@ -5,7 +5,7 @@
 #'
 #' @name urban_rural_pop
 #' @docType data
-#' @format A tibble with 51 observations on the following 5 variables.
+#' @format A data frame with 51 observations on the following 5 variables.
 #' \describe{
 #'   \item{state}{US state.}
 #'   \item{urban_in}{a numeric vector}

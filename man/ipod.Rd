@@ -5,7 +5,7 @@
 \alias{ipod}
 \title{Length of songs on an iPod}
 \format{
-A tibble with 3000 observations on the following variable.
+A data frame with 3000 observations on the following variable.
 \describe{
   \item{song_length}{Length of song (in minutes).}
   }

@@ -5,7 +5,7 @@
 #'
 #' @name yrbss_samp
 #' @docType data
-#' @format A tibble with 100 observations on the following 13 variables.
+#' @format A data frame with 100 observations on the following 13 variables.
 #' \describe{
 #'   \item{age}{Age, in years.}
 #'   \item{gender}{Gender.}

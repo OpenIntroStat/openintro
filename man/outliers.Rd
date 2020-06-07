@@ -5,7 +5,7 @@
 \alias{outliers}
 \title{Simulated data sets for different types of outliers}
 \format{
-A tibble with 50 observations on the following 5 variables.
+A data frame with 50 observations on the following 5 variables.
 \describe{
   \item{x}{a numeric vector}
   \item{y}{a numeric vector}

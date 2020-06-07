@@ -7,7 +7,7 @@
 #'
 #' @name stent30
 #' @docType data
-#' @format A tibble with 451 observations on the following 2 variables.
+#' @format A data frame with 451 observations on the following 2 variables.
 #' \describe{
 #'   \item{group}{a factor with levels \code{control} and \code{treatment}}
 #'   \item{outcome}{a factor with levels \code{no event} and \code{stroke}}

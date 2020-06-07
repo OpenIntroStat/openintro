@@ -5,7 +5,7 @@
 \alias{census}
 \title{Random sample of 2000 U.S. Census Data}
 \format{
-A tibble with 500 observations on the following 8 variables.
+A data frame with 500 observations on the following 8 variables.
 \describe{
   \item{census_year}{Census Year.}
   \item{state_fips_code}{Name of state.}

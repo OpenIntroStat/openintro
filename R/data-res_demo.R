@@ -5,7 +5,7 @@
 #'
 #' @name res_demo_1
 #' @docType data
-#' @format A tibble with 100 observations on the following 3 variables.
+#' @format A data frame with 100 observations on the following 3 variables.
 #' \describe{
 #'   \item{x}{a numeric vector}
 #'   \item{yLin}{a numeric vector}
@@ -29,7 +29,7 @@
 #'
 #' @name res_demo_2
 #' @docType data
-#' @format A tibble with 300 observations on the following 3 variables.
+#' @format A data frame with 300 observations on the following 3 variables.
 #' \describe{
 #'   \item{x}{a numeric vector}
 #'   \item{yFan}{a numeric vector}

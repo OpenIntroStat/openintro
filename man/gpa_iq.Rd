@@ -6,7 +6,7 @@
 \alias{gpa.iq}
 \title{Sample of students and their GPA and IQ}
 \format{
-A tibble with 78 observations representing students on the
+A data frame with 78 observations representing students on the
 following 5 variables. \describe{\item{obs}{a numeric vector}
 \item{gpa}{Grade point average (GPA).} \item{iq}{IQ.}
 \item{gender}{Gender.} \item{concept}{a numeric vector} }

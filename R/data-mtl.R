@@ -8,7 +8,7 @@
 #'
 #' @name mtl
 #' @docType data
-#' @format A tibble with 35 observations on the following 23 variables.
+#' @format A data frame with 35 observations on the following 23 variables.
 #' \describe{
 #'   \item{subject}{ID for the individual.}
 #'   \item{sex}{Gender, which takes values \code{F} (female) or \code{M} (male).}

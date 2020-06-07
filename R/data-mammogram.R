@@ -7,7 +7,7 @@
 #' 
 #' @name mammogram
 #' @docType data
-#' @format A tibble with 89835 observations on the following 2 variables.
+#' @format A data frame with 89835 observations on the following 2 variables.
 #' \describe{\item{treatment}{a factor with levels \code{control}
 #' \code{mammogram}} \item{breast_cancer_death}{a factor with levels \code{no}
 #' \code{yes}} }

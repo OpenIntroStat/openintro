@@ -6,7 +6,7 @@
 #'
 #' @name student_sleep
 #' @docType data
-#' @format A tibble with 110 observations on the following variable.
+#' @format A data frame with 110 observations on the following variable.
 #' \describe{
 #'   \item{hours}{Number of hours slept by this student (simulated).}
 #'   }

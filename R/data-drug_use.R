@@ -5,7 +5,7 @@
 #'
 #' @name drug_use
 #' @docType data
-#' @format A tibble with 445 observations on the following 2 variables.
+#' @format A data frame with 445 observations on the following 2 variables.
 #' \describe{
 #'   \item{student}{a factor with levels \code{not} \code{uses}}
 #'   \item{parents}{a factor with levels \code{not} \code{used}}

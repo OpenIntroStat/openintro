@@ -5,7 +5,7 @@
 \alias{avandia}
 \title{Cardiovascular problems for two types of Diabetes medicines}
 \format{
-A tibble with 227571 observations on the following 2 variables.
+A data frame with 227571 observations on the following 2 variables.
 \describe{
   \item{treatment}{a factor with levels \code{Pioglitazone} and
   \code{Rosiglitazone}}

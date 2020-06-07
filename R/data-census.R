@@ -5,7 +5,7 @@
 #'
 #' @name census
 #' @docType data
-#' @format A tibble with 500 observations on the following 8 variables.
+#' @format A data frame with 500 observations on the following 8 variables.
 #' \describe{
 #'   \item{census_year}{Census Year.}
 #'   \item{state_fips_code}{Name of state.}

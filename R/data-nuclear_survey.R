@@ -6,7 +6,7 @@
 #'
 #' @name nuclear_survey
 #' @docType data
-#' @format A tibble with 1028 observations on the following variable.
+#' @format A data frame with 1028 observations on the following variable.
 #' \describe{\item{arms_reduction}{Responses of \code{favor} or
 #' \code{against}.} }
 #' @source

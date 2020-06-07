@@ -9,7 +9,7 @@
 #'
 #' @name ncbirths
 #' @docType data
-#' @format A tibble with 1000 observations on the following 13 variables.
+#' @format A data frame with 1000 observations on the following 13 variables.
 #' \describe{
 #'   \item{fage}{Father's age in years.}
 #'   \item{mage}{Mother's age in years.}

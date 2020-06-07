@@ -15,7 +15,7 @@
 #'
 #' @name diabetes2
 #' @docType data
-#' @format A tibble with 699 observations on the following 2 variables.
+#' @format A data frame with 699 observations on the following 2 variables.
 #' \describe{
 #'   \item{treatment}{The treatment the patient received.}
 #'   \item{outcome}{Whether there patient still needs insulin (\code{failure})

@@ -5,7 +5,7 @@
 \alias{winery_cars}
 \title{Time Between Gondola Cars at Sterling Winery}
 \format{
-A tibble with 52 observations on the following 2 variables.
+A data frame with 52 observations on the following 2 variables.
 \describe{
   \item{obs_number}{The observation number, e.g. observation 3 was immediately
   preceded by observation 2.}
