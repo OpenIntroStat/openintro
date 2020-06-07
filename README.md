@@ -4,7 +4,7 @@
 <!-- badges: start -->
 
 [![CRAN
-status](https://www.r-pkg.org/badges/version/openintro)](https://cran.r-project.org/package=openintro)
+status](https://www.r-pkg.org/badges/version/openintro)](https://cran.r-project.org/web/packages/openintro/index.html)
 <!-- badges: end -->
 
 Supplemental functions and data for ‘OpenIntro’ resources, which
@@ -31,7 +31,7 @@ You can install the development version of openintro from GitHub with:
 ``` r
 # install.packages("devtools")
 library(devtools)
-install_github("OpenIntroStat/openintro-r-package")
+install_github("OpenIntroStat/openintro")
 ```
 
 This package was produced as part of the OpenIntro project. For the
