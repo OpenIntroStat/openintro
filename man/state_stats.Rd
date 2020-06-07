@@ -4,7 +4,8 @@
 \name{state_stats}
 \alias{state_stats}
 \title{State-level data}
-\format{A data frame with 51 observations on the following 23 variables.
+\format{
+A data frame with 51 observations on the following 23 variables.
 \describe{
 \item{state}{State name.}
 \item{abbr}{State abbreviation (e.g. \code{"MN"}).}
@@ -32,7 +33,8 @@ spending per capita.}
 \item{tr_deaths_no_alc}{Traffic deaths per 100,000 where alcohol was
 not a factor.}
 \item{unempl}{Unemployment rate (February 2012, preliminary).}
-}}
+}
+}
 \source{
 Please note that we have not validated the Infochimps data. The
 other data were collected directly from the corresponding websites.

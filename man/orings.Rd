@@ -4,9 +4,11 @@
 \name{orings}
 \alias{orings}
 \title{1986 Challenger disaster and O-rings}
-\format{A tibble with 23 observations on the following 2 variables.
+\format{
+A tibble with 23 observations on the following 2 variables.
 \describe{\item{temp}{Temperature, in Fahrenheit.}
-\item{damage}{Number of damaged O-rings (out of 6).} }}
+\item{damage}{Number of damaged O-rings (out of 6).} }
+}
 \source{
 \url{https://archive.ics.uci.edu/ml/datasets/Challenger+USA+Space+Shuttle+O-Ring}
 }

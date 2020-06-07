@@ -4,8 +4,10 @@
 \name{male_heights}
 \alias{male_heights}
 \title{Sample of 100 male heights}
-\format{A tibble with 100 observations on the following variable.
-\describe{\item{heights}{a numeric vector} }}
+\format{
+A tibble with 100 observations on the following variable.
+\describe{\item{heights}{a numeric vector} }
+}
 \usage{
 male_heights
 }

@@ -4,12 +4,14 @@
 \name{env_regulation}
 \alias{env_regulation}
 \title{American Adults on Regulation and Renewable Energy}
-\format{A tibble with 705 observations on the following variable.
+\format{
+A tibble with 705 observations on the following variable.
 \describe{
   \item{statement}{There were three possible outcomes for each person:
   \code{"Regulations necessary"}, \code{"Private marketplace will ensure"},
   and \code{"Don't know"}.}
-  }}
+  }
+}
 \source{
 \url{http://www.pewinternet.org/2017/05/16/public-divides-over-environmental-regulation-and-energy-policy}
 }

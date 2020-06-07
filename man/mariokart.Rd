@@ -4,7 +4,8 @@
 \name{mariokart}
 \alias{mariokart}
 \title{Wii Mario Kart auctions from Ebay}
-\format{A tibble with 143 observations on the following 12 variables.
+\format{
+A tibble with 143 observations on the following 12 variables.
 All prices are in US dollars.
 \describe{
   \item{id}{Auction ID assigned by Ebay.}
@@ -26,7 +27,8 @@ All prices are in US dollars.
   game. When used with the controller, turning the wheel actually causes the
   character on screen to turn.}
   \item{title}{The title of the auctions.}
-}}
+}
+}
 \source{
 \url{http://www.ebay.com}
 }

@@ -4,8 +4,10 @@
 \name{housing}
 \alias{housing}
 \title{Simulated data set on student housing}
-\format{A tibble with 75 observations on the following variable.
-\describe{\item{cost}{a numeric vector} }}
+\format{
+A tibble with 75 observations on the following variable.
+\describe{\item{cost}{a numeric vector} }
+}
 \usage{
 housing
 }

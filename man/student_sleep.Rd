@@ -4,10 +4,12 @@
 \name{student_sleep}
 \alias{student_sleep}
 \title{Sleep for 110 students (simulated)}
-\format{A tibble with 110 observations on the following variable.
+\format{
+A tibble with 110 observations on the following variable.
 \describe{
   \item{hours}{Number of hours slept by this student (simulated).}
-  }}
+  }
+}
 \source{
 Simulated data.
 }

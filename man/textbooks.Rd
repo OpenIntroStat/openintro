@@ -4,7 +4,8 @@
 \name{textbooks}
 \alias{textbooks}
 \title{Textbook data for UCLA Bookstore and Amazon}
-\format{A tibble with 73 observations on the following 7 variables.
+\format{
+A tibble with 73 observations on the following 7 variables.
 \describe{
   \item{dept_abbr}{Course department (abbreviated).}
   \item{course}{Course number.}
@@ -14,7 +15,8 @@
   \item{more}{Whether additional books were required for the course (\code{Y}
   means "yes, additional books were required").}
   \item{diff}{The UCLA Bookstore price minus the Amazon.com price for each book.}
-  }}
+  }
+}
 \source{
 This data was collected by David M Diez on April 24th.
 }

@@ -4,7 +4,8 @@
 \name{births}
 \alias{births}
 \title{North Carolina births}
-\format{A tibble with 150 observations on the following 14 variables.
+\format{
+A tibble with 150 observations on the following 14 variables.
 \describe{
   \item{f_age}{Father's age.}
   \item{m_age}{Mother's age.}
@@ -15,7 +16,8 @@
   \item{weight}{Birth weight of the baby.}
   \item{sex_baby}{Gender of the baby.}
   \item{smoke}{Whether or not the mother was a smoker.}
-  }}
+  }
+}
 \source{
 Birth records released by North Carolina in 2004.
 }

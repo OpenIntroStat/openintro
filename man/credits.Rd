@@ -4,10 +4,12 @@
 \name{credits}
 \alias{credits}
 \title{College credits.}
-\format{A tibble with 100 observations on the following variable.
+\format{
+A tibble with 100 observations on the following variable.
 \describe{
   \item{credits}{Number of credits.}
-  }}
+  }
+}
 \source{
 Simulated data.
 }

@@ -4,7 +4,8 @@
 \name{acs12}
 \alias{acs12}
 \title{American Community Survey, 2012}
-\format{A tibble with 2000 observations on the following 13 variables.
+\format{
+A tibble with 2000 observations on the following 13 variables.
 \describe{
   \item{income}{Annual income.}
   \item{employment}{Employment status.}
@@ -20,7 +21,8 @@
   \item{disability}{Whether the person is disabled.}
   \item{birth_qrtr}{The quarter of the year that the person was born,
   e.g. `Jan thru Mar`.}
-  }}
+  }
+}
 \source{
 \url{http://www.census.gov/acs}
 }

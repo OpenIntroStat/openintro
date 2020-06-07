@@ -4,11 +4,13 @@
 \name{infmortrate}
 \alias{infmortrate}
 \title{Infant Mortality Rates, 2012}
-\format{A tibble with 222 observations on the following 2 variables.
+\format{
+A tibble with 222 observations on the following 2 variables.
 \describe{
   \item{country}{Name of country.}
   \item{inf_mort_rate}{Infant mortality rate per 1,000 live births.}
-  }}
+  }
+}
 \source{
 CIA World Factbook,
 \url{https://www.cia.gov/library/publications/the-world-factbook/rankorder/rawdata_2091.txt}.

@@ -4,11 +4,13 @@
 \name{stent30}
 \alias{stent30}
 \title{Stents for the treatment of stroke}
-\format{A tibble with 451 observations on the following 2 variables.
+\format{
+A tibble with 451 observations on the following 2 variables.
 \describe{
   \item{group}{a factor with levels \code{control} and \code{treatment}}
   \item{outcome}{a factor with levels \code{no event} and \code{stroke}}
-  }}
+  }
+}
 \source{
 Chimowitz MI, Lynn MJ, Derdeyn CP, et al. 2011. Stenting versus
 Aggressive Med- ical Therapy for Intracranial Arterial Stenosis. New England

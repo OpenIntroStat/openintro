@@ -4,7 +4,8 @@
 \name{nba_players_19}
 \alias{nba_players_19}
 \title{NBA Players for the 2018-2019 season}
-\format{A data frame with 494 observations on the following 7 variables.
+\format{
+A data frame with 494 observations on the following 7 variables.
 \describe{
   \item{first_name}{First name.}
   \item{last_name}{Last name.}
@@ -13,7 +14,8 @@
   \item{position}{Player position.}
   \item{number}{Jersey number.}
   \item{height}{Height, in inches.}
-}}
+}
+}
 \source{
 \url{http://www.nba.com/players}
 }

@@ -4,10 +4,12 @@
 \name{poker}
 \alias{poker}
 \title{Poker winnings during 50 sessions}
-\format{A tibble with 49 observations on the following variable.
+\format{
+A tibble with 49 observations on the following variable.
 \describe{
   \item{winnings}{Poker winnings and losses, in US dollars.}
-  }}
+  }
+}
 \source{
 Anonymity has been requested by the player.
 }

@@ -4,8 +4,10 @@
 \name{COL}
 \alias{COL}
 \title{OpenIntro Statistics colors}
-\format{A \code{7-by-4} matrix of 7 colors with four fading scales: blue,
-green, yellow, red, black, gray, and light gray.}
+\format{
+A \code{7-by-4} matrix of 7 colors with four fading scales: blue,
+green, yellow, red, black, gray, and light gray.
+}
 \source{
 Colors selected by OpenIntro's in-house graphic designer,
 \href{http://www.meenalpatel.com}{Meenal Patel}.

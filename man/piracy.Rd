@@ -4,7 +4,8 @@
 \name{piracy}
 \alias{piracy}
 \title{Piracy and PIPA/SOPA}
-\format{A tibble with 534 observations on the following 8 variables.
+\format{
+A tibble with 534 observations on the following 8 variables.
 \describe{
 \item{name}{Name of legislator.}
 \item{party}{Party affiliation as democrat (\code{D}), Republican
@@ -21,7 +22,8 @@ PIPA/SOPA: computer and internet companies.}
 \code{Leaning No}, \code{No}, \code{Undecided}, \code{Unknown}, \code{Yes}}
 \item{chamber}{Whether the legislator is a member of either the
 \code{house} or \code{senate}.}
-}}
+}
+}
 \source{
 \url{http://projects.propublica.org/sopa}
 

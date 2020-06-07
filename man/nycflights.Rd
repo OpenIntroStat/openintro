@@ -4,7 +4,8 @@
 \name{nycflights}
 \alias{nycflights}
 \title{Flights data}
-\format{A tbl_df with 32,735 rows and 16 variables:
+\format{
+A tbl_df with 32,735 rows and 16 variables:
 \describe{
 \item{year,month,day}{Date of departure.}
 \item{dep_time,arr_time}{Departure and arrival times, local tz.}
@@ -19,7 +20,8 @@
   `nycflights13` package for more information or google airport the code.}
 \item{air_time}{Amount of time spent in the air.}
 \item{distance}{Distance flown.}
-}}
+}
+}
 \source{
 Hadley Wickham (2014). `nycflights13`: Data about flights departing
 NYC in 2013. R package version 0.1.

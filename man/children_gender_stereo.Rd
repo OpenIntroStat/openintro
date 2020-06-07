@@ -4,7 +4,8 @@
 \name{children_gender_stereo}
 \alias{children_gender_stereo}
 \title{Gender Stereotypes in 5-7 year old Children}
-\format{This data object is more unusual than most. It is a list of 4 data
+\format{
+This data object is more unusual than most. It is a list of 4 data
 frames. The four data frames correspond to the data used in Studies 1-4 of
 the referenced
 \href{http://science.sciencemag.org/content/355/6323/389}{paper}, and these
@@ -35,7 +36,8 @@ data frames each have variables (columns) that are among the following:
   the game.}
   \item{difference}{A difference score between the interest of the child in
   the \dQuote{smart} game and their interest in the \dQuote{try-hard} game.}
-}}
+}
+}
 \source{
 Bian L, Leslie SJ, Cimpian A. 2017. "Gender stereotypes about intellectual
 ability emerge early and influence children's interests". Science 355:6323

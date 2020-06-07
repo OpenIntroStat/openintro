@@ -4,11 +4,13 @@
 \name{gpa_study_hours}
 \alias{gpa_study_hours}
 \title{gpa_study_hours}
-\format{A tibble with 193 observations on the following 2 variables.
+\format{
+A tibble with 193 observations on the following 2 variables.
 \describe{
   \item{gpa}{Grade point average (GPA) of student.}
   \item{study_hours}{Number of hours students study per week.}
-  }}
+  }
+}
 \source{
 Collected at a private US university as part of an anonymous survey
 in an introductory statistics course.

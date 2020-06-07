@@ -4,12 +4,14 @@
 \name{london_boroughs}
 \alias{london_boroughs}
 \title{London Borough Boundaries}
-\format{A tibble with 45341 observations on the following 3 variables.
+\format{
+A tibble with 45341 observations on the following 3 variables.
 \describe{
 \item{borough}{Name of the borough.}
 \item{x}{The "easting" component of the coordinate, see details.}
 \item{y}{The "northing" component of the coordinate, see details.}
-}}
+}
+}
 \source{
 \url{https://www.ordnancesurvey.co.uk/opendatadownload/products.html}
 

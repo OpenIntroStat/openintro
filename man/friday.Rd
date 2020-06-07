@@ -4,7 +4,8 @@
 \name{friday}
 \alias{friday}
 \title{Friday the 13th}
-\format{A tibble with 61 observations and 6 variables.
+\format{
+A tibble with 61 observations and 6 variables.
 \describe{
   \item{type}{Type of observation, \code{traffic}, \code{shopping}, or \code{accident}.}
   \item{date}{Year and month of observation.}
@@ -12,7 +13,8 @@
   \item{thirteenth}{Counts on the 13th of the month.}
   \item{diff}{Difference between the sixth and the thirteenth.}
   \item{location}{Location where data is collected.}
-}}
+}
+}
 \source{
 Scanlon, T.J., Luben, R.N., Scanlon, F.L., Singleton, N. (1993), "Is
 Friday the 13th Bad For Your Health?," BMJ, 307, 1584-1586.

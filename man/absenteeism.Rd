@@ -4,7 +4,8 @@
 \name{absenteeism}
 \alias{absenteeism}
 \title{Absenteeism}
-\format{A tibble with 146 observations on the following 5 variables.
+\format{
+A tibble with 146 observations on the following 5 variables.
 \describe{
   \item{eth}{Ethnicity, representing Aboriginal (`A`) or not (`N`).}
   \item{sex}{Gender.}
@@ -12,7 +13,8 @@
   \item{lrn}{Learner status, with average learner (`AL`) and
   slow learner (`SL`).}
   \item{days}{Number of days absent.}
-  }}
+  }
+}
 \source{
 Venables WN, Ripley BD. 2002. Modern Applied Statistics with S.
 Fourth Edition. New York: Springer.

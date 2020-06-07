@@ -5,12 +5,14 @@
 \alias{coast_starlight}
 \alias{coast.starlight}
 \title{Coast Starlight Amtrak train}
-\format{A tibble with 16 observations on the following 3 variables.
+\format{
+A tibble with 16 observations on the following 3 variables.
 \describe{
   \item{station}{Station.}
   \item{dist}{Distance.}
   \item{travel_time}{Travel time.}
-  }}
+  }
+}
 \usage{
 coast_starlight
 }

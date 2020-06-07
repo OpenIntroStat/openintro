@@ -4,7 +4,8 @@
 \name{sp500}
 \alias{sp500}
 \title{Financial information for 50 S&P 500 companies}
-\format{A data frame with 50 observations on the following 12 variables.
+\format{
+A data frame with 50 observations on the following 12 variables.
 \describe{
 \item{market_cap}{Total value of all company shares, in millions of
 dollars.}
@@ -23,7 +24,8 @@ over the next year.}
 amortization, in millions of dollars.}
 \item{cash}{Total cash, in millions of dollars.}
 \item{debt}{Total debt, in millions of dollars.}
-}}
+}
+}
 \source{
 Yahoo! Finance, \url{http://finance.yahoo.com}, collected March 8, 2012.
 }

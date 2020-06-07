@@ -4,7 +4,8 @@
 \name{ames}
 \alias{ames}
 \title{Housing prices in Ames, Iowa}
-\format{A tbl_df with with 2930 rows and 82 variables:
+\format{
+A tbl_df with with 2930 rows and 82 variables:
 \describe{
   \item{Order}{Observation number.}
   \item{PID}{Parcel identification number  - can be used with city web site
@@ -95,7 +96,8 @@
   \item{Yr.Sold}{Year Sold (YYYY).}
   \item{Sale.Type}{Type of sale.}
   \item{Sale.Condition}{Condition of sale.}
-}}
+}
+}
 \source{
 De Cock, Dean. "Ames, Iowa: Alternative to the Boston housing data as
 an end of semester regression project." Journal of Statistics Education 19.3

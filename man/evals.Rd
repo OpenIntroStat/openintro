@@ -4,7 +4,8 @@
 \name{evals}
 \alias{evals}
 \title{Professor evaluations and beauty}
-\format{A tibble with 463 observations on the following 23 variables.
+\format{
+A tibble with 463 observations on the following 23 variables.
 \describe{
   \item{course_id}{Variable identifying the course (out of 463 courses).}
   \item{prof_id}{Variable identifying the professor who taught the course (out of 94 professors).}
@@ -39,7 +40,8 @@
   \item{bty_avg}{Average beauty rating of professor.}
   \item{pic_outfit}{Outfit of professor in picture: not formal, formal.}
   \item{pic_color}{Color of professor's picture: color, black & white.}
-  }}
+  }
+}
 \source{
 Cetinkaya-Rundel M, Morgan KL, Stangl D. 2013. Looking Good on
 Course Evaluations. CHANCE 26(2).

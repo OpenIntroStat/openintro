@@ -5,9 +5,11 @@
 \alias{ppp_201503}
 \alias{ppp.201503}
 \title{US Poll on who it is better to raise taxes on}
-\format{A tibble with 691 observations on the following 2 variables.
+\format{
+A tibble with 691 observations on the following 2 variables.
 \describe{\item{party}{Political party affiliation.} \item{taxes}{Support
-for who to raise taxes on.} }}
+for who to raise taxes on.} }
+}
 \source{
 Public Policy Polling, Americans on College Degrees, Classic
 Literature, the Seasons, and More, data collected Feb 20-22, 2015.

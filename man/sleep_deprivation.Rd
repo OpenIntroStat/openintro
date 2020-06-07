@@ -4,12 +4,14 @@
 \name{sleep_deprivation}
 \alias{sleep_deprivation}
 \title{Survey on sleep deprivation and transportation workers}
-\format{A tibble with 1087 observations on the following 2 variables.
+\format{
+A tibble with 1087 observations on the following 2 variables.
 \describe{
   \item{sleep}{a factor with levels \code{<6}, \code{6-8}, and \code{>8}}
   \item{profession}{a factor with levels \code{bus / taxi / limo drivers},
   \code{control}, \code{pilots}, \code{train operators}, \code{truck drivers}}
-  }}
+  }
+}
 \source{
 National Sleep Foundation, 2012 Sleep in America Poll:
 Transportation Workers' Sleep, 2012.

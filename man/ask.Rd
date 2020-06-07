@@ -4,7 +4,8 @@
 \name{ask}
 \alias{ask}
 \title{How important is it to ask pointed questions?}
-\format{A tibble with 219 observations on the following 3 variables.
+\format{
+A tibble with 219 observations on the following 3 variables.
 \describe{
   \item{question_class}{The type of question:
   `general`, `pos_assumption`, and `neg_assumption`.}
@@ -12,7 +13,8 @@
   `question.class`}
   \item{response}{The classified response from the seller,
   either `disclose` or `hide`.}
-  }}
+  }
+}
 \source{
 Minson JA, Ruedy NE, Schweitzer ME. There *is* such a thing as
 a stupid question: Question disclosure in strategic communication.

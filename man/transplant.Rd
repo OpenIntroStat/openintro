@@ -4,10 +4,12 @@
 \name{transplant}
 \alias{transplant}
 \title{Transplant consultant success rate (fake data)}
-\format{A tibble with 62 observations on the following variable.
+\format{
+A tibble with 62 observations on the following variable.
 \describe{
   \item{outcome}{a factor with levels \code{complications} \code{okay}}
-  }}
+  }
+}
 \usage{
 transplant
 }

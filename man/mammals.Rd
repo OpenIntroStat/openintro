@@ -4,7 +4,8 @@
 \name{mammals}
 \alias{mammals}
 \title{Sleep in Mammals}
-\format{A tibble with 62 observations on the following 11 variables.
+\format{
+A tibble with 62 observations on the following 11 variables.
 \describe{
   \item{species}{Species of mammals}
   \item{body_wt}{Total body weight of the mammal (in kg)}
@@ -21,7 +22,8 @@
   \item{danger}{An index of how much danger the mammal
 faces from other animals. This index is based upon Predation and Exposure. 1
 = least danger from other animals. 5 = most danger from other animals.}
-}}
+}
+}
 \source{
 \url{http://www.statsci.org/data/general/sleep.txt}
 }

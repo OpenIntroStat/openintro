@@ -4,14 +4,16 @@
 \name{urban_rural_pop}
 \alias{urban_rural_pop}
 \title{State summary info}
-\format{A tibble with 51 observations on the following 5 variables.
+\format{
+A tibble with 51 observations on the following 5 variables.
 \describe{
   \item{state}{US state.}
   \item{urban_in}{a numeric vector}
   \item{urban_out}{a numeric vector}
   \item{rural_farm}{a numeric vector}
   \item{rural_nonfarm}{a numeric vector}
-  }}
+  }
+}
 \source{
 US census.
 }

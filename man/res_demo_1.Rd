@@ -4,12 +4,14 @@
 \name{res_demo_1}
 \alias{res_demo_1}
 \title{Simulated data for regression}
-\format{A tibble with 100 observations on the following 3 variables.
+\format{
+A tibble with 100 observations on the following 3 variables.
 \describe{
   \item{x}{a numeric vector}
   \item{yLin}{a numeric vector}
   \item{yFanBack}{a numeric vector}
-  }}
+  }
+}
 \usage{
 res_demo_1
 }

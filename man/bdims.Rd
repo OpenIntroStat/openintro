@@ -4,7 +4,8 @@
 \name{bdims}
 \alias{bdims}
 \title{Body measurements of 507 physically active individuals.}
-\format{A tibble with 507 observations on the following 25 variables.
+\format{
+A tibble with 507 observations on the following 25 variables.
 \describe{
   \item{bia.di}{A numerical vector, respondent's biacromial diameter in
   centimeters.}
@@ -59,7 +60,8 @@
   \item{hgt}{A numerical vector, respondent's height in centimeters.}
   \item{sex}{A categorical vector, 1 if the respondent is male,
   0 if female.}
-  }}
+  }
+}
 \source{
 Heinz G, Peterson LJ, Johnson RW, Kerk CJ. 2003. Exploring
 Relationships in Body Dimensions. Journal of Statistics Education 11(2).

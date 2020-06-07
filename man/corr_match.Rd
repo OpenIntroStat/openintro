@@ -5,7 +5,8 @@
 \alias{corr_match}
 \alias{corr.match}
 \title{Sample data sets for correlation problems}
-\format{A tibble with 121 observations on the following 9 variables.
+\format{
+A tibble with 121 observations on the following 9 variables.
 \describe{
   \item{x}{a numeric vector}
   \item{y1}{a numeric vector}
@@ -16,7 +17,8 @@
   \item{y6}{a numeric vector}
   \item{y7}{a numeric vector}
   \item{y8}{a numeric vector}
-  }}
+  }
+}
 \source{
 Simulated data set.
 }

@@ -4,7 +4,8 @@
 \name{cars}
 \alias{cars}
 \title{cars}
-\format{A tibble with 54 observations on the following 6 variables.
+\format{
+A tibble with 54 observations on the following 6 variables.
 \describe{
   \item{type}{The vehicle type with levels \code{large}, \code{midsize},
   and \code{small}.}
@@ -14,7 +15,8 @@
   and \code{rear}.}
   \item{passengers}{The vehicle passenger capacity.}
   \item{weight}{Vehicle weight (lbs).}
-}}
+}
+}
 \source{
 Lock, R. H. (1993) 1993 New Car Data. \emph{Journal of Statistics
 Education} 1(1).

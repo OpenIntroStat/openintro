@@ -4,11 +4,13 @@
 \name{sinusitis}
 \alias{sinusitis}
 \title{Sinusitis and antibiotic experiment}
-\format{A tibble with 166 observations on the following 2 variables.
+\format{
+A tibble with 166 observations on the following 2 variables.
 \describe{
   \item{group}{a factor with levels \code{control} and  \code{treatment}}
   \item{self.reported_improvement}{a factor with levels \code{no} and \code{yes}}
-  }}
+  }
+}
 \source{
 J.M. Garbutt et al. Amoxicillin for Acute Rhinosinusitis: A
 Randomized Controlled Trial. In: JAMA: The Journal of the American Medical

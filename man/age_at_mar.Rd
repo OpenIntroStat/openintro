@@ -6,10 +6,12 @@
 \alias{age.at.mar}
 \alias{ageAtMar}
 \title{Age at first marriage of 5,534 US women.}
-\format{A tibble with 5,534 observations and 1 variable.
+\format{
+A tibble with 5,534 observations and 1 variable.
 \describe{
   \item{age}{Age a first marriage.}
-  }}
+  }
+}
 \source{
 National Survey of Family Growth, 2006-2010 cycle,
 \url{http://www.cdc.gov/nchs/nsfg/nsfg_2006_2010_puf.htm}.

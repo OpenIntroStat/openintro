@@ -4,12 +4,14 @@
 \name{pew_energy_2018}
 \alias{pew_energy_2018}
 \title{Pew Survey on Energy Sources in 2018}
-\format{The format is: List of 6 $ solar_panel_farms : List of responses on
+\format{
+The format is: List of 6 $ solar_panel_farms : List of responses on
 solar farms.  $ wind_turbine_farms : List of responses on wind turbine
 farms.  $ offshore_drilling : List of responses on offshore drilling.  $
 hydrolic_fracturing : List of responses on hydrolic fracturing.  $
 coal_mining : List of responses on coal mining.  $ nuclear_power_plants:
-List of responses on nuclear.}
+List of responses on nuclear.
+}
 \source{
 \url{http://www.pewinternet.org/2018/05/14/majorities-see-government-efforts-to-protect-the-environment-as-insufficient/}
 }

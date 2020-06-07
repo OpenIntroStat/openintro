@@ -4,7 +4,8 @@
 \name{ucla_textbooks_f18}
 \alias{ucla_textbooks_f18}
 \title{Sample of UCLA course textbooks for Fall 2018}
-\format{A data frame with 201 observations on the following 20 variables.
+\format{
+A data frame with 201 observations on the following 20 variables.
 \describe{
   \item{year}{Year the course was offered}
   \item{term}{Term the course was offered}
@@ -26,7 +27,8 @@
   \item{amazon_new}{New price sold by Amazon}
   \item{amazon_used}{Used price sold by Amazon}
   \item{notes}{Any relevant notes}
-}}
+}
+}
 \source{
 \url{http://sa.ucla.edu/ro/public/soc}
 

@@ -4,7 +4,8 @@
 \name{london_murders}
 \alias{london_murders}
 \title{London Murders, 2006-2011}
-\format{A tibble with 838 observations on the following 5 variables.
+\format{
+A tibble with 838 observations on the following 5 variables.
 \describe{
 \item{forename}{First name(s) of the victim.}
 \item{age}{Age of the victim.}
@@ -12,7 +13,8 @@
 \item{year}{Year of the murder.}
 \item{borough}{The London borough in which the murder took place.
 See the Details section for a list of all the boroughs.}
-}}
+}
+}
 \source{
 \url{http://www.met.police.uk/foi/pdfs/disclosure_2011/september/2011080003610.pdf}
 }

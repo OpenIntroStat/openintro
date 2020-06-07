@@ -4,12 +4,14 @@
 \name{goog}
 \alias{goog}
 \title{Google stock data}
-\format{A tibble with 98 observations on the following 7 variables.
+\format{
+A tibble with 98 observations on the following 7 variables.
 \describe{\item{Date}{a factor with levels \code{2006-01-03},
 \code{2006-02-01}, and so on} \item{Open}{a numeric vector}
 \item{High}{a numeric vector} \item{Low}{a numeric vector}
 \item{Close}{a numeric vector} \item{Volume}{a numeric
-vector} \item{Adj.Close}{a numeric vector} }}
+vector} \item{Adj.Close}{a numeric vector} }
+}
 \source{
 Yahoo! Finance.
 }

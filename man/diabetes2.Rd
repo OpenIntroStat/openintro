@@ -4,12 +4,14 @@
 \name{diabetes2}
 \alias{diabetes2}
 \title{Type 2 Diabetes Clinical Trial for Patients 10-17 Years Old}
-\format{A tibble with 699 observations on the following 2 variables.
+\format{
+A tibble with 699 observations on the following 2 variables.
 \describe{
   \item{treatment}{The treatment the patient received.}
   \item{outcome}{Whether there patient still needs insulin (\code{failure})
   or met a basic positive outcome bar (\code{success}).}
-}}
+}
+}
 \source{
 Zeitler P, et al. 2012. A Clinical Trial to Maintain Glycemic
 Control in Youth with Type 2 Diabetes. N Engl J Med.

@@ -4,7 +4,8 @@
 \name{usairports}
 \alias{usairports}
 \title{US Airports}
-\format{A tibble with 19615 rows and 14 variables:
+\format{
+A tibble with 19615 rows and 14 variables:
 \describe{
 \item{effective_date}{Information effective date. This date
 coincides with the 56-day charting and publication cycle date.}
@@ -41,7 +42,8 @@ limited certification under CFR Part 139.  Code S is for Airports receiving
 scheduled air carrier service from carriers certificated by the Civil
 Aeronautics Board.  Code U is for airports not receiving this scheduled
 service.}
-}}
+}
+}
 \source{
 Downloaded from \url{https://www.faa.gov/airports/airport_safety/airportdata_5010/menu}
 on 2018-08-13.

@@ -4,7 +4,8 @@
 \name{seattlepets}
 \alias{seattlepets}
 \title{Names of pets in Seattle}
-\format{A tibble with 52,519 rows and 7 variables:
+\format{
+A tibble with 52,519 rows and 7 variables:
 \describe{
   \item{license_issue_date}{Date the animal was registered with Seattle}
   \item{license_number}{Unique license number}
@@ -13,7 +14,8 @@
   \item{primary_breed}{Primary breed of the animal}
   \item{secondary_breed}{Secondary breed if mixed}
   \item{zip_code}{Zip code animal is registered in}
-  }}
+  }
+}
 \source{
 These data come from Seattle's Open Data Portal, \url{https://data.seattle.gov/Community/Seattle-Pet-Licenses/jguv-t9rb}
 }

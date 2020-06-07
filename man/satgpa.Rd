@@ -4,7 +4,8 @@
 \name{satgpa}
 \alias{satgpa}
 \title{SAT and GPA data}
-\format{A tibble with 1000 observations on the following 6 variables.
+\format{
+A tibble with 1000 observations on the following 6 variables.
 \describe{
   \item{sex}{Gender of the student.}
   \item{sat_v}{Verbal SAT percentile.}
@@ -12,7 +13,8 @@
   \item{sat_sum}{Total of verbal and math SAT percentiles.}
   \item{hs_gpa}{High school grade point average.}
   \item{fy_gpa}{First year (college) grade point average.}
-  }}
+  }
+}
 \source{
 Educational Testing Service originally collected the data.
 }

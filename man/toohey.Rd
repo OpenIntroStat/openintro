@@ -4,10 +4,12 @@
 \name{toohey}
 \alias{toohey}
 \title{Simulated polling data set}
-\format{A tibble with 500 observations on the following variable.
+\format{
+A tibble with 500 observations on the following variable.
 \describe{
   \item{vote_for}{a factor with levels \code{no} \code{yes}}
-}}
+}
+}
 \usage{
 toohey
 }

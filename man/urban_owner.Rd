@@ -5,7 +5,8 @@
 \alias{urban_owner}
 \alias{urban.owner}
 \title{Summary of many state-level variables}
-\format{A tibble with 52 observations on the following 28 variables.
+\format{
+A tibble with 52 observations on the following 28 variables.
 \describe{
   \item{state}{State}
   \item{total_housing_units_2000}{Total housing units available in 2000.}
@@ -35,7 +36,8 @@
   \item{area_rural}{a numeric vector}
   \item{areapct_rural}{a numeric vector}
   \item{popden_rural}{a numeric vector}
-  }}
+  }
+}
 \source{
 US Census.
 }

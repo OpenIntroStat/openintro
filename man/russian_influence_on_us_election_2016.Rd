@@ -4,12 +4,14 @@
 \name{russian_influence_on_us_election_2016}
 \alias{russian_influence_on_us_election_2016}
 \title{Russians' Opinions on US Election Influence in 2016}
-\format{A tibble with 506 observations on the following variable.
+\format{
+A tibble with 506 observations on the following variable.
 \describe{
   \item{influence_2016}{Response of the Russian survey participant to the question
   of whether their government tried to influence the 2016 election in the
   United States.}
-}}
+}
+}
 \source{
 \url{http://www.pewglobal.org/2018/08/21/russians-say-their-government-did-not-try-to-influence-u-s-presidential-election}
 }

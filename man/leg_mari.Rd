@@ -4,9 +4,11 @@
 \name{leg_mari}
 \alias{leg_mari}
 \title{Legalization of Marijuana Support in 2010 California Survey}
-\format{A tibble with 119 observations on the following variable.
+\format{
+A tibble with 119 observations on the following variable.
 \describe{\item{response}{One of two values: \code{oppose} or
-\code{support}.} }}
+\code{support}.} }
+}
 \source{
 Survey USA, Election Poll #16804, data collected July 8-11, 2010.
 }

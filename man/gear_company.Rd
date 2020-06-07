@@ -4,10 +4,12 @@
 \name{gear_company}
 \alias{gear_company}
 \title{Fake data for a gear company example}
-\format{A tibble with 2000 observations on the following 2 variables.
+\format{
+A tibble with 2000 observations on the following 2 variables.
 \describe{\item{company}{a factor with levels \code{current}
 \code{prospective}} \item{outcome}{a factor with levels \code{not}
-\code{pass}} }}
+\code{pass}} }
+}
 \usage{
 gear_company
 }

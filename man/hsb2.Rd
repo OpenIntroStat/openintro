@@ -4,7 +4,8 @@
 \name{hsb2}
 \alias{hsb2}
 \title{High School and Beyond survey}
-\format{A tibble with 200 observations and 11 variables. \describe{
+\format{
+A tibble with 200 observations and 11 variables. \describe{
 \item{id}{Student ID.} \item{gender}{Student's gender, with levels
 \code{female} and \code{male}.} \item{race}{Student's race, with levels
 \code{african american}, \code{asian}, \code{hispanic}, and \code{white}.}
@@ -14,7 +15,8 @@ with levels \code{public} and \code{private}.} \item{prog}{Type of program,
 with levels \code{general}, \code{academic}, and \code{vocational}.}
 \item{read}{Standardized reading score.} \item{write}{Standardized writing
 score.} \item{math}{Standardized math score.} \item{science}{Standardized
-science score.} \item{socst}{Standardized social studies score.} }}
+science score.} \item{socst}{Standardized social studies score.} }
+}
 \source{
 UCLA Academic Technology Services,
 \url{http://www.ats.ucla.edu/stat/data/hsb2.csv}.

@@ -4,7 +4,8 @@
 \name{ucla_f18}
 \alias{ucla_f18}
 \title{UCLA courses in Fall 2018}
-\format{A data frame with 3950 observations on the following 14 variables.
+\format{
+A data frame with 3950 observations on the following 14 variables.
 \describe{
   \item{year}{Year the course was offered}
   \item{term}{Term the course was offered}
@@ -20,7 +21,8 @@
   \item{honors_contracts}{Boolean for if this is an honors contracts course}
   \item{laboratory}{Boolean for if this is a lab}
   \item{special_topic}{Boolean for if this is any of the special types of courses listed}
-}}
+}
+}
 \source{
 \url{https://sa.ucla.edu/ro/public/soc}
 }

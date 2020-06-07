@@ -4,7 +4,8 @@
 \name{senaterace10}
 \alias{senaterace10}
 \title{Election results for the 2010 U.S. Senate races}
-\format{A tibble with 38 observations on the following 23 variables.
+\format{
+A tibble with 38 observations on the following 23 variables.
 \describe{
   \item{id}{Unique identifier for the race, which does not overlap with other
   2010 races (see \code{\link{govrace10}} and \code{\link{houserace10}})}
@@ -30,7 +31,8 @@
   \item{perc5}{Percentage of vote for candidate who came in fifth}
   \item{party5}{Party of candidate with fifth most votes}
   \item{votes5}{Number of votes for candidate who came in fifth}
-  }}
+  }
+}
 \source{
 Data was collected from MSNBC.com on November 9th, 2010.
 }

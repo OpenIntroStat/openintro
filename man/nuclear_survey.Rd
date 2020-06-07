@@ -4,9 +4,11 @@
 \name{nuclear_survey}
 \alias{nuclear_survey}
 \title{Nuclear Arms Reduction Survey}
-\format{A tibble with 1028 observations on the following variable.
+\format{
+A tibble with 1028 observations on the following variable.
 \describe{\item{arms_reduction}{Responses of \code{favor} or
-\code{against}.} }}
+\code{against}.} }
+}
 \source{
 \url{www.gallup.com/poll/161198/favor-russian-nuclear-arms-reductions.aspx}
 }

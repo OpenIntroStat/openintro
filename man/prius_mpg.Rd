@@ -4,14 +4,16 @@
 \name{prius_mpg}
 \alias{prius_mpg}
 \title{User reported fuel efficiency for 2017 Toyota Prius Prime}
-\format{A tibble with 19 observations on the following 10 variables.
+\format{
+A tibble with 19 observations on the following 10 variables.
 \describe{
   \item{average_mpg}{Average mileage as estimated by the user.}
   \item{state}{US State the user lives in.}
   \item{stop_and_go}{Proportion of stop and go driving.}
   \item{highway}{roportion of highway driving.}
   \item{last_updated}{Date estimate was last updated.}
-}}
+}
+}
 \source{
 Fueleconomy.gov,
 \url{https://www.fueleconomy.gov/mpg/MPG.do?action=mpgData&vehicleID=38531&browser=true&details=on},

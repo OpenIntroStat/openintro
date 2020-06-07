@@ -5,7 +5,8 @@
 \alias{cia_factbook}
 \alias{cia.factbook}
 \title{CIA Factbook Details on Countries}
-\format{A tibble with 259 observations on the following 11 variables.
+\format{
+A tibble with 259 observations on the following 11 variables.
 \describe{\item{country}{Country name.} \item{area}{Land
 area, in square kilometers. (1 square kilometer is 0.386 square miles}
 \item{birth_rate}{Birth rate, in births per 1,000 people.}
@@ -17,7 +18,8 @@ live births.} \item{internet_users}{Total number of internet users.}
 live births where the death is related to pregnancy or birth.}
 \item{net_migration_rate}{Net migration rate.}
 \item{population}{Total population.}
-\item{population_growth_rate}{Population growth rate.} }}
+\item{population_growth_rate}{Population growth rate.} }
+}
 \source{
 CIA Factbook, Country Comparisons, 2014.
 \url{https://www.cia.gov/library/publications/the-world-factbook/rankorder/rankorderguide.html}

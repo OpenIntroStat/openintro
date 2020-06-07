@@ -4,11 +4,13 @@
 \name{malaria}
 \alias{malaria}
 \title{Malaria Vaccine Trial}
-\format{A data frame with 20 observations on the following 2 variables.
+\format{
+A data frame with 20 observations on the following 2 variables.
 \describe{
   \item{treatment}{Whether a person was given the experimental `vaccine` or a `placebo`.}
   \item{outcome}{Whether the person got an `infection` or `no infection`.}
-}}
+}
+}
 \source{
 Lyke et al. 2017.  PfSPZ vaccine induces strain-transcending T cells
 and durable protection against heterologous controlled human malaria

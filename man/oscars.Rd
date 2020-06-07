@@ -4,7 +4,8 @@
 \name{oscars}
 \alias{oscars}
 \title{Oscar winners, 1929 to 2018}
-\format{A tibble with 182 observations on the following 10 variables.
+\format{
+A tibble with 182 observations on the following 10 variables.
 \describe{
 \item{oscar_no}{Oscar ceremony number.}
 \item{oscar_yr}{Year the Oscar ceremony was held.}
@@ -16,7 +17,8 @@
 \item{birth_mo}{Birth month of actor or actress.}
 \item{birth_d}{Birth day of actor or actress.}
 \item{birth_y}{Birth year of actor or actress.}
-}}
+}
+}
 \source{
 Journal of Statistical Education,
 \url{http://jse.amstat.org/datasets/oscars.dat.txt}, updated through 2019 using

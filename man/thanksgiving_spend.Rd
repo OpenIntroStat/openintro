@@ -6,10 +6,12 @@
 \alias{thanksgiving.spend}
 \alias{tgSpending}
 \title{Thanksgiving spending, simulated based on Gallup poll.}
-\format{A tibble with 436 observations on the following 1 variable.
+\format{
+A tibble with 436 observations on the following 1 variable.
 \describe{
   \item{spending}{Amount of spending, in US dollars.}
-  }}
+  }
+}
 \usage{
 thanksgiving_spend
 }

@@ -4,7 +4,8 @@
 \name{fish_oil_18}
 \alias{fish_oil_18}
 \title{Findings on n-3 Fatty Acid Supplement Health Benefits}
-\format{The format is a list of 24 matrices.  Each matrix is a 2x2 table,
+\format{
+The format is a list of 24 matrices.  Each matrix is a 2x2 table,
 and below are the named items in the list, which also represent the
 outcomes.
 \describe{
@@ -32,7 +33,8 @@ outcomes.
   \item{invasive_cancer_after_2y}{Invasive cancer of any type, excluding the first 2 years of follow-up.}
   \item{cancer_death_after_2y}{Death from cancer, excluding the first 2 years of follow-up.}
   \item{death_after_2y}{Death from any cause, excluding the first 2 years of follow-up.}
-}}
+}
+}
 \source{
 Manson JE, et al. 2018. Marine n-3 Fatty Acids and Prevention of
 Cardiovascular Disease and Cancer. NEJMoa1811403.

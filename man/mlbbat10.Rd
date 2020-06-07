@@ -4,7 +4,8 @@
 \name{mlbbat10}
 \alias{mlbbat10}
 \title{Major League Baseball Player Hitting Statistics for 2010}
-\format{A tibble with 1199 observations on the following 19 variables.
+\format{
+A tibble with 1199 observations on the following 19 variables.
 \describe{
   \item{name}{Player name}
   \item{team}{Team abbreviation}
@@ -25,7 +26,8 @@
   \item{obp}{On base percentage}
   \item{slg}{Slugging percentage (total_base / at_bat)}
   \item{bat_avg}{Batting average}
-}}
+}
+}
 \source{
 Data was collected from mlb.com on April 22nd, 2011.
 }

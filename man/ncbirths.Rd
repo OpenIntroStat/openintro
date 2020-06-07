@@ -4,7 +4,8 @@
 \name{ncbirths}
 \alias{ncbirths}
 \title{North Carolina births}
-\format{A tibble with 1000 observations on the following 13 variables.
+\format{
+A tibble with 1000 observations on the following 13 variables.
 \describe{
   \item{fage}{Father's age in years.}
   \item{mage}{Mother's age in years.}
@@ -20,7 +21,8 @@
   \item{habit}{Status of the mother as a \code{nonsmoker} or a \code{smoker}.}
   \item{marital}{Whether mother is \code{married} or \code{not married} at birth.}
   \item{whitemom}{Whether mom is \code{white} or \code{not white}.}
-  }}
+  }
+}
 \usage{
 ncbirths
 }

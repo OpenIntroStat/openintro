@@ -4,7 +4,8 @@
 \name{smoking}
 \alias{smoking}
 \title{UK Smoking Data}
-\format{A tibble with 1691 observations on the following 12 variables.
+\format{
+A tibble with 1691 observations on the following 12 variables.
 \describe{
   \item{gender}{Gender with levels \code{Female} and \code{Male}.}
   \item{age}{Age.}
@@ -32,7 +33,8 @@
   \item{amt_weekdays}{Number of cigarettes smoked per day on weekdays.}
   \item{type}{Type of cigarettes smoked with levels \code{Packets},
   \code{Hand-Rolled}, \code{Both/Mainly Packets} and \code{Both/Mainly Hand-Rolled}}
-  }}
+  }
+}
 \source{
 National STEM Centre, Large Datasets from stats4schools,
 \url{http://www.nationalstemcentre.org.uk/elibrary/resource/3624/large-datasets-from-stats4schools}.

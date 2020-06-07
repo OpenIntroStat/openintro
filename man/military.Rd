@@ -4,7 +4,8 @@
 \name{military}
 \alias{military}
 \title{US Military Demographics}
-\format{A tibble with 1414593 observations on the following 6 variables.
+\format{
+A tibble with 1414593 observations on the following 6 variables.
 \describe{
 \item{grade}{The status of the service member as \code{enlisted} \code{officer}
 or \code{warrant officer}.}
@@ -19,7 +20,8 @@ or \code{warrant officer}.}
 or not (\code{FALSE}).}
 \item{rank}{The numeric rank of the service member (higher number indicates
 higher rank).}
-}}
+}
+}
 \source{
 Data provided by the Department of Defense and made available at
 \url{https://explore.data.gov/Population/Personnel-Trends-by-Gender-Race/zqae-ad8kdata.gov}.

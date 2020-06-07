@@ -5,7 +5,8 @@
 \alias{cle_sac}
 \alias{cle.sac}
 \title{Cleveland and Sacramento}
-\format{A tibble with 500 observations representing people on the
+\format{
+A tibble with 500 observations representing people on the
 following 8 variables.
 \describe{
   \item{year}{Year the data was collected.}
@@ -16,7 +17,8 @@ following 8 variables.
   \item{race}{Ethnicity.}
   \item{marital_status}{Marital status.}
   \item{personal_income}{Personal income.}
-  }}
+  }
+}
 \usage{
 cle_sac
 }

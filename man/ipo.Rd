@@ -4,9 +4,11 @@
 \name{ipo}
 \alias{ipo}
 \title{Facebook, Google, and LinkedIn IPO filings}
-\format{The format is a list of three character vectors.  Each vector
+\format{
+The format is a list of three character vectors.  Each vector
 contains the line-by-line text of the IPO Prospectus of Facebook, Google,
-and LinkedIn, respectively.}
+and LinkedIn, respectively.
+}
 \source{
 All IPO prospectuses are available from \url{www.sec.gov}:
 \href{http://www.sec.gov/Archives/edgar/data/1326801/000119312512034517/d287954ds1.htm}{Facebook},

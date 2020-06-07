@@ -5,10 +5,12 @@
 \alias{global_warming_pew}
 \alias{global.warming.pew}
 \title{Pew survey on global warming}
-\format{A tibble with 2253 observations on the following 2 variables.
+\format{
+A tibble with 2253 observations on the following 2 variables.
 \describe{\item{party_or_ideology}{a factor with levels
 \code{Conservative Republican} \code{Liberal Democrat} \code{Mod/Cons
-Democrat} \code{Mod/Lib Republican}} \item{response}{Response.} }}
+Democrat} \code{Mod/Lib Republican}} \item{response}{Response.} }
+}
 \source{
 Pew Research Center, Majority of Republicans No Longer See Evidence
 of Global Warming, data collected on October 27, 2010.

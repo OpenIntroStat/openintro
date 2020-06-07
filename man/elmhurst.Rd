@@ -4,12 +4,14 @@
 \name{elmhurst}
 \alias{elmhurst}
 \title{Elmhurst College gift aid}
-\format{A tibble with 50 observations on the following 3 variables.
+\format{
+A tibble with 50 observations on the following 3 variables.
 \describe{
   \item{family_income}{Family income of the student.}
   \item{gift_aid}{Gift aid, in $1000s.}
   \item{price_paid}{Price paid by the student (tuition - gift aid).}
-  }}
+  }
+}
 \source{
 These data were sampled from a table of data for all freshman from
 the 2011 class at Elmhurst College that accompanied an article titled What

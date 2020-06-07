@@ -5,7 +5,8 @@
 \alias{email}
 \alias{email_test}
 \title{Data frame representing information about a collection of emails}
-\format{A \code{email} (\code{email_sent}) data frame has 3921 (1252)
+\format{
+A \code{email} (\code{email_sent}) data frame has 3921 (1252)
 observations on the following 21 variables.
 \describe{
   \item{spam}{Indicator for whether the email was spam.}
@@ -41,7 +42,8 @@ observations on the following 21 variables.
   or \dQuote{Best} (also, \dQuote{Best Regards}) was used.}
   \item{number}{Factor variable saying whether there was no number, a small
   number (under 1 million), or a big number.}
-  }}
+  }
+}
 \source{
 David Diez's Gmail Account, early months of 2012. All personally
 identifiable information has been removed.

@@ -5,7 +5,8 @@
 \alias{heart_transplant}
 \alias{heartTr}
 \title{Heart Transplant Data}
-\format{A tibble with 103 observations on the following 8 variables.
+\format{
+A tibble with 103 observations on the following 8 variables.
 \describe{
   \item{id}{ID number of the patient.}
   \item{acceptyear}{Year of acceptance as a heart transplant candidate.}
@@ -19,7 +20,8 @@
   \item{transplant}{Transplant status with levels \code{control} (did not
   receive a transplant) and \code{treatment} (received a transplant).}
   \item{wait}{Waiting Time for Transplant}
-  }}
+  }
+}
 \source{
 \url{http://www.stat.ucla.edu/~jsanchez/data/stanford.txt}
 }

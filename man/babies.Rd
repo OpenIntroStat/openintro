@@ -4,7 +4,8 @@
 \name{babies}
 \alias{babies}
 \title{The Child Health and Development Studies}
-\format{A tibble with 1236 rows and 8 variables:
+\format{
+A tibble with 1236 rows and 8 variables:
 \describe{
   \item{case}{id number}
   \item{bwt}{birthweight, in ounces}
@@ -14,7 +15,8 @@
   \item{height}{mother's height in inches}
   \item{weight}{mother's weight in pounds}
   \item{smoke}{binary indicator for whether the mother smokes}
-  }}
+  }
+}
 \source{
 These data come from Child Health and Development Studies
 }

@@ -4,8 +4,10 @@
 \name{fheights}
 \alias{fheights}
 \title{Female college student heights, in inches}
-\format{A tibble with 24 observations on the following variable.
-\describe{\item{heights}{height, in inches} }}
+\format{
+A tibble with 24 observations on the following variable.
+\describe{\item{heights}{height, in inches} }
+}
 \usage{
 fheights
 }

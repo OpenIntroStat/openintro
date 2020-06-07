@@ -6,7 +6,8 @@
 \alias{run10samp}
 \alias{run10_09}
 \title{Cherry Blossom 10 mile run data, 2009}
-\format{The \code{run10_09} data frame summarizes 14,974 observations on the
+\format{
+The \code{run10_09} data frame summarizes 14,974 observations on the
 following 14 variables. The \code{run10} (2012 data) summarizes 16,924
 observations on 9 variables, which are featured with an asterisk.
 \describe{
@@ -26,7 +27,8 @@ observations on 9 variables, which are featured with an asterisk.
   \item{div}{Running division (age group).}
   \item{div_place}{Division place, also broken up by gender.}
   \item{div_tot}{Total number of people in the division (again, also split by gender).}
-  }}
+  }
+}
 \source{
 \href{http://www.cherryblossom.org/}{cherryblossom.org}
 }

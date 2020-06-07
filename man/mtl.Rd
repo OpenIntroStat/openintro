@@ -4,7 +4,8 @@
 \name{mtl}
 \alias{mtl}
 \title{Medial temporal lobe (MTL) and other data for 26 participants}
-\format{A tibble with 35 observations on the following 23 variables.
+\format{
+A tibble with 35 observations on the following 23 variables.
 \describe{
   \item{subject}{ID for the individual.}
   \item{sex}{Gender, which takes values \code{F} (female) or \code{M} (male).}
@@ -37,7 +38,8 @@
   \item{a_pe_cort}{Thickness of the entorhinal cortex subregion of the MTL.}
   \item{asubic}{Thickness of the subiculum subregion of the MTL.}
   \item{total}{Total MTL thickness.}
-}}
+}
+}
 \source{
 Siddarth P, Burggren AC, Eyre HA, Small GW, Merrill DA. 2018.
 Sedentary behavior associated with reduced medial temporal lobe thickness in

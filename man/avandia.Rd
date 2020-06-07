@@ -4,13 +4,15 @@
 \name{avandia}
 \alias{avandia}
 \title{Cardiovascular problems for two types of Diabetes medicines}
-\format{A tibble with 227571 observations on the following 2 variables.
+\format{
+A tibble with 227571 observations on the following 2 variables.
 \describe{
   \item{treatment}{a factor with levels \code{Pioglitazone} and
   \code{Rosiglitazone}}
   \item{cardiovascular_problems}{a factor with levels \code{no} and
   \code{yes}}
-  }}
+  }
+}
 \source{
 D.J. Graham et al. Risk of acute myocardial infarction, stroke,
 heart failure, and death in elderly Medicare patients treated with

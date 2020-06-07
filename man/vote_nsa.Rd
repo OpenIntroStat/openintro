@@ -4,7 +4,8 @@
 \name{vote_nsa}
 \alias{vote_nsa}
 \title{Predicting Who'd Vote for NSA Mass Surveillance}
-\format{A tibble with 434 observations on the following 5 variables.
+\format{
+A tibble with 434 observations on the following 5 variables.
 \describe{
   \item{name}{Name of the Congressional representative.}
   \item{party}{The party of the representative: \code{D} for Democrat and
@@ -13,7 +14,8 @@
   \item{money}{Money received from the defense industry for their campaigns.}
   \item{phone_spy_vote}{Voting to rein in the phone dragnet or continue
   allowing mass surveillance.}
-  }}
+  }
+}
 \source{
 Maplight (\url{maplight.org}).
 \url{http://s3.documentcloud.org/documents/741074/amash-amendment-vote-maplight.pdf}

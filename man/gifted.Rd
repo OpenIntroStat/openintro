@@ -4,7 +4,8 @@
 \name{gifted}
 \alias{gifted}
 \title{Analytical skills of young gifted children}
-\format{A tibble with 36 observations and 8 variables.
+\format{
+A tibble with 36 observations and 8 variables.
 \describe{
   \item{score}{Score in test of analytical skills.}
   \item{fatheriq}{Father's IQ.}
@@ -17,7 +18,8 @@
   educational program on TV during the past three months.}
   \item{cartoons}{Average number of hours per week the child watched cartoons
   on TV during the past three months.}
-}}
+}
+}
 \source{
 Graybill, F.A. & Iyer, H.K., (1994) Regression Analysis: Concepts
 and Applications, Duxbury, p. 511-6.

@@ -4,12 +4,14 @@
 \name{stem_cell}
 \alias{stem_cell}
 \title{Embryonic stem cells to treat heart attack (in sheep)}
-\format{A tibble with 18 observations on the following 3 variables.
+\format{
+A tibble with 18 observations on the following 3 variables.
 \describe{
   \item{trmt}{a factor with levels \code{ctrl} \code{esc}}
   \item{before}{a numeric vector}
   \item{after}{a numeric vector}
-  }}
+  }
+}
 \source{
 \url{http://www.thelancet.com/journals/lancet/article/PIIS0140-6736(05)67380-1/abstract}
 }

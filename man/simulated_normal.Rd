@@ -4,9 +4,11 @@
 \name{simulated_normal}
 \alias{simulated_normal}
 \title{Simulated data sets, drawn from a normal distribution.}
-\format{The format is: List of 3 $ n40 : 40 observations from a standard
+\format{
+The format is: List of 3 $ n40 : 40 observations from a standard
 normal distribution.  $ n100: 100 observations from a standard normal
-distribution.  $ n400: 400 observations from a standard normal distribution.}
+distribution.  $ n400: 400 observations from a standard normal distribution.
+}
 \usage{
 simulated_normal
 }

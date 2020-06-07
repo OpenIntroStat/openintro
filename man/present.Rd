@@ -4,12 +4,14 @@
 \name{present}
 \alias{present}
 \title{Birth counts}
-\format{A tibble with 63 observations on the following 3 variables.
+\format{
+A tibble with 63 observations on the following 3 variables.
 \describe{
   \item{year}{Year.}
   \item{boys}{Number of boys born.}
   \item{girls}{Number of girls born.}
-  }}
+  }
+}
 \source{
 \url{https://www.ncbi.nlm.nih.gov/pubmed/15974501}
 }

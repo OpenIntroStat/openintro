@@ -4,7 +4,8 @@
 \name{get_it_dunn_run}
 \alias{get_it_dunn_run}
 \title{Get it Dunn Run, Race Times}
-\format{A data frame with 978 observations on the following 10 variables.
+\format{
+A data frame with 978 observations on the following 10 variables.
 \describe{
   \item{date}{Date of the run.}
   \item{race}{Run distance.}
@@ -16,7 +17,8 @@
   \item{city}{City of residence.}
   \item{state}{State of residence.}
   \item{run_time_minutes}{Run time, in minutes.}
-  }}
+  }
+}
 \source{
 \url{http://www.getitdunnrun.com/}
 

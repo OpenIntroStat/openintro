@@ -4,14 +4,16 @@
 \name{midterms_house}
 \alias{midterms_house}
 \title{President's party performance and unemployment rate}
-\format{A data frame with 29 observations on the following 5 variables.
+\format{
+A data frame with 29 observations on the following 5 variables.
 \describe{
   \item{year}{a numeric vector}
   \item{potus}{The president in office.}
   \item{party}{President's party.}
   \item{unemp}{Unemployment rate.}
   \item{house_change}{Change in House seats for the president's party.}
-  }}
+  }
+}
 \source{
 Wikipedia.
 }

@@ -4,10 +4,12 @@
 \name{healthcare_law_survey}
 \alias{healthcare_law_survey}
 \title{Pew Research Center poll on health care, including question variants}
-\format{A tibble with 1503 observations on the following 2 variables.
+\format{
+A tibble with 1503 observations on the following 2 variables.
 \describe{\item{order}{a factor with levels \code{cannot_afford_second}
 \code{penalty_second}} \item{response}{a factor with levels \code{approve}
-\code{disapprove} \code{other}} }}
+\code{disapprove} \code{other}} }
+}
 \source{
 www.people-press.org/2012/03/26/public-remains-split-on-health-care-bill-opposed-to-mandate/.
 Sample sizes for each polling group are approximate.

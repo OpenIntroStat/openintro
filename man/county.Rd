@@ -4,7 +4,8 @@
 \name{county}
 \alias{county}
 \title{United States Counties}
-\format{A tibble with 3142 observations on the following 14 variables.
+\format{
+A tibble with 3142 observations on the following 14 variables.
 \describe{
   \item{name}{County names.}
   \item{state}{State names.}
@@ -25,7 +26,8 @@
   \item{smoking_ban}{Describes whether the type of county-level
 smoking ban in place in 2010, taking one of the values \code{"none"},
 \code{"partial"}, or \code{"comprehensive"}.}
-}}
+}
+}
 \source{
 These data were collected from
 http://quickfacts.census.gov/qfd/states/ (no longer available) and its

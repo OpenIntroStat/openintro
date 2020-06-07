@@ -4,12 +4,14 @@
 \name{marathon}
 \alias{marathon}
 \title{New York City Marathon Times}
-\format{A tibble with 60 observations on the following 3 variables.
+\format{
+A tibble with 60 observations on the following 3 variables.
 \describe{
   \item{year}{Year}
   \item{gender}{Gender}
   \item{time}{Running time (in hours)}
- }}
+ }
+}
 \source{
 \url{http://www.webcitation.org/5kx7ilFLp}
 }

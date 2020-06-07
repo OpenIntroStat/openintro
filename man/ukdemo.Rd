@@ -4,7 +4,8 @@
 \name{ukdemo}
 \alias{ukdemo}
 \title{United Kingdom Demographic Data}
-\format{A data frame with 12 observations on the following 6 variables.
+\format{
+A data frame with 12 observations on the following 6 variables.
 \describe{
 \item{region}{Region in the United Kingdom}
 \item{debt}{Average regional debt, not including mortgages, in pounds}
@@ -13,7 +14,8 @@
 \item{pay}{Average hourly pay, in pounds}
 \item{rpi}{Retail price index, which is standardized to 100 for the entire UK,
 and lower index scores correspond to lower prices}
-}}
+}
+}
 \source{
 The data was described in the Guardian Data Blog:
 

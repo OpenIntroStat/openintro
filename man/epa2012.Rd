@@ -4,7 +4,8 @@
 \name{epa2012}
 \alias{epa2012}
 \title{Vehicle info from the EPA}
-\format{A tibble with 1129 observations on the following 28 variables.
+\format{
+A tibble with 1129 observations on the following 28 variables.
 \describe{\item{model_yr}{a numeric vector}
 \item{mfr_name}{Manufacturer name.} \item{division}{Vehicle
 division.} \item{carline}{Vehicle line.} \item{mfr_code}{a
@@ -56,7 +57,8 @@ Trucks 2WD} \code{Standard Pick-up Trucks 4WD} \code{Subcompact Cars}
 \code{Two Seaters} \code{Vans, Cargo Types} \code{Vans, Passenger Type}}
 \item{car_truck}{a factor with levels \code{1} \code{2} \code{car}}
 \item{release_date}{Date of vehicle release.}
-\item{fuel_cell}{a factor with levels \code{} \code{N} \code{Y}} }}
+\item{fuel_cell}{a factor with levels \code{} \code{N} \code{Y}} }
+}
 \source{
 Fuelecomy.gov, Shared MPG Estimates: Toyota Prius 2012.
 }

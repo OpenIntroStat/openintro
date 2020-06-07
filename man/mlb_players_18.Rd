@@ -4,7 +4,8 @@
 \name{mlb_players_18}
 \alias{mlb_players_18}
 \title{Batter Statistics for 2018 Major League Baseball (MLB) Season}
-\format{A data frame with 1270 observations on the following 19 variables.
+\format{
+A data frame with 1270 observations on the following 19 variables.
 \describe{
   \item{name}{Player name}
   \item{team}{Team abbreviation}
@@ -29,7 +30,8 @@
   \item{OBP}{On-base percentage.}
   \item{SLG}{Slugging percentage.}
   \item{OPS}{On-base percentage plus slugging percentage.}
-  }}
+  }
+}
 \source{
 \url{http://mlb.mlb.com/stats}
 }

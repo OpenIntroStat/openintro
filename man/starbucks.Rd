@@ -4,7 +4,8 @@
 \name{starbucks}
 \alias{starbucks}
 \title{Starbucks nutrition}
-\format{A tibble with 77 observations on the following 7 variables.
+\format{
+A tibble with 77 observations on the following 7 variables.
 \describe{
   \item{item}{Food item.}
   \item{calories}{Calories.}
@@ -15,7 +16,8 @@
   \item{type}{a factor with levels \code{bakery}, \code{bistro box},
   \code{hot breakfast}, \code{parfait}, \code{petite}, \code{salad}, and
   \code{sandwich}}
-  }}
+  }
+}
 \source{
 \url{http://www.starbucks.com/menu/nutrition}, Doenloaded March 10, 2011
 }

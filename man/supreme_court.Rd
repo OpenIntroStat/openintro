@@ -4,10 +4,12 @@
 \name{supreme_court}
 \alias{supreme_court}
 \title{Supreme Court approval rating}
-\format{A tibble with 976 observations on the following variable.
+\format{
+A tibble with 976 observations on the following variable.
 \describe{
   \item{answer}{a factor with levels \code{approve} and \code{not}}
-  }}
+  }
+}
 \source{
 \url{http://www.nytimes.com/2012/06/08/us/politics/44-percent-of-americans-approve-of-supreme-court-in-new-poll.html}
 }

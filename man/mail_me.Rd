@@ -4,11 +4,13 @@
 \name{mail_me}
 \alias{mail_me}
 \title{Influence of a Good Mood on Helpfulness}
-\format{A tibble with 42 observations on the following 4 variables.
+\format{
+A tibble with 42 observations on the following 4 variables.
 \describe{ \item{stamped}{a factor with levels \code{no} \code{yes}}
 \item{found_coin}{a factor with levels \code{coin} \code{no_coin}}
 \item{gender}{a factor with levels \code{female} \code{male}}
-\item{mailed_letter}{a factor with levels \code{no} \code{yes}} }}
+\item{mailed_letter}{a factor with levels \code{no} \code{yes}} }
+}
 \source{
 Levin PF, Isen AM. 1975. Studies on the Effect of Feeling Good on
 Helping. Sociometry 31(1), p141-147.

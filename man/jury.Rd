@@ -4,9 +4,11 @@
 \name{jury}
 \alias{jury}
 \title{Simulated juror data set}
-\format{A tibble with 275 observations on the following variable.
+\format{
+A tibble with 275 observations on the following variable.
 \describe{\item{race}{a factor with levels \code{black} \code{hispanic}
-\code{other} \code{white}} }}
+\code{other} \code{white}} }
+}
 \usage{
 jury
 }

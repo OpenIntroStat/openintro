@@ -4,10 +4,12 @@
 \name{gender_discrimination}
 \alias{gender_discrimination}
 \title{Bank manager recommendations based on gender}
-\format{A tibble with 48 observations on the following 2 variables.
+\format{
+A tibble with 48 observations on the following 2 variables.
 \describe{\item{gender}{a factor with levels \code{female}
 \code{male}} \item{decision}{a factor with levels \code{not}
-\code{promoted}} }}
+\code{promoted}} }
+}
 \source{
 Rosen B and Jerdee T. 1974. Influence of sex role stereotypes on
 personnel decisions. Journal of Applied Psychology 59(1):9-14.

@@ -4,12 +4,14 @@
 \name{bac}
 \alias{bac}
 \title{Beer and blood alcohol content}
-\format{A tibble with 16 observations on the following 3 variables.
+\format{
+A tibble with 16 observations on the following 3 variables.
 \describe{
   \item{student}{a numeric vector}
   \item{beer)}{a numeric vector}
   \item{bac}{a numeric vector}
-  }}
+  }
+}
 \source{
 J. Malkevitch and L.M. Lesser. For All Practical Purposes:
 Mathematical Literacy in Today's World. WH Freeman & Co, 2008.

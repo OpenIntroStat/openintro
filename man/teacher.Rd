@@ -4,7 +4,8 @@
 \name{teacher}
 \alias{teacher}
 \title{Teacher Salaries in St. Louis, Michigan}
-\format{A data frame with 71 observations on the following 8 variables.
+\format{
+A data frame with 71 observations on the following 8 variables.
 \describe{
 \item{id}{Identification code for each teacher, assigned randomly.}
 \item{degree}{Highest educational degree attained:
@@ -19,7 +20,8 @@ through the Federal Insurance Contribution Act (FICA), in dollars.}
 teacher per year, in dollars.}
 \item{total}{Total annual salary of the teacher, resulting from the
 sum of base salary + fica + retirement, in dollars.}
-}}
+}
+}
 \source{
 Posted on
 \href{https://opendata.socrata.com/Education/St-Louis-Teachers-Salaries-2009-2010-/nvag-9887}{opendata.socrata.com}

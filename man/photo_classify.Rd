@@ -4,11 +4,13 @@
 \name{photo_classify}
 \alias{photo_classify}
 \title{Photo classifications: fashion or not}
-\format{A data frame with 1822 observations on the following 2 variables.
+\format{
+A data frame with 1822 observations on the following 2 variables.
 \describe{
   \item{mach_learn}{The prediction by the machine learning system as to whether the photo is about fashion or not.}
   \item{truth}{The actual classification of the photo by a team of humans.}
-}}
+}
+}
 \source{
 The data are simulated / hypothetical.
 }

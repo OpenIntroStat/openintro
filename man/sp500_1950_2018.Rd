@@ -4,7 +4,8 @@
 \name{sp500_1950_2018}
 \alias{sp500_1950_2018}
 \title{Daily observations for the S\&P 500}
-\format{A data frame with 17346 observations on the following 7 variables.
+\format{
+A data frame with 17346 observations on the following 7 variables.
 \describe{
   \item{Date}{Date of the form `"YYYY-MM-DD"`.}
   \item{Open}{Opening price.}
@@ -13,7 +14,8 @@
   \item{Close}{Closing price of the day.}
   \item{Adj.Close}{Adjusted price at close after accounting for dividends paid out.}
   \item{Volume}{Trading volume.}
-}}
+}
+}
 \source{
 \url{http://finance.yahoo.com}
 }

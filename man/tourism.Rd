@@ -4,12 +4,14 @@
 \name{tourism}
 \alias{tourism}
 \title{Turkey tourism}
-\format{A tibble with 47 observations on the following 3 variables.
+\format{
+A tibble with 47 observations on the following 3 variables.
 \describe{
   \item{year}{a numeric vector}
   \item{visitor_count_tho}{a numeric vector}
   \item{tourist_spending}{a numeric vector}
-}}
+}
+}
 \source{
 Association of Turkish Travel Agencies, Foreign Visitors Figure &
 Tourist Spendings By Years.

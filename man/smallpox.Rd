@@ -4,11 +4,13 @@
 \name{smallpox}
 \alias{smallpox}
 \title{Smallpox vaccine results}
-\format{A data frame with 6224 observations on the following 2 variables.
+\format{
+A data frame with 6224 observations on the following 2 variables.
 \describe{
   \item{result}{Whether the person `died` or `lived`.}
   \item{inoculated}{Whether the person received inoculated.}
-}}
+}
+}
 \source{
 Fenner F. 1988.  Smallpox and Its Eradication (History of
 International Public Health, No. 6).  Geneva: World Health Organization.

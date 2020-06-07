@@ -4,7 +4,8 @@
 \name{xom}
 \alias{xom}
 \title{Exxon Mobile stock data}
-\format{A tibble with 98 observations on the following 7 variables.
+\format{
+A tibble with 98 observations on the following 7 variables.
 \describe{
   \item{date}{Date.}
   \item{open}{a numeric vector}
@@ -13,7 +14,8 @@
   \item{close}{a numeric vector}
   \item{volume}{a numeric vector}
   \item{adj_close}{a numeric vector}
-  }}
+  }
+}
 \source{
 \url{http://finance.yahoo.com}
 }

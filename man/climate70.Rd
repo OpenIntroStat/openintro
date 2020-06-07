@@ -4,7 +4,8 @@
 \name{climate70}
 \alias{climate70}
 \title{Temperature Summary Data, Geography Limited}
-\format{A data frame with 197 observations on the following 7 variables.
+\format{
+A data frame with 197 observations on the following 7 variables.
 \describe{
   \item{station}{Station ID.}
   \item{latitude}{Latitude of the station.}
@@ -13,7 +14,8 @@
   \item{dx70_2018}{Number of days above 70 degrees in 2018.}
   \item{dx90_1948}{Number of days above 90 degrees in 1948.}
   \item{dx90_2018}{Number of days above 90 degrees in 2018.}
-  }}
+  }
+}
 \source{
 Retrieved on 2019-04-24.
 \url{https://www.ncdc.noaa.gov/cdo-web/datasets}

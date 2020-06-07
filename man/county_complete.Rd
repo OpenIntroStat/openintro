@@ -4,7 +4,8 @@
 \name{county_complete}
 \alias{county_complete}
 \title{United States Counties}
-\format{A tibble with 3143 observations on the following 111 variables.
+\format{
+A tibble with 3143 observations on the following 111 variables.
 \describe{
   \item{state}{State.}
   \item{name}{County name.}
@@ -123,7 +124,8 @@
   \item{employed_2017}{Number of civilians employed in 2017.}
   \item{unemployed_2017}{Number of civilians unemployed in 2017.}
   \item{unemployment_rate_2017}{Unemployment rate in 2017.}
-  }}
+  }
+}
 \source{
 The data prior to 2011 was from \url{http://census.gov},
 though the exact page it came from is no longer available.

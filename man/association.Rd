@@ -7,7 +7,8 @@
 \alias{association_4_6,}
 \alias{association_7_12}
 \title{Simulated data for association plots}
-\format{A tibble with 121 observations on the following 4 variables.
+\format{
+A tibble with 121 observations on the following 4 variables.
 \describe{
   \item{x1}{a numeric vector}
   \item{x2}{a numeric vector}
@@ -24,7 +25,8 @@
   \item{y10}{a numeric vector}
   \item{y11}{a numeric vector}
   \item{y12}{a numeric vector}
-  }}
+  }
+}
 \usage{
 association
 }

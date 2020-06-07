@@ -4,10 +4,12 @@
 \name{male_heights_fcid}
 \alias{male_heights_fcid}
 \title{Random sample of adult male heights}
-\format{A data frame with 100 observations on the following variable.
+\format{
+A data frame with 100 observations on the following variable.
 \describe{
   \item{height_inch}{Height, in inches.}
-  }}
+  }
+}
 \source{
 Simulated based on data from USDA.
 }

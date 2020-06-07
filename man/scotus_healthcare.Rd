@@ -4,10 +4,12 @@
 \name{scotus_healthcare}
 \alias{scotus_healthcare}
 \title{Public Opinion with SCOTUS ruling on American Healthcare Act}
-\format{A tibble with 1012 observations on the following variable.
+\format{
+A tibble with 1012 observations on the following variable.
 \describe{
   \item{response}{Response values reported are \code{agree} and \code{other}.}
-  }}
+  }
+}
 \source{
 Gallup, Americans Issue Split Decision on Healthcare Ruling, data
 collected June 28, 2012.

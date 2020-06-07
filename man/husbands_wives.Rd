@@ -5,12 +5,14 @@
 \alias{husbands_wives}
 \alias{husbands.wives}
 \title{Great Britain: husband and wife pairs}
-\format{A tibble with 199 observations on the following 8 variables.
+\format{
+A tibble with 199 observations on the following 8 variables.
 \describe{\item{age_husband}{Age of husband.} \item{age_wife}{Age of wife.}
 \item{ht_husband}{Height of husband (mm).} \item{ht_wife}{Height of wife
 (mm).} \item{age_husb_at_marriage}{Age of husband at the time they married.}
 \item{age_wife_at_marriage}{Age of wife at the time they married.}
-\item{years_married}{Number of years married.} }}
+\item{years_married}{Number of years married.} }
+}
 \source{
 Hand DJ. 1994. A handbook of small data sets. Chapman & Hall/CRC.
 }

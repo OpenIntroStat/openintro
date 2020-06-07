@@ -4,7 +4,8 @@
 \name{kobe_basket}
 \alias{kobe_basket}
 \title{Kobe Bryant basketball performance}
-\format{A data frame with 133 rows and 6 variables:
+\format{
+A data frame with 133 rows and 6 variables:
 \describe{
   \item{vs}{A categorical vector, ORL if the Los Angeles Lakers played
   against Orlando}
@@ -15,7 +16,8 @@
   \item{description}{A character vector, description of the shot}
   \item{shot}{A categorical vector, H if the shot was a hit, M if the shot
   was a miss}
-}}
+}
+}
 \usage{
 kobe_basket
 }

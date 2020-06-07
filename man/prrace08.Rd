@@ -4,7 +4,8 @@
 \name{prrace08}
 \alias{prrace08}
 \title{Election results for the 2008 U.S. Presidential race}
-\format{A tibble with 51 observations on the following 7 variables.
+\format{
+A tibble with 51 observations on the following 7 variables.
 \describe{
   \item{state}{State name abbreviation}
   \item{stateFull}{Full state name}
@@ -13,7 +14,8 @@
   \item{n_mc_cain}{Number of votes for John McCain}
   \item{p_mc_cain}{Proportion of votes for John McCain}
   \item{el_votes}{Number of electoral votes for a state}
-  }}
+  }
+}
 \source{
 Presidential Election of 2008, Electoral and Popular Vote Summary,
 collected on April 21, 2011 from

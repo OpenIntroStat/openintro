@@ -4,13 +4,15 @@
 \name{law_resume}
 \alias{law_resume}
 \title{Gender, Socioeconomic Class, and Interview Invites}
-\format{A tibble with 316 observations on the following 3 variables. Each
+\format{
+A tibble with 316 observations on the following 3 variables. Each
 row represents a resume sent a top law firm for this experiment.
 \describe{\item{class}{The resume represented irrelevant details suggesting
 either \code{"low"} or \code{"high"} socioeconomic class.} \item{gender}{The
 resume implied the candidate was either \code{"male"} or \code{"female"}.}
 \item{outcome}{If the candidate received an invitation for an
-\code{"interview"} or \code{"not"}. } }}
+\code{"interview"} or \code{"not"}. } }
+}
 \source{
 For a casual overview, see
 \url{https://hbr.org/2016/12/research-how-subtle-class-cues-can-backfire-on-your-resume}.

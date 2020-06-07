@@ -5,7 +5,8 @@
 \alias{prof_evals}
 \alias{prof.evals}
 \title{Professor evaluations and beauty}
-\format{A tibble with 463 observations on the following 64 variables.
+\format{
+A tibble with 463 observations on the following 64 variables.
 \describe{\item{tenured}{Tenured indicator.} \item{profnumber}{Professor
 number.} \item{minority}{Minority.} \item{age}{Age.} \item{beautyf2upper}{A
 numeric vector.} \item{beautyflowerdiv}{A numeric vector.}
@@ -35,7 +36,8 @@ evaluation.} \item{female}{Female indicator.} \item{formal}{Formal.}
 \item{tenuretrack}{Tenure-track indicator.} \item{blkandwhite}{Black and
 white.} \item{btystdvariance}{Beauty standard variance.}
 \item{btystdavepos}{Beauty standard average position.}
-\item{btystdaveneg}{Beauty standard average negative.} }}
+\item{btystdaveneg}{Beauty standard average negative.} }
+}
 \source{
 Hamermesh DS, Parker A. 2005. "Beauty in the classroom: Instructors
 pulchritude and putative pedagogical productivity". Economics of Education

@@ -4,7 +4,8 @@
 \name{esi}
 \alias{esi}
 \title{Environmental Sustainability Index 2005}
-\format{A data frame with 146 observations on the following 29 variables.
+\format{
+A data frame with 146 observations on the following 29 variables.
 \describe{
 \item{code}{ISO3 country code.}
 \item{country}{Country.}
@@ -35,7 +36,8 @@
 \item{glo_col}{Participation in international collaboration efforts.}
 \item{glo_ghg}{Greenhouse gas emissions.}
 \item{glo_tbp}{Reducing transboundary environmental pressures.}
-}}
+}
+}
 \source{
 ESI Component Indicators. \emph{2005 Environmental Sustainability
 Index: Benchmarking National Environmental Stewardship}, Yale Center for

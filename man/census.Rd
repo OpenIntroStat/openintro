@@ -4,7 +4,8 @@
 \name{census}
 \alias{census}
 \title{Random sample of 2000 U.S. Census Data}
-\format{A tibble with 500 observations on the following 8 variables.
+\format{
+A tibble with 500 observations on the following 8 variables.
 \describe{
   \item{census_year}{Census Year.}
   \item{state_fips_code}{Name of state.}
@@ -19,7 +20,8 @@ and \code{Other}.}
 \code{Divorced}, \code{Married/spouse absent}, \code{Married/spouse
 present}, \code{Never married/single}, \code{Separated} and \code{Widowed}.}
   \item{total_personal_income}{Total personal income (in U.S. dollars).}
-}}
+}
+}
 \source{
 \url{http://factfinder.census.gov}
 }

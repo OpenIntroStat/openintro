@@ -4,7 +4,8 @@
 \name{yrbss}
 \alias{yrbss}
 \title{Youth Risk Behavior Surveillance System (YRBSS)}
-\format{A tibble with 13583 observations on the following 13 variables.
+\format{
+A tibble with 13583 observations on the following 13 variables.
 \describe{
   \item{age}{Age, in years.}
   \item{gender}{Gender.}
@@ -25,7 +26,8 @@
   (e.g. lift weights) in the last 7 days?}
   \item{school_night_hours_sleep}{How many hours of sleep do you typically
   get on a school night?}
-  }}
+  }
+}
 \source{
 \href{http://www.openintro.org/r?go=cdc_yrbss_2013&r=r_package_man_file}{CDC's
 Youth Risk Behavior Surveillance System (YRBSS)}

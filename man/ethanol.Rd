@@ -4,10 +4,12 @@
 \name{ethanol}
 \alias{ethanol}
 \title{Ethanol Treatment for Tumors Experiment}
-\format{A tibble with 24 observations, each representing one hamster, on
+\format{
+A tibble with 24 observations, each representing one hamster, on
 the following 2 variables. \describe{\item{treatment}{Treatment
 the hamster received.} \item{regress}{a factor with levels \code{no}
-\code{yes}} }}
+\code{yes}} }
+}
 \source{
 Morhard R, et al. 2017. Development of enhanced ethanol ablation as
 an alternative to surgery in treatment of superficial solid tumors.

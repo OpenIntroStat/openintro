@@ -4,7 +4,8 @@
 \name{hfi}
 \alias{hfi}
 \title{Absenteeism}
-\format{A tibble with `1458` observations on the following 123 variables.
+\format{
+A tibble with `1458` observations on the following 123 variables.
 \describe{
   \item{year}{}
   \item{ISO_code}{}
@@ -129,7 +130,8 @@
   \item{hf_score}{}
   \item{hf_rank}{}
   \item{hf_quartile}{}
-  }}
+  }
+}
 \usage{
 hfi
 }

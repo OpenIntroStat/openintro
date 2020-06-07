@@ -5,7 +5,8 @@
 \alias{pm25_2011_durham}
 \alias{pm25.2011.durham}
 \title{Air quality for Durham, NC}
-\format{A tibble with 449 observations on the following 20 variables.
+\format{
+A tibble with 449 observations on the following 20 variables.
 \describe{
   \item{date}{Date}
   \item{aqs_site_id}{a factor with levels \code{37-063-0015}}
@@ -27,7 +28,8 @@
   \item{county}{a factor with levels \code{Durham}}
   \item{site_latitude}{a numeric vector}
   \item{site_longitude}{a numeric vector}
-  }}
+  }
+}
 \source{
 US Environmental Protection Agency, AirData, 2011.
 \url{http://www3.epa.gov/airdata/ad_data_daily.html}

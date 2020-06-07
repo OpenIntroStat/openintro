@@ -4,13 +4,15 @@
 \name{unempl}
 \alias{unempl}
 \title{Annual unemployment since 1890}
-\format{A tibble with 121 observations on the following 3 variables.
+\format{
+A tibble with 121 observations on the following 3 variables.
 \describe{
   \item{year}{Year}
   \item{unemp}{Unemployment rate, in percent}
   \item{us_data}{\code{1} if from the Bureau of Labor Statistics, \code{0}
   otherwise}
-  }}
+  }
+}
 \source{
 The data are from Wikipedia at the following URL accessed on
 November 1st, 2010:

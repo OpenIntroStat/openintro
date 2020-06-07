@@ -4,12 +4,14 @@
 \name{murders}
 \alias{murders}
 \title{Data for 20 metropolitan areas.}
-\format{A tibble with 20 metropolitan areas on the following 4
+\format{
+A tibble with 20 metropolitan areas on the following 4
 variables. \describe{\item{population}{Population.}
 \item{perc_pov}{Percent in poverty.}
 \item{perc_unemp}{Percent unemployed.}
 \item{annual_murders_per_mil}{Number of murders per year per million
-people.} }}
+people.} }
+}
 \usage{
 murders
 }

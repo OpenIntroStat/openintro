@@ -4,10 +4,12 @@
 \name{cchousing}
 \alias{cchousing}
 \title{Community college housing (simulated data)}
-\format{A tibble with 75 observations on the following variable.
+\format{
+A tibble with 75 observations on the following variable.
 \describe{
   \item{price}{Monthly housing price, simulated.}
-  }}
+  }
+}
 \usage{
 cchousing
 }

@@ -4,10 +4,12 @@
 \name{ami_occurrences}
 \alias{ami_occurrences}
 \title{Acute Myocardial Infarction (Heart Attack) Events}
-\format{A tibble with 365 observations on the following variable.
+\format{
+A tibble with 365 observations on the following variable.
 \describe{
   \item{ami}{Number of daily occurences of heart attacks in NY City.}
-}}
+}
+}
 \usage{
 ami_occurrences
 }

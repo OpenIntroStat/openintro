@@ -4,7 +4,8 @@
 \name{penetrating_oil}
 \alias{penetrating_oil}
 \title{What's the best way to loosen a rusty bolt?}
-\format{A data frame with 30 observations on the following 2 variables.
+\format{
+A data frame with 30 observations on the following 2 variables.
 \describe{
   \item{treatment}{The different treatments tried:
 \code{none} (control), \code{Heat} (via blow torch), \code{Acetone/ATF},
@@ -12,7 +13,8 @@
 Purple}, and \code{WD-40}.}
   \item{torque}{Torque required to loosen the rusty bolt,
 which was measured in foot-pounds.}
-}}
+}
+}
 \source{
 \url{https://www.youtube.com/watch?v=xUEob2oAKVs}
 }

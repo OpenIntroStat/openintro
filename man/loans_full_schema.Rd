@@ -5,7 +5,8 @@
 \alias{loans_full_schema}
 \alias{loan50}
 \title{Loan data from Lending Club}
-\format{A tibble with 10,000 observations on the following 55 variables.
+\format{
+A tibble with 10,000 observations on the following 55 variables.
 \describe{
   \item{emp_title}{Job title.}
   \item{emp_length}{Number of years in the job, rounded down.
@@ -110,7 +111,8 @@
   \item{paid_interest}{The amount of interest paid so far by the
   applicant.}
   \item{paid_late_fees}{Late fees paid by the applicant.}
-}}
+}
+}
 \source{
 This data comes from Lending Club
 (\url{https://www.lendingclub.com/info/download-data.action}), which

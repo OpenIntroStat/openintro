@@ -4,10 +4,12 @@
 \name{sat_improve}
 \alias{sat_improve}
 \title{Simulated data for SAT score improvement}
-\format{A tibble with 30 observations on the following variable.
+\format{
+A tibble with 30 observations on the following variable.
 \describe{
   \item{sat_improve}{a numeric vector}
-  }}
+  }
+}
 \usage{
 sat_improve
 }

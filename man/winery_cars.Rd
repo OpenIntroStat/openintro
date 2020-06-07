@@ -4,13 +4,15 @@
 \name{winery_cars}
 \alias{winery_cars}
 \title{Time Between Gondola Cars at Sterling Winery}
-\format{A tibble with 52 observations on the following 2 variables.
+\format{
+A tibble with 52 observations on the following 2 variables.
 \describe{
   \item{obs_number}{The observation number, e.g. observation 3 was immediately
   preceded by observation 2.}
   \item{time_until_next}{Time until this gondola car arrived since the last
   car had left.}
-  }}
+  }
+}
 \source{
 In-person data collection by David Diez (OpenIntro) on July 4th,
 2013.

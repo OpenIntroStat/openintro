@@ -4,7 +4,8 @@
 \name{birds}
 \alias{birds}
 \title{Aircraft-Wildlife Collisions}
-\format{A tibble with 19302 observations on the following 17 variables.
+\format{
+A tibble with 19302 observations on the following 17 variables.
 \describe{
 \item{opid}{Three letter identification code for the operator
 (carrier) of the aircraft.}
@@ -35,7 +36,8 @@ Landing}.}
 seen by pilot: \code{1}, \code{2-10}, \code{11-100}, \code{Over 100}.}
 \item{birds_struck}{Number of birds/wildlife struck: \code{0},
 \code{1}, \code{2-10}, \code{11-100}, \code{Over 100}.}
-}}
+}
+}
 \source{
 \url{http://opendata.socrata.com/Government/1990-1999-Reported-Aircraft-Wildlife-Bird-Strikes/inea-i3an}.
 Original data from \url{http://wildlife-mitigation.tc.faa.gov/wildlife/default.aspxfaa.gov}.

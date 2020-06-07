@@ -4,12 +4,14 @@
 \name{arbuthnot}
 \alias{arbuthnot}
 \title{Male and female births in London}
-\format{A tbl_df with with 82 rows and 3 variables:
+\format{
+A tbl_df with with 82 rows and 3 variables:
 \describe{
   \item{year}{year, ranging from 1629 to 1710}
   \item{boys}{number of male christenings (births)}
   \item{girls}{number of female christenings (births)}
-}}
+}
+}
 \source{
 These data are excerpted from the [HistData::Arbuthnot]
 data set in the HistData package.

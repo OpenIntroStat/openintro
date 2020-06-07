@@ -4,11 +4,13 @@
 \name{drone_blades}
 \alias{drone_blades}
 \title{Quadcopter Drone Blades}
-\format{A data frame with 2000 observations on the following 2 variables.
+\format{
+A data frame with 2000 observations on the following 2 variables.
 \describe{
   \item{supplier}{The supplier for the blade.}
   \item{inspection}{The inspection conclusion.}
-  }}
+  }
+}
 \usage{
 drone_blades
 }
