@@ -1,4 +1,4 @@
-#' Absenteeism
+#' Absenteeism from school in New South Wales
 #'
 #' Researchers interested in the relationship between absenteeism from school
 #' and certain demographic characteristics of children collected data from 146
