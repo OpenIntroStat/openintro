@@ -18,9 +18,6 @@
 #' @references
 #' \url{http://blogs.wsj.com/totalreturn/2012/02/06/mark-zuckerberg-ceo-for-life}
 #'
-#' Credit to Qian Liu at the
-#' \href{http://eng.wealthfront.com/2012/02/visualize-facebooks-ipo-prospectus.html}{Wealthfront Blog}
-#' for the data links and wordcloud example below.
 #' @source All IPO prospectuses are available from \url{www.sec.gov}:
 #' \href{http://www.sec.gov/Archives/edgar/data/1326801/000119312512034517/d287954ds1.htm}{Facebook},
 #' \href{http://www.sec.gov/Archives/edgar/data/1288776/000119312504073639/ds1.htm}{Google},

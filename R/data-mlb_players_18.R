@@ -32,7 +32,7 @@
 #'   \item{OPS}{On-base percentage plus slugging percentage.}
 #'   }
 #' @seealso \code{\link{mlbbat10}}, \code{\link{mlb}}
-#' @source \url{http://mlb.mlb.com/stats}
+#' @source \url{https://www.mlb.com/stats}
 #' @keywords datasets
 #' @examples
 #'

@@ -16,14 +16,10 @@ Random sample based on Food Commodity Intake Database distribution
 }
 \examples{
 
-
-
 male_heights
-
-
 
 }
 \references{
-\url{http://fcid.foodrisk.org}
+\url{https://fcid.foodrisk.org}
 }
 \keyword{datasets}

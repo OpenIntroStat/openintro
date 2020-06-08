@@ -33,7 +33,7 @@ A data frame with 1270 observations on the following 19 variables.
   }
 }
 \source{
-\url{http://mlb.mlb.com/stats}
+\url{https://www.mlb.com/stats}
 }
 \usage{
 mlb_players_18

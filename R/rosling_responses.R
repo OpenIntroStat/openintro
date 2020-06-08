@@ -41,13 +41,11 @@
 #' z <- (frac_correct - expected) / se
 #' pt(z, df = n - 1)
 #'
-#' @source
-#'   The samples we describe are plausible based on the exact rates observed in larger samples.
-#'   For more info on the actual rates observed, visit
-#'   \url{https://www.gapminder.org/}.
+#' @source The samples we describe are plausible based on the exact rates observed in larger samples.
+#' For more info on the actual rates observed, visit \url{https://www.gapminder.org}.
 #'
-#'   Another relevant reference is a book by
-#'   Hans Rosling, Anna Rosling Ronnlund, and Ola Rosling called
-#'   \href{https://www.gapminder.org/factfulness-book/}{Factfulness}.
+#' Another relevant reference is a book by
+#' Hans Rosling, Anna Rosling Ronnlund, and Ola Rosling called
+#' \href{https://www.gapminder.org/factfulness-book}{Factfulness}.
 #'
 "rosling_responses"

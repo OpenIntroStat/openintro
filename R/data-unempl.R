@@ -16,7 +16,7 @@
 #' @source The data are from Wikipedia at the following URL accessed on
 #' November 1st, 2010:
 #'
-#' \url{http://en.wikipedia.org/wiki/File:US_Unemployment_1890-2009.gif}
+#' \url{https://en.wikipedia.org/wiki/File:US_Unemployment_1890-2009.gif}
 #'
 #' Below is a direct quotation from Wikipedia describing the sources of the
 #' data:
@@ -28,7 +28,7 @@
 #' and retrieved February 12, 2010. Data prior to 1948 are for persons age
 #' 14 and over. Data beginning in 1948 are for persons age 16 and over. See
 #' also "Historical Comparability" under the Household Data section of the
-#' Explanatory Notes at \url{http://www.bls.gov/cps/eetech_methods.pdf}.
+#' Explanatory Notes at \url{https://www.bls.gov/cps/eetech_methods.pdf}.
 #' 1890-1930 data are from Christina Romer (1986). "Spurious Volatility in
 #' Historical Unemployment Data", The Journal of Political Economy, 94(1):
 #' 1-37. 1930-1940 data are from Robert M. Coen (1973). "Labor Force and

@@ -30,7 +30,7 @@ observations on 9 variables, which are featured with an asterisk.
   }
 }
 \source{
-\href{http://www.cherryblossom.org/}{cherryblossom.org}
+\href{http://www.cherryblossom.org}{cherryblossom.org}
 }
 \usage{
 run10

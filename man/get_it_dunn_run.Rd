@@ -20,7 +20,7 @@ A data frame with 978 observations on the following 10 variables.
   }
 }
 \source{
-\url{http://www.getitdunnrun.com/}
+\url{http://www.getitdunnrun.com}
 
 \url{https://www.gopherstateevents.com}
 }

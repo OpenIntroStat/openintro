@@ -19,7 +19,7 @@
 #' score.} \item{math}{Standardized math score.} \item{science}{Standardized
 #' science score.} \item{socst}{Standardized social studies score.} }
 #' @source UCLA Academic Technology Services,
-#' \url{http://www.ats.ucla.edu/stat/data/hsb2.csv}.
+#' \url{https://stats.idre.ucla.edu/stat/data/hsb2.xls}.
 #' @keywords datasets
 #' @examples
 #'

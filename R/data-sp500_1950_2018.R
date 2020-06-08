@@ -15,7 +15,7 @@
 #'   \item{Adj.Close}{Adjusted price at close after accounting for dividends paid out.}
 #'   \item{Volume}{Trading volume.}
 #' }
-#' @source \url{http://finance.yahoo.com}
+#' @source \url{https://finance.yahoo.com}
 #' @keywords datasets
 #' @examples
 #'

@@ -59,11 +59,11 @@
 #'   \item{notes}{Any relevant notes}
 #' }
 #' @seealso \code{\link{textbooks}}, \code{\link{ucla_f18}}
-#' @source \url{http://sa.ucla.edu/ro/public/soc}
+#' @source \url{https://sa.ucla.edu/ro/public/soc}
 #'
-#' \url{http://ucla.verbacompare.com}
+#' \url{https://ucla.verbacompare.com}
 #'
-#' \url{http://amazon.com}
+#' \url{https://www.amazon.com}
 #' @keywords datasets
 #' @examples
 #'

@@ -5,7 +5,7 @@
 #'
 #' Map data was made available through the Ordnance Survey Open Data
 #' initiative.  The data use the
-#' \href{http://www.ordnancesurvey.co.uk/oswebsite/gps/information/coordinatesystemsinfo/guidetonationalgrid/page1.html}{National Grid} coordinate system,
+#' \href{https://en.wikipedia.org/wiki/Ordnance_Survey_National_Grid}{National Grid} coordinate system,
 #' based upon eastings (\code{x}) and northings (\code{y}) instead of longitude and latitude.
 #'
 #' The \code{name} variable covers all 32 boroughs in Greater London:
@@ -23,17 +23,16 @@
 #' @docType data
 #' @format A data frame with 45341 observations on the following 3 variables.
 #' \describe{
-#' \item{borough}{Name of the borough.}
-#' \item{x}{The "easting" component of the coordinate, see details.}
-#' \item{y}{The "northing" component of the coordinate, see details.}
+#'   \item{borough}{Name of the borough.}
+#'   \item{x}{The "easting" component of the coordinate, see details.}
+#'   \item{y}{The "northing" component of the coordinate, see details.}
 #' }
 #' @seealso london_murders
 #' @source
-#' \url{https://www.ordnancesurvey.co.uk/opendatadownload/products.html}
+#' \url{https://data.london.gov.uk/dataset/ordnance-survey-code-point}
 #'
-#' Contains Ordinance Survey data, Crown copyright and database right 2012,
-#' used under the
-#' \href{Open Data License}{http://www.ordnancesurvey.co.uk/oswebsite/docs/licences/os-opendata-licence.pdf}.
+#' Contains Ordinance Survey data released under the
+#' \href{Open Government License, OGL v2}{http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2}.
 #' @keywords datasets London map borough
 #' @examples
 #'

@@ -11,7 +11,7 @@ A data frame with 976 observations on the following variable.
   }
 }
 \source{
-\url{http://www.nytimes.com/2012/06/08/us/politics/44-percent-of-americans-approve-of-supreme-court-in-new-poll.html}
+\url{https://www.nytimes.com/2012/06/08/us/politics/44-percent-of-americans-approve-of-supreme-court-in-new-poll.html}
 }
 \usage{
 supreme_court

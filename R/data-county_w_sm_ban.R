@@ -62,9 +62,9 @@
 #'   \item{density}{a numeric vector}
 #'   \item{smoking_ban}{a factor with levels \code{comprehensive} \code{none} \code{partial}}
 #'   }
-#' @source These data were collected from
-#' http://quickfacts.census.gov/qfd/states/ (no longer available) and its
-#' accompanying pages. Smoking ban data were from a variety of sources.
+#' @source These data were collected from Census Quick Facts (no longer
+#' available as of 2020) and its accompanying pages. Smoking ban data were from
+#' a variety of sources.
 #' @keywords datasets
 #' @examples
 #'

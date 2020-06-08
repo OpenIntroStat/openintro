@@ -24,18 +24,17 @@
 #' @docType data
 #' @format A data frame with 838 observations on the following 5 variables.
 #' \describe{
-#' \item{forename}{First name(s) of the victim.}
-#' \item{age}{Age of the victim.}
-#' \item{date}{Date of the murder (YYYY-MM-DD).}
-#' \item{year}{Year of the murder.}
-#' \item{borough}{The London borough in which the murder took place.
-#' See the Details section for a list of all the boroughs.}
+#'   \item{forename}{First name(s) of the victim.}
+#'   \item{age}{Age of the victim.}
+#'   \item{date}{Date of the murder (YYYY-MM-DD).}
+#'   \item{year}{Year of the murder.}
+#'   \item{borough}{The London borough in which the murder took place. See the Details section for a list of all the boroughs.}
 #' }
 #' @references Inspired by
-#' \href{http://www.guardian.co.uk/news/datablog/interactive/2011/oct/05/murder-london-map}{The
+#' \href{https://www.theguardian.com/news/datablog/interactive/2011/oct/05/murder-london-map}{The
 #' Guardian Datablog}.
 #' @source
-#' \url{http://www.met.police.uk/foi/pdfs/disclosure_2011/september/2011080003610.pdf}
+#' \url{https://www.theguardian.com/news/datablog/2011/oct/05/murder-london-list#data}
 #' @keywords datasets London murder crime map
 #' @examples
 #'

@@ -11,8 +11,8 @@ air-filled football.} \item{helium}{Distance in years for helium-filled
 football.} }
 }
 \source{
-Data and Story Library,
-\url{http://lib.stat.cmu.edu/DASL/Datafiles/Heliumfootball.html}.
+Previously part of the Data and Story Library, \url{https://dasl.datadescription.com}.
+Removed as of 2020.
 }
 \usage{
 helium

@@ -30,7 +30,7 @@ All prices are in US dollars.
 }
 }
 \source{
-\url{http://www.ebay.com}
+\url{https://www.ebay.com}
 }
 \usage{
 mariokart
@@ -67,16 +67,14 @@ library(broom)
 library(dplyr)
 
 # Identify outliers
-ggplot(mariokart, aes(x = cond, y = total_pr)) +
-  geom_boxplot() +
-  coord_flip()
+ggplot(mariokart, aes(x = total_pr, y = cond)) +
+  geom_boxplot()
 
 # Replot without the outliers
 mariokart \%>\%
   filter(total_pr < 80) \%>\%
-  ggplot(aes(x = cond, y = total_pr)) +
-    geom_boxplot() +
-    coord_flip()
+  ggplot(aes(x = total_pr, y = cond)) +
+  geom_boxplot()
 
 # Fit a multiple regression models
 mariokart_no <- mariokart \%>\% filter(total_pr < 80)
@@ -112,7 +110,7 @@ ggplot(aug_m3, aes(x = cond, y = .resid)) +
 ggplot(aug_m3, aes(x = wheels, y = .resid)) +
   geom_point() +
   labs(x = "Number of wheels", y = "Residuals",
-       main = "Notice curvature")
+       title = "Notice curvature")
 
 }
 \keyword{datasets}

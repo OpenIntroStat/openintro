@@ -37,7 +37,7 @@
 #'   \code{Hand-Rolled}, \code{Both/Mainly Packets} and \code{Both/Mainly Hand-Rolled}}
 #'   }
 #' @source National STEM Centre, Large Datasets from stats4schools,
-#' \url{http://www.nationalstemcentre.org.uk/elibrary/resource/3624/large-datasets-from-stats4schools}.
+#' \url{https://www.stem.org.uk/resources/elibrary/resource/28452/large-datasets-stats4schools}.
 #' @keywords datasets, smoking
 #' @examples
 #'

@@ -64,9 +64,9 @@ A data frame with 14444 observations on the following 54 variables.
   }
 }
 \source{
-These data were collected from
-http://quickfacts.census.gov/qfd/states/ (no longer available) and its
-accompanying pages. Smoking ban data were from a variety of sources.
+These data were collected from Census Quick Facts (no longer
+available as of 2020) and its accompanying pages. Smoking ban data were from
+a variety of sources.
 }
 \usage{
 county_w_sm_ban

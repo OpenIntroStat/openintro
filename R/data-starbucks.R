@@ -13,11 +13,9 @@
 #'   \item{carb}{a numeric vector}
 #'   \item{fiber}{a numeric vector}
 #'   \item{protein}{a numeric vector}
-#'   \item{type}{a factor with levels \code{bakery}, \code{bistro box},
-#'   \code{hot breakfast}, \code{parfait}, \code{petite}, \code{salad}, and
-#'   \code{sandwich}}
+#'   \item{type}{a factor with levels \code{bakery}, \code{bistro box}, \code{hot breakfast}, \code{parfait}, \code{petite}, \code{salad}, and \code{sandwich}}
 #'   }
-#' @source \url{http://www.starbucks.com/menu/nutrition}, Doenloaded March 10, 2011
+#' @source \url{https://www.starbucks.com/menu}, Downloaded March 10, 2011
 #' @keywords datasets
 #' @examples
 #'

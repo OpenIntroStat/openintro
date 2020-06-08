@@ -28,7 +28,8 @@
 #' }
 #' @source Scanlon, T.J., Luben, R.N., Scanlon, F.L., Singleton, N. (1993), "Is
 #' Friday the 13th Bad For Your Health?," BMJ, 307, 1584-1586.
-#' \url{http://lib.stat.cmu.edu/DASL/Datafiles/Fridaythe13th.html}
+#' \url{https://dasl.datadescription.com/datafile/friday-the-13th-traffic} and
+#' \url{https://dasl.datadescription.com/datafile/friday-the-13th-accidents}.
 #' @keywords datasets
 #' @examples
 #'

@@ -20,7 +20,7 @@
 #'   \item{state}{State of residence.}
 #'   \item{run_time_minutes}{Run time, in minutes.}
 #'   }
-#' @source \url{http://www.getitdunnrun.com/}
+#' @source \url{http://www.getitdunnrun.com}
 #'
 #' \url{https://www.gopherstateevents.com}
 #' @keywords datasets

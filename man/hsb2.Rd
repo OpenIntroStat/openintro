@@ -19,7 +19,7 @@ science score.} \item{socst}{Standardized social studies score.} }
 }
 \source{
 UCLA Academic Technology Services,
-\url{http://www.ats.ucla.edu/stat/data/hsb2.csv}.
+\url{https://stats.idre.ucla.edu/stat/data/hsb2.xls}.
 }
 \usage{
 hsb2

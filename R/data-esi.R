@@ -59,7 +59,7 @@
 #' In collaboration with: World Economic Forum, Geneva, Switzerland Joint
 #' Research Centre of the European Commission, Ispra, Italy.
 #'
-#' Available at \url{http://www.yale.edu/esi}.
+#' Available at \url{https://sedac.ciesin.columbia.edu/es/esi/ESI2005_Main_Report.pdf}.
 #' @keywords environment sustainability country energy efficiency datasets
 #' @examples
 #'

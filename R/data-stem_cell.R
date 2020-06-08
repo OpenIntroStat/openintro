@@ -16,7 +16,7 @@
 #'   \item{after}{a numeric vector}
 #'   }
 #' @source
-#' \url{http://www.thelancet.com/journals/lancet/article/PIIS0140-6736(05)67380-1/abstract}
+#' \url{https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(05)67380-1/fulltext}
 #' @keywords datasets
 #' @examples
 #'

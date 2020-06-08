@@ -26,7 +26,7 @@
 #' higher rank).}
 #' }
 #' @source Data provided by the Department of Defense and made available at
-#' \url{https://explore.data.gov/Population/Personnel-Trends-by-Gender-Race/zqae-ad8kdata.gov}.
+#' \url{https://catalog.data.gov/dataset/personnel-trends-by-gender-race}.
 #' Retrieval date: Feb 20, 2012.
 #' @keywords datasets military demographics
 #' @examples

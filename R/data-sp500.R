@@ -26,7 +26,7 @@
 #' \item{cash}{Total cash, in millions of dollars.}
 #' \item{debt}{Total debt, in millions of dollars.}
 #' }
-#' @source Yahoo! Finance, \url{http://finance.yahoo.com}, collected March 8, 2012.
+#' @source Yahoo! Finance, \url{https://finance.yahoo.com}, collected March 8, 2012.
 #' @keywords datasets SP 500 stocks financial money
 #' @examples
 #'

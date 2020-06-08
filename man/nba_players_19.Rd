@@ -17,7 +17,7 @@ A data frame with 494 observations on the following 7 variables.
 }
 }
 \source{
-\url{http://www.nba.com/players}
+\url{https://www.nba.com/players}
 }
 \usage{
 nba_players_19

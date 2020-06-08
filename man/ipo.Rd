@@ -63,10 +63,6 @@ comparison.cloud(m, max.words = 100)
 }
 \references{
 \url{http://blogs.wsj.com/totalreturn/2012/02/06/mark-zuckerberg-ceo-for-life}
-
-Credit to Qian Liu at the
-\href{http://eng.wealthfront.com/2012/02/visualize-facebooks-ipo-prospectus.html}{Wealthfront Blog}
-for the data links and wordcloud example below.
 }
 \keyword{corpus}
 \keyword{datasets}

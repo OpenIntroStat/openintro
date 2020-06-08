@@ -14,7 +14,7 @@ A data frame with 5,534 observations and 1 variable.
 }
 \source{
 National Survey of Family Growth, 2006-2010 cycle,
-\url{http://www.cdc.gov/nchs/nsfg/nsfg_2006_2010_puf.htm}.
+\url{https://www.cdc.gov/nchs/nsfg/nsfg_2006_2010_puf.htm}.
 }
 \usage{
 age_at_mar

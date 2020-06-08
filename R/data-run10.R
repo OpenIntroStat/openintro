@@ -28,7 +28,7 @@
 #'   \item{div_place}{Division place, also broken up by gender.}
 #'   \item{div_tot}{Total number of people in the division (again, also split by gender).}
 #'   }
-#' @source \href{http://www.cherryblossom.org/}{cherryblossom.org}
+#' @source \href{http://www.cherryblossom.org}{cherryblossom.org}
 #' @keywords datasets
 #' @examples
 #'

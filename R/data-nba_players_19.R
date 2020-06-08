@@ -15,7 +15,7 @@
 #'   \item{number}{Jersey number.}
 #'   \item{height}{Height, in inches.}
 #' }
-#' @source \url{http://www.nba.com/players}
+#' @source \url{https://www.nba.com/players}
 #' @keywords datasets
 #' @examples
 #'

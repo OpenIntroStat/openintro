@@ -30,11 +30,11 @@ A data frame with 201 observations on the following 20 variables.
 }
 }
 \source{
-\url{http://sa.ucla.edu/ro/public/soc}
+\url{https://sa.ucla.edu/ro/public/soc}
 
-\url{http://ucla.verbacompare.com}
+\url{https://ucla.verbacompare.com}
 
-\url{http://amazon.com}
+\url{https://www.amazon.com}
 }
 \usage{
 ucla_textbooks_f18

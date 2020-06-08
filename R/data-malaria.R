@@ -19,7 +19,7 @@
 #'   \item{treatment}{Whether a person was given the experimental `vaccine` or a `placebo`.}
 #'   \item{outcome}{Whether the person got an `infection` or `no infection`.}
 #' }
-#' @source Lyke et al. 2017.  PfSPZ vaccine induces strain-transcending T cells
+#' @source Lyke et al. 2017. PfSPZ vaccine induces strain-transcending T cells
 #' and durable protection against heterologous controlled human malaria
 #' infection.  PNAS 114(10):2711-2716.
 #' \url{http://www.pnas.org/content/114/10/2711}

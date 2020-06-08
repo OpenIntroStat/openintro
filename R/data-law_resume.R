@@ -1,5 +1,5 @@
 #' Gender, Socioeconomic Class, and Interview Invites
-#' 
+#'
 #' Resumes were sent out to 316 top law firms in the United States, and there
 #' were two randomized characteristics of each resume. First, the gender
 #' associated with the resume was randomized by assigning a first name of
@@ -8,8 +8,8 @@
 #' personal interests and other other minor details (e.g. an extracurricular
 #' activity of sailing team vs track and field). The outcome variable was
 #' whether the candidate was received an interview.
-#' 
-#' 
+#'
+#'
 #' @name law_resume
 #' @docType data
 #' @format A data frame with 316 observations on the following 3 variables. Each
@@ -21,19 +21,19 @@
 #' \code{"interview"} or \code{"not"}. } }
 #' @source For a casual overview, see
 #' \url{https://hbr.org/2016/12/research-how-subtle-class-cues-can-backfire-on-your-resume}.
-#' 
+#'
 #' For the academic paper, see Tilcsik A, Rivera LA. 2016. Class Advantage,
 #' Commitment Penalty. The Gendered Effect of Social Class Signals in an Elite
 #' Labor Market. American Sociological Review 81:6 p1097-1131.
-#' \url{http://journals.sagepub.com/doi/abs/10.1177/0003122416668154}.
+#' \url{https://journals.sagepub.com/doi/abs/10.1177/0003122416668154}.
 #' @keywords datasets
 #' @examples
-#' 
-#' 
+#'
+#'
 #' tapply(law_resume$outcome == "interview", law_resume[, c("class", "gender")], mean)
 #' m <- glm(I(outcome == "interview") ~ gender * class, data = law_resume, family = binomial)
 #' summary(m)
 #' predict(m, type = "response")
-#' 
-#' 
+#'
+#'
 "law_resume"

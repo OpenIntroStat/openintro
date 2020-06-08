@@ -2,8 +2,7 @@
 #'
 #' Data set contains information from the Ames Assessor's Office used in
 #' computing assessed values for individual residential properties sold in
-#' Ames, IA from 2006 to 2010. See
-#' http://www.amstat.org/publications/jse/v19n3/decock/datadocumentation.txt
+#' Ames, IA from 2006 to 2010. See \href{http://jse.amstat.org/v19n3/decock/DataDocumentation.txt}{here}
 #' for detailed variable descriptions.
 #'
 #' @format A tbl_df with with 2930 rows and 82 variables:

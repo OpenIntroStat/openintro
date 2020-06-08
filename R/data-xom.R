@@ -15,7 +15,7 @@
 #'   \item{volume}{a numeric vector}
 #'   \item{adj_close}{a numeric vector}
 #'   }
-#' @source \url{http://finance.yahoo.com}
+#' @source \url{https://finance.yahoo.com}
 #' @keywords datasets
 #' @examples
 #'

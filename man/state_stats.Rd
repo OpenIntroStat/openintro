@@ -39,26 +39,19 @@ not a factor.}
 Please note that we have not validated the Infochimps data. The
 other data were collected directly from the corresponding websites.
 
-US Census website (\code{pop2010}, \code{pop2000}, \code{homeownership},
-\code{multiunits}, \code{income}, \code{med_income}, \code{poverty},
-\code{fed_spend}, \code{land_area}),
-\url{http://quickfacts.census.gov/qfd/index.html}
+Some of the data were collected from Census Quick Facts (no longer available
+as of 2020) and its accompanying pages. Smoking ban data were from a variety
+of sources.
 
-Infochimps
-(\href{http://www.infochimps.com/datasets/crime-rates-by-state-2004-and-2005-and-by-type-2005-cleaned-up-v}{\code{murder},
-\code{robbery}, \code{agg_assault}, \code{larcent}, \code{motor_theft}},
-\href{http://www.infochimps.com/datasets/social-security-beneficiaries-annual-payments-and-average-monthl}{\code{soc_sec}},
-\href{http://www.infochimps.com/datasets/electric-power-industry-net-generation-and-net-summer-capacity-b}{\code{coal}},
-\href{http://www.infochimps.com/datasets/nuclear-power-plants-number-of-units-net-generation-and-net-summ}{\code{nuclear}}),
-\url{http://www.infochimps.com} (see linked pages and corresponding
-downloadable data sets for original source information)
+Other variables were taken from a service called InfoChimps (also no longer
+available as of 2020).
 
 National Highway Traffic Safety Administration
-(\href{http://www-fars.nhtsa.dot.gov/QueryTool/QuerySection/SelectFields.aspx}{\code{tr_deaths},
+(\href{https://cdan.dot.gov/query}{\code{tr_deaths},
 \code{tr_deaths_no_alc}}), \url{http://www-fars.nhtsa.dot.gov}
 
 Bureau of Labor Statistics (\code{unempl}),
-\url{http://www.bls.gov/web/laus/laumstrk.htm}
+\url{https://www.bls.gov/web/laus/laumstrk.htm}
 }
 \usage{
 state_stats

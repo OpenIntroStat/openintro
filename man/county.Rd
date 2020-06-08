@@ -29,9 +29,9 @@ smoking ban in place in 2010, taking one of the values \code{"none"},
 }
 }
 \source{
-These data were collected from
-http://quickfacts.census.gov/qfd/states/ (no longer available) and its
-accompanying pages.
+These data were collected from Census Quick Facts (no longer
+available as of 2020) and its accompanying pages. Smoking ban data were from
+a variety of sources.
 }
 \usage{
 county
