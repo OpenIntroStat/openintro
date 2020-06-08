@@ -6,5 +6,5 @@
 ^LICENSE\.md$
 ^openintro\.Rproj$
 ^\.Rproj\.user$
-unused/
 netlify.toml
+cran-comments.md
