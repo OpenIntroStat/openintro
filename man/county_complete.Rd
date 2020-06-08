@@ -187,7 +187,7 @@ county_complete \%>\%
   ggplot(aes(x = poverty_2016,
              y = pop_change,
              color = metro_area,
-             size = sqrt(d$pop2017) / 1e3)) +
+             size = sqrt(pop2017) / 1e3)) +
   geom_point(alpha = 0.5) +
   scale_color_discrete(na.translate = FALSE) +
   guides(size = FALSE) +
@@ -222,7 +222,7 @@ county_complete \%>\%
   ggplot(aes(x = poverty_2016,
              y = median_household_income_2016,
              color = metro_area,
-             size = sqrt(d$pop2017) / 1e3)) +
+             size = sqrt(pop2017) / 1e3)) +
   geom_point(alpha = 0.5) +
   scale_color_discrete(na.translate = FALSE) +
   guides(size = FALSE) +
@@ -239,7 +239,7 @@ county_complete \%>\%
   ggplot(aes(x = unemployment_rate_2017,
              y = poverty_2016,
              color = metro_area,
-             size = sqrt(d$pop2017) / 1e3)) +
+             size = sqrt(pop2017) / 1e3)) +
   geom_point(alpha = 0.5) +
   scale_color_discrete(na.translate = FALSE) +
   guides(size = FALSE) +
