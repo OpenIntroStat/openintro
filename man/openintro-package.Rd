@@ -23,12 +23,12 @@ Useful links:
 
 }
 \author{
-\strong{Maintainer}: Mine Çetinkaya-Rundel \email{mine@rstudio.com} (\href{https://orcid.org/0000-0001-6452-2420}{ORCID})
+\strong{Maintainer}: Mine Çetinkaya-Rundel \email{cetinkaya.mine@gmail.com} (\href{https://orcid.org/0000-0001-6452-2420}{ORCID})
 
 Authors:
 \itemize{
   \item David Diez \email{david.m.diez@gmail.com}
-  \item Andrew Bray \email{abray@reed.edu}
+  \item Andrew Bray \email{andrew.bray@gmail.com}
   \item Albert Kim \email{albert.ys.kim@gmail.com}
   \item Ben Baumer \email{ben.baumer@gmail.com}
   \item Chester Ismay \email{chester.ismay@gmail.com}
