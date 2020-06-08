@@ -138,11 +138,13 @@
 <span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='no'>dplyr</span>)
 
 <span class='no'>family_college</span> <span class='kw'>%&gt;%</span>
-  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/count.html'>count</a></span>(<span class='no'>teen</span>, <span class='no'>parents</span>)</div><div class='output co'>#&gt;      teen parents   n
-#&gt; 1 college  degree 231
-#&gt; 2 college     not 214
-#&gt; 3     not  degree  49
-#&gt; 4     not     not 298</div><div class='input'>
+  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/count.html'>count</a></span>(<span class='no'>teen</span>, <span class='no'>parents</span>)</div><div class='output co'>#&gt; # A tibble: 4 x 3
+#&gt;   teen    parents     n
+#&gt;   &lt;fct&gt;   &lt;fct&gt;   &lt;int&gt;
+#&gt; 1 college degree    231
+#&gt; 2 college not       214
+#&gt; 3 not     degree     49
+#&gt; 4 not     not       298</div><div class='input'>
 </div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">

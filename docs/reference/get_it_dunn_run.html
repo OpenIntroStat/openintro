@@ -150,20 +150,16 @@ pushing a double stroller in a half marathon.</p>
 <span class='no'>d</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/subset.html'>subset</a></span>(<span class='no'>get_it_dunn_run</span>,
     <span class='no'>race</span> <span class='kw'>==</span> <span class='st'>"5k"</span> <span class='kw'>&amp;</span> <span class='no'>date</span> <span class='kw'>==</span> <span class='st'>"2018-05-12"</span> <span class='kw'>&amp;</span>
         !<span class='fu'><a href='https://rdrr.io/r/base/NA.html'>is.na</a></span>(<span class='no'>age</span>) <span class='kw'>&amp;</span> <span class='no'>state</span> <span class='kw'>%in%</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"MN"</span>, <span class='st'>"WI"</span>))
-<span class='fu'><a href='https://rdrr.io/r/utils/head.html'>head</a></span>(<span class='no'>d</span>)</div><div class='output co'>#&gt;            date race bib_num first_name last_initial sex age      city state
-#&gt; 772  2018-05-12   5k       1       Jeff            A   M  59 MENOMONIE    WI
-#&gt; 762  2018-05-12   5k       2      Julie            A   F  58 Menomonie    WI
-#&gt; 1561 2018-05-12   5k       3        Amy            A   F  31   Elmwood    WI
-#&gt; 542  2018-05-12   5k       4     Ashley            A   F  33    Cadott    WI
-#&gt; 512  2018-05-12   5k       6        Bob            A   M  60      Boyd    WI
-#&gt; 522  2018-05-12   5k       7       Eric            A   M  30      Boyd    WI
-#&gt;      run_time_minutes
-#&gt; 772          51.32750
-#&gt; 762          51.33767
-#&gt; 1561         41.94283
-#&gt; 542          54.93050
-#&gt; 512          54.94967
-#&gt; 522          54.94167</div><div class='input'><span class='no'>m</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/stats/lm.html'>lm</a></span>(<span class='no'>run_time_minutes</span> ~ <span class='no'>sex</span> + <span class='no'>age</span> + <span class='no'>state</span>, <span class='no'>d</span>)
+<span class='fu'><a href='https://rdrr.io/r/utils/head.html'>head</a></span>(<span class='no'>d</span>)</div><div class='output co'>#&gt; # A tibble: 6 x 10
+#&gt;   date  race  bib_num first_name last_initial sex     age city  state
+#&gt;   &lt;chr&gt; &lt;chr&gt;   &lt;int&gt; &lt;chr&gt;      &lt;chr&gt;        &lt;chr&gt; &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt;
+#&gt; 1 2018… 5k          1 Jeff       A            M        59 MENO… WI   
+#&gt; 2 2018… 5k          2 Julie      A            F        58 Meno… WI   
+#&gt; 3 2018… 5k          3 Amy        A            F        31 Elmw… WI   
+#&gt; 4 2018… 5k          4 Ashley     A            F        33 Cado… WI   
+#&gt; 5 2018… 5k          6 Bob        A            M        60 Boyd  WI   
+#&gt; 6 2018… 5k          7 Eric       A            M        30 Boyd  WI   
+#&gt; # … with 1 more variable: run_time_minutes &lt;dbl&gt;</div><div class='input'><span class='no'>m</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/stats/lm.html'>lm</a></span>(<span class='no'>run_time_minutes</span> ~ <span class='no'>sex</span> + <span class='no'>age</span> + <span class='no'>state</span>, <span class='no'>d</span>)
 <span class='fu'><a href='https://rdrr.io/r/base/summary.html'>summary</a></span>(<span class='no'>m</span>)</div><div class='output co'>#&gt; 
 #&gt; Call:
 #&gt; lm(formula = run_time_minutes ~ sex + age + state, data = d)

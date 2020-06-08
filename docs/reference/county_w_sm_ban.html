@@ -123,51 +123,61 @@
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
     <p>A data frame with 14444 observations on the following 54 variables.</p><dl'>
- <dt>state</dt><dd><p>State
-name.</p></dd> <dt>FIPS</dt><dd><p>a numeric vector</p></dd> <dt>pop2010</dt><dd><p>a
-numeric vector</p></dd> <dt>pop2000</dt><dd><p>a numeric vector</p></dd>
-<dt>age_under_5</dt><dd><p>a numeric vector</p></dd> <dt>age_under_18</dt><dd><p>a
-numeric vector</p></dd> <dt>age_over_65</dt><dd><p>a numeric vector</p></dd>
-<dt>female</dt><dd><p>a numeric vector</p></dd> <dt>white</dt><dd><p>a numeric
-vector</p></dd> <dt>black</dt><dd><p>a numeric vector</p></dd> <dt>native</dt><dd><p>a
-numeric vector</p></dd> <dt>asian</dt><dd><p>a numeric vector</p></dd>
-<dt>pac_isl</dt><dd><p>a numeric vector</p></dd> <dt>two_plus_races</dt><dd><p>a
-numeric vector</p></dd> <dt>hispanic</dt><dd><p>a numeric vector</p></dd>
-<dt>white_not_hispanic</dt><dd><p>a numeric vector</p></dd>
-<dt>no_move_in_one_plus_year</dt><dd><p>a numeric vector</p></dd>
-<dt>foreign_born</dt><dd><p>a numeric vector</p></dd>
-<dt>foreign_spoken_at_home</dt><dd><p>a numeric vector</p></dd>
-<dt>hs_grad</dt><dd><p>a numeric vector</p></dd> <dt>bachelors</dt><dd><p>a numeric
-vector</p></dd> <dt>veterans</dt><dd><p>a numeric vector</p></dd>
-<dt>mean_work_travel</dt><dd><p>a numeric vector</p></dd>
-<dt>housing_units</dt><dd><p>a numeric vector</p></dd>
-<dt>home_ownership</dt><dd><p>a numeric vector</p></dd>
-<dt>housing_multi_unit</dt><dd><p>a numeric vector</p></dd>
-<dt>median_val_owner_occupied</dt><dd><p>a numeric vector</p></dd>
-<dt>households</dt><dd><p>a numeric vector</p></dd>
-<dt>persons_per_household</dt><dd><p>a numeric vector</p></dd>
-<dt>per_capita_income</dt><dd><p>a numeric vector</p></dd>
-<dt>median_household_income</dt><dd><p>a numeric vector</p></dd>
-<dt>poverty</dt><dd><p>a numeric vector</p></dd>
-<dt>private_nonfarm_establishments</dt><dd><p>a numeric vector</p></dd>
-<dt>private_nonfarm_employment</dt><dd><p>a numeric vector</p></dd>
-<dt>percent_change_private_nonfarm_employment</dt><dd><p>a numeric vector</p></dd>
-<dt>nonemployment_establishments</dt><dd><p>a numeric vector</p></dd>
-<dt>firms</dt><dd><p>a numeric vector</p></dd> <dt>black_owned_firms</dt><dd><p>a
-numeric vector</p></dd> <dt>native_owned_firms</dt><dd><p>a numeric vector</p></dd>
-<dt>asian_owned_firms</dt><dd><p>a numeric vector</p></dd>
-<dt>pac_isl_owned_firms</dt><dd><p>a numeric vector</p></dd>
-<dt>hispanic_owned_firms</dt><dd><p>a numeric vector</p></dd>
-<dt>women_owned_firms</dt><dd><p>a numeric vector</p></dd>
-<dt>manufacturer_shipments_2007</dt><dd><p>a numeric vector</p></dd>
-<dt>mercent_whole_sales_2007</dt><dd><p>a numeric vector</p></dd>
-<dt>sales</dt><dd><p>a numeric vector</p></dd> <dt>sales_per_capita</dt><dd><p>a
-numeric vector</p></dd> <dt>accommodation_food_service</dt><dd><p>a numeric vector</p></dd>
-<dt>building_permits</dt><dd><p>a numeric vector</p></dd>
-<dt>fed_spending</dt><dd><p>a numeric vector</p></dd> <dt>area</dt><dd><p>a numeric
-vector</p></dd> <dt>density</dt><dd><p>a numeric vector</p></dd>
-<dt>smoking_ban</dt><dd><p>a factor with levels <code>comprehensive</code>
-<code>none</code> <code>partial</code></p></dd> 
+  <dt>name</dt><dd><p>County name.</p></dd>
+  <dt>state</dt><dd><p>State name.</p></dd>
+  <dt>fips</dt><dd><p>a numeric vector</p></dd>
+  <dt>pop2010</dt><dd><p>a numeric vector</p></dd>
+  <dt>pop2000</dt><dd><p>a numeric vector</p></dd>
+  <dt>age_under_5</dt><dd><p>a numeric vector</p></dd>
+  <dt>age_under_18</dt><dd><p>a numeric vector</p></dd>
+  <dt>age_over_65</dt><dd><p>a numeric vector</p></dd>
+  <dt>female</dt><dd><p>a numeric vector</p></dd>
+  <dt>white</dt><dd><p>a numeric vector</p></dd>
+  <dt>black</dt><dd><p>a numeric vector</p></dd>
+  <dt>native</dt><dd><p>a numeric vector</p></dd>
+  <dt>asian</dt><dd><p>a numeric vector</p></dd>
+  <dt>pac_isl</dt><dd><p>a numeric vector</p></dd>
+  <dt>two_plus_races</dt><dd><p>a numeric vector</p></dd>
+  <dt>hispanic</dt><dd><p>a numeric vector</p></dd>
+  <dt>white_not_hispanic</dt><dd><p>a numeric vector</p></dd>
+  <dt>no_move_in_one_plus_year</dt><dd><p>a numeric vector</p></dd>
+  <dt>foreign_born</dt><dd><p>a numeric vector</p></dd>
+  <dt>foreign_spoken_at_home</dt><dd><p>a numeric vector</p></dd>
+  <dt>hs_grad</dt><dd><p>a numeric vector</p></dd>
+  <dt>bachelors</dt><dd><p>a numeric vector</p></dd>
+  <dt>veterans</dt><dd><p>a numeric vector</p></dd>
+  <dt>mean_work_travel</dt><dd><p>a numeric vector</p></dd>
+  <dt>housing_units</dt><dd><p>a numeric vector</p></dd>
+  <dt>home_ownership</dt><dd><p>a numeric vector</p></dd>
+  <dt>housing_multi_unit</dt><dd><p>a numeric vector</p></dd>
+  <dt>median_val_owner_occupied</dt><dd><p>a numeric vector</p></dd>
+  <dt>households</dt><dd><p>a numeric vector</p></dd>
+  <dt>persons_per_household</dt><dd><p>a numeric vector</p></dd>
+  <dt>per_capita_income</dt><dd><p>a numeric vector</p></dd>
+  <dt>median_household_income</dt><dd><p>a numeric vector</p></dd>
+  <dt>poverty</dt><dd><p>a numeric vector</p></dd>
+  <dt>private_nonfarm_establishments</dt><dd><p>a numeric vector</p></dd>
+  <dt>private_nonfarm_employment</dt><dd><p>a numeric vector</p></dd>
+  <dt>percent_change_private_nonfarm_employment</dt><dd><p>a numeric vector</p></dd>
+  <dt>nonemployment_establishments</dt><dd><p>a numeric vector</p></dd>
+  <dt>firms</dt><dd><p>a numeric vector</p></dd>
+  <dt>black_owned_firms</dt><dd><p>a numeric vector</p></dd>
+  <dt>native_owned_firms</dt><dd><p>a numeric vector</p></dd>
+  <dt>asian_owned_firms</dt><dd><p>a numeric vector</p></dd>
+  <dt>pac_isl_owned_firms</dt><dd><p>a numeric vector</p></dd>
+  <dt>hispanic_owned_firms</dt><dd><p>a numeric vector</p></dd>
+  <dt>women_owned_firms</dt><dd><p>a numeric vector</p></dd>
+  <dt>manufacturer_shipments_2007</dt><dd><p>a numeric vector</p></dd>
+  <dt>mercent_whole_sales_2007</dt><dd><p>a numeric vector</p></dd>
+  <dt>sales</dt><dd><p>a numeric vector</p></dd>
+  <dt>sales_per_capita</dt><dd><p>a numeric vector</p></dd>
+  <dt>accommodation_food_service</dt><dd><p>a numeric vector</p></dd>
+  <dt>building_permits</dt><dd><p>a numeric vector</p></dd>
+  <dt>fed_spending</dt><dd><p>a numeric vector</p></dd>
+  <dt>area</dt><dd><p>a numeric vector</p></dd>
+  <dt>density</dt><dd><p>a numeric vector</p></dd>
+  <dt>smoking_ban</dt><dd><p>a factor with levels <code>comprehensive</code> <code>none</code> <code>partial</code></p></dd>
+  
 </dl>
 
     <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>

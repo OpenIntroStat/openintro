@@ -139,26 +139,18 @@ Higher Education:
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
-<span class='fu'><a href='https://rdrr.io/r/base/plot.html'>plot</a></span>(<span class='no'>elmhurst</span>$<span class='no'>family_income</span>, <span class='no'>elmhurst</span>$<span class='no'>gift_aid</span>)</div><div class='input'><span class='no'>m</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/stats/lm.html'>lm</a></span>(<span class='no'>gift_aid</span> ~ <span class='no'>family_income</span>, <span class='kw'>data</span> <span class='kw'>=</span> <span class='no'>elmhurst</span>)
-<span class='fu'><a href='https://rdrr.io/r/graphics/abline.html'>abline</a></span>(<span class='no'>m</span>)</div><div class='img'><img src='elmhurst-1.png' alt='' width='700' height='433' /></div><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/summary.html'>summary</a></span>(<span class='no'>m</span>)</div><div class='output co'>#&gt; 
-#&gt; Call:
-#&gt; lm(formula = gift_aid ~ family_income, data = elmhurst)
-#&gt; 
-#&gt; Residuals:
-#&gt;      Min       1Q   Median       3Q      Max 
-#&gt; -10.1128  -3.6234  -0.2161   3.1587  11.5707 
-#&gt; 
-#&gt; Coefficients:
-#&gt;               Estimate Std. Error t value Pr(&gt;|t|)    
-#&gt; (Intercept)   24.31933    1.29145  18.831  &lt; 2e-16 ***
-#&gt; family_income -0.04307    0.01081  -3.985 0.000229 ***
-#&gt; ---
-#&gt; Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
-#&gt; 
-#&gt; Residual standard error: 4.783 on 48 degrees of freedom
-#&gt; Multiple R-squared:  0.2486,	Adjusted R-squared:  0.2329 
-#&gt; F-statistic: 15.88 on 1 and 48 DF,  p-value: 0.0002289
-#&gt; </div><div class='input'>
+<span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='no'>ggplot2</span>)
+<span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='no'>broom</span>)
+
+<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='no'>elmhurst</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='no'>family_income</span>, <span class='kw'>y</span> <span class='kw'>=</span> <span class='no'>gift_aid</span>)) +
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_point.html'>geom_point</a></span>() +
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_smooth.html'>geom_smooth</a></span>(<span class='kw'>method</span> <span class='kw'>=</span> <span class='st'>"lm"</span>)</div><div class='output co'>#&gt; <span class='message'>`geom_smooth()` using formula 'y ~ x'</span></div><div class='img'><img src='elmhurst-1.png' alt='' width='700' height='433' /></div><div class='input'>
+<span class='no'>mod</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/stats/lm.html'>lm</a></span>(<span class='no'>gift_aid</span> ~ <span class='no'>family_income</span>, <span class='kw'>data</span> <span class='kw'>=</span> <span class='no'>elmhurst</span>)
+<span class='fu'><a href='https://rdrr.io/pkg/broom/man/reexports.html'>tidy</a></span>(<span class='no'>mod</span>)</div><div class='output co'>#&gt; # A tibble: 2 x 5
+#&gt;   term          estimate std.error statistic  p.value
+#&gt;   &lt;chr&gt;            &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;
+#&gt; 1 (Intercept)    24.3       1.29       18.8  8.28e-24
+#&gt; 2 family_income  -0.0431    0.0108     -3.98 2.29e- 4</div><div class='input'>
 </div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">

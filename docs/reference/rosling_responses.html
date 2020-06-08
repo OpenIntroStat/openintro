@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Country ISO information — country_iso • openintro</title>
+<title>Sample Responses to Two Public Health Questions — rosling_responses • openintro</title>
 
 
 <!-- jquery -->
@@ -39,8 +39,11 @@
 
 
 
-<meta property="og:title" content="Country ISO information — country_iso" />
-<meta property="og:description" content="Country International Organization for Standardization (ISO) information." />
+<meta property="og:title" content="Sample Responses to Two Public Health Questions — rosling_responses" />
+<meta property="og:description" content="Public health has improved and evolved, but has the public's knowledge
+changed with it? This data set explores sample responses for two survey
+questions posed by Hans Rosling during lectures to a wide array of
+well-educated audiences." />
 
 
 
@@ -108,49 +111,69 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Country ISO information</h1>
-    <small class="dont-index">Source: <a href='https://github.com/OpenIntroStat/openintro/blob/master/R/data-country_iso.R'><code>R/data-country_iso.R</code></a></small>
-    <div class="hidden name"><code>country_iso.Rd</code></div>
+    <h1>Sample Responses to Two Public Health Questions</h1>
+    <small class="dont-index">Source: <a href='https://github.com/OpenIntroStat/openintro/blob/master/R/rosling_responses.R'><code>R/rosling_responses.R</code></a></small>
+    <div class="hidden name"><code>rosling_responses.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>Country International Organization for Standardization (ISO) information.</p>
+    <p>Public health has improved and evolved, but has the public's knowledge
+changed with it? This data set explores sample responses for two survey
+questions posed by Hans Rosling during lectures to a wide array of
+well-educated audiences.</p>
     </div>
 
-    <pre class="usage"><span class='no'>country_iso</span></pre>
+    <pre class="usage"><span class='no'>rosling_responses</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>A data frame with 249 observations on the following 4 variables.</p><dl'>
-  <dt>country_code</dt><dd><p>Two-letter ISO country code.</p></dd>
-  <dt>country_name</dt><dd><p>Country name.</p></dd>
-  <dt>year</dt><dd><p>Year the two-letter ISO country code was assigned.</p></dd>
-  <dt>top_level_domain</dt><dd><p>op-level domain name.</p></dd>
+    <p>A data frame with 278 rows and 3 variables:</p><dl'>
+  <dt>question</dt><dd><p>ID for the question being posed.</p></dd>
+  <dt>response</dt><dd><p>Noting whether the response was <code>correct</code>
+    or <code>incorrect</code>.</p></dd>
+  <dt>prob_random_correct</dt><dd><p>The probability the person would have guessed
+    the answer correctly if they were guessing completely randomly.</p></dd>
 
 </dl>
 
     <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
 
-    <p>Retrieved from Wikipedia on 2018-11-18.</p>
-<p><a href='https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2'>https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2</a></p>
+    <p>The samples we describe are plausible based on the exact rates observed in larger samples.
+  For more info on the actual rates observed, visit
+  <a href='https://www.gapminder.org/'>https://www.gapminder.org/</a>.</p>
+<p>Another relevant reference is a book by
+  Hans Rosling, Anna Rosling Ronnlund, and Ola Rosling called
+  <a href='https://www.gapminder.org/factfulness-book/'>Factfulness</a>.</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
-<span class='no'>country_iso</span></div><div class='output co'>#&gt; # A tibble: 249 x 4
-#&gt;    country_code country_name          year top_level_domain
-#&gt;    &lt;fct&gt;        &lt;fct&gt;                &lt;int&gt; &lt;fct&gt;           
-#&gt;  1 AD           Andorra               1974 .ad             
-#&gt;  2 AE           United Arab Emirates  1974 .ae             
-#&gt;  3 AF           Afghanistan           1974 .af             
-#&gt;  4 AG           Antigua and Barbuda   1974 .ag             
-#&gt;  5 AI           Anguilla              1985 .ai             
-#&gt;  6 AL           Albania               1974 .al             
-#&gt;  7 AM           Armenia               1992 .am             
-#&gt;  8 AO           Angola                1974 .ao             
-#&gt;  9 AQ           Antarctica            1974 .aq             
-#&gt; 10 AR           Argentina             1974 .ar             
-#&gt; # … with 239 more rows</div><div class='input'>
+<span class='no'>frac_correct</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/tapply.html'>tapply</a></span>(
+  <span class='no'>rosling_responses</span>$<span class='no'>response</span> <span class='kw'>==</span> <span class='st'>"correct"</span>,
+  <span class='no'>rosling_responses</span>$<span class='no'>question</span>,
+  <span class='no'>mean</span>
+)
+<span class='no'>frac_correct</span></div><div class='output co'>#&gt;                    children_in_2100 children_with_1_or_more_vaccination 
+#&gt;                           0.1491228                           0.2400000 </div><div class='input'><span class='no'>n</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span>(<span class='no'>rosling_responses</span>$<span class='no'>question</span>)
+<span class='no'>n</span></div><div class='output co'>#&gt; 
+#&gt;                    children_in_2100 children_with_1_or_more_vaccination 
+#&gt;                                 228                                  50 </div><div class='input'><span class='no'>expected</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/tapply.html'>tapply</a></span>(
+  <span class='no'>rosling_responses</span>$<span class='no'>prob_random_correct</span>,
+  <span class='no'>rosling_responses</span>$<span class='no'>question</span>,
+  <span class='no'>mean</span>
+)
+
+<span class='co'># Construct confidence intervals.</span>
+<span class='no'>se</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/MathFun.html'>sqrt</a></span>(<span class='no'>frac_correct</span> * (<span class='fl'>1</span> - <span class='no'>frac_correct</span>) / <span class='no'>n</span>)
+<span class='co'># Lower bounds.</span>
+<span class='no'>frac_correct</span> - <span class='fl'>1.96</span> * <span class='no'>se</span></div><div class='output co'>#&gt;                    children_in_2100 children_with_1_or_more_vaccination 
+#&gt;                           0.1028853                           0.1216186 </div><div class='input'><span class='co'># Upper bounds.</span>
+<span class='no'>frac_correct</span> + <span class='fl'>1.96</span> * <span class='no'>se</span></div><div class='output co'>#&gt;                    children_in_2100 children_with_1_or_more_vaccination 
+#&gt;                           0.1953603                           0.3583814 </div><div class='input'>
+<span class='co'># Construct Z-scores and p-values.</span>
+<span class='no'>z</span> <span class='kw'>&lt;-</span> (<span class='no'>frac_correct</span> - <span class='no'>expected</span>) / <span class='no'>se</span>
+<span class='fu'><a href='https://rdrr.io/r/stats/TDist.html'>pt</a></span>(<span class='no'>z</span>, <span class='kw'>df</span> <span class='kw'>=</span> <span class='no'>n</span> - <span class='fl'>1</span>)</div><div class='output co'>#&gt;                    children_in_2100 children_with_1_or_more_vaccination 
+#&gt;                        1.058928e-13                        6.435567e-02 </div><div class='input'>
 </div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">

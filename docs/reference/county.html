@@ -158,19 +158,10 @@ accompanying pages.</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
-<span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span>(<span class='no'>county</span>)
-<span class='fu'><a href='https://rdrr.io/r/base/dim.html'>dim</a></span>(<span class='no'>county</span>)</div><div class='output co'>#&gt; [1] 3142   15</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/utils/head.html'>head</a></span>(<span class='no'>county</span>)</div><div class='output co'>#&gt; # A tibble: 6 x 15
-#&gt;   name  state pop2000 pop2010 pop2017 pop_change poverty homeownership
-#&gt;   &lt;fct&gt; &lt;fct&gt;   &lt;dbl&gt;   &lt;dbl&gt;   &lt;int&gt;      &lt;dbl&gt;   &lt;dbl&gt;         &lt;dbl&gt;
-#&gt; 1 Auta… Alab…   43671   54571   55504       1.48    13.7          77.5
-#&gt; 2 Bald… Alab…  140415  182265  212628       9.19    11.8          76.7
-#&gt; 3 Barb… Alab…   29038   27457   25270      -6.22    27.2          68  
-#&gt; 4 Bibb… Alab…   20826   22915   22668       0.73    15.2          82.9
-#&gt; 5 Blou… Alab…   51024   57322   58013       0.68    15.6          82  
-#&gt; 6 Bull… Alab…   11714   10914   10309      -2.28    28.5          76.9
-#&gt; # … with 7 more variables: multi_unit &lt;dbl&gt;, unemployment_rate &lt;dbl&gt;,
-#&gt; #   metro &lt;fct&gt;, median_edu &lt;fct&gt;, per_capita_income &lt;dbl&gt;,
-#&gt; #   median_hh_income &lt;int&gt;, smoking_ban &lt;fct&gt;</div><div class='input'>
+<span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='no'>ggplot2</span>)
+
+<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='no'>county</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='no'>median_edu</span>, <span class='kw'>y</span> <span class='kw'>=</span> <span class='no'>median_hh_income</span>)) +
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_boxplot.html'>geom_boxplot</a></span>()</div><div class='output co'>#&gt; <span class='warning'>Warning: Removed 2 rows containing non-finite values (stat_boxplot).</span></div><div class='img'><img src='county-1.png' alt='' width='700' height='433' /></div><div class='input'>
 </div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">

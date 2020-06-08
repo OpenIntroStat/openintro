@@ -139,11 +139,13 @@ been made up for an example.</p>
 <span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='no'>dplyr</span>)
 
 <span class='no'>drone_blades</span> <span class='kw'>%&gt;%</span>
-  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/count.html'>count</a></span>(<span class='no'>supplier</span>, <span class='no'>inspection</span>)</div><div class='output co'>#&gt;               supplier inspection   n
-#&gt; 1     current_supplier       fail 101
-#&gt; 2     current_supplier       pass 899
-#&gt; 3 prospective_supplier       fail  42
-#&gt; 4 prospective_supplier       pass 958</div><div class='input'>
+  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/count.html'>count</a></span>(<span class='no'>supplier</span>, <span class='no'>inspection</span>)</div><div class='output co'>#&gt; # A tibble: 4 x 3
+#&gt;   supplier             inspection     n
+#&gt;   &lt;fct&gt;                &lt;fct&gt;      &lt;int&gt;
+#&gt; 1 current_supplier     fail         101
+#&gt; 2 current_supplier     pass         899
+#&gt; 3 prospective_supplier fail          42
+#&gt; 4 prospective_supplier pass         958</div><div class='input'>
 </div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">

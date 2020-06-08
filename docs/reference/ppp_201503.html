@@ -136,13 +136,11 @@ Literature, the Seasons, and More, data collected Feb 20-22, 2015.</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
+<span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='no'>ggplot2</span>)
 
-<span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span>(<span class='no'>ppp_201503</span>)</div><div class='output co'>#&gt;                taxes
-#&gt; party           Not sure Raise taxes on the poor Raise taxes on the rich
-#&gt;   Democrat            14                      11                     251
-#&gt;   Indep / Other       72                      20                      88
-#&gt;   Republican         101                      24                     110</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/mosaicplot.html'>mosaicplot</a></span>(<span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span>(<span class='no'>ppp_201503</span>), <span class='kw'>las</span> <span class='kw'>=</span> <span class='fl'>1</span>)</div><div class='img'><img src='ppp_201503-1.png' alt='' width='700' height='433' /></div><div class='input'>
-
+<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='no'>ppp_201503</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='no'>party</span>, <span class='kw'>fill</span> <span class='kw'>=</span> <span class='no'>taxes</span>)) +
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_bar.html'>geom_bar</a></span>(<span class='kw'>position</span> <span class='kw'>=</span> <span class='st'>"fill"</span>) +
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='st'>"Party"</span>, <span class='kw'>x</span> <span class='kw'>=</span> <span class='st'>"Proportion"</span>, <span class='kw'>fill</span> <span class='kw'>=</span> <span class='st'>"Taxes"</span>)</div><div class='img'><img src='ppp_201503-1.png' alt='' width='700' height='433' /></div><div class='input'>
 </div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">

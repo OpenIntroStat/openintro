@@ -42,7 +42,7 @@
 <meta property="og:title" content="United States House of Representatives historical make-up — house" />
 <meta property="og:description" content="The make-up of the United States House of Representatives every two years
 since 1789. The last Congress included is the 112th Congress, which
-completes its term in 2013." />
+completed its term in 2013." />
 
 
 
@@ -118,7 +118,7 @@ completes its term in 2013." />
     <div class="ref-description">
     <p>The make-up of the United States House of Representatives every two years
 since 1789. The last Congress included is the 112th Congress, which
-completes its term in 2013.</p>
+completed its term in 2013.</p>
     </div>
 
     <pre class="usage"><span class='no'>house</span></pre>
@@ -127,44 +127,66 @@ completes its term in 2013.</p>
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
     <p>A data frame with 112 observations on the following 12 variables.</p><dl'>
-
-<dt>yearStart</dt><dd><p>Starting year</p></dd> <dt>yearEnd</dt><dd><p>Ending year</p></dd>
-<dt>seats</dt><dd><p>Total number of seats</p></dd> <dt>p1</dt><dd><p>Name of the first political
-party</p></dd> <dt>np1</dt><dd><p>Number of seats held by the first political party</p></dd>
-<dt>p2</dt><dd><p>Name of the second political party</p></dd> <dt>np2</dt><dd><p>Number of seats
-held by the second political party</p></dd> <dt>other</dt><dd><p>Other</p></dd> <dt>vac</dt><dd><p>Vacancy</p></dd>
-<dt>del</dt><dd><p>Delegate</p></dd> <dt>res</dt><dd><p>Resident commissioner</p></dd> 
+  <dt>congress</dt><dd><p>The number of that year's Congress</p></dd>
+  <dt>year_start</dt><dd><p>Starting year</p></dd>
+  <dt>year_end</dt><dd><p>Ending year</p></dd>
+  <dt>seats</dt><dd><p>Total number of seats</p></dd>
+  <dt>p1</dt><dd><p>Name of the first political party</p></dd>
+  <dt>np1</dt><dd><p>Number of seats held by the first political party</p></dd>
+  <dt>p2</dt><dd><p>Name of the second political party</p></dd>
+  <dt>np2</dt><dd><p>Number of seats held by the second political party</p></dd>
+  <dt>other</dt><dd><p>Other</p></dd>
+  <dt>vac</dt><dd><p>Vacancy</p></dd>
+  <dt>del</dt><dd><p>Delegate</p></dd>
+  <dt>res</dt><dd><p>Resident commissioner</p></dd>
+  
 </dl>
 
     <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
 
-    <p>Office of the Clerk of the U.S. House of Representatives Party
-Divisions:</p>
-<p><a href='http://clerk.house.gov/art_history/house_history/partyDiv.html'>http://clerk.house.gov/art_history/house_history/partyDiv.html</a></p>
-<p>Data for Congresses 1-111 was recorded from the website above on November
-1st, 2010. It appears this page was later moved to</p>
-<p>http://artandhistory.house.gov/house_history/partyDiv.aspx (no longer
-available)</p>
-<p>where data for Congress 112 was recorded on April 21, 2011.</p>
+    <p>Party Divisions of the House of Representatives, 1789 to Present.
+<a href='https://history.house.gov/Institution/Party-Divisions/Party-Divisions'>https://history.house.gov/Institution/Party-Divisions/Party-Divisions</a>.</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
+<span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='no'>dplyr</span>)
+<span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='no'>ggplot2</span>)
+<span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='no'>forcats</span>)
 
-<span class='co'>#=====&gt; Examine two-party relationship since 1855 &lt;=====#</span>
-<span class='no'>these</span> <span class='kw'>&lt;-</span> <span class='fl'>34</span>:<span class='fl'>112</span>
-<span class='no'>COL</span>   <span class='kw'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"#EEDDBB"</span>, <span class='st'>"#DDEEBB"</span>, <span class='st'>"#DDDDDD"</span>,
-           <span class='st'>"#BBDDEE"</span>, <span class='st'>"#EEE5E5"</span>, <span class='st'>"#EECCCC"</span>)
-<span class='no'>party</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"#2222FF"</span>, <span class='st'>"#FF2222"</span>)
-<span class='fu'><a href='https://rdrr.io/r/graphics/par.html'>par</a></span>(<span class='kw'>las</span><span class='kw'>=</span><span class='fl'>1</span>)
-<span class='fu'><a href='https://rdrr.io/r/base/plot.html'>plot</a></span>(<span class='no'>house</span>$<span class='no'>year_start</span>[<span class='no'>these</span>], <span class='fl'>100</span>*<span class='no'>house</span>$<span class='no'>np1</span>[<span class='no'>these</span>]/<span class='no'>house</span>$<span class='no'>seats</span>[<span class='no'>these</span>],
-      <span class='kw'>type</span><span class='kw'>=</span><span class='st'>"n"</span>, <span class='kw'>xlab</span><span class='kw'>=</span><span class='st'>"Year"</span>, <span class='kw'>ylab</span><span class='kw'>=</span><span class='st'>"Percent of House seats"</span>, <span class='kw'>ylim</span><span class='kw'>=</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>11</span>, <span class='fl'>93</span>))</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/rect.html'>rect</a></span>(<span class='fl'>1861.3</span>, -<span class='fl'>1000</span>, <span class='fl'>1865.3</span>, <span class='fl'>1000</span>, <span class='kw'>col</span><span class='kw'>=</span><span class='no'>COL</span>[<span class='fl'>1</span>], <span class='kw'>border</span><span class='kw'>=</span><span class='st'>"#FFFFFF"</span>)</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/rect.html'>rect</a></span>(<span class='fl'>1914.5</span>, -<span class='fl'>1000</span>, <span class='fl'>1918.9</span>, <span class='fl'>1000</span>, <span class='kw'>col</span><span class='kw'>=</span><span class='no'>COL</span>[<span class='fl'>2</span>], <span class='kw'>border</span><span class='kw'>=</span><span class='st'>"#FFFFFF"</span>)</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/rect.html'>rect</a></span>(<span class='fl'>1929</span>, -<span class='fl'>1000</span>, <span class='fl'>1939</span>, <span class='fl'>1000</span>, <span class='kw'>col</span><span class='kw'>=</span><span class='no'>COL</span>[<span class='fl'>3</span>], <span class='kw'>border</span><span class='kw'>=</span><span class='st'>"#FFFFFF"</span>)</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/rect.html'>rect</a></span>(<span class='fl'>1939.7</span>, -<span class='fl'>1000</span>, <span class='fl'>1945.6</span>, <span class='fl'>1000</span>, <span class='kw'>col</span><span class='kw'>=</span><span class='no'>COL</span>[<span class='fl'>4</span>], <span class='kw'>border</span><span class='kw'>=</span><span class='st'>"#FFFFFF"</span>)</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/rect.html'>rect</a></span>(<span class='fl'>1955.8</span>, -<span class='fl'>1000</span>, <span class='fl'>1965.3</span>, <span class='fl'>1000</span>, <span class='kw'>col</span><span class='kw'>=</span><span class='no'>COL</span>[<span class='fl'>5</span>], <span class='kw'>border</span><span class='kw'>=</span><span class='st'>"#E2E2E2"</span>)</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/rect.html'>rect</a></span>(<span class='fl'>1965.3</span>, -<span class='fl'>1000</span>, <span class='fl'>1975.4</span>, <span class='fl'>1000</span>, <span class='kw'>col</span><span class='kw'>=</span><span class='no'>COL</span>[<span class='fl'>6</span>], <span class='kw'>border</span><span class='kw'>=</span><span class='st'>"#E2E2E2"</span>)</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/lines.html'>lines</a></span>(<span class='no'>house</span>$<span class='no'>year_start</span>[<span class='no'>these</span>], <span class='fl'>100</span>*<span class='no'>house</span>$<span class='no'>np1</span>[<span class='no'>these</span>]/<span class='no'>house</span>$<span class='no'>seats</span>[<span class='no'>these</span>],
-      <span class='kw'>col</span><span class='kw'>=</span><span class='no'>party</span>[<span class='fl'>1</span>])</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/lines.html'>lines</a></span>(<span class='no'>house</span>$<span class='no'>year_start</span>[<span class='no'>these</span>], <span class='fl'>100</span>*<span class='no'>house</span>$<span class='no'>np2</span>[<span class='no'>these</span>]/<span class='no'>house</span>$<span class='no'>seats</span>[<span class='no'>these</span>],
-      <span class='kw'>col</span><span class='kw'>=</span><span class='no'>party</span>[<span class='fl'>2</span>])</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/legend.html'>legend</a></span>(<span class='st'>"topleft"</span>, <span class='kw'>lty</span><span class='kw'>=</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>1</span>,<span class='fl'>1</span>), <span class='kw'>col</span><span class='kw'>=</span><span class='no'>party</span>,
-      <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"Democrats"</span>, <span class='st'>"Republicans"</span>), <span class='kw'>bg</span><span class='kw'>=</span><span class='st'>"#FFFFFF"</span>)</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/legend.html'>legend</a></span>(<span class='st'>"topright"</span>, <span class='kw'>fill</span><span class='kw'>=</span><span class='no'>COL</span>,
-      <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"Civil War"</span>, <span class='st'>"World War I"</span>, <span class='st'>"Great Depression"</span>, <span class='st'>"World War II"</span>,
-        <span class='st'>"Vietnam War Start"</span>, <span class='st'>"Vietnam War Escalated"</span>),
-      <span class='kw'>bg</span><span class='kw'>=</span><span class='st'>"#FFFFFF"</span>, <span class='kw'>border</span><span class='kw'>=</span><span class='st'>"#FFFFFF"</span>)</div><div class='img'><img src='house-1.png' alt='' width='700' height='433' /></div><div class='input'>
+<span class='co'># Examine two-party relationship since 1855</span>
+<span class='no'>house_since_1855</span> <span class='kw'>&lt;-</span> <span class='no'>house</span> <span class='kw'>%&gt;%</span>
+  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/filter.html'>filter</a></span>(<span class='no'>year_start</span> <span class='kw'>&gt;=</span> <span class='fl'>1855</span>) <span class='kw'>%&gt;%</span>
+  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/mutate.html'>mutate</a></span>(
+    <span class='kw'>p1_perc</span> <span class='kw'>=</span> <span class='fl'>100</span> * <span class='no'>np1</span> / <span class='no'>seats</span>,
+    <span class='kw'>p2_perc</span> <span class='kw'>=</span> <span class='fl'>100</span> * <span class='no'>np2</span> / <span class='no'>seats</span>,
+    <span class='kw'>era</span> <span class='kw'>=</span> <span class='fu'><a href='https://dplyr.tidyverse.org/reference/case_when.html'>case_when</a></span>(
+      <span class='fu'><a href='https://dplyr.tidyverse.org/reference/between.html'>between</a></span>(<span class='no'>year_start</span>, <span class='fl'>1861</span>, <span class='fl'>1865</span>) ~ <span class='st'>"Civil War"</span>,
+      <span class='fu'><a href='https://dplyr.tidyverse.org/reference/between.html'>between</a></span>(<span class='no'>year_start</span>, <span class='fl'>1914</span>, <span class='fl'>1918</span>) ~ <span class='st'>"World War I"</span>,
+      <span class='fu'><a href='https://dplyr.tidyverse.org/reference/between.html'>between</a></span>(<span class='no'>year_start</span>, <span class='fl'>1929</span>, <span class='fl'>1939</span>) ~ <span class='st'>"Great Depression"</span>,
+      <span class='fu'><a href='https://dplyr.tidyverse.org/reference/between.html'>between</a></span>(<span class='no'>year_start</span>, <span class='fl'>1940</span>, <span class='fl'>1945</span>) ~ <span class='st'>"World War II"</span>,
+      <span class='fu'><a href='https://dplyr.tidyverse.org/reference/between.html'>between</a></span>(<span class='no'>year_start</span>, <span class='fl'>1960</span>, <span class='fl'>1965</span>) ~ <span class='st'>"Vietnam War Start"</span>,
+      <span class='fu'><a href='https://dplyr.tidyverse.org/reference/between.html'>between</a></span>(<span class='no'>year_start</span>, <span class='fl'>1965</span>, <span class='fl'>1975</span>) ~ <span class='st'>"Vietnam War Escalated"</span>,
+      <span class='fl'>TRUE</span>                            ~ <span class='fl'>NA_character_</span>
+    ),
+    <span class='kw'>era</span> <span class='kw'>=</span> <span class='fu'><a href='https://forcats.tidyverse.org/reference/fct_relevel.html'>fct_relevel</a></span>(<span class='no'>era</span>, <span class='st'>"Civil War"</span>, <span class='st'>"World War I"</span>,
+                           <span class='st'>"Great Depression"</span>, <span class='st'>"World War II"</span>,
+                           <span class='st'>"Vietnam War Start"</span>, <span class='st'>"Vietnam War Escalated"</span>)
+  )
 
+<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='no'>house_since_1855</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='no'>year_start</span>)) +
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_tile.html'>geom_rect</a></span>(<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(<span class='kw'>xmin</span> <span class='kw'>=</span> <span class='no'>year_start</span>, <span class='kw'>xmax</span> <span class='kw'>=</span> <span class='fu'><a href='https://dplyr.tidyverse.org/reference/lead-lag.html'>lead</a></span>(<span class='no'>year_start</span>),
+                <span class='kw'>ymin</span> <span class='kw'>=</span> -<span class='fl'>Inf</span>, <span class='kw'>ymax</span> <span class='kw'>=</span> <span class='fl'>Inf</span>, <span class='kw'>fill</span> <span class='kw'>=</span> <span class='no'>era</span>)) +
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_path.html'>geom_line</a></span>(<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(<span class='kw'>y</span> <span class='kw'>=</span> <span class='no'>p1_perc</span>, <span class='kw'>color</span> <span class='kw'>=</span> <span class='st'>"Democrats"</span>)) +  <span class='co'># Democrats</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_path.html'>geom_line</a></span>(<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(<span class='kw'>y</span> <span class='kw'>=</span> <span class='no'>p2_perc</span>, <span class='kw'>color</span> <span class='kw'>=</span> <span class='st'>"Republicans"</span>)) + <span class='co'># Republicans</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/scale_brewer.html'>scale_fill_brewer</a></span>(<span class='kw'>palette</span> <span class='kw'>=</span> <span class='st'>"Pastel1"</span>, <span class='kw'>na.translate</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>) +
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/scale_manual.html'>scale_color_manual</a></span>(
+    <span class='kw'>name</span>   <span class='kw'>=</span> <span class='st'>"Party"</span>,
+    <span class='kw'>values</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"Democrats"</span> <span class='kw'>=</span> <span class='st'>"blue"</span>, <span class='st'>"Republicans"</span> <span class='kw'>=</span> <span class='st'>"red"</span>),
+    <span class='kw'>labels</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"Democrats"</span>, <span class='st'>"Republicans"</span>)
+    ) +
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggtheme.html'>theme_minimal</a></span>() +
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/lims.html'>ylim</a></span>(<span class='fl'>0</span>, <span class='fl'>100</span>) +
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='st'>"Year"</span>, <span class='kw'>y</span> <span class='kw'>=</span> <span class='st'>"Percentage of seats"</span>, <span class='kw'>fill</span> <span class='kw'>=</span> <span class='st'>"Era"</span>)</div><div class='output co'>#&gt; <span class='warning'>Warning: Removed 1 rows containing missing values (geom_rect).</span></div><div class='img'><img src='house-1.png' alt='' width='700' height='433' /></div><div class='input'>
 </div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">

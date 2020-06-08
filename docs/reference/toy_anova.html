@@ -125,156 +125,28 @@ ANOVA is based off of.</p>
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
     <p>A data frame with 70 observations on the following 3 variables.</p><dl'>
-  <dt>groups</dt><dd><p>a factor with levels <code>I</code> <code>II</code> <code>III</code></p></dd>
-  <dt>x1</dt><dd><p>a numeric vector</p></dd>
-  <dt>x2</dt><dd><p>a numeric vector</p></dd>
+  <dt>group</dt><dd><p>a factor with levels <code>I</code> <code>II</code> <code>III</code></p></dd>
+  <dt>outcome</dt><dd><p>a numeric vector</p></dd>
   
 </dl>
 
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
-<span class='no'>toy_anova</span></div><div class='output co'>#&gt;     group      outcome
-#&gt; 1       I  3.987624375
-#&gt; 2       I -1.238403890
-#&gt; 3       I -0.484685133
-#&gt; 4       I -0.061685794
-#&gt; 5       I -0.899256379
-#&gt; 6       I -0.864166285
-#&gt; 7       I  1.678962643
-#&gt; 8       I  0.381320794
-#&gt; 9       I  0.785740072
-#&gt; 10      I  3.841720794
-#&gt; 11      I  1.092232978
-#&gt; 12      I  4.631881308
-#&gt; 13      I  3.978931522
-#&gt; 14      I  1.042784443
-#&gt; 15      I  3.400854233
-#&gt; 16      I  1.258274400
-#&gt; 17      I -0.783947452
-#&gt; 18      I  0.095761184
-#&gt; 19      I  0.549520000
-#&gt; 20      I  2.038999857
-#&gt; 21     II  2.959117667
-#&gt; 22     II  2.757504874
-#&gt; 23     II  3.658439208
-#&gt; 24     II -0.382502198
-#&gt; 25     II  3.608867424
-#&gt; 26     II  1.975781284
-#&gt; 27     II  2.827911971
-#&gt; 28     II  2.587109706
-#&gt; 29     II  0.224913234
-#&gt; 30     II  1.285396195
-#&gt; 31    III -0.003447613
-#&gt; 32    III  2.380894750
-#&gt; 33    III  1.468808237
-#&gt; 34    III  1.185128769
-#&gt; 35    III  0.672093231
-#&gt; 36    III  0.459640106
-#&gt; 37    III  2.799099088
-#&gt; 38    III -0.354866168
-#&gt; 39    III  1.089397174
-#&gt; 40    III  1.775321278
-#&gt; 41    III  3.130654722
-#&gt; 42    III  0.253853302
-#&gt; 43    III  0.874679793
-#&gt; 44    III -0.664500088
-#&gt; 45    III  0.716310273
-#&gt; 46    III  0.700539001
-#&gt; 47    III  3.328605292
-#&gt; 48    III  2.189613961
-#&gt; 49    III  1.453617104
-#&gt; 50    III  2.699436914
-#&gt; 51    III  0.908715398
-#&gt; 52    III  1.291326763
-#&gt; 53    III  1.853558430
-#&gt; 54    III  3.863572738
-#&gt; 55    III  2.388439314
-#&gt; 56    III  2.024382994
-#&gt; 57    III -1.048973446
-#&gt; 58    III  1.780204346
-#&gt; 59    III  1.551816096
-#&gt; 60    III -0.047032524
-#&gt; 61    III  1.417386131
-#&gt; 62    III  1.541561838
-#&gt; 63    III  2.118340198
-#&gt; 64    III  2.360039949
-#&gt; 65    III  1.781282634
-#&gt; 66    III  2.966703604
-#&gt; 67    III  2.456560212
-#&gt; 68    III  3.033039433
-#&gt; 69    III  3.193854175
-#&gt; 70    III  2.353764180
-#&gt; 71     IV  2.143623581
-#&gt; 72     IV  0.401614159
-#&gt; 73     IV  0.652853745
-#&gt; 74     IV  0.793853524
-#&gt; 75     IV  0.514663329
-#&gt; 76     IV  0.526360027
-#&gt; 77     IV  1.374069670
-#&gt; 78     IV  0.941522387
-#&gt; 79     IV  1.076328813
-#&gt; 80     IV  2.094989054
-#&gt; 81     IV  1.178493115
-#&gt; 82     IV  2.358375892
-#&gt; 83     IV  2.140725963
-#&gt; 84     IV  1.162010270
-#&gt; 85     IV  1.948033533
-#&gt; 86     IV  1.233840256
-#&gt; 87     IV  0.553099638
-#&gt; 88     IV  0.846335850
-#&gt; 89     IV  0.997588789
-#&gt; 90     IV  1.494082075
-#&gt; 91      V  2.419875180
-#&gt; 92      V  2.352670915
-#&gt; 93      V  2.652982360
-#&gt; 94      V  1.306001892
-#&gt; 95      V  2.636458432
-#&gt; 96      V  2.092096386
-#&gt; 97      V  2.376139948
-#&gt; 98      V  2.295872526
-#&gt; 99      V  1.508473702
-#&gt; 100     V  1.861968022
-#&gt; 101    VI  1.064574489
-#&gt; 102    VI  1.859355277
-#&gt; 103    VI  1.555326439
-#&gt; 104    VI  1.460766616
-#&gt; 105    VI  1.289754770
-#&gt; 106    VI  1.218937062
-#&gt; 107    VI  1.998756722
-#&gt; 108    VI  0.947434971
-#&gt; 109    VI  1.428856085
-#&gt; 110    VI  1.657497452
-#&gt; 111    VI  2.109275267
-#&gt; 112    VI  1.150341461
-#&gt; 113    VI  1.357283624
-#&gt; 114    VI  0.844223664
-#&gt; 115    VI  1.304493784
-#&gt; 116    VI  1.299236693
-#&gt; 117    VI  2.175258790
-#&gt; 118    VI  1.795595014
-#&gt; 119    VI  1.550262728
-#&gt; 120    VI  1.965535998
-#&gt; 121    VI  1.368628826
-#&gt; 122    VI  1.496165948
-#&gt; 123    VI  1.683576503
-#&gt; 124    VI  2.353581273
-#&gt; 125    VI  1.861870131
-#&gt; 126    VI  1.740518024
-#&gt; 127    VI  0.716065878
-#&gt; 128    VI  1.659125142
-#&gt; 129    VI  1.582995725
-#&gt; 130    VI  1.050046185
-#&gt; 131    VI  1.538185737
-#&gt; 132    VI  1.579577639
-#&gt; 133    VI  1.771837092
-#&gt; 134    VI  1.852403676
-#&gt; 135    VI  1.659484571
-#&gt; 136    VI  2.054624894
-#&gt; 137    VI  1.884577097
-#&gt; 138    VI  2.076736837
-#&gt; 139    VI  2.130341751
-#&gt; 140    VI  1.850311753</div><div class='input'>
+<span class='no'>toy_anova</span></div><div class='output co'>#&gt; # A tibble: 140 x 2
+#&gt;    group outcome
+#&gt;    &lt;chr&gt;   &lt;dbl&gt;
+#&gt;  1 I      3.99  
+#&gt;  2 I     -1.24  
+#&gt;  3 I     -0.485 
+#&gt;  4 I     -0.0617
+#&gt;  5 I     -0.899 
+#&gt;  6 I     -0.864 
+#&gt;  7 I      1.68  
+#&gt;  8 I      0.381 
+#&gt;  9 I      0.786 
+#&gt; 10 I      3.84  
+#&gt; # … with 130 more rows</div><div class='input'>
 </div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">

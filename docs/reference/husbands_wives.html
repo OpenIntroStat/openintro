@@ -140,9 +140,10 @@ data on a random sample of 170 married couples in Britain, recording the age
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
+<span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='no'>ggplot2</span>)
 
-<span class='fu'><a href='https://rdrr.io/r/base/plot.html'>plot</a></span>(<span class='no'>husbands_wives</span>$<span class='no'>ht_husband</span>, <span class='no'>husbands_wives</span>$<span class='no'>ht_wife</span>)</div><div class='img'><img src='husbands_wives-1.png' alt='' width='700' height='433' /></div><div class='input'>
-
+<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='no'>husbands_wives</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='no'>ht_husband</span>, <span class='kw'>y</span> <span class='kw'>=</span> <span class='no'>ht_wife</span>)) +
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_point.html'>geom_point</a></span>()</div><div class='img'><img src='husbands_wives-1.png' alt='' width='700' height='433' /></div><div class='input'>
 </div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">

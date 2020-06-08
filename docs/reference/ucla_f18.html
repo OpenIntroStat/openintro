@@ -151,18 +151,15 @@
     <pre class="examples"><div class='input'>
 <span class='fu'><a href='https://rdrr.io/r/base/nrow.html'>nrow</a></span>(<span class='no'>ucla_f18</span>)</div><div class='output co'>#&gt; [1] 3950</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span>(<span class='no'>ucla_f18</span>$<span class='no'>special_topic</span>)</div><div class='output co'>#&gt; 
 #&gt; FALSE  TRUE 
-#&gt;  2768  1182 </div><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/subset.html'>subset</a></span>(<span class='no'>ucla_f18</span>, <span class='fu'><a href='https://rdrr.io/r/base/NA.html'>is.na</a></span>(<span class='no'>course_numeric</span>))</div><div class='output co'>#&gt;      year term           subject subject_abbr                   course
-#&gt; 1    2018 Fall Aerospace Studies      AERO ST    Leadership Laboratory
-#&gt; 2706 2018 Fall  Military Science      MIL SCI    Leadership Laboratory
-#&gt; 2931 2018 Fall     Naval Science      NAV SCI Naval Science Laboratory
-#&gt;      course_num course_numeric seminar ind_study apprenticeship internship
-#&gt; 1             A             NA   FALSE     FALSE          FALSE      FALSE
-#&gt; 2706          Z             NA   FALSE     FALSE          FALSE      FALSE
-#&gt; 2931          Z             NA   FALSE     FALSE          FALSE      FALSE
-#&gt;      honors_contracts laboratory special_topic
-#&gt; 1               FALSE       TRUE          TRUE
-#&gt; 2706            FALSE       TRUE          TRUE
-#&gt; 2931            FALSE       TRUE          TRUE</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span>(<span class='fu'><a href='https://rdrr.io/r/base/subset.html'>subset</a></span>(<span class='no'>ucla_f18</span>, !<span class='no'>special_topic</span>)$<span class='no'>course_numeric</span> <span class='kw'>&lt;</span> <span class='fl'>100</span>)</div><div class='output co'>#&gt; 
+#&gt;  2768  1182 </div><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/subset.html'>subset</a></span>(<span class='no'>ucla_f18</span>, <span class='fu'><a href='https://rdrr.io/r/base/NA.html'>is.na</a></span>(<span class='no'>course_numeric</span>))</div><div class='output co'>#&gt; # A tibble: 3 x 14
+#&gt;    year term  subject subject_abbr course course_num course_numeric seminar
+#&gt;   &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt;        &lt;chr&gt;  &lt;chr&gt;               &lt;dbl&gt; &lt;lgl&gt;  
+#&gt; 1  2018 Fall  Aerosp… AERO ST      Leade… A                      NA FALSE  
+#&gt; 2  2018 Fall  Milita… MIL SCI      Leade… Z                      NA FALSE  
+#&gt; 3  2018 Fall  Naval … NAV SCI      Naval… Z                      NA FALSE  
+#&gt; # … with 6 more variables: ind_study &lt;lgl&gt;, apprenticeship &lt;lgl&gt;,
+#&gt; #   internship &lt;lgl&gt;, honors_contracts &lt;lgl&gt;, laboratory &lt;lgl&gt;,
+#&gt; #   special_topic &lt;lgl&gt;</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span>(<span class='fu'><a href='https://rdrr.io/r/base/subset.html'>subset</a></span>(<span class='no'>ucla_f18</span>, !<span class='no'>special_topic</span>)$<span class='no'>course_numeric</span> <span class='kw'>&lt;</span> <span class='fl'>100</span>)</div><div class='output co'>#&gt; 
 #&gt; FALSE  TRUE 
 #&gt;  2225   543 </div><div class='input'><span class='no'>elig_courses</span> <span class='kw'>&lt;-</span>
     <span class='fu'><a href='https://rdrr.io/r/base/subset.html'>subset</a></span>(<span class='no'>ucla_f18</span>, !<span class='no'>special_topic</span> <span class='kw'>&amp;</span> <span class='no'>course_numeric</span> <span class='kw'>&lt;</span> <span class='fl'>100</span>)
@@ -173,34 +170,18 @@
     <span class='no'>ucla_textbooks_f18</span>$<span class='no'>course_numeric</span>)
 <span class='no'>ucla_textbooks_f18</span> <span class='kw'>&lt;-</span> <span class='no'>ucla_textbooks_f18</span>[<span class='no'>tmp</span>, ]
 <span class='fu'><a href='https://rdrr.io/r/base/colnames.html'>rownames</a></span>(<span class='no'>ucla_textbooks_f18</span>) <span class='kw'>&lt;-</span> <span class='kw'>NULL</span>
-<span class='fu'><a href='https://rdrr.io/r/utils/head.html'>head</a></span>(<span class='no'>ucla_textbooks_f18</span>)</div><div class='output co'>#&gt;   year term                       subject subject_abbr
-#&gt; 1 2018 Fall                  Anthropology       ANTHRO
-#&gt; 2 2018 Fall                  Anthropology       ANTHRO
-#&gt; 3 2018 Fall Architecture and Urban Design      ARCH&amp;UD
-#&gt; 4 2018 Fall                           Art         &lt;NA&gt;
-#&gt; 5 2018 Fall         Arts and Architecture      ART&amp;ARC
-#&gt; 6 2018 Fall        Asian American Studies      ASIA AM
-#&gt;                                                     course course_num
-#&gt; 1                                      Culture and Society          3
-#&gt; 2                                Culture and Communication          4
-#&gt; 3                    Introduction to Architectural Studies         30
-#&gt; 4                       Production: Moving Image and Sound        21B
-#&gt; 5 Arts Encounters: Exploring Arts Literacy in 21st Century         10
-#&gt; 6 UCLA Centennial Initiative: 100 Years of Protest at UCLA         19
-#&gt;   course_numeric seminar ind_study apprenticeship internship honors_contracts
-#&gt; 1              3   FALSE     FALSE          FALSE      FALSE            FALSE
-#&gt; 2              4   FALSE     FALSE          FALSE      FALSE            FALSE
-#&gt; 3             30   FALSE     FALSE          FALSE      FALSE            FALSE
-#&gt; 4             21   FALSE     FALSE          FALSE      FALSE            FALSE
-#&gt; 5             10   FALSE     FALSE          FALSE      FALSE            FALSE
-#&gt; 6             19   FALSE     FALSE          FALSE      FALSE            FALSE
-#&gt;   laboratory special_topic
-#&gt; 1      FALSE         FALSE
-#&gt; 2      FALSE         FALSE
-#&gt; 3      FALSE         FALSE
-#&gt; 4      FALSE         FALSE
-#&gt; 5      FALSE         FALSE
-#&gt; 6      FALSE         FALSE</div></pre>
+<span class='fu'><a href='https://rdrr.io/r/utils/head.html'>head</a></span>(<span class='no'>ucla_textbooks_f18</span>)</div><div class='output co'>#&gt; # A tibble: 6 x 14
+#&gt;    year term  subject subject_abbr course course_num course_numeric seminar
+#&gt;   &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt;        &lt;chr&gt;  &lt;chr&gt;               &lt;dbl&gt; &lt;lgl&gt;  
+#&gt; 1  2018 Fall  Anthro… ANTHRO       Cultu… 3                       3 FALSE  
+#&gt; 2  2018 Fall  Anthro… ANTHRO       Cultu… 4                       4 FALSE  
+#&gt; 3  2018 Fall  Archit… ARCH&amp;UD      Intro… 30                     30 FALSE  
+#&gt; 4  2018 Fall  Art     &lt;NA&gt;         Produ… 21B                    21 FALSE  
+#&gt; 5  2018 Fall  Arts a… ART&amp;ARC      Arts … 10                     10 FALSE  
+#&gt; 6  2018 Fall  Asian … ASIA AM      UCLA … 19                     19 FALSE  
+#&gt; # … with 6 more variables: ind_study &lt;lgl&gt;, apprenticeship &lt;lgl&gt;,
+#&gt; #   internship &lt;lgl&gt;, honors_contracts &lt;lgl&gt;, laboratory &lt;lgl&gt;,
+#&gt; #   special_topic &lt;lgl&gt;</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">

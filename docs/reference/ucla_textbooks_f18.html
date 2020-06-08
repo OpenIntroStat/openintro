@@ -188,55 +188,42 @@ explore whether the dynamics have changed in the used market.</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
-<span class='no'>d</span> <span class='kw'>&lt;-</span> <span class='no'>ucla_textbooks_f18</span>
-<span class='fu'><a href='https://rdrr.io/r/base/plot.html'>plot</a></span>(<span class='no'>d</span>$<span class='no'>bookstore_new</span>, <span class='no'>d</span>$<span class='no'>amazon_new</span>, <span class='kw'>log</span> <span class='kw'>=</span> <span class='st'>""</span>)</div><div class='input'><span class='no'>a</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>0.01</span>, <span class='fl'>10000</span>)
-<span class='fu'><a href='https://rdrr.io/r/graphics/lines.html'>lines</a></span>(<span class='no'>a</span>, <span class='no'>a</span>)</div><div class='img'><img src='ucla_textbooks_f18-1.png' alt='' width='700' height='433' /></div><div class='input'>
-<span class='co'># The following outliers were double checked for accuracy.</span>
-<span class='no'>d</span>$<span class='no'>price_diff</span> <span class='kw'>&lt;-</span> <span class='no'>d</span>$<span class='no'>bookstore_new</span> - <span class='no'>d</span>$<span class='no'>amazon_new</span>
-<span class='no'>these</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/MathFun.html'>abs</a></span>(<span class='no'>d</span>$<span class='no'>price_diff</span>) <span class='kw'>&gt;</span> <span class='fl'>20</span>
-<span class='no'>these</span> <span class='kw'>&lt;-</span> <span class='no'>these</span> <span class='kw'>&amp;</span>
-    !<span class='fu'><a href='https://rdrr.io/r/base/NA.html'>is.na</a></span>(<span class='fu'><a href='https://rdrr.io/r/base/MathFun.html'>abs</a></span>(<span class='no'>d</span>$<span class='no'>price_diff</span>) <span class='kw'>&gt;</span> <span class='fl'>20</span>)
-<span class='no'>d</span>[<span class='no'>these</span>, ]</div><div class='output co'>#&gt;     year term                              subject subject_abbr
-#&gt; 43  2018 Fall                  Film and Television      FILM TV
-#&gt; 80  2018 Fall                              Nursing         &lt;NA&gt;
-#&gt; 116 2018 Fall                  English Composition      ENGCOMP
-#&gt; 141 2018 Fall                        Life Sciences      LIFESCI
-#&gt; 154 2018 Fall                              Nursing         &lt;NA&gt;
-#&gt; 169 2018 Fall Earth, Planetary, and Space Sciences      EPS SCI
-#&gt;                                              course course_num course_numeric
-#&gt; 43  Introduction to Art and Technique of Filmmaking          4              4
-#&gt; 80     Introduction to Nursing and Social Justice I         10             10
-#&gt; 116            Introduction to University Discourse          1              1
-#&gt; 141                       Life: Concepts and Issues         15             15
-#&gt; 154                              Pathophysiology II        54B             54
-#&gt; 169                   Introduction to Earth Science          1              1
-#&gt;     seminar ind_study apprenticeship internship honors_contracts laboratory
-#&gt; 43    FALSE     FALSE          FALSE      FALSE            FALSE      FALSE
-#&gt; 80    FALSE     FALSE          FALSE      FALSE            FALSE      FALSE
-#&gt; 116   FALSE     FALSE          FALSE      FALSE            FALSE      FALSE
-#&gt; 141   FALSE     FALSE          FALSE      FALSE            FALSE      FALSE
-#&gt; 154   FALSE     FALSE          FALSE      FALSE            FALSE      FALSE
-#&gt; 169   FALSE     FALSE          FALSE      FALSE            FALSE      FALSE
-#&gt;     special_topic textbook_isbn bookstore_new bookstore_used amazon_new
-#&gt; 43          FALSE 9781319059514        132.75          99.75      78.67
-#&gt; 80          FALSE 9781133129165        186.96         140.26     111.76
-#&gt; 116         FALSE 9781319057442         71.97          55.97      41.49
-#&gt; 141         FALSE 9781319065447        159.96         119.96     126.71
-#&gt; 154         FALSE 9781451190809        118.96          75.96      97.92
-#&gt; 169         FALSE 9781464138744        179.97         139.97     158.96
-#&gt;     amazon_used notes price_diff
-#&gt; 43        69.69  &lt;NA&gt;      54.08
-#&gt; 80        26.72  &lt;NA&gt;      75.20
-#&gt; 116       39.42  &lt;NA&gt;      30.48
-#&gt; 141       77.44  &lt;NA&gt;      33.25
-#&gt; 154       48.96  &lt;NA&gt;      21.04
-#&gt; 169       75.82  &lt;NA&gt;      21.01</div><div class='input'>
-<span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span>(<span class='fu'><a href='https://rdrr.io/r/base/NA.html'>is.na</a></span>(<span class='no'>d</span>$<span class='no'>price_diff</span>))</div><div class='output co'>#&gt; 
-#&gt; FALSE  TRUE 
-#&gt;    68   133 </div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/hist.html'>hist</a></span>(<span class='no'>d</span>$<span class='no'>price_diff</span>)</div><div class='img'><img src='ucla_textbooks_f18-2.png' alt='' width='700' height='433' /></div><div class='input'><span class='fu'><a href='https://rdrr.io/r/stats/qqnorm.html'>qqnorm</a></span>(<span class='no'>d</span>$<span class='no'>price_diff</span>)</div><div class='img'><img src='ucla_textbooks_f18-3.png' alt='' width='700' height='433' /></div><div class='input'><span class='fu'><a href='https://rdrr.io/r/stats/t.test.html'>t.test</a></span>(<span class='no'>d</span>$<span class='no'>price_diff</span>)</div><div class='output co'>#&gt; 
+<span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='no'>ggplot2</span>)
+<span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='no'>dplyr</span>)
+
+<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='no'>ucla_textbooks_f18</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='no'>bookstore_new</span>, <span class='kw'>y</span> <span class='kw'>=</span> <span class='no'>amazon_new</span>)) +
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_point.html'>geom_point</a></span>() +
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_abline.html'>geom_abline</a></span>(<span class='kw'>slope</span> <span class='kw'>=</span> <span class='fl'>1</span>, <span class='kw'>intercept</span> <span class='kw'>=</span> <span class='fl'>0</span>, <span class='kw'>color</span> <span class='kw'>=</span> <span class='st'>"orange"</span>) +
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='st'>"UCLA Bookstore price"</span>, <span class='kw'>y</span> <span class='kw'>=</span> <span class='st'>"Amazon price"</span>,
+       <span class='kw'>title</span> <span class='kw'>=</span> <span class='st'>"Amazon vs. UCLA Bookstore prices of new textbooks"</span>,
+       <span class='kw'>subtitle</span> <span class='kw'>=</span> <span class='st'>"Orange line represents y = x"</span>)</div><div class='output co'>#&gt; <span class='warning'>Warning: Removed 133 rows containing missing values (geom_point).</span></div><div class='img'><img src='ucla_textbooks_f18-1.png' alt='' width='700' height='433' /></div><div class='input'>
+<span class='co'># The following outliers were double checked for accuracy</span>
+<span class='no'>ucla_textbooks_f18_with_diff</span> <span class='kw'>&lt;-</span>  <span class='no'>ucla_textbooks_f18</span> <span class='kw'>%&gt;%</span>
+  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/mutate.html'>mutate</a></span>(<span class='kw'>diff</span> <span class='kw'>=</span> <span class='no'>bookstore_new</span> - <span class='no'>amazon_new</span>)
+
+<span class='no'>ucla_textbooks_f18_with_diff</span> <span class='kw'>%&gt;%</span>
+  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/filter.html'>filter</a></span>(<span class='no'>diff</span> <span class='kw'>&gt;</span> <span class='fl'>20</span> <span class='kw'>|</span> <span class='no'>diff</span> <span class='kw'>&lt;</span> -<span class='fl'>20</span>)</div><div class='output co'>#&gt; # A tibble: 6 x 21
+#&gt;    year term  subject subject_abbr course course_num course_numeric seminar
+#&gt;   &lt;dbl&gt; &lt;fct&gt; &lt;fct&gt;   &lt;fct&gt;        &lt;fct&gt;  &lt;fct&gt;               &lt;int&gt; &lt;lgl&gt;  
+#&gt; 1  2018 Fall  Film a… FILM TV      Intro… 4                       4 FALSE  
+#&gt; 2  2018 Fall  Nursing &lt;NA&gt;         Intro… 10                     10 FALSE  
+#&gt; 3  2018 Fall  Englis… ENGCOMP      Intro… 1                       1 FALSE  
+#&gt; 4  2018 Fall  Life S… LIFESCI      Life:… 15                     15 FALSE  
+#&gt; 5  2018 Fall  Nursing &lt;NA&gt;         Patho… 54B                    54 FALSE  
+#&gt; 6  2018 Fall  Earth,… EPS SCI      Intro… 1                       1 FALSE  
+#&gt; # … with 13 more variables: ind_study &lt;lgl&gt;, apprenticeship &lt;lgl&gt;,
+#&gt; #   internship &lt;lgl&gt;, honors_contracts &lt;lgl&gt;, laboratory &lt;lgl&gt;,
+#&gt; #   special_topic &lt;lgl&gt;, textbook_isbn &lt;chr&gt;, bookstore_new &lt;dbl&gt;,
+#&gt; #   bookstore_used &lt;dbl&gt;, amazon_new &lt;dbl&gt;, amazon_used &lt;dbl&gt;, notes &lt;fct&gt;,
+#&gt; #   diff &lt;dbl&gt;</div><div class='input'>
+<span class='co'># Distribution of price differences</span>
+<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='no'>ucla_textbooks_f18_with_diff</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='no'>diff</span>)) +
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_histogram.html'>geom_histogram</a></span>(<span class='kw'>binwidth</span> <span class='kw'>=</span> <span class='fl'>5</span>)</div><div class='output co'>#&gt; <span class='warning'>Warning: Removed 133 rows containing non-finite values (stat_bin).</span></div><div class='img'><img src='ucla_textbooks_f18-2.png' alt='' width='700' height='433' /></div><div class='input'>
+<span class='co'># t-test of price differences</span>
+<span class='fu'><a href='https://rdrr.io/r/stats/t.test.html'>t.test</a></span>(<span class='no'>ucla_textbooks_f18_with_diff</span>$<span class='no'>diff</span>)</div><div class='output co'>#&gt; 
 #&gt; 	One Sample t-test
 #&gt; 
-#&gt; data:  d$price_diff
+#&gt; data:  ucla_textbooks_f18_with_diff$diff
 #&gt; t = 2.2012, df = 67, p-value = 0.03117
 #&gt; alternative hypothesis: true mean is not equal to 0
 #&gt; 95 percent confidence interval:
@@ -245,7 +232,6 @@ explore whether the dynamics have changed in the used market.</p>
 #&gt; mean of x 
 #&gt;  3.583235 
 #&gt; </div><div class='input'>
-
 </div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">

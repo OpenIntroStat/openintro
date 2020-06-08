@@ -139,27 +139,19 @@ National Forest, Pennsylvania.</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
-<span class='no'>model</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/stats/lm.html'>lm</a></span>(<span class='no'>volume</span> ~ <span class='no'>diam</span> + <span class='no'>height</span>, <span class='no'>cherry</span>)
-<span class='fu'><a href='https://rdrr.io/r/base/summary.html'>summary</a></span>(<span class='no'>model</span>)</div><div class='output co'>#&gt; 
-#&gt; Call:
-#&gt; lm(formula = volume ~ diam + height, data = cherry)
-#&gt; 
-#&gt; Residuals:
-#&gt;     Min      1Q  Median      3Q     Max 
-#&gt; -6.4065 -2.6493 -0.2876  2.2003  8.4847 
-#&gt; 
-#&gt; Coefficients:
-#&gt;             Estimate Std. Error t value Pr(&gt;|t|)    
-#&gt; (Intercept) -57.9877     8.6382  -6.713 2.75e-07 ***
-#&gt; diam          4.7082     0.2643  17.816  &lt; 2e-16 ***
-#&gt; height        0.3393     0.1302   2.607   0.0145 *  
-#&gt; ---
-#&gt; Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
-#&gt; 
-#&gt; Residual standard error: 3.882 on 28 degrees of freedom
-#&gt; Multiple R-squared:  0.948,	Adjusted R-squared:  0.9442 
-#&gt; F-statistic:   255 on 2 and 28 DF,  p-value: &lt; 2.2e-16
-#&gt; </div><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/plot.html'>plot</a></span>(<span class='no'>model</span>)</div><div class='img'><img src='cherry-1.png' alt='' width='700' height='433' /></div><div class='img'><img src='cherry-2.png' alt='' width='700' height='433' /></div><div class='img'><img src='cherry-3.png' alt='' width='700' height='433' /></div><div class='img'><img src='cherry-4.png' alt='' width='700' height='433' /></div><div class='input'>
+<span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='no'>ggplot2</span>)
+<span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='no'>broom</span>)
+
+<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='no'>cherry</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='no'>diam</span>, <span class='kw'>y</span> <span class='kw'>=</span> <span class='no'>volume</span>)) +
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_point.html'>geom_point</a></span>() +
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_smooth.html'>geom_smooth</a></span>(<span class='kw'>method</span> <span class='kw'>=</span> <span class='st'>"lm"</span>)</div><div class='output co'>#&gt; <span class='message'>`geom_smooth()` using formula 'y ~ x'</span></div><div class='img'><img src='cherry-1.png' alt='' width='700' height='433' /></div><div class='input'>
+<span class='no'>mod</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/stats/lm.html'>lm</a></span>(<span class='no'>volume</span> ~ <span class='no'>diam</span> + <span class='no'>height</span>, <span class='no'>cherry</span>)
+<span class='fu'><a href='https://rdrr.io/pkg/broom/man/reexports.html'>tidy</a></span>(<span class='no'>mod</span>)</div><div class='output co'>#&gt; # A tibble: 3 x 5
+#&gt;   term        estimate std.error statistic  p.value
+#&gt;   &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;
+#&gt; 1 (Intercept)  -58.0       8.64      -6.71 2.75e- 7
+#&gt; 2 diam           4.71      0.264     17.8  8.22e-17
+#&gt; 3 height         0.339     0.130      2.61 1.45e- 2</div><div class='input'>
 </div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
