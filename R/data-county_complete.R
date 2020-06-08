@@ -36,23 +36,16 @@
 #'   \item{pac_isl_2010}{Percent of population that is Hawaii or Pacific Islander (2010).}
 #'   \item{pac_isl_2017}{Percent of population that is Hawaii or Pacific Islander (2017).}
 #'   \item{other_single_race_2017}{Percent of population that identifies as another single race (2017).}
-#'   \item{two_plus_races_2010}{Percent of population that identifies as two or
-#'   more races (2010).}
-#'   \item{two_plus_races_2017}{Percent of population that identifies as two or
-#'   more races (2017).}
+#'   \item{two_plus_races_2010}{Percent of population that identifies as two or more races (2010).}
+#'   \item{two_plus_races_2017}{Percent of population that identifies as two or more races (2017).}
 #'   \item{hispanic_2010}{Percent of population that is Hispanic (2010).}
 #'   \item{hispanic_2017}{Percent of population that is Hispanic (2017).}
-#'   \item{white_not_hispanic_2010}{Percent of population that is white and not
-#'   Hispanic (2010).}
-#'   \item{white_not_hispanic_2017}{Percent of population that is white and not
-#'   Hispanic (2017).}
-#'   \item{speak_english_only_2017}{Percent of population that speaks English
-#'   only (2017).}
-#'   \item{no_move_in_one_plus_year_2010}{Percent of population that has not
-#'   moved in at least one year (2006-2010).}
+#'   \item{white_not_hispanic_2010}{Percent of population that is white and not Hispanic (2010).}
+#'   \item{white_not_hispanic_2017}{Percent of population that is white and not Hispanic (2017).}
+#'   \item{speak_english_only_2017}{Percent of population that speaks English only (2017).}
+#'   \item{no_move_in_one_plus_year_2010}{Percent of population that has not moved in at least one year (2006-2010).}
 #'   \item{foreign_born_2010}{Percent of population that is foreign-born (2006-2010).}
-#'   \item{foreign_spoken_at_home_2010}{Percent of population that speaks a
-#'   foreign language at home (2006-2010).}
+#'   \item{foreign_spoken_at_home_2010}{Percent of population that speaks a foreign language at home (2006-2010).}
 #'   \item{women_16_to_50_birth_rate_2017}{Birth rate for women ages 16 to 50 (2017).}
 #'   \item{hs_grad_2010}{Percent of population that is a high school graduate (2006-2010).}
 #'   \item{hs_grad_2016}{Percent of population that is a high school graduate (2012-2016).}
@@ -102,9 +95,7 @@
 #'   \item{fed_spending_2009}{Federal spending, in thousands of dollars (2009).}
 #'   \item{area_2010}{Land area in square miles (2010).}
 #'   \item{density_2010}{Persons per square mile (2010).}
-#'   \item{smoking_ban_2010}{Describes whether the type of county-level smoking
-#'   ban in place in 2010, taking one of the values \code{"none"}, \code{"partial"}, or
-#'   \code{"comprehensive"}.}
+#'   \item{smoking_ban_2010}{Describes whether the type of county-level smoking ban in place in 2010, taking one of the values \code{"none"}, \code{"partial"}, or \code{"comprehensive"}.}
 #'   \item{poverty_2010}{Percent of population below poverty level (2006-2010).}
 #'   \item{poverty_2016}{Percent of population below poverty level (2012-2016).}
 #'   \item{poverty_2017}{Percent of population below poverty level (2017).}
@@ -150,11 +141,11 @@
 #'   \item{employed_2016}{Number of civilians employed in 2016.}
 #'   \item{unemployed_2016}{Number of civilians unemployed in 2016.}
 #'   \item{unemployment_rate_2016}{Unemployment rate in 2016.}
-#'   \item{civilian_labor_force_2017}{Civilian labor force in 2017.}
-#'   \item{uninsured}{Percent of poopulation who are uninsured (2017).}
+#'   \item{uninsured_2017}{Percent of poopulation who are uninsured (2017).}
 #'   \item{uninsured_age_under_6_2017}{Percent of poopulation under 6 who are uninsured (2017).}
 #'   \item{uninsured_age_under_19_2017}{Percent of poopulation under 19 who are uninsured (2017).}
 #'   \item{uninsured_age_over_74_2017}{Percent of poopulation under 74 who are uninsured (2017).}
+#'   \item{civilian_labor_force_2017}{Civilian labor force in 2017.}
 #'   \item{employed_2017}{Number of civilians employed in 2017.}
 #'   \item{unemployed_2017}{Number of civilians unemployed in 2017.}
 #'   \item{unemployment_rate_2017}{Unemployment rate in 2017.}
@@ -166,14 +157,13 @@
 #' \itemize{
 #'   \item Download links for spreadsheets were found on
 #'   \url{https://www.ers.usda.gov/data-products/county-level-data-sets/download-data}
-#'   \item Unemployment - Bureau of Labor Statistics - LAUS data - \url{https://www.bls.gov/lau}
-#'   \item Median Household Income - Census Bureau - SAIPE data - \url{https://www.census.gov/did/www/saipe}
+#'   \item Unemployment - Bureau of Labor Statistics - LAUS data - \url{https://www.bls.gov/lau}.
+#'   \item Median Household Income - Census Bureau - SAIPE data - \url{https://www.census.gov/did/www/saipe}.
 #'   \item The original data table was prepared by USDA, Economic Research Service.
 #'   \item Census Bureau.
-#'  \item 2012-16 American Community Survey 5-yr average.
-#'  \item The original data table was prepared by USDA, Economic Research Service.
-#'  \item Tim Parker (tparker at ers.usda.gov) is a contact for much of the
-#'  new data incorporated into this data set. Thank you Tim!
+#'   \item 2012-16 American Community Survey 5-yr average.
+#'   \item The original data table was prepared by USDA, Economic Research Service.
+#'   \item Tim Parker (tparker at ers.usda.gov) is the contact for much of the new data incorporated into this data set.
 #'  }
 #' @keywords datasets
 #' @seealso \code{\link{county}}
