@@ -12,8 +12,8 @@
 #' \describe{
 #'   \item{response}{Response values reported are \code{agree} and \code{other}.}
 #'   }
-#' @source Gallup, Americans Issue Split Decision on Healthcare Ruling, data
-#' collected June 28, 2012.
+#' @source Gallup, Americans Issue Split Decision on Healthcare Ruling,
+#' retrieved 2012-06-28.
 #' @keywords datasets
 #' @examples
 #'

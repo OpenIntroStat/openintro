@@ -16,7 +16,7 @@
 #'   }
 #' @source CIA World Factbook,
 #' \url{https://www.cia.gov/library/publications/the-world-factbook/rankorder/rawdata_2091.txt}.
-#' @keywords datasets, histogram, distribution
+#' @keywords datasets histogram distribution
 #' @examples
 #'
 #' library(ggplot2)

@@ -49,5 +49,5 @@ age of four.
 gifted
 
 }
-\keyword{datasets,}
+\keyword{datasets}
 \keyword{regression}

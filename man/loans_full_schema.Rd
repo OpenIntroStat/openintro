@@ -115,7 +115,7 @@ A data frame with 10,000 observations on the following 55 variables.
 }
 \source{
 This data comes from Lending Club
-(\url{https://www.lendingclub.com/info/download-data.action}), which
+(\url{https://www.lendingclub.com/info/statistics.action}), which
 provides a very large, open set of data on the people who received loans
 through their platform.
 }

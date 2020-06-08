@@ -18,7 +18,7 @@
 #'
 #' \url{https://en.wikipedia.org/wiki/File:US_Unemployment_1890-2009.gif}
 #'
-#' Below is a direct quotation from Wikipedia describing the sources of the
+#' Below is a direct quote from Wikipedia describing the sources of the
 #' data:
 #'
 #' Own work by Peace01234 Complete raw data are on Peace01234. 1930-2009 data

@@ -14,8 +14,7 @@
 #'   \item{hs_gpa}{High school grade point average.}
 #'   \item{fy_gpa}{First year (college) grade point average.}
 #'   }
-#' @references Data retrieved from
-#' \url{https://www.dartmouth.edu/~chance/course/Syllabi/Princeton96/Class12.html}
+#' @references \url{https://www.dartmouth.edu/~chance/course/Syllabi/Princeton96/Class12.html}
 #' @source Educational Testing Service originally collected the data.
 #' @keywords datasets
 #' @examples

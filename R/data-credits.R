@@ -11,7 +11,7 @@
 #'   \item{credits}{Number of credits.}
 #'   }
 #' @source Simulated data.
-#' @keywords datasets, college credits, inference on means
+#' @keywords datasets college credits
 #' @examples
 #'
 #' library(ggplot2)

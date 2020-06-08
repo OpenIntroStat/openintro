@@ -27,7 +27,7 @@
 #'   \item{slg}{Slugging percentage (total_base / at_bat)}
 #'   \item{bat_avg}{Batting average}
 #' }
-#' @source Data was collected from mlb.com on April 22nd, 2011.
+#' @source \url{https://www.mlb.com}, retrieved 2011-04-22.
 #' @keywords datasets
 #' @examples
 #' \dontrun{

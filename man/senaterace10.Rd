@@ -34,7 +34,7 @@ A data frame with 38 observations on the following 23 variables.
   }
 }
 \source{
-Data was collected from MSNBC.com on November 9th, 2010.
+MSNBC.com, retrieved 2010-11-09.
 }
 \usage{
 senaterace10

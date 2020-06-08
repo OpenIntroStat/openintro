@@ -37,7 +37,7 @@ one candidate)}
   }
 }
 \source{
-Data was collected from MSNBC.com on November 9th, 2010.
+MSNBC.com, retrieved 2010-11-09.
 }
 \usage{
 houserace10

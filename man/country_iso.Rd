@@ -14,8 +14,7 @@ A data frame with 249 observations on the following 4 variables.
 }
 }
 \source{
-Retrieved from Wikipedia on 2018-11-18.
-
+Wikipedia, retrieved 2018-11-18.
 \url{https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2}
 }
 \usage{

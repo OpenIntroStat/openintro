@@ -10,7 +10,7 @@
 #'   \item{song_length}{Length of song (in minutes).}
 #'   }
 #' @source Simulated data.
-#' @keywords datasets, iPod, inference on means
+#' @keywords datasets music
 #' @examples
 #'
 #' library(ggplot2)

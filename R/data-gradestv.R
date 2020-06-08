@@ -16,7 +16,7 @@
 #'   \item{grades}{Grades students got in a statistics class (out of 100).}
 #'   }
 #' @source Simulated data
-#' @keywords datasets, correlation, regression
+#' @keywords datasets correlation regression
 #' @examples
 #'
 #' library(ggplot2)

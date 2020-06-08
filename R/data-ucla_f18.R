@@ -2,8 +2,6 @@
 #'
 #' List of all courses at UCLA during Fall 2018.
 #'
-#' Data was retrieved November 22nd, 2018.
-#'
 #' @name ucla_f18
 #' @docType data
 #' @format A data frame with 3950 observations on the following 14 variables.
@@ -23,7 +21,7 @@
 #'   \item{laboratory}{Boolean for if this is a lab}
 #'   \item{special_topic}{Boolean for if this is any of the special types of courses listed}
 #' }
-#' @source \url{https://sa.ucla.edu/ro/public/soc}
+#' @source \url{https://sa.ucla.edu/ro/public/soc}, retrieved 2018-11-22.
 #' @keywords datasets
 #' @examples
 #'

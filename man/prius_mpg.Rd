@@ -17,7 +17,7 @@ A data frame with 19 observations on the following 10 variables.
 \source{
 Fueleconomy.gov,
 \url{https://www.fueleconomy.gov/mpg/MPG.do?action=mpgData&vehicleID=38531&browser=true&details=on},
-retrieved on April 14, 2019.
+retrieved 2019-04-14.
 }
 \usage{
 prius_mpg

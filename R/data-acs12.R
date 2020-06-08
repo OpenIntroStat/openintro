@@ -22,7 +22,7 @@
 #'   \item{birth_qrtr}{The quarter of the year that the person was born,
 #'   e.g. `Jan thru Mar`.}
 #'   }
-#' @source \url{http://www.census.gov/acs}
+#' @source \url{https://www.census.gov/programs-surveys/acs}
 #' @keywords datasets
 #' @examples
 #'

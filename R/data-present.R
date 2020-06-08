@@ -12,7 +12,7 @@
 #'   \item{boys}{Number of boys born.}
 #'   \item{girls}{Number of girls born.}
 #'   }
-#' @source \url{https://www.ncbi.nlm.nih.gov/pubmed/15974501}
+#' @source \url{https://pubmed.ncbi.nlm.nih.gov/15974501}
 #' @keywords datasets
 #' @examples
 #'

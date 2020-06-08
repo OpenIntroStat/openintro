@@ -29,7 +29,7 @@ A data frame with 1199 observations on the following 19 variables.
 }
 }
 \source{
-Data was collected from mlb.com on April 22nd, 2011.
+\url{https://www.mlb.com}, retrieved 2011-04-22.
 }
 \usage{
 mlbbat10

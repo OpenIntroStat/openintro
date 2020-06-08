@@ -15,7 +15,7 @@
 #'   \item{protein}{a numeric vector}
 #'   \item{type}{a factor with levels \code{bakery}, \code{bistro box}, \code{hot breakfast}, \code{parfait}, \code{petite}, \code{salad}, and \code{sandwich}}
 #'   }
-#' @source \url{https://www.starbucks.com/menu}, Downloaded March 10, 2011
+#' @source \url{https://www.starbucks.com/menu}, retrieved 2011-03-10.
 #' @keywords datasets
 #' @examples
 #'

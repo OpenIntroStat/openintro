@@ -11,7 +11,7 @@
 #' \describe{
 #'   \item{spending}{Amount of spending, in US dollars.}
 #'   }
-#' @keywords datasets, histogram, distribution
+#' @keywords datasets histogram distribution
 #' @examples
 #'
 #' library(ggplot2)

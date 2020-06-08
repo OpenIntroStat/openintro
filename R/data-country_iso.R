@@ -12,8 +12,7 @@
 #'   \item{year}{Year the two-letter ISO country code was assigned.}
 #'   \item{top_level_domain}{ op-level domain name.}
 #' }
-#' @source Retrieved from Wikipedia on 2018-11-18.
-#'
+#' @source Wikipedia, retrieved 2018-11-18.
 #' \url{https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2}
 #' @keywords datasets
 #' @examples

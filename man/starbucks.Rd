@@ -17,7 +17,7 @@ A data frame with 77 observations on the following 7 variables.
   }
 }
 \source{
-\url{https://www.starbucks.com/menu}, Downloaded March 10, 2011
+\url{https://www.starbucks.com/menu}, retrieved 2011-03-10.
 }
 \usage{
 starbucks

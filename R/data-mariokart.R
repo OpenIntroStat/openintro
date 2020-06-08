@@ -1,7 +1,7 @@
 #' Wii Mario Kart auctions from Ebay
 #'
 #' Auction data from Ebay for the game Mario Kart for the Nintendo Wii. This
-#' data was collected in early October, 2009.
+#' data was collected in early October 2009.
 #'
 #' There are several interesting features in the data. First off, note that
 #' there are two outliers in the data. These serve as a nice example of what
@@ -10,7 +10,7 @@
 #' from the auction titles that they included other items in their auctions
 #' besides the game, which justifies removing them from the data set.
 #'
-#' This data set includes all auctions for a full week in October, 2009.
+#' This data set includes all auctions for a full week in October 2009.
 #' Auctions were included in the data set if they satisfied a number of
 #' conditions. (1) They were included in a search for "wii mario kart" on
 #' ebay.com, (2) items were in the Video Games > Games > Nintendo Wii section
@@ -48,7 +48,7 @@
 #'   character on screen to turn.}
 #'   \item{title}{The title of the auctions.}
 #' }
-#' @source \url{https://www.ebay.com}
+#' @source Ebay.
 #' @keywords datasets
 #' @examples
 #'

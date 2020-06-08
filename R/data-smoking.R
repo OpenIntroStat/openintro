@@ -38,7 +38,7 @@
 #'   }
 #' @source National STEM Centre, Large Datasets from stats4schools,
 #' \url{https://www.stem.org.uk/resources/elibrary/resource/28452/large-datasets-stats4schools}.
-#' @keywords datasets, smoking
+#' @keywords datasets smoking
 #' @examples
 #'
 #' library(ggplot2)

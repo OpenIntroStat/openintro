@@ -13,7 +13,7 @@ A data frame with 63 observations on the following 3 variables.
   }
 }
 \source{
-\url{https://www.ncbi.nlm.nih.gov/pubmed/15974501}
+\url{https://pubmed.ncbi.nlm.nih.gov/15974501}
 }
 \usage{
 present

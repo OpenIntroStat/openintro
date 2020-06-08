@@ -11,7 +11,7 @@
 #'   \item{life_span}{Lifespan of ball bearings (in hours).}
 #'   }
 #' @source Simulated data.
-#' @keywords datasets, ball bearings, inference on means
+#' @keywords datasets
 #' @examples
 #'
 #' library(ggplot2)

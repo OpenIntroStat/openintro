@@ -24,8 +24,8 @@ A data frame with 19615 rows and 14 variables:
 }
 }
 \source{
-Retrieved from \url{https://www.faa.gov/airports/airport_safety/airportdata_5010}
-on 2018-08-13.
+\url{https://www.faa.gov/airports/airport_safety/airportdata_5010},
+retrieved 2018-08-13.
 }
 \usage{
 usairports

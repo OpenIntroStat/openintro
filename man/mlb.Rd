@@ -14,10 +14,8 @@ A data frame with 828 observations on the following 4 variables.
   }
 }
 \source{
-Collected from the following page (and its linked pages) on February
-23rd, 2011:
-
-\url{http://content.usatoday.com/sportsdata/baseball/mlb/salaries/team}
+\url{http://content.usatoday.com/sportsdata/baseball/mlb/salaries/team},
+retrieved 2011-02-23.
 }
 \usage{
 mlb

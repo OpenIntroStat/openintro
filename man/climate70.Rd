@@ -17,8 +17,7 @@ A data frame with 197 observations on the following 7 variables.
   }
 }
 \source{
-Retrieved on 2019-04-24.
-\url{https://www.ncdc.noaa.gov/cdo-web/datasets}
+\url{https://www.ncdc.noaa.gov/cdo-web/datasets}, retrieved 2019-04-24.
 }
 \usage{
 climate70

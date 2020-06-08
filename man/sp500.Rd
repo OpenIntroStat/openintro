@@ -27,7 +27,7 @@ amortization, in millions of dollars.}
 }
 }
 \source{
-Yahoo! Finance, \url{https://finance.yahoo.com}, collected March 8, 2012.
+Yahoo! Finance, retrieved 2012-03-08.
 }
 \usage{
 sp500

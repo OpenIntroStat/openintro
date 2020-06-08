@@ -122,7 +122,7 @@
 #'   \item{paid_late_fees}{Late fees paid by the applicant.}
 #' }
 #' @source This data comes from Lending Club
-#' (\url{https://www.lendingclub.com/info/download-data.action}), which
+#' (\url{https://www.lendingclub.com/info/statistics.action}), which
 #' provides a very large, open set of data on the people who received loans
 #' through their platform.
 #' @keywords datasets

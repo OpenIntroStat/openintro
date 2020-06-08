@@ -17,7 +17,7 @@ A data frame with 98 observations on the following 7 variables.
   }
 }
 \source{
-\url{https://finance.yahoo.com}
+Yahoo! Finance.
 }
 \usage{
 xom

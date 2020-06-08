@@ -36,22 +36,12 @@ not a factor.}
 }
 }
 \source{
-Please note that we have not validated the Infochimps data. The
-other data were collected directly from the corresponding websites.
-
-Some of the data were collected from Census Quick Facts (no longer available
-as of 2020) and its accompanying pages. Smoking ban data were from a variety
-of sources.
-
-Other variables were taken from a service called InfoChimps (also no longer
-available as of 2020).
-
-National Highway Traffic Safety Administration
-(\href{https://cdan.dot.gov/query}{\code{tr_deaths},
-\code{tr_deaths_no_alc}}), \url{http://www-fars.nhtsa.dot.gov}
-
-Bureau of Labor Statistics (\code{unempl}),
-\url{https://www.bls.gov/web/laus/laumstrk.htm}
+Census Quick Facts (no longer available as of 2020),
+InfoChimps (also no longer available as of 2020),
+\href{https://www-fars.nhtsa.dot.gov/Main/index.aspx}{National Highway Traffic Safety Administration},
+({\code{tr_deaths}, \code{tr_deaths_no_alc}}),
+\href{https://www.bls.gov/web/laus/laumstrk.htm}{Bureau of Labor Statistics}
+(\code{unempl}).
 }
 \usage{
 state_stats

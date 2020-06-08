@@ -12,10 +12,8 @@
 #'   \item{position}{Field position}
 #'   \item{salary}{Salary (in $1000s)}
 #'   }
-#' @source Collected from the following page (and its linked pages) on February
-#' 23rd, 2011:
-#'
-#' \url{http://content.usatoday.com/sportsdata/baseball/mlb/salaries/team}
+#' @source \url{http://content.usatoday.com/sportsdata/baseball/mlb/salaries/team},
+#' retrieved 2011-02-23.
 #' @keywords datasets
 #' @examples
 #'

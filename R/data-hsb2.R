@@ -18,8 +18,7 @@
 #' \item{read}{Standardized reading score.} \item{write}{Standardized writing
 #' score.} \item{math}{Standardized math score.} \item{science}{Standardized
 #' science score.} \item{socst}{Standardized social studies score.} }
-#' @source UCLA Academic Technology Services,
-#' \url{https://stats.idre.ucla.edu/stat/data/hsb2.xls}.
+#' @source UCLA Institute for Digital Research & Education - Statistical Consulting.
 #' @keywords datasets
 #' @examples
 #'

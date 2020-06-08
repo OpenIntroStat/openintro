@@ -29,8 +29,5 @@ ggplot(credits, aes(x = credits)) +
 
 }
 \keyword{college}
-\keyword{credits,}
-\keyword{datasets,}
-\keyword{inference}
-\keyword{means}
-\keyword{on}
+\keyword{credits}
+\keyword{datasets}

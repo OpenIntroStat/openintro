@@ -24,16 +24,13 @@ A data frame with 3950 observations on the following 14 variables.
 }
 }
 \source{
-\url{https://sa.ucla.edu/ro/public/soc}
+\url{https://sa.ucla.edu/ro/public/soc}, retrieved 2018-11-22.
 }
 \usage{
 ucla_f18
 }
 \description{
 List of all courses at UCLA during Fall 2018.
-}
-\details{
-Data was retrieved November 22nd, 2018.
 }
 \examples{
 

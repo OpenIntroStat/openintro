@@ -23,8 +23,7 @@
 #'   \item{time_until_next}{Time until this gondola car arrived since the last
 #'   car had left.}
 #'   }
-#' @source In-person data collection by David Diez (OpenIntro) on July 4th,
-#' 2013.
+#' @source In-person data collection by David Diez (OpenIntro) on 2013-07-04.
 #' @keywords datasets
 #' @examples
 #'

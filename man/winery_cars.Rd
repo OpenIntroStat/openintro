@@ -14,8 +14,7 @@ A data frame with 52 observations on the following 2 variables.
   }
 }
 \source{
-In-person data collection by David Diez (OpenIntro) on July 4th,
-2013.
+In-person data collection by David Diez (OpenIntro) on 2013-07-04.
 }
 \usage{
 winery_cars

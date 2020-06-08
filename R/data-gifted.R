@@ -34,7 +34,7 @@
 #' }
 #' @source Graybill, F.A. & Iyer, H.K., (1994) Regression Analysis: Concepts
 #' and Applications, Duxbury, p. 511-6.
-#' @keywords datasets, regression
+#' @keywords datasets regression
 #' @examples
 #'
 #' gifted

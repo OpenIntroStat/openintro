@@ -11,8 +11,8 @@ A data frame with 1012 observations on the following variable.
   }
 }
 \source{
-Gallup, Americans Issue Split Decision on Healthcare Ruling, data
-collected June 28, 2012.
+Gallup, Americans Issue Split Decision on Healthcare Ruling,
+retrieved 2012-06-28.
 }
 \usage{
 scotus_healthcare

@@ -24,7 +24,7 @@ A data frame with 2000 observations on the following 13 variables.
   }
 }
 \source{
-\url{http://www.census.gov/acs}
+\url{https://www.census.gov/programs-surveys/acs}
 }
 \usage{
 acs12

@@ -18,8 +18,8 @@ and lower index scores correspond to lower prices}
 }
 \source{
 The data was described in the Guardian Data Blog:
-\url{https://www.theguardian.com/news/datablog/interactive/2011/oct/27/debt-money-expert-facts}
-Article was posted on 2011-10-27 and data retrieved on 2011-11-01.
+\url{https://www.theguardian.com/news/datablog/interactive/2011/oct/27/debt-money-expert-facts},
+retrieved 2011-11-01.
 }
 \usage{
 ukdemo

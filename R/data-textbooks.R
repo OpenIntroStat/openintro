@@ -19,11 +19,10 @@
 #'   \item{isbn}{Book ISBN.}
 #'   \item{ucla_new}{New price at the UCLA Bookstore.}
 #'   \item{amaz_new}{New price on Amazon.com.}
-#'   \item{more}{Whether additional books were required for the course (\code{Y}
-#'   means "yes, additional books were required").}
+#'   \item{more}{Whether additional books were required for the course (\code{Y} means "yes, additional books were required").}
 #'   \item{diff}{The UCLA Bookstore price minus the Amazon.com price for each book.}
 #'   }
-#' @source This data was collected by David M Diez on April 24th.
+#' @source Collected by David Diez.
 #' @keywords datasets
 #' @examples
 #'

@@ -17,10 +17,8 @@ A data frame with 51 observations on the following 7 variables.
   }
 }
 \source{
-Presidential Election of 2008, Electoral and Popular Vote Summary,
-collected on April 21, 2011 from
-
-\url{http://www.infoplease.com/us/government/presidential-election-vote-summary.html}
+\href{https://www.infoplease.com/us/government/elections/presidential-election-of-2008-electoral-and-popular-vote-summary}{Presidential Election of 2008, Electoral and Popular Vote Summary},
+retrieved 2011-04-21.
 }
 \usage{
 prrace08

@@ -5,27 +5,20 @@
 \alias{military}
 \title{US Military Demographics}
 \format{
-A data frame with 1414593 observations on the following 6 variables.
+A data frame with 1,414,593 observations on the following 6 variables.
 \describe{
-\item{grade}{The status of the service member as \code{enlisted} \code{officer}
-or \code{warrant officer}.}
-\item{branch}{The branch of the armed forces: \code{air force}, \code{army},
-\code{marine corps}, \code{navy}.}
-\item{gender}{Whether the service member is \code{female} or \code{male}.}
-\item{race}{The race identified by the service member:
-\code{ami/aln} (american indian/alaskan native), \code{asian}, \code{black},
-\code{multi} (multi-ethinic), \code{p/i} (pacific islander), \code{unk}
-(unknown), or \code{white}.}
-\item{hisp}{Whether a service member identifies with being hispanic (\code{TRUE})
-or not (\code{FALSE}).}
-\item{rank}{The numeric rank of the service member (higher number indicates
-higher rank).}
+  \item{grade}{The status of the service member as \code{enlisted} \code{officer} or \code{warrant officer}.}
+  \item{branch}{The branch of the armed forces: \code{air force}, \code{army}, \code{marine corps}, \code{navy}.}
+  \item{gender}{Whether the service member is \code{female} or \code{male}.}
+  \item{race}{The race identified by the service member: \code{ami/aln} (american indian/alaskan native), \code{asian}, \code{black}, \code{multi} (multi-ethinic), \code{p/i} (pacific islander), \code{unk} (unknown), or \code{white}.}
+  \item{hisp}{Whether a service member identifies with being hispanic (\code{TRUE}) or not (\code{FALSE}).}
+  \item{rank}{The numeric rank of the service member (higher number indicates higher rank).}
 }
 }
 \source{
 Data provided by the Department of Defense and made available at
-\url{https://catalog.data.gov/dataset/personnel-trends-by-gender-race}.
-Retrieval date: Feb 20, 2012.
+\url{https://catalog.data.gov/dataset/personnel-trends-by-gender-race},
+retrieved 2012-02-20.
 }
 \usage{
 military
@@ -41,13 +34,14 @@ the original data set but has not been included here.
 }
 \examples{
 
+\dontrun{
 library(dplyr)
 library(ggplot2)
 library(forcats)
 
 # Proportion of females in military branches
 military \%>\%
-  ggplot(aes(x = factor(branch), fill = fct_rev(gender))) +
+  ggplot(aes(x = branch, fill = gender)) +
   geom_bar(position = "fill") +
   labs(
     x = "Branch", y = "Proportion", fill = "Gender",
@@ -66,6 +60,7 @@ military \%>\%
     x = "Rank", y = "Proportion", fill = "Gender",
     title = "Proportion of army officer females across ranks"
   )
+}
 
 }
 \keyword{datasets}

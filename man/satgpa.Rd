@@ -55,7 +55,6 @@ tidy(mod)
 
 }
 \references{
-Data retrieved from
 \url{https://www.dartmouth.edu/~chance/course/Syllabi/Princeton96/Class12.html}
 }
 \keyword{datasets}

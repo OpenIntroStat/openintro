@@ -31,9 +31,4 @@ ggplot(ball_bearing, aes(x = life_span)) +
 qqnorm(ball_bearing$life_span)
 
 }
-\keyword{ball}
-\keyword{bearings,}
-\keyword{datasets,}
-\keyword{inference}
-\keyword{means}
-\keyword{on}
+\keyword{datasets}

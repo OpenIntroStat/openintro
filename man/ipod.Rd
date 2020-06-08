@@ -27,8 +27,5 @@ ggplot(ipod, aes(x = song_length)) +
   geom_histogram(binwidth = 0.5)
 
 }
-\keyword{datasets,}
-\keyword{iPod,}
-\keyword{inference}
-\keyword{means}
-\keyword{on}
+\keyword{datasets}
+\keyword{music}

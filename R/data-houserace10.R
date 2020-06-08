@@ -38,7 +38,7 @@
 #'   \item{party5}{Party of candidate with fifth most votes}
 #'   \item{votes5}{Number of votes for candidate who came in fifth}
 #'   }
-#' @source Data was collected from MSNBC.com on November 9th, 2010.
+#' @source MSNBC.com, retrieved 2010-11-09.
 #' @keywords datasets
 #' @examples
 #'
