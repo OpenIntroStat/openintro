@@ -26,6 +26,7 @@ Suggests:
     dplyr,
     forcats,
     lubridate,
+    maps,
     testthat,
     tidyr
 Imports: 

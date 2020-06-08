@@ -71,6 +71,7 @@ website and from various other sources.
 
 library(ggplot2)
 library(dplyr)
+library(maps)
 
 states_selected <- state_stats \%>\%
   mutate(region = tolower(state)) \%>\%
