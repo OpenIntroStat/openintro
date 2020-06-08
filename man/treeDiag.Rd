@@ -61,10 +61,6 @@ alternative text or solutions}
 
 \item{showWork}{Whether work should be shown for the solutions}
 }
-\value{
-No value is given. % A sample plot is given below: % %
-\figure{treeDiag01.png}{Tree Diagram Example Figure}
-}
 \description{
 Construct beautiful tree diagrams
 }

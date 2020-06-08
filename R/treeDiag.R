@@ -26,8 +26,6 @@
 #' @param cex.main Size of \code{main} in the plot
 #' @param col.main Color of \code{main} in the plot
 #' @param showWork Whether work should be shown for the solutions
-#' @return No value is given. % A sample plot is given below: % %
-#' \figure{treeDiag01.png}{Tree Diagram Example Figure}
 #' @author David M Diez, Christopher D Barr
 #' @keywords Tree diagram Conditional probability Bayes Theorem
 #' @export
