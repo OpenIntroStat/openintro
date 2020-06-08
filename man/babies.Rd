@@ -18,7 +18,8 @@ A data frame with 1236 rows and 8 variables:
   }
 }
 \source{
-These data come from Child Health and Development Studies
+These data come from Child Health and Development Studies.
+Also see the Gestation dataset from the mosaicData package.
 }
 \usage{
 babies
@@ -33,8 +34,5 @@ mother's age in years (\code{age}), mother's height in inches
 (\code{height}), whether the child was the first born (\code{parity}),
 mother's pregnancy weight in pounds (\code{weight}), and whether the mother
 was a smoker (\code{smoke}).
-}
-\seealso{
-\code{\link[mosaicData]{Gestation}}
 }
 \keyword{datasets}

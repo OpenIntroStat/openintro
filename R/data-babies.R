@@ -24,7 +24,7 @@
 #'   \item{weight}{mother's weight in pounds}
 #'   \item{smoke}{binary indicator for whether the mother smokes}
 #'   }
-#' @seealso \code{\link[mosaicData]{Gestation}}
-#' @source These data come from Child Health and Development Studies
+#' @source These data come from Child Health and Development Studies.
+#' Also see the Gestation dataset from the mosaicData package.
 #' @keywords datasets
 "babies"
