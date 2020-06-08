@@ -1,10 +1,10 @@
 #' High School and Beyond survey
-#' 
+#'
 #' Two hundred observations were randomly sampled from the High School and
 #' Beyond survey, a survey conducted on high school seniors by the National
 #' Center of Education Statistics.
-#' 
-#' 
+#'
+#'
 #' @name hsb2
 #' @docType data
 #' @format A data frame with 200 observations and 11 variables. \describe{
@@ -22,10 +22,15 @@
 #' \url{http://www.ats.ucla.edu/stat/data/hsb2.csv}.
 #' @keywords datasets
 #' @examples
-#' 
-#' 
-#' boxPlot(hsb2$read - hsb2$write, fact =  hsb2$gender,
-#'         ylab = "diff. bet. reading and writing scores")
-#' 
-#' 
+#'
+#' library(ggplot2)
+#'
+#' ggplot(hsb2, aes(x = read - write, y = ses)) +
+#'   geom_boxplot() +
+#'   labs(
+#'     x = "Difference between reading and writing scores",
+#'     y = "Socio-economic status"
+#'     )
+#'
+#'
 "hsb2"

@@ -20,7 +20,14 @@ Population, percent in poverty, percent unemployment, and murder rate.
 }
 \examples{
 
-plot(murders$perc_pov, murders$annual_murders_per_mil)
+library(ggplot2)
+
+ggplot(murders, aes(x = perc_pov, y = annual_murders_per_mil)) +
+  geom_point() +
+  labs(
+    x = "Percent in poverty",
+    y = "Number of murders per year per million people"
+    )
 
 }
 \keyword{datasets}

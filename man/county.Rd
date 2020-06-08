@@ -42,9 +42,10 @@ Data for 3142 counties in the United States. See the
 }
 \examples{
 
-data(county)
-dim(county)
-head(county)
+library(ggplot2)
+
+ggplot(county, aes(x = median_edu, y = median_hh_income)) +
+  geom_boxplot()
 
 }
 \seealso{

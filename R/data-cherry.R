@@ -17,8 +17,14 @@
 #' @keywords datasets
 #' @examples
 #'
-#' model <- lm(volume ~ diam + height, cherry)
-#' summary(model)
-#' plot(model)
+#' library(ggplot2)
+#' library(broom)
+#'
+#' ggplot(cherry, aes(x = diam, y = volume)) +
+#'   geom_point() +
+#'   geom_smooth(method = "lm")
+#'
+#' mod <- lm(volume ~ diam + height, cherry)
+#' tidy(mod)
 #'
 "cherry"

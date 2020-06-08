@@ -67,22 +67,27 @@
 #' @keywords datasets
 #' @examples
 #'
-#' d <- ucla_textbooks_f18
-#' plot(d$bookstore_new, d$amazon_new, log = "")
-#' a <- c(0.01, 10000)
-#' lines(a, a)
+#' library(ggplot2)
+#'
+#' ggplot(ucla_textbooks_f18, aes(x = bookstore_new, y = amazon_new)) +
+#'   geom_point() +
+#'   geom_abline(slope = 1, intercept = 0, color = "orange") +
+#'   labs(x = "UCLA Bookstore price", y = "Amazon price",
+#'        title = "Amazon vs. UCLA Bookstore prices of new textbooks",
+#'        subtitle = "Orange line represents y = x")
 #'
 #' # The following outliers were double checked for accuracy.
-#' d$price_diff <- d$bookstore_new - d$amazon_new
-#' these <- abs(d$price_diff) > 20
-#' these <- these &
-#'     !is.na(abs(d$price_diff) > 20)
-#' d[these, ]
+#' ucla_textbooks_f18 <- ucla_textbooks_f18 %>%
+#'   mutate(diff = bookstore_new - amazon_new)
 #'
-#' table(is.na(d$price_diff))
-#' hist(d$price_diff)
-#' qqnorm(d$price_diff)
-#' t.test(d$price_diff)
+#' ucla_textbooks_f18 %>%
+#'   filter(diff > 20 | diff < -20)
 #'
+#' # Distribution of price differences
+#' ggplot(ucla_textbooks_f18, aes(x = diff)) +
+#'   geom_histogram(binwidth = 5)
+#'
+#' # t-test of price differences
+#' t.test(ucla_textbooks_f18$diff)
 #'
 "ucla_textbooks_f18"

@@ -26,9 +26,10 @@ data on a random sample of 170 married couples in Britain, recording the age
 }
 \examples{
 
+library(ggplot2)
 
-plot(husbands_wives$ht_husband, husbands_wives$ht_wife)
-
+ggplot(husbands_wives, aes(x = ht_husband, y = ht_wife)) +
+  geom_point()
 
 }
 \keyword{datasets}

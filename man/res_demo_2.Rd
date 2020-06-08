@@ -8,15 +8,15 @@
 A data frame with 300 observations on the following 3 variables.
 \describe{
   \item{x}{a numeric vector}
-  \item{yFan}{a numeric vector}
-  \item{yLog}{a numeric vector}
+  \item{y_fan}{a numeric vector}
+  \item{y_log}{a numeric vector}
   }
 }
 \usage{
 res_demo_2
 }
 \description{
-Simulated data for regression.
+Simulated data for regression
 }
 \examples{
 

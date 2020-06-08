@@ -19,9 +19,10 @@ academic major.
 }
 \examples{
 
+library(ggplot2)
 
-plot(major_survey$major, major_survey$gpa)
-
+ggplot(major_survey, aes(x = major, y = gpa)) +
+  geom_boxplot()
 
 }
 \keyword{datasets}

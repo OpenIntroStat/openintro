@@ -28,8 +28,10 @@ An older version of this data is at \code{\link{unemploy_pres}}.
 }
 \examples{
 
-data(midterms_house)
-plot(midterms_house$unemp, midterms_house$change)
+library(ggplot2)
+
+ggplot(midterms_house, aes(x = unemp, y = house_change)) +
+  geom_point()
 
 }
 \keyword{datasets}

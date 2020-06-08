@@ -14,9 +14,9 @@ A data frame with 35 observations on the following 23 variables.
   \item{e4grp}{APOE-4 status, taking a value of \code{E4} or \code{Non-E4}.}
   \item{age}{Age, in years.}
   \item{mmse}{Score from the Mini-Mental State Examination, which is a global
-  cognitition evaluation.}
-  \item{ham_d}{Score on the Hamilton Rating Scale for depression.}
+  cognition evaluation.}
   \item{ham_a}{Score on the Hamilton Rating Scale for anxiety.}
+  \item{ham_d}{Score on the Hamilton Rating Scale for depression.}
   \item{dig_sym}{We (the authors of this R package) are unsure as to the meaning
   of this variable.}
   \item{delay_vp}{We (the authors of this R package) are unsure as to the meaning
@@ -28,7 +28,7 @@ A data frame with 35 observations on the following 23 variables.
   \item{met_minwk}{Metabolic equivalent units score (activity level). A score of
   \code{0} means \dQuote{no activity} while \code{3000} is considered
   \dQuote{high activity}.}
-  \item{ipaq_grp}{ Classification of \code{METminwk} into \code{Low} or
+  \item{ipa_qgrp}{ Classification of \code{METminwk} into \code{Low} or
   \code{High}.}
   \item{aca1}{Thickness of the CA1 subregion of the MTL.}
   \item{aca23dg}{Thickness of the CA23DG subregion of the MTL.}

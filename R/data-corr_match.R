@@ -22,7 +22,11 @@
 #' @keywords datasets
 #' @examples
 #'
-#' plot(corr_match$x, corr_match$y1)
+#' library(ggplot2)
+#'
+#' ggplot(corr_match, aes(x = x, y = y1)) +
+#'   geom_point()
+#'
 #' cor(corr_match$x, corr_match$y1)
 #'
 "corr_match"

@@ -10,7 +10,7 @@
 #' @format A data frame with 51 observations on the following 7 variables.
 #' \describe{
 #'   \item{state}{State name abbreviation}
-#'   \item{stateFull}{Full state name}
+#'   \item{state_full}{Full state name}
 #'   \item{n_obama}{Number of votes for Barack Obama}
 #'   \item{p_obama}{Proportion of votes for Barack Obama}
 #'   \item{n_mc_cain}{Number of votes for John McCain}

@@ -19,9 +19,14 @@
 #' @keywords datasets
 #' @examples
 #'
-#' plot(elmhurst$family_income, elmhurst$gift_aid)
-#' m <- lm(gift_aid ~ family_income, data = elmhurst)
-#' abline(m)
-#' summary(m)
+#' library(ggplot2)
+#' library(broom)
+#'
+#' ggplot(elmhurst, aes(x = family_income, y = gift_aid)) +
+#'   geom_point() +
+#'   geom_smooth(method = "lm")
+#'
+#' mod <- lm(gift_aid ~ family_income, data = elmhurst)
+#' tidy(mod)
 #'
 "elmhurst"

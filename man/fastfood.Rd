@@ -8,6 +8,7 @@
 A data frame with 515 observations on the following 17 variables.
 \describe{
   \item{restaurant}{Name of restaurant}
+  \item{item}{Name of item}
   \item{calories}{Number of calories}
   \item{cal_fat}{Calories from fat}
   \item{total_fat}{Total fat}

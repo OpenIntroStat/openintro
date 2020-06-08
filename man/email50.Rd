@@ -35,9 +35,6 @@ A data frame with 50 observations on the following 21 variables.
   \item{exclaim_subj}{Whether there was an exclamation point in the subject.}
   \item{urgent_subj}{Whether the word \dQuote{urgent} was in the email subject.}
   \item{exclaim_mess}{The number of exclamation points in the email message.}
-  \item{\code{period_mess}}{The number of periods in the message.}
-  \item{\code{signoff}}{Whether a sign-off of \dQuote{Cheers},
-  \dQuote{Regards}, or \dQuote{Best} (also, \dQuote{Best Regards}) was used.}
   \item{number}{Factor variable saying whether there was no number, a small
   number (under 1 million), or a big number.}
   }

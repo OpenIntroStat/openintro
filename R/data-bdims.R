@@ -12,13 +12,13 @@
 #' @docType data
 #' @format A data frame with 507 observations on the following 25 variables.
 #' \describe{
-#'   \item{bia.di}{A numerical vector, respondent's biacromial diameter in
+#'   \item{bia_di}{A numerical vector, respondent's biacromial diameter in
 #'   centimeters.}
-#'   \item{bii.di}{A numerical vector, respondent's biiliac diameter
+#'   \item{bii_di}{A numerical vector, respondent's biiliac diameter
 #'   (pelvic breadth) in centimeters.}
-#'   \item{bit.di}{A numerical vector, respondent's bitrochanteric diameter
+#'   \item{bit_di}{A numerical vector, respondent's bitrochanteric diameter
 #'   in centimeters.}
-#'   \item{che.de}{A numerical vector, respondent's chest depth in centimeters,
+#'   \item{che_de}{A numerical vector, respondent's chest depth in centimeters,
 #'   measured between spine and sternum at nipple level, mid-expiration.}
 #'   \item{che_di}{A numerical vector, respondent's chest diameter in
 #'   centimeters, measured at nipple level, mid-expiration.}

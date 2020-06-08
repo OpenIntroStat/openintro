@@ -1,6 +1,6 @@
 # Load previous version of openintro package containing previous version
 # of evals data frame. I took the last commit on 2019/8/6:
-# remotes::install_github("https://github.com/OpenIntroStat/openintro-r-package@1fff227404f0650996edcf295e92edcf8ae2aa16", force = TRUE)
+# remotes::install_github("https://github.com/OpenIntroStat/openintro@1fff227404f0650996edcf295e92edcf8ae2aa16", force = TRUE)
 library(openintro)
 library(tidyverse)
 library(usethis)
@@ -27,4 +27,3 @@ evals <- evals_orig %>%
 
 # Add to package
 use_data(evals, overwrite = TRUE)
-

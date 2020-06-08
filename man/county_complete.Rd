@@ -9,10 +9,10 @@ A data frame with 3143 observations on the following 111 variables.
 \describe{
   \item{state}{State.}
   \item{name}{County name.}
-  \item{FIPS}{FIPS code.}
+  \item{fips}{FIPS code.}
   \item{pop2000}{2000 population.}
   \item{pop2010}{2010 population.}
-  \item{pop2011}{2011 population.}
+  \item{pop2011}{2011 population.}names
   \item{pop2012}{2012 population.}
   \item{pop2013}{2013 population.}
   \item{pop2014}{2014 population.}
@@ -20,41 +20,68 @@ A data frame with 3143 observations on the following 111 variables.
   \item{pop2016}{2016 population.}
   \item{pop2017}{2017 population.}
   \item{age_under_5_2010}{Percent of population under 5 (2010).}
+  \item{age_under_5_2017}{Percent of population under 5 (2017).}
   \item{age_under_18_2010}{Percent of population under 18 (2010).}
   \item{age_over_65_2010}{Percent of population over 65 (2010).}
+  \item{age_over_65_2017}{Percent of population over 65 (2017).}
+  \item{median_age_2017}{Median age (2017).}
   \item{female_2010}{Percent of population that is female (2010).}
   \item{white_2010}{Percent of population that is white (2010).}
   \item{black_2010}{Percent of population that is black (2010).}
+  \item{black_2017}{Percent of population that is black (2017).}
   \item{native_2010}{Percent of population that is a Native American (2010).}
+  \item{native_2017}{Percent of population that is a Native American (2017).}
   \item{asian_2010}{Percent of population that is a Asian (2010).}
+  \item{asian_2017}{Percent of population that is a Asian (2017).}
   \item{pac_isl_2010}{Percent of population that is Hawaii or Pacific Islander (2010).}
+  \item{pac_isl_2017}{Percent of population that is Hawaii or Pacific Islander (2017).}
+  \item{other_single_race_2017}{Percent of population that identifies as another single race (2017).}
   \item{two_plus_races_2010}{Percent of population that identifies as two or
   more races (2010).}
+  \item{two_plus_races_2017}{Percent of population that identifies as two or
+  more races (2017).}
   \item{hispanic_2010}{Percent of population that is Hispanic (2010).}
+  \item{hispanic_2017}{Percent of population that is Hispanic (2017).}
   \item{white_not_hispanic_2010}{Percent of population that is white and not
   Hispanic (2010).}
+  \item{white_not_hispanic_2017}{Percent of population that is white and not
+  Hispanic (2017).}
+  \item{speak_english_only_2017}{Percent of population that speaks English
+  only (2017).}
   \item{no_move_in_one_plus_year_2010}{Percent of population that has not
   moved in at least one year (2006-2010).}
   \item{foreign_born_2010}{Percent of population that is foreign-born (2006-2010).}
   \item{foreign_spoken_at_home_2010}{Percent of population that speaks a
   foreign language at home (2006-2010).}
+  \item{women_16_to_50_birth_rate_2017}{Birth rate for women ages 16 to 50 (2017).}
   \item{hs_grad_2010}{Percent of population that is a high school graduate (2006-2010).}
   \item{hs_grad_2016}{Percent of population that is a high school graduate (2012-2016).}
+  \item{hs_grad_2017}{Percent of population that is a high school graduate (2017).}
   \item{some_college_2016}{Percent of population with some college education (2012-2016).}
+  \item{some_college_2017}{Percent of population with some college education (2017).}
   \item{bachelors_2010}{Percent of population that earned a bachelor's degree (2006-2010).}
   \item{bachelors_2016}{Percent of population that earned a bachelor's degree (2012-2016).}
+  \item{bachelors_2017}{Percent of population that earned a bachelor's degree (2017).}
   \item{veterans_2010}{Percent of population that are veterans (2006-2010).}
+  \item{veterans_2017}{Percent of population that are veterans (2017).}
   \item{mean_work_travel_2010}{Mean travel time to work (2006-2010).}
+  \item{mean_work_travel_2017}{Mean travel time to work (2017).}
+  \item{broadband_2017}{Percent of population who has access to broadband (2017).}
+  \item{computer_2017}{Percent of population who has access to a computer (2017).}
   \item{housing_units_2010}{Number of housing units (2010).}
   \item{homeownership_2010}{Homeownership rate (2006-2010).}
   \item{housing_multi_unit_2010}{Housing units in multi-unit structures (2006-2010).}
   \item{median_val_owner_occupied_2010}{Median value of owner-occupied housing units (2006-2010).}
   \item{households_2010}{Households (2006-2010).}
+  \item{households_2017}{Households (2017).}
   \item{persons_per_household_2010}{Persons per household (2006-2010).}
+  \item{persons_per_household_2017}{Persons per household (2017).}
   \item{per_capita_income_2010}{Per capita money income in past 12 months (2010 dollars, 2006-2010)}
+  \item{per_capita_income_2017}{Per capita money income in past 12 months (2017 dollars, 2017)}
   \item{metro_2013}{Whether the county contained a metropolitan area in 2013.}
   \item{median_household_income_2010}{Median household income (2006-2010).}
   \item{median_household_income_2016}{Median household income (2012-2016).}
+  \item{median_household_income_2017}{Median household income (2017).}
   \item{private_nonfarm_establishments_2009}{Private nonfarm establishments (2009).}
   \item{private_nonfarm_employment_2009}{Private nonfarm employment (2009).}
   \item{percent_change_private_nonfarm_employment_2009}{Private nonfarm employment, percent change from 2000 to 2009.}
@@ -80,6 +107,9 @@ A data frame with 3143 observations on the following 111 variables.
   \code{"comprehensive"}.}
   \item{poverty_2010}{Percent of population below poverty level (2006-2010).}
   \item{poverty_2016}{Percent of population below poverty level (2012-2016).}
+  \item{poverty_2017}{Percent of population below poverty level (2017).}
+  \item{poverty_age_under_5_2017}{Percent of population under age 5 below poverty level (2017).}
+  \item{poverty_age_under_18_2017}{Percent of population under age 18 below poverty level (2017).}
   \item{civilian_labor_force_2007}{Civilian labor force in 2007.}
   \item{employed_2007}{Number of civilians employed in 2007.}
   \item{unemployed_2007}{Number of civilians unemployed in 2007.}
@@ -121,6 +151,10 @@ A data frame with 3143 observations on the following 111 variables.
   \item{unemployed_2016}{Number of civilians unemployed in 2016.}
   \item{unemployment_rate_2016}{Unemployment rate in 2016.}
   \item{civilian_labor_force_2017}{Civilian labor force in 2017.}
+  \item{uninsured}{Percent of poopulation who are uninsured (2017).}
+  \item{uninsured_age_under_6_2017}{Percent of poopulation under 6 who are uninsured (2017).}
+  \item{uninsured_age_under_19_2017}{Percent of poopulation under 19 who are uninsured (2017).}
+  \item{uninsured_age_over_74_2017}{Percent of poopulation under 74 who are uninsured (2017).}
   \item{employed_2017}{Number of civilians employed in 2017.}
   \item{unemployed_2017}{Number of civilians unemployed in 2017.}
   \item{unemployment_rate_2017}{Unemployment rate in 2017.}
@@ -152,76 +186,79 @@ Data for 3143 counties in the United States.
 }
 \examples{
 
-d <- county_complete
-head(d, 3)
+library(dplyr)
+library(ggplot2)
 
-d$pop_change <- 100 * (d$pop2017 / d$pop2013 - 1)
+county_complete \%>\%
+  mutate(
+    pop_change = 100 * ((pop2017 / pop2013) - 1),
+    metro_area = if_else(metro_2013 == 1, TRUE, FALSE)
+    ) \%>\%
+  ggplot(aes(x = poverty_2016,
+             y = pop_change,
+             color = metro_area,
+             size = sqrt(d$pop2017) / 1e3)) +
+  geom_point(alpha = 0.5) +
+  scale_color_discrete(na.translate = FALSE) +
+  guides(size = FALSE) +
+  labs(
+    x = "Percentage of population in poverty (2016)",
+    y = "Percentage population change between 2013 to 2017",
+    color = "Metropolitan area",
+    title = "Population change and poverty"
+  )
 
-plot(d$poverty_2016, d$pop_change,
-     cex = sqrt(d$pop2017) / 1e3,
-     col = ifelse(d$metro_2013 == 1, COL[1, 4], COL[2, 4]),
-     pch = 19,
-     ylim = c(-10, 25))
-subset(d, pop_change < -10 | pop_change > 25, na.rm = TRUE)
+# Counties with high population change
+county_complete \%>\%
+  mutate(pop_change = 100 * ((pop2017 / pop2013) - 1)) \%>\%
+  filter(pop_change < -10 | pop_change > 25) \%>\%
+  select(state, name, fips, pop_change)
 
-plot(d$metro_2013 + rnorm(nrow(d), sd = 0.1), d$pop2013,
-     ylim = c(min(d$pop2013, na.rm = TRUE), 1e6),
-     log = "y")
+# Population by metro area
+county_complete \%>\%
+  mutate(metro_area = if_else(metro_2013 == 1, TRUE, FALSE)) \%>\%
+  filter(!is.na(metro_area)) \%>\%
+  ggplot(aes(x = metro_area, y = log(pop2017))) +
+  geom_violin() +
+  labs(
+    x = "Metro area",
+    y = "Log of population in 2017",
+    title = "Population by metro area"
+    )
 
-plot(d$poverty_2016, d$median_household_income_2016,
-     cex = sqrt(d$pop2017) / 1e3,
-     col = ifelse(d$metro_2013 == 1, COL[1, 4], COL[2, 4]),
-     pch = 19)
+# Poverty and median household income
+county_complete \%>\%
+  mutate(metro_area = if_else(metro_2013 == 1, TRUE, FALSE)) \%>\%
+  ggplot(aes(x = poverty_2016,
+             y = median_household_income_2016,
+             color = metro_area,
+             size = sqrt(d$pop2017) / 1e3)) +
+  geom_point(alpha = 0.5) +
+  scale_color_discrete(na.translate = FALSE) +
+  guides(size = FALSE) +
+  labs(
+    x = "Percentage of population in poverty (2016)",
+    y = "Median household income (2016)",
+    color = "Metropolitan area",
+    title = "Poverty and median household income"
+  )
 
-plot(d$unemployment_rate_2017, d$poverty_2016,
-     cex = sqrt(d$pop2017) / 1e3,
-     col = ifelse(d$metro_2013 == 1, COL[1, 4], COL[2, 4]),
-     pch = 19)
-
-# Definition for the `county` data set.
-county <- data.frame(
-  name = d$name,
-  state = d$state,
-  pop2000 = d$pop2000,
-  pop2010 = d$pop2010,
-  pop2017 = d$pop2017,
-  pop_change = round(d$pop_change, 2),
-  poverty = d$poverty_2016,
-  homeownership = d$homeownership_2010,
-  multi_unit = d$housing_multi_unit_2010,
-  unemployment_rate = d$unemployment_rate_2017,
-  metro = ifelse(d$metro_2013 == 1, "yes", "no"),  # Categorical, ordinal
-  median_edu = factor(
-    ifelse(d$hs_grad_2016 < 50, "below_hs",
-           ifelse(d$some_college_2016 + d$bachelors_2016 < 50 & d$hs_grad_2016,
-                  "hs_diploma",
-                  ifelse(d$bachelors_2016 > 50, "bachelors", "some_college"))),
-    levels = c("below_hs", "hs_diploma", "some_college", "bachelors")),
-  median_hh_income = d$median_household_income_2016,
-  smoking_ban = factor(d$smoking_ban_2010,
-                       levels = c("none", "partial", "complete")))
-
-
-boxplot(county$median_hh_income ~ county$median_edu,
-        ylim = c(0, max(county$median_hh_income, na.rm = TRUE)))
-
-
-\dontrun{
-  library(ggplot2)
-  qplot(unemployment_rate_2017, pop_change, data = d, geom = c("point", "smooth"))
-  qplot(poverty_2016, pop_change, data = d, geom = c("point", "smooth"))
-  qplot(poverty_2016, pop_change, data = d, geom = c("point", "smooth"))
-  qplot(
-    hs_grad_2010,
-    hs_grad_2016 / hs_grad_2010,
-    data = d,
-    geom = c("point", "smooth"))
-  qplot(median_household_income_2010,
-        median_household_income_2016 / median_household_income_2010,
-        data = d,
-        geom = c("point", "smooth"))
-}
-
+# Unemployment rate and poverty
+county_complete \%>\%
+  mutate(metro_area = if_else(metro_2013 == 1, TRUE, FALSE)) \%>\%
+  ggplot(aes(x = unemployment_rate_2017,
+             y = poverty_2016,
+             color = metro_area,
+             size = sqrt(d$pop2017) / 1e3)) +
+  geom_point(alpha = 0.5) +
+  scale_color_discrete(na.translate = FALSE) +
+  guides(size = FALSE) +
+  labs(
+    x = "Unemployment rate (2017)",
+    y = "Percentage of population in poverty (2016)",
+    color = "Metropolitan area",
+    title = "Unemployment rate and poverty"
+  )
 }
 \seealso{
 \code{\link{county}}

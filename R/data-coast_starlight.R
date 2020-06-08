@@ -15,6 +15,9 @@
 #' @keywords datasets
 #' @examples
 #'
-#' plot(coast_starlight$dist, coast_starlight$travel_time)
+#' library(ggplot2)
+#'
+#' ggplot(coast_starlight, aes(x = dist, y = travel_time)) +
+#'   geom_point()
 #'
 "coast_starlight"

@@ -31,9 +31,14 @@ Center of Education Statistics.
 }
 \examples{
 
+library(ggplot2)
 
-boxPlot(hsb2$read - hsb2$write, fact =  hsb2$gender,
-        ylab = "diff. bet. reading and writing scores")
+ggplot(hsb2, aes(x = read - write, y = ses)) +
+  geom_boxplot() +
+  labs(
+    x = "Difference between reading and writing scores",
+    y = "Socio-economic status"
+    )
 
 
 }

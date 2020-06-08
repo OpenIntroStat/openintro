@@ -6,11 +6,15 @@
 \title{Google stock data}
 \format{
 A data frame with 98 observations on the following 7 variables.
-\describe{\item{Date}{a factor with levels \code{2006-01-03},
-\code{2006-02-01}, and so on} \item{Open}{a numeric vector}
-\item{High}{a numeric vector} \item{Low}{a numeric vector}
-\item{Close}{a numeric vector} \item{Volume}{a numeric
-vector} \item{Adj.Close}{a numeric vector} }
+\describe{
+  \item{date}{a factor with levels \code{2006-01-03}, \code{2006-02-01}, and so on}
+  \item{open}{a numeric vector}
+  \item{high}{a numeric vector}
+  \item{low}{a numeric vector}
+  \item{close}{a numeric vector}
+  \item{volume}{a numeric vector}
+  \item{adj_close}{a numeric vector}
+  }
 }
 \source{
 Yahoo! Finance.

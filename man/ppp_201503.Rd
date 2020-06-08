@@ -23,10 +23,11 @@ think it's better to raise taxes on the rich or raise taxes on the poor.
 }
 \examples{
 
+library(ggplot2)
 
-table(ppp_201503)
-mosaicplot(table(ppp_201503), las = 1)
-
+ggplot(ppp_201503, aes(x = party, fill = taxes)) +
+  geom_bar(position = "fill") +
+  labs(x = "Party", x = "Proportion", fill = "Taxes")
 
 }
 \keyword{datasets}

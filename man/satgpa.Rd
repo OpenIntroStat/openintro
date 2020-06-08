@@ -26,17 +26,32 @@ SAT and GPA data for 1000 students at an unnamed college.
 }
 \examples{
 
-par(mfrow=2:1)
+library(ggplot2)
+library(broom)
 
-plot(satgpa$sat_sum/2, satgpa$fy_gpa)
-g <- lm(satgpa$fy_gpa ~ I(satgpa$sat_sum/2))
-summary(g)
-abline(g)
+# Verbal scores
+ggplot(satgpa, aes(x = sat_v, fy_gpa)) +
+  geom_point() +
+  geom_smooth(method = "lm") +
+  labs(
+    x = "Verbal SAT percentile",
+    y = "First year (college) grade point average"
+    )
 
-plot(satgpa$sat_m, satgpa$fy_gpa)
-g <- lm(satgpa$fy_gpa ~ satgpa$sat_m)
-summary(g)
-abline(g)
+mod <- lm(fy_gpa ~ sat_v, data = satgpa)
+tidy(mod)
+
+# Math scores
+ggplot(satgpa, aes(x = sat_m, fy_gpa)) +
+  geom_point() +
+  geom_smooth(method = "lm") +
+  labs(
+    x = "Math SAT percentile",
+    y = "First year (college) grade point average"
+    )
+
+mod <- lm(fy_gpa ~ sat_m, data = satgpa)
+tidy(mod)
 
 }
 \references{

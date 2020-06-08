@@ -14,8 +14,10 @@
 #' @keywords datasets
 #' @examples
 #'
-#' data(simulated_scatter)
-#' these <- simulated_scatter$group == 1
-#' plot(simulated_scatter$x[these], simulated_scatter$y[these])
+#' library(ggplot2)
+#'
+#' ggplot(simulated_scatter, aes(x = x, y = y)) +
+#'   geom_point() +
+#'   facet_wrap(~group)
 #'
 "simulated_scatter"

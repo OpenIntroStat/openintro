@@ -35,8 +35,9 @@
 #' @keywords datasets
 #' @examples
 #'
-#' data(county)
-#' dim(county)
-#' head(county)
+#' library(ggplot2)
+#'
+#' ggplot(county, aes(x = median_edu, y = median_hh_income)) +
+#'   geom_boxplot()
 #'
 "county"

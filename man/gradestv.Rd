@@ -6,9 +6,10 @@
 \title{Simulated data for analyzing the relationship between watching TV and grades}
 \format{
 A data frame with 25 observations on the following 2 variables.
-\describe{\item{TV}{Number of hours per week students watch TV.}
-\item{Grades}{Grades students got in a statistics class (out of
-100).} }
+\describe{
+  \item{tv}{Number of hours per week students watch TV.}
+  \item{grades}{Grades students got in a statistics class (out of 100).}
+  }
 }
 \source{
 Simulated data

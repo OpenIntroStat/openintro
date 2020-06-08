@@ -16,7 +16,7 @@
 #' \describe{
 #'   \item{dept_abbr}{Course department (abbreviated).}
 #'   \item{course}{Course number.}
-#'   \item{ibsn}{Book ISBN.}
+#'   \item{isbn}{Book ISBN.}
 #'   \item{ucla_new}{New price at the UCLA Bookstore.}
 #'   \item{amaz_new}{New price on Amazon.com.}
 #'   \item{more}{Whether additional books were required for the course (\code{Y}

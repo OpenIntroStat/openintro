@@ -22,11 +22,10 @@
 #' @keywords datasets
 #' @examples
 #'
+#' library(ggplot2)
 #'
-#' #===> gap vs. study hours <===#
-#' plot(gpa_study_hours$gpa ~ gpa_study_hours$study_hours,
-#'     xlab = "Study hours/week", ylab = "GPA",
-#'     pch = 20, col = COL[1,2])
-#'
+#' ggplot(gpa_study_hours, aes(x = study_hours, y = gpa)) +
+#'   geom_point(alpha = 0.5) +
+#'   labs(x = "Study hours/week", y = "GPA")
 #'
 "gpa_study_hours"

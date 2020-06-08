@@ -6,9 +6,11 @@
 \title{Socioeconomic status and reduced-fee school lunches}
 \format{
 A data frame with 12 observations representing neighborhoods on the
-following 2 variables. \describe{\item{lunch}{Percent of students receiving
-reduced-fee school lunches.} \item{helmet}{Percent of bike riders wearing
-helmets.} }
+following 2 variables.
+\describe{
+  \item{lunch}{Percent of students receiving reduced-fee school lunches.}
+  \item{helmet}{Percent of bike riders wearing helmets.}
+  }
 }
 \usage{
 helmet
@@ -21,9 +23,10 @@ helmets (helmet).
 }
 \examples{
 
+library(ggplot2)
 
-plot(helmet)
-
+ggplot(helmet, aes(x = lunch, y = helmet)) +
+  geom_point()
 
 }
 \keyword{datasets}
