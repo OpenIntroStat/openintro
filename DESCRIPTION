@@ -1,6 +1,6 @@
 Package: openintro
 Title: Data Sets and Supplemental Functions from 'OpenIntro' Textbooks and Labs
-Version: 2.0.1
+Version: 2.0.0
 Authors@R: c(
     person("Mine", "\u00C7etinkaya-Rundel", email = "cetinkaya.mine@gmail.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0001-6452-2420")),
     person("David", "Diez", email = "david.m.diez@gmail.com", role = c("aut")),
