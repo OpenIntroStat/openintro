@@ -27,10 +27,10 @@
 #' library(dplyr)
 #' library(ggplot2)
 #'
-#' cia_factbook <- cia_factbook %>%
+#' cia_factbook_iup <- cia_factbook %>%
 #'   mutate(internet_users_percent = 100 * internet_users / population)
 #'
-#' ggplot(cia_factbook, aes(x = internet_users_percent, y = life_exp_at_birth)) +
+#' ggplot(cia_factbook_iup, aes(x = internet_users_percent, y = life_exp_at_birth)) +
 #'   geom_point() +
 #'   labs(x = "Percentage of internet users", y = "Life expectancy at birth")
 #'

@@ -33,23 +33,23 @@
 #'
 #' # Examine two-party relationship since 1855
 #' house_since_1855 <- house %>%
-#' filter(year_start >= 1855) %>%
-#' mutate(
-#'   p1_perc = 100 * np1 / seats,
-#'   p2_perc = 100 * np2 / seats,
-#'   era = case_when(
-#'     between(year_start, 1861, 1865) ~ "Civil War",
-#'     between(year_start, 1914, 1918) ~ "World War I",
-#'     between(year_start, 1929, 1939) ~ "Great Depression",
-#'     between(year_start, 1940, 1945) ~ "World War II",
-#'     between(year_start, 1960, 1965) ~ "Vietnam War Start",
-#'     between(year_start, 1965, 1975) ~ "Vietnam War Escalated",
-#'     TRUE                            ~ NA_character_
-#'   ),
-#'   era = fct_relevel(era, "Civil War", "World War I",
-#'                          "Great Depression", "World War II",
-#'                          "Vietnam War Start", "Vietnam War Escalated")
-#' )
+#'   filter(year_start >= 1855) %>%
+#'   mutate(
+#'     p1_perc = 100 * np1 / seats,
+#'     p2_perc = 100 * np2 / seats,
+#'     era = case_when(
+#'       between(year_start, 1861, 1865) ~ "Civil War",
+#'       between(year_start, 1914, 1918) ~ "World War I",
+#'       between(year_start, 1929, 1939) ~ "Great Depression",
+#'       between(year_start, 1940, 1945) ~ "World War II",
+#'       between(year_start, 1960, 1965) ~ "Vietnam War Start",
+#'       between(year_start, 1965, 1975) ~ "Vietnam War Escalated",
+#'       TRUE                            ~ NA_character_
+#'     ),
+#'     era = fct_relevel(era, "Civil War", "World War I",
+#'                            "Great Depression", "World War II",
+#'                            "Vietnam War Start", "Vietnam War Escalated")
+#'   )
 #'
 #' ggplot(house_since_1855, aes(x = year_start)) +
 #'   geom_rect(aes(xmin = year_start, xmax = lead(year_start),
