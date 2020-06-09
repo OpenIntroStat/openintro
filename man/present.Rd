@@ -13,7 +13,9 @@ A data frame with 63 observations on the following 3 variables.
   }
 }
 \source{
-\url{https://pubmed.ncbi.nlm.nih.gov/15974501}
+Mathews, T. J., and Brady E. Hamilton. "Trend analysis of the sex
+ratio at birth in the United States." National vital statistics reports
+53.20 (2005): 1-17. \url{https://pubmed.ncbi.nlm.nih.gov/15974501/}.
 }
 \usage{
 present
