@@ -41,7 +41,7 @@
 
 <meta property="og:title" content="Wii Mario Kart auctions from Ebay — mariokart" />
 <meta property="og:description" content="Auction data from Ebay for the game Mario Kart for the Nintendo Wii. This
-data was collected in early October, 2009." />
+data was collected in early October 2009." />
 
 
 
@@ -73,7 +73,7 @@ data was collected in early October, 2009." />
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">openintro</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.0.1</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.0.0</span>
       </span>
     </div>
 
@@ -116,7 +116,7 @@ data was collected in early October, 2009." />
 
     <div class="ref-description">
     <p>Auction data from Ebay for the game Mario Kart for the Nintendo Wii. This
-data was collected in early October, 2009.</p>
+data was collected in early October 2009.</p>
     </div>
 
     <pre class="usage"><span class='no'>mariokart</span></pre>
@@ -150,7 +150,7 @@ All prices are in US dollars.</p><dl'>
 
     <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
 
-    <p><a href='http://www.ebay.com'>http://www.ebay.com</a></p>
+    <p>Ebay.</p>
     <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
 
     <p>There are several interesting features in the data. First off, note that
@@ -159,7 +159,7 @@ one should do when encountering an outlier: examine the data point and
 remove it only if there is a good reason. In these two cases, we can see
 from the auction titles that they included other items in their auctions
 besides the game, which justifies removing them from the data set.</p>
-<p>This data set includes all auctions for a full week in October, 2009.
+<p>This data set includes all auctions for a full week in October 2009.
 Auctions were included in the data set if they satisfied a number of
 conditions. (1) They were included in a search for "wii mario kart" on
 ebay.com, (2) items were in the Video Games &gt; Games &gt; Nintendo Wii section
@@ -179,15 +179,13 @@ end with a Buy It Now option.</p>
 <span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='no'>dplyr</span>)
 
 <span class='co'># Identify outliers</span>
-<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='no'>mariokart</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='no'>cond</span>, <span class='kw'>y</span> <span class='kw'>=</span> <span class='no'>total_pr</span>)) +
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_boxplot.html'>geom_boxplot</a></span>() +
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/coord_flip.html'>coord_flip</a></span>()</div><div class='img'><img src='mariokart-1.png' alt='' width='700' height='433' /></div><div class='input'>
+<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='no'>mariokart</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='no'>total_pr</span>, <span class='kw'>y</span> <span class='kw'>=</span> <span class='no'>cond</span>)) +
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_boxplot.html'>geom_boxplot</a></span>()</div><div class='img'><img src='mariokart-1.png' alt='' width='700' height='433' /></div><div class='input'>
 <span class='co'># Replot without the outliers</span>
 <span class='no'>mariokart</span> <span class='kw'>%&gt;%</span>
   <span class='fu'><a href='https://dplyr.tidyverse.org/reference/filter.html'>filter</a></span>(<span class='no'>total_pr</span> <span class='kw'>&lt;</span> <span class='fl'>80</span>) <span class='kw'>%&gt;%</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='no'>cond</span>, <span class='kw'>y</span> <span class='kw'>=</span> <span class='no'>total_pr</span>)) +
-    <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_boxplot.html'>geom_boxplot</a></span>() +
-    <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/coord_flip.html'>coord_flip</a></span>()</div><div class='img'><img src='mariokart-2.png' alt='' width='700' height='433' /></div><div class='input'>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='no'>total_pr</span>, <span class='kw'>y</span> <span class='kw'>=</span> <span class='no'>cond</span>)) +
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_boxplot.html'>geom_boxplot</a></span>()</div><div class='img'><img src='mariokart-2.png' alt='' width='700' height='433' /></div><div class='input'>
 <span class='co'># Fit a multiple regression models</span>
 <span class='no'>mariokart_no</span> <span class='kw'>&lt;-</span> <span class='no'>mariokart</span> <span class='kw'>%&gt;%</span> <span class='fu'><a href='https://dplyr.tidyverse.org/reference/filter.html'>filter</a></span>(<span class='no'>total_pr</span> <span class='kw'>&lt;</span> <span class='fl'>80</span>)
 <span class='no'>m1</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/stats/lm.html'>lm</a></span>(<span class='no'>total_pr</span> ~ <span class='no'>cond</span> + <span class='no'>stock_photo</span> + <span class='no'>duration</span> + <span class='no'>wheels</span>, <span class='kw'>data</span> <span class='kw'>=</span> <span class='no'>mariokart_no</span>)
@@ -233,7 +231,7 @@ end with a Buy It Now option.</p>
 <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='no'>aug_m3</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='no'>wheels</span>, <span class='kw'>y</span> <span class='kw'>=</span> <span class='no'>.resid</span>)) +
   <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_point.html'>geom_point</a></span>() +
   <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='st'>"Number of wheels"</span>, <span class='kw'>y</span> <span class='kw'>=</span> <span class='st'>"Residuals"</span>,
-       <span class='kw'>main</span> <span class='kw'>=</span> <span class='st'>"Notice curvature"</span>)</div><div class='img'><img src='mariokart-7.png' alt='' width='700' height='433' /></div><div class='input'>
+       <span class='kw'>title</span> <span class='kw'>=</span> <span class='st'>"Notice curvature"</span>)</div><div class='img'><img src='mariokart-7.png' alt='' width='700' height='433' /></div><div class='input'>
 </div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">

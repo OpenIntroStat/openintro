@@ -73,7 +73,7 @@ armed forces including gender, race, and rank." />
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">openintro</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.0.1</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.0.0</span>
       </span>
     </div>
 
@@ -124,28 +124,21 @@ armed forces including gender, race, and rank.</p>
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>A data frame with 1414593 observations on the following 6 variables.</p><dl'>
-<dt>grade</dt><dd><p>The status of the service member as <code>enlisted</code> <code>officer</code>
-or <code>warrant officer</code>.</p></dd>
-<dt>branch</dt><dd><p>The branch of the armed forces: <code>air force</code>, <code>army</code>,
-<code>marine corps</code>, <code>navy</code>.</p></dd>
-<dt>gender</dt><dd><p>Whether the service member is <code>female</code> or <code>male</code>.</p></dd>
-<dt>race</dt><dd><p>The race identified by the service member:
-<code>ami/aln</code> (american indian/alaskan native), <code>asian</code>, <code>black</code>,
-<code>multi</code> (multi-ethinic), <code>p/i</code> (pacific islander), <code>unk</code>
-(unknown), or <code>white</code>.</p></dd>
-<dt>hisp</dt><dd><p>Whether a service member identifies with being hispanic (<code>TRUE</code>)
-or not (<code>FALSE</code>).</p></dd>
-<dt>rank</dt><dd><p>The numeric rank of the service member (higher number indicates
-higher rank).</p></dd>
+    <p>A data frame with 1,414,593 observations on the following 6 variables.</p><dl'>
+  <dt>grade</dt><dd><p>The status of the service member as <code>enlisted</code> <code>officer</code> or <code>warrant officer</code>.</p></dd>
+  <dt>branch</dt><dd><p>The branch of the armed forces: <code>air force</code>, <code>army</code>, <code>marine corps</code>, <code>navy</code>.</p></dd>
+  <dt>gender</dt><dd><p>Whether the service member is <code>female</code> or <code>male</code>.</p></dd>
+  <dt>race</dt><dd><p>The race identified by the service member: <code>ami/aln</code> (american indian/alaskan native), <code>asian</code>, <code>black</code>, <code>multi</code> (multi-ethinic), <code>p/i</code> (pacific islander), <code>unk</code> (unknown), or <code>white</code>.</p></dd>
+  <dt>hisp</dt><dd><p>Whether a service member identifies with being hispanic (<code>TRUE</code>) or not (<code>FALSE</code>).</p></dd>
+  <dt>rank</dt><dd><p>The numeric rank of the service member (higher number indicates higher rank).</p></dd>
 
 </dl>
 
     <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
 
     <p>Data provided by the Department of Defense and made available at
-<a href='https://explore.data.gov/Population/Personnel-Trends-by-Gender-Race/zqae-ad8kdata.gov'>https://explore.data.gov/Population/Personnel-Trends-by-Gender-Race/zqae-ad8kdata.gov</a>.
-Retrieval date: Feb 20, 2012.</p>
+<a href='https://catalog.data.gov/dataset/personnel-trends-by-gender-race'>https://catalog.data.gov/dataset/personnel-trends-by-gender-race</a>,
+retrieved 2012-02-20.</p>
     <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
 
     <p>The branches covered by this data set include the Army, Navy, Air Force, and
@@ -154,18 +147,20 @@ the original data set but has not been included here.</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
+<span class='kw'>if</span> (<span class='fl'>FALSE</span>) {
 <span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='no'>dplyr</span>)
 <span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='no'>ggplot2</span>)
 <span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='no'>forcats</span>)
 
 <span class='co'># Proportion of females in military branches</span>
 <span class='no'>military</span> <span class='kw'>%&gt;%</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/factor.html'>factor</a></span>(<span class='no'>branch</span>), <span class='kw'>fill</span> <span class='kw'>=</span> <span class='fu'><a href='https://forcats.tidyverse.org/reference/fct_rev.html'>fct_rev</a></span>(<span class='no'>gender</span>))) +
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='no'>branch</span>, <span class='kw'>fill</span> <span class='kw'>=</span> <span class='no'>gender</span>)) +
   <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_bar.html'>geom_bar</a></span>(<span class='kw'>position</span> <span class='kw'>=</span> <span class='st'>"fill"</span>) +
   <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span>(
     <span class='kw'>x</span> <span class='kw'>=</span> <span class='st'>"Branch"</span>, <span class='kw'>y</span> <span class='kw'>=</span> <span class='st'>"Proportion"</span>, <span class='kw'>fill</span> <span class='kw'>=</span> <span class='st'>"Gender"</span>,
     <span class='kw'>title</span> <span class='kw'>=</span> <span class='st'>"Proportion of females in military branches"</span>
-  )</div><div class='img'><img src='military-1.png' alt='' width='700' height='433' /></div><div class='input'>
+  )
+
 <span class='co'># Proportion of army officer females across ranks</span>
 <span class='no'>military</span> <span class='kw'>%&gt;%</span>
   <span class='fu'><a href='https://dplyr.tidyverse.org/reference/filter.html'>filter</a></span>(
@@ -177,8 +172,8 @@ the original data set but has not been included here.</p>
   <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span>(
     <span class='kw'>x</span> <span class='kw'>=</span> <span class='st'>"Rank"</span>, <span class='kw'>y</span> <span class='kw'>=</span> <span class='st'>"Proportion"</span>, <span class='kw'>fill</span> <span class='kw'>=</span> <span class='st'>"Gender"</span>,
     <span class='kw'>title</span> <span class='kw'>=</span> <span class='st'>"Proportion of army officer females across ranks"</span>
-  )</div><div class='img'><img src='military-2.png' alt='' width='700' height='433' /></div><div class='input'>
-</div></pre>
+  )
+}</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">

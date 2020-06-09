@@ -73,7 +73,7 @@ of the Greater London area." />
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">openintro</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.0.1</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.0.0</span>
       </span>
     </div>
 
@@ -125,23 +125,22 @@ of the Greater London area.</p>
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
     <p>A data frame with 45341 observations on the following 3 variables.</p><dl'>
-<dt>borough</dt><dd><p>Name of the borough.</p></dd>
-<dt>x</dt><dd><p>The "easting" component of the coordinate, see details.</p></dd>
-<dt>y</dt><dd><p>The "northing" component of the coordinate, see details.</p></dd>
+  <dt>borough</dt><dd><p>Name of the borough.</p></dd>
+  <dt>x</dt><dd><p>The "easting" component of the coordinate, see details.</p></dd>
+  <dt>y</dt><dd><p>The "northing" component of the coordinate, see details.</p></dd>
 
 </dl>
 
     <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
 
-    <p><a href='https://www.ordnancesurvey.co.uk/opendatadownload/products.html'>https://www.ordnancesurvey.co.uk/opendatadownload/products.html</a></p>
-<p>Contains Ordinance Survey data, Crown copyright and database right 2012,
-used under the
-<a href='Open Data License'>http://www.ordnancesurvey.co.uk/oswebsite/docs/licences/os-opendata-licence.pdf</a>.</p>
+    <p><a href='https://data.london.gov.uk/dataset/ordnance-survey-code-point'>https://data.london.gov.uk/dataset/ordnance-survey-code-point</a></p>
+<p>Contains Ordinance Survey data released under the
+<a href='Open Government License, OGL v2'>http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2</a>.</p>
     <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
 
     <p>Map data was made available through the Ordnance Survey Open Data
 initiative.  The data use the
-<a href='http://www.ordnancesurvey.co.uk/oswebsite/gps/information/coordinatesystemsinfo/guidetonationalgrid/page1.html'>National Grid</a> coordinate system,
+<a href='https://en.wikipedia.org/wiki/Ordnance_Survey_National_Grid'>National Grid</a> coordinate system,
 based upon eastings (<code>x</code>) and northings (<code>y</code>) instead of longitude and latitude.</p>
 <p>The <code>name</code> variable covers all 32 boroughs in Greater London:
 <code>Barking &amp; Dagenham</code>, <code>Barnet</code>, <code>Bexley</code>, <code>Brent</code>,
@@ -166,14 +165,32 @@ Fulham</code>, <code>Haringey</code>, <code>Harrow</code>, <code>Havering</code>
 <span class='no'>london_murders_counts</span> <span class='kw'>&lt;-</span> <span class='no'>london_murders</span> <span class='kw'>%&gt;%</span>
   <span class='fu'><a href='https://dplyr.tidyverse.org/reference/group_by.html'>group_by</a></span>(<span class='no'>borough</span>) <span class='kw'>%&gt;%</span>
   <span class='fu'><a href='https://dplyr.tidyverse.org/reference/count.html'>add_tally</a></span>()
+
+<span class='no'>london_murders_counts</span></div><div class='output co'>#&gt; # A tibble: 838 x 6
+#&gt; # Groups:   borough [32]
+#&gt;    forename             age date        year borough        n
+#&gt;    &lt;fct&gt;              &lt;int&gt; &lt;date&gt;     &lt;int&gt; &lt;fct&gt;      &lt;int&gt;
+#&gt;  1 Barrington Derrick    19 2006-01-02  2006 Hackney       42
+#&gt;  2 Aaron                 24 2006-01-02  2006 Lewisham      36
+#&gt;  3 Christopher           22 2006-01-03  2006 Hillingdon    21
+#&gt;  4 Thomas Philip         18 2006-01-04  2006 Camden        24
+#&gt;  5 Amanda                26 2006-01-04  2006 Camden        24
+#&gt;  6 Siva-Kumar            44 2006-01-05  2006 Brent         32
+#&gt;  7 Doreen                39 2006-01-08  2006 Croydon       38
+#&gt;  8 Matthew Roy           21 2006-01-09  2006 Lambeth       79
+#&gt;  9 Joan                  78 2006-01-09  2006 Enfield       31
+#&gt; 10 Monsur                27 2006-01-11  2006 Hackney       42
+#&gt; # … with 828 more rows</div><div class='input'>
+<span class='kw'>if</span> (<span class='fl'>FALSE</span>) {
 <span class='co'># Add number of murders to geographic boundary data</span>
 <span class='no'>london_boroughs_murders</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://dplyr.tidyverse.org/reference/mutate-joins.html'>inner_join</a></span>(<span class='no'>london_boroughs</span>, <span class='no'>london_murders_counts</span>, <span class='kw'>by</span> <span class='kw'>=</span> <span class='st'>"borough"</span>)
 
+<span class='co'># Map murders</span>
 <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='no'>london_boroughs_murders</span>) +
   <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_polygon.html'>geom_polygon</a></span>(<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='no'>x</span>, <span class='kw'>y</span> <span class='kw'>=</span> <span class='no'>y</span>, <span class='kw'>group</span> <span class='kw'>=</span> <span class='no'>borough</span>, <span class='kw'>fill</span> <span class='kw'>=</span> <span class='no'>n</span>), <span class='kw'>colour</span> <span class='kw'>=</span> <span class='st'>"white"</span>) +
     <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/scale_brewer.html'>scale_fill_distiller</a></span>(<span class='kw'>direction</span> <span class='kw'>=</span> <span class='fl'>1</span>) +
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='st'>"Easting"</span>, <span class='kw'>y</span> <span class='kw'>=</span> <span class='st'>"Northing"</span>, <span class='kw'>fill</span> <span class='kw'>=</span> <span class='st'>"Number of murders"</span>)</div><div class='img'><img src='london_boroughs-1.png' alt='' width='700' height='433' /></div><div class='input'>
-</div></pre>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='st'>"Easting"</span>, <span class='kw'>y</span> <span class='kw'>=</span> <span class='st'>"Northing"</span>, <span class='kw'>fill</span> <span class='kw'>=</span> <span class='st'>"Number of murders"</span>)
+}</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
