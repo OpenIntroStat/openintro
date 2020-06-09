@@ -160,7 +160,7 @@ More recent data comes from the following sources.
   \item Download links for spreadsheets were found on
   \url{https://www.ers.usda.gov/data-products/county-level-data-sets/download-data}
   \item Unemployment - Bureau of Labor Statistics - LAUS data - \url{https://www.bls.gov/lau}.
-  \item Median Household Income - Census Bureau - SAIPE data - \url{https://www.census.gov/programs-surveys/saipe/guidance/model-input-data.html}.
+  \item Median Household Income - Census Bureau - Small Area Income and Poverty Estimates (SAIPE) data.
   \item The original data table was prepared by USDA, Economic Research Service.
   \item Census Bureau.
   \item 2012-16 American Community Survey 5-yr average.
