@@ -3,7 +3,7 @@
 \docType{data}
 \name{gov_poll}
 \alias{gov_poll}
-\title{Pew Research poll on goverment approval ratings}
+\title{Pew Research poll on government approval ratings}
 \format{
 A data frame with 4223 observations on the following 2 variables.
 \describe{\item{poll}{a factor with levels \code{approve}

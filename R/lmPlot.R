@@ -42,7 +42,7 @@
 #' @param hlPch Plotting characters of highlighted points.
 #' @param na.rm Remove cases with \code{NA} values.
 #' @param \dots Additional arguments to \code{plot}.
-#' @author David M Diez <david.m.diez@@gmail.com>
+#' @author David Diez
 #' @seealso \code{\link{makeTube}}
 #' @keywords linear model residuals
 #' @export

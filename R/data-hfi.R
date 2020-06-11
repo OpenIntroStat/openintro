@@ -4,7 +4,7 @@
 #' through a bunch of different variables for many countries around the globe.
 #' It serves as a rough objective measure for the relationships between the different
 #' types of freedom - whether it's political, religious, economical or personal freedom -
-#' and other social and economic circumstances. The Human Freedom Index is an anually
+#' and other social and economic circumstances. The Human Freedom Index is an annually
 #' co-published report by the Cato Institute, the Fraser Institute, and the Liberales
 #' Institut at the Friedrich Naumann Foundation for Freedom.
 #'
@@ -73,7 +73,7 @@
 #'   \item{pf_identity_parental}{Parental rights}
 #'   \item{pf_identity_sex_male}{Male-to-male relationships}
 #'   \item{pf_identity_sex_female}{Female-to-female relationships}
-#'   \item{pf_identity_sex}{Same-sex ralitionships}
+#'   \item{pf_identity_sex}{Same-sex relationships}
 #'   \item{pf_identity_divorce}{Divor}
 #'   \item{pf_identity}{Identity and relationships}
 #'   \item{pf_score}{Personal Freedom (score)}

@@ -1,4 +1,4 @@
-#' Pew Research poll on goverment approval ratings
+#' Pew Research poll on government approval ratings
 #'
 #' The poll's focus is on Obama and then Democrats and Republicans in Congress.
 #'

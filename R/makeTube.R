@@ -28,7 +28,7 @@
 #' \item{Y}{\code{y} coordinates for the regression model.}
 #' \item{tubeX}{\code{x} coordinates for the boundary of the tube.}
 #' \item{tubeY}{\code{y} coordinates for the boundary of the tube.}
-#' @author David M Diez
+#' @author David Diez
 #' @seealso \code{\link{lmPlot}}
 #' @keywords Regression Kernel smoothing Data tube Least squares
 #' @export

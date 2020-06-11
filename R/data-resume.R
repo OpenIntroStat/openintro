@@ -10,8 +10,8 @@
 #' that would communicate the applicant's gender and race. The first names
 #' chosen for the study were selected so that the names would predominantly be
 #' recognized as belonging to black or white individuals. For example, Lakisha
-#' was a name that their survey indicated would be interpretted as a black
-#' woman, while Greg was a name that would generally be interpretted to be
+#' was a name that their survey indicated would be interpreted as a black
+#' woman, while Greg was a name that would generally be interpreted to be
 #' associated with a white male.
 #'
 #' Because this is an experiment, where the race and gender attributes are

@@ -63,7 +63,7 @@ histPlot(run10$time)
 \code{\link{edaPlot}}
 }
 \author{
-David M Diez
+David Diez
 }
 \keyword{Graphics}
 \keyword{PDF}

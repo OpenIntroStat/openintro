@@ -141,10 +141,10 @@ A data frame with 3143 observations on the following 111 variables.
   \item{employed_2016}{Number of civilians employed in 2016.}
   \item{unemployed_2016}{Number of civilians unemployed in 2016.}
   \item{unemployment_rate_2016}{Unemployment rate in 2016.}
-  \item{uninsured_2017}{Percent of poopulation who are uninsured (2017).}
-  \item{uninsured_age_under_6_2017}{Percent of poopulation under 6 who are uninsured (2017).}
-  \item{uninsured_age_under_19_2017}{Percent of poopulation under 19 who are uninsured (2017).}
-  \item{uninsured_age_over_74_2017}{Percent of poopulation under 74 who are uninsured (2017).}
+  \item{uninsured_2017}{Percent of population who are uninsured (2017).}
+  \item{uninsured_age_under_6_2017}{Percent of population under 6 who are uninsured (2017).}
+  \item{uninsured_age_under_19_2017}{Percent of population under 19 who are uninsured (2017).}
+  \item{uninsured_age_over_74_2017}{Percent of population under 74 who are uninsured (2017).}
   \item{civilian_labor_force_2017}{Civilian labor force in 2017.}
   \item{employed_2017}{Number of civilians employed in 2017.}
   \item{unemployed_2017}{Number of civilians unemployed in 2017.}

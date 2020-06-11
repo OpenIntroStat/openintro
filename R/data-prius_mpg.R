@@ -14,7 +14,7 @@
 #'   \item{average_mpg}{Average mileage as estimated by the user.}
 #'   \item{state}{US State the user lives in.}
 #'   \item{stop_and_go}{Proportion of stop and go driving.}
-#'   \item{highway}{roportion of highway driving.}
+#'   \item{highway}{Proportion of highway driving.}
 #'   \item{last_updated}{Date estimate was last updated.}
 #'}
 #' @source Fueleconomy.gov,

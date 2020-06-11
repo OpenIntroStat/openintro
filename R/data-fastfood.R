@@ -11,7 +11,7 @@
 #'   \item{calories}{Number of calories}
 #'   \item{cal_fat}{Calories from fat}
 #'   \item{total_fat}{Total fat}
-#'   \item{sat_fat}{Saturatd fat}
+#'   \item{sat_fat}{Saturated fat}
 #'   \item{trans_fat}{Trans fat}
 #'   \item{cholesterol}{Cholesterol}
 #'   \item{sodium}{Sodium}

@@ -124,7 +124,7 @@ lmPlot(gradestv$tv, gradestv$grades, xAxis=4,
 \code{\link{makeTube}}
 }
 \author{
-David M Diez <david.m.diez@gmail.com>
+David Diez
 }
 \keyword{linear}
 \keyword{model}

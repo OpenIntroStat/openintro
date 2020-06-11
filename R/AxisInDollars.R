@@ -15,7 +15,7 @@
 #' @param \dots Arguments passed to \code{\link{axis}}
 #' @return The numeric locations on the axis scale at which tick marks were
 #' drawn when the plot was first drawn.
-#' @author David M Diez
+#' @author David Diez
 #' @seealso \code{\link{buildAxis}} \code{\link{AxisInDollars}} \code{\link{AxisInPercent}}
 #' @export
 #' @examples

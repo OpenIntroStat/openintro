@@ -10,7 +10,7 @@
 #' \describe{
 #'   \item{license_issue_date}{Date the animal was registered with Seattle}
 #'   \item{license_number}{Unique license number}
-#'   \item{animal_name}{lAnimal's name}
+#'   \item{animal_name}{Animal's name}
 #'   \item{species}{Animal's species (dog, cat, goat, etc.)}
 #'   \item{primary_breed}{Primary breed of the animal}
 #'   \item{secondary_breed}{Secondary breed if mixed}

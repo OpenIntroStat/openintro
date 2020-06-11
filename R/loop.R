@@ -15,7 +15,7 @@
 #' @param n The last entry in the loop.
 #' @param every The number of loops between messages.
 #' @param extra Additional information to print.
-#' @author David M Diez
+#' @author David Diez
 #' @seealso \code{\link{myPDF}}
 #' @keywords for loop looping index message
 #' @export

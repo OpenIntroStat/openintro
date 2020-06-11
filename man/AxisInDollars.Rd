@@ -40,5 +40,5 @@ AxisInDollars(1, pretty(x))
 \code{\link{buildAxis}} \code{\link{AxisInDollars}} \code{\link{AxisInPercent}}
 }
 \author{
-David M Diez
+David Diez
 }

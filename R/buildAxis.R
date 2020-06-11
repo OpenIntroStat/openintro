@@ -23,7 +23,7 @@
 #' @param eps The smallest increment allowed.
 #' @param \dots Arguments passed to \code{axis}
 #' @return A vector of the axis plotted.
-#' @author David M Diez
+#' @author David Diez
 #' @seealso \code{\link{histPlot}}, \code{\link{dotPlot}},
 #' \code{\link{boxPlot}}, \code{\link{densityPlot}}
 #' @keywords control axis axis customize axis

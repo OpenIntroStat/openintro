@@ -2,7 +2,7 @@
 #'
 #' A study in 1994 examined 491 dogs that had developed cancer and 945 dogs as
 #' a control group to determine whether there is an increased risk of cancer in
-#' dogs that are exposed to the herbicide 2,4-dichlorophenoxyacetic acid
+#' dogs that are exposed to the herbicide 2,4-Dichlorophenoxyacetic acid
 #' (2,4-D).
 #'
 #'

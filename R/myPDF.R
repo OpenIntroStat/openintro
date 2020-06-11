@@ -19,7 +19,7 @@
 #' @param tcl The tick mark length as a proportion of text height. The default
 #' is \code{-0.5}.
 #' @param \dots Additional arguments to \code{par}.
-#' @author David M Diez
+#' @author David Diez
 #' @seealso \code{\link{edaPlot}}
 #' @keywords PDF Plotting Save Graphics myPDF
 #' @export

@@ -18,7 +18,7 @@ inappropriate acupoints. In: Neurological Sci. 32.1 (2011), pp. 173-175.
 migraine
 }
 \description{
-Experiment involving acupuncture and sham acupunture (as placebo) in the
+Experiment involving acupuncture and sham acupuncture (as placebo) in the
 treatment of migraines.
 }
 \examples{

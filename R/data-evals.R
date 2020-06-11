@@ -46,7 +46,7 @@
 #'   \item{pic_outfit}{Outfit of professor in picture: not formal, formal.}
 #'   \item{pic_color}{Color of professor's picture: color, black & white.}
 #'   }
-#' @source Cetinkaya-Rundel M, Morgan KL, Stangl D. 2013. Looking Good on
+#' @source Çetinkaya-Rundel M, Morgan KL, Stangl D. 2013. Looking Good on
 #' Course Evaluations. CHANCE 26(2).
 #' @keywords datasets
 #' @examples

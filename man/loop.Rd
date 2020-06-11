@@ -33,7 +33,7 @@ for(i in 1:160){
 \code{\link{myPDF}}
 }
 \author{
-David M Diez
+David Diez
 }
 \keyword{for}
 \keyword{index}

@@ -119,7 +119,7 @@ if(diff(range(x)) < 10^-12){
 \code{\link{boxPlot}}, \code{\link{densityPlot}}
 }
 \author{
-David M Diez
+David Diez
 }
 \keyword{axis}
 \keyword{control}

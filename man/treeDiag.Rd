@@ -78,7 +78,7 @@ treeDiag(c("Dow Jones rise?", "NASDAQ rise?"),
          solSub = list(c("(a)", "(b)"), c("(c)", "(d)")), solwd = 0.08)
 }
 \author{
-David M Diez, Christopher D Barr
+David Diez, Christopher Barr
 }
 \keyword{Bayes}
 \keyword{Conditional}

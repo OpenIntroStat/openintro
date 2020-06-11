@@ -26,7 +26,7 @@
 #' @param cex.main Size of \code{main} in the plot
 #' @param col.main Color of \code{main} in the plot
 #' @param showWork Whether work should be shown for the solutions
-#' @author David M Diez, Christopher D Barr
+#' @author David Diez, Christopher Barr
 #' @keywords Tree diagram Conditional probability Bayes Theorem
 #' @export
 #'

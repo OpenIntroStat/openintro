@@ -112,7 +112,7 @@ makeTube(x, y, stDev='l', bw=0.03)
 \code{\link{lmPlot}}
 }
 \author{
-David M Diez
+David Diez
 }
 \keyword{Data}
 \keyword{Kernel}
