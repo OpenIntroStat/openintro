@@ -8,3 +8,4 @@
 ^\.Rproj\.user$
 netlify.toml
 ^cran-comments\.md$
+^CRAN-RELEASE$
