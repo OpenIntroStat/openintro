@@ -10,7 +10,8 @@ A data frame with 1028 observations on the following variable.
 \code{against}.} }
 }
 \source{
-\url{www.gallup.com/poll/161198/favor-russian-nuclear-arms-reductions.aspx}
+Gallup report: In U.S., 56 percent Favor U.S.-Russian Nuclear Arms Reductions.
+Available at \url{https://news.gallup.com/poll/161198/favor-russian-nuclear-arms-reductions.aspx}.
 }
 \usage{
 nuclear_survey

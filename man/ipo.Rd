@@ -10,7 +10,7 @@ contains the line-by-line text of the IPO Prospectus of Facebook, Google,
 and LinkedIn, respectively.
 }
 \source{
-All IPO prospectuses are available from \url{www.sec.gov}:
+All IPO prospectuses are available from the U.S. Securities and Exchange Commission:
 \href{http://www.sec.gov/Archives/edgar/data/1326801/000119312512034517/d287954ds1.htm}{Facebook},
 \href{http://www.sec.gov/Archives/edgar/data/1288776/000119312504073639/ds1.htm}{Google},
 \href{http://www.sec.gov/Archives/edgar/data/1271024/000119312511016022/ds1.htm}{LinkedIn}.
@@ -62,7 +62,8 @@ comparison.cloud(m, max.words = 100)
 
 }
 \references{
-\url{http://blogs.wsj.com/totalreturn/2012/02/06/mark-zuckerberg-ceo-for-life}
+Zweig, J., 2020. Mark Zuckerberg: CEO For Life?. WSJ.
+Available at: \url{http://blogs.wsj.com/totalreturn/2012/02/06/mark-zuckerberg-ceo-for-life}.
 }
 \keyword{corpus}
 \keyword{datasets}

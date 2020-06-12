@@ -27,8 +27,8 @@ A data frame with 19302 observations on the following 17 variables.
 }
 }
 \source{
-\url{https://dev.socrata.com/foundry/datahub.transportation.gov/jhay-dgxy}.
-Original data from \url{datahub.transportation.gov}.
+Aircraft Wildlife Strike Data: Search Tool - FAA Wildlife Strike Database.
+Available at \url{https://dev.socrata.com/foundry/datahub.transportation.gov/jhay-dgxy}.
 Retrieval date: Feb 4, 2012.
 }
 \usage{

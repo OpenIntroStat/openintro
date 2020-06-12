@@ -3,22 +3,20 @@
 \docType{data}
 \name{vote_nsa}
 \alias{vote_nsa}
-\title{Predicting Who'd Vote for NSA Mass Surveillance}
+\title{Predicting who would vote for NSA Mass Surveillance}
 \format{
 A data frame with 434 observations on the following 5 variables.
 \describe{
   \item{name}{Name of the Congressional representative.}
-  \item{party}{The party of the representative: \code{D} for Democrat and
-  \code{R} for Republican.}
+  \item{party}{The party of the representative: \code{D} for Democrat and \code{R} for Republican.}
   \item{state}{State for the representative.}
   \item{money}{Money received from the defense industry for their campaigns.}
-  \item{phone_spy_vote}{Voting to rein in the phone dragnet or continue
-  allowing mass surveillance.}
+  \item{phone_spy_vote}{Voting to rein in the phone dragnet or continue allowing mass surveillance.}
   }
 }
 \source{
-Maplight (\url{maplight.org}).
-\url{http://s3.documentcloud.org/documents/741074/amash-amendment-vote-maplight.pdf}
+\href{https://maplight.org/}{MapLight}.
+Available at \url{http://s3.documentcloud.org/documents/741074/amash-amendment-vote-maplight.pdf}.
 }
 \usage{
 vote_nsa
@@ -37,8 +35,8 @@ boxplot(vote_nsa$money / 1000 ~ vote_nsa$phone_spy_vote,
 
 }
 \references{
-Article by Wired: \emph{Lawmakers Who Upheld NSA Phone Spying
-Received Double the Defense Industry Cash}.
-\url{http://www.wired.com/threatlevel/2013/07/money-nsa-vote}
+Kravets, D., 2020. Lawmakers Who Upheld NSA Phone Spying Received
+Double The Defense Industry Cash. WIRED.
+Available at \url{http://www.wired.com/threatlevel/2013/07/money-nsa-vote}.
 }
 \keyword{datasets}

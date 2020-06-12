@@ -7,7 +7,8 @@
 #' @docType data
 #' @format A data frame with 100 observations on the following variable.
 #' \describe{\item{heights}{a numeric vector} }
-#' @references \url{https://fcid.foodrisk.org}
+#' @references What We Eat In America - Food Commodity Intake Database.
+#' Available at \url{https://fcid.foodrisk.org/}.
 #' @keywords datasets
 #' @examples
 #'

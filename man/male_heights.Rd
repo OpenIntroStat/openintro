@@ -20,6 +20,7 @@ male_heights
 
 }
 \references{
-\url{https://fcid.foodrisk.org}
+What We Eat In America - Food Commodity Intake Database.
+Available at \url{https://fcid.foodrisk.org/}.
 }
 \keyword{datasets}
