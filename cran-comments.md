@@ -1,3 +1,15 @@
+## Resubmission
+This is a resubmission. In this version I have:
+
+* Fixed possibly mis-spelled words in DESCRIPTION.
+
+* Fixed all possibly invalid URLs in README.md and various .Rd files, 
+  except for https://fcid.foodrisk.org which works for me in the browswer even 
+  though it gave a "libcurl error code 60" on the Debian check (it was not 
+  flagged in the Windows check).
+  
+* Fixed cross-references in loop.Rd.
+  
 ## Test environments
 - R-hub windows-x86_64-devel (r-devel)
 - R-hub ubuntu-gcc-release (r-release)
