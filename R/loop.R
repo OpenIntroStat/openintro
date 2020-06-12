@@ -4,11 +4,10 @@
 
 #' Output a message while inside a loop
 #'
-#' (NOTE: \code{\link[utils]{txtProgressBar}} and
-#' \code{\link[utils]{setTxtProgressBar}} are better.) Output a message while
-#' inside a for loop to update the user on progress. This function is useful in
-#' tracking progress when the number of iterations is large or the procedures
-#' in each iteration take a long time.
+#' NOTE: \code{utils::txtProgressBar()} and \code{utils::setTxtProgressBar()} are better.
+#' Output a message while inside a for loop to update the user on progress. This
+#' function is useful in tracking progress when the number of iterations is large
+#' or the procedures in each iteration take a long time.
 #'
 #'
 #' @param i The index value used in the loop.
