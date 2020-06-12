@@ -4,7 +4,7 @@
 <!-- badges: start -->
 
 [![CRAN
-status](https://www.r-pkg.org/badges/version/openintro)](https://cran.r-project.org/web/packages/openintro/index.html)
+status](https://www.r-pkg.org/badges/version/openintro)](https://cran.r-project.org/package=openintro)
 <!-- badges: end -->
 
 Supplemental functions and data for ‘OpenIntro’ resources, which
@@ -41,6 +41,6 @@ PDF of the textbook is free and paperbacks can be purchased online
 
 ## Code of Conduct
 
-Please note that the ‘openintro’ project is released with a [Contributor
+Please note that the openintro project is released with a [Contributor
 Code of Conduct](CODE_OF_CONDUCT.md). By contributing to this project,
 you agree to abide by its terms.

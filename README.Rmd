@@ -14,7 +14,7 @@ knitr::opts_chunk$set(
 # openintro <a href="https://www.openintro.org/"><img src="man/figures/openintro-hex.png" align="right" height="139"></a>
 
 <!-- badges: start -->
-[![CRAN status](https://www.r-pkg.org/badges/version/openintro)](https://cran.r-project.org/web/packages/openintro/index.html)
+[![CRAN status](https://www.r-pkg.org/badges/version/openintro)](https://cran.r-project.org/package=openintro)
 <!-- badges: end -->
 
 
