@@ -15,7 +15,7 @@
 #' @param digits The number of digits after the decimal that should be shown
 #' for row or column proportions.
 #' @author David Diez
-#' @seealso \code{\link{email}}, \code{\link{cars}}, \code{\link{possum}},
+#' @seealso \code{\link{email}}, \code{\link{cars93}}, \code{\link{possum}},
 #' \code{\link{mariokart}}
 #' @keywords table LaTeX
 #' @export

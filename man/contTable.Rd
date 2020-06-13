@@ -35,7 +35,7 @@ contTable(email[,c("spam", "sent_email")])
 
 }
 \seealso{
-\code{\link{email}}, \code{\link{cars}}, \code{\link{possum}},
+\code{\link{email}}, \code{\link{cars93}}, \code{\link{possum}},
 \code{\link{mariokart}}
 }
 \author{

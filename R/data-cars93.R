@@ -1,4 +1,4 @@
-#' cars
+#' cars93
 #'
 #' A data frame with 54 rows and 6 columns. This data is a subset of the
 #' \code{Cars93} data set from the \code{MASS} package.
@@ -10,7 +10,7 @@
 #' Further description can be found in Lock (1993). Use the URL
 #' \url{http://www.amstat.org/publications/jse/v1n1/datasets.lock.html}.
 #'
-#' @name cars
+#' @name cars93
 #' @docType data
 #' @format A data frame with 54 observations on the following 6 variables.
 #' \describe{
@@ -31,17 +31,17 @@
 #' library(ggplot2)
 #'
 #' # Vehicle price by type
-#' ggplot(cars, aes(x = price)) +
+#' ggplot(cars93, aes(x = price)) +
 #'   geom_histogram(binwidth = 5) +
 #'   facet_wrap(~type)
 #'
 #' # Vehicle price vs. weight
-#' ggplot(cars, aes(x = weight, y = price)) +
+#' ggplot(cars93, aes(x = weight, y = price)) +
 #'   geom_point()
 #'
 #' # Milleage vs. weight
-#' ggplot(cars, aes(x = weight, y = mpg_city)) +
+#' ggplot(cars93, aes(x = weight, y = mpg_city)) +
 #'   geom_point() +
 #'   geom_smooth()
 #'
-"cars"
+"cars93"

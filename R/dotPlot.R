@@ -36,8 +36,8 @@
 #' @examples
 #'
 #' #===> example 1 <===#
-#' data(cars)
-#' dotPlot(cars$price, cars$type, key=c('large', 'midsize', 'small'), cex=1:3)
+#' data(cars93)
+#' dotPlot(cars93$price, cars93$type, key=c('large', 'midsize', 'small'), cex=1:3)
 #'
 #' #===> example 2 <===#
 #' data(run10)
