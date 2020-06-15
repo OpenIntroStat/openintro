@@ -1,15 +1,18 @@
+url: https://openintrostat.github.io/openintro
+
 home:
-  strip_header: true
   links:
     - text: Learn more
       href: https://www.openintro.org
 
 navbar:
-  components:
-    home: ~
-    intro:
-      text: OpenIntro
-      href: https://www.openintro.org
+  left:
+  - text: OpenIntro
+    href: https://www.openintro.org
+  - text: Reference
+    href: reference/index.html
+  - text: Code of Conduct
+    href: CODE_OF_CONDUCT.html
 
 reference:
 - title: Datasets
@@ -23,7 +26,7 @@ reference:
   - arbuthnot
   - ask
   - association
-  - assortative_mating
+  - assortive_mating
   - avandia
   - babies_crawl
   - babies
@@ -36,7 +39,7 @@ reference:
   - burger
   - cancer_in_dogs
   - cards
-  - cars
+  - cars93
   - cchousing
   - census
   - cherry
@@ -61,6 +64,7 @@ reference:
   - drug_use
   - ebola_survey
   - elmhurst
+  - email_test
   - email
   - email50
   - env_regulation
@@ -89,6 +93,7 @@ reference:
   - gpa_study_hours
   - gpa
   - gradestv
+  - gsearch
   - gss2010
   - health_coverage
   - healthcare_law_survey
@@ -109,6 +114,7 @@ reference:
   - kobe_basket
   - law_resume
   - leg_mari
+  - loan50
   - loans_full_schema
   - london_boroughs
   - london_murders
@@ -155,11 +161,15 @@ reference:
   - prius_mpg
   - prof_evals
   - prrace08
-  - res_demo
+  - res_demo_1
+  - res_demo_2
   - resume
+  - rosling_responses
+  - run10_09
   - run10
+  - run10samp
   - run17
-  - russion_influence_on_us_election_2016
+  - russian_influence_on_us_election_2016
   - sat_improve
   - satgpa
   - scotus_healthcare
