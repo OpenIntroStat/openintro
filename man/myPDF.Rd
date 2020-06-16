@@ -45,17 +45,14 @@ defaults are provided, including for the plotting parameters.
 }
 \examples{
 
-data(marioKart)
-#=====> Save a plot to a PDF <=====#
+# save a plot to a PDF
 # myPDF("myPlot.pdf")
-data(run10)
-histPlot(run10$time)
+histPlot(mariokart$total_pr)
 # dev.off()
 
-#=====> Save a plot to a PNG <=====#
-# myPNG("myPlot.pdf")
-data(run10)
-histPlot(run10$time)
+# save a plot to a PNG
+# myPNG("myPlot.png")
+histPlot(mariokart$total_pr)
 # dev.off()
 
 }

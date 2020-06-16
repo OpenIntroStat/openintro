@@ -35,30 +35,36 @@
 #' @export
 #' @examples
 #'
-#' #===> example 1 <===#
-#' data(cars93)
-#' dotPlot(cars93$price, cars93$type, key=c('large', 'midsize', 'small'), cex=1:3)
+#' library(dplyr)
 #'
-#' #===> example 2 <===#
-#' data(run10)
-#' layout(matrix(1:2,2), heights=c(2.7,1.5))
-#' par(las=1)
-#' these <- run10$gender=='M'
-#' dotPlot(run10$time[these], run10$div[these],
-#' 	col=fadeColor('black', '11'))
-#' # disorganized levels in the above plot, which we could
-#' # organize with key. an example of organizing the levels...
-#' dotPlot(run10$time[these], run10$div[these],
-#' 	col=fadeColor('black', '11'),
-#' 	key=c('20-24', '25-29', '30-34', '35-39'))
-#' par(las=0, mfrow=c(1,1))
+#' # Price by type
+#' dotPlot(cars93$price,
+#'         cars93$type,
+#'         key = c("large", "midsize", "small"),
+#'         cex = 1:3)
 #'
-#' #===> example 3 <===#
-#' data(mariokart)
-#' dotPlot(mariokart$total_pr, mariokart$cond, ylim=c(0.5,2.5),
-#' 	xlim=c(25, 80), cex=1) # miss the outliers
-#' boxPlot(mariokart$total_pr, mariokart$cond, add=1:2+0.1,
-#' 	key=c('new', 'used'), horiz=TRUE, axes=FALSE)
+#' # Hours worked by educational attainment or degree
+#' gss2010_nona <- gss2010 %>%
+#'   filter(!is.na(hrs1) & !is.na(degree))
+#'
+#' dotPlot(gss2010_nona$hrs1,
+#'         gss2010_nona$degree,
+#'         col = fadeColor("black", "11"))
+#'
+#' # levels reordered
+#' dotPlot(gss2010_nona$hrs1,
+#'         gss2010_nona$degree,
+#'         col = fadeColor("black", "11"),
+#'         key = c("LT HIGH SCHOOL", "HIGH SCHOOL", "BACHELOR", "JUNIOR COLLEGE", "GRADUATE"))
+#'
+#' # with boxPlot() overlaid
+#' dotPlot(mariokart$total_pr,
+#'         mariokart$cond,
+#'         ylim = c(0.5,2.5), xlim = c(25, 80), cex = 1)
+#' boxPlot(mariokart$total_pr,
+#'         mariokart$cond,
+#'         add = 1:2 + 0.1,
+#'         key = c("new", "used"), horiz = TRUE, axes = FALSE)
 #'
 dotPlot <- function(x, fact=NULL, vertical=FALSE, at=1, key=NULL, pch=20, col=fadeColor('black', '66'), cex=1.5, add=FALSE, axes=TRUE, xlim=NULL, ylim=NULL, ...){
 	skipOut <- FALSE

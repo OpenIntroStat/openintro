@@ -33,20 +33,40 @@
 #' @export
 #' @examples
 #'
-#' data(run10)
-#' par(mfrow=c(2,2))
-#' histPlot(run10$time)
-#' histPlot(run10$time[run10$gender=='M'], probability=TRUE, xlim=c(30, 180),
-#' 	ylim=c(0, 0.025), hollow=TRUE)
-#' histPlot(run10$time[run10$gender=='F'], probability=TRUE, add=TRUE,
-#' 	hollow=TRUE, lty=3, border='red')
-#' legend('topleft', col=c('black', 'red'), lty=2:3, legend=c('M','F'))
-#' histPlot(run10$time, col=fadeColor('yellow', '33'), border='darkblue',
-#' 	probability=TRUE, breaks=30, lwd=3)
-#' brks <- c(40, 50, 60, 65, 70, 75, 80, seq(82.5, 120, 2.5), 125,
-#' 	130, 135, 140, 150, 160, 180)
-#' histPlot(run10$time, probability=TRUE, breaks=brks,
-#' 	col=fadeColor('darkgoldenrod4', '33'))
+#'
+#' histPlot(tips$tip, main = "Tips")
+#'
+#' # overlaid hollow histograms
+#' histPlot(tips$tip[tips$day == "Tuesday"],
+#'          probability = TRUE,
+#'          hollow = TRUE,
+#'          main = "Tips by day")
+#' histPlot(tips$tip[tips$day == "Friday"],
+#'          probability = TRUE,
+#'          hollow = TRUE,
+#'          add = TRUE,
+#'          lty = 3,
+#'          border = "red")
+#' legend("topright",
+#'        col = c("black", "red"),
+#'        lty = 1:2,
+#'        legend = c("Tuesday", "Friday"))
+#'
+#' # breaks and colors
+#' histPlot(tips$tip,
+#'          col = fadeColor("yellow", "33"),
+#'          border = "darkblue",
+#'          probability = TRUE,
+#'          breaks = 30,
+#'          lwd = 3)
+#'
+#' # custom breaks
+#' brks <- c(-1, 0, 1, 2, 3, 4, seq(5, 20, 5), 22, 24, 26)
+#' histPlot(tips$tip,
+#'          probability = TRUE,
+#'          breaks = brks,
+#'          col = fadeColor("darkgoldenrod4", "33"),
+#'          xlim = c(0, 26))
 #'
 histPlot <- function(x,
                      col = fadeColor('black', '22'),
