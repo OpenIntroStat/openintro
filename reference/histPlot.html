@@ -228,20 +228,35 @@ bin margin to the left bin. Otherwise the ties default to the right bin.</p></td
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
-<span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span>(<span class='kw'>run10</span>)
-<span class='fu'><a href='https://rdrr.io/r/graphics/par.html'>par</a></span>(mfrow=<span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>2</span>,<span class='fl'>2</span>))
-<span class='fu'>histPlot</span>(<span class='kw'>run10</span><span class='op'>$</span><span class='kw'>time</span>)
-<span class='fu'>histPlot</span>(<span class='kw'>run10</span><span class='op'>$</span><span class='kw'>time</span>[<span class='kw'>run10</span><span class='op'>$</span><span class='kw'>gender</span><span class='op'>==</span><span class='st'>'M'</span>], probability=<span class='fl'>TRUE</span>, xlim=<span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>30</span>, <span class='fl'>180</span>),
-	ylim=c(0, 0.<span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>2<span class='fl'>0</span>),<span class='fl'>0.025</span>ow=TRUE)<span class='fl'>TRUE</span>
-<span class='fu'>histPlot</span>(<span class='kw'>run10</span><span class='op'>$</span><span class='kw'>time</span>[<span class='kw'>run10</span><span class='op'>$</span><span class='kw'>gender</span><span class='op'>==</span><span class='st'>'F'</span>], probability=<span class='fl'>TRUE</span>, add=<span class='fl'>TRUE</span>,
-	hollow=TRUE, l<span class='fl'>TRUE</span>, bord<span class='fl'>3</span>r='red')<span class='st'>'red'</span>
-<span class='fu'><a href='https://rdrr.io/r/graphics/legend.html'>legend</a></span>(<span class='st'>'topleft'</span>, col=<span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>'black'</span>, <span class='st'>'red'</span>), lty=<span class='fl'>2</span><span class='op'>:</span><span class='fl'>3</span>, legend=<span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>'M'</span>,<span class='st'>'F'</span>))
-<span class='fu'>histPlot</span>(<span class='kw'>run10</span><span class='op'>$</span><span class='kw'>time</span>, col=<span class='fu'>fadeColor</span>(<span class='st'>'yellow'</span>, <span class='st'>'33'</span>), border=<span class='st'>'darkblue'</span>,
-	probability=TRUE, b<span class='fl'>TRUE</span>s=30, lwd<span class='fl'>30</span>)<span class='fl'>3</span>
-<span class='kw'>brks</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>40</span>, <span class='fl'>50</span>, <span class='fl'>60</span>, <span class='fl'>65</span>, <span class='fl'>70</span>, <span class='fl'>75</span>, <span class='fl'>80</span>, <span class='fu'><a href='https://rdrr.io/r/base/seq.html'>seq</a></span>(<span class='fl'>82.5</span>, <span class='fl'>120</span>, <span class='fl'>2.5</span>), <span class='fl'>125</span>,
-	130, 13<span class='fl'>130</span>14<span class='fl'>135</span>15<span class='fl'>140</span>16<span class='fl'>150</span>18<span class='fl'>160</span><span class='fl'>180</span>
-<span class='fu'>histPlot</span>(<span class='kw'>run10</span><span class='op'>$</span><span class='kw'>time</span>, probability=<span class='fl'>TRUE</span>, breaks=<span class='kw'>brks</span>,
-	col=fadeCol<span class='fu'>fadeColor</span>o<span class='st'>'darkgoldenrod4'</span>)<span class='st'>'33'</span></div><div class='img'><img src='histPlot-1.png' alt='' width='700' height='433' /></div><div class='input'></div></pre>
+
+<span class='fu'>histPlot</span>(<span class='kw'>tips</span><span class='op'>$</span><span class='kw'>tip</span>, main = <span class='st'>"Tips"</span>)</div><div class='img'><img src='histPlot-1.png' alt='' width='700' height='433' /></div><div class='input'>
+<span class='co'># overlaid hollow histograms</span>
+<span class='fu'>histPlot</span>(<span class='kw'>tips</span><span class='op'>$</span><span class='kw'>tip</span>[<span class='kw'>tips</span><span class='op'>$</span><span class='kw'>day</span> <span class='op'>==</span> <span class='st'>"Tuesday"</span>],
+         probability = <span class='fl'>TRUE</span>,
+         hollow = <span class='fl'>TRUE</span>,
+         main = <span class='st'>"Tips by day"</span>)</div><div class='input'><span class='fu'>histPlot</span>(<span class='kw'>tips</span><span class='op'>$</span><span class='kw'>tip</span>[<span class='kw'>tips</span><span class='op'>$</span><span class='kw'>day</span> <span class='op'>==</span> <span class='st'>"Friday"</span>],
+         probability = <span class='fl'>TRUE</span>,
+         hollow = <span class='fl'>TRUE</span>,
+         add = <span class='fl'>TRUE</span>,
+         lty = <span class='fl'>3</span>,
+         border = <span class='st'>"red"</span>)</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/legend.html'>legend</a></span>(<span class='st'>"topright"</span>,
+       col = <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"black"</span>, <span class='st'>"red"</span>),
+       lty = <span class='fl'>1</span><span class='op'>:</span><span class='fl'>2</span>,
+       legend = <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"Tuesday"</span>, <span class='st'>"Friday"</span>))</div><div class='img'><img src='histPlot-2.png' alt='' width='700' height='433' /></div><div class='input'>
+<span class='co'># breaks and colors</span>
+<span class='fu'>histPlot</span>(<span class='kw'>tips</span><span class='op'>$</span><span class='kw'>tip</span>,
+         col = <span class='fu'>fadeColor</span>(<span class='st'>"yellow"</span>, <span class='st'>"33"</span>),
+         border = <span class='st'>"darkblue"</span>,
+         probability = <span class='fl'>TRUE</span>,
+         breaks = <span class='fl'>30</span>,
+         lwd = <span class='fl'>3</span>)</div><div class='img'><img src='histPlot-3.png' alt='' width='700' height='433' /></div><div class='input'>
+<span class='co'># custom breaks</span>
+<span class='kw'>brks</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='op'>-</span><span class='fl'>1</span>, <span class='fl'>0</span>, <span class='fl'>1</span>, <span class='fl'>2</span>, <span class='fl'>3</span>, <span class='fl'>4</span>, <span class='fu'><a href='https://rdrr.io/r/base/seq.html'>seq</a></span>(<span class='fl'>5</span>, <span class='fl'>20</span>, <span class='fl'>5</span>), <span class='fl'>22</span>, <span class='fl'>24</span>, <span class='fl'>26</span>)
+<span class='fu'>histPlot</span>(<span class='kw'>tips</span><span class='op'>$</span><span class='kw'>tip</span>,
+         probability = <span class='fl'>TRUE</span>,
+         breaks = <span class='kw'>brks</span>,
+         col = <span class='fu'>fadeColor</span>(<span class='st'>"darkgoldenrod4"</span>, <span class='st'>"33"</span>),
+         xlim = <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>0</span>, <span class='fl'>26</span>))</div><div class='img'><img src='histPlot-4.png' alt='' width='700' height='433' /></div><div class='input'></div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
