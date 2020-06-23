@@ -41,8 +41,9 @@
 
 <meta property="og:title" content="Stents for the treatment of stroke — stent30" />
 <meta property="og:description" content="An experiment that studies effectiveness of stents in treating patients at
-risk of stroke with some unexpected results. These data represent the
-results 30 days after stroke." />
+risk of stroke with some unexpected results. `stent30` represents
+the results 30 days after stroke and `stent365` represents the results
+365 days after stroke." />
 
 
 
@@ -117,8 +118,9 @@ results 30 days after stroke." />
 
     <div class="ref-description">
     <p>An experiment that studies effectiveness of stents in treating patients at
-risk of stroke with some unexpected results. These data represent the
-results 30 days after stroke.</p>
+risk of stroke with some unexpected results. `stent30` represents
+the results 30 days after stroke and `stent365` represents the results
+365 days after stroke.</p>
     </div>
 
     <pre class="usage"><span class='kw'>stent30</span></pre>
@@ -137,25 +139,21 @@ results 30 days after stroke.</p>
     <p>Chimowitz MI, Lynn MJ, Derdeyn CP, et al. 2011. Stenting versus
 Aggressive Med- ical Therapy for Intracranial Arterial Stenosis. New England
 Journal of Medicine 365:993- 1003.
-www.nejm.org/doi/full/10.1056/NEJMoa1105335. NY Times article reporting on
-the study: www.nytimes.com/2011/09/08/health/research/08stent.html.</p>
+<a href='https://www.nejm.org/doi/full/10.1056/NEJMoa1105335'>https://www.nejm.org/doi/full/10.1056/NEJMoa1105335</a>.
+NY Times article reporting on the study: <a href='https://www.nytimes.com/2011/09/08/health/research/08stent.html'>https://www.nytimes.com/2011/09/08/health/research/08stent.html</a>.</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
-<span class='kw'>stent30</span></div><div class='output co'>#&gt; <span style='color: #555555;'># A tibble: 451 x 2</span><span>
-#&gt;    group     outcome
-#&gt;    </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span>     </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span>  
-#&gt; </span><span style='color: #555555;'> 1</span><span> treatment stroke 
-#&gt; </span><span style='color: #555555;'> 2</span><span> treatment stroke 
-#&gt; </span><span style='color: #555555;'> 3</span><span> treatment stroke 
-#&gt; </span><span style='color: #555555;'> 4</span><span> treatment stroke 
-#&gt; </span><span style='color: #555555;'> 5</span><span> treatment stroke 
-#&gt; </span><span style='color: #555555;'> 6</span><span> treatment stroke 
-#&gt; </span><span style='color: #555555;'> 7</span><span> treatment stroke 
-#&gt; </span><span style='color: #555555;'> 8</span><span> treatment stroke 
-#&gt; </span><span style='color: #555555;'> 9</span><span> treatment stroke 
-#&gt; </span><span style='color: #555555;'>10</span><span> treatment stroke 
-#&gt; </span><span style='color: #555555;'># … with 441 more rows</span><span></div><div class='input'></div></span></pre>
+<span class='co'># 30-day results</span>
+<span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span>(<span class='kw'>stent30</span>)</div><div class='output co'>#&gt;            outcome
+#&gt; group       no event stroke
+#&gt;   control        214     13
+#&gt;   treatment      191     33</div><div class='input'>
+<span class='co'># 365-day results</span>
+<span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span>(<span class='kw'>stent365</span>)</div><div class='output co'>#&gt;            outcome
+#&gt; group       no event stroke
+#&gt;   control        199     28
+#&gt;   treatment      179     45</div><div class='input'></div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
