@@ -26,8 +26,6 @@ Suggests:
     dplyr,
     forcats,
     lubridate,
-    maps,
-    testthat,
     tidyr
 Imports: 
     ggplot2 (>= 2.2.1),
@@ -36,6 +34,8 @@ Imports:
     tibble
 Depends: 
     R (>= 2.10),
-    cherryblossom
+    cherryblossom,
+    airports,
+    usdata
 URL: https://github.com/OpenIntroStat/openintro
 BugReports: https://github.com/OpenIntroStat/openintro/issues
