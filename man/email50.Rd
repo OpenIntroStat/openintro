@@ -59,6 +59,6 @@ identical(d, email50)
 
 }
 \seealso{
-\code{\link{email}}, \code{\link{county}}
+\code{\link{email}}
 }
 \keyword{datasets}

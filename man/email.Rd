@@ -109,6 +109,6 @@ lines(htmlYes, lwd=2, col=2)
 
 }
 \seealso{
-\code{\link{email50}}, \code{\link{county}}
+\code{\link{email50}}
 }
 \keyword{datasets}

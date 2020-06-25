@@ -44,7 +44,7 @@
 #'   \item{number}{Factor variable saying whether there was no number, a small
 #'   number (under 1 million), or a big number.}
 #'   }
-#' @seealso \code{\link{email50}}, \code{\link{county}}
+#' @seealso \code{\link{email50}}
 #' @source David Diez's Gmail Account, early months of 2012. All personally
 #' identifiable information has been removed.
 #' @keywords datasets
