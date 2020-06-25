@@ -35,6 +35,7 @@ Imports:
     rmarkdown,
     tibble
 Depends: 
-    R (>= 2.10)
+    R (>= 2.10),
+    cherryblossom
 URL: https://github.com/OpenIntroStat/openintro
 BugReports: https://github.com/OpenIntroStat/openintro/issues
