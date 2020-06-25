@@ -53,9 +53,6 @@ reference:
   - COL
   - corr_match
   - country_iso
-  - county_complete
-  - county_w_sm_ban
-  - county
   - cpr
   - credits
   - diabetes2
@@ -185,7 +182,6 @@ reference:
   - sp500
   - speed_gender_height
   - starbucks
-  - state_stats
   - stats_scores
   - stem_cell
   - stent30
@@ -219,7 +215,6 @@ reference:
 
 - title: Functions
   contents:
-  - abbr2state
   - ArrowLines
   - AxisInDollars
   - AxisInPercent
@@ -252,5 +247,4 @@ reference:
   - normTail
   - PlotWLine
   - qqnormsim
-  - state2abbr
   - treeDiag
