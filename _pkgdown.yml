@@ -86,7 +86,6 @@ reference:
   - global_warming_pew
   - goog
   - gov_poll
-  - govrace10
   - gpa_iq
   - gpa_study_hours
   - gpa
@@ -100,7 +99,6 @@ reference:
   - helmet
   - hfi
   - house
-  - houserace10
   - housing
   - hsb2
   - husbands_wives
@@ -158,7 +156,6 @@ reference:
   - prison
   - prius_mpg
   - prof_evals
-  - prrace08
   - res_demo_1
   - res_demo_2
   - resume
@@ -168,7 +165,6 @@ reference:
   - satgpa
   - scotus_healthcare
   - seattlepets
-  - senaterace10
   - simulated_dist
   - simulated_normal
   - simulated_scatter
@@ -206,8 +202,6 @@ reference:
   - unempl
   - unemploy_pres
   - urban_owner
-  - urban_rural_pop
-  - vote_nsa
   - winery_cars
   - xom
   - yawn
