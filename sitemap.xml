@@ -37,9 +37,6 @@
     <loc>https://openintrostat.github.io/openintro/reference/PlotWLine.html</loc>
   </url>
   <url>
-    <loc>https://openintrostat.github.io/openintro/reference/abbr2state.html</loc>
-  </url>
-  <url>
     <loc>https://openintrostat.github.io/openintro/reference/absenteeism.html</loc>
   </url>
   <url>
@@ -157,15 +154,6 @@
     <loc>https://openintrostat.github.io/openintro/reference/country_iso.html</loc>
   </url>
   <url>
-    <loc>https://openintrostat.github.io/openintro/reference/county.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/county_complete.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/county_w_sm_ban.html</loc>
-  </url>
-  <url>
     <loc>https://openintrostat.github.io/openintro/reference/cpr.html</loc>
   </url>
   <url>
@@ -277,9 +265,6 @@
     <loc>https://openintrostat.github.io/openintro/reference/gov_poll.html</loc>
   </url>
   <url>
-    <loc>https://openintrostat.github.io/openintro/reference/govrace10.html</loc>
-  </url>
-  <url>
     <loc>https://openintrostat.github.io/openintro/reference/gpa.html</loc>
   </url>
   <url>
@@ -320,9 +305,6 @@
   </url>
   <url>
     <loc>https://openintrostat.github.io/openintro/reference/house.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/houserace10.html</loc>
   </url>
   <url>
     <loc>https://openintrostat.github.io/openintro/reference/housing.html</loc>
@@ -520,9 +502,6 @@
     <loc>https://openintrostat.github.io/openintro/reference/prof_evals.html</loc>
   </url>
   <url>
-    <loc>https://openintrostat.github.io/openintro/reference/prrace08.html</loc>
-  </url>
-  <url>
     <loc>https://openintrostat.github.io/openintro/reference/qqnormsim.html</loc>
   </url>
   <url>
@@ -551,9 +530,6 @@
   </url>
   <url>
     <loc>https://openintrostat.github.io/openintro/reference/seattlepets.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/senaterace10.html</loc>
   </url>
   <url>
     <loc>https://openintrostat.github.io/openintro/reference/simulated_dist.html</loc>
@@ -596,12 +572,6 @@
   </url>
   <url>
     <loc>https://openintrostat.github.io/openintro/reference/starbucks.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/state2abbr.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/state_stats.html</loc>
   </url>
   <url>
     <loc>https://openintrostat.github.io/openintro/reference/stats_scores.html</loc>
@@ -668,15 +638,6 @@
   </url>
   <url>
     <loc>https://openintrostat.github.io/openintro/reference/unemploy_pres.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/urban_owner.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/urban_rural_pop.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/vote_nsa.html</loc>
   </url>
   <url>
     <loc>https://openintrostat.github.io/openintro/reference/winery_cars.html</loc>
