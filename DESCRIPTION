@@ -26,7 +26,8 @@ Suggests:
     dplyr,
     forcats,
     lubridate,
-    tidyr
+    tidyr,
+    knitr
 Imports: 
     ggplot2 (>= 2.2.1),
     graphics,
@@ -37,3 +38,4 @@ Depends:
     cherryblossom
 URL: https://github.com/OpenIntroStat/openintro
 BugReports: https://github.com/OpenIntroStat/openintro/issues
+VignetteBuilder: knitr

@@ -9,6 +9,10 @@ navbar:
   left:
   - text: Reference
     href: reference/index.html
+  - text: Articles
+    menu:
+    - text: Datasets of OpenIntro
+      href: articles/datasets.html
   right:
   - text: OpenIntro
     href: https://www.openintro.org

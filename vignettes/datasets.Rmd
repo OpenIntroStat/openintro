@@ -1,0 +1,25 @@
+---
+title: "Datasets of OpenIntro"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{datasets}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+The OpenIntro project's mission is to make educational products that are free, transparent, and lower barriers to education. 
+OpenIntro also features supporting resources, such as slides, videos, and more.
+This means we have lots and lots of data that are used in our textbooks and supporting resources, and we make these datasets openly available via the R packages we develop as part of this project.
+
+The flagship R package of OpenIntro is this package, **openintro**. 
+You can find a list of all datasets included in the package on the [package reference page](http://openintrostat.github.io/openintro/reference/index.html) as well as by running `data(package = "openintro")` in the R console after loading the package.
+
+When you install the openintro package, it will also install three other packages that house datasets used in OpenIntro resources.
+
+- [**airports**](https://openintrostat.github.io/airports/)
+- [**cherryblossom**](https://openintrostat.github.io/cherryblossom/)
+- [**usdata**](https://openintrostat.github.io/usdata/)
+
+Note that some of the datasets in these packages were previously in the openintro package.
+The datasets in these packages have been split off in an effort to keep the size of the openintro package from bloating while also continuing to add useful datasets in areas that may be of interest to learners and that are useful for teaching introductory statistics and data science topics. 
+Since the packages are installed and loaded with openintro, you can still use any of the datasets by just loading the openintro package.
