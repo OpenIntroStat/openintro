@@ -7,10 +7,11 @@ home:
 
 navbar:
   left:
-  - text: OpenIntro
-    href: https://www.openintro.org
   - text: Reference
     href: reference/index.html
+  right:
+  - text: OpenIntro
+    href: https://www.openintro.org
   - text: Code of Conduct
     href: CODE_OF_CONDUCT.html
 
