@@ -35,7 +35,9 @@ Imports:
     tibble
 Depends: 
     R (>= 2.10),
-    cherryblossom
+    airports,
+    cherryblossom,
+    usdata
 URL: https://github.com/OpenIntroStat/openintro
 BugReports: https://github.com/OpenIntroStat/openintro/issues
 VignetteBuilder: knitr
