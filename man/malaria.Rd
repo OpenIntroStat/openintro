@@ -15,7 +15,7 @@ A data frame with 20 observations on the following 2 variables.
 Lyke et al. 2017. PfSPZ vaccine induces strain-transcending T cells
 and durable protection against heterologous controlled human malaria
 infection.  PNAS 114(10):2711-2716.
-\url{http://www.pnas.org/content/114/10/2711}
+\url{https://doi.org/10.1073/pnas.1615324114}
 }
 \usage{
 malaria
