@@ -22,6 +22,10 @@ This is a resubmission. In this version I have:
 
 ## R CMD check results
 
+There were no ERRORs or WARNINGs.
+
+There were 2 NOTEs, explained below.
+
 * checking CRAN incoming feasibility ... NOTE
   Maintainer: ‘Mine Çetinkaya-Rundel <cetinkaya.mine@gmail.com>’
 
@@ -34,9 +38,9 @@ This is a resubmission. In this version I have:
   2020-06-09 by email.
 
 * checking installed package size ... NOTE
-  installed size is  6.1Mb
-  sub-directories of 1Mb or more:
-    data   5.2Mb
+    installed size is  7.1Mb
+    sub-directories of 1Mb or more:
+      data   6.1Mb
   
   * This is a majority data package that contains the datasets that are used 
   in the OpenIntro textbooks (open-source, free introductory statistics 
@@ -46,63 +50,21 @@ This is a resubmission. In this version I have:
   consideration should be given to a separate data-only package which can be
   updated only rarely", and this package fits the critera.
 
-0 errors ✓ | 0 warnings ✓ | 2 notes x
+Additionally, the following URLs were tagged as possibly invalid in Win Builder checks. All of them work in incognito browsers for me:
 
-----
-
-From r-hub:
-
-- Fedora Linux, R-devel, clang, gfortran
-
-* checking installed package size ... NOTE
-  installed size is  6.1Mb
-  sub-directories of 1Mb or more:
-    data   5.2Mb
-* checking data for non-ASCII characters ... NOTE
-  Note: found 2518 marked UTF-8 strings
-  
-- Fedora Linux, R-devel, clang, gfortran
-
-* checking CRAN incoming feasibility ... NOTE
-Maintainer: ‘Mine Çetinkaya-Rundel <cetinkaya.mine@gmail.com>’
-
-New maintainer:
-  Mine Çetinkaya-Rundel <cetinkaya.mine@gmail.com>
-Old maintainer(s):
-  David M Diez <david@openintro.org>
-
-Found the following (possibly) invalid URLs:
-  URL: https://www.kaggle.com/gsutters/the-human-freedom-index
+- URL: https://www.kaggle.com/gsutters/the-human-freedom-index
     From: man/hfi.Rd
     Status: 404
     Message: Not Found
-* checking installed package size ... NOTE
-  installed size is  6.1Mb
-  sub-directories of 1Mb or more:
-    data   5.2Mb
 
-- Ubuntu Linux 16.04 LTS, R-release, GCC
-
-* checking CRAN incoming feasibility ... NOTE
-Maintainer: ‘Mine Çetinkaya-Rundel <cetinkaya.mine@gmail.com>’
-
-New maintainer:
-  Mine Çetinkaya-Rundel <cetinkaya.mine@gmail.com>
-Old maintainer(s):
-  David M Diez <david@openintro.org>
-
-Found the following (possibly) invalid URLs:
-  URL: https://sedac.ciesin.columbia.edu/es/esi/ESI2005_Main_Report.pdf
+- URL: https://sedac.ciesin.columbia.edu/es/esi/ESI2005_Main_Report.pdf
     From: man/esi.Rd
     Status: Error
     Message: libcurl error code 60:
         SSL certificate problem: certificate has expired
         (Status without verification: OK)
-  URL: https://www.kaggle.com/gsutters/the-human-freedom-index
-    From: man/hfi.Rd
-    Status: 404
-    Message: Not Found
-* checking installed package size ... NOTE
-  installed size is  6.1Mb
-  sub-directories of 1Mb or more:
-    data   5.2Mb
+
+- URL: https://doi.org/10.1073/pnas.1615324114 (moved to https://www.pnas.org/lookup/doi/10.1073/pnas.1615324114)
+    From: man/malaria.Rd
+    Status: 503
+    Message: Service Unavailable
