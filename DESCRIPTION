@@ -5,7 +5,7 @@ Authors@R: c(
     person("Mine", "\u00C7etinkaya-Rundel", email = "cetinkaya.mine@gmail.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0001-6452-2420")),
     person("David", "Diez", email = "david.m.diez@gmail.com", role = c("aut")),
     person("Andrew", "Bray", email = "andrew.bray@gmail.com", role = c("aut")),
-    person("Albert Y.", "Kim", email = "albert.ys.kim@gmail.com", role = c("aut")),
+    person("Albert Y.", "Kim", email = "albert.ys.kim@gmail.com", role = c("aut"), comment = c(ORCID = "0000-0001-7824-306X")),
     person("Ben", "Baumer", email = "ben.baumer@gmail.com", role = c("aut")),
     person("Chester", "Ismay", email = "chester.ismay@gmail.com", role = c("aut")),
     person("Christopher", "Barr", role = c("aut"))
