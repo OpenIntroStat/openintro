@@ -124,19 +124,19 @@
     </div>
 
     <pre class="usage"><span class='fu'>CCP</span>(
-  xlim = <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='op'>-</span><span class='fl'>4</span>, <span class='fl'>4</span>),
-  ylim = <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='op'>-</span><span class='fl'>4</span>, <span class='fl'>4</span>),
-  mar = <span class='fu'><a href='https://rdrr.io/r/base/rep.html'>rep</a></span>(<span class='fl'>0</span>, <span class='fl'>4</span>),
-  length = <span class='fl'>0.1</span>,
-  tcl = <span class='fl'>0.007</span>,
-  xylab = <span class='fl'>FALSE</span>,
-  ticks = <span class='fl'>1</span>,
-  ticklabs = <span class='fl'>1</span>,
-  xpos = <span class='fl'>1</span>,
-  ypos = <span class='fl'>2</span>,
-  cex.coord = <span class='fl'>1</span>,
-  cex.xylab = <span class='fl'>1.5</span>,
-  add = <span class='fl'>FALSE</span>
+  <span class='kw'>xlim</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(-<span class='fl'>4</span>, <span class='fl'>4</span>),
+  <span class='kw'>ylim</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(-<span class='fl'>4</span>, <span class='fl'>4</span>),
+  <span class='kw'>mar</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/rep.html'>rep</a></span>(<span class='fl'>0</span>, <span class='fl'>4</span>),
+  <span class='kw'>length</span> <span class='kw'>=</span> <span class='fl'>0.1</span>,
+  <span class='kw'>tcl</span> <span class='kw'>=</span> <span class='fl'>0.007</span>,
+  <span class='kw'>xylab</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>,
+  <span class='kw'>ticks</span> <span class='kw'>=</span> <span class='fl'>1</span>,
+  <span class='kw'>ticklabs</span> <span class='kw'>=</span> <span class='fl'>1</span>,
+  <span class='kw'>xpos</span> <span class='kw'>=</span> <span class='fl'>1</span>,
+  <span class='kw'>ypos</span> <span class='kw'>=</span> <span class='fl'>2</span>,
+  <span class='kw'>cex.coord</span> <span class='kw'>=</span> <span class='fl'>1</span>,
+  <span class='kw'>cex.xylab</span> <span class='kw'>=</span> <span class='fl'>1.5</span>,
+  <span class='kw'>add</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>
 )</pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
@@ -214,17 +214,15 @@ existing plot.</p></td>
 
     <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
 
-    <div class='dont-index'><p><code>lsegments</code>, <code>dlsegments</code>,
-<code>ArrowLines</code></p></div>
-    <h2 class="hasAnchor" id="author"><a class="anchor" href="#author"></a>Author</h2>
-
-    <p>David Diez</p>
+    <div class='dont-index'><p><code><a href='lsegments.html'>lsegments</a></code>, <code><a href='dlsegments.html'>dlsegments</a></code>,
+<code><a href='ArrowLines.html'>ArrowLines</a></code></p></div>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
 <span class='fu'>CCP</span>()</div><div class='img'><img src='CCP-1.png' alt='' width='700' height='433' /></div><div class='input'>
-<span class='fu'>CCP</span>(xylab=<span class='fl'>TRUE</span>, ylim=<span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='op'>-</span><span class='fl'>3.5</span>, <span class='fl'>2</span>), xpos=<span class='fl'>3</span>, cex.coord=<span class='fl'>1</span>)</div><div class='img'><img src='CCP-2.png' alt='' width='700' height='433' /></div><div class='input'>
-<span class='fu'>CCP</span>(xlim=<span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='op'>-</span><span class='fl'>8</span>, <span class='fl'>8</span>), ylim=<span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='op'>-</span><span class='fl'>10</span>, <span class='fl'>6</span>), ticklabs=<span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>2</span>,<span class='fl'>2</span>), cex.xylab=<span class='fl'>0.8</span>)</div><div class='img'><img src='CCP-3.png' alt='' width='700' height='433' /></div><div class='input'></div></pre>
+<span class='fu'>CCP</span>(<span class='kw'>xylab</span><span class='kw'>=</span><span class='fl'>TRUE</span>, <span class='kw'>ylim</span><span class='kw'>=</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(-<span class='fl'>3.5</span>, <span class='fl'>2</span>), <span class='kw'>xpos</span><span class='kw'>=</span><span class='fl'>3</span>, <span class='kw'>cex.coord</span><span class='kw'>=</span><span class='fl'>1</span>)</div><div class='img'><img src='CCP-2.png' alt='' width='700' height='433' /></div><div class='input'>
+<span class='fu'>CCP</span>(<span class='kw'>xlim</span><span class='kw'>=</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(-<span class='fl'>8</span>, <span class='fl'>8</span>), <span class='kw'>ylim</span><span class='kw'>=</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(-<span class='fl'>10</span>, <span class='fl'>6</span>), <span class='kw'>ticklabs</span><span class='kw'>=</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>2</span>,<span class='fl'>2</span>), <span class='kw'>cex.xylab</span><span class='kw'>=</span><span class='fl'>0.8</span>)</div><div class='img'><img src='CCP-3.png' alt='' width='700' height='433' /></div><div class='input'>
+</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
@@ -240,7 +238,7 @@ existing plot.</p></td>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.9000.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
 </div>
 
       </footer>

@@ -120,15 +120,15 @@
     </div>
 
     <div class="ref-description">
-    <p>This is a subsample of the <code>email</code> data set.</p>
+    <p>This is a subsample of the <code><a href='email.html'>email</a></code> data set.</p>
     </div>
 
-    <pre class="usage"><span class='kw'>email50</span></pre>
+    <pre class="usage"><span class='no'>email50</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>A data frame with 50 observations on the following 21 variables.</p><dl>
+    <p>A data frame with 50 observations on the following 21 variables.</p><dl'>
   <dt>spam</dt><dd><p>Indicator for whether the email was spam.</p></dd>
   <dt>to_multiple</dt><dd><p>Indicator for whether the email was addressed to more
   than one recipient.</p></dd>
@@ -168,14 +168,15 @@
 identifiable information has been removed.</p>
     <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
 
-    <div class='dont-index'><p><code>email</code></p></div>
+    <div class='dont-index'><p><code><a href='email.html'>email</a></code></p></div>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
 <span class='fu'><a href='https://rdrr.io/r/base/Random.html'>set.seed</a></span>(<span class='fl'>5</span>)
-<span class='kw'>d</span>  <span class='op'>&lt;-</span> <span class='kw'>email</span>[<span class='fu'><a href='https://rdrr.io/r/base/sample.html'>sample</a></span>(<span class='fu'><a href='https://rdrr.io/r/base/nrow.html'>nrow</a></span>(<span class='kw'>email</span>), <span class='fl'>50</span>),][<span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>1</span><span class='op'>:</span><span class='fl'>25</span>,<span class='fl'>27</span><span class='op'>:</span><span class='fl'>50</span>,<span class='fl'>26</span>),]
-<span class='fu'><a href='https://rdrr.io/r/base/identical.html'>identical</a></span>(<span class='kw'>d</span>, <span class='kw'>email50</span>)</div><div class='output co'>#&gt; [1] FALSE</div><div class='input'>
-<span class='co'># the "[c(1,26,2:25,27:50),]" was added to reorder the cases</span>
+<span class='no'>d</span>  <span class='kw'>&lt;-</span> <span class='no'>email</span>[<span class='fu'><a href='https://rdrr.io/r/base/sample.html'>sample</a></span>(<span class='fu'><a href='https://rdrr.io/r/base/nrow.html'>nrow</a></span>(<span class='no'>email</span>), <span class='fl'>50</span>),][<span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>1</span>:<span class='fl'>25</span>,<span class='fl'>27</span>:<span class='fl'>50</span>,<span class='fl'>26</span>),]
+<span class='fu'><a href='https://rdrr.io/r/base/identical.html'>identical</a></span>(<span class='no'>d</span>, <span class='no'>email50</span>)</div><div class='output co'>#&gt; [1] FALSE</div><div class='input'>
+# the "[c(1,26,2:25,27:50),]" was added to reorder the cases
+
 </div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
@@ -192,7 +193,7 @@ identifiable information has been removed.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.9000.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
 </div>
 
       </footer>

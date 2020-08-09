@@ -127,12 +127,12 @@ Beyond survey, a survey conducted on high school seniors by the National
 Center of Education Statistics.</p>
     </div>
 
-    <pre class="usage"><span class='kw'>hsb2</span></pre>
+    <pre class="usage"><span class='no'>hsb2</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>A data frame with 200 observations and 11 variables.</p><dl>
+    <p>A data frame with 200 observations and 11 variables.</p><dl'>
 <dt>id</dt><dd><p>Student ID.</p></dd> <dt>gender</dt><dd><p>Student's gender, with levels
 <code>female</code> and <code>male</code>.</p></dd> <dt>race</dt><dd><p>Student's race, with levels
 <code>african american</code>, <code>asian</code>, <code>hispanic</code>, and <code>white</code>.</p></dd>
@@ -151,14 +151,15 @@ science score.</p></dd> <dt>socst</dt><dd><p>Standardized social studies score.<
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
-<span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='kw'><a href='http://ggplot2.tidyverse.org'>ggplot2</a></span>)
+<span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='no'>ggplot2</span>)
 
-<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='kw'>hsb2</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(x = <span class='kw'>read</span> <span class='op'>-</span> <span class='kw'>write</span>, y = <span class='kw'>ses</span>)) <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_boxplot.html'>geom_boxplot</a></span>() <span class='op'>+</span>
+<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='no'>hsb2</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='no'>read</span> - <span class='no'>write</span>, <span class='kw'>y</span> <span class='kw'>=</span> <span class='no'>ses</span>)) +
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_boxplot.html'>geom_boxplot</a></span>() +
   <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span>(
-    x = <span class='st'>"Difference between reading and writing scores"</span>,
-    y = <span class='st'>"Socio-economic status"</span>
+    <span class='kw'>x</span> <span class='kw'>=</span> <span class='st'>"Difference between reading and writing scores"</span>,
+    <span class='kw'>y</span> <span class='kw'>=</span> <span class='st'>"Socio-economic status"</span>
     )</div><div class='img'><img src='hsb2-1.png' alt='' width='700' height='433' /></div><div class='input'>
+
 </div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
@@ -175,7 +176,7 @@ science score.</p></dd> <dt>socst</dt><dd><p>Standardized social studies score.<
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.9000.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
 </div>
 
       </footer>

@@ -123,12 +123,12 @@
     <p>Country-level statistics from the US Central Intelligence Agency (CIA).</p>
     </div>
 
-    <pre class="usage"><span class='kw'>cia_factbook</span></pre>
+    <pre class="usage"><span class='no'>cia_factbook</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>A data frame with 259 observations on the following 11 variables.</p><dl>
+    <p>A data frame with 259 observations on the following 11 variables.</p><dl'>
  <dt>area</dt><dd><p>Land
 area, in square kilometers. (1 square kilometer is 0.386 square miles</p></dd>
 <dt>birth_rate</dt><dd><p>Birth rate, in births per 1,000 people.</p></dd>
@@ -150,15 +150,16 @@ live births where the death is related to pregnancy or birth.</p></dd>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
-<span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='kw'><a href='https://dplyr.tidyverse.org'>dplyr</a></span>)
-<span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='kw'><a href='http://ggplot2.tidyverse.org'>ggplot2</a></span>)
+<span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='no'>dplyr</span>)
+<span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='no'>ggplot2</span>)
 
-<span class='kw'>cia_factbook_iup</span> <span class='op'>&lt;-</span> <span class='kw'>cia_factbook</span> <span class='op'>%&gt;%</span>
-  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/mutate.html'>mutate</a></span>(internet_users_percent = <span class='fl'>100</span> <span class='op'>*</span> <span class='kw'>internet_users</span> <span class='op'>/</span> <span class='kw'>population</span>)
+<span class='no'>cia_factbook_iup</span> <span class='kw'>&lt;-</span> <span class='no'>cia_factbook</span> <span class='kw'>%&gt;%</span>
+  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/mutate.html'>mutate</a></span>(<span class='kw'>internet_users_percent</span> <span class='kw'>=</span> <span class='fl'>100</span> * <span class='no'>internet_users</span> / <span class='no'>population</span>)
 
-<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='kw'>cia_factbook_iup</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(x = <span class='kw'>internet_users_percent</span>, y = <span class='kw'>life_exp_at_birth</span>)) <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_point.html'>geom_point</a></span>() <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span>(x = <span class='st'>"Percentage of internet users"</span>, y = <span class='st'>"Life expectancy at birth"</span>)</div><div class='output co'>#&gt; <span class='warning'>Warning: Removed 51 rows containing missing values (geom_point).</span></div><div class='img'><img src='cia_factbook-1.png' alt='' width='700' height='433' /></div><div class='input'></div></pre>
+<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='no'>cia_factbook_iup</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='no'>internet_users_percent</span>, <span class='kw'>y</span> <span class='kw'>=</span> <span class='no'>life_exp_at_birth</span>)) +
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_point.html'>geom_point</a></span>() +
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='st'>"Percentage of internet users"</span>, <span class='kw'>y</span> <span class='kw'>=</span> <span class='st'>"Life expectancy at birth"</span>)</div><div class='output co'>#&gt; <span class='warning'>Warning: Removed 51 rows containing missing values (geom_point).</span></div><div class='img'><img src='cia_factbook-1.png' alt='' width='700' height='433' /></div><div class='input'>
+</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
@@ -174,7 +175,7 @@ live births where the death is related to pregnancy or birth.</p></dd>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.9000.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
 </div>
 
       </footer>

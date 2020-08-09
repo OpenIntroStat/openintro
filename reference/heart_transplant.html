@@ -141,12 +141,12 @@ this experiment those patients were kept in the data as continuing
 candidates.</p>
     </div>
 
-    <pre class="usage"><span class='kw'>heart_transplant</span></pre>
+    <pre class="usage"><span class='no'>heart_transplant</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>A data frame with 103 observations on the following 8 variables.</p><dl>
+    <p>A data frame with 103 observations on the following 8 variables.</p><dl'>
   <dt>id</dt><dd><p>ID number of the patient.</p></dd>
   <dt>acceptyear</dt><dd><p>Year of acceptance as a heart transplant candidate.</p></dd>
   <dt>age</dt><dd><p>Age of the patient at the beginning of the study.</p></dd>
@@ -173,14 +173,15 @@ pp. 74-80.</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
-<span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='kw'><a href='http://ggplot2.tidyverse.org'>ggplot2</a></span>)
+<span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='no'>ggplot2</span>)
 
-<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='kw'>heart_transplant</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(x = <span class='kw'>transplant</span>, y = <span class='kw'>survtime</span>)) <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_boxplot.html'>geom_boxplot</a></span>() <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span>(x = <span class='st'>"Transplant"</span>, y = <span class='st'>"Survival time (days)"</span>)</div><div class='img'><img src='heart_transplant-1.png' alt='' width='700' height='433' /></div><div class='input'>
-<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='kw'>heart_transplant</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(x = <span class='kw'>transplant</span>, fill = <span class='kw'>survived</span>)) <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_bar.html'>geom_bar</a></span>(position = <span class='st'>"fill"</span>) <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span>(x = <span class='st'>"Transplant"</span>, y = <span class='st'>"Proportion"</span>, fill = <span class='st'>"Outcome"</span>)</div><div class='img'><img src='heart_transplant-2.png' alt='' width='700' height='433' /></div><div class='input'></div></pre>
+<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='no'>heart_transplant</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='no'>transplant</span>, <span class='kw'>y</span> <span class='kw'>=</span> <span class='no'>survtime</span>)) +
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_boxplot.html'>geom_boxplot</a></span>() +
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='st'>"Transplant"</span>, <span class='kw'>y</span> <span class='kw'>=</span> <span class='st'>"Survival time (days)"</span>)</div><div class='img'><img src='heart_transplant-1.png' alt='' width='700' height='433' /></div><div class='input'>
+<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='no'>heart_transplant</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='no'>transplant</span>, <span class='kw'>fill</span> <span class='kw'>=</span> <span class='no'>survived</span>)) +
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_bar.html'>geom_bar</a></span>(<span class='kw'>position</span> <span class='kw'>=</span> <span class='st'>"fill"</span>) +
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='st'>"Transplant"</span>, <span class='kw'>y</span> <span class='kw'>=</span> <span class='st'>"Proportion"</span>, <span class='kw'>fill</span> <span class='kw'>=</span> <span class='st'>"Outcome"</span>)</div><div class='img'><img src='heart_transplant-2.png' alt='' width='700' height='433' /></div><div class='input'>
+</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
@@ -196,7 +197,7 @@ pp. 74-80.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.9000.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
 </div>
 
       </footer>

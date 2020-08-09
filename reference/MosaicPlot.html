@@ -124,16 +124,16 @@
     </div>
 
     <pre class="usage"><span class='fu'>MosaicPlot</span>(
-  <span class='kw'>formula</span>,
-  <span class='kw'>data</span>,
-  col = <span class='st'>"#00000022"</span>,
-  border = <span class='fl'>1</span>,
-  dir = <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"v"</span>, <span class='st'>"h"</span>),
-  off = <span class='fl'>0.01</span>,
-  cex.axis = <span class='fl'>0.7</span>,
-  col.dir = <span class='st'>"v"</span>,
-  flip = <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"v"</span>),
-  <span class='kw'>...</span>
+  <span class='no'>formula</span>,
+  <span class='no'>data</span>,
+  <span class='kw'>col</span> <span class='kw'>=</span> <span class='st'>"#00000022"</span>,
+  <span class='kw'>border</span> <span class='kw'>=</span> <span class='fl'>1</span>,
+  <span class='kw'>dir</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"v"</span>, <span class='st'>"h"</span>),
+  <span class='kw'>off</span> <span class='kw'>=</span> <span class='fl'>0.01</span>,
+  <span class='kw'>cex.axis</span> <span class='kw'>=</span> <span class='fl'>0.7</span>,
+  <span class='kw'>col.dir</span> <span class='kw'>=</span> <span class='st'>"v"</span>,
+  <span class='kw'>flip</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"v"</span>),
+  <span class='no'>...</span>
 )</pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
@@ -182,17 +182,15 @@ horizontal (<code>"h"</code>) ordering in the plot.</p></td>
     </tr>
     </table>
 
-    <h2 class="hasAnchor" id="author"><a class="anchor" href="#author"></a>Author</h2>
-
-    <p>David Diez</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
-<span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span>(<span class='kw'>email</span>)
-<span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span>(<span class='kw'>COL</span>)
-<span class='kw'>email</span><span class='op'>$</span><span class='kw'>spam</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/ifelse.html'>ifelse</a></span>(<span class='kw'>email</span><span class='op'>$</span><span class='kw'>spam</span> <span class='op'>==</span> <span class='fl'>0</span>, <span class='st'>"not\nspam"</span>, <span class='st'>"spam"</span>)
-<span class='fu'><a href='https://rdrr.io/r/graphics/par.html'>par</a></span>(las = <span class='fl'>1</span>)
-<span class='fu'>MosaicPlot</span>(<span class='kw'>number</span> <span class='op'>~</span> <span class='kw'>spam</span>, <span class='kw'>email</span>, col = <span class='kw'>COL</span>[<span class='fl'>1</span><span class='op'>:</span><span class='fl'>3</span>], off = <span class='fl'>0.02</span>)</div><div class='img'><img src='MosaicPlot-1.png' alt='' width='700' height='433' /></div><div class='input'></div></pre>
+<span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span>(<span class='no'>email</span>)
+<span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span>(<span class='no'>COL</span>)
+<span class='no'>email</span>$<span class='no'>spam</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/ifelse.html'>ifelse</a></span>(<span class='no'>email</span>$<span class='no'>spam</span> <span class='kw'>==</span> <span class='fl'>0</span>, <span class='st'>"not\nspam"</span>, <span class='st'>"spam"</span>)
+<span class='fu'><a href='https://rdrr.io/r/graphics/par.html'>par</a></span>(<span class='kw'>las</span> <span class='kw'>=</span> <span class='fl'>1</span>)
+<span class='fu'>MosaicPlot</span>(<span class='no'>number</span> ~ <span class='no'>spam</span>, <span class='no'>email</span>, <span class='kw'>col</span> <span class='kw'>=</span> <span class='no'>COL</span>[<span class='fl'>1</span>:<span class='fl'>3</span>], <span class='kw'>off</span> <span class='kw'>=</span> <span class='fl'>0.02</span>)</div><div class='img'><img src='MosaicPlot-1.png' alt='' width='700' height='433' /></div><div class='input'>
+</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
@@ -208,7 +206,7 @@ horizontal (<code>"h"</code>) ordering in the plot.</p></td>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.9000.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
 </div>
 
       </footer>

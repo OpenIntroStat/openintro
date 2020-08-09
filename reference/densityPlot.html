@@ -123,35 +123,35 @@ purposes." />
 
     <div class="ref-description">
     <p>Compute kernel density plots, written in the same structure as
-<code>boxPlot</code>. Histograms can be automatically added for teaching
+<code><a href='boxPlot.html'>boxPlot</a></code>. Histograms can be automatically added for teaching
 purposes.</p>
     </div>
 
     <pre class="usage"><span class='fu'>densityPlot</span>(
-  <span class='kw'>x</span>,
-  fact = <span class='kw'>NULL</span>,
-  bw = <span class='st'>"nrd0"</span>,
-  histo = <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"none"</span>, <span class='st'>"faded"</span>, <span class='st'>"hollow"</span>),
-  breaks = <span class='st'>"Sturges"</span>,
-  fading = <span class='st'>"0E"</span>,
-  fadingBorder = <span class='st'>"25"</span>,
-  lty = <span class='kw'>NULL</span>,
-  lwd = <span class='fl'>1</span>,
-  col = <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"black"</span>, <span class='st'>"red"</span>, <span class='st'>"blue"</span>),
-  key = <span class='kw'>NULL</span>,
-  add = <span class='fl'>FALSE</span>,
-  adjust = <span class='fl'>1</span>,
-  kernel = <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"gaussian"</span>, <span class='st'>"epanechnikov"</span>, <span class='st'>"rectangular"</span>, <span class='st'>"triangular"</span>, <span class='st'>"biweight"</span>,
+  <span class='no'>x</span>,
+  <span class='kw'>fact</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>bw</span> <span class='kw'>=</span> <span class='st'>"nrd0"</span>,
+  <span class='kw'>histo</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"none"</span>, <span class='st'>"faded"</span>, <span class='st'>"hollow"</span>),
+  <span class='kw'>breaks</span> <span class='kw'>=</span> <span class='st'>"Sturges"</span>,
+  <span class='kw'>fading</span> <span class='kw'>=</span> <span class='st'>"0E"</span>,
+  <span class='kw'>fadingBorder</span> <span class='kw'>=</span> <span class='st'>"25"</span>,
+  <span class='kw'>lty</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>lwd</span> <span class='kw'>=</span> <span class='fl'>1</span>,
+  <span class='kw'>col</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"black"</span>, <span class='st'>"red"</span>, <span class='st'>"blue"</span>),
+  <span class='kw'>key</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>add</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>,
+  <span class='kw'>adjust</span> <span class='kw'>=</span> <span class='fl'>1</span>,
+  <span class='kw'>kernel</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"gaussian"</span>, <span class='st'>"epanechnikov"</span>, <span class='st'>"rectangular"</span>, <span class='st'>"triangular"</span>, <span class='st'>"biweight"</span>,
     <span class='st'>"cosine"</span>, <span class='st'>"optcosine"</span>),
-  weights = <span class='kw'>NULL</span>,
-  n = <span class='fl'>512</span>,
-  <span class='kw'>from</span>,
-  <span class='kw'>to</span>,
-  na.rm = <span class='fl'>FALSE</span>,
-  xlim = <span class='kw'>NULL</span>,
-  ylim = <span class='kw'>NULL</span>,
-  main = <span class='st'>""</span>,
-  <span class='kw'>...</span>
+  <span class='kw'>weights</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>n</span> <span class='kw'>=</span> <span class='fl'>512</span>,
+  <span class='no'>from</span>,
+  <span class='no'>to</span>,
+  <span class='kw'>na.rm</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>,
+  <span class='kw'>xlim</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>ylim</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>main</span> <span class='kw'>=</span> <span class='st'>""</span>,
+  <span class='no'>...</span>
 )</pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
@@ -271,30 +271,28 @@ include in the density estimate.</p></td>
 
     <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
 
-    <div class='dont-index'><p><code>histPlot</code>, <code>dotPlot</code>,
-<code>boxPlot</code></p></div>
-    <h2 class="hasAnchor" id="author"><a class="anchor" href="#author"></a>Author</h2>
-
-    <p>David Diez</p>
+    <div class='dont-index'><p><code><a href='histPlot.html'>histPlot</a></code>, <code><a href='dotPlot.html'>dotPlot</a></code>,
+<code><a href='boxPlot.html'>boxPlot</a></code></p></div>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
 <span class='co'># hollow histograms</span>
-<span class='fu'>histPlot</span>(<span class='kw'>tips</span><span class='op'>$</span><span class='kw'>tip</span>[<span class='kw'>tips</span><span class='op'>$</span><span class='kw'>day</span> <span class='op'>==</span> <span class='st'>"Tuesday"</span>],
-         hollow = <span class='fl'>TRUE</span>, xlim = <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>0</span>, <span class='fl'>30</span>),
-         lty = <span class='fl'>1</span>, main = <span class='st'>"Tips by day"</span>)</div><div class='input'><span class='fu'>histPlot</span>(<span class='kw'>tips</span><span class='op'>$</span><span class='kw'>tip</span>[<span class='kw'>tips</span><span class='op'>$</span><span class='kw'>day</span> <span class='op'>==</span> <span class='st'>"Friday"</span>],
-         hollow = <span class='fl'>TRUE</span>, border = <span class='st'>"red"</span>,
-         add = <span class='fl'>TRUE</span>, main = <span class='st'>"Tips by day"</span>)</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/legend.html'>legend</a></span>(<span class='st'>"topright"</span>, col = <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"black"</span>, <span class='st'>"red"</span>),
-       lty = <span class='fl'>1</span><span class='op'>:</span><span class='fl'>2</span>, legend = <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"Tuesday"</span>, <span class='st'>"Friday"</span>))</div><div class='img'><img src='densityPlot-1.png' alt='' width='700' height='433' /></div><div class='input'>
+<span class='fu'><a href='histPlot.html'>histPlot</a></span>(<span class='no'>tips</span>$<span class='no'>tip</span>[<span class='no'>tips</span>$<span class='no'>day</span> <span class='kw'>==</span> <span class='st'>"Tuesday"</span>],
+         <span class='kw'>hollow</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>, <span class='kw'>xlim</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>0</span>, <span class='fl'>30</span>),
+         <span class='kw'>lty</span> <span class='kw'>=</span> <span class='fl'>1</span>, <span class='kw'>main</span> <span class='kw'>=</span> <span class='st'>"Tips by day"</span>)</div><div class='input'><span class='fu'><a href='histPlot.html'>histPlot</a></span>(<span class='no'>tips</span>$<span class='no'>tip</span>[<span class='no'>tips</span>$<span class='no'>day</span> <span class='kw'>==</span> <span class='st'>"Friday"</span>],
+         <span class='kw'>hollow</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>, <span class='kw'>border</span> <span class='kw'>=</span> <span class='st'>"red"</span>,
+         <span class='kw'>add</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>, <span class='kw'>main</span> <span class='kw'>=</span> <span class='st'>"Tips by day"</span>)</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/legend.html'>legend</a></span>(<span class='st'>"topright"</span>, <span class='kw'>col</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"black"</span>, <span class='st'>"red"</span>),
+       <span class='kw'>lty</span> <span class='kw'>=</span> <span class='fl'>1</span>:<span class='fl'>2</span>, <span class='kw'>legend</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"Tuesday"</span>, <span class='st'>"Friday"</span>))</div><div class='img'><img src='densityPlot-1.png' alt='' width='700' height='433' /></div><div class='input'>
 <span class='co'># density plots</span>
-<span class='fu'>densityPlot</span>(<span class='kw'>tips</span><span class='op'>$</span><span class='kw'>tip</span>, <span class='kw'>tips</span><span class='op'>$</span><span class='kw'>day</span>,
-            col = <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"black"</span>, <span class='st'>"red"</span>), main = <span class='st'>"Tips by day"</span>)</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/legend.html'>legend</a></span>(<span class='st'>"topright"</span>, col = <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"black"</span>, <span class='st'>"red"</span>),
-       lty = <span class='fl'>1</span><span class='op'>:</span><span class='fl'>2</span>, legend = <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"Tuesday"</span>, <span class='st'>"Friday"</span>))</div><div class='img'><img src='densityPlot-2.png' alt='' width='700' height='433' /></div><div class='input'>
-<span class='fu'>densityPlot</span>(<span class='kw'>tips</span><span class='op'>$</span><span class='kw'>tip</span>, histo = <span class='st'>"faded"</span>,
-            breaks = <span class='fl'>15</span>, main = <span class='st'>"Tips by day"</span>)</div><div class='img'><img src='densityPlot-3.png' alt='' width='700' height='433' /></div><div class='input'>
-<span class='fu'>densityPlot</span>(<span class='kw'>tips</span><span class='op'>$</span><span class='kw'>tip</span>, histo = <span class='st'>"hollow"</span>,
-            breaks = <span class='fl'>30</span>, fadingBorder = <span class='st'>"66"</span>,
-	           lty = 1, main<span class='fl'>1</span>= "Tips b<span class='st'>"Tips by day"</span></div><div class='img'><img src='densityPlot-4.png' alt='' width='700' height='433' /></div><div class='input'></div></pre>
+<span class='fu'>densityPlot</span>(<span class='no'>tips</span>$<span class='no'>tip</span>, <span class='no'>tips</span>$<span class='no'>day</span>,
+            <span class='kw'>col</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"black"</span>, <span class='st'>"red"</span>), <span class='kw'>main</span> <span class='kw'>=</span> <span class='st'>"Tips by day"</span>)</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/legend.html'>legend</a></span>(<span class='st'>"topright"</span>, <span class='kw'>col</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"black"</span>, <span class='st'>"red"</span>),
+       <span class='kw'>lty</span> <span class='kw'>=</span> <span class='fl'>1</span>:<span class='fl'>2</span>, <span class='kw'>legend</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"Tuesday"</span>, <span class='st'>"Friday"</span>))</div><div class='img'><img src='densityPlot-2.png' alt='' width='700' height='433' /></div><div class='input'>
+<span class='fu'>densityPlot</span>(<span class='no'>tips</span>$<span class='no'>tip</span>, <span class='kw'>histo</span> <span class='kw'>=</span> <span class='st'>"faded"</span>,
+            <span class='kw'>breaks</span> <span class='kw'>=</span> <span class='fl'>15</span>, <span class='kw'>main</span> <span class='kw'>=</span> <span class='st'>"Tips by day"</span>)</div><div class='img'><img src='densityPlot-3.png' alt='' width='700' height='433' /></div><div class='input'>
+<span class='fu'>densityPlot</span>(<span class='no'>tips</span>$<span class='no'>tip</span>, <span class='kw'>histo</span> <span class='kw'>=</span> <span class='st'>"hollow"</span>,
+            <span class='kw'>breaks</span> <span class='kw'>=</span> <span class='fl'>30</span>, <span class='kw'>fadingBorder</span> <span class='kw'>=</span> <span class='st'>"66"</span>,
+                   <span class='kw'>lty</span> <span class='kw'>=</span> <span class='fl'>1</span>, <span class='kw'>main</span> <span class='kw'>=</span> <span class='st'>"Tips by day"</span>)</div><div class='img'><img src='densityPlot-4.png' alt='' width='700' height='433' /></div><div class='input'>
+</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
@@ -310,7 +308,7 @@ include in the density estimate.</p></td>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.9000.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
 </div>
 
       </footer>

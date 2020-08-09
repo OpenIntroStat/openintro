@@ -129,12 +129,12 @@ subsequently exposed to a drug-sensitive strain of malaria and observed to
 see whether they came down with an infection.</p>
     </div>
 
-    <pre class="usage"><span class='kw'>malaria</span></pre>
+    <pre class="usage"><span class='no'>malaria</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>A data frame with 20 observations on the following 2 variables.</p><dl>
+    <p>A data frame with 20 observations on the following 2 variables.</p><dl'>
   <dt>treatment</dt><dd><p>Whether a person was given the experimental `vaccine` or a `placebo`.</p></dd>
   <dt>outcome</dt><dd><p>Whether the person got an `infection` or `no infection`.</p></dd>
 
@@ -157,11 +157,11 @@ any infections to be treated effectively.</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
-<span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span>(<span class='kw'>malaria</span>)
-<span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span>(<span class='kw'>malaria</span>)</div><div class='output co'>#&gt;          outcome
+<span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span>(<span class='no'>malaria</span>)
+<span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span>(<span class='no'>malaria</span>)</div><div class='output co'>#&gt;          outcome
 #&gt; treatment infection no infection
 #&gt;   placebo         6            0
-#&gt;   vaccine         5            9</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/stats/fisher.test.html'>fisher.test</a></span>(<span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span>(<span class='kw'>malaria</span>))</div><div class='output co'>#&gt; 
+#&gt;   vaccine         5            9</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/stats/fisher.test.html'>fisher.test</a></span>(<span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span>(<span class='no'>malaria</span>))</div><div class='output co'>#&gt; 
 #&gt; 	Fisher's Exact Test for Count Data
 #&gt; 
 #&gt; data:  table(malaria)
@@ -172,7 +172,8 @@ any infections to be treated effectively.</p>
 #&gt; sample estimates:
 #&gt; odds ratio 
 #&gt;        Inf 
-#&gt; </div><div class='input'></div></pre>
+#&gt; </div><div class='input'>
+</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
@@ -188,7 +189,7 @@ any infections to be treated effectively.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.9000.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
 </div>
 
       </footer>

@@ -127,12 +127,12 @@ employed by the St. Louis Public School in Michigan, as well as several
 covariates.</p>
     </div>
 
-    <pre class="usage"><span class='kw'>teacher</span></pre>
+    <pre class="usage"><span class='no'>teacher</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>A data frame with 71 observations on the following 8 variables.</p><dl>
+    <p>A data frame with 71 observations on the following 8 variables.</p><dl'>
   <dt>id</dt><dd><p>Identification code for each teacher, assigned randomly.</p></dd>
   <dt>degree</dt><dd><p>Highest educational degree attained: <code>BA</code> (bachelor's degree) or <code>MA</code> (master's degree).</p></dd>
   <dt>fte</dt><dd><p>Full-time enrollment status: full-time <code>1</code> or part-time <code>0.5</code>.</p></dd>
@@ -150,22 +150,23 @@ covariates.</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
-<span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='kw'><a href='http://ggplot2.tidyverse.org'>ggplot2</a></span>)
+<span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='no'>ggplot2</span>)
 
 <span class='co'># Salary and education level</span>
-<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='kw'>teacher</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(x = <span class='kw'>degree</span>, y = <span class='kw'>base</span>)) <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_boxplot.html'>geom_boxplot</a></span>() <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span>(x = <span class='st'>"Highest educational degree attained"</span>,
-       y = <span class='st'>"Base annual salary, in $"</span>,
-       color = <span class='st'>"Degree"</span>,
-       title = <span class='st'>"Salary and education level"</span>)</div><div class='img'><img src='teacher-1.png' alt='' width='700' height='433' /></div><div class='input'>
+<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='no'>teacher</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='no'>degree</span>, <span class='kw'>y</span> <span class='kw'>=</span> <span class='no'>base</span>)) +
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_boxplot.html'>geom_boxplot</a></span>() +
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='st'>"Highest educational degree attained"</span>,
+       <span class='kw'>y</span> <span class='kw'>=</span> <span class='st'>"Base annual salary, in $"</span>,
+       <span class='kw'>color</span> <span class='kw'>=</span> <span class='st'>"Degree"</span>,
+       <span class='kw'>title</span> <span class='kw'>=</span> <span class='st'>"Salary and education level"</span>)</div><div class='img'><img src='teacher-1.png' alt='' width='700' height='433' /></div><div class='input'>
 <span class='co'># Salary and years of employment</span>
-<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='kw'>teacher</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(x = <span class='kw'>years</span>, y = <span class='kw'>base</span>, color = <span class='kw'>degree</span>)) <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_point.html'>geom_point</a></span>() <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span>(x = <span class='st'>"Number of years employed by the school district"</span>,
-       y = <span class='st'>"Base annual salary, in $"</span>,
-       color = <span class='st'>"Degree"</span>,
-       title = <span class='st'>"Salary and years of employment"</span>)</div><div class='img'><img src='teacher-2.png' alt='' width='700' height='433' /></div><div class='input'></div></pre>
+<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='no'>teacher</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='no'>years</span>, <span class='kw'>y</span> <span class='kw'>=</span> <span class='no'>base</span>, <span class='kw'>color</span> <span class='kw'>=</span> <span class='no'>degree</span>)) +
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_point.html'>geom_point</a></span>() +
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='st'>"Number of years employed by the school district"</span>,
+       <span class='kw'>y</span> <span class='kw'>=</span> <span class='st'>"Base annual salary, in $"</span>,
+       <span class='kw'>color</span> <span class='kw'>=</span> <span class='st'>"Degree"</span>,
+       <span class='kw'>title</span> <span class='kw'>=</span> <span class='st'>"Salary and years of employment"</span>)</div><div class='img'><img src='teacher-2.png' alt='' width='700' height='433' /></div><div class='input'>
+</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
@@ -181,7 +182,7 @@ covariates.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.9000.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
 </div>
 
       </footer>

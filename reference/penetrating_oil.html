@@ -127,12 +127,12 @@ options for loosening rusty bolts. Eight options were evaluated, including a
 control group, to determine which was most effective.</p>
     </div>
 
-    <pre class="usage"><span class='kw'>penetrating_oil</span></pre>
+    <pre class="usage"><span class='no'>penetrating_oil</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>A data frame with 30 observations on the following 2 variables.</p><dl>
+    <p>A data frame with 30 observations on the following 2 variables.</p><dl'>
   <dt>treatment</dt><dd><p>The different treatments tried:
 <code>none</code> (control), <code>Heat</code> (via blow torch), <code>Acetone/ATF</code>,
 <code>AeroKroil</code>, <code>Liquid Wrench</code>, <code>PB Blaster</code>, <code>Royal
@@ -148,8 +148,8 @@ which was measured in foot-pounds.</p></dd>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
-<span class='kw'>m</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/stats/lm.html'>lm</a></span>(<span class='kw'>torque</span> <span class='op'>~</span> <span class='kw'>treatment</span>, data = <span class='kw'>penetrating_oil</span>)
-<span class='fu'><a href='https://rdrr.io/r/stats/anova.html'>anova</a></span>(<span class='kw'>m</span>)</div><div class='output co'>#&gt; Analysis of Variance Table
+<span class='no'>m</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/stats/lm.html'>lm</a></span>(<span class='no'>torque</span> ~ <span class='no'>treatment</span>, <span class='kw'>data</span> <span class='kw'>=</span> <span class='no'>penetrating_oil</span>)
+<span class='fu'><a href='https://rdrr.io/r/stats/anova.html'>anova</a></span>(<span class='no'>m</span>)</div><div class='output co'>#&gt; Analysis of Variance Table
 #&gt; 
 #&gt; Response: torque
 #&gt;           Df Sum Sq Mean Sq F value   Pr(&gt;F)   
@@ -158,29 +158,29 @@ which was measured in foot-pounds.</p></dd>
 #&gt; ---
 #&gt; Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1</div><div class='input'>
 <span class='co'># There are 28 pairwise comparisons to be made.</span>
-<span class='kw'>xbar</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/tapply.html'>tapply</a></span>(<span class='kw'>penetrating_oil</span><span class='op'>$</span><span class='kw'>torque</span>, <span class='kw'>penetrating_oil</span><span class='op'>$</span><span class='kw'>treatment</span>, <span class='kw'>mean</span>)
-<span class='kw'>n</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/tapply.html'>tapply</a></span>(<span class='kw'>penetrating_oil</span><span class='op'>$</span><span class='kw'>torque</span>, <span class='kw'>penetrating_oil</span><span class='op'>$</span><span class='kw'>treatment</span>, <span class='kw'>length</span>)
-<span class='kw'>s</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/summary.html'>summary</a></span>(<span class='kw'>m</span>)<span class='op'>$</span><span class='kw'>sigma</span>
-<span class='kw'>df</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/summary.html'>summary</a></span>(<span class='kw'>m</span>)<span class='op'>$</span><span class='kw'>df</span>[<span class='fl'>1</span>]
+<span class='no'>xbar</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/tapply.html'>tapply</a></span>(<span class='no'>penetrating_oil</span>$<span class='no'>torque</span>, <span class='no'>penetrating_oil</span>$<span class='no'>treatment</span>, <span class='no'>mean</span>)
+<span class='no'>n</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/tapply.html'>tapply</a></span>(<span class='no'>penetrating_oil</span>$<span class='no'>torque</span>, <span class='no'>penetrating_oil</span>$<span class='no'>treatment</span>, <span class='no'>length</span>)
+<span class='no'>s</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/summary.html'>summary</a></span>(<span class='no'>m</span>)$<span class='no'>sigma</span>
+<span class='no'>df</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/summary.html'>summary</a></span>(<span class='no'>m</span>)$<span class='no'>df</span>[<span class='fl'>1</span>]
 
-<span class='kw'>diff</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>()
-<span class='kw'>se</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>()
-<span class='kw'>k</span> <span class='op'>&lt;-</span> <span class='fl'>0</span>
-<span class='kw'>N</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/length.html'>length</a></span>(<span class='kw'>n</span>)
-<span class='kw'>K</span> <span class='op'>&lt;-</span> <span class='kw'>N</span> <span class='op'>*</span> (<span class='kw'>N</span> <span class='op'>-</span> <span class='fl'>1</span>) <span class='op'>/</span> <span class='fl'>2</span>
-<span class='co'>for</span> (<span class='kw'>i</span> <span class='co'>in</span> <span class='fl'>1</span><span class='op'>:</span>(<span class='kw'>N</span> <span class='op'>-</span> <span class='fl'>1</span>)) {
-  <span class='co'>for</span> (<span class='kw'>j</span> <span class='co'>in</span> (<span class='kw'>i</span> <span class='op'>+</span> <span class='fl'>1</span>)<span class='op'>:</span><span class='kw'>N</span>) {
-    <span class='kw'>k</span> <span class='op'>&lt;-</span> <span class='kw'>k</span> <span class='op'>+</span> <span class='fl'>1</span>
-    <span class='kw'>diff</span>[<span class='kw'>k</span>] <span class='op'>&lt;-</span> <span class='kw'>xbar</span>[<span class='kw'>i</span>] <span class='op'>-</span> <span class='kw'>xbar</span>[<span class='kw'>j</span>]
-    <span class='kw'>se</span>[<span class='kw'>k</span>] <span class='op'>&lt;-</span> <span class='kw'>s</span> <span class='op'>*</span> <span class='fu'><a href='https://rdrr.io/r/base/MathFun.html'>sqrt</a></span>(<span class='fl'>1</span> <span class='op'>/</span> <span class='kw'>n</span>[<span class='kw'>i</span>] <span class='op'>+</span> <span class='fl'>1</span> <span class='op'>/</span> <span class='kw'>n</span>[<span class='kw'>j</span>])
-    <span class='co'>if</span> (<span class='fl'>2</span> <span class='op'>*</span> <span class='kw'>K</span> <span class='op'>*</span> <span class='fu'><a href='https://rdrr.io/r/stats/TDist.html'>pt</a></span>(<span class='op'>-</span><span class='fu'><a href='https://rdrr.io/r/base/MathFun.html'>abs</a></span>(<span class='kw'>diff</span>[<span class='kw'>k</span>] <span class='op'>/</span> <span class='kw'>se</span>[<span class='kw'>k</span>]), <span class='kw'>df</span>) <span class='op'>&lt;</span> <span class='fl'>0.05</span>) {
-      <span class='fu'><a href='https://rdrr.io/r/base/cat.html'>cat</a></span>(<span class='st'>"0.05 - "</span>, <span class='fu'><a href='https://rdrr.io/r/base/names.html'>names</a></span>(<span class='kw'>n</span>)[<span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='kw'>i</span>, <span class='kw'>j</span>)], <span class='st'>"\n"</span>)
-    } <span class='co'>else</span> <span class='co'>if</span> (<span class='fl'>2</span> <span class='op'>*</span> <span class='kw'>K</span> <span class='op'>*</span> <span class='fu'><a href='https://rdrr.io/r/stats/TDist.html'>pt</a></span>(<span class='op'>-</span><span class='fu'><a href='https://rdrr.io/r/base/MathFun.html'>abs</a></span>(<span class='kw'>diff</span>[<span class='kw'>k</span>] <span class='op'>/</span> <span class='kw'>se</span>[<span class='kw'>k</span>]), <span class='kw'>df</span>) <span class='op'>&lt;</span> <span class='fl'>0.1</span>) {
-      <span class='fu'><a href='https://rdrr.io/r/base/cat.html'>cat</a></span>(<span class='st'>"0.1 - "</span>, <span class='fu'><a href='https://rdrr.io/r/base/names.html'>names</a></span>(<span class='kw'>n</span>)[<span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='kw'>i</span>, <span class='kw'>j</span>)], <span class='st'>"\n"</span>)
-    } <span class='co'>else</span> <span class='co'>if</span> (<span class='fl'>2</span> <span class='op'>*</span> <span class='kw'>K</span> <span class='op'>*</span> <span class='fu'><a href='https://rdrr.io/r/stats/TDist.html'>pt</a></span>(<span class='op'>-</span><span class='fu'><a href='https://rdrr.io/r/base/MathFun.html'>abs</a></span>(<span class='kw'>diff</span>[<span class='kw'>k</span>] <span class='op'>/</span> <span class='kw'>se</span>[<span class='kw'>k</span>]), <span class='kw'>df</span>) <span class='op'>&lt;</span> <span class='fl'>0.2</span>) {
-      <span class='fu'><a href='https://rdrr.io/r/base/cat.html'>cat</a></span>(<span class='st'>"0.2 - "</span>, <span class='fu'><a href='https://rdrr.io/r/base/names.html'>names</a></span>(<span class='kw'>n</span>)[<span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='kw'>i</span>, <span class='kw'>j</span>)], <span class='st'>"\n"</span>)
-    } <span class='co'>else</span> <span class='co'>if</span> (<span class='fl'>2</span> <span class='op'>*</span> <span class='kw'>K</span> <span class='op'>*</span> <span class='fu'><a href='https://rdrr.io/r/stats/TDist.html'>pt</a></span>(<span class='op'>-</span><span class='fu'><a href='https://rdrr.io/r/base/MathFun.html'>abs</a></span>(<span class='kw'>diff</span>[<span class='kw'>k</span>] <span class='op'>/</span> <span class='kw'>se</span>[<span class='kw'>k</span>]), <span class='kw'>df</span>) <span class='op'>&lt;</span> <span class='fl'>0.3</span>) {
-      <span class='fu'><a href='https://rdrr.io/r/base/cat.html'>cat</a></span>(<span class='st'>"0.3 - "</span>, <span class='fu'><a href='https://rdrr.io/r/base/names.html'>names</a></span>(<span class='kw'>n</span>)[<span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='kw'>i</span>, <span class='kw'>j</span>)], <span class='st'>"\n"</span>)
+<span class='no'>diff</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>()
+<span class='no'>se</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>()
+<span class='no'>k</span> <span class='kw'>&lt;-</span> <span class='fl'>0</span>
+<span class='no'>N</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/length.html'>length</a></span>(<span class='no'>n</span>)
+<span class='no'>K</span> <span class='kw'>&lt;-</span> <span class='no'>N</span> * (<span class='no'>N</span> - <span class='fl'>1</span>) / <span class='fl'>2</span>
+<span class='kw'>for</span> (<span class='no'>i</span> <span class='kw'>in</span> <span class='fl'>1</span>:(<span class='no'>N</span> - <span class='fl'>1</span>)) {
+  <span class='kw'>for</span> (<span class='no'>j</span> <span class='kw'>in</span> (<span class='no'>i</span> + <span class='fl'>1</span>):<span class='no'>N</span>) {
+    <span class='no'>k</span> <span class='kw'>&lt;-</span> <span class='no'>k</span> + <span class='fl'>1</span>
+    <span class='no'>diff</span>[<span class='no'>k</span>] <span class='kw'>&lt;-</span> <span class='no'>xbar</span>[<span class='no'>i</span>] - <span class='no'>xbar</span>[<span class='no'>j</span>]
+    <span class='no'>se</span>[<span class='no'>k</span>] <span class='kw'>&lt;-</span> <span class='no'>s</span> * <span class='fu'><a href='https://rdrr.io/r/base/MathFun.html'>sqrt</a></span>(<span class='fl'>1</span> / <span class='no'>n</span>[<span class='no'>i</span>] + <span class='fl'>1</span> / <span class='no'>n</span>[<span class='no'>j</span>])
+    <span class='kw'>if</span> (<span class='fl'>2</span> * <span class='no'>K</span> * <span class='fu'><a href='https://rdrr.io/r/stats/TDist.html'>pt</a></span>(-<span class='fu'><a href='https://rdrr.io/r/base/MathFun.html'>abs</a></span>(<span class='no'>diff</span>[<span class='no'>k</span>] / <span class='no'>se</span>[<span class='no'>k</span>]), <span class='no'>df</span>) <span class='kw'>&lt;</span> <span class='fl'>0.05</span>) {
+      <span class='fu'><a href='https://rdrr.io/r/base/cat.html'>cat</a></span>(<span class='st'>"0.05 - "</span>, <span class='fu'><a href='https://rdrr.io/r/base/names.html'>names</a></span>(<span class='no'>n</span>)[<span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='no'>i</span>, <span class='no'>j</span>)], <span class='st'>"\n"</span>)
+    } <span class='kw'>else</span> <span class='kw'>if</span> (<span class='fl'>2</span> * <span class='no'>K</span> * <span class='fu'><a href='https://rdrr.io/r/stats/TDist.html'>pt</a></span>(-<span class='fu'><a href='https://rdrr.io/r/base/MathFun.html'>abs</a></span>(<span class='no'>diff</span>[<span class='no'>k</span>] / <span class='no'>se</span>[<span class='no'>k</span>]), <span class='no'>df</span>) <span class='kw'>&lt;</span> <span class='fl'>0.1</span>) {
+      <span class='fu'><a href='https://rdrr.io/r/base/cat.html'>cat</a></span>(<span class='st'>"0.1 - "</span>, <span class='fu'><a href='https://rdrr.io/r/base/names.html'>names</a></span>(<span class='no'>n</span>)[<span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='no'>i</span>, <span class='no'>j</span>)], <span class='st'>"\n"</span>)
+    } <span class='kw'>else</span> <span class='kw'>if</span> (<span class='fl'>2</span> * <span class='no'>K</span> * <span class='fu'><a href='https://rdrr.io/r/stats/TDist.html'>pt</a></span>(-<span class='fu'><a href='https://rdrr.io/r/base/MathFun.html'>abs</a></span>(<span class='no'>diff</span>[<span class='no'>k</span>] / <span class='no'>se</span>[<span class='no'>k</span>]), <span class='no'>df</span>) <span class='kw'>&lt;</span> <span class='fl'>0.2</span>) {
+      <span class='fu'><a href='https://rdrr.io/r/base/cat.html'>cat</a></span>(<span class='st'>"0.2 - "</span>, <span class='fu'><a href='https://rdrr.io/r/base/names.html'>names</a></span>(<span class='no'>n</span>)[<span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='no'>i</span>, <span class='no'>j</span>)], <span class='st'>"\n"</span>)
+    } <span class='kw'>else</span> <span class='kw'>if</span> (<span class='fl'>2</span> * <span class='no'>K</span> * <span class='fu'><a href='https://rdrr.io/r/stats/TDist.html'>pt</a></span>(-<span class='fu'><a href='https://rdrr.io/r/base/MathFun.html'>abs</a></span>(<span class='no'>diff</span>[<span class='no'>k</span>] / <span class='no'>se</span>[<span class='no'>k</span>]), <span class='no'>df</span>) <span class='kw'>&lt;</span> <span class='fl'>0.3</span>) {
+      <span class='fu'><a href='https://rdrr.io/r/base/cat.html'>cat</a></span>(<span class='st'>"0.3 - "</span>, <span class='fu'><a href='https://rdrr.io/r/base/names.html'>names</a></span>(<span class='no'>n</span>)[<span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='no'>i</span>, <span class='no'>j</span>)], <span class='st'>"\n"</span>)
     }
   }
 }</div><div class='output co'>#&gt; 0.3 -  AeroKroil Heat 
@@ -188,17 +188,17 @@ which was measured in foot-pounds.</p></dd>
 #&gt; 0.3 -  Heat none 
 #&gt; 0.3 -  Liquid Wrench none </div><div class='input'>
 <span class='co'># Smallest p-value using Bonferroni</span>
-<span class='fu'><a href='https://rdrr.io/r/base/Extremes.html'>min</a></span>(<span class='fl'>2</span> <span class='op'>*</span> <span class='kw'>K</span> <span class='op'>*</span> <span class='fu'><a href='https://rdrr.io/r/stats/TDist.html'>pt</a></span>(<span class='op'>-</span><span class='fu'><a href='https://rdrr.io/r/base/MathFun.html'>abs</a></span>(<span class='kw'>diff</span> <span class='op'>/</span> <span class='kw'>se</span>), <span class='kw'>df</span>))</div><div class='output co'>#&gt; [1] 0.2030646</div><div class='input'>
+<span class='fu'><a href='https://rdrr.io/r/base/Extremes.html'>min</a></span>(<span class='fl'>2</span> * <span class='no'>K</span> * <span class='fu'><a href='https://rdrr.io/r/stats/TDist.html'>pt</a></span>(-<span class='fu'><a href='https://rdrr.io/r/base/MathFun.html'>abs</a></span>(<span class='no'>diff</span> / <span class='no'>se</span>), <span class='no'>df</span>))</div><div class='output co'>#&gt; [1] 0.2030646</div><div class='input'>
 
 <span class='co'># Better pairwise comparison method.</span>
-<span class='fu'><a href='https://rdrr.io/r/stats/anova.html'>anova</a></span>(<span class='kw'>m1</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/stats/aov.html'>aov</a></span>(<span class='kw'>torque</span> <span class='op'>~</span> <span class='kw'>treatment</span>, data = <span class='kw'>penetrating_oil</span>))</div><div class='output co'>#&gt; Analysis of Variance Table
+<span class='fu'><a href='https://rdrr.io/r/stats/anova.html'>anova</a></span>(<span class='no'>m1</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/stats/aov.html'>aov</a></span>(<span class='no'>torque</span> ~ <span class='no'>treatment</span>, <span class='kw'>data</span> <span class='kw'>=</span> <span class='no'>penetrating_oil</span>))</div><div class='output co'>#&gt; Analysis of Variance Table
 #&gt; 
 #&gt; Response: torque
 #&gt;           Df Sum Sq Mean Sq F value   Pr(&gt;F)   
 #&gt; treatment  7 3603.4  514.78  4.0263 0.005569 **
 #&gt; Residuals 22 2812.8  127.85                    
 #&gt; ---
-#&gt; Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/stats/TukeyHSD.html'>TukeyHSD</a></span>(<span class='kw'>m1</span>)</div><div class='output co'>#&gt;   Tukey multiple comparisons of means
+#&gt; Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/stats/TukeyHSD.html'>TukeyHSD</a></span>(<span class='no'>m1</span>)</div><div class='output co'>#&gt;   Tukey multiple comparisons of means
 #&gt;     95% family-wise confidence level
 #&gt; 
 #&gt; Fit: aov(formula = torque ~ treatment, data = penetrating_oil)
@@ -233,7 +233,8 @@ which was measured in foot-pounds.</p></dd>
 #&gt; Royal Purple-PB Blaster     -2.775 -29.469618 23.9196185 0.9999599
 #&gt; WD-40-PB Blaster            -0.725 -27.419618 25.9696185 1.0000000
 #&gt; WD-40-Royal Purple           2.050 -24.644618 28.7446185 0.9999949
-#&gt; </div><div class='input'></div></pre>
+#&gt; </div><div class='input'>
+</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
@@ -249,7 +250,7 @@ which was measured in foot-pounds.</p></dd>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.9000.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
 </div>
 
       </footer>

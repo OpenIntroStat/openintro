@@ -123,12 +123,12 @@
     <p>Salary data for Major League Baseball players in the year 2010.</p>
     </div>
 
-    <pre class="usage"><span class='kw'>mlb</span></pre>
+    <pre class="usage"><span class='no'>mlb</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>A data frame with 828 observations on the following 4 variables.</p><dl>
+    <p>A data frame with 828 observations on the following 4 variables.</p><dl'>
   <dt>player</dt><dd><p>Player name</p></dd>
   <dt>team</dt><dd><p>Team</p></dd>
   <dt>position</dt><dd><p>Field position</p></dd>
@@ -145,17 +145,18 @@ retrieved 2011-02-23.</p>
     <pre class="examples"><div class='input'>
 
 <span class='co'># _____ Basic Histogram _____ #</span>
-<span class='fu'><a href='https://rdrr.io/r/graphics/hist.html'>hist</a></span>(<span class='kw'>mlb</span><span class='op'>$</span><span class='kw'>salary</span> <span class='op'>/</span> <span class='fl'>1000</span>, breaks = <span class='fl'>15</span>,
-    main = <span class='st'>""</span>, xlab = <span class='st'>"Salary (millions of dollars)"</span>, ylab = <span class='st'>""</span>,
-    axes = <span class='fl'>FALSE</span>,
-    col = <span class='st'>"#22558844"</span>)</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/axis.html'>axis</a></span>(<span class='fl'>1</span>, <span class='fu'><a href='https://rdrr.io/r/base/seq.html'>seq</a></span>(<span class='fl'>0</span>, <span class='fl'>40</span>, <span class='fl'>10</span>))</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/axis.html'>axis</a></span>(<span class='fl'>2</span>, <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>0</span>, <span class='fl'>500</span>))</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/axis.html'>axis</a></span>(<span class='fl'>2</span>, <span class='fu'><a href='https://rdrr.io/r/base/seq.html'>seq</a></span>(<span class='fl'>100</span>, <span class='fl'>400</span>, <span class='fl'>100</span>), <span class='fu'><a href='https://rdrr.io/r/base/rep.html'>rep</a></span>(<span class='st'>""</span>, <span class='fl'>4</span>), tcl = <span class='op'>-</span><span class='fl'>0.2</span>)</div><div class='img'><img src='mlb-1.png' alt='' width='700' height='433' /></div><div class='input'>
+<span class='fu'><a href='https://rdrr.io/r/graphics/hist.html'>hist</a></span>(<span class='no'>mlb</span>$<span class='no'>salary</span> / <span class='fl'>1000</span>, <span class='kw'>breaks</span> <span class='kw'>=</span> <span class='fl'>15</span>,
+    <span class='kw'>main</span> <span class='kw'>=</span> <span class='st'>""</span>, <span class='kw'>xlab</span> <span class='kw'>=</span> <span class='st'>"Salary (millions of dollars)"</span>, <span class='kw'>ylab</span> <span class='kw'>=</span> <span class='st'>""</span>,
+    <span class='kw'>axes</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>,
+    <span class='kw'>col</span> <span class='kw'>=</span> <span class='st'>"#22558844"</span>)</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/axis.html'>axis</a></span>(<span class='fl'>1</span>, <span class='fu'><a href='https://rdrr.io/r/base/seq.html'>seq</a></span>(<span class='fl'>0</span>, <span class='fl'>40</span>, <span class='fl'>10</span>))</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/axis.html'>axis</a></span>(<span class='fl'>2</span>, <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>0</span>, <span class='fl'>500</span>))</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/axis.html'>axis</a></span>(<span class='fl'>2</span>, <span class='fu'><a href='https://rdrr.io/r/base/seq.html'>seq</a></span>(<span class='fl'>100</span>, <span class='fl'>400</span>, <span class='fl'>100</span>), <span class='fu'><a href='https://rdrr.io/r/base/rep.html'>rep</a></span>(<span class='st'>""</span>, <span class='fl'>4</span>), <span class='kw'>tcl</span> <span class='kw'>=</span> -<span class='fl'>0.2</span>)</div><div class='img'><img src='mlb-1.png' alt='' width='700' height='433' /></div><div class='input'>
 <span class='co'># _____ Histogram on Log Scale _____ #</span>
-<span class='fu'><a href='https://rdrr.io/r/graphics/hist.html'>hist</a></span>(<span class='fu'><a href='https://rdrr.io/r/base/Log.html'>log</a></span>(<span class='kw'>mlb</span><span class='op'>$</span><span class='kw'>salary</span> <span class='op'>/</span> <span class='fl'>1000</span>), breaks=<span class='fl'>15</span>,
-    main = <span class='st'>""</span>, xlab = <span class='st'>"log(Salary)"</span>, ylab = <span class='st'>""</span>,
-    axes = <span class='fl'>FALSE</span>, col = <span class='st'>"#22558844"</span>)</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/axis.html'>axis</a></span>(<span class='fl'>1</span>) <span class='co'>#, seq(0, 40, 10))</span></div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/axis.html'>axis</a></span>(<span class='fl'>2</span>, <span class='fu'><a href='https://rdrr.io/r/base/seq.html'>seq</a></span>(<span class='fl'>0</span>, <span class='fl'>300</span>, <span class='fl'>100</span>))</div><div class='img'><img src='mlb-2.png' alt='' width='700' height='433' /></div><div class='input'>
+<span class='fu'><a href='https://rdrr.io/r/graphics/hist.html'>hist</a></span>(<span class='fu'><a href='https://rdrr.io/r/base/Log.html'>log</a></span>(<span class='no'>mlb</span>$<span class='no'>salary</span> / <span class='fl'>1000</span>), <span class='kw'>breaks</span><span class='kw'>=</span><span class='fl'>15</span>,
+    <span class='kw'>main</span> <span class='kw'>=</span> <span class='st'>""</span>, <span class='kw'>xlab</span> <span class='kw'>=</span> <span class='st'>"log(Salary)"</span>, <span class='kw'>ylab</span> <span class='kw'>=</span> <span class='st'>""</span>,
+    <span class='kw'>axes</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>, <span class='kw'>col</span> <span class='kw'>=</span> <span class='st'>"#22558844"</span>)</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/axis.html'>axis</a></span>(<span class='fl'>1</span>) <span class='co'>#, seq(0, 40, 10))</span></div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/axis.html'>axis</a></span>(<span class='fl'>2</span>, <span class='fu'><a href='https://rdrr.io/r/base/seq.html'>seq</a></span>(<span class='fl'>0</span>, <span class='fl'>300</span>, <span class='fl'>100</span>))</div><div class='img'><img src='mlb-2.png' alt='' width='700' height='433' /></div><div class='input'>
 <span class='co'># _____ Box plot of log(salary) against position _____ #</span>
-<span class='fu'><a href='https://rdrr.io/r/graphics/par.html'>par</a></span>(las = <span class='fl'>1</span>, mar = <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>4</span>, <span class='fl'>8</span>, <span class='fl'>1</span>, <span class='fl'>1</span>))
-<span class='fu'>boxPlot</span>(<span class='fu'><a href='https://rdrr.io/r/base/Log.html'>log</a></span>(<span class='kw'>mlb</span><span class='op'>$</span><span class='kw'>salary</span> <span class='op'>/</span> <span class='fl'>1000</span>), <span class='kw'>mlb</span><span class='op'>$</span><span class='kw'>position</span>, horiz = <span class='fl'>TRUE</span>, ylab = <span class='st'>""</span>)</div><div class='img'><img src='mlb-3.png' alt='' width='700' height='433' /></div><div class='input'>
+<span class='fu'><a href='https://rdrr.io/r/graphics/par.html'>par</a></span>(<span class='kw'>las</span> <span class='kw'>=</span> <span class='fl'>1</span>, <span class='kw'>mar</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>4</span>, <span class='fl'>8</span>, <span class='fl'>1</span>, <span class='fl'>1</span>))
+<span class='fu'><a href='boxPlot.html'>boxPlot</a></span>(<span class='fu'><a href='https://rdrr.io/r/base/Log.html'>log</a></span>(<span class='no'>mlb</span>$<span class='no'>salary</span> / <span class='fl'>1000</span>), <span class='no'>mlb</span>$<span class='no'>position</span>, <span class='kw'>horiz</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>, <span class='kw'>ylab</span> <span class='kw'>=</span> <span class='st'>""</span>)</div><div class='img'><img src='mlb-3.png' alt='' width='700' height='433' /></div><div class='input'>
+
 </div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
@@ -172,7 +173,7 @@ retrieved 2011-02-23.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.9000.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
 </div>
 
       </footer>

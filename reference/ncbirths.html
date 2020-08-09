@@ -131,12 +131,12 @@ between habits and practices of expectant mothers and the birth of their
 children. This is a random sample of 1,000 cases from this data set.</p>
     </div>
 
-    <pre class="usage"><span class='kw'>ncbirths</span></pre>
+    <pre class="usage"><span class='no'>ncbirths</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>A data frame with 1000 observations on the following 13 variables.</p><dl>
+    <p>A data frame with 1000 observations on the following 13 variables.</p><dl'>
   <dt>fage</dt><dd><p>Father's age in years.</p></dd>
   <dt>mage</dt><dd><p>Mother's age in years.</p></dd>
   <dt>mature</dt><dd><p>Maturity status of mother.</p></dd>
@@ -157,17 +157,18 @@ children. This is a random sample of 1,000 cases from this data set.</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
-<span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='kw'><a href='http://ggplot2.tidyverse.org'>ggplot2</a></span>)
+<span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='no'>ggplot2</span>)
 
-<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='kw'>ncbirths</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(x = <span class='kw'>habit</span>, y = <span class='kw'>weight</span>)) <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_boxplot.html'>geom_boxplot</a></span>() <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span>(x = <span class='st'>"Smoking status of mother"</span>, y = <span class='st'>"Birth weight of baby (in lbs)"</span>)</div><div class='img'><img src='ncbirths-1.png' alt='' width='700' height='433' /></div><div class='input'>
-<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='kw'>ncbirths</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(x = <span class='kw'>whitemom</span>, y = <span class='kw'>visits</span>)) <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_boxplot.html'>geom_boxplot</a></span>() <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span>(x = <span class='st'>"Mother's race"</span>, y = <span class='st'>"Number of doctor visits during pregnancy"</span>)</div><div class='output co'>#&gt; <span class='warning'>Warning: Removed 9 rows containing non-finite values (stat_boxplot).</span></div><div class='img'><img src='ncbirths-2.png' alt='' width='700' height='433' /></div><div class='input'>
-<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='kw'>ncbirths</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(x = <span class='kw'>mature</span>, y = <span class='kw'>gained</span>)) <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_boxplot.html'>geom_boxplot</a></span>() <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span>(x = <span class='st'>"Mother's age category"</span>, y = <span class='st'>"Weight gained during pregnancy"</span>)</div><div class='output co'>#&gt; <span class='warning'>Warning: Removed 27 rows containing non-finite values (stat_boxplot).</span></div><div class='img'><img src='ncbirths-3.png' alt='' width='700' height='433' /></div><div class='input'></div></pre>
+<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='no'>ncbirths</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='no'>habit</span>, <span class='kw'>y</span> <span class='kw'>=</span> <span class='no'>weight</span>)) +
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_boxplot.html'>geom_boxplot</a></span>() +
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='st'>"Smoking status of mother"</span>, <span class='kw'>y</span> <span class='kw'>=</span> <span class='st'>"Birth weight of baby (in lbs)"</span>)</div><div class='img'><img src='ncbirths-1.png' alt='' width='700' height='433' /></div><div class='input'>
+<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='no'>ncbirths</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='no'>whitemom</span>, <span class='kw'>y</span> <span class='kw'>=</span> <span class='no'>visits</span>)) +
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_boxplot.html'>geom_boxplot</a></span>() +
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='st'>"Mother's race"</span>, <span class='kw'>y</span> <span class='kw'>=</span> <span class='st'>"Number of doctor visits during pregnancy"</span>)</div><div class='output co'>#&gt; <span class='warning'>Warning: Removed 9 rows containing non-finite values (stat_boxplot).</span></div><div class='img'><img src='ncbirths-2.png' alt='' width='700' height='433' /></div><div class='input'>
+<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='no'>ncbirths</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='no'>mature</span>, <span class='kw'>y</span> <span class='kw'>=</span> <span class='no'>gained</span>)) +
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_boxplot.html'>geom_boxplot</a></span>() +
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='st'>"Mother's age category"</span>, <span class='kw'>y</span> <span class='kw'>=</span> <span class='st'>"Weight gained during pregnancy"</span>)</div><div class='output co'>#&gt; <span class='warning'>Warning: Removed 27 rows containing non-finite values (stat_boxplot).</span></div><div class='img'><img src='ncbirths-3.png' alt='' width='700' height='433' /></div><div class='input'>
+</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
@@ -183,7 +184,7 @@ children. This is a random sample of 1,000 cases from this data set.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.9000.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
 </div>
 
       </footer>

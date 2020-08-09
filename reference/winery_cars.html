@@ -131,12 +131,12 @@ non-constant is that the gondolas come off the tracks, so times will change
 a little between each period.</p>
     </div>
 
-    <pre class="usage"><span class='kw'>winery_cars</span></pre>
+    <pre class="usage"><span class='no'>winery_cars</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>A data frame with 52 observations on the following 2 variables.</p><dl>
+    <p>A data frame with 52 observations on the following 2 variables.</p><dl'>
   <dt>obs_number</dt><dd><p>The observation number, e.g. observation 3 was immediately
   preceded by observation 2.</p></dd>
   <dt>time_until_next</dt><dd><p>Time until this gondola car arrived since the last
@@ -158,11 +158,12 @@ revenue.</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
-<span class='kw'>winery_cars</span><span class='op'>$</span><span class='kw'>car_number</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/rep.html'>rep</a></span>(<span class='fl'>1</span><span class='op'>:</span><span class='fl'>7</span>, <span class='fl'>10</span>)[<span class='fl'>1</span><span class='op'>:</span><span class='fu'><a href='https://rdrr.io/r/base/nrow.html'>nrow</a></span>(<span class='kw'>winery_cars</span>)]
-<span class='kw'>col</span> <span class='op'>&lt;-</span> <span class='kw'>COL</span>[<span class='fu'><a href='https://rdrr.io/r/base/ifelse.html'>ifelse</a></span>(<span class='kw'>winery_cars</span><span class='op'>$</span><span class='kw'>car_number</span> <span class='op'>==</span> <span class='fl'>3</span>, <span class='fl'>4</span>, <span class='fl'>1</span>)]
-<span class='fu'><a href='https://rdrr.io/r/graphics/plot.default.html'>plot</a></span>(<span class='kw'>winery_cars</span>[, <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"obs_number"</span>, <span class='st'>"time_until_next"</span>)],
-     col = <span class='kw'>col</span>, pch = <span class='fl'>19</span>)</div><div class='img'><img src='winery_cars-1.png' alt='' width='700' height='433' /></div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/plot.default.html'>plot</a></span>(<span class='kw'>winery_cars</span><span class='op'>$</span><span class='kw'>car_number</span>, <span class='kw'>winery_cars</span><span class='op'>$</span><span class='kw'>time_until_next</span>,
-     col = <span class='fu'>fadeColor</span>(<span class='kw'>col</span>, <span class='st'>"88"</span>), pch = <span class='fl'>19</span>)</div><div class='img'><img src='winery_cars-2.png' alt='' width='700' height='433' /></div><div class='input'></div></pre>
+<span class='no'>winery_cars</span>$<span class='no'>car_number</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/rep.html'>rep</a></span>(<span class='fl'>1</span>:<span class='fl'>7</span>, <span class='fl'>10</span>)[<span class='fl'>1</span>:<span class='fu'><a href='https://rdrr.io/r/base/nrow.html'>nrow</a></span>(<span class='no'>winery_cars</span>)]
+<span class='no'>col</span> <span class='kw'>&lt;-</span> <span class='no'>COL</span>[<span class='fu'><a href='https://rdrr.io/r/base/ifelse.html'>ifelse</a></span>(<span class='no'>winery_cars</span>$<span class='no'>car_number</span> <span class='kw'>==</span> <span class='fl'>3</span>, <span class='fl'>4</span>, <span class='fl'>1</span>)]
+<span class='fu'><a href='https://rdrr.io/r/base/plot.html'>plot</a></span>(<span class='no'>winery_cars</span>[, <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"obs_number"</span>, <span class='st'>"time_until_next"</span>)],
+     <span class='kw'>col</span> <span class='kw'>=</span> <span class='no'>col</span>, <span class='kw'>pch</span> <span class='kw'>=</span> <span class='fl'>19</span>)</div><div class='img'><img src='winery_cars-1.png' alt='' width='700' height='433' /></div><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/plot.html'>plot</a></span>(<span class='no'>winery_cars</span>$<span class='no'>car_number</span>, <span class='no'>winery_cars</span>$<span class='no'>time_until_next</span>,
+     <span class='kw'>col</span> <span class='kw'>=</span> <span class='fu'><a href='fadeColor.html'>fadeColor</a></span>(<span class='no'>col</span>, <span class='st'>"88"</span>), <span class='kw'>pch</span> <span class='kw'>=</span> <span class='fl'>19</span>)</div><div class='img'><img src='winery_cars-2.png' alt='' width='700' height='433' /></div><div class='input'>
+</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
@@ -178,7 +179,7 @@ revenue.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.9000.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
 </div>
 
       </footer>

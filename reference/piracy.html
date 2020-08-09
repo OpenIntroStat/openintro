@@ -127,12 +127,12 @@ legislation that was introduced at the end of 2011." />
 legislation that was introduced at the end of 2011.</p>
     </div>
 
-    <pre class="usage"><span class='kw'>piracy</span></pre>
+    <pre class="usage"><span class='no'>piracy</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>A data frame with 534 observations on the following 8 variables.</p><dl>
+    <p>A data frame with 534 observations on the following 8 variables.</p><dl'>
   <dt>name</dt><dd><p>Name of legislator.</p></dd>
   <dt>party</dt><dd><p>Party affiliation as democrat (<code>D</code>), Republican (<code>R</code>), or Independent (<code>I</code>).</p></dd>
   <dt>state</dt><dd><p>Two letter state abbreviation.</p></dd>
@@ -165,43 +165,44 @@ linked below.</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
-<span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='kw'><a href='https://dplyr.tidyverse.org'>dplyr</a></span>)
-<span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='kw'><a href='http://ggplot2.tidyverse.org'>ggplot2</a></span>)
+<span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='no'>dplyr</span>)
+<span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='no'>ggplot2</span>)
 
-<span class='kw'>pipa</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://dplyr.tidyverse.org/reference/filter.html'>filter</a></span>(<span class='kw'>piracy</span>, <span class='kw'>chamber</span> <span class='op'>==</span> <span class='st'>"senate"</span>)
+<span class='no'>pipa</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://dplyr.tidyverse.org/reference/filter.html'>filter</a></span>(<span class='no'>piracy</span>, <span class='no'>chamber</span> <span class='kw'>==</span> <span class='st'>"senate"</span>)
 
-<span class='kw'>pipa</span> <span class='op'>%&gt;%</span>
-  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/group_by.html'>group_by</a></span>(<span class='kw'>stance</span>) <span class='op'>%&gt;%</span>
-  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/summarise.html'>summarise</a></span>(money_pro_mean = <span class='fu'><a href='https://rdrr.io/r/base/mean.html'>mean</a></span>(<span class='kw'>money_pro</span>, na.rm = <span class='fl'>TRUE</span>)) <span class='op'>%&gt;%</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(x = <span class='kw'>stance</span>, y = <span class='kw'>money_pro_mean</span>)) <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_bar.html'>geom_col</a></span>() <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span>(x = <span class='st'>"Stance"</span>, y = <span class='st'>"Average contribution, in $"</span>,
-       title = <span class='st'>"Average contribution to the legislator's campaign in 2010"</span>,
-       subtitle = <span class='st'>"by groups supportive of PIPA/SOPA (movie and TV studios, record labels)"</span>)</div><div class='output co'>#&gt; <span class='message'>`summarise()` ungrouping output (override with `.groups` argument)</span></div><div class='img'><img src='piracy-1.png' alt='' width='700' height='433' /></div><div class='input'>
-<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='kw'>pipa</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(x = <span class='kw'>stance</span>, y = <span class='kw'>money_pro</span>)) <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_boxplot.html'>geom_boxplot</a></span>() <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span>(x = <span class='st'>"Stance"</span>, y = <span class='st'>"Contribution, in $"</span>,
-       title = <span class='st'>"Contribution by groups supportive of PIPA/SOPA"</span>,
-       subtitle = <span class='st'>"Movie and TV studios, record labels"</span>)</div><div class='output co'>#&gt; <span class='warning'>Warning: Removed 6 rows containing non-finite values (stat_boxplot).</span></div><div class='img'><img src='piracy-2.png' alt='' width='700' height='433' /></div><div class='input'>
-<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='kw'>pipa</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(x = <span class='kw'>stance</span>, y = <span class='kw'>money_con</span>)) <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_boxplot.html'>geom_boxplot</a></span>() <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span>(x = <span class='st'>"Stance"</span>, y = <span class='st'>"Contribution, in $"</span>,
-       title = <span class='st'>"Contribution by groups opposed to PIPA/SOPA"</span>,
-       subtitle = <span class='st'>"Computer and internet companies"</span>)</div><div class='output co'>#&gt; <span class='warning'>Warning: Removed 6 rows containing non-finite values (stat_boxplot).</span></div><div class='img'><img src='piracy-3.png' alt='' width='700' height='433' /></div><div class='input'>
-<span class='kw'>pipa</span> <span class='op'>%&gt;%</span>
+<span class='no'>pipa</span> <span class='kw'>%&gt;%</span>
+  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/group_by.html'>group_by</a></span>(<span class='no'>stance</span>) <span class='kw'>%&gt;%</span>
+  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/summarise.html'>summarise</a></span>(<span class='kw'>money_pro_mean</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/mean.html'>mean</a></span>(<span class='no'>money_pro</span>, <span class='kw'>na.rm</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)) <span class='kw'>%&gt;%</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='no'>stance</span>, <span class='kw'>y</span> <span class='kw'>=</span> <span class='no'>money_pro_mean</span>)) +
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_bar.html'>geom_col</a></span>() +
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='st'>"Stance"</span>, <span class='kw'>y</span> <span class='kw'>=</span> <span class='st'>"Average contribution, in $"</span>,
+       <span class='kw'>title</span> <span class='kw'>=</span> <span class='st'>"Average contribution to the legislator's campaign in 2010"</span>,
+       <span class='kw'>subtitle</span> <span class='kw'>=</span> <span class='st'>"by groups supportive of PIPA/SOPA (movie and TV studios, record labels)"</span>)</div><div class='output co'>#&gt; <span class='message'>`summarise()` ungrouping output (override with `.groups` argument)</span></div><div class='img'><img src='piracy-1.png' alt='' width='700' height='433' /></div><div class='input'>
+<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='no'>pipa</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='no'>stance</span>, <span class='kw'>y</span> <span class='kw'>=</span> <span class='no'>money_pro</span>)) +
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_boxplot.html'>geom_boxplot</a></span>() +
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='st'>"Stance"</span>, <span class='kw'>y</span> <span class='kw'>=</span> <span class='st'>"Contribution, in $"</span>,
+       <span class='kw'>title</span> <span class='kw'>=</span> <span class='st'>"Contribution by groups supportive of PIPA/SOPA"</span>,
+       <span class='kw'>subtitle</span> <span class='kw'>=</span> <span class='st'>"Movie and TV studios, record labels"</span>)</div><div class='output co'>#&gt; <span class='warning'>Warning: Removed 6 rows containing non-finite values (stat_boxplot).</span></div><div class='img'><img src='piracy-2.png' alt='' width='700' height='433' /></div><div class='input'>
+<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='no'>pipa</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='no'>stance</span>, <span class='kw'>y</span> <span class='kw'>=</span> <span class='no'>money_con</span>)) +
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_boxplot.html'>geom_boxplot</a></span>() +
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='st'>"Stance"</span>, <span class='kw'>y</span> <span class='kw'>=</span> <span class='st'>"Contribution, in $"</span>,
+       <span class='kw'>title</span> <span class='kw'>=</span> <span class='st'>"Contribution by groups opposed to PIPA/SOPA"</span>,
+       <span class='kw'>subtitle</span> <span class='kw'>=</span> <span class='st'>"Computer and internet companies"</span>)</div><div class='output co'>#&gt; <span class='warning'>Warning: Removed 6 rows containing non-finite values (stat_boxplot).</span></div><div class='img'><img src='piracy-3.png' alt='' width='700' height='433' /></div><div class='input'>
+<span class='no'>pipa</span> <span class='kw'>%&gt;%</span>
   <span class='fu'><a href='https://dplyr.tidyverse.org/reference/filter.html'>filter</a></span>(
-    <span class='kw'>money_pro</span> <span class='op'>&gt;</span> <span class='fl'>0</span>,
-    <span class='kw'>money_con</span> <span class='op'>&gt;</span> <span class='fl'>0</span>
-  ) <span class='op'>%&gt;%</span>
-  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/mutate.html'>mutate</a></span>(for_pipa = <span class='fu'><a href='https://rdrr.io/r/base/ifelse.html'>ifelse</a></span>(<span class='kw'>stance</span> <span class='op'>==</span> <span class='st'>"yes"</span>, <span class='st'>"yes"</span>, <span class='st'>"no"</span>)) <span class='op'>%&gt;%</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(x = <span class='kw'>money_pro</span>, y = <span class='kw'>money_con</span>, color = <span class='kw'>for_pipa</span>)) <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_point.html'>geom_point</a></span>() <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/scale_manual.html'>scale_color_manual</a></span>(values = <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"gray"</span>, <span class='st'>"red"</span>)) <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/scale_continuous.html'>scale_y_log10</a></span>() <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/scale_continuous.html'>scale_x_log10</a></span>() <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span>(x = <span class='st'>"Contribution by pro-PIPA groups"</span>,
-       y = <span class='st'>"Contribution by anti-PIPA groups"</span>,
-       color = <span class='st'>"For PIPA"</span>)</div><div class='img'><img src='piracy-4.png' alt='' width='700' height='433' /></div><div class='input'></div></pre>
+    <span class='no'>money_pro</span> <span class='kw'>&gt;</span> <span class='fl'>0</span>,
+    <span class='no'>money_con</span> <span class='kw'>&gt;</span> <span class='fl'>0</span>
+  ) <span class='kw'>%&gt;%</span>
+  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/mutate.html'>mutate</a></span>(<span class='kw'>for_pipa</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/ifelse.html'>ifelse</a></span>(<span class='no'>stance</span> <span class='kw'>==</span> <span class='st'>"yes"</span>, <span class='st'>"yes"</span>, <span class='st'>"no"</span>)) <span class='kw'>%&gt;%</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='no'>money_pro</span>, <span class='kw'>y</span> <span class='kw'>=</span> <span class='no'>money_con</span>, <span class='kw'>color</span> <span class='kw'>=</span> <span class='no'>for_pipa</span>)) +
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_point.html'>geom_point</a></span>() +
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/scale_manual.html'>scale_color_manual</a></span>(<span class='kw'>values</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"gray"</span>, <span class='st'>"red"</span>)) +
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/scale_continuous.html'>scale_y_log10</a></span>() +
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/scale_continuous.html'>scale_x_log10</a></span>() +
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='st'>"Contribution by pro-PIPA groups"</span>,
+       <span class='kw'>y</span> <span class='kw'>=</span> <span class='st'>"Contribution by anti-PIPA groups"</span>,
+       <span class='kw'>color</span> <span class='kw'>=</span> <span class='st'>"For PIPA"</span>)</div><div class='img'><img src='piracy-4.png' alt='' width='700' height='433' /></div><div class='input'>
+</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
@@ -217,7 +218,7 @@ linked below.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.9000.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
 </div>
 
       </footer>

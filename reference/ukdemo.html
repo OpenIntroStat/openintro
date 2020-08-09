@@ -125,12 +125,12 @@ financial demographic variables." />
 financial demographic variables.</p>
     </div>
 
-    <pre class="usage"><span class='kw'>ukdemo</span></pre>
+    <pre class="usage"><span class='no'>ukdemo</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>A data frame with 12 observations on the following 6 variables.</p><dl>
+    <p>A data frame with 12 observations on the following 6 variables.</p><dl'>
 <dt>region</dt><dd><p>Region in the United Kingdom</p></dd>
 <dt>debt</dt><dd><p>Average regional debt, not including mortgages, in pounds</p></dd>
 <dt>unemployment</dt><dd><p>Percent unemployment</p></dd>
@@ -152,11 +152,12 @@ retrieved 2011-11-01.</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
-<span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='kw'><a href='http://ggplot2.tidyverse.org'>ggplot2</a></span>)
+<span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='no'>ggplot2</span>)
 
-<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='kw'>ukdemo</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(x = <span class='kw'>pay</span>, y = <span class='kw'>rpi</span>)) <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_point.html'>geom_point</a></span>() <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span>(x = <span class='st'>"Average hourly pay"</span>, y = <span class='st'>"Retail price index"</span>)</div><div class='img'><img src='ukdemo-1.png' alt='' width='700' height='433' /></div><div class='input'></div></pre>
+<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='no'>ukdemo</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='no'>pay</span>, <span class='kw'>y</span> <span class='kw'>=</span> <span class='no'>rpi</span>)) +
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_point.html'>geom_point</a></span>() +
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='st'>"Average hourly pay"</span>, <span class='kw'>y</span> <span class='kw'>=</span> <span class='st'>"Retail price index"</span>)</div><div class='img'><img src='ukdemo-1.png' alt='' width='700' height='433' /></div><div class='input'>
+</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
@@ -172,7 +173,7 @@ retrieved 2011-11-01.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.9000.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
 </div>
 
       </footer>

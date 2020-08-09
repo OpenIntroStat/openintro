@@ -125,12 +125,12 @@ armed forces including gender, race, and rank." />
 armed forces including gender, race, and rank.</p>
     </div>
 
-    <pre class="usage"><span class='kw'>military</span></pre>
+    <pre class="usage"><span class='no'>military</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>A data frame with 1,414,593 observations on the following 6 variables.</p><dl>
+    <p>A data frame with 1,414,593 observations on the following 6 variables.</p><dl'>
   <dt>grade</dt><dd><p>The status of the service member as <code>enlisted</code> <code>officer</code> or <code>warrant officer</code>.</p></dd>
   <dt>branch</dt><dd><p>The branch of the armed forces: <code>air force</code>, <code>army</code>, <code>marine corps</code>, <code>navy</code>.</p></dd>
   <dt>gender</dt><dd><p>Whether the service member is <code>female</code> or <code>male</code>.</p></dd>
@@ -153,34 +153,33 @@ the original data set but has not been included here.</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
-<span class='co'>if</span> (<span class='fl'>FALSE</span>) {
-<span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='kw'><a href='https://dplyr.tidyverse.org'>dplyr</a></span>)
-<span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='kw'><a href='http://ggplot2.tidyverse.org'>ggplot2</a></span>)
-<span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='kw'><a href='http://forcats.tidyverse.org'>forcats</a></span>)
+<span class='kw'>if</span> (<span class='fl'>FALSE</span>) {
+<span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='no'>dplyr</span>)
+<span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='no'>ggplot2</span>)
+<span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='no'>forcats</span>)
 
 <span class='co'># Proportion of females in military branches</span>
-<span class='kw'>military</span> <span class='op'>%&gt;%</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(x = <span class='kw'>branch</span>, fill = <span class='kw'>gender</span>)) <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_bar.html'>geom_bar</a></span>(position = <span class='st'>"fill"</span>) <span class='op'>+</span>
+<span class='no'>military</span> <span class='kw'>%&gt;%</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='no'>branch</span>, <span class='kw'>fill</span> <span class='kw'>=</span> <span class='no'>gender</span>)) +
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_bar.html'>geom_bar</a></span>(<span class='kw'>position</span> <span class='kw'>=</span> <span class='st'>"fill"</span>) +
   <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span>(
-    x = <span class='st'>"Branch"</span>, y = <span class='st'>"Proportion"</span>, fill = <span class='st'>"Gender"</span>,
-    title = <span class='st'>"Proportion of females in military branches"</span>
+    <span class='kw'>x</span> <span class='kw'>=</span> <span class='st'>"Branch"</span>, <span class='kw'>y</span> <span class='kw'>=</span> <span class='st'>"Proportion"</span>, <span class='kw'>fill</span> <span class='kw'>=</span> <span class='st'>"Gender"</span>,
+    <span class='kw'>title</span> <span class='kw'>=</span> <span class='st'>"Proportion of females in military branches"</span>
   )
 
 <span class='co'># Proportion of army officer females across ranks</span>
-<span class='kw'>military</span> <span class='op'>%&gt;%</span>
+<span class='no'>military</span> <span class='kw'>%&gt;%</span>
   <span class='fu'><a href='https://dplyr.tidyverse.org/reference/filter.html'>filter</a></span>(
-    <span class='kw'>grade</span> <span class='op'>==</span> <span class='st'>"officer"</span>,
-    <span class='kw'>branch</span> <span class='op'>==</span> <span class='st'>"army"</span>
-  ) <span class='op'>%&gt;%</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(x = <span class='fu'><a href='https://rdrr.io/r/base/factor.html'>factor</a></span>(<span class='kw'>rank</span>), fill = <span class='fu'><a href='https://forcats.tidyverse.org/reference/fct_rev.html'>fct_rev</a></span>(<span class='kw'>gender</span>))) <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_bar.html'>geom_bar</a></span>(position = <span class='st'>"fill"</span>) <span class='op'>+</span>
+    <span class='no'>grade</span> <span class='kw'>==</span> <span class='st'>"officer"</span>,
+    <span class='no'>branch</span> <span class='kw'>==</span> <span class='st'>"army"</span>
+  ) <span class='kw'>%&gt;%</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/factor.html'>factor</a></span>(<span class='no'>rank</span>), <span class='kw'>fill</span> <span class='kw'>=</span> <span class='fu'><a href='https://forcats.tidyverse.org/reference/fct_rev.html'>fct_rev</a></span>(<span class='no'>gender</span>))) +
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_bar.html'>geom_bar</a></span>(<span class='kw'>position</span> <span class='kw'>=</span> <span class='st'>"fill"</span>) +
   <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span>(
-    x = <span class='st'>"Rank"</span>, y = <span class='st'>"Proportion"</span>, fill = <span class='st'>"Gender"</span>,
-    title = <span class='st'>"Proportion of army officer females across ranks"</span>
+    <span class='kw'>x</span> <span class='kw'>=</span> <span class='st'>"Rank"</span>, <span class='kw'>y</span> <span class='kw'>=</span> <span class='st'>"Proportion"</span>, <span class='kw'>fill</span> <span class='kw'>=</span> <span class='st'>"Gender"</span>,
+    <span class='kw'>title</span> <span class='kw'>=</span> <span class='st'>"Proportion of army officer females across ranks"</span>
   )
-}
-</div></pre>
+}</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
@@ -196,7 +195,7 @@ the original data set but has not been included here.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.9000.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
 </div>
 
       </footer>

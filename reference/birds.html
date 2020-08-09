@@ -127,12 +127,12 @@ reported to the US Federal Aviation Administration between 1990 and 1997,
 with details on the circumstances of the collision.</p>
     </div>
 
-    <pre class="usage"><span class='kw'>birds</span></pre>
+    <pre class="usage"><span class='no'>birds</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>A data frame with 19302 observations on the following 17 variables.</p><dl>
+    <p>A data frame with 19302 observations on the following 17 variables.</p><dl'>
   <dt>opid</dt><dd><p>Three letter identification code for the operator (carrier) of the aircraft.</p></dd>
   <dt>operator</dt><dd><p>Name of the aircraft operator.</p></dd>
   <dt>atype</dt><dd><p>Make and model of aircraft.</p></dd>
@@ -170,14 +170,14 @@ airlines may be misleading.</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
-<span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='kw'><a href='https://dplyr.tidyverse.org'>dplyr</a></span>)
-<span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='kw'><a href='http://ggplot2.tidyverse.org'>ggplot2</a></span>)
-<span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='kw'><a href='http://forcats.tidyverse.org'>forcats</a></span>)
-<span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='kw'><a href='https://tidyr.tidyverse.org'>tidyr</a></span>)
+<span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='no'>dplyr</span>)
+<span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='no'>ggplot2</span>)
+<span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='no'>forcats</span>)
+<span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='no'>tidyr</span>)
 
 <span class='co'># Phase of the flight during which the collision occurred, tabular</span>
-<span class='kw'>birds</span> <span class='op'>%&gt;%</span>
-  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/count.html'>count</a></span>(<span class='kw'>phase_of_flt</span>, sort = <span class='fl'>TRUE</span>)</div><div class='output co'>#&gt; <span style='color: #555555;'># A tibble: 9 x 2</span><span>
+<span class='no'>birds</span> <span class='kw'>%&gt;%</span>
+  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/count.html'>count</a></span>(<span class='no'>phase_of_flt</span>, <span class='kw'>sort</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)</div><div class='output co'>#&gt; <span style='color: #555555;'># A tibble: 9 x 2</span><span>
 #&gt;   phase_of_flt     n
 #&gt;   </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span>        </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span>
 #&gt; </span><span style='color: #555555;'>1</span><span> Approach      </span><span style='text-decoration: underline;'>6</span><span>470
@@ -190,18 +190,19 @@ airlines may be misleading.</p>
 #&gt; </span><span style='color: #555555;'>8</span><span> Taxi            79
 #&gt; </span><span style='color: #555555;'>9</span><span> Parked          11</div><div class='input'>
 <span class='co'># Phase of the flight during which the collision occurred, barplot</span>
-<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='kw'>birds</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(y = <span class='fu'><a href='https://forcats.tidyverse.org/reference/fct_inorder.html'>fct_infreq</a></span>(<span class='kw'>phase_of_flt</span>))) <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_bar.html'>geom_bar</a></span>() <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span>(x = <span class='st'>"Phase of flight"</span>)</div><div class='img'><img src='birds-1.png' alt='' width='700' height='433' /></div><div class='input'>
+<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='no'>birds</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(<span class='kw'>y</span> <span class='kw'>=</span> <span class='fu'><a href='https://forcats.tidyverse.org/reference/fct_inorder.html'>fct_infreq</a></span>(<span class='no'>phase_of_flt</span>))) +
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_bar.html'>geom_bar</a></span>() +
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='st'>"Phase of flight"</span>)</div><div class='img'><img src='birds-1.png' alt='' width='700' height='433' /></div><div class='input'>
 <span class='co'># Height summary statistics</span>
-<span class='fu'><a href='https://rdrr.io/r/base/summary.html'>summary</a></span>(<span class='kw'>birds</span><span class='op'>$</span><span class='kw'>height</span>)</div><div class='output co'>#&gt;    Min. 1st Qu.  Median    Mean 3rd Qu.    Max.    NA's 
+<span class='fu'><a href='https://rdrr.io/r/base/summary.html'>summary</a></span>(<span class='no'>birds</span>$<span class='no'>height</span>)</div><div class='output co'>#&gt;    Min. 1st Qu.  Median    Mean 3rd Qu.    Max.    NA's 
 #&gt;     0.0     0.0    40.0   754.7   500.0 32500.0    3193 </div><div class='input'>
 <span class='co'># Phase of flight vs. effect of crash</span>
-<span class='kw'>birds</span> <span class='op'>%&gt;%</span>
-  <span class='fu'><a href='https://tidyr.tidyverse.org/reference/drop_na.html'>drop_na</a></span>(<span class='kw'>phase_of_flt</span>, <span class='kw'>effect</span>) <span class='op'>%&gt;%</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(y = <span class='kw'>phase_of_flt</span>, fill = <span class='kw'>effect</span>)) <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_bar.html'>geom_bar</a></span>(position = <span class='st'>"fill"</span>) <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span>(x = <span class='st'>"Proportion"</span>, y = <span class='st'>"Phase of flight"</span>, fill = <span class='st'>"Effect"</span>)</div><div class='img'><img src='birds-2.png' alt='' width='700' height='433' /></div><div class='input'></div></span></pre>
+<span class='no'>birds</span> <span class='kw'>%&gt;%</span>
+  <span class='fu'><a href='https://tidyr.tidyverse.org/reference/drop_na.html'>drop_na</a></span>(<span class='no'>phase_of_flt</span>, <span class='no'>effect</span>) <span class='kw'>%&gt;%</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(<span class='kw'>y</span> <span class='kw'>=</span> <span class='no'>phase_of_flt</span>, <span class='kw'>fill</span> <span class='kw'>=</span> <span class='no'>effect</span>)) +
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_bar.html'>geom_bar</a></span>(<span class='kw'>position</span> <span class='kw'>=</span> <span class='st'>"fill"</span>) +
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='st'>"Proportion"</span>, <span class='kw'>y</span> <span class='kw'>=</span> <span class='st'>"Phase of flight"</span>, <span class='kw'>fill</span> <span class='kw'>=</span> <span class='st'>"Effect"</span>)</div><div class='img'><img src='birds-2.png' alt='' width='700' height='433' /></div><div class='input'>
+</div></span></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
@@ -217,7 +218,7 @@ airlines may be misleading.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.9000.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
 </div>
 
       </footer>

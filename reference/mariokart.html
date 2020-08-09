@@ -125,13 +125,13 @@ data was collected in early October 2009." />
 data was collected in early October 2009.</p>
     </div>
 
-    <pre class="usage"><span class='kw'>mariokart</span></pre>
+    <pre class="usage"><span class='no'>mariokart</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
     <p>A data frame with 143 observations on the following 12 variables.
-All prices are in US dollars.</p><dl>
+All prices are in US dollars.</p><dl'>
   <dt>id</dt><dd><p>Auction ID assigned by Ebay.</p></dd>
   <dt>duration</dt><dd><p>Auction length, in days.</p></dd>
   <dt>n_bids</dt><dd><p>Number of bids.</p></dd>
@@ -180,64 +180,65 @@ end with a Buy It Now option.</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
-<span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='kw'><a href='http://ggplot2.tidyverse.org'>ggplot2</a></span>)
-<span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='kw'><a href='http://github.com/tidyverse/broom'>broom</a></span>)
-<span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='kw'><a href='https://dplyr.tidyverse.org'>dplyr</a></span>)
+<span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='no'>ggplot2</span>)
+<span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='no'>broom</span>)
+<span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='no'>dplyr</span>)
 
 <span class='co'># Identify outliers</span>
-<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='kw'>mariokart</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(x = <span class='kw'>total_pr</span>, y = <span class='kw'>cond</span>)) <span class='op'>+</span>
+<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='no'>mariokart</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='no'>total_pr</span>, <span class='kw'>y</span> <span class='kw'>=</span> <span class='no'>cond</span>)) +
   <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_boxplot.html'>geom_boxplot</a></span>()</div><div class='img'><img src='mariokart-1.png' alt='' width='700' height='433' /></div><div class='input'>
 <span class='co'># Replot without the outliers</span>
-<span class='kw'>mariokart</span> <span class='op'>%&gt;%</span>
-  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/filter.html'>filter</a></span>(<span class='kw'>total_pr</span> <span class='op'>&lt;</span> <span class='fl'>80</span>) <span class='op'>%&gt;%</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(x = <span class='kw'>total_pr</span>, y = <span class='kw'>cond</span>)) <span class='op'>+</span>
+<span class='no'>mariokart</span> <span class='kw'>%&gt;%</span>
+  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/filter.html'>filter</a></span>(<span class='no'>total_pr</span> <span class='kw'>&lt;</span> <span class='fl'>80</span>) <span class='kw'>%&gt;%</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='no'>total_pr</span>, <span class='kw'>y</span> <span class='kw'>=</span> <span class='no'>cond</span>)) +
   <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_boxplot.html'>geom_boxplot</a></span>()</div><div class='img'><img src='mariokart-2.png' alt='' width='700' height='433' /></div><div class='input'>
 <span class='co'># Fit a multiple regression models</span>
-<span class='kw'>mariokart_no</span> <span class='op'>&lt;-</span> <span class='kw'>mariokart</span> <span class='op'>%&gt;%</span> <span class='fu'><a href='https://dplyr.tidyverse.org/reference/filter.html'>filter</a></span>(<span class='kw'>total_pr</span> <span class='op'>&lt;</span> <span class='fl'>80</span>)
-<span class='kw'>m1</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/stats/lm.html'>lm</a></span>(<span class='kw'>total_pr</span> <span class='op'>~</span> <span class='kw'>cond</span> <span class='op'>+</span> <span class='kw'>stock_photo</span> <span class='op'>+</span> <span class='kw'>duration</span> <span class='op'>+</span> <span class='kw'>wheels</span>, data = <span class='kw'>mariokart_no</span>)
-<span class='fu'><a href='https://rdrr.io/pkg/generics/man/tidy.html'>tidy</a></span>(<span class='kw'>m1</span>)</div><div class='output co'>#&gt; <span style='color: #555555;'># A tibble: 5 x 5</span><span>
+<span class='no'>mariokart_no</span> <span class='kw'>&lt;-</span> <span class='no'>mariokart</span> <span class='kw'>%&gt;%</span> <span class='fu'><a href='https://dplyr.tidyverse.org/reference/filter.html'>filter</a></span>(<span class='no'>total_pr</span> <span class='kw'>&lt;</span> <span class='fl'>80</span>)
+<span class='no'>m1</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/stats/lm.html'>lm</a></span>(<span class='no'>total_pr</span> ~ <span class='no'>cond</span> + <span class='no'>stock_photo</span> + <span class='no'>duration</span> + <span class='no'>wheels</span>, <span class='kw'>data</span> <span class='kw'>=</span> <span class='no'>mariokart_no</span>)
+<span class='fu'><a href='https://broom.tidymodels.org/reference/reexports.html'>tidy</a></span>(<span class='no'>m1</span>)</div><div class='output co'>#&gt; <span style='color: #555555;'># A tibble: 5 x 5</span><span>
 #&gt;   term           estimate std.error statistic  p.value
 #&gt;   </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>             </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>     </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>     </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>    </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>
 #&gt; </span><span style='color: #555555;'>1</span><span> (Intercept)     41.3        1.71     24.2   4.87</span><span style='color: #555555;'>e</span><span style='color: #BB0000;'>-51</span><span>
 #&gt; </span><span style='color: #555555;'>2</span><span> condused        -</span><span style='color: #BB0000;'>5.13</span><span>       1.05     -</span><span style='color: #BB0000;'>4.88</span><span>  2.91</span><span style='color: #555555;'>e</span><span style='color: #BB0000;'>- 6</span><span>
 #&gt; </span><span style='color: #555555;'>3</span><span> stock_photoyes   1.08       1.06      1.02  3.08</span><span style='color: #555555;'>e</span><span style='color: #BB0000;'>- 1</span><span>
 #&gt; </span><span style='color: #555555;'>4</span><span> duration        -</span><span style='color: #BB0000;'>0.026</span><span style='color: #BB0000;text-decoration: underline;'>8</span><span>     0.190    -</span><span style='color: #BB0000;'>0.141</span><span> 8.88</span><span style='color: #555555;'>e</span><span style='color: #BB0000;'>- 1</span><span>
-#&gt; </span><span style='color: #555555;'>5</span><span> wheels           7.29       0.555    13.1   5.89</span><span style='color: #555555;'>e</span><span style='color: #BB0000;'>-26</span><span></div><div class='input'><span class='kw'>m2</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/stats/lm.html'>lm</a></span>(<span class='kw'>total_pr</span> <span class='op'>~</span> <span class='kw'>cond</span> <span class='op'>+</span> <span class='kw'>stock_photo</span> <span class='op'>+</span> <span class='kw'>wheels</span>, data = <span class='kw'>mariokart_no</span>)
-<span class='fu'><a href='https://rdrr.io/pkg/generics/man/tidy.html'>tidy</a></span>(<span class='kw'>m2</span>)</div><div class='output co'>#&gt; </span><span style='color: #555555;'># A tibble: 4 x 5</span><span>
+#&gt; </span><span style='color: #555555;'>5</span><span> wheels           7.29       0.555    13.1   5.89</span><span style='color: #555555;'>e</span><span style='color: #BB0000;'>-26</span><span></div><div class='input'><span class='no'>m2</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/stats/lm.html'>lm</a></span>(<span class='no'>total_pr</span> ~ <span class='no'>cond</span> + <span class='no'>stock_photo</span> + <span class='no'>wheels</span>, <span class='kw'>data</span> <span class='kw'>=</span> <span class='no'>mariokart_no</span>)
+<span class='fu'><a href='https://broom.tidymodels.org/reference/reexports.html'>tidy</a></span>(<span class='no'>m2</span>)</div><div class='output co'>#&gt; </span><span style='color: #555555;'># A tibble: 4 x 5</span><span>
 #&gt;   term           estimate std.error statistic  p.value
 #&gt;   </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>             </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>     </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>     </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>    </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>
 #&gt; </span><span style='color: #555555;'>1</span><span> (Intercept)       41.2      1.49      27.6  6.64</span><span style='color: #555555;'>e</span><span style='color: #BB0000;'>-58</span><span>
 #&gt; </span><span style='color: #555555;'>2</span><span> condused          -</span><span style='color: #BB0000;'>5.18</span><span>     0.996     -</span><span style='color: #BB0000;'>5.20</span><span> 7.21</span><span style='color: #555555;'>e</span><span style='color: #BB0000;'>- 7</span><span>
 #&gt; </span><span style='color: #555555;'>3</span><span> stock_photoyes     1.12     1.02       1.10 2.75</span><span style='color: #555555;'>e</span><span style='color: #BB0000;'>- 1</span><span>
-#&gt; </span><span style='color: #555555;'>4</span><span> wheels             7.30     0.545     13.4  1.11</span><span style='color: #555555;'>e</span><span style='color: #BB0000;'>-26</span><span></div><div class='input'><span class='kw'>m3</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/stats/lm.html'>lm</a></span>(<span class='kw'>total_pr</span> <span class='op'>~</span> <span class='kw'>cond</span> <span class='op'>+</span> <span class='kw'>wheels</span>, data = <span class='kw'>mariokart_no</span>)
-<span class='fu'><a href='https://rdrr.io/pkg/generics/man/tidy.html'>tidy</a></span>(<span class='kw'>m3</span>)</div><div class='output co'>#&gt; </span><span style='color: #555555;'># A tibble: 3 x 5</span><span>
+#&gt; </span><span style='color: #555555;'>4</span><span> wheels             7.30     0.545     13.4  1.11</span><span style='color: #555555;'>e</span><span style='color: #BB0000;'>-26</span><span></div><div class='input'><span class='no'>m3</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/stats/lm.html'>lm</a></span>(<span class='no'>total_pr</span> ~ <span class='no'>cond</span> + <span class='no'>wheels</span>, <span class='kw'>data</span> <span class='kw'>=</span> <span class='no'>mariokart_no</span>)
+<span class='fu'><a href='https://broom.tidymodels.org/reference/reexports.html'>tidy</a></span>(<span class='no'>m3</span>)</div><div class='output co'>#&gt; </span><span style='color: #555555;'># A tibble: 3 x 5</span><span>
 #&gt;   term        estimate std.error statistic  p.value
 #&gt;   </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>          </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>     </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>     </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>    </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>
 #&gt; </span><span style='color: #555555;'>1</span><span> (Intercept)    42.4      1.07      39.8  1.75</span><span style='color: #555555;'>e</span><span style='color: #BB0000;'>-77</span><span>
 #&gt; </span><span style='color: #555555;'>2</span><span> condused       -</span><span style='color: #BB0000;'>5.58</span><span>     0.925     -</span><span style='color: #BB0000;'>6.04</span><span> 1.35</span><span style='color: #555555;'>e</span><span style='color: #BB0000;'>- 8</span><span>
 #&gt; </span><span style='color: #555555;'>3</span><span> wheels          7.23     0.542     13.3  1.29</span><span style='color: #555555;'>e</span><span style='color: #BB0000;'>-26</span><span></div><div class='input'>
 <span class='co'># Fit diagnostics</span>
-<span class='kw'>aug_m3</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/pkg/generics/man/augment.html'>augment</a></span>(<span class='kw'>m3</span>)
+<span class='no'>aug_m3</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://broom.tidymodels.org/reference/reexports.html'>augment</a></span>(<span class='no'>m3</span>)
 
-<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='kw'>aug_m3</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(x = <span class='kw'>.fitted</span>, y = <span class='kw'>.resid</span>)) <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_point.html'>geom_point</a></span>() <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_abline.html'>geom_hline</a></span>(yintercept = <span class='fl'>0</span>, linetype = <span class='st'>"dashed"</span>) <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span>(x = <span class='st'>"Fitted values"</span>, y = <span class='st'>"Residuals"</span>)</div><div class='img'><img src='mariokart-3.png' alt='' width='700' height='433' /></div><div class='input'>
-<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='kw'>aug_m3</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(x = <span class='kw'>.fitted</span>, y = <span class='fu'><a href='https://rdrr.io/r/base/MathFun.html'>abs</a></span>(<span class='kw'>.resid</span>))) <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_point.html'>geom_point</a></span>() <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_abline.html'>geom_hline</a></span>(yintercept = <span class='fl'>0</span>, linetype = <span class='st'>"dashed"</span>) <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span>(x = <span class='st'>"Fitted values"</span>, y = <span class='st'>"Absolute value of residuals"</span>)</div><div class='img'><img src='mariokart-4.png' alt='' width='700' height='433' /></div><div class='input'>
-<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='kw'>aug_m3</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(x = <span class='fl'>1</span><span class='op'>:</span><span class='fu'><a href='https://rdrr.io/r/base/nrow.html'>nrow</a></span>(<span class='kw'>aug_m3</span>), y = <span class='kw'>.resid</span>)) <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_point.html'>geom_point</a></span>() <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_abline.html'>geom_hline</a></span>(yintercept = <span class='fl'>0</span>, linetype = <span class='st'>"dashed"</span>) <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span>(x = <span class='st'>"Order of data collection"</span>, y = <span class='st'>"Residuals"</span>)</div><div class='img'><img src='mariokart-5.png' alt='' width='700' height='433' /></div><div class='input'>
-<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='kw'>aug_m3</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(x = <span class='kw'>cond</span>, y = <span class='kw'>.resid</span>)) <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_boxplot.html'>geom_boxplot</a></span>() <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span>(x = <span class='st'>"Condition"</span>, y = <span class='st'>"Residuals"</span>)</div><div class='img'><img src='mariokart-6.png' alt='' width='700' height='433' /></div><div class='input'>
-<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='kw'>aug_m3</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(x = <span class='kw'>wheels</span>, y = <span class='kw'>.resid</span>)) <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_point.html'>geom_point</a></span>() <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span>(x = <span class='st'>"Number of wheels"</span>, y = <span class='st'>"Residuals"</span>,
-       title = <span class='st'>"Notice curvature"</span>)</div><div class='img'><img src='mariokart-7.png' alt='' width='700' height='433' /></div><div class='input'></div></span></pre>
+<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='no'>aug_m3</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='no'>.fitted</span>, <span class='kw'>y</span> <span class='kw'>=</span> <span class='no'>.resid</span>)) +
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_point.html'>geom_point</a></span>() +
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_abline.html'>geom_hline</a></span>(<span class='kw'>yintercept</span> <span class='kw'>=</span> <span class='fl'>0</span>, <span class='kw'>linetype</span> <span class='kw'>=</span> <span class='st'>"dashed"</span>) +
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='st'>"Fitted values"</span>, <span class='kw'>y</span> <span class='kw'>=</span> <span class='st'>"Residuals"</span>)</div><div class='img'><img src='mariokart-3.png' alt='' width='700' height='433' /></div><div class='input'>
+<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='no'>aug_m3</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='no'>.fitted</span>, <span class='kw'>y</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/MathFun.html'>abs</a></span>(<span class='no'>.resid</span>))) +
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_point.html'>geom_point</a></span>() +
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_abline.html'>geom_hline</a></span>(<span class='kw'>yintercept</span> <span class='kw'>=</span> <span class='fl'>0</span>, <span class='kw'>linetype</span> <span class='kw'>=</span> <span class='st'>"dashed"</span>) +
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='st'>"Fitted values"</span>, <span class='kw'>y</span> <span class='kw'>=</span> <span class='st'>"Absolute value of residuals"</span>)</div><div class='img'><img src='mariokart-4.png' alt='' width='700' height='433' /></div><div class='input'>
+<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='no'>aug_m3</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='fl'>1</span>:<span class='fu'><a href='https://rdrr.io/r/base/nrow.html'>nrow</a></span>(<span class='no'>aug_m3</span>), <span class='kw'>y</span> <span class='kw'>=</span> <span class='no'>.resid</span>)) +
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_point.html'>geom_point</a></span>() +
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_abline.html'>geom_hline</a></span>(<span class='kw'>yintercept</span> <span class='kw'>=</span> <span class='fl'>0</span>, <span class='kw'>linetype</span> <span class='kw'>=</span> <span class='st'>"dashed"</span>) +
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='st'>"Order of data collection"</span>, <span class='kw'>y</span> <span class='kw'>=</span> <span class='st'>"Residuals"</span>)</div><div class='img'><img src='mariokart-5.png' alt='' width='700' height='433' /></div><div class='input'>
+<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='no'>aug_m3</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='no'>cond</span>, <span class='kw'>y</span> <span class='kw'>=</span> <span class='no'>.resid</span>)) +
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_boxplot.html'>geom_boxplot</a></span>() +
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='st'>"Condition"</span>, <span class='kw'>y</span> <span class='kw'>=</span> <span class='st'>"Residuals"</span>)</div><div class='img'><img src='mariokart-6.png' alt='' width='700' height='433' /></div><div class='input'>
+<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='no'>aug_m3</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='no'>wheels</span>, <span class='kw'>y</span> <span class='kw'>=</span> <span class='no'>.resid</span>)) +
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_point.html'>geom_point</a></span>() +
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='st'>"Number of wheels"</span>, <span class='kw'>y</span> <span class='kw'>=</span> <span class='st'>"Residuals"</span>,
+       <span class='kw'>title</span> <span class='kw'>=</span> <span class='st'>"Notice curvature"</span>)</div><div class='img'><img src='mariokart-7.png' alt='' width='700' height='433' /></div><div class='input'>
+</div></span></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
@@ -253,7 +254,7 @@ end with a Buy It Now option.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.9000.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
 </div>
 
       </footer>

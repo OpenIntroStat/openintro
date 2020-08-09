@@ -124,27 +124,27 @@
     </div>
 
     <pre class="usage"><span class='fu'>normTail</span>(
-  m = <span class='fl'>0</span>,
-  s = <span class='fl'>1</span>,
-  L = <span class='kw'>NULL</span>,
-  U = <span class='kw'>NULL</span>,
-  M = <span class='kw'>NULL</span>,
-  df = <span class='fl'>1000</span>,
-  curveColor = <span class='fl'>1</span>,
-  border = <span class='fl'>1</span>,
-  col = <span class='st'>"#CCCCCC"</span>,
-  xlim = <span class='kw'>NULL</span>,
-  ylim = <span class='kw'>NULL</span>,
-  xlab = <span class='st'>""</span>,
-  ylab = <span class='st'>""</span>,
-  digits = <span class='fl'>2</span>,
-  axes = <span class='fl'>1</span>,
-  detail = <span class='fl'>999</span>,
-  xLab = <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"number"</span>, <span class='st'>"symbol"</span>),
-  cex.axis = <span class='fl'>1</span>,
-  xAxisIncr = <span class='fl'>1</span>,
-  add = <span class='fl'>FALSE</span>,
-  <span class='kw'>...</span>
+  <span class='kw'>m</span> <span class='kw'>=</span> <span class='fl'>0</span>,
+  <span class='kw'>s</span> <span class='kw'>=</span> <span class='fl'>1</span>,
+  <span class='kw'>L</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>U</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>M</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>df</span> <span class='kw'>=</span> <span class='fl'>1000</span>,
+  <span class='kw'>curveColor</span> <span class='kw'>=</span> <span class='fl'>1</span>,
+  <span class='kw'>border</span> <span class='kw'>=</span> <span class='fl'>1</span>,
+  <span class='kw'>col</span> <span class='kw'>=</span> <span class='st'>"#CCCCCC"</span>,
+  <span class='kw'>xlim</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>ylim</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>xlab</span> <span class='kw'>=</span> <span class='st'>""</span>,
+  <span class='kw'>ylab</span> <span class='kw'>=</span> <span class='st'>""</span>,
+  <span class='kw'>digits</span> <span class='kw'>=</span> <span class='fl'>2</span>,
+  <span class='kw'>axes</span> <span class='kw'>=</span> <span class='fl'>1</span>,
+  <span class='kw'>detail</span> <span class='kw'>=</span> <span class='fl'>999</span>,
+  <span class='kw'>xLab</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"number"</span>, <span class='st'>"symbol"</span>),
+  <span class='kw'>cex.axis</span> <span class='kw'>=</span> <span class='fl'>1</span>,
+  <span class='kw'>xAxisIncr</span> <span class='kw'>=</span> <span class='fl'>1</span>,
+  <span class='kw'>add</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>,
+  <span class='no'>...</span>
 )</pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
@@ -252,21 +252,19 @@ existing plot.</p></td>
 
     <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
 
-    <div class='dont-index'><p><code>buildAxis</code></p></div>
-    <h2 class="hasAnchor" id="author"><a class="anchor" href="#author"></a>Author</h2>
-
-    <p>David Diez</p>
+    <div class='dont-index'><p><code><a href='buildAxis.html'>buildAxis</a></code></p></div>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
-<span class='fu'><a href='https://rdrr.io/r/graphics/par.html'>par</a></span>(mfrow = <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>2</span>, <span class='fl'>3</span>), mar = <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>3</span>, <span class='fl'>3</span>, <span class='fl'>1</span>, <span class='fl'>1</span>))
+<span class='fu'><a href='https://rdrr.io/r/graphics/par.html'>par</a></span>(<span class='kw'>mfrow</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>2</span>, <span class='fl'>3</span>), <span class='kw'>mar</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>3</span>, <span class='fl'>3</span>, <span class='fl'>1</span>, <span class='fl'>1</span>))
 <span class='fu'>normTail</span>(<span class='fl'>3</span>, <span class='fl'>2</span>, <span class='fl'>5</span>)
-<span class='fu'>normTail</span>(<span class='fl'>3</span>, <span class='fl'>2</span>, <span class='fl'>1</span>, xLab = <span class='st'>'symbol'</span>)
-<span class='fu'>normTail</span>(<span class='fl'>3</span>, <span class='fl'>2</span>, M = <span class='fl'>1</span><span class='op'>:</span><span class='fl'>2</span>, xLab = <span class='st'>'symbol'</span>, cex.axis = <span class='fl'>0.8</span>)
-<span class='fu'>normTail</span>(<span class='fl'>3</span>, <span class='fl'>2</span>, U = <span class='fl'>5</span>, axes = <span class='fl'>FALSE</span>)
-<span class='fu'>normTail</span>(L = <span class='op'>-</span><span class='fl'>1</span>, U = <span class='fl'>2</span>, M = <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>0</span>, <span class='fl'>1</span>), axes = <span class='fl'>3</span>, xAxisIncr = <span class='fl'>2</span>)
-<span class='fu'>normTail</span>(L = <span class='op'>-</span><span class='fl'>1</span>, U = <span class='fl'>2</span>, M = <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>0</span>, <span class='fl'>1</span>),
-         xLab = <span class='st'>'symbol'</span>, cex.axis = <span class='fl'>0.8</span>, xAxisIncr = <span class='fl'>2</span>)</div><div class='img'><img src='normTail-1.png' alt='' width='700' height='433' /></div><div class='input'></div></pre>
+<span class='fu'>normTail</span>(<span class='fl'>3</span>, <span class='fl'>2</span>, <span class='fl'>1</span>, <span class='kw'>xLab</span> <span class='kw'>=</span> <span class='st'>'symbol'</span>)
+<span class='fu'>normTail</span>(<span class='fl'>3</span>, <span class='fl'>2</span>, <span class='kw'>M</span> <span class='kw'>=</span> <span class='fl'>1</span>:<span class='fl'>2</span>, <span class='kw'>xLab</span> <span class='kw'>=</span> <span class='st'>'symbol'</span>, <span class='kw'>cex.axis</span> <span class='kw'>=</span> <span class='fl'>0.8</span>)
+<span class='fu'>normTail</span>(<span class='fl'>3</span>, <span class='fl'>2</span>, <span class='kw'>U</span> <span class='kw'>=</span> <span class='fl'>5</span>, <span class='kw'>axes</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)
+<span class='fu'>normTail</span>(<span class='kw'>L</span> <span class='kw'>=</span> -<span class='fl'>1</span>, <span class='kw'>U</span> <span class='kw'>=</span> <span class='fl'>2</span>, <span class='kw'>M</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>0</span>, <span class='fl'>1</span>), <span class='kw'>axes</span> <span class='kw'>=</span> <span class='fl'>3</span>, <span class='kw'>xAxisIncr</span> <span class='kw'>=</span> <span class='fl'>2</span>)
+<span class='fu'>normTail</span>(<span class='kw'>L</span> <span class='kw'>=</span> -<span class='fl'>1</span>, <span class='kw'>U</span> <span class='kw'>=</span> <span class='fl'>2</span>, <span class='kw'>M</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>0</span>, <span class='fl'>1</span>),
+         <span class='kw'>xLab</span> <span class='kw'>=</span> <span class='st'>'symbol'</span>, <span class='kw'>cex.axis</span> <span class='kw'>=</span> <span class='fl'>0.8</span>, <span class='kw'>xAxisIncr</span> <span class='kw'>=</span> <span class='fl'>2</span>)</div><div class='img'><img src='normTail-1.png' alt='' width='700' height='433' /></div><div class='input'>
+</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
@@ -282,7 +280,7 @@ existing plot.</p></td>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.9000.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
 </div>
 
       </footer>

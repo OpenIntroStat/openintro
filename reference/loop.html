@@ -129,7 +129,7 @@ function is useful in tracking progress when the number of iterations is large
 or the procedures in each iteration take a long time.</p>
     </div>
 
-    <pre class="usage"><span class='fu'>loop</span>(<span class='kw'>i</span>, n = <span class='kw'>NULL</span>, every = <span class='fl'>1</span>, extra = <span class='kw'>NULL</span>)</pre>
+    <pre class="usage"><span class='fu'>loop</span>(<span class='no'>i</span>, <span class='kw'>n</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='kw'>every</span> <span class='kw'>=</span> <span class='fl'>1</span>, <span class='kw'>extra</span> <span class='kw'>=</span> <span class='kw'>NULL</span>)</pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
@@ -154,15 +154,12 @@ or the procedures in each iteration take a long time.</p>
 
     <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
 
-    <div class='dont-index'><p><code>myPDF</code></p></div>
-    <h2 class="hasAnchor" id="author"><a class="anchor" href="#author"></a>Author</h2>
-
-    <p>David Diez</p>
+    <div class='dont-index'><p><code><a href='myPDF.html'>myPDF</a></code></p></div>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
-<span class='co'>for</span>(<span class='kw'>i</span> <span class='co'>in</span> <span class='fl'>1</span><span class='op'>:</span><span class='fl'>160</span>){
-	loop(i,<span class='fu'>loop</span>,<span class='kw'>i</span>20<span class='fl'>160</span>as<span class='fl'>20</span>("<span class='fu'><a href='https://rdrr.io/r/base/paste.html'>paste</a></span>,<span class='st'>"iter"</span><span class='kw'>i</span>
+<span class='kw'>for</span>(<span class='no'>i</span> <span class='kw'>in</span> <span class='fl'>1</span>:<span class='fl'>160</span>){
+        <span class='fu'>loop</span>(<span class='no'>i</span>, <span class='fl'>160</span>, <span class='fl'>20</span>, <span class='fu'><a href='https://rdrr.io/r/base/paste.html'>paste</a></span>(<span class='st'>"iter"</span>, <span class='no'>i</span>))
 }</div><div class='output co'>#&gt; 20 of 160 	iter 20
 #&gt; 40 of 160 	iter 40
 #&gt; 60 of 160 	iter 60
@@ -170,7 +167,8 @@ or the procedures in each iteration take a long time.</p>
 #&gt; 100 of 160 	iter 100
 #&gt; 120 of 160 	iter 120
 #&gt; 140 of 160 	iter 140
-#&gt; 160 of 160 	iter 160</div><div class='input'></div></pre>
+#&gt; 160 of 160 	iter 160</div><div class='input'>
+</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
@@ -186,7 +184,7 @@ or the procedures in each iteration take a long time.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.9000.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
 </div>
 
       </footer>

@@ -125,12 +125,12 @@ think it's better to raise taxes on the rich or raise taxes on the poor." />
 think it's better to raise taxes on the rich or raise taxes on the poor.</p>
     </div>
 
-    <pre class="usage"><span class='kw'>ppp_201503</span></pre>
+    <pre class="usage"><span class='no'>ppp_201503</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>A data frame with 691 observations on the following 2 variables.</p><dl>
+    <p>A data frame with 691 observations on the following 2 variables.</p><dl'>
  <dt>taxes</dt><dd><p>Support
 for who to raise taxes on.</p></dd> 
 </dl>
@@ -142,11 +142,12 @@ Literature, the Seasons, and More, data collected Feb 20-22, 2015.</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
-<span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='kw'><a href='http://ggplot2.tidyverse.org'>ggplot2</a></span>)
+<span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='no'>ggplot2</span>)
 
-<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='kw'>ppp_201503</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(x = <span class='kw'>party</span>, fill = <span class='kw'>taxes</span>)) <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_bar.html'>geom_bar</a></span>(position = <span class='st'>"fill"</span>) <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span>(x = <span class='st'>"Party"</span>, x = <span class='st'>"Proportion"</span>, fill = <span class='st'>"Taxes"</span>)</div><div class='img'><img src='ppp_201503-1.png' alt='' width='700' height='433' /></div><div class='input'></div></pre>
+<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='no'>ppp_201503</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='no'>party</span>, <span class='kw'>fill</span> <span class='kw'>=</span> <span class='no'>taxes</span>)) +
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_bar.html'>geom_bar</a></span>(<span class='kw'>position</span> <span class='kw'>=</span> <span class='st'>"fill"</span>) +
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='st'>"Party"</span>, <span class='kw'>x</span> <span class='kw'>=</span> <span class='st'>"Proportion"</span>, <span class='kw'>fill</span> <span class='kw'>=</span> <span class='st'>"Taxes"</span>)</div><div class='img'><img src='ppp_201503-1.png' alt='' width='700' height='433' /></div><div class='input'>
+</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
@@ -162,7 +163,7 @@ Literature, the Seasons, and More, data collected Feb 20-22, 2015.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.9000.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
 </div>
 
       </footer>

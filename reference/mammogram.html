@@ -127,12 +127,12 @@ or a non-mammogram breast screening. The response measured was whether they
 had died from breast cancer within 25 years.</p>
     </div>
 
-    <pre class="usage"><span class='kw'>mammogram</span></pre>
+    <pre class="usage"><span class='no'>mammogram</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>A data frame with 89835 observations on the following 2 variables.</p><dl>
+    <p>A data frame with 89835 observations on the following 2 variables.</p><dl'>
  <dt>breast_cancer_death</dt><dd><p>a factor with levels <code>no</code>
 <code>yes</code></p></dd> 
 </dl>
@@ -146,15 +146,16 @@ randomised screening trial. BMJ 2014;348:g366.</p>
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
 
-<span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span>(<span class='kw'>mammogram</span>)</div><div class='output co'>#&gt;            breast_cancer_death
+<span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span>(<span class='no'>mammogram</span>)</div><div class='output co'>#&gt;            breast_cancer_death
 #&gt; treatment      no   yes
 #&gt;   control   44405   505
-#&gt;   mammogram 44425   500</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/stats/chisq.test.html'>chisq.test</a></span>(<span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span>(<span class='kw'>mammogram</span>))</div><div class='output co'>#&gt; 
+#&gt;   mammogram 44425   500</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/stats/chisq.test.html'>chisq.test</a></span>(<span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span>(<span class='no'>mammogram</span>))</div><div class='output co'>#&gt; 
 #&gt; 	Pearson's Chi-squared test with Yates' continuity correction
 #&gt; 
 #&gt; data:  table(mammogram)
 #&gt; X-squared = 0.01748, df = 1, p-value = 0.8948
 #&gt; </div><div class='input'>
+
 </div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
@@ -171,7 +172,7 @@ randomised screening trial. BMJ 2014;348:g366.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.9000.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
 </div>
 
       </footer>
