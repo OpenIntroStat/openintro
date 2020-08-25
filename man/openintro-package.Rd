@@ -29,7 +29,7 @@ Authors:
 \itemize{
   \item David Diez \email{david.m.diez@gmail.com}
   \item Andrew Bray \email{andrew.bray@gmail.com}
-  \item Albert Kim \email{albert.ys.kim@gmail.com}
+  \item Albert Y. Kim \email{albert.ys.kim@gmail.com} (\href{https://orcid.org/0000-0001-7824-306X}{ORCID})
   \item Ben Baumer \email{ben.baumer@gmail.com}
   \item Chester Ismay \email{chester.ismay@gmail.com}
   \item Christopher Barr
