@@ -27,9 +27,10 @@ State-level data on federal elections held in November
 between 1980 and 2014.
 }
 \examples{
-attach(us_voter_turnout)
-plot(percent_highest_office, percent_total_ballots_counted, main = "Total Ballots V Highest Office",
-  xlab = "Highest Office", ylab = "Total Ballots")
+
+plot(us_voter_turnout$percent_highest_office, us_voter_turnout$percent_total_ballots_counted,
+main = "Total Ballots V Highest Office",
+xlab = "Highest Office", ylab = "Total Ballots")
 
 }
 \keyword{datasets}

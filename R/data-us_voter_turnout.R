@@ -15,9 +15,10 @@
 #' }
 #'
 #' @examples
-#' attach(us_voter_turnout)
-#' plot(percent_highest_office, percent_total_ballots_counted, main = "Total Ballots V Highest Office",
-#'   xlab = "Highest Office", ylab = "Total Ballots")
+#'
+#' plot(us_voter_turnout$percent_highest_office, us_voter_turnout$percent_total_ballots_counted,
+#' main = "Total Ballots V Highest Office",
+#' xlab = "Highest Office", ylab = "Total Ballots")
 #'
 #' @source
 #'   \href{http://www.electproject.org/home/voter-turnout/voter-turnout-data}{United States Election Project}
