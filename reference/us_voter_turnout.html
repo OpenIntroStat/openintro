@@ -131,13 +131,13 @@ between 1980 and 2014.</p>
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
     <p>A data frame with 936 rows and 7 variables.</p><dl'>
-<dt>year</dt><dd><p>Year election was held.</p></dd>
-<dt>region</dt><dd><p>Specifies if data is state or national total.</p></dd>
-<dt>voting_eligible_population</dt><dd><p>Number of citizens eligible to vote; does not count felons.</p></dd>
-<dt>total_ballots_counted</dt><dd><p>Number of ballots cast.</p></dd>
-<dt>highest_office</dt><dd><p>Number of ballots that contained a vote for the highest office of that election.</p></dd>
-<dt>percent_total_ballots_counted</dt><dd><p>Overall voter turnout percentage.</p></dd>
-<dt>percent_highest_office</dt><dd><p>Highest office voter turnout percentage.</p></dd>
+  <dt>year</dt><dd><p>Year election was held.</p></dd>
+  <dt>region</dt><dd><p>Specifies if data is state or national total.</p></dd>
+  <dt>voting_eligible_population</dt><dd><p>Number of citizens eligible to vote; does not count felons.</p></dd>
+  <dt>total_ballots_counted</dt><dd><p>Number of ballots cast.</p></dd>
+  <dt>highest_office</dt><dd><p>Number of ballots that contained a vote for the highest office of that election.</p></dd>
+  <dt>percent_total_ballots_counted</dt><dd><p>Overall voter turnout percentage.</p></dd>
+  <dt>percent_highest_office</dt><dd><p>Highest office voter turnout percentage.</p></dd>
 
 </dl>
 
@@ -146,9 +146,10 @@ between 1980 and 2014.</p>
     <p><a href='http://www.electproject.org/home/voter-turnout/voter-turnout-data'>United States Election Project</a></p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/attach.html'>attach</a></span>(<span class='no'>us_voter_turnout</span>)
-<span class='fu'><a href='https://rdrr.io/r/base/plot.html'>plot</a></span>(<span class='no'>percent_highest_office</span>, <span class='no'>percent_total_ballots_counted</span>, <span class='kw'>main</span> <span class='kw'>=</span> <span class='st'>"Total Ballots V Highest Office"</span>,
-  <span class='kw'>xlab</span> <span class='kw'>=</span> <span class='st'>"Highest Office"</span>, <span class='kw'>ylab</span> <span class='kw'>=</span> <span class='st'>"Total Ballots"</span>)</div><div class='img'><img src='us_voter_turnout-1.png' alt='' width='700' height='433' /></div><div class='input'>
+    <pre class="examples"><div class='input'>
+<span class='fu'><a href='https://rdrr.io/r/base/plot.html'>plot</a></span>(<span class='no'>us_voter_turnout</span>$<span class='no'>percent_highest_office</span>, <span class='no'>us_voter_turnout</span>$<span class='no'>percent_total_ballots_counted</span>,
+<span class='kw'>main</span> <span class='kw'>=</span> <span class='st'>"Total Ballots V Highest Office"</span>,
+<span class='kw'>xlab</span> <span class='kw'>=</span> <span class='st'>"Highest Office"</span>, <span class='kw'>ylab</span> <span class='kw'>=</span> <span class='st'>"Total Ballots"</span>)</div><div class='img'><img src='us_voter_turnout-1.png' alt='' width='700' height='433' /></div><div class='input'>
 </div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
