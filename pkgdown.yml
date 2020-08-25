@@ -3,7 +3,7 @@ pkgdown: 1.5.1
 pkgdown_sha: ~
 articles:
   datasets: datasets.html
-last_built: 2020-08-24T03:02Z
+last_built: 2020-08-25T04:13Z
 urls:
   reference: https://openintrostat.github.io/openintro/reference
   article: https://openintrostat.github.io/openintro/articles
