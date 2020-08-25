@@ -60,6 +60,7 @@ reference:
   - country_iso
   - cpr
   - credits
+  - cpu
   - diabetes2
   - dream
   - drone_blades
@@ -76,11 +77,13 @@ reference:
   - evals
   - exams
   - exclusive_relationship
+  - fact_opinion
   - family_college
   - fastfood
   - fcid
   - fheights
   - fish_oil_18
+  - flow_rates
   - friday
   - full_body_scan
   - gear_company
@@ -160,6 +163,7 @@ reference:
   - prison
   - prius_mpg
   - prof_evals
+  - race_justice
   - res_demo_1
   - res_demo_2
   - resume
@@ -203,6 +207,7 @@ reference:
   - ucla_f18
   - ucla_textbooks_f18
   - ukdemo
+  - us_voter_turnout
   - unempl
   - unemploy_pres
   - winery_cars
