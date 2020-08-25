@@ -3,3 +3,8 @@
 .RData
 docs
 inst/doc
+.gitignore~
+.Rapp.history
+*/.Rapp.history
+.DS_Store
+*/.DS_Store
