@@ -1,0 +1,876 @@
+Company,Name,Codename,Cores,Threads,Clock,Socket,Process,L3 Cache,TDP,Released
+Intel,Pentium E5500,Wolfdale,2,2,2.8,775,45,N/A,65,04/18/10
+Intel,Pentium E6700,Wolfdale,2,2,3.2,775,45,N/A,65,05/30/10
+Intel,Pentium E5700,Wolfdale,2,2,3,775,45,N/A,65,08/08/10
+Intel,Celeron E3500,Wolfdale,2,2,2.7,775,45,N/A,65,08/29/10
+Intel,Pentium E6800,Wolfdale,2,2,3.333,775,45,N/A,65,08/29/10
+Intel,Pentium E5800,Wolfdale,2,2,3.2,775,45,N/A,65,11/28/10
+Intel,Core i3-4130T,Haswell,2,4,2.9,1150,22,3,35,09/01/13
+Intel,Core i3-4130,Haswell,2,4,3.4,1150,22,3,54,09/01/13
+Intel,Core i3-4150T,Haswell,2,4,2.9,1150,22,3,35,05/01/14
+Intel,Core i3-4160T,Haswell,2,4,3.1,1150,22,3,35,07/21/14
+Intel,Core i3-4160,Haswell,2,4,3.6,1150,22,3,54,07/21/14
+Intel,Pentium G3220T,Haswell,2,2,2.6,1150,22,3,35,09/01/13
+Intel,Pentium G3220,Haswell,2,2,3,1150,22,3,54,09/01/13
+Intel,Pentium G3420,Haswell,2,2,3.2,1150,22,3,54,09/01/13
+Intel,Pentium G3430,Haswell,2,2,3.3,1150,22,3,54,09/01/13
+Intel,Celeron G1840T,Haswell,2,2,2.5,1150,22,3,54,05/01/14
+Intel,Celeron G1840,Haswell,2,2,2.8,1150,22,3,54,05/01/14
+Intel,Celeron G1850,Haswell,2,2,2.9,1150,22,3,54,05/01/14
+Intel,Pentium G3440,Haswell,2,2,3.3,1150,22,3,54,05/01/14
+Intel,Pentium G3450,Haswell,2,2,3.3,1150,22,3,54,05/01/14
+Intel,Pentium G3258,Haswell,2,2,3.2,1150,22,3,54,06/02/14
+Intel,Pentium G3250T,Haswell,2,2,2.8,1150,22,3,35,07/21/14
+Intel,Pentium G3450T,Haswell,2,2,2.9,1150,22,3,35,07/21/14
+Intel,Pentium G3250,Haswell,2,2,3.2,1150,22,3,54,07/21/14
+Intel,Pentium G3460,Haswell,2,2,3.5,1150,22,3,54,07/21/14
+Intel,Celeron G1820TE,Haswell,2,2,2.2,1150,22,3,54,12/01/13
+Intel,Celeron G1820T,Haswell,2,2,2.4,1150,22,3,54,12/01/13
+Intel,Celeron G1820,Haswell,2,2,2.7,1150,22,3,54,12/01/13
+Intel,Celeron G1830,Haswell,2,2,2.8,1150,22,3,54,12/01/13
+Intel,Pentium G3420T,Haswell,2,2,2.7,1150,22,3,35,09/01/13
+Intel,Core i3-4330T,Haswell,2,4,3,1150,22,4,35,09/01/13
+Intel,Core i3-4330,Haswell,2,4,3.5,1150,22,4,54,09/01/13
+Intel,Core i3-4340,Haswell,2,4,3.6,1150,22,4,54,09/01/13
+Intel,Core i3-4350,Haswell,2,4,3.6,1150,22,4,54,05/01/14
+Intel,Core i3-4360,Haswell,2,4,3.7,1150,22,4,54,05/01/14
+Intel,Core i3-4370,Haswell,2,4,3.8,1150,22,4,54,07/01/14
+Intel,Core i3-4360T,Haswell,2,4,3.2,1150,22,4,35,07/21/14
+Intel,Core i3-4370,Haswell,2,4,3.8,1150,22,4,54,07/21/14
+Intel,Core i5-5675C,Broadwell,4,4,3.1 to 3.6 ,1150,14,4,65,05/15/15
+Intel,Core i7-5775C,Broadwell,4,8,3.3 to 3.6 ,1150,14,6,65,05/15/15
+Intel,Xeon E3-1285 v4,Broadwell-DT,4,8,3.5 to 3.8 ,1150,14,6,95,06/02/15
+Intel,Core i5-4440S,Haswell,4,4,2.8 to 3.3 ,1150,22,6,65,09/01/13
+Intel,Core i5-4440,Haswell,4,4,3.1 to 3.3 ,1150,22,6,84,09/01/13
+Intel,Core i5-4590S,Haswell,4,4,2.9 to 3.6 ,1150,22,6,65,05/01/14
+Intel,Core i5-4590,Haswell,4,4,3.3 to 3.7 ,1150,22,6,84,05/01/14
+Intel,Core i5-4690,Haswell,4,4,3.4 to 3.8 ,1150,22,6,84,05/01/14
+Intel,Core i5-4690K,Haswell,4,4,3.5 to 3.9 ,1150,22,6,88,06/02/14
+Intel,Core i7-4771,Haswell,4,8,3.5 to 3.9 ,1150,22,8,84,09/01/13
+Intel,Core i7-4790S,Haswell,4,4,3.1 to 3.9 ,1150,22,8,65,05/01/14
+Intel,Core i7-4790,Haswell,4,4,3.6 to 4 ,1150,22,8,84,05/01/14
+Intel,Core i7-4790K,Haswell,4,4,4 to 4.4 ,1150,22,8,88,05/01/14
+Intel,Xeon E7-4870 v3,Haswell-EX,18,36,2.1,1150,22,45,140,06/01/15
+Intel,Xeon E7-8870 v3,Haswell-EX,18,36,2.1,1150,22,45,140,06/01/15
+Intel,Xeon E7-4880 v3,Haswell-EX,18,36,2.3,1150,22,45,140,06/01/15
+Intel,Xeon E7-8880 v3,Haswell-EX,18,36,2.3,1150,22,45,140,06/01/15
+Intel,Xeon E7-4890 v3,Haswell-EX,18,36,2.5,1150,22,45,165,06/01/15
+Intel,Core i3-7120T,Kaby Lake,2,4,3.6,1151,14,3,35,07/17/17
+Intel,Core i3-7120,Kaby Lake,2,4,4,1151,14,3,51,07/17/17
+Intel,Core i3-6100,Skylake,2,4,3.7,1151,14,4,51,09/01/15
+Intel,Core i3-6300,Skylake,2,4,3.8,1151,14,4,51,09/01/15
+Intel,Core i3-6320,Skylake,2,4,3.9,1151,14,4,51,09/01/15
+Intel,Core i3-7300,Kaby Lake,2,4,4,1151,14,4,51,01/03/17
+Intel,Core i3-7320,Kaby Lake,2,4,4.1,1151,14,4,51,01/03/17
+Intel,Core i3-7350K,Kaby Lake,2,4,4.2,1151,14,4,60,01/03/17
+Intel,Core i3-7320T,Kaby Lake,2,4,3.6,1151,14,4,35,07/17/17
+Intel,Core i3-7340,Kaby Lake,2,4,4.2,1151,14,4,51,07/17/17
+Intel,Pentium Gold G5400,Coffee Lake,2,4,3.7,1151,14,4,51,04/02/18
+Intel,Pentium Gold G5500,Coffee Lake,2,4,3.8,1151,14,4,51,04/02/18
+Intel,Pentium Gold G5600,Coffee Lake,2,4,3.9,1151,14,4,51,04/02/18
+Intel,Pentium Gold G5620,Coffee Lake,2,4,4,1151,14,4,51,02/20/19
+Intel,Celeron G3900,Skylake,2,2,2.8,1151,14,4,51,09/01/15
+Intel,Celeron G3920,Skylake,2,2,2.9,1151,14,4,51,09/01/15
+Intel,Pentium G4400,Skylake,2,2,3.3,1151,14,4,51,09/01/15
+Intel,Pentium G4500,Skylake,2,2,3.5,1151,14,4,51,09/01/15
+Intel,Pentium G4520,Skylake,2,2,3.6,1151,14,4,51,09/01/15
+Intel,Core i5-6400,Skylake,4,4,2.7 to 3.3 ,1151,14,6,65,07/02/15
+Intel,Core i5-6500,Skylake,4,4,3.2 to 3.6 ,1151,14,6,65,07/02/15
+Intel,Core i5-6600,Skylake,4,4,3.3 to 3.9 ,1151,14,6,65,07/02/15
+Intel,Core i5-6600K,Skylake,4,4,3.5 to 3.9 ,1151,14,6,95,07/02/15
+Intel,Core i5-7400T,Kaby Lake,4,4,2.4 to 3 ,1151,14,6,35,01/03/17
+Intel,Core i5-7500T,Kaby Lake,4,4,2.7 to 3.3 ,1151,14,6,35,01/03/17
+Intel,Core i5-7600T,Kaby Lake,4,4,2.8 to 3.7 ,1151,14,6,35,01/03/17
+Intel,Core i5-7400,Kaby Lake,4,4,3 to 3.5 ,1151,14,6,65,01/03/17
+Intel,Core i5-7500,Kaby Lake,4,4,3.4 to 3.8 ,1151,14,6,65,01/03/17
+Intel,Core i5-7600,Kaby Lake,4,4,3.5 to 4.1 ,1151,14,6,65,01/03/17
+Intel,Core i5-7600K,Kaby Lake,4,4,3.8 to 4.2 ,1151,14,6,91,01/03/17
+Intel,Core i3-8100,Coffee Lake,4,4,2.8 to 3.6 ,1151,14,6,62,10/05/17
+Intel,Core i3-8100T,Coffee Lake,4,4,3.1,1151,14,6,35,04/02/18
+Intel,Core i3-8000,Coffee Lake,4,4,3.6,1151,14,6,65,09/01/18
+Intel,Core i3-8020,Coffee Lake,4,4,3.7,1151,14,6,65,09/01/18
+Intel,Core i3-8120,Coffee Lake,4,4,3.7,1151,14,6,65,09/01/18
+Intel,Core i3-9000,Coffee Lake,4,4,3.7,1151,14,6,65,09/01/18
+Intel,Core i3-9100,Coffee Lake,4,4,3.7,1151,14,6,65,09/01/18
+Intel,Core i3-9350KF,Coffee Lake,4,4,4 to 4.6 ,1151,14,6,91,01/08/19
+Intel,Core i3-9100F,Coffee Lake,4,4,3.6 to 4.2 ,1151,14,6,65,04/23/19
+Intel,Core i3-9300,Coffee Lake,4,4,3.7 to 4.3 ,1151,14,6,62,04/23/19
+Intel,Core i3-9320,Coffee Lake,4,4,3.7 to 4.4 ,1151,14,6,62,04/23/19
+Intel,Core i3-9350K,Coffee Lake,4,4,4 to 4.6 ,1151,14,6,91,04/23/19
+Intel,Celeron G4900,Coffee Lake,2,2,3.1,1151,14,6,51,04/03/18
+Intel,Celeron G4920,Coffee Lake,2,2,3.2,1151,14,6,51,04/03/18
+Intel,Core i7-6700,Skylake,4,8,3.4 to 4 ,1151,14,8,65,07/01/15
+Intel,Core i7-6700K,Skylake,4,8,4 to 4.2 ,1151,14,8,95,08/01/15
+Intel,Core i7-6700TE,Skylake,4,8,2.4 to 3.4 ,1151,14,8,35,09/01/15
+Intel,Core i7-6700T,Skylake,4,8,2.8 to 3.6 ,1151,14,8,35,09/01/15
+Intel,Xeon E3-1280 v5,Skylake-S,4,8,3.7 to 4 ,1151,14,8,80,10/19/15
+Intel,Core i7-7700T,Kaby Lake,4,8,2.9 to 3.8 ,1151,14,8,35,01/03/17
+Intel,Core i7-7700,Kaby Lake,4,8,3.6 to 4.2 ,1151,14,8,65,01/03/17
+Intel,Core i7-7700K,Kaby Lake,4,8,4.2 to 4.5 ,1151,14,8,91,01/03/17
+Intel,Xeon E3-1285 v6,Kaby Lake-DT,4,8,4.1 to 4.5 ,1151,14,8,79,08/01/17
+Intel,Core i3-8350K,Coffee Lake,4,4,4,1151,14,8,91,10/05/17
+Intel,Core i3-8300,Coffee Lake,4,4,3.7,1151,14,8,62,02/14/18
+Intel,Core i3-8300T,Coffee Lake,4,4,3.2,1151,14,8,35,04/02/18
+Intel,Xeon E-2124,Coffee Lake-S,4,4,3.4 to 4.5 ,1151,14,8,72,05/31/18
+Intel,Xeon E-2124G,Coffee Lake-S,4,4,3.4 to 4.5 ,1151,14,8,72,05/31/18
+Intel,Core i5-8400,Coffee Lake,6,6,2.8 to 4 ,1151,14,9,65,10/05/17
+Intel,Core i5-8600K,Coffee Lake,6,6,3.6 to 4.3 ,1151,14,9,95,10/05/17
+Intel,Core i5-8500,Coffee Lake,6,6,3 to 4.1 ,1151,14,9,65,02/14/18
+Intel,Core i5-8600,Coffee Lake,6,6,3.1 to 4.3 ,1151,14,9,65,02/14/18
+Intel,Core i5-8400T,Coffee Lake,6,6,1.7 to 3.3 ,1151,14,9,35,04/02/18
+Intel,Core i5-8500T,Coffee Lake,6,6,2.1 to 3.5 ,1151,14,9,35,04/02/18
+Intel,Core i5-8600T,Coffee Lake,6,6,2.3 to 3.7 ,1151,14,9,35,04/02/18
+Intel,Core i5-8420T,Coffee Lake,6,6,1.8 to 3.4 ,1151,14,9,35,09/01/18
+Intel,Core i5-9400T,Coffee Lake,6,6,1.8 to 3.4 ,1151,14,9,35,09/01/18
+Intel,Core i5-8420,Coffee Lake,6,6,2.9 to 4.1 ,1151,14,9,65,09/01/18
+Intel,Core i5-8550,Coffee Lake,6,6,3 to 4.3 ,1151,14,9,65,09/01/18
+Intel,Core i5-8650,Coffee Lake,6,6,3.1 to 4.5 ,1151,14,9,65,09/01/18
+Intel,Core i5-8650K,Coffee Lake,6,6,3.7 to 4.5 ,1151,14,9,95,09/01/18
+Intel,Core i5-9400,Coffee Lake,6,6,2.9 to 4.1 ,1151,14,9,65,10/19/18
+Intel,Core i5-9500,Coffee Lake,6,6,3 to 4.3 ,1151,14,9,65,10/19/18
+Intel,Core i5-9600,Coffee Lake,6,6,3.1 to 4.5 ,1151,14,9,65,10/19/18
+Intel,Core i5-9600K,Coffee Lake,6,6,3.7 to 4.6 ,1151,14,9,95,10/19/18
+Intel,Core i5-9400F,Coffee Lake,6,6,2.9 to 4.1 ,1151,14,9,65,01/08/19
+Intel,Core i5-9600KF,Coffee Lake,6,6,3.7 to 4.6 ,1151,14,9,95,01/08/19
+Intel,Core i5-9500F,Coffee Lake,6,6,3 to 4.4 ,1151,14,9,65,04/23/19
+Intel,Core i7-8700K,Coffee Lake,6,12,3.7 to 4.7 ,1151,14,12,95,10/05/17
+Intel,Core i7-8700T,Coffee Lake,6,12,2.4 to 4 ,1151,14,12,35,04/02/18
+Intel,Core i7-8086K,Coffee Lake,6,12,4 to 5 ,1151,14,12,95,06/05/18
+Intel,Core i7-8670T,Coffee Lake,6,12,2.3 to 3.7 ,1151,14,12,35,09/01/18
+Intel,Core i7-9700K,Coffee Lake,8,8,3.6 to 4.9 ,1151,14,12,95,10/19/18
+Intel,Core i7-9700KF,Coffee Lake,8,8,3.6 to 4.9 ,1151,14,12,95,01/08/19
+Intel,Core i7-9700,Coffee Lake,8,8,3 to 4.7 ,1151,14,12,65,04/23/19
+Intel,Core i7-9700F,Coffee Lake,8,8,3 to 4.7 ,1151,14,12,65,04/23/19
+Intel,Core i9-9900K,Coffee Lake-R,8,16,3.6 to 5 ,1151,14,16,95,10/19/18
+Intel,Core i9-9900KF,Coffee Lake-R,8,16,3.6 to 5 ,1151,14,16,95,01/08/19
+Intel,Core i9-9900,Coffee Lake-R,8,16,3.1 to 5 ,1151,14,16,65,04/23/19
+Intel,Core i9-9900KS,Coffee Lake-R,8,16,4 to 5 ,1151,14,16,127,10/28/19
+Intel,Celeron G440,Sandy Bridge,1,1,1.6,1155,32,1,35,09/04/11
+Intel,Celeron G460,Sandy Bridge,1,1,1.8,1155,32,1.5,35,12/12/11
+Intel,Celeron G465,Sandy Bridge,1,1,1.9,1155,32,1.5,35,09/01/12
+Intel,Celeron G540T,Sandy Bridge,2,2,2.1,1155,32,2,35,09/04/11
+Intel,Celeron G550T,Sandy Bridge,2,2,2.2,1155,32,2,35,09/04/11
+Intel,Celeron G530,Sandy Bridge,2,2,2.4,1155,32,2,65,09/04/11
+Intel,Celeron G540,Sandy Bridge,2,2,2.5,1155,32,2,65,09/04/11
+Intel,Celeron G530T,Sandy Bridge,2,2,2,1155,32,2,35,09/04/11
+Intel,Celeron G555,Sandy Bridge,2,2,2.7,1155,32,2,65,09/01/12
+Intel,Celeron G1620T,Ivy Bridge,2,2,2.4,1155,22,2,35,09/01/13
+Intel,Celeron G1630,Ivy Bridge,2,2,2.8,1155,22,2,55,09/01/13
+Intel,Celeron G1610T,Ivy Bridge,2,2,2.3,1155,22,2,35,12/03/12
+Intel,Celeron G1610,Ivy Bridge,2,2,2.6,1155,22,2,55,12/03/12
+Intel,Celeron G1620,Ivy Bridge,2,2,2.7,1155,22,2,55,12/03/12
+Intel,Core i3-2102,Sandy Bridge,2,4,3.1,1155,32,3,65,06/01/11
+Intel,Core i3-2120T,Sandy Bridge,2,4,2.6,1155,32,3,35,09/04/11
+Intel,Core i3-2125,Sandy Bridge,2,4,3.3,1155,32,3,65,09/04/11
+Intel,Core i3-2130,Sandy Bridge,2,4,3.4,1155,32,3,65,09/04/11
+Intel,Pentium 350,Sandy Bridge,2,4,1.2,1155,32,3,15,11/21/11
+Intel,Core i3-3220T,Ivy Bridge,2,4,2.8,1155,22,3,35,09/03/12
+Intel,Core i3-3240T,Ivy Bridge,2,4,3,1155,22,3,35,09/03/12
+Intel,Core i3-3220,Ivy Bridge,2,4,3.3,1155,22,3,55,09/03/12
+Intel,Core i3-3225,Ivy Bridge,2,4,3.3,1155,22,3,55,09/03/12
+Intel,Core i3-3240,Ivy Bridge,2,4,3.4,1155,22,3,55,09/03/12
+Intel,Pentium G630T,Sandy Bridge,2,2,2.3,1155,32,3,35,09/04/11
+Intel,Pentium G630,Sandy Bridge,2,2,2.7,1155,32,3,65,09/04/11
+Intel,Pentium G632,Sandy Bridge,2,2,2.7,1155,32,3,65,09/04/11
+Intel,Pentium G860,Sandy Bridge,2,2,3,1155,32,3,65,09/04/11
+Intel,Pentium G645T,Sandy Bridge,2,2,2.5,1155,32,3,35,09/02/12
+Intel,Pentium G645,Sandy Bridge,2,2,2.9,1155,32,3,65,09/02/12
+Intel,Pentium G2100T,Ivy Bridge,2,2,2.6,1155,22,3,35,09/03/12
+Intel,Pentium G2120,Ivy Bridge,2,2,3.1,1155,22,3,55,09/03/12
+Intel,Core i5-2320,Sandy Bridge,4,4,3 to 3.3 ,1155,32,6,95,09/04/11
+Intel,Core i5-3330S,Ivy Bridge,4,4,2.7 to 3.2 ,1155,22,6,77,09/03/12
+Intel,Core i5-3330,Ivy Bridge,4,4,3 to 3.2 ,1155,22,6,77,09/03/12
+Intel,Core i5-3350P,Ivy Bridge,4,4,3.1 to 3.3 ,1155,22,6,69,09/03/12
+Intel,Core i5-3335S,Ivy Bridge,4,4,2.7 to 3.2 ,1155,22,6,65,11/01/12
+Intel,Core i7-2700K,Sandy Bridge,4,8,3.5 to 3.9 ,1155,32,8,95,10/24/11
+Intel,Pentium G6951,Clarkdale,2,2,2.8,1156,32,3,73,09/01/10
+Intel,Core i5-680,Clarkdale,2,4,3.6 to 3.866 ,1156,32,4,73,04/19/10
+Intel,Core i3-550,Clarkdale,2,4,3.2,1156,32,4,73,05/30/10
+Intel,Core i5-655K,Clarkdale,2,4,3.2 to 3.466 ,1156,32,4,73,05/30/10
+Intel,Core i3-560,Clarkdale,2,4,3.333,1156,32,4,73,08/29/10
+Intel,Core i7-875K,Lynnfield,4,8,2.933 to 3.6 ,1156,45,8,95,05/30/10
+Intel,Core i7-880,Lynnfield,4,8,3.066 to 3.733 ,1156,45,8,95,05/30/10
+Intel,Core i7-870S,Lynnfield,4,8,2.666 to 3.6 ,1156,45,8,82,07/19/10
+Intel,Core i5-760,Lynnfield,4,4,2.8 to 3.333 ,1156,45,8,95,07/18/10
+Intel,Celeron G5900,Comet Lake,2,2,3.4,1200,14,2,58,05/27/20
+Intel,Celeron G5920,Comet Lake,2,2,3.5,1200,14,2,58,05/27/20
+Intel,Pentium Gold G6400,Comet Lake,2,4,4,1200,14,4,58,05/27/20
+Intel,Pentium Gold G6500,Comet Lake,2,4,4.1,1200,14,4,58,05/27/20
+Intel,Pentium Gold G6600,Comet Lake,2,4,4.2,1200,14,4,58,05/27/20
+Intel,Core i3-10100,Comet Lake,4,8,3.6 to 4.3 ,1200,14,6,65,05/27/20
+Intel,Core i3-10300,Comet Lake,4,8,3.7 to 4.4 ,1200,14,8,62,05/27/20
+Intel,Core i3-10320,Comet Lake,4,8,3.8 to 4.6 ,1200,14,8,91,05/27/20
+Intel,Core i3-10350K,Comet Lake,4,8,4.1 to 4.8 ,1200,14,8,91,05/27/20
+Intel,Core i5-10400,Comet Lake,6,12,2.9 to 4 ,1200,14,12,65,05/27/20
+Intel,Core i5-10400F,Comet Lake,6,12,2.9 to 4.3 ,1200,14,12,65,05/27/20
+Intel,Core i5-10500,Comet Lake,6,12,3.1 to 4.6 ,1200,14,12,65,05/27/20
+Intel,Core i5-10600,Comet Lake,6,12,3.3 to 4.8 ,1200,14,12,65,05/27/20
+Intel,Core i5-10600K,Comet Lake,6,12,4.1 to 4.8 ,1200,14,12,95,05/27/20
+Intel,Core i5-10600KF,Comet Lake,6,12,4.1 to 4.8 ,1200,14,12,95,05/27/20
+Intel,Core i7-10700F,Comet Lake,8,16,2.9 to 4.7 ,1200,14,16,125,05/27/20
+Intel,Core i7-10700,Comet Lake,8,16,2.9 to 5 ,1200,14,16,65,05/27/20
+Intel,Core i7-10700K,Comet Lake,8,16,3.8 to 5.1 ,1200,14,16,125,05/27/20
+Intel,Core i7-10700KF,Comet Lake,8,16,3.8 to 5.1 ,1200,14,16,125,05/27/20
+Intel,Core i9-10800F,Comet Lake,10,20,2.7 to 5 ,1200,14,20,65,05/27/20
+Intel,Core i9-10900,Comet Lake,10,20,2.8 to 5.2 ,1200,14,20,65,05/27/20
+Intel,Core i9-10900F,Comet Lake,10,20,2.8 to 5.2 ,1200,14,20,95,05/27/20
+Intel,Core i9-10900K,Comet Lake,10,20,3.7 to 5.3 ,1200,14,20,125,05/27/20
+Intel,Core i9-10900KF,Comet Lake,10,20,3.7 to 5.3 ,1200,14,20,125,05/27/20
+Intel,Xeon E5-2407 v2,Ivy Bridge-EN,4,4,2.4,1356,22,10,80,09/01/13
+Intel,Xeon E5-2403 v2,Ivy Bridge-EN,4,4,1.8,1356,22,10,80,09/01/13
+Intel,Xeon E5-2420 v2,Ivy Bridge-EN,6,12,2.2,1356,22,15,80,09/01/13
+Intel,Xeon E5-2430 v2,Ivy Bridge-EN,6,12,2.5,1356,22,15,80,09/01/13
+Intel,Xeon E5-2450 v2,Ivy Bridge-EN,8,16,2.5,1356,22,20,95,09/01/13
+Intel,Xeon E5-2440 v2,Ivy Bridge-EN,8,16,1.9,1356,22,20,95,09/01/13
+Intel,Xeon E5-2470 v2,Ivy Bridge-EN,10,20,2.4,1356,22,25,95,09/01/13
+Intel,Xeon E5507,Gainestown,4,4,2.266,1366,45,4,80,03/16/10
+Intel,Xeon E5503,Gainestown,2,2,2,1366,45,4,80,03/16/10
+Intel,Xeon W3530,Bloomfield,4,8,2.8 to 3.066 ,1366,45,8,130,03/16/10
+Intel,Xeon W3680,Gulftown,6,12,3.333 to 3.6 ,1366,32,12,130,03/16/10
+Intel,Core i7-970,Gulftown,6,12,3.2 to 3.466 ,1366,32,12,130,07/19/10
+Intel,Xeon W3670,Gulftown,6,12,3.2 to 3.466 ,1366,32,12,130,08/29/10
+Intel,Core i7-980,Gulftown,6,12,3.333 to 3.6 ,1366,32,12,130,06/26/11
+Intel,Xeon E5620,Westmere-EP,4,8,2.4 to 2.666 ,1366,32,12,80,03/16/10
+Intel,Xeon E5-2637 v2,Ivy Bridge-EP,4,8,3.5,2011,22,10,130,09/01/13
+Intel,Xeon E5-1620 v2,Ivy Bridge-E,4,8,3.7,2011,22,10,130,09/01/13
+Intel,Core i7-4820K,Ivy Bridge-E,4,8,3.7 to 3.9 ,2011,22,10,130,09/01/13
+Intel,Xeon E5-2609 v2,Ivy Bridge-EP,4,4,2.5,2011,22,10,80,09/01/13
+Intel,Xeon E5-2603 v2,Ivy Bridge-EP,4,4,1.8,2011,22,10,80,09/01/13
+Intel,Core i7-3930K,Sandy Bridge-E,6,12,3.2 to 3.8 ,2011,32,12,130,11/14/11
+Intel,Core i7-3910K,Sandy Bridge-E,6,12,3 to 3.6 ,2011,32,12,130,07/24/13
+Intel,Xeon E5-1650 v2,Ivy Bridge-E,6,12,3.5,2011,22,12,130,09/01/13
+Intel,Core i7-4930K,Ivy Bridge-E,6,12,3.4 to 3.9 ,2011,22,12,130,09/01/13
+Intel,Core i7-3960X,Sandy Bridge-E,6,12,3.3 to 3.9 ,2011,32,15,130,11/14/11
+Intel,Xeon E5-2620 v2,Ivy Bridge-EP,6,12,2.1,2011,22,15,80,09/01/13
+Intel,Xeon E5-2630L v2,Ivy Bridge-EP,6,12,2.4,2011,22,15,60,09/01/13
+Intel,Xeon E5-2630 v2,Ivy Bridge-EP,6,12,2.6,2011,22,15,80,09/01/13
+Intel,Xeon E5-2643 v2,Ivy Bridge-EP,6,12,3.5,2011,22,15,130,09/01/13
+Intel,Xeon E5-1660 v2,Ivy Bridge-E,6,12,3.7,2011,22,15,130,09/01/13
+Intel,Core i7-4960X,Ivy Bridge-E,6,12,3.6 to 4 ,2011,22,15,130,09/03/13
+Intel,Core i7-3970X,Sandy Bridge-E,6,12,3.5 to 4 ,2011,32,15,150,11/01/12
+Intel,Xeon E5-2667 v2,Ivy Bridge-EP,8,16,3.3,2011,22,20,130,09/01/13
+Intel,Xeon E5-2650 v2,Ivy Bridge-EP,8,16,2.6 to 3.4 ,2011,22,20,95,09/01/13
+Intel,Xeon E5-2640 v2,Ivy Bridge-EP,8,16,2,2011,22,20,95,09/01/13
+Intel,Xeon E5-2687W v2,Ivy Bridge-EP,8,16,3.4 to 4 ,2011,22,20,130,09/01/13
+Intel,Xeon E5-2650L v2,Ivy Bridge-EP,10,20,1.7,2011,22,25,70,09/01/13
+Intel,Xeon E5-2660 v2,Ivy Bridge-EP,10,20,2.2 to 3 ,2011,22,25,95,09/01/13
+Intel,Xeon E5-2670 v2,Ivy Bridge-EP,10,20,2.5 to 3.3 ,2011,22,25,115,09/01/13
+Intel,Xeon E5-2680 v2,Ivy Bridge-EP,10,20,2.8 to 3.6 ,2011,22,25,115,09/01/13
+Intel,Xeon E5-2690 v2,Ivy Bridge-EP,10,20,3 to 3.8 ,2011,22,25,130,09/01/13
+Intel,Xeon E5-2692 v2,Ivy Bridge-EP,12,24,2.2 to 3 ,2011,22,30,100,09/01/13
+Intel,Xeon E5-2695 v2,Ivy Bridge-EP,12,24,2.4 to 3.2 ,2011,22,30,115,09/01/13
+Intel,Xeon E5-2697 v2,Ivy Bridge-EP,12,24,2.7 to 3.5 ,2011,22,30,130,09/01/13
+Intel,Xeon E7-8890 v3,Haswell-EX,18,36,2.5,2011,22,45,165,06/01/15
+Intel,Core i3-7360X,Kaby Lake,2,4,4.3,2066,14,4,112,10/03/17
+Intel,Core i5-7640X,Kaby Lake-X,4,4,3.9 to 4.3 ,2066,14,6,112,06/26/17
+Intel,Core i7-7740X,Kaby Lake-X,4,8,4.3 to 4.6 ,2066,14,8,112,06/26/17
+Intel,Core i7-7800X,Skylake-X,6,12,3.5 to 4 ,2066,14,8.25,140,06/26/17
+Intel,Core i7-7820X,Skylake-X,8,16,3.6 to 4.5 ,2066,14,11,140,06/26/17
+Intel,Core i9-7900X,Skylake-X,10,20,3.3 to 4.5 ,2066,14,14,140,06/26/17
+Intel,Core i9-7920X,Skylake-X,12,24,2.9 to 4.4 ,2066,14,16.5,140,09/10/17
+Intel,Core i9-9820X,Skylake-X,10,20,3.3 to 4.2 ,2066,14,16.5,165,10/19/18
+Intel,Core i7-9800X,Skylake-X,8,16,3.8 to 4.4 ,2066,14,16.5,165,10/19/18
+Intel,Core i9-7940X,Skylake-X,14,28,3.1 to 4.4 ,2066,14,19.25,165,09/01/17
+Intel,Core i9-9940X,Skylake-X,14,28,3.3 to 4.5 ,2066,14,19.25,165,10/19/18
+Intel,Core i9-9990XE,Skylake-X,14,28,4 to 5.1 ,2066,14,19.25,255,10/19/18
+Intel,Core i9-10940X,Cascade Lake-X,14,28,3.3 to 4.8 ,2066,14,19.25,165,10/19/19
+Intel,Core i9-9920X,Skylake-X,12,24,3.5 to 4.5 ,2066,14,19.25,165,10/19/18
+Intel,Core i9-10920X,Cascade Lake-X,12,24,3.5 to 4.8 ,2066,14,19.25,165,10/19/19
+Intel,Core i9-9900X,Skylake-X,10,20,3.5 to 4.5 ,2066,14,19.25,165,10/19/18
+Intel,Core i9-10900X,Cascade Lake-X,10,20,3.7 to 4.7 ,2066,14,19.25,165,10/19/19
+Intel,Core i9-7960X,Skylake-X,16,32,2.8 to 4.4 ,2066,14,22,165,09/01/17
+Intel,Core i9-9960X,Skylake-X,16,32,3.1 to 4.5 ,2066,14,22,165,10/19/18
+Intel,Core i9-7980XE,Skylake-X,18,36,2.6 to 4.4 ,2066,14,24.75,165,09/01/17
+Intel,Xeon W-2195,Skylake-W,18,36,2.3 to 4.3 ,2066,14,24.75,140,09/29/17
+Intel,Core i9-9980XE,Skylake-X,18,36,3 to 4.5 ,2066,14,24.75,165,10/19/18
+Intel,Core i9-10980XE,Cascade Lake-X,18,36,3 to 4.8 ,2066,14,24.75,165,10/19/19
+Intel,Core i9-10990XE,Cascade Lake-X,22,44,4 to 5 ,2066,14,30.25,380,03/19/20
+Intel,Xeon Bronze 3106,Skylake-SP,8,8,2.1 to 3 ,3647,14,11,85,07/11/17
+Intel,Xeon Silver 4116,Skylake-SP,12,24,2.1 to 3 ,3647,14,16.5,85,07/11/17
+Intel,Xeon Platinum 8256,Cascade Lake-SP,4,8,3.8 to 3.9 ,3647,14,16.5,105,12/11/18
+Intel,Xeon Platinum 8253,Cascade Lake-SP,16,32,2.2 to 3 ,3647,14,22,125,12/11/18
+Intel,Xeon Gold 6154,Skylake-SP,18,36,3 to 3.7 ,3647,14,24.75,200,07/11/17
+Intel,Xeon Platinum 8270,Cascade Lake-SP,26,52,2.7 to 4 ,3647,14,35.75,205,12/11/18
+Intel,Xeon Platinum 8260,Cascade Lake-SP,24,48,2.4 to 3.9 ,3647,14,35.75,165,12/11/18
+Intel,Xeon Platinum 8260M,Cascade Lake-SP,24,48,2.4 to 3.9 ,3647,14,35.75,165,12/11/18
+Intel,Xeon Platinum 8268,Cascade Lake-SP,24,48,2.9 to 3.9 ,3647,14,35.75,205,12/11/18
+Intel,Xeon Platinum 8180,Skylake-SP,28,56,2.5 to 3.8 ,3647,14,38.5,205,07/11/17
+Intel,Xeon Platinum 8180M,Skylake-SP,28,56,2.5 to 3.8 ,3647,14,38.5,205,07/11/17
+Intel,Xeon Platinum 8276,Cascade Lake-SP,28,56,2.2 to 4 ,3647,14,38.5,165,12/11/18
+Intel,Xeon Platinum 8280,Cascade Lake-SP,28,56,2.7 to 4 ,3647,14,38.5,205,12/11/18
+Intel,Xeon Platinum 8280M,Cascade Lake-SP,28,56,2.7 to 4 ,3647,14,38.5,205,12/11/18
+Intel,Xeon W-3175X,Skylake-W,28,56,3.1 to 4.3 ,3647,14,38.5,255,12/19/18
+Intel,Xeon Phi 7290,Knights Landing,72,288,1.5 to 1.7,3647,14,N/A,245,06/20/16
+Intel,Xeon Phi 7290F,Knights Landing,72,288,1.5 to 1.7,3647,14,N/A,260,06/20/16
+Intel,Xeon Phi 7295,Knights Mill,72,288,1.5 to 1.6,3647,14,N/A,320,12/01/17
+Intel,Xeon Phi 7250,Knights Landing,68,272,1.4 to 1.6,3647,14,N/A,215,06/20/16
+Intel,Xeon Phi 7250F,Knights Landing,68,272,1.4 to 1.6,3647,14,N/A,230,06/20/16
+Intel,Xeon Phi 7285,Knights Mill,68,272,1.3 to  1.4,3647,14,N/A,250,12/01/17
+Intel,Xeon Phi 7210,Knights Landing,64,256,1.3 to  1.5,3647,14,N/A,215,06/20/16
+Intel,Xeon Phi 7210F,Knights Landing,64,256,1.3 to  1.5,3647,14,N/A,230,06/20/16
+Intel,Xeon Phi 7230,Knights Landing,64,256,1.3 to  1.5,3647,14,N/A,215,06/20/16
+Intel,Xeon Phi 7230F,Knights Landing,64,256,1.3 to  1.5,3647,14,N/A,230,06/20/16
+Intel,Xeon Phi 7235,Knights Mill,64,256,1.3 to  1.4,3647,14,N/A,250,12/01/17
+Intel,Core i7-5820K,Haswell-E,6,12,3.3 to 3.6 ,2011-3,22,15,140,09/01/14
+Intel,Core i7-5930K,Haswell-E,6,12,3.5 to 3.7 ,2011-3,22,15,140,09/01/14
+Intel,Core i7-6800K,Broadwell-E,6,12,3.4 to 3.8 ,2011-3,14,15,140,05/31/16
+Intel,Core i7-6850K,Broadwell-E,6,12,3.6 to 3.8 ,2011-3,14,15,140,05/31/16
+Intel,Core i7-5960X,Haswell-E,8,16,3 to 3.5 ,2011-3,22,20,140,09/01/14
+Intel,Core i7-6900K,Broadwell-E,8,16,3.2 to 3.7 ,2011-3,14,20,140,05/31/16
+Intel,Core i7-6950X,Broadwell-E,10,20,3 to 3.5 ,2011-3,14,25,140,05/31/16
+AMD,Phenom II X3 715 BE,Heka,3,3,2.8,AM2+,45,6,95,10/01/10
+AMD,Phenom II X4 650T,Zosma,4,4,2.7 to 3.2 ,AM3,45,4,95,07/01/11
+AMD,Phenom II X6 1035T,Thuban,6,6,2.6 to 3.1 ,AM3,45,6,95,04/27/10
+AMD,Phenom II X6 1055T (125W),Thuban,6,6,2.8 to 3.3 ,AM3,45,6,125,04/27/10
+AMD,Phenom II X6 1090T BE,Thuban,6,6,3.2 to 3.6 ,AM3,45,6,125,04/27/10
+AMD,Phenom II X6 1055T (95W),Thuban,6,6,2.8 to 3.3 ,AM3,45,6,95,05/01/10
+AMD,Phenom II X6 1045T,Thuban,6,6,2.7 to 3.2 ,AM3,45,6,95,09/01/10
+AMD,Phenom II X6 1075T,Thuban,6,6,3 to 3.5 ,AM3,45,6,125,09/21/10
+AMD,Phenom II X6 1065T,Thuban,6,6,2.9 to 3.4 ,AM3,45,6,125,12/07/10
+AMD,Phenom II X6 1100T BE,Thuban,6,6,3.3 to 3.7 ,AM3,45,6,125,12/07/10
+AMD,Phenom II X4 B97,Deneb,4,4,3.2,AM3,45,6,95,05/11/10
+AMD,Phenom II X4 960T BE,Zosma,4,4,3 to 3.4 ,AM3,45,6,95,06/01/10
+AMD,Phenom II X4 840T,Zosma,4,4,2.9 to 3.2 ,AM3,45,6,95,09/01/10
+AMD,Phenom II X4 970 BE,Deneb,4,4,3.5,AM3,45,6,125,09/21/10
+AMD,Phenom II X4 970 BE,Zosma,4,4,3.5,AM3,45,6,125,10/01/10
+AMD,Phenom II X3 B77,Heka,3,3,3.2,AM3,45,6,95,05/11/10
+AMD,Phenom II X2 570 BE,Callisto,2,2,3.5,AM3,45,6,80,05/03/10
+AMD,Phenom II X2 B57,Callisto,2,2,3.2,AM3,45,6,80,05/11/10
+AMD,Phenom II X2 560 BE,Callisto,2,2,3.3,AM3,45,6,80,09/21/10
+AMD,Phenom II X2 565 BE,Callisto,2,2,3.4,AM3,45,6,80,12/07/10
+AMD,Athlon II X4 610e,Propus,4,4,2.4,AM3,45,N/A,45,05/11/10
+AMD,Athlon II X4 640,Propus,4,4,3,AM3,45,N/A,95,05/11/10
+AMD,Athlon II X4 615e,Propus,4,4,2.5,AM3,45,N/A,45,09/21/10
+AMD,Athlon II X4 645,Propus,4,4,3.1,AM3,45,N/A,95,09/21/10
+AMD,Athlon II X3 415e,Rana,3,3,2.5,AM3,45,N/A,45,05/11/10
+AMD,Athlon II X3 445,Rana,3,3,3.1,AM3,45,N/A,95,05/11/10
+AMD,Athlon II X3 420e,Rana,3,3,2.6,AM3,45,N/A,45,09/21/10
+AMD,Athlon II X3 450,Rana,3,3,3.2,AM3,45,N/A,95,09/21/10
+AMD,Athlon II X3 455,Rana,3,3,3.3,AM3,45,N/A,95,12/07/10
+AMD,Athlon II X2 245e,Regor,2,2,2.9,AM3,45,N/A,45,05/11/10
+AMD,Athlon II X2 260,Regor,2,2,3.2,AM3,45,N/A,65,05/11/10
+AMD,Sempron 180,Regor,2,2,2.4,AM3,45,N/A,45,09/01/10
+AMD,Athlon II X2 210e,Regor,2,2,2.6,AM3,45,N/A,45,09/21/10
+AMD,Athlon II X2 220,Regor,2,2,2.8,AM3,45,N/A,65,09/21/10
+AMD,Athlon II X2 250e,Regor,2,2,3,AM3,45,N/A,45,09/21/10
+AMD,Athlon II X2 265,Regor,2,2,3.3,AM3,45,N/A,65,09/21/10
+AMD,Athlon II X2 270u,Regor,2,2,2,AM3,45,N/A,25,09/21/10
+AMD,Athlon II X2 270,Regor,2,2,3.4,AM3,45,N/A,65,07/01/11
+AMD,Sempron 145,Sargas,1,1,2.8,AM3,45,N/A,45,09/01/10
+AMD,Sempron 130,Sargas,1,1,2.6,AM3,45,N/A,45,08/01/11
+AMD,Sempron 150,Sargas,1,1,2.9,AM3,45,N/A,45,12/07/10
+AMD,FX-8100,Zambezi,8,8,2.8 to 3.7 ,AM3+,32,8,95,10/12/11
+AMD,FX-8120,Zambezi,8,8,3.1 to 4 ,AM3+,32,8,125,10/12/11
+AMD,FX-8150,Zambezi,8,8,3.6 to 4.2 ,AM3+,32,8,125,10/12/11
+AMD,FX-8140,Zambezi,8,8,3.2 to 4.1 ,AM3+,32,8,95,10/23/12
+AMD,FX-8300,Vishera,8,8,3.3 to 3.9 ,AM3+,32,8,95,10/23/12
+AMD,FX-8320,Vishera,8,8,3.5 to 4 ,AM3+,32,8,125,10/23/12
+AMD,FX-8170,Zambezi,8,8,3.9 to 4.5 ,AM3+,32,8,125,10/23/12
+AMD,FX-8350,Vishera,8,8,4 to 4.2 ,AM3+,32,8,125,10/23/12
+AMD,FX-9370,Vishera,8,8,4.4 to 4.7 ,AM3+,32,8,220,07/06/13
+AMD,FX-9590,Vishera,8,8,4.7 to 5 ,AM3+,32,8,220,07/06/13
+AMD,FX-8320E,Vishera,8,8,3.2 to 4 ,AM3+,32,8,95,09/02/14
+AMD,FX-8370E,Vishera,8,8,3.3 to 4.3 ,AM3+,32,8,95,09/02/14
+AMD,FX-8370,Vishera,8,8,4 to 4.3 ,AM3+,32,8,125,09/02/14
+AMD,Opteron 3380,Delhi,8,8,2.6 to 3.6 ,AM3+,32,8,65,12/04/12
+AMD,FX-6100,Zambezi,6,6,3.3 to 3.9 ,AM3+,32,8,95,10/12/11
+AMD,FX-6300,Vishera,6,6,3.5 to 4.1 ,AM3+,32,8,95,10/23/12
+AMD,FX-6130,Zambezi,6,6,3.6 to 3.9 ,AM3+,32,8,95,10/23/12
+AMD,FX-6120,Zambezi,6,6,3.6 to 4.2 ,AM3+,32,8,95,10/23/12
+AMD,FX-6330,Vishera,6,6,3.6 to 4.2 ,AM3+,32,8,125,12/15/15
+AMD,FX-4100,Zambezi,4,4,3.6 to 3.9 ,AM3+,32,8,95,10/12/11
+AMD,FX-4150,Zambezi,4,4,3.8 to 4 ,AM3+,32,8,95,10/23/12
+AMD,FX-4300,Vishera,4,4,3.8 to 4 ,AM3+,32,8,95,10/23/12
+AMD,FX-4120,Zambezi,4,4,3.9 to 4.1 ,AM3+,32,8,95,10/23/12
+AMD,FX-4320,Vishera,4,4,4 to 4.2 ,AM3+,32,8,95,10/23/12
+AMD,Opteron 3320 EE,Delhi,4,4,1.9 to 2.5 ,AM3+,32,8,25,12/04/12
+AMD,Opteron 3350 HE,Delhi,4,4,2.8 to 3.8 ,AM3+,32,8,45,12/04/12
+AMD,Ryzen 5 2400G,Raven Ridge,4,8,3.6 to 3.9 ,AM4,14,4,65,02/12/18
+AMD,Ryzen 5 PRO 2400G,Raven Ridge,4,8,3.6 to 3.9 ,AM4,14,4,65,02/12/18
+AMD,Ryzen 5 3400G,Picasso,4,8,3.7 to 4.2 ,AM4,12,4,65,07/07/19
+AMD,Athlon 200GE,Zen,2,4,3.2,AM4,14,4,35,06/01/18
+AMD,Athlon 220GE,Zen,2,4,3.4,AM4,14,4,35,06/01/18
+AMD,Ryzen 3 2300X,Zen,4,4,3.5 to 4.2 ,AM4,14,4,65,08/01/18
+AMD,Athlon 220GE,Zen,2,4,3.4,AM4,14,4,35,12/21/18
+AMD,Athlon 220GE,Zen,2,4,3.4,AM4,14,4,35,12/21/18
+AMD,Athlon 240GE,Zen,2,4,3.5,AM4,14,4,35,12/21/18
+AMD,Ryzen 3 3200G,Picasso,4,4,3.6 to 4 ,AM4,12,4,65,07/07/19
+AMD,Athlon 3000G,Zen,2,4,3.5,AM4,14,4,35,11/21/19
+AMD,Athlon PRO 200GE,Zen,2,2,3.2,AM4,14,4,35,06/01/18
+AMD,Ryzen 5 1400,Zen,4,8,3.2 to 3.4 ,AM4,14,8,65,04/11/17
+AMD,Ryzen 3 1300,Zen,4,4,3.2 to 3.5 ,AM4,14,8,65,04/11/17
+AMD,Ryzen 3 PRO 1200,Zen,4,4,3.1 to 3.4 ,AM4,14,8,65,06/29/17
+AMD,Ryzen 3 PRO 1300,Zen,4,4,3.2 to 3.5 ,AM4,14,8,65,06/29/17
+AMD,Ryzen 3 1200,Zen,4,4,3.1 to 3.4 ,AM4,14,8,65,07/27/17
+AMD,Ryzen 3 1300X,Zen,4,4,3.4 to 3.7 ,AM4,14,8,65,07/27/17
+AMD,Ryzen 7 1700,Zen,8,16,3 to 3.7 ,AM4,14,16,65,03/02/17
+AMD,Ryzen 7 1700X,Zen,8,16,3.4 to 3.8 ,AM4,14,16,95,03/02/17
+AMD,Ryzen 7 1800X,Zen,8,16,3.6 to 4 ,AM4,14,16,95,03/02/17
+AMD,Ryzen 7 PRO 1700,Zen,8,16,3 to 3.7 ,AM4,14,16,65,06/29/17
+AMD,Ryzen 7 PRO 1700X,Zen,8,16,3.4 to 3.8 ,AM4,14,16,95,06/29/17
+AMD,Ryzen 7 2700,Zen,8,16,3.2 to 4.1 ,AM4,12,16,65,04/19/18
+AMD,Ryzen 7 2700X,Zen,8,16,3.7 to 4.35 ,AM4,12,16,105,04/19/18
+AMD,Ryzen 7 2700E,Zen,8,16,2.8 to 4 ,AM4,12,16,65,09/19/18
+AMD,Ryzen 7 PRO 2700,Zen,8,16,3.2 to 4.1 ,AM4,12,16,65,09/19/18
+AMD,Ryzen 7 PRO 2700X,Zen,8,16,3.6 to 4.1 ,AM4,12,16,95,09/19/18
+AMD,Ryzen 7 2700X 50th Anniversary,Zen,8,16,3.7 to 4.35 ,AM4,12,16,105,04/29/19
+AMD,Ryzen 5 1600,Zen,6,12,3.2 to 3.6 ,AM4,14,16,65,04/11/17
+AMD,Ryzen 5 1600X,Zen,6,12,3.6 to 4 ,AM4,14,16,95,04/11/17
+AMD,Ryzen 5 PRO 1600,Zen,6,12,3.2 to 3.6 ,AM4,14,16,65,06/29/17
+AMD,Ryzen 5 2600,Zen,6,12,3.4 to 3.9 ,AM4,12,16,65,04/19/18
+AMD,Ryzen 5 2600X,Zen,6,12,3.6 to 4.25 ,AM4,12,16,95,04/19/18
+AMD,Ryzen 5 2600E,Zen,6,12,3.1 to 4 ,AM4,12,16,65,09/19/18
+AMD,Ryzen 5 PRO 2600,Zen,6,12,3.4 to 3.9 ,AM4,12,16,65,09/19/18
+AMD,Ryzen 5 1500X,Zen,4,8,3.5 to 3.7 ,AM4,14,16,65,04/11/17
+AMD,Ryzen 5 PRO 1500,Zen,4,8,3.5 to 3.7 ,AM4,14,16,65,06/29/17
+AMD,Ryzen 5 2500X,Zen,4,8,3.6 to 4 ,AM4,12,16,65,10/01/18
+AMD,Ryzen 3 3100,Matisse,4,8,3.6 to 3.9 ,AM4,7,16,65,04/24/20
+AMD,Ryzen 3 3300X,Matisse,4,8,3.8 to 4.3 ,AM4,7,16,65,04/24/20
+AMD,Ryzen 7 3700X,Matisse,8,16,3.6 to 4.4 ,AM4,7,32,65,07/07/19
+AMD,Ryzen 7 3800X,Matisse,8,16,3.9 to 4.5 ,AM4,7,32,105,07/07/19
+AMD,Ryzen 5 3600,Matisse,6,12,3.6 to 4.2 ,AM4,7,32,65,07/07/19
+AMD,Ryzen 5 3600X,Matisse,6,12,3.8 to 4.4 ,AM4,7,32,95,07/07/19
+AMD,Ryzen 5 3500X,Matisse,6,6,3.6 to 4.1 ,AM4,7,32,65,09/24/19
+AMD,Ryzen 9 3950X,Matisse,16,32,3.5 to 4.7 ,AM4,7,64,105,11/14/19
+AMD,Ryzen 9 3900X,Matisse,12,24,3.8 to 4.6 ,AM4,7,64,105,07/07/19
+AMD,A10-9700E,Bristol Ridge,4,4,3 to 3.5 ,AM4,28,N/A,35,07/27/17
+AMD,A8-9600,Bristol Ridge,4,4,3.1 to 3.4 ,AM4,28,N/A,65,07/27/17
+AMD,A12-9800E,Bristol Ridge,4,4,3.1 to 3.8 ,AM4,28,N/A,35,07/27/17
+AMD,Athlon X4 940,Bristol Ridge,4,4,3.2 to 3.6 ,AM4,28,N/A,65,07/27/17
+AMD,A10-9700,Bristol Ridge,4,4,3.5 to 3.8 ,AM4,28,N/A,65,07/27/17
+AMD,Athlon X4 950,Bristol Ridge,4,4,3.5 to 3.8 ,AM4,28,N/A,65,07/27/17
+AMD,Athlon X4 970,Bristol Ridge,4,4,3.8 to 4 ,AM4,28,N/A,65,07/27/17
+AMD,A12-9800,Bristol Ridge,4,4,3.8 to 4.2 ,AM4,28,N/A,65,07/27/17
+AMD,A6-9500E,Bristol Ridge,2,2,3 to 3.4 ,AM4,28,N/A,35,07/27/17
+AMD,A6-9500,Bristol Ridge,2,2,3.5 to 3.8 ,AM4,28,N/A,65,07/27/17
+AMD,A6-9550,Bristol Ridge,2,2,3.8 to 4 ,AM4,28,N/A,65,07/27/17
+AMD,Opteron 4376 HE,Seoul,8,8,2.6 to 3.6 ,C32,32,8,65,12/04/12
+AMD,Opteron 43GK HE,Seoul,8,8,2.6 to 3.6 ,C32,32,8,65,12/04/12
+AMD,Opteron 4386,Seoul,8,8,3.1 to 3.8 ,C32,32,8,95,12/04/12
+AMD,Opteron 4332 HE,Seoul,6,6,3 to 3.7 ,C32,32,8,65,12/04/12
+AMD,Opteron 4334,Seoul,6,6,3.1 to 3.5 ,C32,32,8,95,12/04/12
+AMD,Opteron 4340,Seoul,6,6,3.5 to 3.8 ,C32,32,8,95,12/04/12
+AMD,Opteron 4310 EE,Seoul,4,4,2.2 to 3 ,C32,32,8,35,12/04/12
+AMD,Opteron 43CX EE,Seoul,4,4,2.2 to 3 ,C32,32,8,35,12/04/12
+AMD,A6-3650,Llano,4,4,2.6,FM1,32,N/A,100,06/30/11
+AMD,A8-3850,Llano,4,4,2.9,FM1,32,N/A,100,06/30/11
+AMD,A6-3600,Llano,4,4,2.1 to 2.4 ,FM1,32,N/A,65,06/30/11
+AMD,A8-3800,Llano,4,4,2.4 to 2.7 ,FM1,32,N/A,65,06/30/11
+AMD,Athlon II X4 631,Llano,4,4,2.6,FM1,32,N/A,100,08/17/11
+AMD,Athlon II X4 651,Llano,4,4,3,FM1,32,N/A,100,11/14/11
+AMD,Athlon II X4 651K,Llano,4,4,3,FM1,32,N/A,100,11/14/11
+AMD,A6-3670K,Llano,4,4,2.7,FM1,32,N/A,100,12/20/11
+AMD,A8-3870K,Llano,4,4,3,FM1,32,N/A,100,12/20/11
+AMD,A6-3620,Llano,4,4,2.2 to 2.5 ,FM1,32,N/A,65,12/20/11
+AMD,A8-3820,Llano,4,4,2.5 to 2.8 ,FM1,32,N/A,65,12/20/11
+AMD,A6-3500,Llano,3,3,2.1 to 2.4 ,FM1,32,N/A,65,08/17/11
+AMD,E2-3200,Llano,2,2,2.4,FM1,32,N/A,65,09/07/11
+AMD,A4-3300,Llano,2,2,2.5,FM1,32,N/A,65,09/07/11
+AMD,A4-3400,Llano,2,2,2.7,FM1,32,N/A,65,09/07/11
+AMD,A4-3420,Llano,2,2,2.8,FM1,32,N/A,65,12/20/11
+AMD,A8-5500,Trinity,4,4,3.2 to 3.7 ,FM2,32,N/A,65,10/02/12
+AMD,A8-5500B,Trinity,4,4,3.2 to 3.7 ,FM2,32,N/A,65,10/02/12
+AMD,A10-5700,Trinity,4,4,3.4 to 4 ,FM2,32,N/A,65,10/02/12
+AMD,A6-5400B,Trinity,4,4,3.6 to 3.8 ,FM2,32,N/A,65,10/02/12
+AMD,A6-5400K,Trinity,4,4,3.6 to 3.8 ,FM2,32,N/A,65,10/02/12
+AMD,A8-5600K,Trinity,4,4,3.6 to 3.9 ,FM2,32,N/A,100,10/02/12
+AMD,A10-5800B,Trinity,4,4,3.8 to 4.2 ,FM2,32,N/A,100,10/02/12
+AMD,A10-5800K,Trinity,4,4,3.8 to 4.2 ,FM2,32,N/A,100,10/02/12
+AMD,A10-6700T,Richland,4,4,2.5 to 3.5 ,FM2,32,N/A,45,09/16/13
+AMD,A10-6790K,Richland,4,4,4 to 4.3 ,FM2,32,N/A,100,10/28/13
+AMD,A4-5300,Trinity,2,2,3.4 to 3.6 ,FM2,32,N/A,65,10/02/12
+AMD,A4-5300B,Trinity,2,2,3.4 to 3.6 ,FM2,32,N/A,65,10/02/12
+AMD,A10-7870K,Godaveri,4,4,3.9 to 4.1 ,FM2+,28,N/A,95,05/28/15
+AMD,A8-7680,Godaveri,4,4,3.5 to 3.8 ,FM2+,28,N/A,45,10/26/18
+AMD,A10-7890K,Godaveri,4,4,4 to 4.3 ,FM2+,28,N/A,95,01/11/16
+AMD,A10-7700K,Godaveri,4,4,3.5 to 3.8 ,FM2+,28,N/A,95,01/14/14
+AMD,A10-7850K,Godaveri,4,4,3.7 to 4 ,FM2+,28,N/A,95,01/14/14
+AMD,A8-4555M,Trinity,4,4,1.6 to 2.4 ,FP2,32,N/A,19,09/27/12
+AMD,A4-4355M,Trinity,2,2,1.9 to 2.4 ,FP2,32,N/A,17,09/27/12
+AMD,A9-9410 SoC,Stoney Ridge,2,2,2.9 to 3.5 ,FP4,28,N/A,25,05/31/16
+AMD,Ryzen Embedded V1605B,Zen,4,8,2 to 3.6 ,FP5,14,2,15,02/21/18
+AMD,Ryzen Embedded V1756B,Zen,4,8,3.25 to 3.6 ,FP5,14,2,45,02/21/18
+AMD,Ryzen Embedded V1807B,Zen,4,8,3.35 to 3.8 ,FP5,14,2,45,02/21/18
+AMD,Ryzen Embedded V1202B,Zen,2,4,2.3 to 3.2 ,FP5,14,2,15,02/21/18
+AMD,Ryzen 5 2500U,Raven Ridge,4,8,2 to 3.6 ,FP5,14,4,15,10/26/17
+AMD,Ryzen 5 PRO 2500U,Raven Ridge,4,8,2 to 3.6 ,FP5,14,4,15,10/26/17
+AMD,Ryzen 7 2700U,Raven Ridge,4,8,2.2 to 3.8 ,FP5,14,4,15,10/26/17
+AMD,Ryzen 7 PRO 2700U,Raven Ridge,4,8,2.2 to 3.8 ,FP5,14,4,15,10/26/17
+AMD,Ryzen 5 2600H,Raven Ridge,4,8,3.3 to 3.6 ,FP5,14,4,15,05/30/18
+AMD,Ryzen 7 2800H,Raven Ridge,4,8,3.4 to 3.8 ,FP5,14,4,15,05/30/18
+AMD,Ryzen 5 3500U,Picasso,4,8,2.1 to 3.7 ,FP5,12,4,15,01/06/19
+AMD,Ryzen 5 3550H,Picasso,4,8,2.1 to 3.7 ,FP5,12,4,35,01/06/19
+AMD,Ryzen 7 3700U,Picasso,4,8,2.3 to 4 ,FP5,12,4,15,01/06/19
+AMD,Ryzen 7 3750H,Picasso,4,8,2.3 to 4 ,FP5,12,4,35,01/06/19
+AMD,Ryzen 5 PRO 3500U,Picasso,4,8,2.1 to 3.7 ,FP5,12,4,15,04/08/19
+AMD,Ryzen 7 PRO 3700U,Picasso,4,8,2.3 to 4 ,FP5,12,4,15,04/08/19
+AMD,Ryzen 3 2300U,Raven Ridge,4,4,2 to 3.4 ,FP5,14,4,15,10/26/17
+AMD,Ryzen 3 PRO 2300U,Raven Ridge,4,4,2 to 3.4 ,FP5,14,4,15,10/26/17
+AMD,Ryzen 3 2200U,Raven Ridge,2,4,2.5 to 3.4 ,FP5,14,4,15,10/26/17
+AMD,Ryzen 3 3300U,Picasso,4,4,2.1 to 3.5 ,FP5,12,4,15,01/06/19
+AMD,Athlon 300U,Raven Ridge 2,2,4,2.4 to 3.3 ,FP5,14,4,15,01/06/19
+AMD,Ryzen 3 3200U,Picasso,2,4,2.6 to 3.5 ,FP5,12,4,15,01/06/19
+AMD,Ryzen 3 PRO 3300U,Picasso,4,4,2.1 to 3.5 ,FP5,12,4,15,04/08/19
+AMD,Athlon PRO 300U,Raven Ridge 2,2,4,2.4 to 3.3 ,FP5,14,4,15,04/08/19
+AMD,Ryzen 3 3250U,Picasso,2,4,2.6 to 3.5 ,FP5,12,4,15,01/06/20
+AMD,Ryzen 3 4300U,Renoir,4,4,2.7 to 3.7 ,FP6,7,4,25,01/06/20
+AMD,Ryzen 7 4800U,Renoir,8,16,1.8 to 4.2 ,FP6,7,8,25,01/06/20
+AMD,Ryzen 5 4600U,Renoir,6,12,2.1 to 4 ,FP6,7,11,25,01/06/20
+AMD,Ryzen 5 4600H,Renoir,6,12,3 to 4 ,FP6,7,11,54,01/06/20
+AMD,Ryzen 5 4600HS,Renoir,6,12,3 to 4 ,FP6,7,11,35,01/06/20
+AMD,Ryzen 5 4500U,Renoir,6,6,2.3 to 4 ,FP6,7,11,25,01/06/20
+AMD,Ryzen 7 4800H,Renoir,8,16,2.9 to 4.2 ,FP6,7,12,54,01/06/20
+AMD,Ryzen 7 4800HS,Renoir,8,16,2.9 to 4.2 ,FP6,7,12,35,01/06/20
+AMD,Ryzen 9 4900HS,Renoir,8,16,3 to 4.3 ,FP6,7,12,35,03/07/20
+AMD,Ryzen 9 4900H,Renoir,8,16,3.3 to 4.4 ,FP6,7,12,54,03/16/20
+AMD,Ryzen 7 4700U,Renoir,8,8,1.8 to 4.2 ,FP6,7,12,25,01/06/20
+AMD,A6-3400M,Llano,4,4,1.4 to 2.3 ,FS1,32,N/A,35,06/14/11
+AMD,A8-3500M,Llano,4,4,1.5 to 2.4 ,FS1,32,N/A,35,06/14/11
+AMD,A6-3410MX,Llano,4,4,1.6 to 2.3 ,FS1,32,N/A,45,06/14/11
+AMD,A8-3510MX,Llano,4,4,1.8 to 2.5 ,FS1,32,N/A,45,06/14/11
+AMD,A8-3530MX,Llano,4,4,1.9 to 2.6 ,FS1,32,N/A,45,06/14/11
+AMD,A6-3420M,Llano,4,4,1.5 to 2.4 ,FS1,32,N/A,35,12/20/11
+AMD,A8-3520M,Llano,4,4,1.6 to 2.5 ,FS1,32,N/A,35,12/20/11
+AMD,A6-3430MX,Llano,4,4,1.7 to 2.4 ,FS1,32,N/A,45,12/20/11
+AMD,A8-3550MX,Llano,4,4,2 to 2.7 ,FS1,32,N/A,45,12/20/11
+AMD,A4-3300M,Llano,2,2,1.9 to 2.5 ,FS1,32,N/A,35,06/14/11
+AMD,A4-3305M,Llano,2,2,1.9 to 2.5 ,FS1,32,N/A,35,06/14/11
+AMD,A4-3310MX,Llano,2,2,2.1 to 2.5 ,FS1,32,N/A,35,06/14/11
+AMD,E2-3000M,Llano,2,2,1.8 to 2.4 ,FS1,32,N/A,35,12/20/11
+AMD,A4-3320M,Llano,2,2,2 to 2.6 ,FS1,32,N/A,35,12/20/11
+AMD,A4-3330MX,Llano,2,2,2.2 to 2.6 ,FS1,32,N/A,45,12/20/11
+AMD,C-60,Ontario,2,2,1 to 1.3,FT1,40,N/A,9,08/22/11
+AMD,E-300,Zacate,2,2,1.3,FT1,40,N/A,18,08/22/11
+AMD,E-450,Zacate,2,2,1.6,FT1,40,N/A,18,08/22/11
+AMD,C-70,Ontario,2,2,1 to 1.3,FT1,40,N/A,9,09/01/12
+AMD,Z-60,Hondo,2,2,1,FT1,40,N/A,5,10/09/12
+AMD,A4-1350,Kabini,4,4,1,FT3,32,N/A,8,10/18/13
+AMD,A4-5050,Kabini,4,4,1.5,FT3,32,N/A,15,02/01/14
+AMD,Opteron X2170,Steppe Eagle,4,4,2.4,FT3,28,N/A,25,09/01/16
+AMD,E1-2150,Kabini,2,2,1.05,FT3,32,N/A,9,02/01/14
+AMD,A9-9400 SoC,Stoney Ridge,2,2,2.4 to 3.2 ,FT4,28,N/A,10,05/31/16
+AMD,A9-9420 SoC,Stoney Ridge,2,2,3 to 3.6 ,FT4,28,N/A,15,05/31/16
+AMD,A9-9425 SoC,Stoney Ridge,2,2,3.1 to 3.7 ,FT4,28,N/A,15,05/31/16
+AMD,A6-9120C SoC,Stoney Ridge,2,2,1.6 to 2.4 ,FT4,28,N/A,6,01/07/19
+AMD,A6-9220C SoC,Stoney Ridge,2,2,1.8 to 2.7 ,FT4,28,N/A,6,01/07/19
+Intel,Core i3-370M,Arrandale,2,4,2.4,G1,32,3,35,06/20/10
+Intel,Core i5-450M,Arrandale,2,4,2.4 to 2.666 ,G1,32,3,35,09/26/10
+Intel,Core i5-460M,Arrandale,2,4,2.534 to 2.8 ,G1,32,3,35,09/26/10
+Intel,Core i5-560M,Arrandale,2,4,2.667 to 3.2 ,G1,32,3,35,09/26/10
+Intel,Core i5-580M,Arrandale,2,4,2.667 to 3.333 ,G1,32,3,35,09/26/10
+Intel,Core i3-380M,Arrandale,2,4,2.534,G1,32,3,35,10/26/10
+Intel,Pentium P6000,Arrandale,2,2,1.8,G1,32,3,35,06/20/10
+Intel,Pentium P6200,Arrandale,2,2,2.133,G1,32,3,35,09/26/10
+Intel,Pentium P6100,Arrandale,2,2,2,G1,32,3,35,09/26/10
+Intel,Core i7-640M,Arrandale,2,4,2.8 to 3.467 ,G1,32,4,35,09/01/10
+Intel,Celeron B730,Sandy Bridge,1,1,1.9,G2 (988B),32,1.5,35,07/01/12
+Intel,Pentium B950,Sandy Bridge,2,2,2.1,G2 (988B),32,2,35,06/19/11
+Intel,Celeron B800,Sandy Bridge,2,2,1.5,G2 (988B),32,2,35,06/19/11
+Intel,Pentium B940,Sandy Bridge,2,2,2,G2 (988B),32,2,35,06/19/11
+Intel,Celeron B840,Sandy Bridge,2,2,1.9,G2 (988B),32,2,35,07/01/11
+Intel,Pentium B960,Sandy Bridge,2,2,2.2,G2 (988B),32,2,35,10/02/11
+Intel,Celeron B820,Sandy Bridge,2,2,1.7,G2 (988B),32,2,35,07/01/12
+Intel,Pentium 2020M,Ivy Bridge,2,2,2.4,G2 (988B),22,2,35,09/01/12
+Intel,Pentium B980,Sandy Bridge,2,2,2.4,G2 (988B),32,2,35,09/01/12
+Intel,Celeron B830,Sandy Bridge,2,2,1.8,G2 (988B),32,2,35,09/01/12
+Intel,Pentium 2117U,Ivy Bridge,2,2,1.8,G2 (988B),22,2,17,09/01/12
+Intel,Celeron 2955U,Haswell,2,2,1.4,G2 (988B),22,2,15,09/01/13
+Intel,Celeron 2950M,Haswell,2,2,2,G2 (988B),22,2,37,09/01/13
+Intel,Core i3-2332M,Sandy Bridge,2,4,2.2,G2 (988B),32,3,35,09/01/11
+Intel,Core i5-2435M,Sandy Bridge,2,4,2.4,G2 (988B),32,3,35,09/01/11
+Intel,Core i3-2350M,Sandy Bridge,2,4,2.3,G2 (988B),32,3,35,10/01/11
+Intel,Core i5-2430M,Sandy Bridge,2,4,2.4,G2 (988B),32,3,35,10/01/11
+Intel,Core i3-2328M,Sandy Bridge,2,4,2.2,G2 (988B),32,3,35,09/01/12
+Intel,Core i3-3120M,Ivy Bridge,2,4,2.5,G2 (988B),22,3,35,09/30/12
+Intel,Core i7-2760QM,Sandy Bridge,4,8,2.4 to 3.5 ,G2 (988B),32,6,45,09/04/11
+Intel,Core i7-2670QM,Sandy Bridge,4,8,2.2 to 3.1 ,G2 (988B),32,6,45,10/12/11
+Intel,Core i7-3630QM,Ivy Bridge,4,8,2.4 to 3.4 ,G2 (988B),22,6,45,09/01/12
+Intel,Core i7-3740QM,Ivy Bridge,4,8,2.7 to 3.7 ,G2 (988B),22,6,45,09/03/12
+Intel,Core i7-3632QM,Ivy Bridge,4,8,2.2 to 3.2 ,G2 (988B),22,6,35,10/19/12
+Intel,Core i7-2860QM,Sandy Bridge,4,8,2.5 to 3.6 ,G2 (988B),32,8,45,09/04/11
+Intel,Core i7-2960XM,Sandy Bridge,4,8,2.7 to 3.7 ,G2 (988B),32,8,55,09/04/11
+Intel,Core i7-3840QM,Ivy Bridge,4,8,2.8 to 3.8 ,G2 (988B),22,8,45,09/03/12
+Intel,Core i7-3940XM,Ivy Bridge,4,8,3 to 3.9 ,G2 (988B),22,8,55,09/03/12
+Intel,Pentium 3550M,Haswell,2,2,2.3,G3,22,2,37,09/01/13
+Intel,Celeron 2955U,Haswell,2,2,1.4,G3,22,2,15,09/01/13
+Intel,Celeron 2980U,Haswell,2,2,1.6,G3,22,2,15,09/01/13
+Intel,Celeron 2950M,Haswell,2,2,2,G3,22,2,37,09/01/13
+Intel,Core i5-4300M,Haswell,2,4,2.6 to 3.6 ,G3,22,3,37,09/01/13
+Intel,Core i5-4330M,Haswell,2,4,2.8 to 3.8 ,G3,22,3,37,09/01/13
+Intel,Core i3-4000M,Haswell,2,4,2.4,G3,22,3,37,09/04/13
+Intel,Core i7-4600M,Haswell,2,4,2.9 to 3.6 ,G3,22,4,37,09/01/13
+Intel,Core i7-4610M,Haswell,2,4,3 to 3.7 ,G3,22,4,37,02/01/14
+Intel,Core i7-4810MQ,Haswell,4,8,2.8 to 3.8 ,G3,22,8,47,01/20/14
+Intel,Core i7-4910MQ,Haswell,4,8,2.9 to 3.9 ,G3,22,8,47,01/20/14
+Intel,Core i7-4940MX,Haswell,4,8,3.1 to 4 ,G3,22,8,57,01/20/14
+AMD,Opteron 6276,Interlagos,16,16,2.3 to 3.2 ,G34,32,8,115,11/14/11
+AMD,Opteron 6282 SE,Interlagos,16,16,2.6 to 3.3 ,G34,32,8,140,11/14/11
+AMD,Opteron 6366 HE,Abu Dhabi,16,16,1.8 to 3.1 ,G34,32,8,85,11/05/12
+AMD,Opteron 6376,Abu Dhabi,16,16,2.3 to 3.2 ,G34,32,8,115,11/05/12
+AMD,Opteron 6378,Abu Dhabi,16,16,2.4 to 3.3 ,G34,32,8,115,11/05/12
+AMD,Opteron 6380,Abu Dhabi,16,16,2.5 to 3.4 ,G34,32,8,115,11/05/12
+AMD,Opteron 6386 SE,Abu Dhabi,16,16,2.8 to 3.5 ,G34,32,8,140,11/05/12
+AMD,Opteron 6348,Abu Dhabi,12,12,2.8 to 3.4 ,G34,32,8,115,11/05/12
+AMD,Opteron 6168,Magny-Cours,12,12,1.9,G34,45,12,115,03/29/10
+AMD,Opteron 6262 HE,Interlagos,16,16,1.6 to 2.9 ,G34,32,16,85,11/14/11
+AMD,Opteron 6272,Interlagos,16,16,2.1 to 3 ,G34,32,16,115,11/14/11
+AMD,Opteron 6274,Interlagos,16,16,2.2 to 3.1 ,G34,32,16,115,11/14/11
+AMD,Opteron A1150,Seattle,8,8,1.7,SP1,28,8,32,01/14/16
+AMD,Opteron A1170,Seattle,8,8,2,SP1,28,8,32,01/14/16
+AMD,Opteron A1120,Seattle,4,4,1.7,SP1,28,8,25,01/14/16
+AMD,EPYC 7281,Naples,16,32,2.1 to 2.7 ,SP3,14,32,170,06/29/17
+AMD,EPYC 7251,Naples,8,16,2.1 to 2.9 ,SP3,14,32,120,06/29/17
+AMD,EPYC 7261,Naples,8,16,2.5 to 2.9 ,SP3,14,32,170,06/14/18
+AMD,EPYC 7232P,Rome,8,16,3.1 to 3.2 ,SP3,7,32,120,08/07/19
+AMD,EPYC 7501,Naples,32,64,2 to 3 ,SP3,14,64,170,06/29/17
+AMD,EPYC 7551,Naples,32,64,2 to 3 ,SP3,14,64,180,06/29/17
+AMD,EPYC 7551P,Naples,32,64,2 to 3 ,SP3,14,64,180,06/29/17
+AMD,EPYC 7601,Naples,32,64,2.2 to 3.2 ,SP3,14,64,180,06/29/17
+AMD,EPYC 7401,Naples,24,48,2 to 3 ,SP3,14,64,170,06/29/17
+AMD,EPYC 7401P,Naples,24,48,2 to 3 ,SP3,14,64,170,06/29/17
+AMD,EPYC 7451,Naples,24,48,2.3 to 3.2 ,SP3,14,64,180,06/29/17
+AMD,EPYC 7301,Naples,16,32,2.2 to 2.7 ,SP3,14,64,170,06/29/17
+AMD,EPYC 7351,Naples,16,32,2.4 to 2.9 ,SP3,14,64,170,06/29/17
+AMD,EPYC 7351P,Naples,16,32,2.4 to 2.9 ,SP3,14,64,170,06/29/17
+AMD,EPYC 7371,Naples,16,32,3.1 to 3.8 ,SP3,14,64,170,11/16/18
+AMD,EPYC 7282,Rome,16,32,2.8 to 3.2 ,SP3,7,64,120,08/07/19
+AMD,EPYC 7272,Rome,12,24,2.6 to 3.2 ,SP3,7,64,120,08/07/19
+AMD,EPYC 7252,Rome,8,16,2.8 to 3.2 ,SP3,7,64,120,08/07/19
+AMD,EPYC 7452,Rome,32,64,2.2 to 3.35 ,SP3,7,128,155,08/07/19
+AMD,EPYC 7502,Rome,32,64,2.5 to 3.35 ,SP3,7,128,180,08/07/19
+AMD,EPYC 7502P,Rome,32,64,2.5 to 3.35 ,SP3,7,128,180,08/07/19
+AMD,EPYC 7542,Rome,32,64,2.9 to 3.4 ,SP3,7,128,225,08/07/19
+AMD,EPYC 7352,Rome,24,48,2.4 to 3.3 ,SP3,7,128,155,08/07/19
+AMD,EPYC 7402,Rome,24,48,2.8 to 3.35 ,SP3,7,128,180,08/07/19
+AMD,EPYC 7402P,Rome,24,48,2.8 to 3.35 ,SP3,7,128,180,08/07/19
+AMD,EPYC 7302,Rome,16,32,3 to 3.3 ,SP3,7,128,155,08/07/19
+AMD,EPYC 7302P,Rome,16,32,3 to 3.3 ,SP3,7,128,155,08/07/19
+AMD,EPYC 7262,Rome,8,16,3.1 to 3.3 ,SP3,7,128,155,08/07/19
+AMD,EPYC 7F32,Rome,8,16,3.7 to 3.9 ,SP3,7,128,180,04/14/20
+AMD,EPYC 7552,Rome,48,96,2.2 to 3.35 ,SP3,7,192,200,08/07/19
+AMD,EPYC 7F72,Rome,24,48,3.2 to 3.7 ,SP3,7,192,240,04/14/20
+AMD,EPYC 7702,Rome,64,128,2 to 3.35 ,SP3,7,256,200,08/07/19
+AMD,EPYC 7702P,Rome,64,128,2 to 3.35 ,SP3,7,256,200,08/07/19
+AMD,EPYC 7742,Rome,64,128,2.25 to 3.4 ,SP3,7,256,225,08/07/19
+AMD,EPYC 7H12,Rome,64,128,2.6 to 3.3 ,SP3,7,256,280,09/18/19
+AMD,EPYC 7642,Rome,48,96,2.4 to 3.4 ,SP3,7,256,225,08/07/19
+AMD,EPYC 7F52,Rome,16,32,3.5 to 3.9 ,SP3,7,256,155,04/14/20
+AMD,Ryzen Threadripper 1950,Zen,16,32,3.2,SP3r2,14,32,180,07/29/17
+AMD,Ryzen Threadripper 2950X,Zen,16,32,3.5 to 4.4 ,SP3r2,12,32,180,08/13/18
+AMD,Ryzen Threadripper 1940,Zen,14,28,3.2 to 3.7 ,SP3r2,14,32,180,07/29/17
+AMD,Ryzen Threadripper 1940X,Zen,14,28,3.5 to 4 ,SP3r2,14,32,180,07/29/17
+AMD,Ryzen Threadripper 1920,Zen,12,24,3.2 to 3.8 ,SP3r2,14,32,140,07/29/17
+AMD,Ryzen Threadripper 2920X,Zen,12,24,3.5 to 4.3 ,SP3r2,12,32,180,10/03/18
+AMD,Ryzen Threadripper 1950X,Zen,16,16,3.4 to 4 ,SP3r2,14,32,180,08/10/17
+AMD,Ryzen Threadripper 1900,Zen,8,16,3.1 to 3.7 ,SP3r2,14,32,125,08/31/17
+AMD,Ryzen Threadripper 1900X,Zen,8,16,3.8 to 4 ,SP3r2,14,32,125,08/31/17
+AMD,Ryzen Threadripper 1920X,Zen,12,12,3.5 to 4.2 ,SP3r2,14,32,180,08/10/17
+AMD,Ryzen Threadripper 2990WX,Zen,32,64,3 to 4.2 ,SP3r2,12,64,250,08/13/18
+AMD,Ryzen Threadripper 2970WX,Zen,24,48,3 to 4.2 ,SP3r2,12,64,250,10/02/18
+AMD,Ryzen Threadripper 3980X,Matisse,48,96,3.5 to 4.7 ,test,7,128,280,11/14/19
+AMD,Ryzen Threadripper 3990X,Matisse,64,128,2.9 to 4.3 ,TR4,7,128,280,02/07/20
+AMD,Ryzen Threadripper 3970X,Matisse,32,64,3.7 to 4.5 ,TR4,7,128,280,11/25/19
+AMD,Ryzen Threadripper 3960X,Matisse,24,48,3.8 to 4.5 ,TR4,7,128,280,11/25/19
+Intel,Atom D525,Pineview,2,4,1.8,BGA 437,45,N/A,13,06/21/10
+Intel,Atom D2700,Cedarview,2,4,2.133,BGA 437,32,N/A,10,11/01/11
+Intel,Atom D2500,Cedarview,2,4,1.8,BGA 437,32,N/A,10,11/01/11
+Intel,Atom D2550,Cedarview,2,4,1.8,BGA 437,32,N/A,10,11/01/11
+Intel,Atom D425,Pineview,1,2,1.8,BGA 437,45,N/A,10,06/21/10
+Intel,Atom Z560,Silverthorne,1,2,2.133,BGA 441,45,N/A,2,06/01/10
+Intel,Atom Z605,Lincroft,1,1,1,BGA 518,45,N/A,2,05/04/10
+Intel,Atom Z600,Lincroft,1,1,1.2,BGA 518,45,N/A,1,05/04/10
+Intel,Atom Z615,Lincroft,1,1,1.6,BGA 518,45,N/A,2,05/04/10
+Intel,Atom Z625,Lincroft,1,1,1.9,BGA 518,45,N/A,2,05/04/10
+Intel,Atom Z610,Lincroft,1,1,0.8,BGA 518,45,N/A,1,05/04/10
+Intel,Atom Z612,Lincroft,1,1,0.9,BGA 518,45,N/A,1,05/04/10
+Intel,Atom Z620,Lincroft,1,1,0.9,BGA 518,45,N/A,1,05/04/10
+Intel,Atom N550,Pineview,2,4,1.5,BGA 559,45,N/A,9,08/23/10
+Intel,Atom N2600,Cedarview,2,4,1.6,BGA 559,32,N/A,4,12/01/11
+Intel,Atom N2800,Cedarview,2,4,1.8,BGA 559,32,N/A,7,12/01/11
+Intel,Atom N455,Pineview,1,2,1.6,BGA 559,45,N/A,7,06/01/10
+Intel,Atom N475,Pineview,1,2,1.8,BGA 559,45,N/A,7,06/01/10
+Intel,Atom Z2760,Cloverview,2,2,1.8,BGA 617,32,N/A,3,09/27/12
+Intel,Atom E640,Tunnel Creek,1,2,1,BGA 676,45,N/A,3,09/14/10
+Intel,Atom E640T,Tunnel Creek,1,2,1,BGA 676,45,N/A,3,09/14/10
+Intel,Atom E660,Tunnel Creek,1,2,1.3,BGA 676,45,N/A,3,09/14/10
+Intel,Atom E660T,Tunnel Creek,1,2,1.3,BGA 676,45,N/A,3,09/14/10
+Intel,Atom E680,Tunnel Creek,1,2,1.6,BGA 676,45,N/A,4,09/14/10
+Intel,Atom E680T,Tunnel Creek,1,2,1.6,BGA 676,45,N/A,4,09/14/10
+Intel,Atom E620,Tunnel Creek,1,2,0.6,BGA 676,45,N/A,3,09/14/10
+Intel,Atom E620T,Tunnel Creek,1,2,0.6,BGA 676,45,N/A,3,09/14/10
+AMD,EPYC Embedded 3251,Zen,8,16,2.5 to 3.1 ,BGA SP4r2,14,16,50,02/21/18
+Intel,Celeron 725C,Sandy Bridge,1,1,1.3,BGA1023,32,1.5,17,07/01/11
+Intel,Celeron 787,Sandy Bridge,1,1,1.3,BGA1023,32,1.5,17,07/01/11
+Intel,Celeron 807,Sandy Bridge,1,1,1.5,BGA1023,32,1.5,17,07/01/12
+Intel,Celeron 847,Sandy Bridge,2,2,1.1,BGA1023,32,2,17,06/19/11
+Intel,Pentium 957,Sandy Bridge,2,2,1.2,BGA1023,32,2,17,06/19/11
+Intel,Celeron 857,Sandy Bridge,2,2,1.2,BGA1023,32,2,17,07/01/11
+Intel,Pentium 967,Sandy Bridge,2,2,1.3,BGA1023,32,2,17,10/02/11
+Intel,Celeron 877,Sandy Bridge,2,2,1.4,BGA1023,32,2,17,07/01/12
+Intel,Pentium 2129Y,Ivy Bridge,2,2,1.1,BGA1023,22,2,10,09/01/12
+Intel,Celeron 887,Sandy Bridge,2,2,1.5,BGA1023,32,2,17,09/01/12
+Intel,Pentium 997,Sandy Bridge,2,2,1.6,BGA1023,32,2,17,09/01/12
+Intel,Pentium 2117U,Ivy Bridge,2,2,1.8,BGA1023,22,2,17,09/01/12
+Intel,Core i3-2312M,Sandy Bridge,2,4,2.1,BGA1023,32,3,35,09/01/11
+Intel,Core i5-2415M,Sandy Bridge,2,4,2.3,BGA1023,32,3,35,09/01/11
+Intel,Core i5-2435M,Sandy Bridge,2,4,2.4,BGA1023,32,3,35,09/01/11
+Intel,Core i5-2430M,Sandy Bridge,2,4,2.4,BGA1023,32,3,35,10/01/11
+Intel,Core i3-2367M,Sandy Bridge,2,4,1.4,BGA1023,32,3,17,10/01/11
+Intel,Core i3-3120ME,Ivy Bridge,2,4,2.4,BGA1023,22,3,35,08/01/12
+Intel,Core i3-3217UE,Ivy Bridge,2,4,1.6,BGA1023,22,3,17,08/01/12
+Intel,Core i3-2377M,Sandy Bridge,2,4,1.5,BGA1023,32,3,17,09/01/12
+Intel,Core i3-3120M,Ivy Bridge,2,4,2.5,BGA1023,22,3,35,09/30/12
+Intel,Core i5-3365M,Ivy Bridge,2,4,2.8 to 3.5 ,BGA1023,22,3,35,11/01/12
+Intel,Core i7-3525M,Ivy Bridge,2,4,2.9 to 3.6 ,BGA1023,22,4,35,11/01/12
+Intel,Pentium Silver J5005,Coffee Lake,4,4,1.5 to 2.4 ,BGA1090,14,N/A,10,12/01/17
+Intel,Pentium 3560Y,Haswell,2,2,1.2,BGA1168,22,2,12,09/01/13
+Intel,Pentium 3556U,Haswell,2,2,1.7,BGA1168,22,2,15,09/01/13
+Intel,Celeron 3205U,Broadwell-U,2,2,1.5,BGA1168,14,2,15,03/01/15
+Intel,Celeron 3755U,Broadwell-U,2,2,1.7,BGA1168,14,2,15,03/01/15
+Intel,Pentium 3805U,Broadwell-U,2,2,1.9,BGA1168,14,2,15,03/01/15
+Intel,Celeron 2961Y,Haswell,2,2,1.1,BGA1168,22,2,12,12/01/13
+Intel,Core i5-4350U,Haswell,2,4,1.4 to 2.9 ,BGA1168,22,3,15,06/04/13
+Intel,Core i3-4005U,Haswell,2,4,1.7,BGA1168,22,3,15,09/04/13
+Intel,Core i5-4210U,Haswell,2,4,1.7 to 2.7 ,BGA1168,22,3,15,04/14/14
+Intel,Core i3-5010U,Broadwell-U,2,4,2.1,BGA1168,14,3,15,03/01/15
+Intel,Core i3-5157U,Broadwell-U,2,4,2.5,BGA1168,14,3,28,03/01/15
+Intel,Core i5-5250U,Broadwell-U,2,4,1.6 to 2.7 ,BGA1168,14,3,15,03/01/15
+Intel,Core i5-5350U,Broadwell-U,2,4,1.8 to 2.9 ,BGA1168,14,3,15,03/01/15
+Intel,Core i5-5200U,Broadwell-U,2,4,2.2 to 2.7 ,BGA1168,14,3,15,03/01/15
+Intel,Core i5-5300U,Broadwell-U,2,4,2.3 to 2.9 ,BGA1168,14,3,15,03/01/15
+Intel,Core i5-5257U,Broadwell-U,2,4,2.7 to 3.1 ,BGA1168,14,3,28,03/01/15
+Intel,Core i5-5287U,Broadwell-U,2,4,2.9 to 3.3 ,BGA1168,14,3,28,03/01/15
+Intel,Core i3-5005U,Broadwell-U,2,4,2,BGA1168,14,3,15,03/01/15
+Intel,Core i7-4650U,Haswell-ULT,2,4,1.7 to 3.3 ,BGA1168,22,4,15,06/04/13
+Intel,Core i7-4500U,Haswell-ULT,2,4,1.8 to 3 ,BGA1168,22,4,15,06/04/13
+Intel,Core i7-4600U,Haswell-ULT,2,4,2.1 to 3.3 ,BGA1168,22,4,15,09/01/13
+Intel,Core i7-5550U,Broadwell-U,2,4,2 to 3 ,BGA1168,14,4,15,03/01/15
+Intel,Core i7-5650U,Broadwell-U,2,4,2.2 to 3.2 ,BGA1168,14,4,15,03/01/15
+Intel,Core i7-5500U,Broadwell-U,2,4,2.4 to 3 ,BGA1168,14,4,15,03/01/15
+Intel,Core i7-5600U,Broadwell-U,2,4,2.6 to 3.2 ,BGA1168,14,4,15,03/01/15
+Intel,Core i7-5557U,Broadwell-U,2,4,3.1 to 3.4 ,BGA1168,14,4,28,03/01/15
+Intel,Celeron N2910,Bay Trail-M,4,4,1.6,BGA1170,22,N/A,7,09/11/13
+Intel,Atom E3845,Bay Trail-I,4,4,1.9,BGA1170,22,N/A,10,10/08/13
+Intel,Celeron N2930,Bay Trail-M,4,4,1.83 to 2.16 ,BGA1170,22,N/A,7,02/23/14
+Intel,Celeron N2940,Bay Trail-M,4,4,1.83 to 2.25 ,BGA1170,22,N/A,7,05/22/14
+Intel,Celeron N2920,Bay Trail-M,4,4,1.86 to 2 ,BGA1170,22,N/A,7,12/01/13
+Intel,Celeron N2805,Bay Trail-M,2,2,1.5,BGA1170,22,N/A,4,09/11/13
+Intel,Celeron N2810,Bay Trail-M,2,2,2,BGA1170,22,N/A,7,09/11/13
+Intel,Atom E3825,Bay Trail-I,2,2,1.3,BGA1170,22,N/A,6,10/08/13
+Intel,Atom E3826,Bay Trail-I,2,2,1.5,BGA1170,22,N/A,7,10/08/13
+Intel,Atom E3827,Bay Trail-I,2,2,1.7,BGA1170,22,N/A,8,10/08/13
+Intel,Celeron N2807,Bay Trail-M,2,2,1.58 to 2.16 ,BGA1170,22,N/A,4,02/23/14
+Intel,Celeron N2830,Bay Trail-M,2,2,2.16 to 2.41 ,BGA1170,22,N/A,7,02/23/14
+Intel,Celeron N2808,Bay Trail-M,2,2,1.58 to 2.25 ,BGA1170,22,N/A,4,05/22/14
+Intel,Celeron N2840,Bay Trail-M,2,2,2.16 to 2.58 ,BGA1170,22,N/A,7,05/22/14
+Intel,Celeron N2806,Bay Trail-M,2,2,1.58 to 2 ,BGA1170,22,N/A,4,12/01/13
+Intel,Celeron N2820,Bay Trail-M,2,2,2.17 to 2.39 ,BGA1170,22,N/A,7,12/01/13
+Intel,Atom E3815,Bay Trail-I,1,1,1.5,BGA1170,22,N/A,5,10/08/13
+Intel,Core i7-2760QM,Sandy Bridge,4,8,2.4 to 3.5 ,BGA1224,32,6,45,09/04/11
+Intel,Core i7-2675QM,Sandy Bridge,4,8,2.2 to 3.1 ,BGA1224,32,6,45,10/12/11
+Intel,Core i7-3635QM,Ivy Bridge,4,8,2.4 to 3.4 ,BGA1224,22,6,45,09/01/12
+Intel,Core i7-3740QM,Ivy Bridge,4,8,2.7 to 3.7 ,BGA1224,22,6,45,09/03/12
+Intel,Core i7-3632QM,Ivy Bridge,4,8,2.2 to 3.2 ,BGA1224,22,6,35,10/19/12
+Intel,Core i7-2860QM,Sandy Bridge,4,8,2.5 to 3.6 ,BGA1224,32,8,45,09/04/11
+Intel,Core i7-3840QM,Ivy Bridge,4,8,2.8 to 3.8 ,BGA1224,22,8,45,09/03/12
+Intel,Core M-5Y10,Broadwell-Y,2,4,0.8 to 2 ,BGA1234,14,4,5,09/05/14
+Intel,Core M-5Y10a,Broadwell-Y,2,4,0.8 to 2 ,BGA1234,14,4,5,09/05/14
+Intel,Core M-5Y70,Broadwell-Y,2,4,1.1 to 2.6 ,BGA1234,14,4,5,09/05/14
+Intel,Core M-5Y10c,Broadwell-Y,2,4,0.8 to 2 ,BGA1234,14,4,5,10/27/14
+Intel,Core M-5Y31,Broadwell-Y,2,4,0.9 to 2.4 ,BGA1234,14,4,5,10/27/14
+Intel,Core M-5Y51,Broadwell-Y,2,4,1.1 to 2.6 ,BGA1234,14,4,5,10/27/14
+Intel,Core M-5Y71,Broadwell-Y,2,4,1.2 to 2.9 ,BGA1234,14,4,5,10/27/14
+Intel,Atom S1220,Centerton,2,4,1.6,BGA1283,32,N/A,8,12/11/12
+Intel,Atom S1240,Centerton,2,4,1.6,BGA1283,32,N/A,6,12/11/12
+Intel,Atom S1260,Centerton,2,4,2,BGA1283,32,N/A,9,12/11/12
+Intel,Pentium U5400,Arrandale,2,2,1.2,BGA1288,32,3,18,05/25/10
+Intel,Core i7-640M,Arrandale,2,4,2.8 to 3.467 ,BGA1288,32,4,35,09/01/10
+Intel,Core i3-8130U,Kaby Lake-R,2,4,2.4 to 3.4 ,BGA1356,14,4,15,02/13/18
+Intel,Core i3-8109U,Kaby Lake-R,2,4,3 to 3.6 ,BGA1356,14,4,28,04/05/18
+Intel,Core i5-8250U,Kaby Lake-R,4,8,1.6 to 3.4 ,BGA1356,14,6,15,08/21/17
+Intel,Core i5-8350U,Kaby Lake-R,4,8,1.7 to 3.6 ,BGA1356,14,6,15,08/21/17
+Intel,Core i5-8259U,Coffee Lake-U,4,8,2.3 to 3.8 ,BGA1356,14,6,28,04/05/18
+Intel,Core i5-8269U,Kaby Lake-R,4,8,2.6 to 4.2 ,BGA1356,14,6,28,04/05/18
+Intel,Core i7-8550U,Kaby Lake-R,4,8,1.8 to 4 ,BGA1356,14,8,15,08/21/17
+Intel,Core i7-8650U,Kaby Lake-R,4,8,1.9 to 4.2 ,BGA1356,14,8,15,08/21/17
+Intel,Core i7-8559U,Kaby Lake-R,4,8,2.7 to 4.5 ,BGA1356,14,8,28,04/05/18
+Intel,Core i3-4100E,Haswell,2,4,2.4,BGA1364,22,3,37,09/04/13
+Intel,Core i3-4102E,Haswell,2,4,1.6,BGA1364,22,3,25,09/04/13
+Intel,Core i7-4950HQ,Crystalwell,4,8,2.4 to 3.6 ,BGA1364,22,8,47,06/07/13
+Intel,Core i7-4960HQ,Crystalwell,4,8,2.6 to 3.8 ,BGA1364,22,8,47,09/01/13
+Intel,Core i7-4980HQ,Crystalwell,4,8,2.8 to 4 ,BGA1364,22,8,47,09/01/13
+Intel,Core i7-4760HQ,Crystalwell,4,8,2.1 to 3.3 ,BGA1364,22,8,47,02/01/14
+Intel,Core i7-4860HQ,Crystalwell,4,8,2.4 to 3.6 ,BGA1364,22,8,47,02/01/14
+Intel,Core i7-4712HQ,Crystalwell,4,8,2.3 to 3.3 ,BGA1364,22,8,37,04/01/14
+Intel,Core i7-4710HQ,Crystalwell,4,8,2.5 to 3.5 ,BGA1364,22,8,47,04/01/14
+Intel,Core i7-4770HQ,Crystalwell,4,8,2.2 to 3.4 ,BGA1364,22,8,47,07/01/14
+Intel,Core i7-4870HQ,Crystalwell,4,8,2.5 to 3.7 ,BGA1364,22,8,47,07/01/14
+Intel,Core i7-4850EQ,Crystalwell,4,4,1.6 to 3.2 ,BGA1364,22,8,47,08/29/13
+Intel,Core i7-4860EQ,Crystalwell,4,4,1.8 to 3.2 ,BGA1364,22,8,47,08/29/13
+Intel,Atom Z3770,Bay Trail-T,4,4,1.467 to 2.4 ,BGA1380,22,N/A,8,09/27/13
+Intel,Atom Z3740,Bay Trail-T,4,4,1.3 to 1.9,BGA1380,22,N/A,2,09/27/13
+Intel,Core i3-8121U,Coffee Lake-U,2,4,2.2,BGA1440,10,4,28,05/05/18
+Intel,Core m3-8114Y,Cannon Lake-Y,2,4,1.5,BGA1440,10,4,28,05/05/18
+Intel,Core i3-8145U,Whiskey Lake-U,2,4,2.1 to 3.9 ,BGA1440,10,4,28,10/01/18
+Intel,Core i3-1000G1,Ice Lake-Y,2,4,1.1 to 3.2 ,BGA1440,10,4,12,08/01/19
+Intel,Core i3-1000G4,Ice Lake-Y,2,4,1.1 to 3.2 ,BGA1440,10,4,12,08/01/19
+Intel,Core i3-1005G1,Ice Lake-U,2,4,1.2 to 3.4 ,BGA1440,10,4,25,08/01/19
+Intel,Core i3-10110Y,Comet Lake-Y,2,4,1 to 4 ,BGA1440,14,4,9,08/21/19
+Intel,Core i3-10110U,Comet Lake-U,2,4,2.1 to 4.1 ,BGA1440,14,4,25,08/21/19
+Intel,Core i5-8265U,Whiskey Lake-U,4,8,1.6 to 4.1 ,BGA1440,14,6,28,10/01/18
+Intel,Core i5-1030G4,Ice Lake-Y,4,8,0.7 to 3.5 ,BGA1440,10,6,12,08/01/19
+Intel,Core i5-1030G7,Ice Lake-Y,4,8,0.8 to 3.5 ,BGA1440,10,6,12,08/01/19
+Intel,Core i5-1035G1,Ice Lake-U,4,8,1 to 3.6 ,BGA1440,10,6,25,08/01/19
+Intel,Core i5-1035G4,Ice Lake-U,4,8,1.1 to 3.7 ,BGA1440,10,6,25,08/01/19
+Intel,Core i5-1035G7,Ice Lake-U,4,8,1.2 to 3.7 ,BGA1440,10,6,25,08/01/19
+Intel,Core i5-10210Y,Comet Lake-Y,4,8,1 to 4 ,BGA1440,14,6,9,08/21/19
+Intel,Core i5-10310Y,Comet Lake-Y,4,8,1.1 to 4.1 ,BGA1440,14,6,9,08/21/19
+Intel,Core i5-10210U,Comet Lake-U,4,8,1.6 to 4.2 ,BGA1440,14,6,25,08/21/19
+Intel,Core i5-6350HQ,Skylake-H,4,4,2.3 to 3.2 ,BGA1440,14,6,45,01/24/16
+Intel,Core i7-8565U,Whiskey Lake-U,4,8,1.8 to 4.6 ,BGA1440,14,8,28,10/01/18
+Intel,Core i7-1068G7,Ice Lake-U,4,8,2.3 to 4.1 ,BGA1440,10,8,28,08/01/19
+Intel,Core i7-1060G7,Ice Lake-Y,4,8,1 to 3.8 ,BGA1440,10,8,12,08/21/19
+Intel,Core i7-10510Y,Comet Lake-Y,4,8,1.2 to 4.5 ,BGA1440,14,8,9,08/21/19
+Intel,Core i7-1065G7,Ice Lake-U,4,8,1.3 to 3.9 ,BGA1440,10,8,25,08/21/19
+Intel,Core i7-10510U,Comet Lake-U,4,8,1.8 to 4.9 ,BGA1440,14,8,25,08/21/19
+Intel,Core i7-9850HL,Coffee Lake-HR,6,12,1.9 to 4.1 ,BGA1440,14,9,25,06/19/19
+Intel,Core i7-9850HE,Coffee Lake-HR,6,12,2.7 to 4.4 ,BGA1440,14,9,45,06/19/19
+Intel,Core i9-10875H,Comet Lake-H,8,16,2.1 to 5.1 ,BGA1440,14,12,45,Unknown
+Intel,Core i9-10980HK,Comet Lake-H,8,16,2.4 to 5.3 ,BGA1440,14,12,45,Unknown
+Intel,Core i7-8750H,Coffee Lake-H,6,12,2.2 to 4.1 ,BGA1440,14,12,45,04/02/18
+Intel,Core i7-8850H,Coffee Lake-H,6,12,2.7 to 4.3 ,BGA1440,14,12,45,04/02/18
+Intel,Core i9-8950HK,Coffee Lake-H,6,12,2.9 to 4.7 ,BGA1440,14,12,95,04/02/18
+Intel,Core i7-9750H,Coffee Lake-HR,6,12,2.6 to 4.5 ,BGA1440,14,12,45,04/23/19
+Intel,Core i7-9750HF,Coffee Lake-HR,6,12,2.6 to 4.5 ,BGA1440,14,12,45,04/23/19
+Intel,Core i7-9850H,Coffee Lake-HR,6,12,2.6 to 4.6 ,BGA1440,14,12,45,04/23/19
+Intel,Core i7-10710U,Comet Lake-U,6,12,1.1 to 4.7 ,BGA1440,14,12,25,08/21/19
+Intel,Core i5-8300H,Coffee Lake-H,4,8,2.3 to 3.9 ,BGA1440,14,12,45,04/02/18
+Intel,Core i5-8400H,Coffee Lake-H,4,8,2.5 to 4.1 ,BGA1440,14,12,45,04/02/18
+Intel,Core i9-9880H,Coffee Lake-HR,8,16,2.3 to 4.8 ,BGA1440,14,16,45,04/23/19
+Intel,Core i9-9980HK,Coffee Lake-HR,8,16,2.4 to 5 ,BGA1440,14,16,45,04/23/19
+Intel,Atom E645C,Stellarton,1,2,1,BGA1466,45,N/A,4,11/22/10
+Intel,Atom E645CT,Stellarton,1,2,1,BGA1466,45,N/A,4,11/22/10
+Intel,Atom E665C,Stellarton,1,2,1.3,BGA1466,45,N/A,4,11/22/10
+Intel,Atom E665CT,Stellarton,1,2,1.3,BGA1466,45,N/A,7,11/22/10
+Intel,Atom E625C,Stellarton,1,2,0.6,BGA1466,45,N/A,3,11/22/10
+Intel,Atom E625CT,Stellarton,1,2,0.6,BGA1466,45,N/A,3,11/22/10
+Intel,Xeon Platinum 9242,Cascade Lake-AP,48,96,2.3 to 3.8 ,BGA5903,14,71.5,350,04/02/19
+Intel,Xeon Platinum 9221,Cascade Lake-AP,32,64,2.1 to 3.7 ,BGA5903,14,71.5,250,04/02/19
+Intel,Xeon Platinum 9222,Cascade Lake-AP,32,64,2.3 to 3.7 ,BGA5903,14,71.5,250,04/02/19
+Intel,Xeon Platinum 9282,Cascade Lake-AP,56,112,2.6 to 3.8 ,BGA5903,14,77,400,04/02/19
+Intel,Celeron B710,Sandy Bridge,1,1,1.6,G2 (988B),32,1.5,35,06/19/11
+Intel,Xeon Phi 3110X,Knights Corner,61,244,1.05,PCIe x16,22,N/A,300,11/12/12
+Intel,Xeon Phi SE10P,Knights Corner,61,244,1.1,PCIe x16,22,N/A,300,11/12/12
+Intel,Xeon Phi SE10X,Knights Corner,61,244,1.1,PCIe x16,22,N/A,300,11/12/12
+Intel,Xeon Phi 7110P,Knights Corner,61,244,1.25,PCIe x16,22,N/A,300,11/12/12
+Intel,Xeon Phi 7110X,Knights Corner,61,244,1.25,PCIe x16,22,N/A,300,11/12/12
+Intel,Xeon Phi 7120P,Knights Corner,61,244,1.2 to 1.3,PCIe x16,22,N/A,300,06/17/13
+Intel,Xeon Phi 7120X,Knights Corner,61,244,1.2 to 1.3,PCIe x16,22,N/A,300,06/17/13
+Intel,Xeon Phi 7120A,Knights Corner,61,244,1.2 to 1.3,PCIe x16,22,N/A,300,04/06/14
+Intel,Xeon Phi 3120A,Knights Corner,57,228,1.1,PCIe x16,22,N/A,300,06/17/13
+Intel,Xeon Phi 3120P,Knights Corner,57,228,1.1,PCIe x16,22,N/A,300,06/17/13
+Intel,Xeon Phi 31S1P,Knights Corner,57,228,1.1,PCIe x16,22,N/A,270,06/17/13
+Intel,Aubrey Isle,Knights Ferry,32,128,1.2,PCIe x16,45,N/A,300,05/31/10
+Intel,Xeon Phi 5110P,Knights Corner,60,24,1.05,PCIe x16,22,N/A,225,11/12/12
+Intel,Xeon Phi 7120D,Knights Corner,61,244,1.2 to 1.3,SFF 230-Pin,22,N/A,270,03/01/14
+Intel,Xeon Phi 5120D,Knights Corner,60,240,1.05,SFF 230-Pin,22,N/A,245,06/17/13
