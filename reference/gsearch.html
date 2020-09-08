@@ -73,7 +73,7 @@ experiment." />
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">openintro</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.0.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.0.0.9000</span>
       </span>
     </div>
 
@@ -125,12 +125,12 @@ experiment." />
 experiment.</p>
     </div>
 
-    <pre class="usage"><span class='no'>gsearch</span></pre>
+    <pre class="usage"><span class='kw'>gsearch</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>A data frame with 10000 observations on the following 2 variables.</p><dl'>
+    <p>A data frame with 10000 observations on the following 2 variables.</p><dl>
   <dt>type</dt><dd><p>a factor with levels <code>new search</code> <code>no new search</code></p></dd>
   <dt>outcome</dt><dd><p>a factor with levels <code>current</code> <code>test 1</code> <code>test 2</code></p></dd>
   
@@ -139,15 +139,17 @@ experiment.</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
-<span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='no'>ggplot2</span>)
+<span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='kw'><a href='http://ggplot2.tidyverse.org'>ggplot2</a></span>)
 
-<span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span>(<span class='no'>gsearch</span>$<span class='no'>type</span>, <span class='no'>gsearch</span>$<span class='no'>outcome</span>)</div><div class='output co'>#&gt;                
+<span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span>(<span class='kw'>gsearch</span><span class='op'>$</span><span class='kw'>type</span>, <span class='kw'>gsearch</span><span class='op'>$</span><span class='kw'>outcome</span>)
+</div><div class='output co'>#&gt;                
 #&gt;                 current test 1 test 2
 #&gt;   new search       1489    751    682
 #&gt;   no new search    3511   1749   1818</div><div class='input'>
-<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='no'>gsearch</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='no'>type</span>, <span class='kw'>fill</span> <span class='kw'>=</span> <span class='no'>outcome</span>)) +
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_bar.html'>geom_bar</a></span>(<span class='kw'>position</span> <span class='kw'>=</span> <span class='st'>"fill"</span>) +
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span>(<span class='kw'>y</span> <span class='kw'>=</span> <span class='st'>"proportion"</span>)</div><div class='img'><img src='gsearch-1.png' alt='' width='700' height='433' /></div><div class='input'>
+<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='kw'>gsearch</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(x = <span class='kw'>type</span>, fill = <span class='kw'>outcome</span>)) <span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_bar.html'>geom_bar</a></span>(position = <span class='st'>"fill"</span>) <span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span>(y = <span class='st'>"proportion"</span>)
+</div><div class='img'><img src='gsearch-1.png' alt='' width='700' height='433' /></div><div class='input'>
 </div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
@@ -164,7 +166,7 @@ experiment.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.0.</p>
 </div>
 
       </footer>

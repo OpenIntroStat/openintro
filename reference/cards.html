@@ -72,7 +72,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">openintro</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.0.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.0.0.9000</span>
       </span>
     </div>
 
@@ -123,12 +123,12 @@
     <p>All the cards in a standard deck.</p>
     </div>
 
-    <pre class="usage"><span class='no'>cards</span></pre>
+    <pre class="usage"><span class='kw'>cards</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>A data frame with 52 observations on the following 4 variables.</p><dl'>
+    <p>A data frame with 52 observations on the following 4 variables.</p><dl>
   <dt>value</dt><dd><p>a factor with levels <code>10</code> <code>2</code> <code>3</code> <code>4</code>
   <code>5</code> <code>6</code> <code>7</code> <code>8</code> <code>9</code> <code>A</code> <code>J</code> <code>K</code>
   <code>Q</code></p></dd>
@@ -141,15 +141,20 @@
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
-<span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span>(<span class='no'>cards</span>$<span class='no'>value</span>)</div><div class='output co'>#&gt; 
+<span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span>(<span class='kw'>cards</span><span class='op'>$</span><span class='kw'>value</span>)
+</div><div class='output co'>#&gt; 
 #&gt; 10  2  3  4  5  6  7  8  9  A  J  K  Q 
-#&gt;  4  4  4  4  4  4  4  4  4  4  4  4  4 </div><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span>(<span class='no'>cards</span>$<span class='no'>color</span>)</div><div class='output co'>#&gt; 
+#&gt;  4  4  4  4  4  4  4  4  4  4  4  4  4 </div><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span>(<span class='kw'>cards</span><span class='op'>$</span><span class='kw'>color</span>)
+</div><div class='output co'>#&gt; 
 #&gt; black   red 
-#&gt;    26    26 </div><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span>(<span class='no'>cards</span>$<span class='no'>suit</span>)</div><div class='output co'>#&gt; 
+#&gt;    26    26 </div><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span>(<span class='kw'>cards</span><span class='op'>$</span><span class='kw'>suit</span>)
+</div><div class='output co'>#&gt; 
 #&gt;    Club Diamond   Heart   Spade 
-#&gt;      13      13      13      13 </div><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span>(<span class='no'>cards</span>$<span class='no'>face</span>)</div><div class='output co'>#&gt; 
+#&gt;      13      13      13      13 </div><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span>(<span class='kw'>cards</span><span class='op'>$</span><span class='kw'>face</span>)
+</div><div class='output co'>#&gt; 
 #&gt; FALSE  TRUE 
-#&gt;    36    16 </div><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span>(<span class='no'>cards</span>$<span class='no'>suit</span>, <span class='no'>cards</span>$<span class='no'>face</span>)</div><div class='output co'>#&gt;          
+#&gt;    36    16 </div><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span>(<span class='kw'>cards</span><span class='op'>$</span><span class='kw'>suit</span>, <span class='kw'>cards</span><span class='op'>$</span><span class='kw'>face</span>)
+</div><div class='output co'>#&gt;          
 #&gt;           FALSE TRUE
 #&gt;   Club        9    4
 #&gt;   Diamond     9    4
@@ -171,7 +176,7 @@
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.0.</p>
 </div>
 
       </footer>

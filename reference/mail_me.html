@@ -77,7 +77,7 @@ stamp on it." />
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">openintro</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.0.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.0.0.9000</span>
       </span>
     </div>
 
@@ -133,12 +133,12 @@ whether there was a coin to be found and whether the letter already had a
 stamp on it.</p>
     </div>
 
-    <pre class="usage"><span class='no'>mail_me</span></pre>
+    <pre class="usage"><span class='kw'>mail_me</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>A data frame with 42 observations on the following 4 variables.</p><dl'>
+    <p>A data frame with 42 observations on the following 4 variables.</p><dl>
 <dt>stamped</dt><dd><p>a factor with levels <code>no</code> <code>yes</code></p></dd>
 <dt>found_coin</dt><dd><p>a factor with levels <code>coin</code> <code>no_coin</code></p></dd>
 <dt>gender</dt><dd><p>a factor with levels <code>female</code> <code>male</code></p></dd>
@@ -159,7 +159,8 @@ a letter next to the phone, which sometimes had a stamp on it.</p>
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
 
-<span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span>(<span class='no'>mail_me</span>)</div><div class='output co'>#&gt; , , gender = female, mailed_letter = no
+<span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span>(<span class='kw'>mail_me</span>)
+</div><div class='output co'>#&gt; , , gender = female, mailed_letter = no
 #&gt; 
 #&gt;        found_coin
 #&gt; stamped coin no_coin
@@ -186,28 +187,33 @@ a letter next to the phone, which sometimes had a stamp on it.</p>
 #&gt; stamped coin no_coin
 #&gt;     no     4       0
 #&gt;     yes    6       4
-#&gt; </div><div class='input'>(<span class='no'>x</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span>(<span class='no'>mail_me</span>[, <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"mailed_letter"</span>, <span class='st'>"found_coin"</span>)]))</div><div class='output co'>#&gt;              found_coin
+#&gt; </div><div class='input'>(<span class='kw'>x</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span>(<span class='kw'>mail_me</span>[, <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"mailed_letter"</span>, <span class='st'>"found_coin"</span>)]))
+</div><div class='output co'>#&gt;              found_coin
 #&gt; mailed_letter coin no_coin
 #&gt;           no     2      18
-#&gt;           yes   17       5</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/stats/chisq.test.html'>chisq.test</a></span>(<span class='no'>x</span>)</div><div class='output co'>#&gt; 
+#&gt;           yes   17       5</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/stats/chisq.test.html'>chisq.test</a></span>(<span class='kw'>x</span>)
+</div><div class='output co'>#&gt; 
 #&gt; 	Pearson's Chi-squared test with Yates' continuity correction
 #&gt; 
 #&gt; data:  x
 #&gt; X-squared = 16.519, df = 1, p-value = 4.817e-05
 #&gt; </div><div class='input'>
-(<span class='no'>x</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span>(<span class='no'>mail_me</span>[, <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"mailed_letter"</span>, <span class='st'>"stamped"</span>)]))</div><div class='output co'>#&gt;              stamped
+(<span class='kw'>x</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span>(<span class='kw'>mail_me</span>[, <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"mailed_letter"</span>, <span class='st'>"stamped"</span>)]))
+</div><div class='output co'>#&gt;              stamped
 #&gt; mailed_letter no yes
 #&gt;           no  10  10
-#&gt;           yes  8  14</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/stats/chisq.test.html'>chisq.test</a></span>(<span class='no'>x</span>)</div><div class='output co'>#&gt; 
+#&gt;           yes  8  14</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/stats/chisq.test.html'>chisq.test</a></span>(<span class='kw'>x</span>)
+</div><div class='output co'>#&gt; 
 #&gt; 	Pearson's Chi-squared test with Yates' continuity correction
 #&gt; 
 #&gt; data:  x
 #&gt; X-squared = 0.33608, df = 1, p-value = 0.5621
 #&gt; </div><div class='input'>
-<span class='no'>m</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/stats/glm.html'>glm</a></span>(<span class='no'>mailed_letter</span> ~ <span class='no'>stamped</span> + <span class='no'>found_coin</span> + <span class='no'>gender</span>,
-    <span class='kw'>data</span> <span class='kw'>=</span> <span class='no'>mail_me</span>,
-    <span class='kw'>family</span> <span class='kw'>=</span> <span class='no'>binomial</span>)
-<span class='fu'><a href='https://rdrr.io/r/base/summary.html'>summary</a></span>(<span class='no'>m</span>)</div><div class='output co'>#&gt; 
+<span class='kw'>m</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/stats/glm.html'>glm</a></span>(<span class='kw'>mailed_letter</span> <span class='op'>~</span> <span class='kw'>stamped</span> <span class='op'>+</span> <span class='kw'>found_coin</span> <span class='op'>+</span> <span class='kw'>gender</span>,
+    data = <span class='kw'>mail_me</span>,
+    family = <span class='kw'>binomial</span>)
+<span class='fu'><a href='https://rdrr.io/r/base/summary.html'>summary</a></span>(<span class='kw'>m</span>)
+</div><div class='output co'>#&gt; 
 #&gt; Call:
 #&gt; glm(formula = mailed_letter ~ stamped + found_coin + gender, 
 #&gt;     family = binomial, data = mail_me)
@@ -250,7 +256,7 @@ a letter next to the phone, which sometimes had a stamp on it.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.0.</p>
 </div>
 
       </footer>

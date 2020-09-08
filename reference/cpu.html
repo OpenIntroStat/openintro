@@ -72,7 +72,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">openintro</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.0.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.0.0.9000</span>
       </span>
     </div>
 
@@ -123,12 +123,12 @@
     <p>Data on computer processors released between 2010 and 2020.</p>
     </div>
 
-    <pre class="usage"><span class='no'>cpu</span></pre>
+    <pre class="usage"><span class='kw'>cpu</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>A data frame with 875 rows and 12 variables.</p><dl'>
+    <p>A data frame with 875 rows and 12 variables.</p><dl>
   <dt>company</dt><dd><p>Manufacturer of the CPU.</p></dd>
   <dt>name</dt><dd><p>Model name of the processor.</p></dd>
   <dt>codename</dt><dd><p>Name given by manufacturer to all chips with this architecture.</p></dd>
@@ -149,10 +149,12 @@
     <p><a href='https://www.techpowerup.com/cpu-specs/?released=2019&amp;sort=name'>TechPowerUp CPU Database</a></p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/boxplot.html'>boxplot</a></span>(<span class='no'>base_clock</span>~<span class='no'>company</span>, <span class='kw'>data</span> <span class='kw'>=</span> <span class='no'>cpu</span>, <span class='kw'>main</span><span class='kw'>=</span><span class='st'>"CPU Base Speed"</span>,
-  <span class='kw'>xlab</span> <span class='kw'>=</span> <span class='st'>"Company"</span>, <span class='kw'>ylab</span> <span class='kw'>=</span> <span class='st'>"Base Clock (GHz)"</span>)</div><div class='img'><img src='cpu-1.png' alt='' width='700' height='433' /></div><div class='input'>
-<span class='fu'><a href='https://rdrr.io/r/base/plot.html'>plot</a></span>(<span class='no'>cpu</span>$<span class='no'>process</span>, <span class='no'>cpu</span>$<span class='no'>boost_clock</span>, <span class='kw'>main</span><span class='kw'>=</span><span class='st'>"Process Node Size V Boost Speed"</span>,
-  <span class='kw'>xlab</span> <span class='kw'>=</span> <span class='st'>"Process node size (nm)"</span>, <span class='kw'>ylab</span> <span class='kw'>=</span> <span class='st'>"Boost Clock (GHz)"</span>)</div><div class='img'><img src='cpu-2.png' alt='' width='700' height='433' /></div><div class='input'>
+    <pre class="examples"><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/boxplot.html'>boxplot</a></span>(<span class='kw'>base_clock</span><span class='op'>~</span><span class='kw'>company</span>, data = <span class='kw'>cpu</span>, main=<span class='st'>"CPU Base Speed"</span>,
+  xlab = <span class='st'>"Company"</span>, ylab = <span class='st'>"Base Clock (GHz)"</span>)
+</div><div class='img'><img src='cpu-1.png' alt='' width='700' height='433' /></div><div class='input'>
+<span class='fu'><a href='https://rdrr.io/r/graphics/plot.default.html'>plot</a></span>(<span class='kw'>cpu</span><span class='op'>$</span><span class='kw'>process</span>, <span class='kw'>cpu</span><span class='op'>$</span><span class='kw'>boost_clock</span>, main=<span class='st'>"Process Node Size V Boost Speed"</span>,
+  xlab = <span class='st'>"Process node size (nm)"</span>, ylab = <span class='st'>"Boost Clock (GHz)"</span>)
+</div><div class='img'><img src='cpu-2.png' alt='' width='700' height='433' /></div><div class='input'>
 </div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
@@ -169,7 +171,7 @@
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.0.</p>
 </div>
 
       </footer>

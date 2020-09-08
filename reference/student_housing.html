@@ -73,7 +73,7 @@ students at a college." />
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">openintro</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.0.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.0.0.9000</span>
       </span>
     </div>
 
@@ -125,12 +125,12 @@ students at a college." />
 students at a college.</p>
     </div>
 
-    <pre class="usage"><span class='no'>student_housing</span></pre>
+    <pre class="usage"><span class='kw'>student_housing</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>A data frame with 175 observations on the following variable.</p><dl'>
+    <p>A data frame with 175 observations on the following variable.</p><dl>
   <dt>price</dt><dd><p>Monthly housing price, simulated.</p></dd>
 
 </dl>
@@ -139,9 +139,11 @@ students at a college.</p>
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
 <span class='fu'><a href='https://rdrr.io/r/base/Random.html'>set.seed</a></span>(<span class='fl'>5</span>)
-<span class='no'>generate_student_housing</span><span class='kw'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/data.frame.html'>data.frame</a></span>(
-    <span class='kw'>price</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/Round.html'>round</a></span>(<span class='fu'><a href='https://rdrr.io/r/stats/Normal.html'>rnorm</a></span>(<span class='fl'>175</span>, <span class='fl'>515</span>, <span class='fl'>65</span>) + <span class='fu'><a href='https://rdrr.io/r/base/Log.html'>exp</a></span>(<span class='fu'><a href='https://rdrr.io/r/stats/Normal.html'>rnorm</a></span>(<span class='fl'>175</span>, <span class='fl'>4.2</span>, <span class='fl'>1</span>))))
-<span class='fu'><a href='https://rdrr.io/r/graphics/hist.html'>hist</a></span>(<span class='no'>student_housing</span>$<span class='no'>price</span>, <span class='fl'>20</span>)</div><div class='img'><img src='student_housing-1.png' alt='' width='700' height='433' /></div><div class='input'><span class='fu'><a href='https://rdrr.io/r/stats/t.test.html'>t.test</a></span>(<span class='no'>student_housing</span>$<span class='no'>price</span>)</div><div class='output co'>#&gt; 
+<span class='kw'>generate_student_housing</span><span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/data.frame.html'>data.frame</a></span>(
+    price = <span class='fu'><a href='https://rdrr.io/r/base/Round.html'>round</a></span>(<span class='fu'><a href='https://rdrr.io/r/stats/Normal.html'>rnorm</a></span>(<span class='fl'>175</span>, <span class='fl'>515</span>, <span class='fl'>65</span>) <span class='op'>+</span> <span class='fu'><a href='https://rdrr.io/r/base/Log.html'>exp</a></span>(<span class='fu'><a href='https://rdrr.io/r/stats/Normal.html'>rnorm</a></span>(<span class='fl'>175</span>, <span class='fl'>4.2</span>, <span class='fl'>1</span>))))
+<span class='fu'><a href='https://rdrr.io/r/graphics/hist.html'>hist</a></span>(<span class='kw'>student_housing</span><span class='op'>$</span><span class='kw'>price</span>, <span class='fl'>20</span>)
+</div><div class='img'><img src='student_housing-1.png' alt='' width='700' height='433' /></div><div class='input'><span class='fu'><a href='https://rdrr.io/r/stats/t.test.html'>t.test</a></span>(<span class='kw'>student_housing</span><span class='op'>$</span><span class='kw'>price</span>)
+</div><div class='output co'>#&gt; 
 #&gt; 	One Sample t-test
 #&gt; 
 #&gt; data:  student_housing$price
@@ -152,7 +154,10 @@ students at a college.</p>
 #&gt; sample estimates:
 #&gt; mean of x 
 #&gt;  616.9086 
-#&gt; </div><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/mean.html'>mean</a></span>(<span class='no'>student_housing</span>$<span class='no'>price</span>)</div><div class='output co'>#&gt; [1] 616.9086</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/stats/sd.html'>sd</a></span>(<span class='no'>student_housing</span>$<span class='no'>price</span>)</div><div class='output co'>#&gt; [1] 128.6541</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/identical.html'>identical</a></span>(<span class='no'>student_housing</span>, <span class='no'>generate_student_housing</span>)</div><div class='output co'>#&gt; [1] FALSE</div><div class='input'>
+#&gt; </div><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/mean.html'>mean</a></span>(<span class='kw'>student_housing</span><span class='op'>$</span><span class='kw'>price</span>)
+</div><div class='output co'>#&gt; [1] 616.9086</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/stats/sd.html'>sd</a></span>(<span class='kw'>student_housing</span><span class='op'>$</span><span class='kw'>price</span>)
+</div><div class='output co'>#&gt; [1] 128.6541</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/identical.html'>identical</a></span>(<span class='kw'>student_housing</span>, <span class='kw'>generate_student_housing</span>)
+</div><div class='output co'>#&gt; [1] FALSE</div><div class='input'>
 
 </div></pre>
   </div>
@@ -170,7 +175,7 @@ students at a college.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.0.</p>
 </div>
 
       </footer>

@@ -80,7 +80,7 @@ each kick." />
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">openintro</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.0.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.0.0.9000</span>
       </span>
     </div>
 
@@ -139,12 +139,12 @@ Each football was kicked 39 times and the two footballs were alternated with
 each kick.</p>
     </div>
 
-    <pre class="usage"><span class='no'>helium</span></pre>
+    <pre class="usage"><span class='kw'>helium</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>A data frame with 39 observations on the following 3 variables.</p><dl'>
+    <p>A data frame with 39 observations on the following 3 variables.</p><dl>
  <dt>air</dt><dd><p>Distance in years for
 air-filled football.</p></dd> <dt>helium</dt><dd><p>Distance in years for helium-filled
 football.</p></dd> 
@@ -162,7 +162,9 @@ controversy, "The Columbus Dispatch (November, 21, 1993), B7.</p>
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
 
-<span class='fu'><a href='boxPlot.html'>boxPlot</a></span>(<span class='no'>helium</span>$<span class='no'>air</span>, <span class='kw'>xlab</span> <span class='kw'>=</span> <span class='st'>"air"</span>)</div><div class='img'><img src='helium-1.png' alt='' width='700' height='433' /></div><div class='input'><span class='fu'><a href='boxPlot.html'>boxPlot</a></span>(<span class='no'>helium</span>$<span class='no'>helium</span>, <span class='kw'>xlab</span> <span class='kw'>=</span> <span class='st'>"helium"</span>)</div><div class='img'><img src='helium-2.png' alt='' width='700' height='433' /></div><div class='input'>
+<span class='fu'><a href='boxPlot.html'>boxPlot</a></span>(<span class='kw'>helium</span><span class='op'>$</span><span class='kw'>air</span>, xlab = <span class='st'>"air"</span>)
+</div><div class='img'><img src='helium-1.png' alt='' width='700' height='433' /></div><div class='input'><span class='fu'><a href='boxPlot.html'>boxPlot</a></span>(<span class='kw'>helium</span><span class='op'>$</span><span class='kw'>helium</span>, xlab = <span class='st'>"helium"</span>)
+</div><div class='img'><img src='helium-2.png' alt='' width='700' height='433' /></div><div class='input'>
 
 </div></pre>
   </div>
@@ -180,7 +182,7 @@ controversy, "The Columbus Dispatch (November, 21, 1993), B7.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.0.</p>
 </div>
 
       </footer>

@@ -75,7 +75,7 @@ lobe (MTL) in the brain." />
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">openintro</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.0.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.0.0.9000</span>
       </span>
     </div>
 
@@ -129,12 +129,12 @@ relationship between sedentary behavior and thickness of the medial temporal
 lobe (MTL) in the brain.</p>
     </div>
 
-    <pre class="usage"><span class='no'>mtl</span></pre>
+    <pre class="usage"><span class='kw'>mtl</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>A data frame with 35 observations on the following 23 variables.</p><dl'>
+    <p>A data frame with 35 observations on the following 23 variables.</p><dl>
   <dt>subject</dt><dd><p>ID for the individual.</p></dd>
   <dt>sex</dt><dd><p>Gender, which takes values <code>F</code> (female) or <code>M</code> (male).</p></dd>
   <dt>ethnic</dt><dd><p>Ethnicity, simplified to <code>Caucasian</code> and <code>Other</code>.</p></dd>
@@ -186,8 +186,9 @@ us to this data set!</p>
     <pre class="examples"><div class='input'>
 
 <span class='co'># Examine the relationship between the METminwk and IPAQgrp variables.</span>
-<span class='no'>a</span> <span class='kw'>&lt;-</span> <span class='no'>mtl</span>[, <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"met_minwk"</span>, <span class='st'>"ipa_qgrp"</span>)]
-<span class='no'>a</span>[<span class='fu'><a href='https://rdrr.io/r/base/order.html'>order</a></span>(<span class='no'>a</span>$<span class='no'>met_minwk</span>), ]</div><div class='output co'>#&gt; <span style='color: #555555;'># A tibble: 35 x 2</span><span>
+<span class='kw'>a</span> <span class='op'>&lt;-</span> <span class='kw'>mtl</span>[, <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"met_minwk"</span>, <span class='st'>"ipa_qgrp"</span>)]
+<span class='kw'>a</span>[<span class='fu'><a href='https://rdrr.io/r/base/order.html'>order</a></span>(<span class='kw'>a</span><span class='op'>$</span><span class='kw'>met_minwk</span>), ]
+</div><div class='output co'>#&gt; <span style='color: #555555;'># A tibble: 35 x 2</span><span>
 #&gt;    met_minwk ipa_qgrp
 #&gt;        </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span> </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>   
 #&gt; </span><span style='color: #555555;'> 1</span><span>       99  Low     
@@ -218,7 +219,7 @@ us to this data set!</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.0.</p>
 </div>
 
       </footer>

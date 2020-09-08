@@ -73,7 +73,7 @@ November 2015 through October 2018." />
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">openintro</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.0.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.0.0.9000</span>
       </span>
     </div>
 
@@ -125,12 +125,12 @@ November 2015 through October 2018." />
 November 2015 through October 2018.</p>
     </div>
 
-    <pre class="usage"><span class='no'>stocks_18</span></pre>
+    <pre class="usage"><span class='kw'>stocks_18</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>A data frame with 36 observations on the following 3 variables.</p><dl'>
+    <p>A data frame with 36 observations on the following 3 variables.</p><dl>
   <dt>date</dt><dd><p>First day of the month corresponding to the returns.</p></dd>
   <dt>goog</dt><dd><p>Google stock price change.</p></dd>
   <dt>cat</dt><dd><p>Caterpillar stock price change.</p></dd>
@@ -144,9 +144,12 @@ November 2015 through October 2018.</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
-<span class='no'>d</span> <span class='kw'>&lt;-</span> <span class='no'>stocks_18</span>
-<span class='fu'><a href='https://rdrr.io/r/base/dim.html'>dim</a></span>(<span class='no'>d</span>)</div><div class='output co'>#&gt; [1] 36  4</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/apply.html'>apply</a></span>(<span class='no'>d</span>[, <span class='fl'>2</span>:<span class='fl'>3</span>], <span class='fl'>2</span>, <span class='no'>mean</span>)</div><div class='output co'>#&gt;        cat       goog 
-#&gt; 0.02037753 0.01042289 </div><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/apply.html'>apply</a></span>(<span class='no'>d</span>[, <span class='fl'>2</span>:<span class='fl'>3</span>], <span class='fl'>2</span>, <span class='no'>sd</span>)</div><div class='output co'>#&gt;        cat       goog 
+<span class='kw'>d</span> <span class='op'>&lt;-</span> <span class='kw'>stocks_18</span>
+<span class='fu'><a href='https://rdrr.io/r/base/dim.html'>dim</a></span>(<span class='kw'>d</span>)
+</div><div class='output co'>#&gt; [1] 36  4</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/apply.html'>apply</a></span>(<span class='kw'>d</span>[, <span class='fl'>2</span><span class='op'>:</span><span class='fl'>3</span>], <span class='fl'>2</span>, <span class='kw'>mean</span>)
+</div><div class='output co'>#&gt;        cat       goog 
+#&gt; 0.02037753 0.01042289 </div><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/apply.html'>apply</a></span>(<span class='kw'>d</span>[, <span class='fl'>2</span><span class='op'>:</span><span class='fl'>3</span>], <span class='fl'>2</span>, <span class='kw'>sd</span>)
+</div><div class='output co'>#&gt;        cat       goog 
 #&gt; 0.07571634 0.05409915 </div><div class='input'>
 </div></pre>
   </div>
@@ -164,7 +167,7 @@ November 2015 through October 2018.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.0.</p>
 </div>
 
       </footer>

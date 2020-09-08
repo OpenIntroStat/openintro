@@ -81,7 +81,7 @@ applications!" />
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">openintro</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.0.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.0.0.9000</span>
       </span>
     </div>
 
@@ -141,12 +141,12 @@ represents loans actually made, i.e. do not mistake this data for loan
 applications!</p>
     </div>
 
-    <pre class="usage"><span class='no'>loans_full_schema</span></pre>
+    <pre class="usage"><span class='kw'>loans_full_schema</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>A data frame with 10,000 observations on the following 55 variables.</p><dl'>
+    <p>A data frame with 10,000 observations on the following 55 variables.</p><dl>
   <dt>emp_title</dt><dd><p>Job title.</p></dd>
   <dt>emp_length</dt><dd><p>Number of years in the job, rounded down.
       If longer than 10 years, then this is represented by the value
@@ -262,7 +262,8 @@ through their platform.</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
-<span class='no'>loans_full_schema</span></div><div class='output co'>#&gt; <span style='color: #555555;'># A tibble: 10,000 x 55</span><span>
+<span class='kw'>loans_full_schema</span>
+</div><div class='output co'>#&gt; <span style='color: #555555;'># A tibble: 10,000 x 55</span><span>
 #&gt;    emp_title emp_length state homeownership annual_income verified_income
 #&gt;    </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>          </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span> </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span> </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span>                 </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span> </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span>          
 #&gt; </span><span style='color: #555555;'> 1</span><span> </span><span style='color: #555555;'>"</span><span>global …          3 NJ    MORTGAGE              </span><span style='text-decoration: underline;'>90</span><span>000 Verified       
@@ -314,7 +315,7 @@ through their platform.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.0.</p>
 </div>
 
       </footer>

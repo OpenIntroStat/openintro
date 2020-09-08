@@ -79,7 +79,7 @@ whether the candidate was received an interview." />
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">openintro</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.0.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.0.0.9000</span>
       </span>
     </div>
 
@@ -137,13 +137,13 @@ activity of sailing team vs track and field). The outcome variable was
 whether the candidate was received an interview.</p>
     </div>
 
-    <pre class="usage"><span class='no'>law_resume</span></pre>
+    <pre class="usage"><span class='kw'>law_resume</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
     <p>A data frame with 316 observations on the following 3 variables. Each
-row represents a resume sent a top law firm for this experiment.</p><dl'>
+row represents a resume sent a top law firm for this experiment.</p><dl>
  <dt>gender</dt><dd><p>The
 resume implied the candidate was either <code>"male"</code> or <code>"female"</code>.</p></dd>
 <dt>outcome</dt><dd><p>If the candidate received an invitation for an
@@ -162,11 +162,13 @@ Labor Market. American Sociological Review 81:6 p1097-1131.
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
 
-<span class='fu'><a href='https://rdrr.io/r/base/tapply.html'>tapply</a></span>(<span class='no'>law_resume</span>$<span class='no'>outcome</span> <span class='kw'>==</span> <span class='st'>"interview"</span>, <span class='no'>law_resume</span>[, <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"class"</span>, <span class='st'>"gender"</span>)], <span class='no'>mean</span>)</div><div class='output co'>#&gt;       gender
+<span class='fu'><a href='https://rdrr.io/r/base/tapply.html'>tapply</a></span>(<span class='kw'>law_resume</span><span class='op'>$</span><span class='kw'>outcome</span> <span class='op'>==</span> <span class='st'>"interview"</span>, <span class='kw'>law_resume</span>[, <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"class"</span>, <span class='st'>"gender"</span>)], <span class='kw'>mean</span>)
+</div><div class='output co'>#&gt;       gender
 #&gt; class      female       male
 #&gt;   high 0.03797468 0.16250000
-#&gt;   low  0.06329114 0.01282051</div><div class='input'><span class='no'>m</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/stats/glm.html'>glm</a></span>(<span class='fu'><a href='https://rdrr.io/r/base/AsIs.html'>I</a></span>(<span class='no'>outcome</span> <span class='kw'>==</span> <span class='st'>"interview"</span>) ~ <span class='no'>gender</span> * <span class='no'>class</span>, <span class='kw'>data</span> <span class='kw'>=</span> <span class='no'>law_resume</span>, <span class='kw'>family</span> <span class='kw'>=</span> <span class='no'>binomial</span>)
-<span class='fu'><a href='https://rdrr.io/r/base/summary.html'>summary</a></span>(<span class='no'>m</span>)</div><div class='output co'>#&gt; 
+#&gt;   low  0.06329114 0.01282051</div><div class='input'><span class='kw'>m</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/stats/glm.html'>glm</a></span>(<span class='fu'><a href='https://rdrr.io/r/base/AsIs.html'>I</a></span>(<span class='kw'>outcome</span> <span class='op'>==</span> <span class='st'>"interview"</span>) <span class='op'>~</span> <span class='kw'>gender</span> <span class='op'>*</span> <span class='kw'>class</span>, data = <span class='kw'>law_resume</span>, family = <span class='kw'>binomial</span>)
+<span class='fu'><a href='https://rdrr.io/r/base/summary.html'>summary</a></span>(<span class='kw'>m</span>)
+</div><div class='output co'>#&gt; 
 #&gt; Call:
 #&gt; glm(formula = I(outcome == "interview") ~ gender * class, family = binomial, 
 #&gt;     data = law_resume)
@@ -191,7 +193,8 @@ Labor Market. American Sociological Review 81:6 p1097-1131.
 #&gt; AIC: 152.49
 #&gt; 
 #&gt; Number of Fisher Scoring iterations: 7
-#&gt; </div><div class='input'><span class='fu'><a href='https://rdrr.io/r/stats/predict.html'>predict</a></span>(<span class='no'>m</span>, <span class='kw'>type</span> <span class='kw'>=</span> <span class='st'>"response"</span>)</div><div class='output co'>#&gt;         84        118        180        285         63        280        293 
+#&gt; </div><div class='input'><span class='fu'><a href='https://rdrr.io/r/stats/predict.html'>predict</a></span>(<span class='kw'>m</span>, type = <span class='st'>"response"</span>)
+</div><div class='output co'>#&gt;         84        118        180        285         63        280        293 
 #&gt; 0.16250000 0.03797468 0.01282051 0.06329114 0.16250000 0.06329114 0.06329114 
 #&gt;        205        194         19         64         54        209        117 
 #&gt; 0.01282051 0.01282051 0.06329114 0.16250000 0.16250000 0.01282051 0.03797468 
@@ -300,7 +303,7 @@ Labor Market. American Sociological Review 81:6 p1097-1131.
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.0.</p>
 </div>
 
       </footer>

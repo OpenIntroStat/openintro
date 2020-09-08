@@ -74,7 +74,7 @@ data on a random sample of 170 married couples in Britain, recording the age
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">openintro</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.0.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.0.0.9000</span>
       </span>
     </div>
 
@@ -127,12 +127,12 @@ data on a random sample of 170 married couples in Britain, recording the age
 (in years) and heights of the husbands and wives.</p>
     </div>
 
-    <pre class="usage"><span class='no'>husbands_wives</span></pre>
+    <pre class="usage"><span class='kw'>husbands_wives</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>A data frame with 199 observations on the following 8 variables.</p><dl'>
+    <p>A data frame with 199 observations on the following 8 variables.</p><dl>
  <dt>age_wife</dt><dd><p>Age of wife.</p></dd>
 <dt>ht_husband</dt><dd><p>Height of husband (mm).</p></dd> <dt>ht_wife</dt><dd><p>Height of wife
 (mm).</p></dd> <dt>age_husb_at_marriage</dt><dd><p>Age of husband at the time they married.</p></dd>
@@ -146,10 +146,11 @@ data on a random sample of 170 married couples in Britain, recording the age
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
-<span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='no'>ggplot2</span>)
+<span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='kw'><a href='http://ggplot2.tidyverse.org'>ggplot2</a></span>)
 
-<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='no'>husbands_wives</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='no'>ht_husband</span>, <span class='kw'>y</span> <span class='kw'>=</span> <span class='no'>ht_wife</span>)) +
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_point.html'>geom_point</a></span>()</div><div class='img'><img src='husbands_wives-1.png' alt='' width='700' height='433' /></div><div class='input'>
+<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='kw'>husbands_wives</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(x = <span class='kw'>ht_husband</span>, y = <span class='kw'>ht_wife</span>)) <span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_point.html'>geom_point</a></span>()
+</div><div class='img'><img src='husbands_wives-1.png' alt='' width='700' height='433' /></div><div class='input'>
 </div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
@@ -166,7 +167,7 @@ data on a random sample of 170 married couples in Britain, recording the age
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.0.</p>
 </div>
 
       </footer>

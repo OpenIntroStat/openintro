@@ -72,7 +72,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">openintro</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.0.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.0.0.9000</span>
       </span>
     </div>
 
@@ -123,12 +123,12 @@
     <p>SAT and GPA data for 1000 students at an unnamed college.</p>
     </div>
 
-    <pre class="usage"><span class='no'>satgpa</span></pre>
+    <pre class="usage"><span class='kw'>satgpa</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>A data frame with 1000 observations on the following 6 variables.</p><dl'>
+    <p>A data frame with 1000 observations on the following 6 variables.</p><dl>
   <dt>sex</dt><dd><p>Gender of the student.</p></dd>
   <dt>sat_v</dt><dd><p>Verbal SAT percentile.</p></dd>
   <dt>sat_m</dt><dd><p>Math SAT percentile.</p></dd>
@@ -147,33 +147,37 @@
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
-<span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='no'>ggplot2</span>)
-<span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='no'>broom</span>)
+<span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='kw'><a href='http://ggplot2.tidyverse.org'>ggplot2</a></span>)
+<span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='kw'><a href='https://broom.tidymodels.org'>broom</a></span>)
 
 <span class='co'># Verbal scores</span>
-<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='no'>satgpa</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='no'>sat_v</span>, <span class='no'>fy_gpa</span>)) +
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_point.html'>geom_point</a></span>() +
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_smooth.html'>geom_smooth</a></span>(<span class='kw'>method</span> <span class='kw'>=</span> <span class='st'>"lm"</span>) +
+<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='kw'>satgpa</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(x = <span class='kw'>sat_v</span>, <span class='kw'>fy_gpa</span>)) <span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_point.html'>geom_point</a></span>() <span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_smooth.html'>geom_smooth</a></span>(method = <span class='st'>"lm"</span>) <span class='op'>+</span>
   <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span>(
-    <span class='kw'>x</span> <span class='kw'>=</span> <span class='st'>"Verbal SAT percentile"</span>,
-    <span class='kw'>y</span> <span class='kw'>=</span> <span class='st'>"First year (college) grade point average"</span>
-    )</div><div class='output co'>#&gt; <span class='message'>`geom_smooth()` using formula 'y ~ x'</span></div><div class='img'><img src='satgpa-1.png' alt='' width='700' height='433' /></div><div class='input'>
-<span class='no'>mod</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/stats/lm.html'>lm</a></span>(<span class='no'>fy_gpa</span> ~ <span class='no'>sat_v</span>, <span class='kw'>data</span> <span class='kw'>=</span> <span class='no'>satgpa</span>)
-<span class='fu'><a href='https://broom.tidymodels.org/reference/reexports.html'>tidy</a></span>(<span class='no'>mod</span>)</div><div class='output co'>#&gt; <span style='color: #555555;'># A tibble: 2 x 5</span><span>
+    x = <span class='st'>"Verbal SAT percentile"</span>,
+    y = <span class='st'>"First year (college) grade point average"</span>
+    )
+</div><div class='output co'>#&gt; <span class='message'>`geom_smooth()` using formula 'y ~ x'</span></div><div class='img'><img src='satgpa-1.png' alt='' width='700' height='433' /></div><div class='input'>
+<span class='kw'>mod</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/stats/lm.html'>lm</a></span>(<span class='kw'>fy_gpa</span> <span class='op'>~</span> <span class='kw'>sat_v</span>, data = <span class='kw'>satgpa</span>)
+<span class='fu'><a href='https://rdrr.io/pkg/generics/man/tidy.html'>tidy</a></span>(<span class='kw'>mod</span>)
+</div><div class='output co'>#&gt; <span style='color: #555555;'># A tibble: 2 x 5</span><span>
 #&gt;   term        estimate std.error statistic  p.value
 #&gt;   </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>          </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>     </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>     </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>    </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>
 #&gt; </span><span style='color: #555555;'>1</span><span> (Intercept)   0.701    0.129        5.41 7.71</span><span style='color: #555555;'>e</span><span style='color: #BB0000;'>- 8</span><span>
 #&gt; </span><span style='color: #555555;'>2</span><span> sat_v         0.036</span><span style='text-decoration: underline;'>1</span><span>   0.002</span><span style='text-decoration: underline;'>61</span><span>     13.8  5.30</span><span style='color: #555555;'>e</span><span style='color: #BB0000;'>-40</span><span></div><div class='input'>
 <span class='co'># Math scores</span>
-<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='no'>satgpa</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='no'>sat_m</span>, <span class='no'>fy_gpa</span>)) +
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_point.html'>geom_point</a></span>() +
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_smooth.html'>geom_smooth</a></span>(<span class='kw'>method</span> <span class='kw'>=</span> <span class='st'>"lm"</span>) +
+<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='kw'>satgpa</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(x = <span class='kw'>sat_m</span>, <span class='kw'>fy_gpa</span>)) <span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_point.html'>geom_point</a></span>() <span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_smooth.html'>geom_smooth</a></span>(method = <span class='st'>"lm"</span>) <span class='op'>+</span>
   <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span>(
-    <span class='kw'>x</span> <span class='kw'>=</span> <span class='st'>"Math SAT percentile"</span>,
-    <span class='kw'>y</span> <span class='kw'>=</span> <span class='st'>"First year (college) grade point average"</span>
-    )</div><div class='output co'>#&gt; <span class='message'>`geom_smooth()` using formula 'y ~ x'</span></div><div class='img'><img src='satgpa-2.png' alt='' width='700' height='433' /></div><div class='input'>
-<span class='no'>mod</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/stats/lm.html'>lm</a></span>(<span class='no'>fy_gpa</span> ~ <span class='no'>sat_m</span>, <span class='kw'>data</span> <span class='kw'>=</span> <span class='no'>satgpa</span>)
-<span class='fu'><a href='https://broom.tidymodels.org/reference/reexports.html'>tidy</a></span>(<span class='no'>mod</span>)</div><div class='output co'>#&gt; </span><span style='color: #555555;'># A tibble: 2 x 5</span><span>
+    x = <span class='st'>"Math SAT percentile"</span>,
+    y = <span class='st'>"First year (college) grade point average"</span>
+    )
+</div><div class='output co'>#&gt; <span class='message'>`geom_smooth()` using formula 'y ~ x'</span></div><div class='img'><img src='satgpa-2.png' alt='' width='700' height='433' /></div><div class='input'>
+<span class='kw'>mod</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/stats/lm.html'>lm</a></span>(<span class='kw'>fy_gpa</span> <span class='op'>~</span> <span class='kw'>sat_m</span>, data = <span class='kw'>satgpa</span>)
+<span class='fu'><a href='https://rdrr.io/pkg/generics/man/tidy.html'>tidy</a></span>(<span class='kw'>mod</span>)
+</div><div class='output co'>#&gt; </span><span style='color: #555555;'># A tibble: 2 x 5</span><span>
 #&gt;   term        estimate std.error statistic  p.value
 #&gt;   </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>          </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>     </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>     </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>    </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>
 #&gt; </span><span style='color: #555555;'>1</span><span> (Intercept)   0.622    0.141        4.42 1.12</span><span style='color: #555555;'>e</span><span style='color: #BB0000;'>- 5</span><span>
@@ -194,7 +198,7 @@
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.0.</p>
 </div>
 
       </footer>

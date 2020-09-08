@@ -75,7 +75,7 @@ well-educated audiences." />
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">openintro</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.0.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.0.0.9000</span>
       </span>
     </div>
 
@@ -129,12 +129,12 @@ questions posed by Hans Rosling during lectures to a wide array of
 well-educated audiences.</p>
     </div>
 
-    <pre class="usage"><span class='no'>rosling_responses</span></pre>
+    <pre class="usage"><span class='kw'>rosling_responses</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>A data frame with 278 rows and 3 variables:</p><dl'>
+    <p>A data frame with 278 rows and 3 variables:</p><dl>
   <dt>question</dt><dd><p>ID for the question being posed.</p></dd>
   <dt>response</dt><dd><p>Noting whether the response was <code>correct</code>
     or <code>incorrect</code>.</p></dd>
@@ -153,31 +153,36 @@ Hans Rosling, Anna Rosling Ronnlund, and Ola Rosling called
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
-<span class='no'>frac_correct</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/tapply.html'>tapply</a></span>(
-  <span class='no'>rosling_responses</span>$<span class='no'>response</span> <span class='kw'>==</span> <span class='st'>"correct"</span>,
-  <span class='no'>rosling_responses</span>$<span class='no'>question</span>,
-  <span class='no'>mean</span>
+<span class='kw'>frac_correct</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/tapply.html'>tapply</a></span>(
+  <span class='kw'>rosling_responses</span><span class='op'>$</span><span class='kw'>response</span> <span class='op'>==</span> <span class='st'>"correct"</span>,
+  <span class='kw'>rosling_responses</span><span class='op'>$</span><span class='kw'>question</span>,
+  <span class='kw'>mean</span>
 )
-<span class='no'>frac_correct</span></div><div class='output co'>#&gt;                    children_in_2100 children_with_1_or_more_vaccination 
-#&gt;                           0.1491228                           0.2400000 </div><div class='input'><span class='no'>n</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span>(<span class='no'>rosling_responses</span>$<span class='no'>question</span>)
-<span class='no'>n</span></div><div class='output co'>#&gt; 
+<span class='kw'>frac_correct</span>
+</div><div class='output co'>#&gt;                    children_in_2100 children_with_1_or_more_vaccination 
+#&gt;                           0.1491228                           0.2400000 </div><div class='input'><span class='kw'>n</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span>(<span class='kw'>rosling_responses</span><span class='op'>$</span><span class='kw'>question</span>)
+<span class='kw'>n</span>
+</div><div class='output co'>#&gt; 
 #&gt;                    children_in_2100 children_with_1_or_more_vaccination 
-#&gt;                                 228                                  50 </div><div class='input'><span class='no'>expected</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/tapply.html'>tapply</a></span>(
-  <span class='no'>rosling_responses</span>$<span class='no'>prob_random_correct</span>,
-  <span class='no'>rosling_responses</span>$<span class='no'>question</span>,
-  <span class='no'>mean</span>
+#&gt;                                 228                                  50 </div><div class='input'><span class='kw'>expected</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/tapply.html'>tapply</a></span>(
+  <span class='kw'>rosling_responses</span><span class='op'>$</span><span class='kw'>prob_random_correct</span>,
+  <span class='kw'>rosling_responses</span><span class='op'>$</span><span class='kw'>question</span>,
+  <span class='kw'>mean</span>
 )
 
 <span class='co'># Construct confidence intervals.</span>
-<span class='no'>se</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/MathFun.html'>sqrt</a></span>(<span class='no'>frac_correct</span> * (<span class='fl'>1</span> - <span class='no'>frac_correct</span>) / <span class='no'>n</span>)
+<span class='kw'>se</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/MathFun.html'>sqrt</a></span>(<span class='kw'>frac_correct</span> <span class='op'>*</span> (<span class='fl'>1</span> <span class='op'>-</span> <span class='kw'>frac_correct</span>) <span class='op'>/</span> <span class='kw'>n</span>)
 <span class='co'># Lower bounds.</span>
-<span class='no'>frac_correct</span> - <span class='fl'>1.96</span> * <span class='no'>se</span></div><div class='output co'>#&gt;                    children_in_2100 children_with_1_or_more_vaccination 
+<span class='kw'>frac_correct</span> <span class='op'>-</span> <span class='fl'>1.96</span> <span class='op'>*</span> <span class='kw'>se</span>
+</div><div class='output co'>#&gt;                    children_in_2100 children_with_1_or_more_vaccination 
 #&gt;                           0.1028853                           0.1216186 </div><div class='input'><span class='co'># Upper bounds.</span>
-<span class='no'>frac_correct</span> + <span class='fl'>1.96</span> * <span class='no'>se</span></div><div class='output co'>#&gt;                    children_in_2100 children_with_1_or_more_vaccination 
+<span class='kw'>frac_correct</span> <span class='op'>+</span> <span class='fl'>1.96</span> <span class='op'>*</span> <span class='kw'>se</span>
+</div><div class='output co'>#&gt;                    children_in_2100 children_with_1_or_more_vaccination 
 #&gt;                           0.1953603                           0.3583814 </div><div class='input'>
 <span class='co'># Construct Z-scores and p-values.</span>
-<span class='no'>z</span> <span class='kw'>&lt;-</span> (<span class='no'>frac_correct</span> - <span class='no'>expected</span>) / <span class='no'>se</span>
-<span class='fu'><a href='https://rdrr.io/r/stats/TDist.html'>pt</a></span>(<span class='no'>z</span>, <span class='kw'>df</span> <span class='kw'>=</span> <span class='no'>n</span> - <span class='fl'>1</span>)</div><div class='output co'>#&gt;                    children_in_2100 children_with_1_or_more_vaccination 
+<span class='kw'>z</span> <span class='op'>&lt;-</span> (<span class='kw'>frac_correct</span> <span class='op'>-</span> <span class='kw'>expected</span>) <span class='op'>/</span> <span class='kw'>se</span>
+<span class='fu'><a href='https://rdrr.io/r/stats/TDist.html'>pt</a></span>(<span class='kw'>z</span>, df = <span class='kw'>n</span> <span class='op'>-</span> <span class='fl'>1</span>)
+</div><div class='output co'>#&gt;                    children_in_2100 children_with_1_or_more_vaccination 
 #&gt;                        1.058928e-13                        6.435567e-02 </div><div class='input'>
 </div></pre>
   </div>
@@ -195,7 +200,7 @@ Hans Rosling, Anna Rosling Ronnlund, and Ola Rosling called
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.0.</p>
 </div>
 
       </footer>

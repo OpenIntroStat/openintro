@@ -72,7 +72,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">openintro</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.0.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.0.0.9000</span>
       </span>
     </div>
 
@@ -124,13 +124,13 @@
     </div>
 
     <pre class="usage"><span class='fu'>lsegments</span>(
-  <span class='kw'>x</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>3</span>, <span class='fl'>7</span>),
-  <span class='kw'>l</span> <span class='kw'>=</span> <span class='st'>"o"</span>,
-  <span class='kw'>r</span> <span class='kw'>=</span> <span class='st'>"c"</span>,
-  <span class='kw'>ticks</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>,
-  <span class='kw'>labs</span> <span class='kw'>=</span> <span class='fl'>1</span>,
-  <span class='kw'>add</span> <span class='kw'>=</span> <span class='fl'>0</span>,
-  <span class='kw'>ylim</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(-<span class='fl'>0.75</span>, <span class='fl'>0.25</span>)
+  x = <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>3</span>, <span class='fl'>7</span>),
+  l = <span class='st'>"o"</span>,
+  r = <span class='st'>"c"</span>,
+  ticks = <span class='fl'>TRUE</span>,
+  labs = <span class='fl'>1</span>,
+  add = <span class='fl'>0</span>,
+  ylim = <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='op'>-</span><span class='fl'>0.75</span>, <span class='fl'>0.25</span>)
 )</pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
@@ -178,12 +178,18 @@ which may be useful for fine-tuning plots. The default is
 
     <div class='dont-index'><p><code><a href='dlsegments.html'>dlsegments</a></code>, <code><a href='CCP.html'>CCP</a></code>,
 <code><a href='ArrowLines.html'>ArrowLines</a></code></p></div>
+    <h2 class="hasAnchor" id="author"><a class="anchor" href="#author"></a>Author</h2>
+
+    <p>David Diez</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
-<span class='fu'>lsegments</span>(<span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>2</span>,<span class='fl'>7</span>), <span class='st'>"o"</span>, <span class='st'>"c"</span>, <span class='kw'>ylim</span><span class='kw'>=</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(-<span class='fl'>0.3</span>, <span class='fl'>0.2</span>))</div><div class='img'><img src='lsegments-1.png' alt='' width='700' height='433' /></div><div class='input'>
-<span class='fu'>lsegments</span>(<span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>5</span>,<span class='fl'>7</span>), <span class='st'>"c"</span>, <span class='st'>"c"</span>, <span class='kw'>ylim</span><span class='kw'>=</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(-<span class='fl'>0.3</span>, <span class='fl'>0.2</span>))</div><div class='img'><img src='lsegments-2.png' alt='' width='700' height='433' /></div><div class='input'>
-<span class='fu'>lsegments</span>(<span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>4</span>,<span class='fl'>1000</span>), <span class='st'>"o"</span>, <span class='st'>"o"</span>, <span class='kw'>ylim</span><span class='kw'>=</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(-<span class='fl'>0.3</span>, <span class='fl'>0.2</span>))</div><div class='img'><img src='lsegments-3.png' alt='' width='700' height='433' /></div><div class='input'>
+<span class='fu'>lsegments</span>(<span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>2</span>,<span class='fl'>7</span>), <span class='st'>"o"</span>, <span class='st'>"c"</span>, ylim=<span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='op'>-</span><span class='fl'>0.3</span>, <span class='fl'>0.2</span>))
+</div><div class='img'><img src='lsegments-1.png' alt='' width='700' height='433' /></div><div class='input'>
+<span class='fu'>lsegments</span>(<span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>5</span>,<span class='fl'>7</span>), <span class='st'>"c"</span>, <span class='st'>"c"</span>, ylim=<span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='op'>-</span><span class='fl'>0.3</span>, <span class='fl'>0.2</span>))
+</div><div class='img'><img src='lsegments-2.png' alt='' width='700' height='433' /></div><div class='input'>
+<span class='fu'>lsegments</span>(<span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>4</span>,<span class='fl'>1000</span>), <span class='st'>"o"</span>, <span class='st'>"o"</span>, ylim=<span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='op'>-</span><span class='fl'>0.3</span>, <span class='fl'>0.2</span>))
+</div><div class='img'><img src='lsegments-3.png' alt='' width='700' height='433' /></div><div class='input'>
 </div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
@@ -200,7 +206,7 @@ which may be useful for fine-tuning plots. The default is
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.0.</p>
 </div>
 
       </footer>

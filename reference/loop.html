@@ -75,7 +75,7 @@ or the procedures in each iteration take a long time." />
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">openintro</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.0.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.0.0.9000</span>
       </span>
     </div>
 
@@ -129,7 +129,7 @@ function is useful in tracking progress when the number of iterations is large
 or the procedures in each iteration take a long time.</p>
     </div>
 
-    <pre class="usage"><span class='fu'>loop</span>(<span class='no'>i</span>, <span class='kw'>n</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='kw'>every</span> <span class='kw'>=</span> <span class='fl'>1</span>, <span class='kw'>extra</span> <span class='kw'>=</span> <span class='kw'>NULL</span>)</pre>
+    <pre class="usage"><span class='fu'>loop</span>(<span class='kw'>i</span>, n = <span class='kw'>NULL</span>, every = <span class='fl'>1</span>, extra = <span class='kw'>NULL</span>)</pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
@@ -155,12 +155,16 @@ or the procedures in each iteration take a long time.</p>
     <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
 
     <div class='dont-index'><p><code><a href='myPDF.html'>myPDF</a></code></p></div>
+    <h2 class="hasAnchor" id="author"><a class="anchor" href="#author"></a>Author</h2>
+
+    <p>David Diez</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
-<span class='kw'>for</span>(<span class='no'>i</span> <span class='kw'>in</span> <span class='fl'>1</span>:<span class='fl'>160</span>){
-        <span class='fu'>loop</span>(<span class='no'>i</span>, <span class='fl'>160</span>, <span class='fl'>20</span>, <span class='fu'><a href='https://rdrr.io/r/base/paste.html'>paste</a></span>(<span class='st'>"iter"</span>, <span class='no'>i</span>))
-}</div><div class='output co'>#&gt; 20 of 160 	iter 20
+<span class='co'>for</span>(<span class='kw'>i</span> <span class='co'>in</span> <span class='fl'>1</span><span class='op'>:</span><span class='fl'>160</span>){
+  <span class='fu'>loop</span>(<span class='kw'>i</span>, <span class='fl'>160</span>, <span class='fl'>20</span>, <span class='fu'><a href='https://rdrr.io/r/base/paste.html'>paste</a></span>(<span class='st'>"iter"</span>, <span class='kw'>i</span>))
+}
+</div><div class='output co'>#&gt; 20 of 160 	iter 20
 #&gt; 40 of 160 	iter 40
 #&gt; 60 of 160 	iter 60
 #&gt; 80 of 160 	iter 80
@@ -184,7 +188,7 @@ or the procedures in each iteration take a long time.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.0.</p>
 </div>
 
       </footer>

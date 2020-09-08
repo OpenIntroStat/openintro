@@ -76,7 +76,7 @@ there were 1059 respondents." />
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">openintro</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.0.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.0.0.9000</span>
       </span>
     </div>
 
@@ -131,12 +131,12 @@ the killing of George Floyd by a police officer. Results in this data set are pe
 there were 1059 respondents.</p>
     </div>
 
-    <pre class="usage"><span class='no'>race_justice</span></pre>
+    <pre class="usage"><span class='kw'>race_justice</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>A data frame with 4 rows and 5 variables.</p><dl'>
+    <p>A data frame with 4 rows and 5 variables.</p><dl>
   <dt>race</dt><dd><p>Race of respondent.</p></dd>
   <dt>yes</dt><dd><p>Number of respondents who answered "yes".</p></dd>
   <dt>no</dt><dd><p>Number of respondents who answered "no".</p></dd>
@@ -151,16 +151,18 @@ there were 1059 respondents.</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
-<span class='fu'><a href='https://rdrr.io/r/graphics/barplot.html'>barplot</a></span>(<span class='no'>race_justice</span>$<span class='no'>yes</span>/<span class='no'>race_justice</span>$<span class='no'>unweighted_n</span>,
-     <span class='kw'>main</span> <span class='kw'>=</span> <span class='st'>"Do police treat Black citizens and White citizens equally?"</span>,
-     <span class='kw'>xlab</span> <span class='kw'>=</span> <span class='st'>"Race"</span>,
-     <span class='kw'>ylab</span> <span class='kw'>=</span> <span class='st'>"Yes (percent)"</span>,
-     <span class='kw'>names.arg</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"White"</span>,<span class='st'>"Black"</span>,<span class='st'>"Hispanic"</span>,<span class='st'>"Other"</span>))</div><div class='img'><img src='race_justice-1.png' alt='' width='700' height='433' /></div><div class='input'>
-<span class='fu'><a href='https://rdrr.io/r/graphics/barplot.html'>barplot</a></span>(<span class='no'>race_justice</span>$<span class='no'>no</span>/<span class='no'>race_justice</span>$<span class='no'>unweighted_n</span>,
-     <span class='kw'>main</span> <span class='kw'>=</span> <span class='st'>"Do police treat Black citizens and White citizens equally?"</span>,
-     <span class='kw'>xlab</span> <span class='kw'>=</span> <span class='st'>"Race"</span>,
-     <span class='kw'>ylab</span> <span class='kw'>=</span> <span class='st'>"No (percent)"</span>,
-     <span class='kw'>names.arg</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"White"</span>,<span class='st'>"Black"</span>,<span class='st'>"Hispanic"</span>,<span class='st'>"Other"</span>))</div><div class='img'><img src='race_justice-2.png' alt='' width='700' height='433' /></div></pre>
+<span class='fu'><a href='https://rdrr.io/r/graphics/barplot.html'>barplot</a></span>(<span class='kw'>race_justice</span><span class='op'>$</span><span class='kw'>yes</span><span class='op'>/</span><span class='kw'>race_justice</span><span class='op'>$</span><span class='kw'>unweighted_n</span>,
+     main = <span class='st'>"Do police treat Black citizens and White citizens equally?"</span>,
+     xlab = <span class='st'>"Race"</span>,
+     ylab = <span class='st'>"Yes (percent)"</span>,
+     names.arg = <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"White"</span>,<span class='st'>"Black"</span>,<span class='st'>"Hispanic"</span>,<span class='st'>"Other"</span>))
+</div><div class='img'><img src='race_justice-1.png' alt='' width='700' height='433' /></div><div class='input'>
+<span class='fu'><a href='https://rdrr.io/r/graphics/barplot.html'>barplot</a></span>(<span class='kw'>race_justice</span><span class='op'>$</span><span class='kw'>no</span><span class='op'>/</span><span class='kw'>race_justice</span><span class='op'>$</span><span class='kw'>unweighted_n</span>,
+     main = <span class='st'>"Do police treat Black citizens and White citizens equally?"</span>,
+     xlab = <span class='st'>"Race"</span>,
+     ylab = <span class='st'>"No (percent)"</span>,
+     names.arg = <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"White"</span>,<span class='st'>"Black"</span>,<span class='st'>"Hispanic"</span>,<span class='st'>"Other"</span>))
+</div><div class='img'><img src='race_justice-2.png' alt='' width='700' height='433' /></div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
@@ -176,7 +178,7 @@ there were 1059 respondents.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.0.</p>
 </div>
 
       </footer>

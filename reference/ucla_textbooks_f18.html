@@ -74,7 +74,7 @@ also from Amazon." />
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">openintro</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.0.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.0.0.9000</span>
       </span>
     </div>
 
@@ -127,12 +127,12 @@ corresponding textbook prices were collected from the UCLA bookstore and
 also from Amazon.</p>
     </div>
 
-    <pre class="usage"><span class='no'>ucla_textbooks_f18</span></pre>
+    <pre class="usage"><span class='kw'>ucla_textbooks_f18</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>A data frame with 201 observations on the following 20 variables.</p><dl'>
+    <p>A data frame with 201 observations on the following 20 variables.</p><dl>
   <dt>year</dt><dd><p>Year the course was offered</p></dd>
   <dt>term</dt><dd><p>Term the course was offered</p></dd>
   <dt>subject</dt><dd><p>Subject</p></dd>
@@ -194,21 +194,23 @@ explore whether the dynamics have changed in the used market.</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
-<span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='no'>ggplot2</span>)
-<span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='no'>dplyr</span>)
+<span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='kw'><a href='http://ggplot2.tidyverse.org'>ggplot2</a></span>)
+<span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='kw'><a href='https://dplyr.tidyverse.org'>dplyr</a></span>)
 
-<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='no'>ucla_textbooks_f18</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='no'>bookstore_new</span>, <span class='kw'>y</span> <span class='kw'>=</span> <span class='no'>amazon_new</span>)) +
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_point.html'>geom_point</a></span>() +
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_abline.html'>geom_abline</a></span>(<span class='kw'>slope</span> <span class='kw'>=</span> <span class='fl'>1</span>, <span class='kw'>intercept</span> <span class='kw'>=</span> <span class='fl'>0</span>, <span class='kw'>color</span> <span class='kw'>=</span> <span class='st'>"orange"</span>) +
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='st'>"UCLA Bookstore price"</span>, <span class='kw'>y</span> <span class='kw'>=</span> <span class='st'>"Amazon price"</span>,
-       <span class='kw'>title</span> <span class='kw'>=</span> <span class='st'>"Amazon vs. UCLA Bookstore prices of new textbooks"</span>,
-       <span class='kw'>subtitle</span> <span class='kw'>=</span> <span class='st'>"Orange line represents y = x"</span>)</div><div class='output co'>#&gt; <span class='warning'>Warning: Removed 133 rows containing missing values (geom_point).</span></div><div class='img'><img src='ucla_textbooks_f18-1.png' alt='' width='700' height='433' /></div><div class='input'>
+<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='kw'>ucla_textbooks_f18</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(x = <span class='kw'>bookstore_new</span>, y = <span class='kw'>amazon_new</span>)) <span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_point.html'>geom_point</a></span>() <span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_abline.html'>geom_abline</a></span>(slope = <span class='fl'>1</span>, intercept = <span class='fl'>0</span>, color = <span class='st'>"orange"</span>) <span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span>(x = <span class='st'>"UCLA Bookstore price"</span>, y = <span class='st'>"Amazon price"</span>,
+       title = <span class='st'>"Amazon vs. UCLA Bookstore prices of new textbooks"</span>,
+       subtitle = <span class='st'>"Orange line represents y = x"</span>)
+</div><div class='output co'>#&gt; <span class='warning'>Warning: Removed 133 rows containing missing values (geom_point).</span></div><div class='img'><img src='ucla_textbooks_f18-1.png' alt='' width='700' height='433' /></div><div class='input'>
 <span class='co'># The following outliers were double checked for accuracy</span>
-<span class='no'>ucla_textbooks_f18_with_diff</span> <span class='kw'>&lt;-</span>  <span class='no'>ucla_textbooks_f18</span> <span class='kw'>%&gt;%</span>
-  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/mutate.html'>mutate</a></span>(<span class='kw'>diff</span> <span class='kw'>=</span> <span class='no'>bookstore_new</span> - <span class='no'>amazon_new</span>)
+<span class='kw'>ucla_textbooks_f18_with_diff</span> <span class='op'>&lt;-</span>  <span class='kw'>ucla_textbooks_f18</span> <span class='op'>%&gt;%</span>
+  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/mutate.html'>mutate</a></span>(diff = <span class='kw'>bookstore_new</span> <span class='op'>-</span> <span class='kw'>amazon_new</span>)
 
-<span class='no'>ucla_textbooks_f18_with_diff</span> <span class='kw'>%&gt;%</span>
-  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/filter.html'>filter</a></span>(<span class='no'>diff</span> <span class='kw'>&gt;</span> <span class='fl'>20</span> <span class='kw'>|</span> <span class='no'>diff</span> <span class='kw'>&lt;</span> -<span class='fl'>20</span>)</div><div class='output co'>#&gt; <span style='color: #555555;'># A tibble: 6 x 21</span><span>
+<span class='kw'>ucla_textbooks_f18_with_diff</span> <span class='op'>%&gt;%</span>
+  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/filter.html'>filter</a></span>(<span class='kw'>diff</span> <span class='op'>&gt;</span> <span class='fl'>20</span> <span class='op'>|</span> <span class='kw'>diff</span> <span class='op'>&lt;</span> <span class='op'>-</span><span class='fl'>20</span>)
+</div><div class='output co'>#&gt; <span style='color: #555555;'># A tibble: 6 x 21</span><span>
 #&gt;    year term  subject subject_abbr course course_num course_numeric seminar
 #&gt;   </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span> </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span> </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span>   </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span>        </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span>  </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span>               </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span> </span><span style='color: #555555;font-style: italic;'>&lt;lgl&gt;</span><span>  
 #&gt; </span><span style='color: #555555;'>1</span><span>  </span><span style='text-decoration: underline;'>2</span><span>018 Fall  Film a… FILM TV      Intro… 4                       4 FALSE  
@@ -223,10 +225,12 @@ explore whether the dynamics have changed in the used market.</p>
 #&gt; </span><span style='color: #555555;'>#   bookstore_used </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, amazon_new </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, amazon_used </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, notes </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span style='color: #555555;'>,</span><span>
 #&gt; </span><span style='color: #555555;'>#   diff </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span></div><div class='input'>
 <span class='co'># Distribution of price differences</span>
-<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='no'>ucla_textbooks_f18_with_diff</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='no'>diff</span>)) +
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_histogram.html'>geom_histogram</a></span>(<span class='kw'>binwidth</span> <span class='kw'>=</span> <span class='fl'>5</span>)</div><div class='output co'>#&gt; <span class='warning'>Warning: Removed 133 rows containing non-finite values (stat_bin).</span></div><div class='img'><img src='ucla_textbooks_f18-2.png' alt='' width='700' height='433' /></div><div class='input'>
+<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='kw'>ucla_textbooks_f18_with_diff</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(x = <span class='kw'>diff</span>)) <span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_histogram.html'>geom_histogram</a></span>(binwidth = <span class='fl'>5</span>)
+</div><div class='output co'>#&gt; <span class='warning'>Warning: Removed 133 rows containing non-finite values (stat_bin).</span></div><div class='img'><img src='ucla_textbooks_f18-2.png' alt='' width='700' height='433' /></div><div class='input'>
 <span class='co'># t-test of price differences</span>
-<span class='fu'><a href='https://rdrr.io/r/stats/t.test.html'>t.test</a></span>(<span class='no'>ucla_textbooks_f18_with_diff</span>$<span class='no'>diff</span>)</div><div class='output co'>#&gt; 
+<span class='fu'><a href='https://rdrr.io/r/stats/t.test.html'>t.test</a></span>(<span class='kw'>ucla_textbooks_f18_with_diff</span><span class='op'>$</span><span class='kw'>diff</span>)
+</div><div class='output co'>#&gt; 
 #&gt; 	One Sample t-test
 #&gt; 
 #&gt; data:  ucla_textbooks_f18_with_diff$diff
@@ -254,7 +258,7 @@ explore whether the dynamics have changed in the used market.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.0.</p>
 </div>
 
       </footer>

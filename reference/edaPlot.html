@@ -72,7 +72,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">openintro</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.0.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.0.0.9000</span>
       </span>
     </div>
 
@@ -124,8 +124,8 @@
     </div>
 
     <pre class="usage"><span class='fu'>edaPlot</span>(
-  <span class='no'>dataFrame</span>,
-  <span class='kw'>Col</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"#888888"</span>, <span class='st'>"#FF0000"</span>, <span class='st'>"#222222"</span>, <span class='st'>"#FFFFFF"</span>, <span class='st'>"#CCCCCC"</span>, <span class='st'>"#3377AA"</span>)
+  <span class='kw'>dataFrame</span>,
+  Col = <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"#888888"</span>, <span class='st'>"#FF0000"</span>, <span class='st'>"#222222"</span>, <span class='st'>"#FFFFFF"</span>, <span class='st'>"#CCCCCC"</span>, <span class='st'>"#3377AA"</span>)
 )</pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
@@ -146,16 +146,21 @@ form.</p></td>
 
     <div class='dont-index'><p><code><a href='histPlot.html'>histPlot</a></code>, <code><a href='densityPlot.html'>densityPlot</a></code>,
 <code><a href='boxPlot.html'>boxPlot</a></code>, <code><a href='dotPlot.html'>dotPlot</a></code></p></div>
+    <h2 class="hasAnchor" id="author"><a class="anchor" href="#author"></a>Author</h2>
+
+    <p>David Diez</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
-<span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span>(<span class='no'>mlbbat10</span>)
-<span class='no'>bat</span> <span class='kw'>&lt;-</span> <span class='no'>mlbbat10</span>[<span class='no'>mlbbat10</span>$<span class='no'>at_bat</span> <span class='kw'>&gt;</span> <span class='fl'>200</span>,]
+<span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span>(<span class='kw'>mlbbat10</span>)
+<span class='kw'>bat</span> <span class='op'>&lt;-</span> <span class='kw'>mlbbat10</span>[<span class='kw'>mlbbat10</span><span class='op'>$</span><span class='kw'>at_bat</span> <span class='op'>&gt;</span> <span class='fl'>200</span>,]
 <span class='co'>#edaPlot(bat)</span>
 
-<span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span>(<span class='no'>mariokart</span>)
-<span class='no'>mk</span> <span class='kw'>&lt;-</span> <span class='no'>mariokart</span>[<span class='no'>mariokart</span>$<span class='no'>total_pr</span> <span class='kw'>&lt;</span> <span class='fl'>100</span>,]
-<span class='co'>#edaPlot(mk)</span></div></pre>
+<span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span>(<span class='kw'>mariokart</span>)
+<span class='kw'>mk</span> <span class='op'>&lt;-</span> <span class='kw'>mariokart</span>[<span class='kw'>mariokart</span><span class='op'>$</span><span class='kw'>total_pr</span> <span class='op'>&lt;</span> <span class='fl'>100</span>,]
+<span class='co'>#edaPlot(mk)</span>
+
+</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
@@ -171,7 +176,7 @@ form.</p></td>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.0.</p>
 </div>
 
       </footer>

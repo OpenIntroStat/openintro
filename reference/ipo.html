@@ -75,7 +75,7 @@ two competing companies: Google and LinkedIn." />
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">openintro</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.0.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.0.0.9000</span>
       </span>
     </div>
 
@@ -129,7 +129,7 @@ dataset includes the text of that document as well as text from the IPOs of
 two competing companies: Google and LinkedIn.</p>
     </div>
 
-    <pre class="usage"><span class='no'>ipo</span></pre>
+    <pre class="usage"><span class='kw'>ipo</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
@@ -156,33 +156,35 @@ Available at: <a href='http://blogs.wsj.com/totalreturn/2012/02/06/mark-zuckerbe
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
-<span class='kw'>if</span> (<span class='fl'>FALSE</span>) {
-<span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='no'>tm</span>)
-<span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='no'>wordcloud</span>)
+<span class='co'>if</span> (<span class='fl'>FALSE</span>) {
+<span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='kw'>tm</span>)
+<span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='kw'>wordcloud</span>)
 
 <span class='co'># pre-process data</span>
-<span class='no'>corp</span> <span class='kw'>&lt;-</span> <span class='fu'>Corpus</span>(<span class='fu'>VectorSource</span>(<span class='no'>ipo</span>), <span class='kw'>readerControl</span><span class='kw'>=</span><span class='fu'><a href='https://rdrr.io/r/base/list.html'>list</a></span>(<span class='kw'>language</span><span class='kw'>=</span><span class='st'>"en"</span>))
-<span class='no'>corp</span> <span class='kw'>&lt;-</span> <span class='fu'>tm_map</span>(<span class='no'>corp</span>, <span class='no'>removePunctuation</span>)
-<span class='no'>corp</span> <span class='kw'>&lt;-</span> <span class='fu'>tm_map</span>(<span class='no'>corp</span>, <span class='no'>tolower</span>)
-<span class='no'>corp</span> <span class='kw'>&lt;-</span> <span class='fu'>tm_map</span>(<span class='no'>corp</span>, <span class='no'>removeNumbers</span>)
-<span class='no'>corp</span> <span class='kw'>&lt;-</span> <span class='fu'>tm_map</span>(<span class='no'>corp</span>, <span class='kw'>function</span>(<span class='no'>x</span>)<span class='fu'>removeWords</span>(<span class='no'>x</span>,<span class='fu'>stopwords</span>()))
-<span class='no'>f</span>    <span class='kw'>&lt;-</span> <span class='no'>corp</span>[<span class='fl'>1</span>] <span class='co'># facebook</span>
-<span class='no'>g</span>    <span class='kw'>&lt;-</span> <span class='no'>corp</span>[<span class='fl'>2</span>] <span class='co'># google</span>
-<span class='no'>l</span>    <span class='kw'>&lt;-</span> <span class='no'>corp</span>[<span class='fl'>3</span>] <span class='co'># linkedin</span>
+<span class='kw'>corp</span> <span class='op'>&lt;-</span> <span class='fu'>Corpus</span>(<span class='fu'>VectorSource</span>(<span class='kw'>ipo</span>), readerControl=<span class='fu'><a href='https://rdrr.io/r/base/list.html'>list</a></span>(language=<span class='st'>"en"</span>))
+<span class='kw'>corp</span> <span class='op'>&lt;-</span> <span class='fu'>tm_map</span>(<span class='kw'>corp</span>, <span class='kw'>removePunctuation</span>)
+<span class='kw'>corp</span> <span class='op'>&lt;-</span> <span class='fu'>tm_map</span>(<span class='kw'>corp</span>, <span class='kw'>tolower</span>)
+<span class='kw'>corp</span> <span class='op'>&lt;-</span> <span class='fu'>tm_map</span>(<span class='kw'>corp</span>, <span class='kw'>removeNumbers</span>)
+<span class='kw'>corp</span> <span class='op'>&lt;-</span> <span class='fu'>tm_map</span>(<span class='kw'>corp</span>, <span class='fu'>function</span>(<span class='kw'>x</span>)<span class='fu'>removeWords</span>(<span class='kw'>x</span>,<span class='fu'>stopwords</span>()))
+<span class='kw'>f</span>    <span class='op'>&lt;-</span> <span class='kw'>corp</span>[<span class='fl'>1</span>] <span class='co'># facebook</span>
+<span class='kw'>g</span>    <span class='op'>&lt;-</span> <span class='kw'>corp</span>[<span class='fl'>2</span>] <span class='co'># google</span>
+<span class='kw'>l</span>    <span class='op'>&lt;-</span> <span class='kw'>corp</span>[<span class='fl'>3</span>] <span class='co'># linkedin</span>
 
-<span class='no'>tmat</span>      <span class='kw'>&lt;-</span> <span class='fu'>TermDocumentMatrix</span>(<span class='no'>f</span>)
-<span class='no'>m</span>         <span class='kw'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/matrix.html'>as.matrix</a></span>(<span class='no'>tmat</span>)
-<span class='no'>freq</span>      <span class='kw'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/colSums.html'>rowSums</a></span>(<span class='no'>m</span>)
-<span class='no'>words</span>     <span class='kw'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/colnames.html'>rownames</a></span>(<span class='no'>m</span>)
-<span class='no'>words.ord</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/sort.html'>sort.int</a></span>(<span class='no'>freq</span>, <span class='kw'>decreasing</span> <span class='kw'>=</span> <span class='no'>T</span>, <span class='kw'>index.return</span> <span class='kw'>=</span> <span class='no'>F</span>)
-<span class='fu'><a href='https://rdrr.io/r/graphics/barplot.html'>barplot</a></span>(<span class='no'>words.ord</span>[<span class='fl'>1</span>:<span class='fl'>15</span>], <span class='kw'>las</span> <span class='kw'>=</span> <span class='fl'>2</span>)
+<span class='kw'>tmat</span>      <span class='op'>&lt;-</span> <span class='fu'>TermDocumentMatrix</span>(<span class='kw'>f</span>)
+<span class='kw'>m</span>         <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/matrix.html'>as.matrix</a></span>(<span class='kw'>tmat</span>)
+<span class='kw'>freq</span>      <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/colSums.html'>rowSums</a></span>(<span class='kw'>m</span>)
+<span class='kw'>words</span>     <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/colnames.html'>rownames</a></span>(<span class='kw'>m</span>)
+<span class='kw'>words.ord</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/sort.html'>sort.int</a></span>(<span class='kw'>freq</span>, decreasing = <span class='kw'>T</span>, index.return = <span class='kw'>F</span>)
+<span class='fu'><a href='https://rdrr.io/r/graphics/barplot.html'>barplot</a></span>(<span class='kw'>words.ord</span>[<span class='fl'>1</span><span class='op'>:</span><span class='fl'>15</span>], las = <span class='fl'>2</span>)
 
-<span class='fu'>wordcloud</span>(<span class='no'>words</span>, <span class='no'>freq</span>, <span class='kw'>min.freq</span> <span class='kw'>=</span> <span class='fl'>100</span>, <span class='kw'>col</span><span class='kw'>=</span><span class='st'>'blue'</span>)
+<span class='fu'>wordcloud</span>(<span class='kw'>words</span>, <span class='kw'>freq</span>, min.freq = <span class='fl'>100</span>, col=<span class='st'>'blue'</span>)
 
-<span class='no'>tmat</span> <span class='kw'>&lt;-</span> <span class='fu'>TermDocumentMatrix</span>(<span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='no'>f</span>, <span class='no'>g</span>))
-<span class='no'>m</span>    <span class='kw'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/matrix.html'>as.matrix</a></span>(<span class='no'>tmat</span>)
-<span class='fu'>comparison.cloud</span>(<span class='no'>m</span>, <span class='kw'>max.words</span> <span class='kw'>=</span> <span class='fl'>100</span>)
-}</div></pre>
+<span class='kw'>tmat</span> <span class='op'>&lt;-</span> <span class='fu'>TermDocumentMatrix</span>(<span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='kw'>f</span>, <span class='kw'>g</span>))
+<span class='kw'>m</span>    <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/matrix.html'>as.matrix</a></span>(<span class='kw'>tmat</span>)
+<span class='fu'>comparison.cloud</span>(<span class='kw'>m</span>, max.words = <span class='fl'>100</span>)
+}
+
+</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
@@ -198,7 +200,7 @@ Available at: <a href='http://blogs.wsj.com/totalreturn/2012/02/06/mark-zuckerbe
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.0.</p>
 </div>
 
       </footer>

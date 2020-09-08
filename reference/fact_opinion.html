@@ -73,7 +73,7 @@ participants to categorize five factual and five opinion statements." />
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">openintro</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.0.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.0.0.9000</span>
       </span>
     </div>
 
@@ -125,12 +125,12 @@ participants to categorize five factual and five opinion statements." />
 participants to categorize five factual and five opinion statements.</p>
     </div>
 
-    <pre class="usage"><span class='no'>fact_opinion</span></pre>
+    <pre class="usage"><span class='kw'>fact_opinion</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>A data frame with 5035 rows and 3 variables.</p><dl'>
+    <p>A data frame with 5035 rows and 3 variables.</p><dl>
   <dt>age_group</dt><dd><p>Age group of survey participant.</p></dd>
   <dt>fact_correct</dt><dd><p>Number of factual statements classified correctly (out of 5).</p></dd>
   <dt>opinion_correct</dt><dd><p>Number of opinion statements classified correctly (out of 5).</p></dd>
@@ -142,9 +142,10 @@ participants to categorize five factual and five opinion statements.</p>
     <p><a href='https://www.pewresearch.org/fact-tank/2018/10/23/younger-americans-are-better-than-older-americans-at-telling-factual-news-statements-from-opinions/'>Pew Research Center</a></p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/boxplot.html'>boxplot</a></span>(<span class='no'>fact_correct</span>~<span class='no'>age_group</span>, <span class='kw'>data</span> <span class='kw'>=</span> <span class='no'>fact_opinion</span>,
-  <span class='kw'>main</span> <span class='kw'>=</span> <span class='st'>"Number of Factual Statements Correctly Categorized"</span>,
-  <span class='kw'>xlab</span> <span class='kw'>=</span> <span class='st'>"Age Group"</span>, <span class='kw'>ylab</span> <span class='kw'>=</span> <span class='st'>"Number Correct (out of 5)"</span>)</div><div class='img'><img src='fact_opinion-1.png' alt='' width='700' height='433' /></div><div class='input'>
+    <pre class="examples"><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/boxplot.html'>boxplot</a></span>(<span class='kw'>fact_correct</span><span class='op'>~</span><span class='kw'>age_group</span>, data = <span class='kw'>fact_opinion</span>,
+  main = <span class='st'>"Number of Factual Statements Correctly Categorized"</span>,
+  xlab = <span class='st'>"Age Group"</span>, ylab = <span class='st'>"Number Correct (out of 5)"</span>)
+</div><div class='img'><img src='fact_opinion-1.png' alt='' width='700' height='433' /></div><div class='input'>
 </div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
@@ -161,7 +162,7 @@ participants to categorize five factual and five opinion statements.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.0.</p>
 </div>
 
       </footer>

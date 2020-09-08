@@ -73,7 +73,7 @@ defaults are provided, including for the plotting parameters." />
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">openintro</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.0.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.0.0.9000</span>
       </span>
     </div>
 
@@ -126,14 +126,14 @@ defaults are provided, including for the plotting parameters.</p>
     </div>
 
     <pre class="usage"><span class='fu'>myPDF</span>(
-  <span class='no'>fileName</span>,
-  <span class='kw'>width</span> <span class='kw'>=</span> <span class='fl'>5</span>,
-  <span class='kw'>height</span> <span class='kw'>=</span> <span class='fl'>3</span>,
-  <span class='kw'>mar</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>3.9</span>, <span class='fl'>3.9</span>, <span class='fl'>1</span>, <span class='fl'>1</span>),
-  <span class='kw'>mgp</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>2.8</span>, <span class='fl'>0.55</span>, <span class='fl'>0</span>),
-  <span class='kw'>las</span> <span class='kw'>=</span> <span class='fl'>1</span>,
-  <span class='kw'>tcl</span> <span class='kw'>=</span> -<span class='fl'>0.3</span>,
-  <span class='no'>...</span>
+  <span class='kw'>fileName</span>,
+  width = <span class='fl'>5</span>,
+  height = <span class='fl'>3</span>,
+  mar = <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>3.9</span>, <span class='fl'>3.9</span>, <span class='fl'>1</span>, <span class='fl'>1</span>),
+  mgp = <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>2.8</span>, <span class='fl'>0.55</span>, <span class='fl'>0</span>),
+  las = <span class='fl'>1</span>,
+  tcl = <span class='op'>-</span><span class='fl'>0.3</span>,
+  <span class='kw'>...</span>
 )</pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
@@ -182,16 +182,21 @@ is <code>-0.5</code>.</p></td>
     <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
 
     <div class='dont-index'><p><code><a href='edaPlot.html'>edaPlot</a></code></p></div>
+    <h2 class="hasAnchor" id="author"><a class="anchor" href="#author"></a>Author</h2>
+
+    <p>David Diez</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
 <span class='co'># save a plot to a PDF</span>
 <span class='co'># myPDF("myPlot.pdf")</span>
-<span class='fu'><a href='histPlot.html'>histPlot</a></span>(<span class='no'>mariokart</span>$<span class='no'>total_pr</span>)</div><div class='input'><span class='co'># dev.off()</span>
+<span class='fu'><a href='histPlot.html'>histPlot</a></span>(<span class='kw'>mariokart</span><span class='op'>$</span><span class='kw'>total_pr</span>)
+</div><div class='input'><span class='co'># dev.off()</span>
 
 <span class='co'># save a plot to a PNG</span>
 <span class='co'># myPNG("myPlot.png")</span>
-<span class='fu'><a href='histPlot.html'>histPlot</a></span>(<span class='no'>mariokart</span>$<span class='no'>total_pr</span>)</div><div class='img'><img src='myPDF-1.png' alt='' width='700' height='433' /></div><div class='input'># dev.off()
+<span class='fu'><a href='histPlot.html'>histPlot</a></span>(<span class='kw'>mariokart</span><span class='op'>$</span><span class='kw'>total_pr</span>)
+</div><div class='img'><img src='myPDF-1.png' alt='' width='700' height='433' /></div><div class='input'><span class='co'># dev.off()</span>
 
 </div></pre>
   </div>
@@ -209,7 +214,7 @@ is <code>-0.5</code>.</p></td>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.0.</p>
 </div>
 
       </footer>

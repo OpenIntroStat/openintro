@@ -74,7 +74,7 @@ and tables (i.e. groups paid in one lump sum in simulations)." />
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">openintro</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.0.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.0.0.9000</span>
       </span>
     </div>
 
@@ -127,12 +127,12 @@ Each tip is associated with a single group, which may include several bills
 and tables (i.e. groups paid in one lump sum in simulations).</p>
     </div>
 
-    <pre class="usage"><span class='no'>tips</span></pre>
+    <pre class="usage"><span class='kw'>tips</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>A data frame with 95 observations on the following 5 variables.</p><dl'>
+    <p>A data frame with 95 observations on the following 5 variables.</p><dl>
   <dt>week</dt><dd><p>Week number.</p></dd>
   <dt>day</dt><dd><p>Day, either <code>Friday</code> or <code>Tuesday</code>.</p></dd>
   <dt>n_peop</dt><dd><p>Number of people associated with the group.</p></dd>
@@ -153,18 +153,22 @@ they were often (but not always) rounded to dollars, quarters, etc.</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
-<span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='no'>ggplot2</span>)
+<span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='kw'><a href='http://ggplot2.tidyverse.org'>ggplot2</a></span>)
 
-<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='no'>tips</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='no'>day</span>, <span class='kw'>y</span> <span class='kw'>=</span> <span class='no'>tip</span>)) +
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_boxplot.html'>geom_boxplot</a></span>()</div><div class='img'><img src='tips-1.png' alt='' width='700' height='433' /></div><div class='input'>
-<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='no'>tips</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='no'>tip</span>, <span class='kw'>fill</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/factor.html'>factor</a></span>(<span class='no'>week</span>))) +
- <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_density.html'>geom_density</a></span>(<span class='kw'>alpha</span> <span class='kw'>=</span> <span class='fl'>0.5</span>) +
- <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='st'>"Tip"</span>, <span class='kw'>y</span> <span class='kw'>=</span> <span class='st'>"Density"</span>, <span class='kw'>fill</span> <span class='kw'>=</span> <span class='st'>"Week"</span>)</div><div class='img'><img src='tips-2.png' alt='' width='700' height='433' /></div><div class='input'>
-<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='no'>tips</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='no'>tip</span>)) +
- <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_dotplot.html'>geom_dotplot</a></span>()</div><div class='output co'>#&gt; <span class='message'>`stat_bindot()` using `bins = 30`. Pick better value with `binwidth`.</span></div><div class='img'><img src='tips-3.png' alt='' width='700' height='433' /></div><div class='input'>
-<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='no'>tips</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='no'>tip</span>, <span class='kw'>fill</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/factor.html'>factor</a></span>(<span class='no'>day</span>))) +
- <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_density.html'>geom_density</a></span>(<span class='kw'>alpha</span> <span class='kw'>=</span> <span class='fl'>0.5</span>) +
- <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='st'>"Tip"</span>, <span class='kw'>y</span> <span class='kw'>=</span> <span class='st'>"Density"</span>, <span class='kw'>fill</span> <span class='kw'>=</span> <span class='st'>"Day"</span>)</div><div class='img'><img src='tips-4.png' alt='' width='700' height='433' /></div><div class='input'>
+<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='kw'>tips</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(x = <span class='kw'>day</span>, y = <span class='kw'>tip</span>)) <span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_boxplot.html'>geom_boxplot</a></span>()
+</div><div class='img'><img src='tips-1.png' alt='' width='700' height='433' /></div><div class='input'>
+<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='kw'>tips</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(x = <span class='kw'>tip</span>, fill = <span class='fu'><a href='https://rdrr.io/r/base/factor.html'>factor</a></span>(<span class='kw'>week</span>))) <span class='op'>+</span>
+ <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_density.html'>geom_density</a></span>(alpha = <span class='fl'>0.5</span>) <span class='op'>+</span>
+ <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span>(x = <span class='st'>"Tip"</span>, y = <span class='st'>"Density"</span>, fill = <span class='st'>"Week"</span>)
+</div><div class='img'><img src='tips-2.png' alt='' width='700' height='433' /></div><div class='input'>
+<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='kw'>tips</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(x = <span class='kw'>tip</span>)) <span class='op'>+</span>
+ <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_dotplot.html'>geom_dotplot</a></span>()
+</div><div class='output co'>#&gt; <span class='message'>`stat_bindot()` using `bins = 30`. Pick better value with `binwidth`.</span></div><div class='img'><img src='tips-3.png' alt='' width='700' height='433' /></div><div class='input'>
+<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='kw'>tips</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(x = <span class='kw'>tip</span>, fill = <span class='fu'><a href='https://rdrr.io/r/base/factor.html'>factor</a></span>(<span class='kw'>day</span>))) <span class='op'>+</span>
+ <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_density.html'>geom_density</a></span>(alpha = <span class='fl'>0.5</span>) <span class='op'>+</span>
+ <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span>(x = <span class='st'>"Tip"</span>, y = <span class='st'>"Density"</span>, fill = <span class='st'>"Day"</span>)
+</div><div class='img'><img src='tips-4.png' alt='' width='700' height='433' /></div><div class='input'>
 </div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
@@ -181,7 +185,7 @@ they were often (but not always) rounded to dollars, quarters, etc.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.0.</p>
 </div>
 
       </footer>

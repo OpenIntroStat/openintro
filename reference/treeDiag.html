@@ -72,7 +72,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">openintro</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.0.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.0.0.9000</span>
       </span>
     </div>
 
@@ -124,21 +124,21 @@
     </div>
 
     <pre class="usage"><span class='fu'>treeDiag</span>(
-  <span class='no'>main</span>,
-  <span class='no'>p1</span>,
-  <span class='no'>p2</span>,
-  <span class='kw'>out1</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"Yes"</span>, <span class='st'>"No"</span>),
-  <span class='kw'>out2</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"Yes"</span>, <span class='st'>"No"</span>),
-  <span class='kw'>textwd</span> <span class='kw'>=</span> <span class='fl'>0.15</span>,
-  <span class='kw'>solwd</span> <span class='kw'>=</span> <span class='fl'>0.2</span>,
-  <span class='kw'>SBS</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>TRUE</span>, <span class='fl'>TRUE</span>),
-  <span class='kw'>showSol</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>,
-  <span class='kw'>solSub</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>digits</span> <span class='kw'>=</span> <span class='fl'>4</span>,
-  <span class='kw'>textadj</span> <span class='kw'>=</span> <span class='fl'>0.015</span>,
-  <span class='kw'>cex.main</span> <span class='kw'>=</span> <span class='fl'>1.3</span>,
-  <span class='kw'>col.main</span> <span class='kw'>=</span> <span class='st'>"#999999"</span>,
-  <span class='kw'>showWork</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>
+  <span class='kw'>main</span>,
+  <span class='kw'>p1</span>,
+  <span class='kw'>p2</span>,
+  out1 = <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"Yes"</span>, <span class='st'>"No"</span>),
+  out2 = <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"Yes"</span>, <span class='st'>"No"</span>),
+  textwd = <span class='fl'>0.15</span>,
+  solwd = <span class='fl'>0.2</span>,
+  SBS = <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>TRUE</span>, <span class='fl'>TRUE</span>),
+  showSol = <span class='fl'>TRUE</span>,
+  solSub = <span class='kw'>NULL</span>,
+  digits = <span class='fl'>4</span>,
+  textadj = <span class='fl'>0.015</span>,
+  cex.main = <span class='fl'>1.3</span>,
+  col.main = <span class='st'>"#999999"</span>,
+  showWork = <span class='fl'>FALSE</span>
 )</pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
@@ -214,16 +214,23 @@ alternative text or solutions</p></td>
     </tr>
     </table>
 
+    <h2 class="hasAnchor" id="author"><a class="anchor" href="#author"></a>Author</h2>
+
+    <p>David Diez, Christopher Barr</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'><span class='fu'>treeDiag</span>(<span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"Flight on time?"</span>,<span class='st'>"Luggage on time?"</span>),
-         <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>0.8</span>, <span class='fl'>0.2</span>), <span class='fu'><a href='https://rdrr.io/r/base/list.html'>list</a></span>(<span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>0.97</span>, <span class='fl'>0.03</span>), <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>0.15</span>, <span class='fl'>0.85</span>)))</div><div class='img'><img src='treeDiag-1.png' alt='' width='700' height='433' /></div><div class='input'><span class='fu'>treeDiag</span>(<span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"Breakfast?"</span>,<span class='st'>"Go to class"</span>), <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>.4</span>,<span class='fl'>.6</span>),
+         <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>0.8</span>, <span class='fl'>0.2</span>), <span class='fu'><a href='https://rdrr.io/r/base/list.html'>list</a></span>(<span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>0.97</span>, <span class='fl'>0.03</span>), <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>0.15</span>, <span class='fl'>0.85</span>)))
+</div><div class='img'><img src='treeDiag-1.png' alt='' width='700' height='433' /></div><div class='input'><span class='fu'>treeDiag</span>(<span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"Breakfast?"</span>,<span class='st'>"Go to class"</span>), <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>.4</span>,<span class='fl'>.6</span>),
          <span class='fu'><a href='https://rdrr.io/r/base/list.html'>list</a></span>(<span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>0.4</span>,<span class='fl'>0.36</span>,<span class='fl'>0.34</span>), <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>0.6</span>,<span class='fl'>0.3</span>,<span class='fl'>0.1</span>)), <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"Yes"</span>, <span class='st'>"No"</span>),
-         <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"Statistics"</span>,<span class='st'>"English"</span>,<span class='st'>"Sociology"</span>), <span class='kw'>showWork</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)</div><div class='img'><img src='treeDiag-2.png' alt='' width='700' height='433' /></div><div class='input'><span class='fu'>treeDiag</span>(<span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"Breakfast?"</span>,<span class='st'>"Go to class"</span>), <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>0.4</span>, <span class='fl'>0.11</span>, <span class='fl'>0.49</span>),
+         <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"Statistics"</span>,<span class='st'>"English"</span>,<span class='st'>"Sociology"</span>), showWork = <span class='fl'>TRUE</span>)
+</div><div class='img'><img src='treeDiag-2.png' alt='' width='700' height='433' /></div><div class='input'><span class='fu'>treeDiag</span>(<span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"Breakfast?"</span>,<span class='st'>"Go to class"</span>), <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>0.4</span>, <span class='fl'>0.11</span>, <span class='fl'>0.49</span>),
          <span class='fu'><a href='https://rdrr.io/r/base/list.html'>list</a></span>(<span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>0.4</span>, <span class='fl'>0.36</span>, <span class='fl'>0.24</span>), <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>0.6</span>, <span class='fl'>0.3</span>, <span class='fl'>0.1</span>), <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>0.1</span>, <span class='fl'>0.4</span>, <span class='fl'>0.5</span>)),
-         <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"one"</span>, <span class='st'>"two"</span>, <span class='st'>"three"</span>), <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"Statistics"</span>, <span class='st'>"English"</span>, <span class='st'>"Sociology"</span>))</div><div class='img'><img src='treeDiag-3.png' alt='' width='700' height='433' /></div><div class='input'><span class='fu'>treeDiag</span>(<span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"Dow Jones rise?"</span>, <span class='st'>"NASDAQ rise?"</span>),
+         <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"one"</span>, <span class='st'>"two"</span>, <span class='st'>"three"</span>), <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"Statistics"</span>, <span class='st'>"English"</span>, <span class='st'>"Sociology"</span>))
+</div><div class='img'><img src='treeDiag-3.png' alt='' width='700' height='433' /></div><div class='input'><span class='fu'>treeDiag</span>(<span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"Dow Jones rise?"</span>, <span class='st'>"NASDAQ rise?"</span>),
          <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>0.53</span>, <span class='fl'>0.47</span>), <span class='fu'><a href='https://rdrr.io/r/base/list.html'>list</a></span>(<span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>0.75</span>, <span class='fl'>0.25</span>), <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>0.72</span>, <span class='fl'>0.28</span>)),
-         <span class='kw'>solSub</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/list.html'>list</a></span>(<span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"(a)"</span>, <span class='st'>"(b)"</span>), <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"(c)"</span>, <span class='st'>"(d)"</span>)), <span class='kw'>solwd</span> <span class='kw'>=</span> <span class='fl'>0.08</span>)</div><div class='img'><img src='treeDiag-4.png' alt='' width='700' height='433' /></div></pre>
+         solSub = <span class='fu'><a href='https://rdrr.io/r/base/list.html'>list</a></span>(<span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"(a)"</span>, <span class='st'>"(b)"</span>), <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"(c)"</span>, <span class='st'>"(d)"</span>)), solwd = <span class='fl'>0.08</span>)
+</div><div class='img'><img src='treeDiag-4.png' alt='' width='700' height='433' /></div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
@@ -239,7 +246,7 @@ alternative text or solutions</p></td>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.0.</p>
 </div>
 
       </footer>

@@ -73,7 +73,7 @@ from 1890 to 2010." />
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">openintro</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.0.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.0.0.9000</span>
       </span>
     </div>
 
@@ -125,12 +125,12 @@ from 1890 to 2010." />
 from 1890 to 2010.</p>
     </div>
 
-    <pre class="usage"><span class='no'>unempl</span></pre>
+    <pre class="usage"><span class='kw'>unempl</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>A data frame with 121 observations on the following 3 variables.</p><dl'>
+    <p>A data frame with 121 observations on the following 3 variables.</p><dl>
   <dt>year</dt><dd><p>Year</p></dd>
   <dt>unemp</dt><dd><p>Unemployment rate, in percent</p></dd>
   <dt>us_data</dt><dd><p><code>1</code> if from the Bureau of Labor Statistics, <code>0</code>
@@ -166,11 +166,23 @@ during those years. The methods are described in detail by Coen and Romer.</p>
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
 <span class='co'>#=====&gt; Time Series Plot of Data &lt;=====#</span>
-<span class='no'>COL</span>   <span class='kw'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"#DDEEBB"</span>, <span class='st'>"#EEDDBB"</span>, <span class='st'>"#BBDDEE"</span>, <span class='st'>"#FFD5DD"</span>, <span class='st'>"#FFC5CC"</span>)
-<span class='fu'><a href='https://rdrr.io/r/base/plot.html'>plot</a></span>(<span class='no'>unempl</span>$<span class='no'>year</span>, <span class='no'>unempl</span>$<span class='no'>unemp</span>, <span class='kw'>type</span><span class='kw'>=</span><span class='st'>"n"</span>)</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/rect.html'>rect</a></span>(<span class='fl'>0</span>, -<span class='fl'>50</span>, <span class='fl'>3000</span>, <span class='fl'>100</span>, <span class='kw'>col</span><span class='kw'>=</span><span class='st'>"#E2E2E2"</span>)</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/rect.html'>rect</a></span>(<span class='fl'>1914.5</span>, -<span class='fl'>1000</span>, <span class='fl'>1918.9</span>, <span class='fl'>1000</span>, <span class='kw'>col</span><span class='kw'>=</span><span class='no'>COL</span>[<span class='fl'>1</span>], <span class='kw'>border</span><span class='kw'>=</span><span class='st'>"#E2E2E2"</span>)</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/rect.html'>rect</a></span>(<span class='fl'>1929</span>, -<span class='fl'>1000</span>, <span class='fl'>1939</span>, <span class='fl'>1000</span>, <span class='kw'>col</span><span class='kw'>=</span><span class='no'>COL</span>[<span class='fl'>2</span>], <span class='kw'>border</span><span class='kw'>=</span><span class='st'>"#E2E2E2"</span>)</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/rect.html'>rect</a></span>(<span class='fl'>1939.7</span>, -<span class='fl'>1000</span>, <span class='fl'>1945.6</span>, <span class='fl'>1000</span>, <span class='kw'>col</span><span class='kw'>=</span><span class='no'>COL</span>[<span class='fl'>3</span>], <span class='kw'>border</span><span class='kw'>=</span><span class='st'>"#E2E2E2"</span>)</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/rect.html'>rect</a></span>(<span class='fl'>1955.8</span>, -<span class='fl'>1000</span>, <span class='fl'>1965.3</span>, <span class='fl'>1000</span>, <span class='kw'>col</span><span class='kw'>=</span><span class='no'>COL</span>[<span class='fl'>4</span>], <span class='kw'>border</span><span class='kw'>=</span><span class='st'>"#E2E2E2"</span>)</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/rect.html'>rect</a></span>(<span class='fl'>1965.3</span>, -<span class='fl'>1000</span>, <span class='fl'>1975.4</span>, <span class='fl'>1000</span>, <span class='kw'>col</span><span class='kw'>=</span><span class='no'>COL</span>[<span class='fl'>5</span>], <span class='kw'>border</span><span class='kw'>=</span><span class='st'>"#E2E2E2"</span>)</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/abline.html'>abline</a></span>(<span class='kw'>h</span><span class='kw'>=</span><span class='fu'><a href='https://rdrr.io/r/base/seq.html'>seq</a></span>(<span class='fl'>0</span>,<span class='fl'>50</span>,<span class='fl'>5</span>), <span class='kw'>col</span><span class='kw'>=</span><span class='st'>"#F8F8F8"</span>, <span class='kw'>lwd</span><span class='kw'>=</span><span class='fl'>2</span>)</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/abline.html'>abline</a></span>(<span class='kw'>v</span><span class='kw'>=</span><span class='fu'><a href='https://rdrr.io/r/base/seq.html'>seq</a></span>(<span class='fl'>1900</span>, <span class='fl'>2000</span>, <span class='fl'>20</span>), <span class='kw'>col</span><span class='kw'>=</span><span class='st'>"#FFFFFF"</span>, <span class='kw'>lwd</span><span class='kw'>=</span><span class='fl'>1.3</span>)</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/lines.html'>lines</a></span>(<span class='no'>unempl</span>$<span class='no'>year</span>, <span class='no'>unempl</span>$<span class='no'>unemp</span>)</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/points.html'>points</a></span>(<span class='no'>unempl</span>$<span class='no'>year</span>, <span class='no'>unempl</span>$<span class='no'>unemp</span>, <span class='kw'>pch</span><span class='kw'>=</span><span class='fl'>20</span>)</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/legend.html'>legend</a></span>(<span class='st'>"topright"</span>, <span class='kw'>fill</span><span class='kw'>=</span><span class='no'>COL</span>,
+<span class='kw'>COL</span>   <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"#DDEEBB"</span>, <span class='st'>"#EEDDBB"</span>, <span class='st'>"#BBDDEE"</span>, <span class='st'>"#FFD5DD"</span>, <span class='st'>"#FFC5CC"</span>)
+<span class='fu'><a href='https://rdrr.io/r/graphics/plot.default.html'>plot</a></span>(<span class='kw'>unempl</span><span class='op'>$</span><span class='kw'>year</span>, <span class='kw'>unempl</span><span class='op'>$</span><span class='kw'>unemp</span>, type=<span class='st'>"n"</span>)
+</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/rect.html'>rect</a></span>(<span class='fl'>0</span>, <span class='op'>-</span><span class='fl'>50</span>, <span class='fl'>3000</span>, <span class='fl'>100</span>, col=<span class='st'>"#E2E2E2"</span>)
+</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/rect.html'>rect</a></span>(<span class='fl'>1914.5</span>, <span class='op'>-</span><span class='fl'>1000</span>, <span class='fl'>1918.9</span>, <span class='fl'>1000</span>, col=<span class='kw'>COL</span>[<span class='fl'>1</span>], border=<span class='st'>"#E2E2E2"</span>)
+</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/rect.html'>rect</a></span>(<span class='fl'>1929</span>, <span class='op'>-</span><span class='fl'>1000</span>, <span class='fl'>1939</span>, <span class='fl'>1000</span>, col=<span class='kw'>COL</span>[<span class='fl'>2</span>], border=<span class='st'>"#E2E2E2"</span>)
+</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/rect.html'>rect</a></span>(<span class='fl'>1939.7</span>, <span class='op'>-</span><span class='fl'>1000</span>, <span class='fl'>1945.6</span>, <span class='fl'>1000</span>, col=<span class='kw'>COL</span>[<span class='fl'>3</span>], border=<span class='st'>"#E2E2E2"</span>)
+</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/rect.html'>rect</a></span>(<span class='fl'>1955.8</span>, <span class='op'>-</span><span class='fl'>1000</span>, <span class='fl'>1965.3</span>, <span class='fl'>1000</span>, col=<span class='kw'>COL</span>[<span class='fl'>4</span>], border=<span class='st'>"#E2E2E2"</span>)
+</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/rect.html'>rect</a></span>(<span class='fl'>1965.3</span>, <span class='op'>-</span><span class='fl'>1000</span>, <span class='fl'>1975.4</span>, <span class='fl'>1000</span>, col=<span class='kw'>COL</span>[<span class='fl'>5</span>], border=<span class='st'>"#E2E2E2"</span>)
+</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/abline.html'>abline</a></span>(h=<span class='fu'><a href='https://rdrr.io/r/base/seq.html'>seq</a></span>(<span class='fl'>0</span>,<span class='fl'>50</span>,<span class='fl'>5</span>), col=<span class='st'>"#F8F8F8"</span>, lwd=<span class='fl'>2</span>)
+</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/abline.html'>abline</a></span>(v=<span class='fu'><a href='https://rdrr.io/r/base/seq.html'>seq</a></span>(<span class='fl'>1900</span>, <span class='fl'>2000</span>, <span class='fl'>20</span>), col=<span class='st'>"#FFFFFF"</span>, lwd=<span class='fl'>1.3</span>)
+</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/lines.html'>lines</a></span>(<span class='kw'>unempl</span><span class='op'>$</span><span class='kw'>year</span>, <span class='kw'>unempl</span><span class='op'>$</span><span class='kw'>unemp</span>)
+</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/points.html'>points</a></span>(<span class='kw'>unempl</span><span class='op'>$</span><span class='kw'>year</span>, <span class='kw'>unempl</span><span class='op'>$</span><span class='kw'>unemp</span>, pch=<span class='fl'>20</span>)
+</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/legend.html'>legend</a></span>(<span class='st'>"topright"</span>, fill=<span class='kw'>COL</span>,
       <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"World War I"</span>, <span class='st'>"Great Depression"</span>, <span class='st'>"World War II"</span>,
         <span class='st'>"Vietnam War Start"</span>, <span class='st'>"Vietnam War Escalated"</span>),
-      <span class='kw'>bg</span><span class='kw'>=</span><span class='st'>"#FFFFFF"</span>, <span class='kw'>border</span><span class='kw'>=</span><span class='st'>"#FFFFFF"</span>)</div><div class='img'><img src='unempl-1.png' alt='' width='700' height='433' /></div><div class='input'>
+      bg=<span class='st'>"#FFFFFF"</span>, border=<span class='st'>"#FFFFFF"</span>)
+</div><div class='img'><img src='unempl-1.png' alt='' width='700' height='433' /></div><div class='input'>
 </div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
@@ -187,7 +199,7 @@ during those years. The methods are described in detail by Coen and Romer.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.0.</p>
 </div>
 
       </footer>

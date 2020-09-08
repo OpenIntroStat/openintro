@@ -72,7 +72,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">openintro</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.0.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.0.0.9000</span>
       </span>
     </div>
 
@@ -123,12 +123,12 @@
     <p>A simulated data set based on real population summaries.</p>
     </div>
 
-    <pre class="usage"><span class='no'>family_college</span></pre>
+    <pre class="usage"><span class='kw'>family_college</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>A data frame with 792 observations on the following 2 variables.</p><dl'>
+    <p>A data frame with 792 observations on the following 2 variables.</p><dl>
   <dt>teen</dt><dd><p>Whether the teen goes to <code>college</code> or <code>not</code>.</p></dd>
   <dt>parents</dt><dd><p>Whether the parent holds a college <code>degree</code> or <code>not</code>.</p></dd>
 
@@ -141,10 +141,11 @@
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
-<span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='no'>dplyr</span>)
+<span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='kw'><a href='https://dplyr.tidyverse.org'>dplyr</a></span>)
 
-<span class='no'>family_college</span> <span class='kw'>%&gt;%</span>
-  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/count.html'>count</a></span>(<span class='no'>teen</span>, <span class='no'>parents</span>)</div><div class='output co'>#&gt; <span style='color: #555555;'># A tibble: 4 x 3</span><span>
+<span class='kw'>family_college</span> <span class='op'>%&gt;%</span>
+  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/count.html'>count</a></span>(<span class='kw'>teen</span>, <span class='kw'>parents</span>)
+</div><div class='output co'>#&gt; <span style='color: #555555;'># A tibble: 4 x 3</span><span>
 #&gt;   teen    parents     n
 #&gt;   </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span>   </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span>   </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span>
 #&gt; </span><span style='color: #555555;'>1</span><span> college degree    231
@@ -167,7 +168,7 @@
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.0.</p>
 </div>
 
       </footer>
