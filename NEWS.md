@@ -1,5 +1,7 @@
 # openintro (development version)
 
+* Added new datasets: `fact_opinion`, `flow_rates`, `race_justice`
+
 # openintro 2.0.0
 
 * Added a `NEWS.md` file to track changes to the package.
