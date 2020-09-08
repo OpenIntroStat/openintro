@@ -1,6 +1,8 @@
 # openintro (development version)
 
-* Added new datasets: `fact_opinion`, `flow_rates`, `race_justice`
+* Added new datasets: 
+  * `fact_opinion`, `flow_rates`, `race_justice` by [@npaterno](https://github.com/npaterno)
+  * `exam_grades`
 
 # openintro 2.0.0
 
