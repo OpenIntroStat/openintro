@@ -89,15 +89,11 @@
 <h2 class="hasAnchor">
 <a href="#installation" class="anchor"></a>Installation</h2>
 <p>You can install the released version of openintro from <a href="https://CRAN.R-project.org">CRAN</a> with:</p>
-<div class="sourceCode" id="cb1"><pre class="downlit">
-<span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span>(<span class="st">"openintro"</span>)
-</pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="kw">install.packages</span>(<span class="st">"openintro"</span>)</span></code></pre></div>
 <p>You can install the development version of openintro from GitHub with:</p>
-<div class="sourceCode" id="cb2"><pre class="downlit">
-<span class="co"># install.packages("devtools")</span>
-<span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="kw">devtools</span>)
-<span class="fu">install_github</span>(<span class="st">"OpenIntroStat/openintro"</span>)
-</pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="co"># install.packages("devtools")</span></span>
+<span id="cb2-2"><a href="#cb2-2"></a><span class="kw">library</span>(devtools)</span>
+<span id="cb2-3"><a href="#cb2-3"></a><span class="kw">install_github</span>(<span class="st">"OpenIntroStat/openintro"</span>)</span></code></pre></div>
 <p>This package was produced as part of the OpenIntro project. For the accompanying textbook, visit <a href="https://openintro.org">openintro.org</a>. A PDF of the textbook is free and paperbacks can be purchased online (royalty-free).</p>
 </div>
 <div id="questions-bugs-feature-requests" class="section level2">
@@ -106,6 +102,29 @@
 <p>You can file an issue to get help, report a bug, or make a feature request.</p>
 <p>When filing an issue to get help or report a bug, please make a minimal <strong>repr</strong>oducible <strong>ex</strong>ample using the <a href="https://reprex.tidyverse.org/">reprex</a> package. If you haven’t heard of or used reprex before, you’re in for a treat! Seriously, reprex will make all of your R-question-asking endeavors easier (which is a pretty insane ROI for the five to ten minutes it’ll take you to learn what it’s all about). For additional reprex pointers, check out the <a href="https://www.tidyverse.org/help/">Get help!</a> section of the tidyverse site.</p>
 <p>Before opening a new issue, be sure to <a href="https://github.com/openintrostat/openintro/issues">search issues and pull requests</a> to make sure the bug hasn’t been reported and/or already fixed in the development version. By default, the search will be pre-populated with <code>is:issue is:open</code>. You can <a href="https://help.github.com/articles/searching-issues-and-pull-requests/">edit the qualifiers</a> (e.g. <code>is:pr</code>, <code>is:closed</code>) as needed. For example, you’d simply remove <code>is:open</code> to search <em>all</em> issues in the repo, open or closed.</p>
+</div>
+<div id="contributing" class="section level2">
+<h2 class="hasAnchor">
+<a href="#contributing" class="anchor"></a>Contributing</h2>
+<p>Process for adding new data to the package</p>
+<p>The following steps use the <strong>devtools</strong> and <strong>usethis</strong> packages for various steps. We recommend using this process when suggesting new datasets to be added to the package. If the dataset is large (&gt;500MB) or you’d like to add a function, please open an issue first for discussion before making the pull request.</p>
+<ol>
+<li>Fork and clone the repo with <code>usethis::create_from_github("OpenIntroStat/openintro")</code>
+<ul>
+<li>Note: If you have write access to the repo, you can skip this step.</li>
+</ul>
+</li>
+<li>Start a new pull request with <code>usethis::pr_init("BRANCH-NAME")</code>, where <code>BRANCH-NAME</code> is an informative branch name.</li>
+<li>If adding a file that is not an .rda file to begin with (Excel, csv, etc.), create a folder in the <code>data-raw</code> folder with the name of the dataset (how you’d like it to show up in the package). Please use <code>snake_case</code> for naming, e.g. <code>name_of_dataset</code>.</li>
+<li>Place your dataset in its raw form in the folder.</li>
+<li>Also in the <code>data-raw</code> folder, create a new R script called <code>name_of_dataset-dataprep.R</code> and write the code needed to read in the file, make any modifications to the data that are needed (if any), and end with <code>usethis::use_data()</code> to save the data in the package as an .rda file with the ideal compression. See examples from other folders in <code>data-raw</code> for sample code. The contents of this folder do not end up in the package (the entire folder is ignored in the <code>.Rbuildignore</code>) so you don’t need to worry about adding package dependencies etc.</li>
+<li>In the <code>R</code> folder, create an R script called <code>data-name_of_dataset</code> and add documentation using Roxygen style. See other documentation files for help with style. In the examples, use tidyverse syntax but do not use <code>library(tidyverse)</code> and only use the relevant packages, e.g. <code><a href="https://dplyr.tidyverse.org">library(dplyr)</a></code>, <code><a href="http://ggplot2.tidyverse.org">library(ggplot2)</a></code>.</li>
+<li>Restart R and run <code>devtools::load_all()</code> to make sure the data loads and run your examples to confirm they all work.</li>
+<li>Run <code>devtools::docment()</code>, restart R, and then <code>devtools::load_all()</code>. Then, check out <code>?name_of_dataset</code> to make sure the documentation looks as expected.</li>
+<li>Run <code>devtools::check()</code>. The only NOTE you should see as a result of the check should be about the package size. If any other ERRORs, NOTEs, or WARNINGs are generated, resolve them or open an issue for help.</li>
+<li>In the <code>pkgdown.yml</code> file, add the name of the dataset under <code>reference</code>, in the correct alphabetical order.</li>
+<li>Add a note in the <code>NEWS.md</code> with the new dataset you’ve added with a link to your GitHub username so we can acknowledge your contribution, e.g. “added by <a href="https://github.com/mine-cetinkaya-rundel">@mine-cetinkaya-rundel</a>”.</li>
+</ol>
 </div>
 <div id="code-of-conduct" class="section level2">
 <h2 class="hasAnchor">
