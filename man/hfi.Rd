@@ -3,7 +3,7 @@
 \docType{data}
 \name{hfi}
 \alias{hfi}
-\title{Absenteeism}
+\title{Human Freedom Index}
 \format{
 A data frame with 1458 observations on the following 123 variables.
 \describe{
