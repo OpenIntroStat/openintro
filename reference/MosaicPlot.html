@@ -123,18 +123,18 @@
     <p>Plot a mosaic plot custom built for a particular figure.</p>
     </div>
 
-    <pre class="usage"><span class='fu'>MosaicPlot</span>(
-  <span class='kw'>formula</span>,
-  <span class='kw'>data</span>,
-  col = <span class='st'>"#00000022"</span>,
-  border = <span class='fl'>1</span>,
-  dir = <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"v"</span>, <span class='st'>"h"</span>),
-  off = <span class='fl'>0.01</span>,
-  cex.axis = <span class='fl'>0.7</span>,
-  col.dir = <span class='st'>"v"</span>,
-  flip = <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"v"</span>),
-  <span class='kw'>...</span>
-)</pre>
+    <pre class="usage"><span class='fu'>MosaicPlot</span><span class='op'>(</span>
+  <span class='va'>formula</span>,
+  <span class='va'>data</span>,
+  col <span class='op'>=</span> <span class='st'>"#00000022"</span>,
+  border <span class='op'>=</span> <span class='fl'>1</span>,
+  dir <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"v"</span>, <span class='st'>"h"</span><span class='op'>)</span>,
+  off <span class='op'>=</span> <span class='fl'>0.01</span>,
+  cex.axis <span class='op'>=</span> <span class='fl'>0.7</span>,
+  col.dir <span class='op'>=</span> <span class='st'>"v"</span>,
+  flip <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"v"</span><span class='op'>)</span>,
+  <span class='va'>...</span>
+<span class='op'>)</span></pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
@@ -188,11 +188,11 @@ horizontal (<code>"h"</code>) ordering in the plot.</p></td>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
-<span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span>(<span class='kw'>email</span>)
-<span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span>(<span class='kw'>COL</span>)
-<span class='kw'>email</span><span class='op'>$</span><span class='kw'>spam</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/ifelse.html'>ifelse</a></span>(<span class='kw'>email</span><span class='op'>$</span><span class='kw'>spam</span> <span class='op'>==</span> <span class='fl'>0</span>, <span class='st'>"not\nspam"</span>, <span class='st'>"spam"</span>)
-<span class='fu'><a href='https://rdrr.io/r/graphics/par.html'>par</a></span>(las = <span class='fl'>1</span>)
-<span class='fu'>MosaicPlot</span>(<span class='kw'>number</span> <span class='op'>~</span> <span class='kw'>spam</span>, <span class='kw'>email</span>, col = <span class='kw'>COL</span>[<span class='fl'>1</span><span class='op'>:</span><span class='fl'>3</span>], off = <span class='fl'>0.02</span>)
+<span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span><span class='op'>(</span><span class='va'>email</span><span class='op'>)</span>
+<span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span><span class='op'>(</span><span class='va'>COL</span><span class='op'>)</span>
+<span class='va'>email</span><span class='op'>$</span><span class='va'>spam</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/ifelse.html'>ifelse</a></span><span class='op'>(</span><span class='va'>email</span><span class='op'>$</span><span class='va'>spam</span> <span class='op'>==</span> <span class='fl'>0</span>, <span class='st'>"not\nspam"</span>, <span class='st'>"spam"</span><span class='op'>)</span>
+<span class='fu'><a href='https://rdrr.io/r/graphics/par.html'>par</a></span><span class='op'>(</span>las <span class='op'>=</span> <span class='fl'>1</span><span class='op'>)</span>
+<span class='fu'>MosaicPlot</span><span class='op'>(</span><span class='va'>number</span> <span class='op'>~</span> <span class='va'>spam</span>, <span class='va'>email</span>, col <span class='op'>=</span> <span class='va'>COL</span><span class='op'>[</span><span class='fl'>1</span><span class='op'>:</span><span class='fl'>3</span><span class='op'>]</span>, off <span class='op'>=</span> <span class='fl'>0.02</span><span class='op'>)</span>
 </div><div class='img'><img src='MosaicPlot-1.png' alt='' width='700' height='433' /></div><div class='input'>
 </div></pre>
   </div>
@@ -210,7 +210,7 @@ horizontal (<code>"h"</code>) ordering in the plot.</p></td>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.0.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
 </div>
 
       </footer>

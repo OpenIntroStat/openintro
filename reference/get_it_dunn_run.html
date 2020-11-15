@@ -127,7 +127,7 @@ Nichole Porath, made the Guiness Book of World Records for the fastest time
 pushing a double stroller in a half marathon.</p>
     </div>
 
-    <pre class="usage"><span class='kw'>get_it_dunn_run</span></pre>
+    <pre class="usage"><span class='va'>get_it_dunn_run</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
@@ -153,10 +153,10 @@ pushing a double stroller in a half marathon.</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
-<span class='kw'>d</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/subset.html'>subset</a></span>(<span class='kw'>get_it_dunn_run</span>,
-    <span class='kw'>race</span> <span class='op'>==</span> <span class='st'>"5k"</span> <span class='op'>&amp;</span> <span class='kw'>date</span> <span class='op'>==</span> <span class='st'>"2018-05-12"</span> <span class='op'>&amp;</span>
-        <span class='op'>!</span><span class='fu'><a href='https://rdrr.io/r/base/NA.html'>is.na</a></span>(<span class='kw'>age</span>) <span class='op'>&amp;</span> <span class='kw'>state</span> <span class='op'>%in%</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"MN"</span>, <span class='st'>"WI"</span>))
-<span class='fu'><a href='https://rdrr.io/r/utils/head.html'>head</a></span>(<span class='kw'>d</span>)
+<span class='va'>d</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/subset.html'>subset</a></span><span class='op'>(</span><span class='va'>get_it_dunn_run</span>,
+    <span class='va'>race</span> <span class='op'>==</span> <span class='st'>"5k"</span> <span class='op'>&amp;</span> <span class='va'>date</span> <span class='op'>==</span> <span class='st'>"2018-05-12"</span> <span class='op'>&amp;</span>
+        <span class='op'>!</span><span class='fu'><a href='https://rdrr.io/r/base/NA.html'>is.na</a></span><span class='op'>(</span><span class='va'>age</span><span class='op'>)</span> <span class='op'>&amp;</span> <span class='va'>state</span> <span class='op'>%in%</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"MN"</span>, <span class='st'>"WI"</span><span class='op'>)</span><span class='op'>)</span>
+<span class='fu'><a href='https://rdrr.io/r/utils/head.html'>head</a></span><span class='op'>(</span><span class='va'>d</span><span class='op'>)</span>
 </div><div class='output co'>#&gt; <span style='color: #555555;'># A tibble: 6 x 10</span><span>
 #&gt;   date  race  bib_num first_name last_initial sex     age city  state
 #&gt;   </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span> </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>   </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span> </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>      </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>        </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span> </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span> </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span> </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>
@@ -166,8 +166,8 @@ pushing a double stroller in a half marathon.</p>
 #&gt; </span><span style='color: #555555;'>4</span><span> 2018… 5k          4 Ashley     A            F        33 Cado… WI   
 #&gt; </span><span style='color: #555555;'>5</span><span> 2018… 5k          6 Bob        A            M        60 Boyd  WI   
 #&gt; </span><span style='color: #555555;'>6</span><span> 2018… 5k          7 Eric       A            M        30 Boyd  WI   
-#&gt; </span><span style='color: #555555;'># … with 1 more variable: run_time_minutes </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span></div><div class='input'><span class='kw'>m</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/stats/lm.html'>lm</a></span>(<span class='kw'>run_time_minutes</span> <span class='op'>~</span> <span class='kw'>sex</span> <span class='op'>+</span> <span class='kw'>age</span> <span class='op'>+</span> <span class='kw'>state</span>, <span class='kw'>d</span>)
-<span class='fu'><a href='https://rdrr.io/r/base/summary.html'>summary</a></span>(<span class='kw'>m</span>)
+#&gt; </span><span style='color: #555555;'># … with 1 more variable: run_time_minutes </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span></div><div class='input'><span class='va'>m</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/stats/lm.html'>lm</a></span><span class='op'>(</span><span class='va'>run_time_minutes</span> <span class='op'>~</span> <span class='va'>sex</span> <span class='op'>+</span> <span class='va'>age</span> <span class='op'>+</span> <span class='va'>state</span>, <span class='va'>d</span><span class='op'>)</span>
+<span class='fu'><a href='https://rdrr.io/r/base/summary.html'>summary</a></span><span class='op'>(</span><span class='va'>m</span><span class='op'>)</span>
 </div><div class='output co'>#&gt; 
 #&gt; Call:
 #&gt; lm(formula = run_time_minutes ~ sex + age + state, data = d)
@@ -188,10 +188,10 @@ pushing a double stroller in a half marathon.</p>
 #&gt; Residual standard error: 10.77 on 389 degrees of freedom
 #&gt; Multiple R-squared:  0.09101,	Adjusted R-squared:  0.084 
 #&gt; F-statistic: 12.98 on 3 and 389 DF,  p-value: 4.246e-08
-#&gt; </div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/plot.default.html'>plot</a></span>(<span class='kw'>m</span><span class='op'>$</span><span class='kw'>fitted</span>, <span class='kw'>m</span><span class='op'>$</span><span class='kw'>residuals</span>)
-</div><div class='img'><img src='get_it_dunn_run-1.png' alt='' width='700' height='433' /></div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/boxplot.html'>boxplot</a></span>(<span class='kw'>m</span><span class='op'>$</span><span class='kw'>residuals</span> <span class='op'>~</span> <span class='kw'>d</span><span class='op'>$</span><span class='kw'>sex</span>)
-</div><div class='img'><img src='get_it_dunn_run-2.png' alt='' width='700' height='433' /></div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/plot.default.html'>plot</a></span>(<span class='kw'>m</span><span class='op'>$</span><span class='kw'>residuals</span> <span class='op'>~</span> <span class='kw'>d</span><span class='op'>$</span><span class='kw'>age</span>)
-</div><div class='img'><img src='get_it_dunn_run-3.png' alt='' width='700' height='433' /></div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/hist.html'>hist</a></span>(<span class='kw'>m</span><span class='op'>$</span><span class='kw'>residuals</span>)
+#&gt; </div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/plot.default.html'>plot</a></span><span class='op'>(</span><span class='va'>m</span><span class='op'>$</span><span class='va'>fitted</span>, <span class='va'>m</span><span class='op'>$</span><span class='va'>residuals</span><span class='op'>)</span>
+</div><div class='img'><img src='get_it_dunn_run-1.png' alt='' width='700' height='433' /></div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/boxplot.html'>boxplot</a></span><span class='op'>(</span><span class='va'>m</span><span class='op'>$</span><span class='va'>residuals</span> <span class='op'>~</span> <span class='va'>d</span><span class='op'>$</span><span class='va'>sex</span><span class='op'>)</span>
+</div><div class='img'><img src='get_it_dunn_run-2.png' alt='' width='700' height='433' /></div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/plot.default.html'>plot</a></span><span class='op'>(</span><span class='va'>m</span><span class='op'>$</span><span class='va'>residuals</span> <span class='op'>~</span> <span class='va'>d</span><span class='op'>$</span><span class='va'>age</span><span class='op'>)</span>
+</div><div class='img'><img src='get_it_dunn_run-3.png' alt='' width='700' height='433' /></div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/hist.html'>hist</a></span><span class='op'>(</span><span class='va'>m</span><span class='op'>$</span><span class='va'>residuals</span><span class='op'>)</span>
 </div><div class='img'><img src='get_it_dunn_run-4.png' alt='' width='700' height='433' /></div><div class='input'>
 </div></span></pre>
   </div>
@@ -209,7 +209,7 @@ pushing a double stroller in a half marathon.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.0.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
 </div>
 
       </footer>

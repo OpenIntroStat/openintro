@@ -123,7 +123,7 @@
     <p>We consider data on river flow rates collected by volunteers of the Pierce Conservation District.</p>
     </div>
 
-    <pre class="usage"><span class='kw'>flow_rates</span></pre>
+    <pre class="usage"><span class='va'>flow_rates</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
@@ -140,15 +140,15 @@
     <p><a href='https://bit.ly/39gXVc9'>Pierce County Water Data Viewer</a></p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/boxplot.html'>boxplot</a></span>(<span class='kw'>flow</span><span class='op'>~</span><span class='kw'>site</span>, data = <span class='kw'>flow_rates</span>, main=<span class='st'>"River Flow Rates"</span>,
-  xlab = <span class='st'>"Site"</span>, ylab = <span class='fu'><a href='https://rdrr.io/r/base/expression.html'>expression</a></span>(<span class='fu'><a href='https://rdrr.io/r/base/paste.html'>paste</a></span>(<span class='st'>"Flow (ft"</span><span class='op'>^</span><span class='fl'>3</span><span class='op'>*</span><span class='st'>"/s)"</span>)))
+    <pre class="examples"><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/boxplot.html'>boxplot</a></span><span class='op'>(</span><span class='va'>flow</span><span class='op'>~</span><span class='va'>site</span>, data <span class='op'>=</span> <span class='va'>flow_rates</span>, main<span class='op'>=</span><span class='st'>"River Flow Rates"</span>,
+  xlab <span class='op'>=</span> <span class='st'>"Site"</span>, ylab <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/expression.html'>expression</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/paste.html'>paste</a></span><span class='op'>(</span><span class='st'>"Flow (ft"</span><span class='op'>^</span><span class='fl'>3</span><span class='op'>*</span><span class='st'>"/s)"</span><span class='op'>)</span><span class='op'>)</span><span class='op'>)</span>
 </div><div class='img'><img src='flow_rates-1.png' alt='' width='700' height='433' /></div><div class='input'>
-<span class='fu'><a href='https://rdrr.io/r/graphics/plot.default.html'>plot</a></span>(<span class='kw'>flow_rates</span><span class='op'>$</span><span class='kw'>date</span>, <span class='kw'>flow_rates</span><span class='op'>$</span><span class='kw'>flow</span>, col = <span class='fu'><a href='https://rdrr.io/r/base/factor.html'>as.factor</a></span>(<span class='kw'>flow_rates</span><span class='op'>$</span><span class='kw'>site</span>),
-  main = <span class='st'>"Flow Rates Over Time"</span>, xlab = <span class='st'>"Date"</span>,
-  ylab = <span class='fu'><a href='https://rdrr.io/r/base/expression.html'>expression</a></span>(<span class='fu'><a href='https://rdrr.io/r/base/paste.html'>paste</a></span>(<span class='st'>"Flow (ft"</span><span class='op'>^</span><span class='fl'>3</span><span class='op'>*</span><span class='st'>"/s)"</span>)))
-</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/legend.html'>legend</a></span>(<span class='st'>"topright"</span>, title = <span class='st'>"Site"</span>,
-  legend = <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"Wildwood Creek Spring"</span>, <span class='st'>"Silver Creek"</span>,
-  <span class='st'>"Clarks Creek"</span>, <span class='st'>"Leach Creek"</span>), fill = <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"Blue"</span>,<span class='st'>"Green"</span>,<span class='st'>"Black"</span>,<span class='st'>"Red"</span>))
+<span class='fu'><a href='https://rdrr.io/r/graphics/plot.default.html'>plot</a></span><span class='op'>(</span><span class='va'>flow_rates</span><span class='op'>$</span><span class='va'>date</span>, <span class='va'>flow_rates</span><span class='op'>$</span><span class='va'>flow</span>, col <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/factor.html'>as.factor</a></span><span class='op'>(</span><span class='va'>flow_rates</span><span class='op'>$</span><span class='va'>site</span><span class='op'>)</span>,
+  main <span class='op'>=</span> <span class='st'>"Flow Rates Over Time"</span>, xlab <span class='op'>=</span> <span class='st'>"Date"</span>,
+  ylab <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/expression.html'>expression</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/paste.html'>paste</a></span><span class='op'>(</span><span class='st'>"Flow (ft"</span><span class='op'>^</span><span class='fl'>3</span><span class='op'>*</span><span class='st'>"/s)"</span><span class='op'>)</span><span class='op'>)</span><span class='op'>)</span>
+</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/legend.html'>legend</a></span><span class='op'>(</span><span class='st'>"topright"</span>, title <span class='op'>=</span> <span class='st'>"Site"</span>,
+  legend <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"Wildwood Creek Spring"</span>, <span class='st'>"Silver Creek"</span>,
+  <span class='st'>"Clarks Creek"</span>, <span class='st'>"Leach Creek"</span><span class='op'>)</span>, fill <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"Blue"</span>,<span class='st'>"Green"</span>,<span class='st'>"Black"</span>,<span class='st'>"Red"</span><span class='op'>)</span><span class='op'>)</span>
 </div><div class='img'><img src='flow_rates-2.png' alt='' width='700' height='433' /></div><div class='input'>
 </div></pre>
   </div>
@@ -166,7 +166,7 @@
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.0.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
 </div>
 
       </footer>

@@ -123,7 +123,7 @@
     <p>Convert and simplify axis labels that are in percentages.</p>
     </div>
 
-    <pre class="usage"><span class='fu'>AxisInPercent</span>(<span class='kw'>side</span>, <span class='kw'>at</span>, include.symbol = <span class='fl'>TRUE</span>, simplify = <span class='fl'>TRUE</span>, <span class='kw'>...</span>)</pre>
+    <pre class="usage"><span class='fu'>AxisInPercent</span><span class='op'>(</span><span class='va'>side</span>, <span class='va'>at</span>, include.symbol <span class='op'>=</span> <span class='cn'>TRUE</span>, simplify <span class='op'>=</span> <span class='cn'>TRUE</span>, <span class='va'>...</span><span class='op'>)</span></pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
@@ -168,9 +168,9 @@ drawn when the plot was first drawn.</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
-<span class='kw'>x</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/sample.html'>sample</a></span>(<span class='fl'>50e6</span>, <span class='fl'>100</span>)
-<span class='fu'><a href='https://rdrr.io/r/graphics/hist.html'>hist</a></span>(<span class='kw'>x</span>, axes = <span class='fl'>FALSE</span>)
-</div><div class='input'><span class='fu'><a href='AxisInDollars.html'>AxisInDollars</a></span>(<span class='fl'>1</span>, <span class='fu'><a href='https://rdrr.io/r/base/pretty.html'>pretty</a></span>(<span class='kw'>x</span>))
+<span class='va'>x</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/sample.html'>sample</a></span><span class='op'>(</span><span class='fl'>50e6</span>, <span class='fl'>100</span><span class='op'>)</span>
+<span class='fu'><a href='https://rdrr.io/r/graphics/hist.html'>hist</a></span><span class='op'>(</span><span class='va'>x</span>, axes <span class='op'>=</span> <span class='cn'>FALSE</span><span class='op'>)</span>
+</div><div class='input'><span class='fu'><a href='AxisInDollars.html'>AxisInDollars</a></span><span class='op'>(</span><span class='fl'>1</span>, <span class='fu'><a href='https://rdrr.io/r/base/pretty.html'>pretty</a></span><span class='op'>(</span><span class='va'>x</span><span class='op'>)</span><span class='op'>)</span>
 </div><div class='img'><img src='AxisInPercent-1.png' alt='' width='700' height='433' /></div><div class='input'>
 </div></pre>
   </div>
@@ -188,7 +188,7 @@ drawn when the plot was first drawn.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.0.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
 </div>
 
       </footer>

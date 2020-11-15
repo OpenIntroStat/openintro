@@ -123,7 +123,7 @@
     <p>Data runs from 1950 to near the end of 2018.</p>
     </div>
 
-    <pre class="usage"><span class='kw'>sp500_1950_2018</span></pre>
+    <pre class="usage"><span class='va'>sp500_1950_2018</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
@@ -145,11 +145,11 @@
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
-<span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span>(<span class='kw'>sp500_1950_2018</span>)
-<span class='kw'>sp500.ten.years</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/subset.html'>subset</a></span>(<span class='kw'>sp500_1950_2018</span>,
-    <span class='st'>"2009-01-01"</span> <span class='op'>&lt;=</span> <span class='fu'><a href='https://rdrr.io/r/base/as.Date.html'>as.Date</a></span>(<span class='kw'>Date</span>) <span class='op'>&amp;</span> <span class='fu'><a href='https://rdrr.io/r/base/as.Date.html'>as.Date</a></span>(<span class='kw'>Date</span>) <span class='op'>&lt;=</span> <span class='st'>"2018-12-31"</span>)
-<span class='kw'>d</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/diff.html'>diff</a></span>(<span class='kw'>sp500.ten.years</span><span class='op'>$</span><span class='kw'>Adj.Close</span>)
-<span class='fu'><a href='https://rdrr.io/r/base/mean.html'>mean</a></span>(<span class='kw'>d</span> <span class='op'>&gt;</span> <span class='fl'>0</span>)
+<span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span><span class='op'>(</span><span class='va'>sp500_1950_2018</span><span class='op'>)</span>
+<span class='va'>sp500.ten.years</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/subset.html'>subset</a></span><span class='op'>(</span><span class='va'>sp500_1950_2018</span>,
+    <span class='st'>"2009-01-01"</span> <span class='op'>&lt;=</span> <span class='fu'><a href='https://rdrr.io/r/base/as.Date.html'>as.Date</a></span><span class='op'>(</span><span class='va'>Date</span><span class='op'>)</span> <span class='op'>&amp;</span> <span class='fu'><a href='https://rdrr.io/r/base/as.Date.html'>as.Date</a></span><span class='op'>(</span><span class='va'>Date</span><span class='op'>)</span> <span class='op'>&lt;=</span> <span class='st'>"2018-12-31"</span><span class='op'>)</span>
+<span class='va'>d</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/diff.html'>diff</a></span><span class='op'>(</span><span class='va'>sp500.ten.years</span><span class='op'>$</span><span class='va'>Adj.Close</span><span class='op'>)</span>
+<span class='fu'><a href='https://rdrr.io/r/base/mean.html'>mean</a></span><span class='op'>(</span><span class='va'>d</span> <span class='op'>&gt;</span> <span class='fl'>0</span><span class='op'>)</span>
 </div><div class='output co'>#&gt; [1] 0.5452</div><div class='input'>
 
 </div></pre>
@@ -168,7 +168,7 @@
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.0.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
 </div>
 
       </footer>

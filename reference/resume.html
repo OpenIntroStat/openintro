@@ -147,7 +147,7 @@ woman, while Greg was a name that would generally be interpreted to be
 associated with a white male.</p>
     </div>
 
-    <pre class="usage"><span class='kw'>resume</span></pre>
+    <pre class="usage"><span class='va'>resume</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
@@ -223,7 +223,7 @@ the conclusions, please find the link below and explore!</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
-<span class='fu'><a href='https://rdrr.io/r/utils/head.html'>head</a></span>(<span class='kw'>resume</span>, <span class='fl'>5</span>)
+<span class='fu'><a href='https://rdrr.io/r/utils/head.html'>head</a></span><span class='op'>(</span><span class='va'>resume</span>, <span class='fl'>5</span><span class='op'>)</span>
 </div><div class='output co'>#&gt; <span style='color: #555555;'># A tibble: 5 x 30</span><span>
 #&gt;   job_ad_id job_city job_industry job_type job_fed_contrac… job_equal_opp_e…
 #&gt;       </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span> </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>    </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>        </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>               </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>            </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>
@@ -246,23 +246,23 @@ the conclusions, please find the link below and explore!</p>
 <span class='co'># some minor differences due to randomness, but</span>
 <span class='co'># each variable should be (and is) generally</span>
 <span class='co'># well-balanced.</span>
-<span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span>(<span class='kw'>resume</span><span class='op'>$</span><span class='kw'>race</span>, <span class='kw'>resume</span><span class='op'>$</span><span class='kw'>years_college</span>)
+<span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span><span class='op'>(</span><span class='va'>resume</span><span class='op'>$</span><span class='va'>race</span>, <span class='va'>resume</span><span class='op'>$</span><span class='va'>years_college</span><span class='op'>)</span>
 </div><div class='output co'>#&gt;        
 #&gt;            0    1    2    3    4
 #&gt;   black   28   22  132  493 1760
-#&gt;   white   18   18  142  513 1744</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span>(<span class='kw'>resume</span><span class='op'>$</span><span class='kw'>race</span>, <span class='kw'>resume</span><span class='op'>$</span><span class='kw'>college_degree</span>)
+#&gt;   white   18   18  142  513 1744</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span><span class='op'>(</span><span class='va'>resume</span><span class='op'>$</span><span class='va'>race</span>, <span class='va'>resume</span><span class='op'>$</span><span class='va'>college_degree</span><span class='op'>)</span>
 </div><div class='output co'>#&gt;        
 #&gt;            0    1
 #&gt;   black  675 1760
-#&gt;   white  691 1744</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span>(<span class='kw'>resume</span><span class='op'>$</span><span class='kw'>race</span>, <span class='kw'>resume</span><span class='op'>$</span><span class='kw'>honors</span>)
+#&gt;   white  691 1744</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span><span class='op'>(</span><span class='va'>resume</span><span class='op'>$</span><span class='va'>race</span>, <span class='va'>resume</span><span class='op'>$</span><span class='va'>honors</span><span class='op'>)</span>
 </div><div class='output co'>#&gt;        
 #&gt;            0    1
 #&gt;   black 2310  125
-#&gt;   white 2303  132</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span>(<span class='kw'>resume</span><span class='op'>$</span><span class='kw'>race</span>, <span class='kw'>resume</span><span class='op'>$</span><span class='kw'>worked_during_school</span>)
+#&gt;   white 2303  132</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span><span class='op'>(</span><span class='va'>resume</span><span class='op'>$</span><span class='va'>race</span>, <span class='va'>resume</span><span class='op'>$</span><span class='va'>worked_during_school</span><span class='op'>)</span>
 </div><div class='output co'>#&gt;        
 #&gt;            0    1
 #&gt;   black 1069 1366
-#&gt;   white 1076 1359</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span>(<span class='kw'>resume</span><span class='op'>$</span><span class='kw'>race</span>, <span class='kw'>resume</span><span class='op'>$</span><span class='kw'>years_experience</span>)
+#&gt;   white 1076 1359</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span><span class='op'>(</span><span class='va'>resume</span><span class='op'>$</span><span class='va'>race</span>, <span class='va'>resume</span><span class='op'>$</span><span class='va'>years_experience</span><span class='op'>)</span>
 </div><div class='output co'>#&gt;        
 #&gt;           1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17  18
 #&gt;   black  19 177  95 259 264 409 274 288  78  72  86  33  80  78  21  43   2  36
@@ -270,41 +270,41 @@ the conclusions, please find the link below and explore!</p>
 #&gt;        
 #&gt;          19  20  21  22  23  25  26  44
 #&gt;   black  24  11  21   4   4   3  53   1
-#&gt;   white  22  24  26   4   5   4  51   0</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span>(<span class='kw'>resume</span><span class='op'>$</span><span class='kw'>race</span>, <span class='kw'>resume</span><span class='op'>$</span><span class='kw'>computer_skills</span>)
+#&gt;   white  22  24  26   4   5   4  51   0</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span><span class='op'>(</span><span class='va'>resume</span><span class='op'>$</span><span class='va'>race</span>, <span class='va'>resume</span><span class='op'>$</span><span class='va'>computer_skills</span><span class='op'>)</span>
 </div><div class='output co'>#&gt;        
 #&gt;            0    1
 #&gt;   black  408 2027
-#&gt;   white  466 1969</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span>(<span class='kw'>resume</span><span class='op'>$</span><span class='kw'>race</span>, <span class='kw'>resume</span><span class='op'>$</span><span class='kw'>special_skills</span>)
+#&gt;   white  466 1969</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span><span class='op'>(</span><span class='va'>resume</span><span class='op'>$</span><span class='va'>race</span>, <span class='va'>resume</span><span class='op'>$</span><span class='va'>special_skills</span><span class='op'>)</span>
 </div><div class='output co'>#&gt;        
 #&gt;            0    1
 #&gt;   black 1638  797
-#&gt;   white 1631  804</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span>(<span class='kw'>resume</span><span class='op'>$</span><span class='kw'>race</span>, <span class='kw'>resume</span><span class='op'>$</span><span class='kw'>volunteer</span>)
+#&gt;   white 1631  804</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span><span class='op'>(</span><span class='va'>resume</span><span class='op'>$</span><span class='va'>race</span>, <span class='va'>resume</span><span class='op'>$</span><span class='va'>volunteer</span><span class='op'>)</span>
 </div><div class='output co'>#&gt;        
 #&gt;            0    1
 #&gt;   black 1426 1009
-#&gt;   white 1440  995</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span>(<span class='kw'>resume</span><span class='op'>$</span><span class='kw'>race</span>, <span class='kw'>resume</span><span class='op'>$</span><span class='kw'>military</span>)
+#&gt;   white 1440  995</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span><span class='op'>(</span><span class='va'>resume</span><span class='op'>$</span><span class='va'>race</span>, <span class='va'>resume</span><span class='op'>$</span><span class='va'>military</span><span class='op'>)</span>
 </div><div class='output co'>#&gt;        
 #&gt;            0    1
 #&gt;   black 2187  248
-#&gt;   white 2210  225</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span>(<span class='kw'>resume</span><span class='op'>$</span><span class='kw'>race</span>, <span class='kw'>resume</span><span class='op'>$</span><span class='kw'>employment_holes</span>)
+#&gt;   white 2210  225</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span><span class='op'>(</span><span class='va'>resume</span><span class='op'>$</span><span class='va'>race</span>, <span class='va'>resume</span><span class='op'>$</span><span class='va'>employment_holes</span><span class='op'>)</span>
 </div><div class='output co'>#&gt;        
 #&gt;            0    1
 #&gt;   black 1349 1086
-#&gt;   white 1339 1096</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span>(<span class='kw'>resume</span><span class='op'>$</span><span class='kw'>race</span>, <span class='kw'>resume</span><span class='op'>$</span><span class='kw'>has_email_address</span>)
+#&gt;   white 1339 1096</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span><span class='op'>(</span><span class='va'>resume</span><span class='op'>$</span><span class='va'>race</span>, <span class='va'>resume</span><span class='op'>$</span><span class='va'>has_email_address</span><span class='op'>)</span>
 </div><div class='output co'>#&gt;        
 #&gt;            0    1
 #&gt;   black 1267 1168
-#&gt;   white 1269 1166</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span>(<span class='kw'>resume</span><span class='op'>$</span><span class='kw'>race</span>, <span class='kw'>resume</span><span class='op'>$</span><span class='kw'>resume_quality</span>)
+#&gt;   white 1269 1166</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span><span class='op'>(</span><span class='va'>resume</span><span class='op'>$</span><span class='va'>race</span>, <span class='va'>resume</span><span class='op'>$</span><span class='va'>resume_quality</span><span class='op'>)</span>
 </div><div class='output co'>#&gt;        
 #&gt;         high  low
 #&gt;   black 1223 1212
 #&gt;   white 1223 1212</div><div class='input'>
 <span class='co'># Regarding the callback outcome for race,</span>
 <span class='co'># we observe a very large difference.</span>
-<span class='fu'><a href='https://rdrr.io/r/base/tapply.html'>tapply</a></span>(
-    <span class='kw'>resume</span><span class='op'>$</span><span class='kw'>received_callback</span>,
-    <span class='kw'>resume</span>[<span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"race"</span>, <span class='st'>"gender"</span>)],
-    <span class='kw'>mean</span>)
+<span class='fu'><a href='https://rdrr.io/r/base/tapply.html'>tapply</a></span><span class='op'>(</span>
+    <span class='va'>resume</span><span class='op'>$</span><span class='va'>received_callback</span>,
+    <span class='va'>resume</span><span class='op'>[</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"race"</span>, <span class='st'>"gender"</span><span class='op'>)</span><span class='op'>]</span>,
+    <span class='va'>mean</span><span class='op'>)</span>
 </div><div class='output co'>#&gt;        gender
 #&gt; race             f          m
 #&gt;   black 0.06627784 0.05828780
@@ -317,21 +317,21 @@ the conclusions, please find the link below and explore!</p>
 <span class='co'>#     - &lt;callback rate for black candidates&gt;</span>
 <span class='co'># First contruct the callbacks for white and</span>
 <span class='co'># black candidates by ad ID:</span>
-<span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span>(<span class='kw'>resume</span><span class='op'>$</span><span class='kw'>race</span>)
+<span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span><span class='op'>(</span><span class='va'>resume</span><span class='op'>$</span><span class='va'>race</span><span class='op'>)</span>
 </div><div class='output co'>#&gt; 
 #&gt; black white 
-#&gt;  2435  2435 </div><div class='input'><span class='kw'>cb_white</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/with.html'>with</a></span>(
-    <span class='fu'><a href='https://rdrr.io/r/base/subset.html'>subset</a></span>(<span class='kw'>resume</span>, <span class='kw'>race</span> <span class='op'>==</span> <span class='st'>"white"</span>),
-    <span class='fu'><a href='https://rdrr.io/r/base/tapply.html'>tapply</a></span>(<span class='kw'>received_callback</span>, <span class='kw'>job_ad_id</span>, <span class='kw'>mean</span>))
-<span class='kw'>cb_black</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/with.html'>with</a></span>(
-    <span class='fu'><a href='https://rdrr.io/r/base/subset.html'>subset</a></span>(<span class='kw'>resume</span>, <span class='kw'>race</span> <span class='op'>==</span> <span class='st'>"black"</span>),
-    <span class='fu'><a href='https://rdrr.io/r/base/tapply.html'>tapply</a></span>(<span class='kw'>received_callback</span>, <span class='kw'>job_ad_id</span>, <span class='kw'>mean</span>))
+#&gt;  2435  2435 </div><div class='input'><span class='va'>cb_white</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/with.html'>with</a></span><span class='op'>(</span>
+    <span class='fu'><a href='https://rdrr.io/r/base/subset.html'>subset</a></span><span class='op'>(</span><span class='va'>resume</span>, <span class='va'>race</span> <span class='op'>==</span> <span class='st'>"white"</span><span class='op'>)</span>,
+    <span class='fu'><a href='https://rdrr.io/r/base/tapply.html'>tapply</a></span><span class='op'>(</span><span class='va'>received_callback</span>, <span class='va'>job_ad_id</span>, <span class='va'>mean</span><span class='op'>)</span><span class='op'>)</span>
+<span class='va'>cb_black</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/with.html'>with</a></span><span class='op'>(</span>
+    <span class='fu'><a href='https://rdrr.io/r/base/subset.html'>subset</a></span><span class='op'>(</span><span class='va'>resume</span>, <span class='va'>race</span> <span class='op'>==</span> <span class='st'>"black"</span><span class='op'>)</span>,
+    <span class='fu'><a href='https://rdrr.io/r/base/tapply.html'>tapply</a></span><span class='op'>(</span><span class='va'>received_callback</span>, <span class='va'>job_ad_id</span>, <span class='va'>mean</span><span class='op'>)</span><span class='op'>)</span>
 <span class='co'># Next, compute the differences, where the</span>
 <span class='co'># names(cb_white) part ensures we matched up the</span>
 <span class='co'># job ad IDs.</span>
-<span class='kw'>diff</span> <span class='op'>&lt;-</span> <span class='kw'>cb_white</span> <span class='op'>-</span> <span class='kw'>cb_black</span>[<span class='fu'><a href='https://rdrr.io/r/base/names.html'>names</a></span>(<span class='kw'>cb_white</span>)]
+<span class='va'>diff</span> <span class='op'>&lt;-</span> <span class='va'>cb_white</span> <span class='op'>-</span> <span class='va'>cb_black</span><span class='op'>[</span><span class='fu'><a href='https://rdrr.io/r/base/names.html'>names</a></span><span class='op'>(</span><span class='va'>cb_white</span><span class='op'>)</span><span class='op'>]</span>
 <span class='co'># Finally, we can apply a t-test on the differences:</span>
-<span class='fu'><a href='https://rdrr.io/r/stats/t.test.html'>t.test</a></span>(<span class='kw'>diff</span>)
+<span class='fu'><a href='https://rdrr.io/r/stats/t.test.html'>t.test</a></span><span class='op'>(</span><span class='va'>diff</span><span class='op'>)</span>
 </div><div class='output co'>#&gt; 
 #&gt; 	One Sample t-test
 #&gt; 
@@ -347,19 +347,19 @@ the conclusions, please find the link below and explore!</p>
 
 <span class='co'># Here's a similar check with gender. There are</span>
 <span class='co'># more female-inferred candidates used on the resumes.</span>
-<span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span>(<span class='kw'>resume</span><span class='op'>$</span><span class='kw'>gender</span>)
+<span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span><span class='op'>(</span><span class='va'>resume</span><span class='op'>$</span><span class='va'>gender</span><span class='op'>)</span>
 </div><div class='output co'>#&gt; 
 #&gt;    f    m 
-#&gt; 3746 1124 </div><div class='input'><span class='kw'>cb_male</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/with.html'>with</a></span>(
-    <span class='fu'><a href='https://rdrr.io/r/base/subset.html'>subset</a></span>(<span class='kw'>resume</span>, <span class='kw'>gender</span> <span class='op'>==</span> <span class='st'>"m"</span>),
-    <span class='fu'><a href='https://rdrr.io/r/base/tapply.html'>tapply</a></span>(<span class='kw'>received_callback</span>, <span class='kw'>job_ad_id</span>, <span class='kw'>mean</span>))
-<span class='kw'>cb_female</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/with.html'>with</a></span>(
-    <span class='fu'><a href='https://rdrr.io/r/base/subset.html'>subset</a></span>(<span class='kw'>resume</span>, <span class='kw'>gender</span> <span class='op'>==</span> <span class='st'>"f"</span>),
-    <span class='fu'><a href='https://rdrr.io/r/base/tapply.html'>tapply</a></span>(<span class='kw'>received_callback</span>, <span class='kw'>job_ad_id</span>, <span class='kw'>mean</span>))
-<span class='kw'>diff</span> <span class='op'>&lt;-</span> <span class='kw'>cb_female</span> <span class='op'>-</span> <span class='kw'>cb_male</span>[<span class='fu'><a href='https://rdrr.io/r/base/names.html'>names</a></span>(<span class='kw'>cb_female</span>)]
+#&gt; 3746 1124 </div><div class='input'><span class='va'>cb_male</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/with.html'>with</a></span><span class='op'>(</span>
+    <span class='fu'><a href='https://rdrr.io/r/base/subset.html'>subset</a></span><span class='op'>(</span><span class='va'>resume</span>, <span class='va'>gender</span> <span class='op'>==</span> <span class='st'>"m"</span><span class='op'>)</span>,
+    <span class='fu'><a href='https://rdrr.io/r/base/tapply.html'>tapply</a></span><span class='op'>(</span><span class='va'>received_callback</span>, <span class='va'>job_ad_id</span>, <span class='va'>mean</span><span class='op'>)</span><span class='op'>)</span>
+<span class='va'>cb_female</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/with.html'>with</a></span><span class='op'>(</span>
+    <span class='fu'><a href='https://rdrr.io/r/base/subset.html'>subset</a></span><span class='op'>(</span><span class='va'>resume</span>, <span class='va'>gender</span> <span class='op'>==</span> <span class='st'>"f"</span><span class='op'>)</span>,
+    <span class='fu'><a href='https://rdrr.io/r/base/tapply.html'>tapply</a></span><span class='op'>(</span><span class='va'>received_callback</span>, <span class='va'>job_ad_id</span>, <span class='va'>mean</span><span class='op'>)</span><span class='op'>)</span>
+<span class='va'>diff</span> <span class='op'>&lt;-</span> <span class='va'>cb_female</span> <span class='op'>-</span> <span class='va'>cb_male</span><span class='op'>[</span><span class='fu'><a href='https://rdrr.io/r/base/names.html'>names</a></span><span class='op'>(</span><span class='va'>cb_female</span><span class='op'>)</span><span class='op'>]</span>
 <span class='co'># The `na.rm = TRUE` part ensures we limit to jobs</span>
 <span class='co'># where both a male and female resume were sent.</span>
-<span class='fu'><a href='https://rdrr.io/r/stats/t.test.html'>t.test</a></span>(<span class='kw'>diff</span>, na.rm = <span class='fl'>TRUE</span>)
+<span class='fu'><a href='https://rdrr.io/r/stats/t.test.html'>t.test</a></span><span class='op'>(</span><span class='va'>diff</span>, na.rm <span class='op'>=</span> <span class='cn'>TRUE</span><span class='op'>)</span>
 </div><div class='output co'>#&gt; 
 #&gt; 	One Sample t-test
 #&gt; 
@@ -400,7 +400,7 @@ the conclusions, please find the link below and explore!</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.0.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
 </div>
 
       </footer>

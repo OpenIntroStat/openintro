@@ -133,7 +133,7 @@ otherwise worked fine. The prospective buyer starts off and then asks one of
 three final questions, depending on the seller's treatment group.</p>
     </div>
 
-    <pre class="usage"><span class='kw'>ask</span></pre>
+    <pre class="usage"><span class='va'>ask</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
@@ -163,12 +163,12 @@ the problem with the iPod.</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
-<span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='kw'><a href='https://dplyr.tidyverse.org'>dplyr</a></span>)
-<span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='kw'><a href='http://ggplot2.tidyverse.org'>ggplot2</a></span>)
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://dplyr.tidyverse.org'>dplyr</a></span><span class='op'>)</span>
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='http://ggplot2.tidyverse.org'>ggplot2</a></span><span class='op'>)</span>
 
 <span class='co'># Distribution of responses based on question type</span>
-<span class='kw'>ask</span> <span class='op'>%&gt;%</span>
-  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/count.html'>count</a></span>(<span class='kw'>question_class</span>, <span class='kw'>response</span>)
+<span class='va'>ask</span> <span class='op'>%&gt;%</span>
+  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/count.html'>count</a></span><span class='op'>(</span><span class='va'>question_class</span>, <span class='va'>response</span><span class='op'>)</span>
 </div><div class='output co'>#&gt; <span style='color: #555555;'># A tibble: 6 x 3</span><span>
 #&gt;   question_class response     n
 #&gt;   </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>          </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>    </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span>
@@ -179,11 +179,11 @@ the problem with the iPod.</p>
 #&gt; </span><span style='color: #555555;'>5</span><span> pos_assumption disclose    23
 #&gt; </span><span style='color: #555555;'>6</span><span> pos_assumption hide        50</div><div class='input'>
 <span class='co'># Visualize relative frequencies of responses based on question type</span>
-<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='kw'>ask</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(x = <span class='kw'>question_class</span>, fill = <span class='kw'>response</span>)) <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_bar.html'>geom_bar</a></span>(position = <span class='st'>"fill"</span>)
+<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span><span class='va'>ask</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>question_class</span>, fill <span class='op'>=</span> <span class='va'>response</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_bar.html'>geom_bar</a></span><span class='op'>(</span>position <span class='op'>=</span> <span class='st'>"fill"</span><span class='op'>)</span>
 </div><div class='img'><img src='ask-1.png' alt='' width='700' height='433' /></div><div class='input'>
 <span class='co'># Perform chi-square test</span>
-(<span class='kw'>test</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/stats/chisq.test.html'>chisq.test</a></span>(<span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span>(<span class='kw'>ask</span><span class='op'>$</span><span class='kw'>question_class</span>, <span class='kw'>ask</span><span class='op'>$</span><span class='kw'>response</span>)))
+<span class='op'>(</span><span class='va'>test</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/stats/chisq.test.html'>chisq.test</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span><span class='op'>(</span><span class='va'>ask</span><span class='op'>$</span><span class='va'>question_class</span>, <span class='va'>ask</span><span class='op'>$</span><span class='va'>response</span><span class='op'>)</span><span class='op'>)</span><span class='op'>)</span>
 </div><div class='output co'>#&gt; 
 #&gt; 	Pearson's Chi-squared test
 #&gt; 
@@ -192,7 +192,7 @@ the problem with the iPod.</p>
 #&gt; </div><div class='input'>
 <span class='co'># Check the test's assumption around sufficient expected observations</span>
 <span class='co'># per table cell.</span>
-<span class='kw'>test</span><span class='op'>$</span><span class='kw'>expected</span>
+<span class='va'>test</span><span class='op'>$</span><span class='va'>expected</span>
 </div><div class='output co'>#&gt;                 
 #&gt;                  disclose     hide
 #&gt;   general        20.33333 52.66667
@@ -214,7 +214,7 @@ the problem with the iPod.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.0.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
 </div>
 
       </footer>

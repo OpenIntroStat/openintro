@@ -127,7 +127,7 @@ or a non-mammogram breast screening. The response measured was whether they
 had died from breast cancer within 25 years.</p>
     </div>
 
-    <pre class="usage"><span class='kw'>mammogram</span></pre>
+    <pre class="usage"><span class='va'>mammogram</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
@@ -146,11 +146,11 @@ randomised screening trial. BMJ 2014;348:g366.</p>
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
 
-<span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span>(<span class='kw'>mammogram</span>)
+<span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span><span class='op'>(</span><span class='va'>mammogram</span><span class='op'>)</span>
 </div><div class='output co'>#&gt;            breast_cancer_death
 #&gt; treatment      no   yes
 #&gt;   control   44405   505
-#&gt;   mammogram 44425   500</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/stats/chisq.test.html'>chisq.test</a></span>(<span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span>(<span class='kw'>mammogram</span>))
+#&gt;   mammogram 44425   500</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/stats/chisq.test.html'>chisq.test</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span><span class='op'>(</span><span class='va'>mammogram</span><span class='op'>)</span><span class='op'>)</span>
 </div><div class='output co'>#&gt; 
 #&gt; 	Pearson's Chi-squared test with Yates' continuity correction
 #&gt; 
@@ -174,7 +174,7 @@ randomised screening trial. BMJ 2014;348:g366.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.0.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
 </div>
 
       </footer>

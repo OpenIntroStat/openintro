@@ -127,7 +127,7 @@ a placebo daily.  The experiment's duration was 5-years." />
 a placebo daily.  The experiment's duration was 5-years.</p>
     </div>
 
-    <pre class="usage"><span class='kw'>fish_oil_18</span></pre>
+    <pre class="usage"><span class='va'>fish_oil_18</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
@@ -170,7 +170,7 @@ Cardiovascular Disease and Cancer. NEJMoa1811403.</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
-<span class='fu'><a href='https://rdrr.io/r/base/names.html'>names</a></span>(<span class='kw'>fish_oil_18</span>)
+<span class='fu'><a href='https://rdrr.io/r/base/names.html'>names</a></span><span class='op'>(</span><span class='va'>fish_oil_18</span><span class='op'>)</span>
 </div><div class='output co'>#&gt;  [1] "major_cardio_event"             "cardio_event_expanded"         
 #&gt;  [3] "myocardioal_infarction"         "stroke"                        
 #&gt;  [5] "cardio_death"                   "PCI"                           
@@ -182,16 +182,16 @@ Cardiovascular Disease and Cancer. NEJMoa1811403.</p>
 #&gt; [17] "colorectal_cancer"              "cancer_death"                  
 #&gt; [19] "death"                          "major_cardio_event_after_2y"   
 #&gt; [21] "myocardial_infarction_after_2y" "invasive_cancer_after_2y"      
-#&gt; [23] "cancer_death_after_2y"          "death_after_2y"                </div><div class='input'>(<span class='kw'>tab</span> <span class='op'>&lt;-</span> <span class='kw'>fish_oil_18</span>[[<span class='st'>"major_cardio_event"</span>]])
+#&gt; [23] "cancer_death_after_2y"          "death_after_2y"                </div><div class='input'><span class='op'>(</span><span class='va'>tab</span> <span class='op'>&lt;-</span> <span class='va'>fish_oil_18</span><span class='op'>[[</span><span class='st'>"major_cardio_event"</span><span class='op'>]</span><span class='op'>]</span><span class='op'>)</span>
 </div><div class='output co'>#&gt;          major_cardio_event no_event
 #&gt; fish_oil                386    12547
-#&gt; placebo                 419    12519</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/stats/chisq.test.html'>chisq.test</a></span>(<span class='kw'>tab</span>)
+#&gt; placebo                 419    12519</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/stats/chisq.test.html'>chisq.test</a></span><span class='op'>(</span><span class='va'>tab</span><span class='op'>)</span>
 </div><div class='output co'>#&gt; 
 #&gt; 	Pearson's Chi-squared test with Yates' continuity correction
 #&gt; 
 #&gt; data:  tab
 #&gt; X-squared = 1.3002, df = 1, p-value = 0.2542
-#&gt; </div><div class='input'><span class='fu'><a href='https://rdrr.io/r/stats/fisher.test.html'>fisher.test</a></span>(<span class='kw'>tab</span>)
+#&gt; </div><div class='input'><span class='fu'><a href='https://rdrr.io/r/stats/fisher.test.html'>fisher.test</a></span><span class='op'>(</span><span class='va'>tab</span><span class='op'>)</span>
 </div><div class='output co'>#&gt; 
 #&gt; 	Fisher's Exact Test for Count Data
 #&gt; 
@@ -204,16 +204,16 @@ Cardiovascular Disease and Cancer. NEJMoa1811403.</p>
 #&gt; odds ratio 
 #&gt;  0.9192056 
 #&gt; </div><div class='input'>
-(<span class='kw'>tab</span> <span class='op'>&lt;-</span> <span class='kw'>fish_oil_18</span>[[<span class='st'>"myocardioal_infarction"</span>]])
+<span class='op'>(</span><span class='va'>tab</span> <span class='op'>&lt;-</span> <span class='va'>fish_oil_18</span><span class='op'>[[</span><span class='st'>"myocardioal_infarction"</span><span class='op'>]</span><span class='op'>]</span><span class='op'>)</span>
 </div><div class='output co'>#&gt;          myocardioal_infarction no_event
 #&gt; fish_oil                    145    12788
-#&gt; placebo                     200    12738</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/stats/chisq.test.html'>chisq.test</a></span>(<span class='kw'>tab</span>)
+#&gt; placebo                     200    12738</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/stats/chisq.test.html'>chisq.test</a></span><span class='op'>(</span><span class='va'>tab</span><span class='op'>)</span>
 </div><div class='output co'>#&gt; 
 #&gt; 	Pearson's Chi-squared test with Yates' continuity correction
 #&gt; 
 #&gt; data:  tab
 #&gt; X-squared = 8.5453, df = 1, p-value = 0.003464
-#&gt; </div><div class='input'><span class='fu'><a href='https://rdrr.io/r/stats/fisher.test.html'>fisher.test</a></span>(<span class='kw'>tab</span>)
+#&gt; </div><div class='input'><span class='fu'><a href='https://rdrr.io/r/stats/fisher.test.html'>fisher.test</a></span><span class='op'>(</span><span class='va'>tab</span><span class='op'>)</span>
 </div><div class='output co'>#&gt; 
 #&gt; 	Fisher's Exact Test for Count Data
 #&gt; 
@@ -242,7 +242,7 @@ Cardiovascular Disease and Cancer. NEJMoa1811403.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.0.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
 </div>
 
       </footer>

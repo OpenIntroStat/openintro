@@ -125,27 +125,27 @@ second argument, fact, is used to split the data." />
 second argument, <code>fact</code>, is used to split the data.</p>
     </div>
 
-    <pre class="usage"><span class='fu'>boxPlot</span>(
-  <span class='kw'>x</span>,
-  fact = <span class='kw'>NULL</span>,
-  horiz = <span class='fl'>FALSE</span>,
-  width = <span class='fl'>2</span><span class='op'>/</span><span class='fl'>3</span>,
-  lwd = <span class='fl'>1</span>,
-  lcol = <span class='st'>"black"</span>,
-  medianLwd = <span class='fl'>2</span>,
-  pch = <span class='fl'>20</span>,
-  pchCex = <span class='fl'>1.8</span>,
-  col = <span class='kw'>grDevices</span>::<span class='fu'><a href='https://rdrr.io/r/grDevices/rgb.html'>rgb</a></span>(<span class='fl'>0</span>, <span class='fl'>0</span>, <span class='fl'>0</span>, <span class='fl'>0.25</span>),
-  add = <span class='fl'>FALSE</span>,
-  key = <span class='kw'>NULL</span>,
-  axes = <span class='fl'>TRUE</span>,
-  xlab = <span class='st'>""</span>,
-  ylab = <span class='st'>""</span>,
-  xlim = <span class='kw'>NULL</span>,
-  ylim = <span class='kw'>NULL</span>,
-  na.rm = <span class='fl'>TRUE</span>,
-  <span class='kw'>...</span>
-)</pre>
+    <pre class="usage"><span class='fu'>boxPlot</span><span class='op'>(</span>
+  <span class='va'>x</span>,
+  fact <span class='op'>=</span> <span class='cn'>NULL</span>,
+  horiz <span class='op'>=</span> <span class='cn'>FALSE</span>,
+  width <span class='op'>=</span> <span class='fl'>2</span><span class='op'>/</span><span class='fl'>3</span>,
+  lwd <span class='op'>=</span> <span class='fl'>1</span>,
+  lcol <span class='op'>=</span> <span class='st'>"black"</span>,
+  medianLwd <span class='op'>=</span> <span class='fl'>2</span>,
+  pch <span class='op'>=</span> <span class='fl'>20</span>,
+  pchCex <span class='op'>=</span> <span class='fl'>1.8</span>,
+  col <span class='op'>=</span> <span class='fu'>grDevices</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/r/grDevices/rgb.html'>rgb</a></span><span class='op'>(</span><span class='fl'>0</span>, <span class='fl'>0</span>, <span class='fl'>0</span>, <span class='fl'>0.25</span><span class='op'>)</span>,
+  add <span class='op'>=</span> <span class='cn'>FALSE</span>,
+  key <span class='op'>=</span> <span class='cn'>NULL</span>,
+  axes <span class='op'>=</span> <span class='cn'>TRUE</span>,
+  xlab <span class='op'>=</span> <span class='st'>""</span>,
+  ylab <span class='op'>=</span> <span class='st'>""</span>,
+  xlim <span class='op'>=</span> <span class='cn'>NULL</span>,
+  ylim <span class='op'>=</span> <span class='cn'>NULL</span>,
+  na.rm <span class='op'>=</span> <span class='cn'>TRUE</span>,
+  <span class='va'>...</span>
+<span class='op'>)</span></pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
@@ -245,55 +245,55 @@ correspond to the elements of <code>key</code>.</p></td>
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
 <span class='co'># univariarate</span>
-<span class='fu'>boxPlot</span>(<span class='kw'>email</span><span class='op'>$</span><span class='kw'>num_char</span>, ylab = <span class='st'>"Number of characters in emails"</span>)
+<span class='fu'>boxPlot</span><span class='op'>(</span><span class='va'>email</span><span class='op'>$</span><span class='va'>num_char</span>, ylab <span class='op'>=</span> <span class='st'>"Number of characters in emails"</span><span class='op'>)</span>
 </div><div class='img'><img src='boxPlot-1.png' alt='' width='700' height='433' /></div><div class='input'>
 <span class='co'># bivariate</span>
-<span class='fu'>boxPlot</span>(<span class='kw'>email</span><span class='op'>$</span><span class='kw'>num_char</span>, <span class='kw'>email</span><span class='op'>$</span><span class='kw'>spam</span>,
-        xlab = <span class='st'>"Spam"</span>,
-        ylab = <span class='st'>"Number of characters in emails"</span>)
+<span class='fu'>boxPlot</span><span class='op'>(</span><span class='va'>email</span><span class='op'>$</span><span class='va'>num_char</span>, <span class='va'>email</span><span class='op'>$</span><span class='va'>spam</span>,
+        xlab <span class='op'>=</span> <span class='st'>"Spam"</span>,
+        ylab <span class='op'>=</span> <span class='st'>"Number of characters in emails"</span><span class='op'>)</span>
 </div><div class='img'><img src='boxPlot-2.png' alt='' width='700' height='433' /></div><div class='input'>
 <span class='co'># faded outliers</span>
-<span class='fu'>boxPlot</span>(<span class='kw'>email</span><span class='op'>$</span><span class='kw'>num_char</span>, <span class='kw'>email</span><span class='op'>$</span><span class='kw'>spam</span>,
-        xlab = <span class='st'>"Spam"</span>,
-        ylab = <span class='st'>"Number of characters in emails"</span>,
-        col = <span class='fu'><a href='fadeColor.html'>fadeColor</a></span>(<span class='st'>"black"</span>, <span class='fl'>18</span>))
+<span class='fu'>boxPlot</span><span class='op'>(</span><span class='va'>email</span><span class='op'>$</span><span class='va'>num_char</span>, <span class='va'>email</span><span class='op'>$</span><span class='va'>spam</span>,
+        xlab <span class='op'>=</span> <span class='st'>"Spam"</span>,
+        ylab <span class='op'>=</span> <span class='st'>"Number of characters in emails"</span>,
+        col <span class='op'>=</span> <span class='fu'><a href='fadeColor.html'>fadeColor</a></span><span class='op'>(</span><span class='st'>"black"</span>, <span class='fl'>18</span><span class='op'>)</span><span class='op'>)</span>
 </div><div class='img'><img src='boxPlot-3.png' alt='' width='700' height='433' /></div><div class='input'>
 <span class='co'># horizontal plots</span>
-<span class='fu'>boxPlot</span>(<span class='kw'>email</span><span class='op'>$</span><span class='kw'>num_char</span>, <span class='kw'>email</span><span class='op'>$</span><span class='kw'>spam</span>,
-        horiz = <span class='fl'>TRUE</span>,
-        xlab = <span class='st'>"Spam"</span>,
-        ylab = <span class='st'>"Number of characters in emails"</span>,
-        col = <span class='fu'><a href='fadeColor.html'>fadeColor</a></span>(<span class='st'>"black"</span>, <span class='fl'>18</span>))
+<span class='fu'>boxPlot</span><span class='op'>(</span><span class='va'>email</span><span class='op'>$</span><span class='va'>num_char</span>, <span class='va'>email</span><span class='op'>$</span><span class='va'>spam</span>,
+        horiz <span class='op'>=</span> <span class='cn'>TRUE</span>,
+        xlab <span class='op'>=</span> <span class='st'>"Spam"</span>,
+        ylab <span class='op'>=</span> <span class='st'>"Number of characters in emails"</span>,
+        col <span class='op'>=</span> <span class='fu'><a href='fadeColor.html'>fadeColor</a></span><span class='op'>(</span><span class='st'>"black"</span>, <span class='fl'>18</span><span class='op'>)</span><span class='op'>)</span>
 </div><div class='img'><img src='boxPlot-4.png' alt='' width='700' height='433' /></div><div class='input'>
 <span class='co'># bivariate relationships where categorical data have more than 2 levels</span>
-<span class='fu'>boxPlot</span>(<span class='kw'>email</span><span class='op'>$</span><span class='kw'>num_char</span>, <span class='kw'>email</span><span class='op'>$</span><span class='kw'>image</span>,
-        horiz = <span class='fl'>TRUE</span>,
-        xlab = <span class='st'>"Number of attached images"</span>,
-        ylab = <span class='st'>"Number of characters in emails"</span>,
-        col = <span class='fu'><a href='fadeColor.html'>fadeColor</a></span>(<span class='st'>"black"</span>, <span class='fl'>18</span>))
+<span class='fu'>boxPlot</span><span class='op'>(</span><span class='va'>email</span><span class='op'>$</span><span class='va'>num_char</span>, <span class='va'>email</span><span class='op'>$</span><span class='va'>image</span>,
+        horiz <span class='op'>=</span> <span class='cn'>TRUE</span>,
+        xlab <span class='op'>=</span> <span class='st'>"Number of attached images"</span>,
+        ylab <span class='op'>=</span> <span class='st'>"Number of characters in emails"</span>,
+        col <span class='op'>=</span> <span class='fu'><a href='fadeColor.html'>fadeColor</a></span><span class='op'>(</span><span class='st'>"black"</span>, <span class='fl'>18</span><span class='op'>)</span><span class='op'>)</span>
 </div><div class='img'><img src='boxPlot-5.png' alt='' width='700' height='433' /></div><div class='input'>
 <span class='co'># key can be used to restrict to only the desired groups</span>
-<span class='fu'>boxPlot</span>(<span class='kw'>email</span><span class='op'>$</span><span class='kw'>num_char</span>, <span class='kw'>email</span><span class='op'>$</span><span class='kw'>image</span>,
-        horiz = <span class='fl'>TRUE</span>, key = <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>0</span>, <span class='fl'>1</span>, <span class='fl'>2</span>),
-        xlab = <span class='st'>"Number of attached images (limited to 0, 1, 2)"</span>,
-        ylab = <span class='st'>"Number of characters in emails"</span>,
-        col = <span class='fu'><a href='fadeColor.html'>fadeColor</a></span>(<span class='st'>"black"</span>, <span class='fl'>18</span>))
+<span class='fu'>boxPlot</span><span class='op'>(</span><span class='va'>email</span><span class='op'>$</span><span class='va'>num_char</span>, <span class='va'>email</span><span class='op'>$</span><span class='va'>image</span>,
+        horiz <span class='op'>=</span> <span class='cn'>TRUE</span>, key <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>0</span>, <span class='fl'>1</span>, <span class='fl'>2</span><span class='op'>)</span>,
+        xlab <span class='op'>=</span> <span class='st'>"Number of attached images (limited to 0, 1, 2)"</span>,
+        ylab <span class='op'>=</span> <span class='st'>"Number of characters in emails"</span>,
+        col <span class='op'>=</span> <span class='fu'><a href='fadeColor.html'>fadeColor</a></span><span class='op'>(</span><span class='st'>"black"</span>, <span class='fl'>18</span><span class='op'>)</span><span class='op'>)</span>
 </div><div class='img'><img src='boxPlot-6.png' alt='' width='700' height='433' /></div><div class='input'>
 <span class='co'># combine boxPlot and dotPlot</span>
-<span class='fu'>boxPlot</span>(<span class='kw'>tips</span><span class='op'>$</span><span class='kw'>tip</span>, <span class='kw'>tips</span><span class='op'>$</span><span class='kw'>day</span>,
-        horiz = <span class='fl'>TRUE</span>, key = <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"Tuesday"</span>, <span class='st'>"Friday"</span>))
-</div><div class='input'><span class='fu'><a href='dotPlot.html'>dotPlot</a></span>(<span class='kw'>tips</span><span class='op'>$</span><span class='kw'>tip</span>, <span class='kw'>tips</span><span class='op'>$</span><span class='kw'>day</span>,
-        add=<span class='fl'>TRUE</span>, at = <span class='fl'>1</span><span class='op'>:</span><span class='fl'>2</span><span class='op'>+</span><span class='fl'>0.05</span>,
-        key=<span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"Tuesday"</span>, <span class='st'>"Friday"</span>))
+<span class='fu'>boxPlot</span><span class='op'>(</span><span class='va'>tips</span><span class='op'>$</span><span class='va'>tip</span>, <span class='va'>tips</span><span class='op'>$</span><span class='va'>day</span>,
+        horiz <span class='op'>=</span> <span class='cn'>TRUE</span>, key <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"Tuesday"</span>, <span class='st'>"Friday"</span><span class='op'>)</span><span class='op'>)</span>
+</div><div class='input'><span class='fu'><a href='dotPlot.html'>dotPlot</a></span><span class='op'>(</span><span class='va'>tips</span><span class='op'>$</span><span class='va'>tip</span>, <span class='va'>tips</span><span class='op'>$</span><span class='va'>day</span>,
+        add<span class='op'>=</span><span class='cn'>TRUE</span>, at <span class='op'>=</span> <span class='fl'>1</span><span class='op'>:</span><span class='fl'>2</span><span class='op'>+</span><span class='fl'>0.05</span>,
+        key<span class='op'>=</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"Tuesday"</span>, <span class='st'>"Friday"</span><span class='op'>)</span><span class='op'>)</span>
 </div><div class='img'><img src='boxPlot-7.png' alt='' width='700' height='433' /></div><div class='input'>
 <span class='co'># adding a box</span>
-<span class='fu'><a href='https://rdrr.io/r/graphics/par.html'>par</a></span>(mfrow=<span class='fl'>1</span><span class='op'>:</span><span class='fl'>2</span>)
-<span class='fu'>boxPlot</span>(<span class='kw'>email</span><span class='op'>$</span><span class='kw'>num_char</span>[<span class='kw'>email</span><span class='op'>$</span><span class='kw'>spam</span><span class='op'>==</span><span class='fl'>0</span>], xlim = <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>0</span>,<span class='fl'>3</span>))
-<span class='fu'>boxPlot</span>(<span class='kw'>email</span><span class='op'>$</span><span class='kw'>num_char</span>[<span class='kw'>email</span><span class='op'>$</span><span class='kw'>spam</span><span class='op'>==</span><span class='fl'>1</span>], add = <span class='fl'>2</span>, axes = <span class='fl'>FALSE</span>)
-<span class='fu'><a href='https://rdrr.io/r/graphics/axis.html'>axis</a></span>(<span class='fl'>1</span>, at = <span class='fl'>1</span><span class='op'>:</span><span class='fl'>2</span>, labels = <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>0</span>, <span class='fl'>1</span>))
-<span class='fu'>boxPlot</span>(<span class='kw'>email</span><span class='op'>$</span><span class='kw'>num_char</span>[<span class='kw'>email</span><span class='op'>$</span><span class='kw'>spam</span><span class='op'>==</span><span class='fl'>0</span>], ylim = <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>0</span>,<span class='fl'>3</span>), horiz = <span class='fl'>TRUE</span>)
-</div><div class='input'><span class='fu'>boxPlot</span>(<span class='kw'>email</span><span class='op'>$</span><span class='kw'>num_char</span>[<span class='kw'>email</span><span class='op'>$</span><span class='kw'>spam</span><span class='op'>==</span><span class='fl'>1</span>], add = <span class='fl'>2</span>, horiz = <span class='fl'>TRUE</span>, axes = <span class='fl'>FALSE</span>)
-</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/axis.html'>axis</a></span>(<span class='fl'>2</span>, at = <span class='fl'>1</span><span class='op'>:</span><span class='fl'>2</span>, labels = <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>0</span>, <span class='fl'>1</span>))
+<span class='fu'><a href='https://rdrr.io/r/graphics/par.html'>par</a></span><span class='op'>(</span>mfrow<span class='op'>=</span><span class='fl'>1</span><span class='op'>:</span><span class='fl'>2</span><span class='op'>)</span>
+<span class='fu'>boxPlot</span><span class='op'>(</span><span class='va'>email</span><span class='op'>$</span><span class='va'>num_char</span><span class='op'>[</span><span class='va'>email</span><span class='op'>$</span><span class='va'>spam</span><span class='op'>==</span><span class='fl'>0</span><span class='op'>]</span>, xlim <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>0</span>,<span class='fl'>3</span><span class='op'>)</span><span class='op'>)</span>
+<span class='fu'>boxPlot</span><span class='op'>(</span><span class='va'>email</span><span class='op'>$</span><span class='va'>num_char</span><span class='op'>[</span><span class='va'>email</span><span class='op'>$</span><span class='va'>spam</span><span class='op'>==</span><span class='fl'>1</span><span class='op'>]</span>, add <span class='op'>=</span> <span class='fl'>2</span>, axes <span class='op'>=</span> <span class='cn'>FALSE</span><span class='op'>)</span>
+<span class='fu'><a href='https://rdrr.io/r/graphics/axis.html'>axis</a></span><span class='op'>(</span><span class='fl'>1</span>, at <span class='op'>=</span> <span class='fl'>1</span><span class='op'>:</span><span class='fl'>2</span>, labels <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>0</span>, <span class='fl'>1</span><span class='op'>)</span><span class='op'>)</span>
+<span class='fu'>boxPlot</span><span class='op'>(</span><span class='va'>email</span><span class='op'>$</span><span class='va'>num_char</span><span class='op'>[</span><span class='va'>email</span><span class='op'>$</span><span class='va'>spam</span><span class='op'>==</span><span class='fl'>0</span><span class='op'>]</span>, ylim <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>0</span>,<span class='fl'>3</span><span class='op'>)</span>, horiz <span class='op'>=</span> <span class='cn'>TRUE</span><span class='op'>)</span>
+</div><div class='input'><span class='fu'>boxPlot</span><span class='op'>(</span><span class='va'>email</span><span class='op'>$</span><span class='va'>num_char</span><span class='op'>[</span><span class='va'>email</span><span class='op'>$</span><span class='va'>spam</span><span class='op'>==</span><span class='fl'>1</span><span class='op'>]</span>, add <span class='op'>=</span> <span class='fl'>2</span>, horiz <span class='op'>=</span> <span class='cn'>TRUE</span>, axes <span class='op'>=</span> <span class='cn'>FALSE</span><span class='op'>)</span>
+</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/axis.html'>axis</a></span><span class='op'>(</span><span class='fl'>2</span>, at <span class='op'>=</span> <span class='fl'>1</span><span class='op'>:</span><span class='fl'>2</span>, labels <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>0</span>, <span class='fl'>1</span><span class='op'>)</span><span class='op'>)</span>
 </div><div class='img'><img src='boxPlot-8.png' alt='' width='700' height='433' /></div><div class='input'>
 </div></pre>
   </div>
@@ -311,7 +311,7 @@ correspond to the elements of <code>key</code>.</p></td>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.0.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
 </div>
 
       </footer>

@@ -125,7 +125,7 @@ an email account (see Source)." />
 an email account (see Source).</p>
     </div>
 
-    <pre class="usage"><span class='kw'>email</span></pre>
+    <pre class="usage"><span class='va'>email</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
@@ -133,52 +133,39 @@ an email account (see Source).</p>
     <p>A <code>email</code> (<code>email_sent</code>) data frame has 3921 (1252)
 observations on the following 21 variables.</p><dl>
   <dt>spam</dt><dd><p>Indicator for whether the email was spam.</p></dd>
-  <dt>to_multiple</dt><dd><p>Indicator for whether the email was addressed to
-  more than one recipient.</p></dd>
-  <dt>from</dt><dd><p>Whether the message was listed
-  as from anyone (this is usually set by default for regular outgoing email).</p></dd>
-  <dt>cc</dt><dd><p>Indicator for whether anyone was CCed.</p></dd>
-  <dt>sent_email</dt><dd><p>Indicator for whether the sender had been sent an
-  email in the last 30 days.</p></dd>
+  <dt>to_multiple</dt><dd><p>Indicator for whether the email was addressed to more than one recipient.</p></dd>
+  <dt>from</dt><dd><p>Whether the message was listed as from anyone (this is usually set by default for regular outgoing email).</p></dd>
+  <dt>cc</dt><dd><p>Number of people cc'ed.</p></dd>
+  <dt>sent_email</dt><dd><p>Indicator for whether the sender had been sent an email in the last 30 days.</p></dd>
   <dt>time</dt><dd><p>Time at which email was sent.</p></dd>
   <dt>image</dt><dd><p>The number of images attached.</p></dd>
   <dt>attach</dt><dd><p>The number of attached files.</p></dd>
-  <dt>dollar</dt><dd><p>The number of times a dollar sign or the word &#8220;dollar&#8221;
-  appeared in the email.</p></dd>
+  <dt>dollar</dt><dd><p>The number of times a dollar sign or the word &#8220;dollar&#8221; appeared in the email.</p></dd>
   <dt>winner</dt><dd><p>Indicates whether &#8220;winner&#8221; appeared in the email.</p></dd>
-  <dt>inherit</dt><dd><p>The number of times &#8220;inherit&#8221; (or an extension, such
-  as &#8220;inheritance&#8221;) appeared in the email.</p></dd>
+  <dt>inherit</dt><dd><p>The number of times &#8220;inherit&#8221; (or an extension, such as &#8220;inheritance&#8221;) appeared in the email.</p></dd>
   <dt>viagra</dt><dd><p>The number of times &#8220;viagra&#8221; appeared in the email.</p></dd>
   <dt>password</dt><dd><p>The number of times &#8220;password&#8221; appeared in the email.</p></dd>
   <dt>num_char</dt><dd><p>The number of characters in the email, in thousands.</p></dd>
-  <dt>line_breaks</dt><dd><p>The number of line breaks in the email (does not count
-  text wrapping).</p></dd>
-  <dt>format</dt><dd><p>Indicates whether the email was written using HTML (e.g. may
-  have included bolding or active links).</p></dd>
-  <dt>re_subj</dt><dd><p>Whether the subject started with &#8220;Re:&#8221;, &#8220;RE:&#8221;,
-  &#8220;re:&#8221;, or &#8220;rE:&#8221;</p></dd>
+  <dt>line_breaks</dt><dd><p>The number of line breaks in the email (does not count text wrapping).</p></dd>
+  <dt>format</dt><dd><p>Indicates whether the email was written using HTML (e.g. may have included bolding or active links).</p></dd>
+  <dt>re_subj</dt><dd><p>Whether the subject started with &#8220;Re:&#8221;, &#8220;RE:&#8221;, &#8220;re:&#8221;, or &#8220;rE:&#8221;</p></dd>
   <dt>exclaim_subj</dt><dd><p>Whether there was an exclamation point in the subject.</p></dd>
   <dt>urgent_subj</dt><dd><p>Whether the word &#8220;urgent&#8221; was in the email subject.</p></dd>
   <dt>exclaim_mess</dt><dd><p>The number of exclamation points in the email message.</p></dd>
-  <dt><code>period_mess</code></dt><dd><p>The number of periods in the message.</p></dd>
-  <dt><code>signoff</code></dt><dd><p>Whether a sign-off of &#8220;Cheers&#8221;, &#8220;Regards&#8221;,
-  or &#8220;Best&#8221; (also, &#8220;Best Regards&#8221;) was used.</p></dd>
-  <dt>number</dt><dd><p>Factor variable saying whether there was no number, a small
-  number (under 1 million), or a big number.</p></dd>
+  <dt>number</dt><dd><p>Factor variable saying whether there was no number, a small number (under 1 million), or a big number.</p></dd>
   
 </dl>
 
     <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
 
-    <p>David Diez's Gmail Account, early months of 2012. All personally
-identifiable information has been removed.</p>
+    <p>David Diez's Gmail Account, early months of 2012. All personally identifiable information has been removed.</p>
     <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
 
     <div class='dont-index'><p><code><a href='email50.html'>email50</a></code></p></div>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
-<span class='kw'>e</span> <span class='op'>&lt;-</span> <span class='kw'>email</span>
+<span class='va'>e</span> <span class='op'>&lt;-</span> <span class='va'>email</span>
 
 <span class='co'>#______ Variables For Logistic Regression ______#</span>
 <span class='co'># Variables are modified to match</span>
@@ -189,22 +176,22 @@ identifiable information has been removed.</p>
 <span class='co'>#              viagra, urgent_subj, number</span>
 <span class='co'># Become Indicators (5): cc, attach, dollar,</span>
 <span class='co'>#                        inherit, password</span>
-<span class='kw'>e</span><span class='op'>$</span><span class='kw'>cc</span>       <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/ifelse.html'>ifelse</a></span>(<span class='kw'>email</span><span class='op'>$</span><span class='kw'>cc</span> <span class='op'>&gt;</span> <span class='fl'>0</span>, <span class='fl'>1</span>, <span class='fl'>0</span>)
-<span class='kw'>e</span><span class='op'>$</span><span class='kw'>attach</span>   <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/ifelse.html'>ifelse</a></span>(<span class='kw'>email</span><span class='op'>$</span><span class='kw'>attach</span> <span class='op'>&gt;</span> <span class='fl'>0</span>, <span class='fl'>1</span>, <span class='fl'>0</span>)
-<span class='kw'>e</span><span class='op'>$</span><span class='kw'>dollar</span>   <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/ifelse.html'>ifelse</a></span>(<span class='kw'>email</span><span class='op'>$</span><span class='kw'>dollar</span> <span class='op'>&gt;</span> <span class='fl'>0</span>, <span class='fl'>1</span>, <span class='fl'>0</span>)
-<span class='kw'>e</span><span class='op'>$</span><span class='kw'>inherit</span>  <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/ifelse.html'>ifelse</a></span>(<span class='kw'>email</span><span class='op'>$</span><span class='kw'>inherit</span> <span class='op'>&gt;</span> <span class='fl'>0</span>, <span class='fl'>1</span>, <span class='fl'>0</span>)
-<span class='kw'>e</span><span class='op'>$</span><span class='kw'>password</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/ifelse.html'>ifelse</a></span>(<span class='kw'>email</span><span class='op'>$</span><span class='kw'>password</span> <span class='op'>&gt;</span> <span class='fl'>0</span>, <span class='fl'>1</span>, <span class='fl'>0</span>)
+<span class='va'>e</span><span class='op'>$</span><span class='va'>cc</span>       <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/ifelse.html'>ifelse</a></span><span class='op'>(</span><span class='va'>email</span><span class='op'>$</span><span class='va'>cc</span> <span class='op'>&gt;</span> <span class='fl'>0</span>, <span class='fl'>1</span>, <span class='fl'>0</span><span class='op'>)</span>
+<span class='va'>e</span><span class='op'>$</span><span class='va'>attach</span>   <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/ifelse.html'>ifelse</a></span><span class='op'>(</span><span class='va'>email</span><span class='op'>$</span><span class='va'>attach</span> <span class='op'>&gt;</span> <span class='fl'>0</span>, <span class='fl'>1</span>, <span class='fl'>0</span><span class='op'>)</span>
+<span class='va'>e</span><span class='op'>$</span><span class='va'>dollar</span>   <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/ifelse.html'>ifelse</a></span><span class='op'>(</span><span class='va'>email</span><span class='op'>$</span><span class='va'>dollar</span> <span class='op'>&gt;</span> <span class='fl'>0</span>, <span class='fl'>1</span>, <span class='fl'>0</span><span class='op'>)</span>
+<span class='va'>e</span><span class='op'>$</span><span class='va'>inherit</span>  <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/ifelse.html'>ifelse</a></span><span class='op'>(</span><span class='va'>email</span><span class='op'>$</span><span class='va'>inherit</span> <span class='op'>&gt;</span> <span class='fl'>0</span>, <span class='fl'>1</span>, <span class='fl'>0</span><span class='op'>)</span>
+<span class='va'>e</span><span class='op'>$</span><span class='va'>password</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/ifelse.html'>ifelse</a></span><span class='op'>(</span><span class='va'>email</span><span class='op'>$</span><span class='va'>password</span> <span class='op'>&gt;</span> <span class='fl'>0</span>, <span class='fl'>1</span>, <span class='fl'>0</span><span class='op'>)</span>
 <span class='co'># Transform (3): num_char, line_breaks, exclaim_mess</span>
 <span class='co'>#e$num_char     &lt;- cut(email$num_char, c(0,1,5,10,20,1000))</span>
 <span class='co'>#e$line_breaks  &lt;- cut(email$line_breaks, c(0,10,100,500,10000))</span>
 <span class='co'>#e$exclaim_mess &lt;- cut(email$exclaim_mess, c(-1,0,1,5,10000))</span>
-<span class='kw'>g</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/stats/glm.html'>glm</a></span>(<span class='kw'>spam</span> <span class='op'>~</span> <span class='kw'>to_multiple</span> <span class='op'>+</span> <span class='kw'>winner</span> <span class='op'>+</span> <span class='kw'>format</span> <span class='op'>+</span>
-                <span class='kw'>re_subj</span> <span class='op'>+</span> <span class='kw'>exclaim_subj</span> <span class='op'>+</span>
-                <span class='kw'>cc</span> <span class='op'>+</span> <span class='kw'>attach</span> <span class='op'>+</span> <span class='kw'>dollar</span> <span class='op'>+</span>
-                <span class='kw'>inherit</span> <span class='op'>+</span> <span class='kw'>password</span>, <span class='co'># +</span>
+<span class='va'>g</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/stats/glm.html'>glm</a></span><span class='op'>(</span><span class='va'>spam</span> <span class='op'>~</span> <span class='va'>to_multiple</span> <span class='op'>+</span> <span class='va'>winner</span> <span class='op'>+</span> <span class='va'>format</span> <span class='op'>+</span>
+                <span class='va'>re_subj</span> <span class='op'>+</span> <span class='va'>exclaim_subj</span> <span class='op'>+</span>
+                <span class='va'>cc</span> <span class='op'>+</span> <span class='va'>attach</span> <span class='op'>+</span> <span class='va'>dollar</span> <span class='op'>+</span>
+                <span class='va'>inherit</span> <span class='op'>+</span> <span class='va'>password</span>, <span class='co'># +</span>
                 <span class='co'>#num_char + line_breaks + exclaim_mess,</span>
-                data=<span class='kw'>e</span>, family=<span class='kw'>binomial</span>)
-<span class='fu'><a href='https://rdrr.io/r/base/summary.html'>summary</a></span>(<span class='kw'>g</span>)
+                data<span class='op'>=</span><span class='va'>e</span>, family<span class='op'>=</span><span class='va'>binomial</span><span class='op'>)</span>
+<span class='fu'><a href='https://rdrr.io/r/base/summary.html'>summary</a></span><span class='op'>(</span><span class='va'>g</span><span class='op'>)</span>
 </div><div class='output co'>#&gt; 
 #&gt; Call:
 #&gt; glm(formula = spam ~ to_multiple + winner + format + re_subj + 
@@ -218,10 +205,10 @@ identifiable information has been removed.</p>
 #&gt; Coefficients:
 #&gt;              Estimate Std. Error z value Pr(&gt;|z|)    
 #&gt; (Intercept)  -0.83623    0.09620  -8.692  &lt; 2e-16 ***
-#&gt; to_multiple  -2.88364    0.31211  -9.239  &lt; 2e-16 ***
+#&gt; to_multiple1 -2.88364    0.31211  -9.239  &lt; 2e-16 ***
 #&gt; winneryes     1.70380    0.32539   5.236 1.64e-07 ***
-#&gt; format       -1.59018    0.12387 -12.838  &lt; 2e-16 ***
-#&gt; re_subj      -2.90816    0.37077  -7.844 4.38e-15 ***
+#&gt; format1      -1.59018    0.12387 -12.838  &lt; 2e-16 ***
+#&gt; re_subj1     -2.90816    0.37077  -7.844 4.38e-15 ***
 #&gt; exclaim_subj  0.13549    0.22682   0.597  0.55028    
 #&gt; cc           -0.48628    0.30542  -1.592  0.11135    
 #&gt; attach        0.97903    0.21696   4.512 6.41e-06 ***
@@ -241,7 +228,7 @@ identifiable information has been removed.</p>
 #&gt; </div><div class='input'>
 
 <span class='co'>#______ Variable Selection Via AIC ______#</span>
-<span class='kw'>g.</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/stats/step.html'>step</a></span>(<span class='kw'>g</span>)
+<span class='va'>g.</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/stats/step.html'>step</a></span><span class='op'>(</span><span class='va'>g</span><span class='op'>)</span>
 </div><div class='output co'>#&gt; Start:  AIC=1970.26
 #&gt; spam ~ to_multiple + winner + format + re_subj + exclaim_subj + 
 #&gt;     cc + attach + dollar + inherit + password
@@ -302,24 +289,24 @@ identifiable information has been removed.</p>
 #&gt; - winner       1   1973.9 1987.9
 #&gt; - re_subj      1   2094.1 2108.1
 #&gt; - format       1   2118.6 2132.6
-#&gt; - to_multiple  1   2120.4 2134.4</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/plot.default.html'>plot</a></span>(<span class='fu'><a href='https://rdrr.io/r/stats/predict.html'>predict</a></span>(<span class='kw'>g.</span>, type=<span class='st'>"response"</span>), <span class='kw'>e</span><span class='op'>$</span><span class='kw'>spam</span>)
+#&gt; - to_multiple  1   2120.4 2134.4</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/plot.default.html'>plot</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/stats/predict.html'>predict</a></span><span class='op'>(</span><span class='va'>g.</span>, type<span class='op'>=</span><span class='st'>"response"</span><span class='op'>)</span>, <span class='va'>e</span><span class='op'>$</span><span class='va'>spam</span><span class='op'>)</span>
 </div><div class='img'><img src='email-1.png' alt='' width='700' height='433' /></div><div class='input'>
 
 <span class='co'>#______ Splitting num_char by html ______#</span>
-<span class='kw'>x</span>   <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/Log.html'>log</a></span>(<span class='kw'>email</span><span class='op'>$</span><span class='kw'>num_char</span>)
-<span class='kw'>bw</span>  <span class='op'>&lt;-</span> <span class='fl'>0.004</span>
-<span class='kw'>R</span>   <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/range.html'>range</a></span>(<span class='kw'>x</span>) <span class='op'>+</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='op'>-</span><span class='fl'>1</span>, <span class='fl'>1</span>)
-<span class='kw'>wt</span>  <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/sum.html'>sum</a></span>(<span class='kw'>email</span><span class='op'>$</span><span class='kw'>format</span>)<span class='op'>/</span><span class='fu'><a href='https://rdrr.io/r/base/nrow.html'>nrow</a></span>(<span class='kw'>email</span>)
-<span class='kw'>htmlAll</span>   <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/stats/density.html'>density</a></span>(<span class='kw'>x</span>, bw=<span class='fl'>0.4</span>, from=<span class='kw'>R</span>[<span class='fl'>1</span>], to=<span class='kw'>R</span>[<span class='fl'>2</span>])
-<span class='kw'>htmlNo</span>    <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/stats/density.html'>density</a></span>(<span class='kw'>x</span>[<span class='kw'>email</span><span class='op'>$</span><span class='kw'>format</span> != <span class='fl'>1</span>], bw=<span class='fl'>0.4</span>,
-                     from=<span class='kw'>R</span>[<span class='fl'>1</span>], to=<span class='kw'>R</span>[<span class='fl'>2</span>])
-<span class='kw'>htmlYes</span>   <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/stats/density.html'>density</a></span>(<span class='kw'>x</span>[<span class='kw'>email</span><span class='op'>$</span><span class='kw'>format</span> <span class='op'>==</span> <span class='fl'>1</span>], bw=<span class='fl'>0.4</span>,
-                     from=<span class='kw'>R</span>[<span class='fl'>1</span>], to=<span class='kw'>R</span>[<span class='fl'>2</span>])
-<span class='kw'>htmlNo</span><span class='op'>$</span><span class='kw'>y</span>  <span class='op'>&lt;-</span> <span class='kw'>htmlNo</span><span class='op'>$</span><span class='kw'>y</span> <span class='co'>#* (1-wt)</span>
-<span class='kw'>htmlYes</span><span class='op'>$</span><span class='kw'>y</span> <span class='op'>&lt;-</span> <span class='kw'>htmlYes</span><span class='op'>$</span><span class='kw'>y</span> <span class='co'>#* wt + htmlNo$y</span>
-<span class='fu'><a href='https://rdrr.io/r/graphics/plot.default.html'>plot</a></span>(<span class='kw'>htmlAll</span>, xlim=<span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='op'>-</span><span class='fl'>4</span>, <span class='fl'>6</span>), ylim=<span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>0</span>, <span class='fl'>0.4</span>))
-</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/lines.html'>lines</a></span>(<span class='kw'>htmlNo</span>, col=<span class='fl'>4</span>)
-</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/lines.html'>lines</a></span>(<span class='kw'>htmlYes</span>, lwd=<span class='fl'>2</span>, col=<span class='fl'>2</span>)
+<span class='va'>x</span>   <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/Log.html'>log</a></span><span class='op'>(</span><span class='va'>email</span><span class='op'>$</span><span class='va'>num_char</span><span class='op'>)</span>
+<span class='va'>bw</span>  <span class='op'>&lt;-</span> <span class='fl'>0.004</span>
+<span class='va'>R</span>   <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/range.html'>range</a></span><span class='op'>(</span><span class='va'>x</span><span class='op'>)</span> <span class='op'>+</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='op'>-</span><span class='fl'>1</span>, <span class='fl'>1</span><span class='op'>)</span>
+<span class='va'>wt</span>  <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/sum.html'>sum</a></span><span class='op'>(</span><span class='va'>email</span><span class='op'>$</span><span class='va'>format</span> <span class='op'>==</span> <span class='fl'>1</span><span class='op'>)</span><span class='op'>/</span><span class='fu'><a href='https://rdrr.io/r/base/nrow.html'>nrow</a></span><span class='op'>(</span><span class='va'>email</span><span class='op'>)</span>
+<span class='va'>htmlAll</span>   <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/stats/density.html'>density</a></span><span class='op'>(</span><span class='va'>x</span>, bw<span class='op'>=</span><span class='fl'>0.4</span>, from<span class='op'>=</span><span class='va'>R</span><span class='op'>[</span><span class='fl'>1</span><span class='op'>]</span>, to<span class='op'>=</span><span class='va'>R</span><span class='op'>[</span><span class='fl'>2</span><span class='op'>]</span><span class='op'>)</span>
+<span class='va'>htmlNo</span>    <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/stats/density.html'>density</a></span><span class='op'>(</span><span class='va'>x</span><span class='op'>[</span><span class='va'>email</span><span class='op'>$</span><span class='va'>format</span> <span class='op'>!=</span> <span class='fl'>1</span><span class='op'>]</span>, bw<span class='op'>=</span><span class='fl'>0.4</span>,
+                     from<span class='op'>=</span><span class='va'>R</span><span class='op'>[</span><span class='fl'>1</span><span class='op'>]</span>, to<span class='op'>=</span><span class='va'>R</span><span class='op'>[</span><span class='fl'>2</span><span class='op'>]</span><span class='op'>)</span>
+<span class='va'>htmlYes</span>   <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/stats/density.html'>density</a></span><span class='op'>(</span><span class='va'>x</span><span class='op'>[</span><span class='va'>email</span><span class='op'>$</span><span class='va'>format</span> <span class='op'>==</span> <span class='fl'>1</span><span class='op'>]</span>, bw<span class='op'>=</span><span class='fl'>0.4</span>,
+                     from<span class='op'>=</span><span class='va'>R</span><span class='op'>[</span><span class='fl'>1</span><span class='op'>]</span>, to<span class='op'>=</span><span class='va'>R</span><span class='op'>[</span><span class='fl'>2</span><span class='op'>]</span><span class='op'>)</span>
+<span class='va'>htmlNo</span><span class='op'>$</span><span class='va'>y</span>  <span class='op'>&lt;-</span> <span class='va'>htmlNo</span><span class='op'>$</span><span class='va'>y</span> <span class='co'>#* (1-wt)</span>
+<span class='va'>htmlYes</span><span class='op'>$</span><span class='va'>y</span> <span class='op'>&lt;-</span> <span class='va'>htmlYes</span><span class='op'>$</span><span class='va'>y</span> <span class='co'>#* wt + htmlNo$y</span>
+<span class='fu'><a href='https://rdrr.io/r/graphics/plot.default.html'>plot</a></span><span class='op'>(</span><span class='va'>htmlAll</span>, xlim<span class='op'>=</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='op'>-</span><span class='fl'>4</span>, <span class='fl'>6</span><span class='op'>)</span>, ylim<span class='op'>=</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>0</span>, <span class='fl'>0.4</span><span class='op'>)</span><span class='op'>)</span>
+</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/lines.html'>lines</a></span><span class='op'>(</span><span class='va'>htmlNo</span>, col<span class='op'>=</span><span class='fl'>4</span><span class='op'>)</span>
+</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/lines.html'>lines</a></span><span class='op'>(</span><span class='va'>htmlYes</span>, lwd<span class='op'>=</span><span class='fl'>2</span>, col<span class='op'>=</span><span class='fl'>2</span><span class='op'>)</span>
 </div><div class='img'><img src='email-2.png' alt='' width='700' height='433' /></div><div class='input'>
 </div></pre>
   </div>
@@ -337,7 +324,7 @@ identifiable information has been removed.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.0.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
 </div>
 
       </footer>

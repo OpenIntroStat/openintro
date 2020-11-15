@@ -123,7 +123,7 @@
     <p>Overlays a colored rectangle over the entire plotting region.</p>
     </div>
 
-    <pre class="usage"><span class='fu'>BG</span>(col = <span class='kw'>openintro</span>::<span class='kw'><a href='COL.html'>COL</a></span>[<span class='fl'>5</span>, <span class='fl'>9</span>])</pre>
+    <pre class="usage"><span class='fu'>BG</span><span class='op'>(</span>col <span class='op'>=</span> <span class='fu'>openintro</span><span class='fu'>::</span><span class='va'><a href='COL.html'>COL</a></span><span class='op'>[</span><span class='fl'>5</span>, <span class='fl'>9</span><span class='op'>]</span><span class='op'>)</span></pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
@@ -140,29 +140,29 @@
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
-<span class='kw'>Test</span> <span class='op'>&lt;-</span> <span class='fu'>function</span>(<span class='kw'>col</span>) {
-  <span class='fu'><a href='https://rdrr.io/r/graphics/plot.default.html'>plot</a></span>(<span class='fl'>1</span><span class='op'>:</span><span class='fl'>7</span>, col = <span class='kw'>COL</span>[<span class='fl'>1</span><span class='op'>:</span><span class='fl'>7</span>], pch = <span class='fl'>19</span>, cex = <span class='fl'>5</span>,
-      xlim = <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>0</span>, <span class='fl'>8</span>),
-      ylim = <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>0</span>, <span class='fl'>9</span>))
-  <span class='fu'>BG</span>(<span class='kw'>col</span>)
-  <span class='fu'><a href='https://rdrr.io/r/graphics/points.html'>points</a></span>(<span class='fl'>2</span><span class='op'>:</span><span class='fl'>8</span>, col = <span class='kw'>COL</span>[<span class='fl'>1</span><span class='op'>:</span><span class='fl'>7</span>], pch = <span class='fl'>19</span>, cex = <span class='fl'>5</span>)
-  <span class='fu'><a href='https://rdrr.io/r/graphics/text.html'>text</a></span>(<span class='fl'>2</span>, <span class='fl'>6</span>, <span class='st'>"Correct Color"</span>)
-  <span class='fu'><a href='https://rdrr.io/r/graphics/text.html'>text</a></span>(<span class='fl'>6</span>, <span class='fl'>2</span>, <span class='st'>"Affected Color"</span>)
-}
+<span class='va'>Test</span> <span class='op'>&lt;-</span> <span class='kw'>function</span><span class='op'>(</span><span class='va'>col</span><span class='op'>)</span> <span class='op'>{</span>
+  <span class='fu'><a href='https://rdrr.io/r/graphics/plot.default.html'>plot</a></span><span class='op'>(</span><span class='fl'>1</span><span class='op'>:</span><span class='fl'>7</span>, col <span class='op'>=</span> <span class='va'>COL</span><span class='op'>[</span><span class='fl'>1</span><span class='op'>:</span><span class='fl'>7</span><span class='op'>]</span>, pch <span class='op'>=</span> <span class='fl'>19</span>, cex <span class='op'>=</span> <span class='fl'>5</span>,
+      xlim <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>0</span>, <span class='fl'>8</span><span class='op'>)</span>,
+      ylim <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>0</span>, <span class='fl'>9</span><span class='op'>)</span><span class='op'>)</span>
+  <span class='fu'>BG</span><span class='op'>(</span><span class='va'>col</span><span class='op'>)</span>
+  <span class='fu'><a href='https://rdrr.io/r/graphics/points.html'>points</a></span><span class='op'>(</span><span class='fl'>2</span><span class='op'>:</span><span class='fl'>8</span>, col <span class='op'>=</span> <span class='va'>COL</span><span class='op'>[</span><span class='fl'>1</span><span class='op'>:</span><span class='fl'>7</span><span class='op'>]</span>, pch <span class='op'>=</span> <span class='fl'>19</span>, cex <span class='op'>=</span> <span class='fl'>5</span><span class='op'>)</span>
+  <span class='fu'><a href='https://rdrr.io/r/graphics/text.html'>text</a></span><span class='op'>(</span><span class='fl'>2</span>, <span class='fl'>6</span>, <span class='st'>"Correct Color"</span><span class='op'>)</span>
+  <span class='fu'><a href='https://rdrr.io/r/graphics/text.html'>text</a></span><span class='op'>(</span><span class='fl'>6</span>, <span class='fl'>2</span>, <span class='st'>"Affected Color"</span><span class='op'>)</span>
+<span class='op'>}</span>
 
-<span class='fu'><a href='https://rdrr.io/r/graphics/par.html'>par</a></span>(mfrow = <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>2</span>, <span class='fl'>2</span>))
+<span class='fu'><a href='https://rdrr.io/r/graphics/par.html'>par</a></span><span class='op'>(</span>mfrow <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>2</span>, <span class='fl'>2</span><span class='op'>)</span><span class='op'>)</span>
 
 <span class='co'># Works well since black color almost fully transparent</span>
-<span class='fu'>Test</span>(<span class='kw'>COL</span>[<span class='fl'>5</span>, <span class='fl'>9</span>])
+<span class='fu'>Test</span><span class='op'>(</span><span class='va'>COL</span><span class='op'>[</span><span class='fl'>5</span>, <span class='fl'>9</span><span class='op'>]</span><span class='op'>)</span>
 
 <span class='co'># Works less well since transparency isn't as significant</span>
-<span class='fu'>Test</span>(<span class='kw'>COL</span>[<span class='fl'>5</span>, <span class='fl'>6</span>])
+<span class='fu'>Test</span><span class='op'>(</span><span class='va'>COL</span><span class='op'>[</span><span class='fl'>5</span>, <span class='fl'>6</span><span class='op'>]</span><span class='op'>)</span>
 
 <span class='co'># Pretty ugly due to overlay</span>
-<span class='fu'>Test</span>(<span class='kw'>COL</span>[<span class='fl'>5</span>, <span class='fl'>3</span>])
+<span class='fu'>Test</span><span class='op'>(</span><span class='va'>COL</span><span class='op'>[</span><span class='fl'>5</span>, <span class='fl'>3</span><span class='op'>]</span><span class='op'>)</span>
 
 <span class='co'># Basically useless due to heavy color gradient</span>
-<span class='fu'>Test</span>(<span class='kw'>COL</span>[<span class='fl'>4</span>, <span class='fl'>2</span>])
+<span class='fu'>Test</span><span class='op'>(</span><span class='va'>COL</span><span class='op'>[</span><span class='fl'>4</span>, <span class='fl'>2</span><span class='op'>]</span><span class='op'>)</span>
 </div><div class='img'><img src='BG-1.png' alt='' width='700' height='433' /></div><div class='input'>
 </div></pre>
   </div>
@@ -180,7 +180,7 @@
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.0.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
 </div>
 
       </footer>

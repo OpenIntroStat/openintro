@@ -129,7 +129,7 @@ relationship between sedentary behavior and thickness of the medial temporal
 lobe (MTL) in the brain.</p>
     </div>
 
-    <pre class="usage"><span class='kw'>mtl</span></pre>
+    <pre class="usage"><span class='va'>mtl</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
@@ -186,8 +186,8 @@ us to this data set!</p>
     <pre class="examples"><div class='input'>
 
 <span class='co'># Examine the relationship between the METminwk and IPAQgrp variables.</span>
-<span class='kw'>a</span> <span class='op'>&lt;-</span> <span class='kw'>mtl</span>[, <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"met_minwk"</span>, <span class='st'>"ipa_qgrp"</span>)]
-<span class='kw'>a</span>[<span class='fu'><a href='https://rdrr.io/r/base/order.html'>order</a></span>(<span class='kw'>a</span><span class='op'>$</span><span class='kw'>met_minwk</span>), ]
+<span class='va'>a</span> <span class='op'>&lt;-</span> <span class='va'>mtl</span><span class='op'>[</span>, <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"met_minwk"</span>, <span class='st'>"ipa_qgrp"</span><span class='op'>)</span><span class='op'>]</span>
+<span class='va'>a</span><span class='op'>[</span><span class='fu'><a href='https://rdrr.io/r/base/order.html'>order</a></span><span class='op'>(</span><span class='va'>a</span><span class='op'>$</span><span class='va'>met_minwk</span><span class='op'>)</span>, <span class='op'>]</span>
 </div><div class='output co'>#&gt; <span style='color: #555555;'># A tibble: 35 x 2</span><span>
 #&gt;    met_minwk ipa_qgrp
 #&gt;        </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span> </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>   
@@ -219,7 +219,7 @@ us to this data set!</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.0.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
 </div>
 
       </footer>

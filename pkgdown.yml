@@ -1,8 +1,9 @@
 pandoc: 2.7.3
-pkgdown: 1.6.0
+pkgdown: 1.6.1
 pkgdown_sha: ~
-articles: []
-last_built: 2020-09-08T15:06Z
+articles:
+  datasets: datasets.html
+last_built: 2020-11-15T14:26Z
 urls:
   reference: https://openintrostat.github.io/openintro/reference
   article: https://openintrostat.github.io/openintro/articles
