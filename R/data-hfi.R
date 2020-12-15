@@ -1,4 +1,4 @@
-#' Absenteeism
+#' Human Freedom Index
 #'
 #' The Human Freedom Index is a report that attempts to summarize the idea of "freedom"
 #' through a bunch of different variables for many countries around the globe.
