@@ -10,8 +10,7 @@ sibling_heights <- read.csv(here::here("data-raw/sibling_heights/sibling_heights
 
 # cleaning: clean variable names
 
-sibling_heights <- janitor::clean_names(sibling_heights) %>%
-  rename(family = i_family)
+sibling_heights <- janitor::clean_names(sibling_heights) 
 
 
 # save -------------------------------------------------------------------------
