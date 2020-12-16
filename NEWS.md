@@ -1,5 +1,7 @@
 # openintro (development version)
 
+* Added new datasets:
+  * `major_earthquakes`, `mcu_films`, `salinity`, `sibling_heights`, `snowfall`, `ssd_speed` by [@npaterno](https://github.com/npaterno)
 * Added new datasets: 
   * `fact_opinion`, `flow_rates`, `race_justice` by [@npaterno](https://github.com/npaterno)
   * `exam_grades`
