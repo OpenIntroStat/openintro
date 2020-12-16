@@ -123,6 +123,7 @@ reference:
   - london_boroughs
   - london_murders
   - mail_me
+  - major_earthquake
   - major_survey
   - malaria
   - male_heights_fcid
@@ -131,6 +132,7 @@ reference:
   - mammogram
   - marathon
   - mariokart
+  - mcu_films
   - midterms_house
   - migraine
   - military
@@ -170,10 +172,12 @@ reference:
   - resume
   - rosling_responses
   - russian_influence_on_us_election_2016
+  - salinity
   - sat_improve
   - satgpa
   - scotus_healthcare
   - seattlepets
+  - sibling_heights
   - simulated_dist
   - simulated_normal
   - simulated_scatter
@@ -181,12 +185,14 @@ reference:
   - sleep_deprivation
   - smallpox
   - smoking
+  - snowfall
   - socialexp
   - solar
   - sp500_1950_2018
   - sp500_seq
   - sp500
   - speed_gender_height
+  - ssd_speed
   - starbucks
   - stats_scores
   - stem_cell
