@@ -17,8 +17,8 @@
 #'     geom_smooth(method = lm, se = FALSE)+
 #'     labs(
 #'         title = "Sibling Heights",
-#'         x = "Height of Brother (in.),
-#'         y = "Height of Sister (in.))
+#'         x = "Height of Brother (in.)",
+#'         y = "Height of Sister (in.)")
 #'
 #' @source
 #'   {Pearson, K. and Lee, A. (1902-3) On the laws of inheritance in man. Biometrika, 2, 357.}
