@@ -20,13 +20,17 @@ sibling_heights
 }
 \description{
 Data collected from 11 families on the heights of male and female siblings collected by Pearson
-to study correlation between statures of siblings.
+and Lee to study correlation between statures of siblings.
 }
 \examples{
 library(ggplot2)
 ggplot(data = sibling_heights, aes(brother, sister))+
     geom_point()+
-    geom_smooth(method = lm, se = FALSE)
+    geom_smooth(method = lm, se = FALSE)+
+    labs(
+        title = "Sibling Heights",
+        x = "Height of Brother (in.)",
+        y = "Height of Sister (in.)")
 
 }
 \keyword{datasets}
