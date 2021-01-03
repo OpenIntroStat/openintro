@@ -9,7 +9,7 @@
 #' \describe{
 #'   \item{year_start}{The year snowfall measurement began on July 1.}
 #'   \item{year_end}{The year snowfall measurement ended on June 30.}
-#'   \item{snowfall}{Snowfall measured in inches.}
+#'   \item{total_snow}{Snowfall measured in inches.}
 #' }
 #' @source \href{https://www.nps.gov/mora/planyourvisit/annual-snowfall-totals.htm}{National Parks Services}.
 #' @examples
