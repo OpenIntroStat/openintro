@@ -1,7 +1,6 @@
-#'  Major Earthquakes.
+#' Major Earthquakes.
 #'
-#'  Select set of major earthquakes from 1900 to 1999.
-#'
+#' Select set of major earthquakes from 1900 to 1999.
 #'
 #' @format A data frame with 123 rows and 7 variables.
 #' \describe{
@@ -13,13 +12,15 @@
 #'   \item{region}{Country or countries if the earthquake occured on a border.}
 #'   \item{deaths}{Approximate number of deaths caused by earthquake}
 #' }
+#' @source World Almanac and Book of Facts: 2011.
 #' @examples
-#'  library(ggplot2)
-#'  ggplot(major_earthquakes, aes(intensity_richter, deaths))+
-#'    geom_point()
 #'
-#' @source
-#'   World Almanac and Book of Facts: 2011
+#' library(ggplot2)
 #'
+#' ggplot(major_earthquakes, aes(x = intensity_richter, y = deaths))+
+#'   geom_point()
+#'
+#' ggplot(major_earthquakes, aes(x = log(deaths)))+
+#'   geom_histogram()
 #'
 "major_earthquakes"
