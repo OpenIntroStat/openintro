@@ -4,7 +4,7 @@
 #' The Infinity saga is a 23 movie storyline spanning from Ironman
 #' in 2008 to Endgame in 2019.
 #'
-#' Note: Box office figures are not adjusted to a specific year.
+#' Box office figures are not adjusted to a specific year.
 #' They are from the year the film was released.
 #'
 #' @format A data frame with 23 rows and 7 variables.
