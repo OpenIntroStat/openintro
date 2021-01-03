@@ -1,14 +1,15 @@
-library(readr)
-library(dplyr)
+# load packages ----------------------------------------------------------------
+
+library(tidyverse)
 
 # load data ---------------------------------------------------------------------
 
-mcu_films <- read.csv("data-raw/mcu_films/mcu_films.csv")
+mcu_films <- read_csv("data-raw/mcu_films/mcu_films.csv")
 
 # cleaning: remove rating variable -------------------------------
 
-mcu_films <- mcu_films %>% 
-  select(-rating) 
+mcu_films <- mcu_films %>%
+  select(-rating)
 
 # save --------------------------------------------------------------------------
 
