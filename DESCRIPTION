@@ -26,6 +26,7 @@ Suggests:
     dplyr,
     forcats,
     lubridate,
+    scales,
     tidyr,
     knitr
 Imports: 

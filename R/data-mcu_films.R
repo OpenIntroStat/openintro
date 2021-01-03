@@ -1,6 +1,6 @@
-#' Marvel Cinematic Universe Films.
+#' Marvel Cinematic Universe films.
 #'
-#' A list of MCU films through the Infinity saga.
+#' A list of Marvel Cinematic Universe films through the Infinity saga.
 #'
 #' @format A data frame with 23 rows and 7 variables.
 #' \describe{
@@ -12,19 +12,20 @@
 #'   \item{gross_us}{All box office totals in US.}
 #'   \item{gross_world}{All box office totals world wide.}
 #' }
-#'
+#' @source \href{http://www.imdb.com}{Internet Movie Database}.
 #' @examples
 #'
 #' library(ggplot2)
+#' library(scales)
 #'
-#' ggplot(mcu_films,
-#'   aes(opening_weekend_us, gross_us))+
-#'  geom_point()+
-#'  labs(title = "MCU Box Office Totals: Opening Weekend V All-time",
-#'   x = "Opening Weekend Totals (US $)",
-#'   y = "All-time Totals (US $)")
-#'
-#' @source
-#'   \href{http://www.imdb.com}{Internet Movie Database.}
+#' ggplot(mcu_films, aes(x = opening_weekend_us, y = gross_us))+
+#'   geom_point() +
+#'   labs(
+#'     title = "MCU Box Office Totals: Opening weekend vs. all-time",
+#'     x = "Opening weekend totals (USD in millions)",
+#'     y = "All-time totals (USD)"
+#'     ) +
+#'   scale_x_continuous(labels = label_dollar(scale = 1/1000000)) +
+#'   scale_y_continuous(labels = label_dollar(scale = 1/1000000))
 #'
 "mcu_films"

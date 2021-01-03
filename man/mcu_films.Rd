@@ -3,38 +3,42 @@
 \docType{data}
 \name{mcu_films}
 \alias{mcu_films}
-\title{Marvel Cinematic Universe Films.}
+\title{Marvel Cinematic Universe films.}
 \format{
 A data frame with 23 rows and 7 variables.
 \describe{
-\item{movie}{Title of the movie.}
-\item{length_hrs}{Length of the movie: hours portion.}
-\item{length_min}{Length of the movie: minutes portion.}
-\item{release_date}{Date the movie was released in the US.}
-\item{opening_weekend_us}{Box office totals for opening weekend in the US.}
-\item{gross_us}{All box office totals in US.}
-\item{gross_world}{All box office totals world wide.}
+  \item{movie}{Title of the movie.}
+  \item{length_hrs}{Length of the movie: hours portion.}
+  \item{length_min}{Length of the movie: minutes portion.}
+  \item{release_date}{Date the movie was released in the US.}
+  \item{opening_weekend_us}{Box office totals for opening weekend in the US.}
+  \item{gross_us}{All box office totals in US.}
+  \item{gross_world}{All box office totals world wide.}
 }
 }
 \source{
-\href{http://www.imdb.com}{Internet Movie Database.}
+\href{http://www.imdb.com}{Internet Movie Database}.
 }
 \usage{
 mcu_films
 }
 \description{
-A list of MCU films through the Infinity saga.
+A list of Marvel Cinematic Universe films through the Infinity saga.
 }
 \examples{
 
 library(ggplot2)
+library(scales)
 
-ggplot(mcu_films,
-  aes(opening_weekend_us, gross_us))+
- geom_point()+
- labs(title = "MCU Box Office Totals: Opening Weekend V All-time",
-  x = "Opening Weekend Totals (US $)",
-  y = "All-time Totals (US $)")
+ggplot(mcu_films, aes(x = opening_weekend_us, y = gross_us))+
+  geom_point() +
+  labs(
+    title = "MCU Box Office Totals: Opening weekend vs. all-time",
+    x = "Opening weekend totals (USD in millions)",
+    y = "All-time totals (USD)"
+    ) +
+  scale_x_continuous(labels = label_dollar(scale = 1/1000000)) +
+  scale_y_continuous(labels = label_dollar(scale = 1/1000000))
 
 }
 \keyword{datasets}
