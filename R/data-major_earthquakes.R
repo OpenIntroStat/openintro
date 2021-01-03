@@ -1,4 +1,4 @@
-#' Major Earthquakes.
+#' Major earthquakes
 #'
 #' Select set of major earthquakes from 1900 to 1999.
 #'

@@ -3,7 +3,7 @@
 \docType{data}
 \name{sibling_heights}
 \alias{sibling_heights}
-\title{Sibling Heights.}
+\title{Sibling heights}
 \format{
 A data frame with 11 rows and 3 variables.
 \describe{

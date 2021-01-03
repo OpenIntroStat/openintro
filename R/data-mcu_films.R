@@ -1,4 +1,4 @@
-#' Marvel Cinematic Universe films.
+#' Marvel Cinematic Universe films
 #'
 #' A list of Marvel Cinematic Universe films through the Infinity saga.
 #'

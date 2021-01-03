@@ -1,4 +1,4 @@
-#' Sibling Heights.
+#' Sibling heights
 #'
 #' Data collected from 11 families on the heights of male and female siblings
 #' collected by Pearson and Lee to study correlation between statures of siblings.

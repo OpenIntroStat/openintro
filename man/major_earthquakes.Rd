@@ -3,7 +3,7 @@
 \docType{data}
 \name{major_earthquakes}
 \alias{major_earthquakes}
-\title{Major Earthquakes.}
+\title{Major earthquakes}
 \format{
 A data frame with 123 rows and 7 variables.
 \describe{

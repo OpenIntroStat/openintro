@@ -3,7 +3,7 @@
 \docType{data}
 \name{mcu_films}
 \alias{mcu_films}
-\title{Marvel Cinematic Universe films.}
+\title{Marvel Cinematic Universe films}
 \format{
 A data frame with 23 rows and 7 variables.
 \describe{
