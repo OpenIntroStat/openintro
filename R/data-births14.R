@@ -1,18 +1,17 @@
 #' US births
 #'
-#' Every year, the US releases to the public a large data set
-#' containing information on births recorded in the country. This data set has
-#' been of interest to medical researchers who are studying the relation
-#' between habits and practices of expectant mothers and the birth of their
-#' children. This is a random sample of 1,000 cases from the data set released
-#' in 2014.
+#' Every year, the US releases to the public a large data set containing
+#' information on births recorded in the country. This data set has been of
+#' interest to medical researchers who are studying the relation between habits
+#' and practices of expectant mothers and the birth of their children. This is a
+#' random sample of 1,000 cases from the data set released in 2014.
 #'
 #' @source United States Department of Health and Human Services.
 #' Centers for Disease Control and Prevention.
 #' National Center for Health Statistics.
 #' Natality Detail File, 2014 United States.
 #' Inter-university Consortium for Political and Social Research, 2016-10-07.
-#' \url{https://doi.org/10.3886/ICPSR36461.v1}
+#' \url{https://doi.org/10.3886/ICPSR36461.v1}.
 #'
 #'
 #' @name births14
@@ -27,8 +26,7 @@
 #'   \item{visits}{Number of hospital visits during pregnancy.}
 #'   \item{gained}{Weight gained by mother during pregnancy in pounds.}
 #'   \item{weight}{Weight of the baby at birth in pounds.}
-#'   \item{lowbirthweight}{Whether baby was classified as low birthweight
-#'   (\code{low}) or not (\code{not low}).}
+#'   \item{lowbirthweight}{Whether baby was classified as low birthweight (\code{low}) or not (\code{not low}).}
 #'   \item{sex}{Sex of the baby, \code{female} or \code{male}.}
 #'   \item{habit}{Status of the mother as a \code{nonsmoker} or a \code{smoker}.}
 #'   \item{marital}{Whether mother is \code{married} or \code{not married} at birth.}
