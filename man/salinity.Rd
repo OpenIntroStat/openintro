@@ -23,12 +23,13 @@ Data collected at three different water masses in the Bimini Lagoon, Bahamas.
 \examples{
 
 library(ggplot2)
+library(broom)
 
 ggplot(salinity, aes(x = salinity_ppt)) +
   geom_dotplot() +
   facet_wrap(~site_number, ncol = 1)
 
-summary(aov(salinity_ppt ~ site_number, data = salinity))
+tidy(aov(salinity_ppt ~ site_number, data = salinity))
 
 }
 \keyword{datasets}
