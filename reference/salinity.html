@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>cars93 — cars93 • openintro</title>
+<title>Salinity. — salinity • openintro</title>
 
 
 <!-- jquery -->
@@ -39,9 +39,8 @@
 
 
 
-<meta property="og:title" content="cars93 — cars93" />
-<meta property="og:description" content="A data frame with 54 rows and 6 columns. This data is a subset of the
-Cars93 data set from the MASS package." />
+<meta property="og:title" content="Salinity. — salinity" />
+<meta property="og:description" content="Data collected at three different water masses in the Bimini Lagoon, Bahamas." />
 
 
 
@@ -115,64 +114,46 @@ Cars93 data set from the MASS package." />
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>cars93</h1>
-    <small class="dont-index">Source: <a href='https://github.com/OpenIntroStat/openintro/blob/master/R/data-cars93.R'><code>R/data-cars93.R</code></a></small>
-    <div class="hidden name"><code>cars93.Rd</code></div>
+    <h1>Salinity.</h1>
+    <small class="dont-index">Source: <a href='https://github.com/OpenIntroStat/openintro/blob/master/R/data-salinity.R'><code>R/data-salinity.R</code></a></small>
+    <div class="hidden name"><code>salinity.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>A data frame with 54 rows and 6 columns. This data is a subset of the
-<code>Cars93</code> data set from the <code>MASS</code> package.</p>
+    <p>Data collected at three different water masses in the Bimini Lagoon, Bahamas.</p>
     </div>
 
-    <pre class="usage"><span class='va'>cars93</span></pre>
+    <pre class="usage"><span class='va'>salinity</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>A data frame with 54 observations on the following 6 variables.</p><dl>
-  <dt>type</dt><dd><p>The vehicle type with levels <code>large</code>, <code>midsize</code>,
-  and <code>small</code>.</p></dd>
-  <dt>price</dt><dd><p>Vehicle price (USD).</p></dd>
-  <dt>mpg_city</dt><dd><p>Vehicle mileage in city (miles per gallon).</p></dd>
-  <dt>drive_train</dt><dd><p>Vehicle drive train with levels <code>4WD</code>, <code>front</code>,
-  and <code>rear</code>.</p></dd>
-  <dt>passengers</dt><dd><p>The vehicle passenger capacity.</p></dd>
-  <dt>weight</dt><dd><p>Vehicle weight (lbs).</p></dd>
+    <p>A data frame with 30 rows and 2 variables.</p><dl>
+  <dt>site_number</dt><dd><p>Location where measurments were taken.</p></dd>
+  <dt>salinity_ppt</dt><dd><p>Salinity value in parts per thousand.</p></dd>
 
 </dl>
 
     <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
 
-    <p>Lock, R. H. (1993) 1993 New Car Data. <em>Journal of Statistics
-Education</em> 1(1).</p>
-    <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
-
-    <p>These cars represent a random sample for 1993 models that were in both
-<em>Consumer Reports</em> and <em>PACE Buying Guide</em>. Only vehicles of type
-<code>small</code>, <code>midsize</code>, and <code>large</code> were include.</p>
-<p>Further description can be found in Lock (1993). Use the URL
-<a href='http://www.amstat.org/publications/jse/v1n1/datasets.lock.html'>http://www.amstat.org/publications/jse/v1n1/datasets.lock.html</a>.</p>
+    <p>Till, R. (1974) Statistical Methods for the Earth Scientist: An Introduction. London: Macmillon, 104.</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
 <span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://ggplot2.tidyverse.org'>ggplot2</a></span><span class='op'>)</span>
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://broom.tidymodels.org/'>broom</a></span><span class='op'>)</span>
 
-<span class='co'># Vehicle price by type</span>
-<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span><span class='va'>cars93</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>price</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_histogram.html'>geom_histogram</a></span><span class='op'>(</span>binwidth <span class='op'>=</span> <span class='fl'>5</span><span class='op'>)</span> <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/facet_wrap.html'>facet_wrap</a></span><span class='op'>(</span><span class='op'>~</span><span class='va'>type</span><span class='op'>)</span>
-</div><div class='img'><img src='cars93-1.png' alt='' width='700' height='433' /></div><div class='input'>
-<span class='co'># Vehicle price vs. weight</span>
-<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span><span class='va'>cars93</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>weight</span>, y <span class='op'>=</span> <span class='va'>price</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_point.html'>geom_point</a></span><span class='op'>(</span><span class='op'>)</span>
-</div><div class='img'><img src='cars93-2.png' alt='' width='700' height='433' /></div><div class='input'>
-<span class='co'># Milleage vs. weight</span>
-<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span><span class='va'>cars93</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>weight</span>, y <span class='op'>=</span> <span class='va'>mpg_city</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_point.html'>geom_point</a></span><span class='op'>(</span><span class='op'>)</span> <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_smooth.html'>geom_smooth</a></span><span class='op'>(</span><span class='op'>)</span>
-</div><div class='output co'>#&gt; <span class='message'>`geom_smooth()` using method = 'loess' and formula 'y ~ x'</span></div><div class='img'><img src='cars93-3.png' alt='' width='700' height='433' /></div><div class='input'>
-</div></pre>
+<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span><span class='va'>salinity</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>salinity_ppt</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_dotplot.html'>geom_dotplot</a></span><span class='op'>(</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/facet_wrap.html'>facet_wrap</a></span><span class='op'>(</span><span class='op'>~</span><span class='va'>site_number</span>, ncol <span class='op'>=</span> <span class='fl'>1</span><span class='op'>)</span>
+</div><div class='output co'>#&gt; <span class='message'>`stat_bindot()` using `bins = 30`. Pick better value with `binwidth`.</span></div><div class='img'><img src='salinity-1.png' alt='' width='700' height='433' /></div><div class='input'>
+<span class='fu'><a href='https://generics.r-lib.org/reference/tidy.html'>tidy</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/stats/aov.html'>aov</a></span><span class='op'>(</span><span class='va'>salinity_ppt</span> <span class='op'>~</span> <span class='va'>site_number</span>, data <span class='op'>=</span> <span class='va'>salinity</span><span class='op'>)</span><span class='op'>)</span>
+</div><div class='output co'>#&gt; <span style='color: #555555;'># A tibble: 2 x 6</span><span>
+#&gt;   term           df sumsq meansq statistic   p.value
+#&gt;   </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>       </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span> </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>  </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>     </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>     </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>
+#&gt; </span><span style='color: #555555;'>1</span><span> site_number     2 39.1  19.6        56.5  2.24</span><span style='color: #555555;'>e</span><span style='color: #BB0000;'>-10</span><span>
+#&gt; </span><span style='color: #555555;'>2</span><span> Residuals      27  9.35  0.346      </span><span style='color: #BB0000;'>NA</span><span>   </span><span style='color: #BB0000;'>NA</span><span>   </span><span style='color: #555555;'> </span><span>   </div><div class='input'>
+</div></span></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">

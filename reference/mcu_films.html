@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>cars93 — cars93 • openintro</title>
+<title>Marvel Cinematic Universe films — mcu_films • openintro</title>
 
 
 <!-- jquery -->
@@ -39,9 +39,10 @@
 
 
 
-<meta property="og:title" content="cars93 — cars93" />
-<meta property="og:description" content="A data frame with 54 rows and 6 columns. This data is a subset of the
-Cars93 data set from the MASS package." />
+<meta property="og:title" content="Marvel Cinematic Universe films — mcu_films" />
+<meta property="og:description" content="A list of Marvel Cinematic Universe films through the Infinity saga.
+The Infinity saga is a 23 movie storyline spanning from Ironman
+in 2008 to Endgame in 2019." />
 
 
 
@@ -115,63 +116,56 @@ Cars93 data set from the MASS package." />
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>cars93</h1>
-    <small class="dont-index">Source: <a href='https://github.com/OpenIntroStat/openintro/blob/master/R/data-cars93.R'><code>R/data-cars93.R</code></a></small>
-    <div class="hidden name"><code>cars93.Rd</code></div>
+    <h1>Marvel Cinematic Universe films</h1>
+    <small class="dont-index">Source: <a href='https://github.com/OpenIntroStat/openintro/blob/master/R/data-mcu_films.R'><code>R/data-mcu_films.R</code></a></small>
+    <div class="hidden name"><code>mcu_films.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>A data frame with 54 rows and 6 columns. This data is a subset of the
-<code>Cars93</code> data set from the <code>MASS</code> package.</p>
+    <p>A list of Marvel Cinematic Universe films through the Infinity saga.
+The Infinity saga is a 23 movie storyline spanning from Ironman
+in 2008 to Endgame in 2019.</p>
     </div>
 
-    <pre class="usage"><span class='va'>cars93</span></pre>
+    <pre class="usage"><span class='va'>mcu_films</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>A data frame with 54 observations on the following 6 variables.</p><dl>
-  <dt>type</dt><dd><p>The vehicle type with levels <code>large</code>, <code>midsize</code>,
-  and <code>small</code>.</p></dd>
-  <dt>price</dt><dd><p>Vehicle price (USD).</p></dd>
-  <dt>mpg_city</dt><dd><p>Vehicle mileage in city (miles per gallon).</p></dd>
-  <dt>drive_train</dt><dd><p>Vehicle drive train with levels <code>4WD</code>, <code>front</code>,
-  and <code>rear</code>.</p></dd>
-  <dt>passengers</dt><dd><p>The vehicle passenger capacity.</p></dd>
-  <dt>weight</dt><dd><p>Vehicle weight (lbs).</p></dd>
+    <p>A data frame with 23 rows and 7 variables.</p><dl>
+  <dt>movie</dt><dd><p>Title of the movie.</p></dd>
+  <dt>length_hrs</dt><dd><p>Length of the movie: hours portion.</p></dd>
+  <dt>length_min</dt><dd><p>Length of the movie: minutes portion.</p></dd>
+  <dt>release_date</dt><dd><p>Date the movie was released in the US.</p></dd>
+  <dt>opening_weekend_us</dt><dd><p>Box office totals for opening weekend in the US.</p></dd>
+  <dt>gross_us</dt><dd><p>All box office totals in US.</p></dd>
+  <dt>gross_world</dt><dd><p>All box office totals world wide.</p></dd>
 
 </dl>
 
     <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
 
-    <p>Lock, R. H. (1993) 1993 New Car Data. <em>Journal of Statistics
-Education</em> 1(1).</p>
+    <p><a href='http://www.imdb.com'>Internet Movie Database</a>.</p>
     <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
 
-    <p>These cars represent a random sample for 1993 models that were in both
-<em>Consumer Reports</em> and <em>PACE Buying Guide</em>. Only vehicles of type
-<code>small</code>, <code>midsize</code>, and <code>large</code> were include.</p>
-<p>Further description can be found in Lock (1993). Use the URL
-<a href='http://www.amstat.org/publications/jse/v1n1/datasets.lock.html'>http://www.amstat.org/publications/jse/v1n1/datasets.lock.html</a>.</p>
+    <p>Box office figures are not adjusted to a specific year.
+They are from the year the film was released.</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
 <span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://ggplot2.tidyverse.org'>ggplot2</a></span><span class='op'>)</span>
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://scales.r-lib.org'>scales</a></span><span class='op'>)</span>
 
-<span class='co'># Vehicle price by type</span>
-<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span><span class='va'>cars93</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>price</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_histogram.html'>geom_histogram</a></span><span class='op'>(</span>binwidth <span class='op'>=</span> <span class='fl'>5</span><span class='op'>)</span> <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/facet_wrap.html'>facet_wrap</a></span><span class='op'>(</span><span class='op'>~</span><span class='va'>type</span><span class='op'>)</span>
-</div><div class='img'><img src='cars93-1.png' alt='' width='700' height='433' /></div><div class='input'>
-<span class='co'># Vehicle price vs. weight</span>
-<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span><span class='va'>cars93</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>weight</span>, y <span class='op'>=</span> <span class='va'>price</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_point.html'>geom_point</a></span><span class='op'>(</span><span class='op'>)</span>
-</div><div class='img'><img src='cars93-2.png' alt='' width='700' height='433' /></div><div class='input'>
-<span class='co'># Milleage vs. weight</span>
-<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span><span class='va'>cars93</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>weight</span>, y <span class='op'>=</span> <span class='va'>mpg_city</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span>
+<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span><span class='va'>mcu_films</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>opening_weekend_us</span>, y <span class='op'>=</span> <span class='va'>gross_us</span><span class='op'>)</span><span class='op'>)</span><span class='op'>+</span>
   <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_point.html'>geom_point</a></span><span class='op'>(</span><span class='op'>)</span> <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_smooth.html'>geom_smooth</a></span><span class='op'>(</span><span class='op'>)</span>
-</div><div class='output co'>#&gt; <span class='message'>`geom_smooth()` using method = 'loess' and formula 'y ~ x'</span></div><div class='img'><img src='cars93-3.png' alt='' width='700' height='433' /></div><div class='input'>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span><span class='op'>(</span>
+    title <span class='op'>=</span> <span class='st'>"MCU Box Office Totals: Opening weekend vs. all-time"</span>,
+    x <span class='op'>=</span> <span class='st'>"Opening weekend totals (USD in millions)"</span>,
+    y <span class='op'>=</span> <span class='st'>"All-time totals (USD)"</span>
+    <span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/scale_continuous.html'>scale_x_continuous</a></span><span class='op'>(</span>labels <span class='op'>=</span> <span class='fu'><a href='https://scales.r-lib.org//reference/label_dollar.html'>label_dollar</a></span><span class='op'>(</span>scale <span class='op'>=</span> <span class='fl'>1</span><span class='op'>/</span><span class='fl'>1000000</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/scale_continuous.html'>scale_y_continuous</a></span><span class='op'>(</span>labels <span class='op'>=</span> <span class='fu'><a href='https://scales.r-lib.org//reference/label_dollar.html'>label_dollar</a></span><span class='op'>(</span>scale <span class='op'>=</span> <span class='fl'>1</span><span class='op'>/</span><span class='fl'>1000000</span><span class='op'>)</span><span class='op'>)</span>
+</div><div class='img'><img src='mcu_films-1.png' alt='' width='700' height='433' /></div><div class='input'>
 </div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
