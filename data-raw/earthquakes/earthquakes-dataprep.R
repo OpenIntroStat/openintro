@@ -5,14 +5,13 @@ library(janitor)
 
 # load data ---------------------------------------------------------------------
 
-major_earthquakes <- read_csv("data-raw/major_earthquakes/major_earthquakes.csv")
+earthquakes <- read_csv("data-raw/earthquakes/earthquakes.csv")
 
-# cleaning: remove X variable, clean names -------------------------------
+# cleaning: clean names -------------------------------
 
-major_earthquakes <- major_earthquakes %>%
-  select(-X1) %>%
+earthquakes <- earthquakes %>%
   clean_names()
 
 # save --------------------------------------------------------------------------
 
-usethis::use_data(major_earthquakes, overwrite = TRUE)
+usethis::use_data(earthquakes, overwrite = TRUE)

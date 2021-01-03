@@ -16,7 +16,7 @@
 #'
 #' library(ggplot2)
 #'
-#' ggplot(snowfall, aes(x = snowfall))+
+#' ggplot(snowfall, aes(x = total_snow))+
 #'   geom_histogram(binwidth = 50)+
 #'   labs(
 #'     title = "Annual Snowfall",
@@ -26,7 +26,7 @@
 #'     caption = "Source: National Parks Services"
 #'     )
 #'
-#' ggplot(snowfall, aes(x = year_start, y = snowfall, group = 1))+
+#' ggplot(snowfall, aes(x = year_start, y = total_snow, group = 1))+
 #'   geom_line()+
 #'   labs(
 #'     title = "Annual Snowfall",

@@ -9,7 +9,7 @@ A data frame with 100 rows and 3 variables.
 \describe{
   \item{year_start}{The year snowfall measurement began on July 1.}
   \item{year_end}{The year snowfall measurement ended on June 30.}
-  \item{snowfall}{Snowfall measured in inches.}
+  \item{total_snow}{Snowfall measured in inches.}
 }
 }
 \source{
@@ -28,7 +28,7 @@ during World War II. Records also unavailable from 1948-1954.
 
 library(ggplot2)
 
-ggplot(snowfall, aes(x = snowfall))+
+ggplot(snowfall, aes(x = total_snow))+
   geom_histogram(binwidth = 50)+
   labs(
     title = "Annual Snowfall",
@@ -38,7 +38,7 @@ ggplot(snowfall, aes(x = snowfall))+
     caption = "Source: National Parks Services"
     )
 
-ggplot(snowfall, aes(x = year_start, y = snowfall, group = 1))+
+ggplot(snowfall, aes(x = year_start, y = total_snow, group = 1))+
   geom_line()+
   labs(
     title = "Annual Snowfall",
