@@ -22,7 +22,9 @@ Study from the 1970s about whether gender influences hiring recommendations.
 }
 \examples{
 
-gender_discrimination
+library(dplyr)
+
+table(gender_discrimination)
 
 }
 \keyword{datasets}

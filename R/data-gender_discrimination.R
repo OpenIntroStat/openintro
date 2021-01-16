@@ -14,6 +14,8 @@
 #' @keywords datasets
 #' @examples
 #'
-#' gender_discrimination
+#' library(dplyr)
+#'
+#' table(gender_discrimination)
 #'
 "gender_discrimination"
