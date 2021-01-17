@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Bank manager recommendations based on gender — gender_discrimination • openintro</title>
+<title>Opportunity cost of purchases — opportunity_cost • openintro</title>
 
 
 <!-- jquery -->
@@ -39,8 +39,21 @@
 
 
 
-<meta property="og:title" content="Bank manager recommendations based on gender — gender_discrimination" />
-<meta property="og:description" content="Study from the 1970s about whether gender influences hiring recommendations." />
+<meta property="og:title" content="Opportunity cost of purchases — opportunity_cost" />
+<meta property="og:description" content="In a study on opportunity cost, 150 students were given the following statement:
+&quot;Imagine that you have been saving some extra money on the side to make some
+purchases, and on your most recent visit to the video store you come across
+a special sale on a new video. This video is one with your favorite actor or
+actress, and your favorite type of movie (such as a comedy, drama, thriller,
+etc.). This particular video that you are considering is one you have been
+thinking about buying for a long time. It is available for a special sale
+price of $14.99. What would you do in this situation? Please circle one of
+the options below.&quot; Half of the students were given the following two options:
+(A) Buy this entertaining video. (B) Not buy this entertaining video. The
+other half were given the following two options (note the modified option B):
+(A) Buy this entertaining video. (B) Not buy this entertaining video.
+Keep the $14.99 for other purchases.
+The results of this study are in this dataset." />
 
 
 
@@ -114,43 +127,56 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Bank manager recommendations based on gender</h1>
-    <small class="dont-index">Source: <a href='https://github.com/OpenIntroStat/openintro/blob/master/R/data-gender_discrimination.R'><code>R/data-gender_discrimination.R</code></a></small>
-    <div class="hidden name"><code>gender_discrimination.Rd</code></div>
+    <h1>Opportunity cost of purchases</h1>
+    <small class="dont-index">Source: <a href='https://github.com/OpenIntroStat/openintro/blob/master/R/data-opportunity_cost.R'><code>R/data-opportunity_cost.R</code></a></small>
+    <div class="hidden name"><code>opportunity_cost.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>Study from the 1970s about whether gender influences hiring recommendations.</p>
+    <p>In a study on opportunity cost, 150 students were given the following statement:
+"Imagine that you have been saving some extra money on the side to make some
+purchases, and on your most recent visit to the video store you come across
+a special sale on a new video. This video is one with your favorite actor or
+actress, and your favorite type of movie (such as a comedy, drama, thriller,
+etc.). This particular video that you are considering is one you have been
+thinking about buying for a long time. It is available for a special sale
+price of $14.99. What would you do in this situation? Please circle one of
+the options below." Half of the students were given the following two options:
+(A) Buy this entertaining video. (B) Not buy this entertaining video. The
+other half were given the following two options (note the modified option B):
+(A) Buy this entertaining video. (B) Not buy this entertaining video.
+Keep the $14.99 for other purchases.
+The results of this study are in this dataset.</p>
     </div>
 
-    <pre class="usage"><span class='va'>gender_discrimination</span></pre>
+    <pre class="usage"><span class='va'>opportunity_cost</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>A data frame with 48 observations on the following 2 variables.</p><dl>
-  <dt>gender</dt><dd><p>a factor with levels <code>female</code> and <code>male</code></p></dd>
-  <dt>decision</dt><dd><p>a factor with levels <code>not promoted</code> and <code>promoted</code></p></dd>
+    <p>A data frame with 150 observations on the following 2 variables.</p><dl>
+  <dt>group</dt><dd><p>a factor with levels <code>control</code> and <code>treatment</code></p></dd>
+  <dt>decision</dt><dd><p>a factor with levels <code>buy video</code> and <code>not buy video</code></p></dd>
   
 </dl>
 
     <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
 
-    <p>Rosen B and Jerdee T. 1974. Influence of sex role stereotypes on
-personnel decisions. Journal of Applied Psychology 59(1):9-14.</p>
+    <p>Frederick S, Novemsky N, Wang J, Dhar R, Nowlis S. 2009.
+Opportunity Cost Neglect. Journal of Consumer Research 36: 553-561.</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
 <span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://ggplot2.tidyverse.org'>ggplot2</a></span><span class='op'>)</span>
 
-<span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span><span class='op'>(</span><span class='va'>gender_discrimination</span><span class='op'>)</span>
-</div><div class='output co'>#&gt;         decision
-#&gt; gender   promoted not promoted
-#&gt;   male         21            3
-#&gt;   female       14           10</div><div class='input'>
-<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span><span class='va'>gender_discrimination</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>y <span class='op'>=</span> <span class='va'>gender</span>, fill <span class='op'>=</span> <span class='va'>decision</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span>
+<span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span><span class='op'>(</span><span class='va'>opportunity_cost</span><span class='op'>)</span>
+</div><div class='output co'>#&gt;            decision
+#&gt; group       buy video not buy video
+#&gt;   control          56            19
+#&gt;   treatment        41            34</div><div class='input'>
+<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span><span class='va'>opportunity_cost</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>y <span class='op'>=</span> <span class='va'>group</span>, fill <span class='op'>=</span> <span class='va'>decision</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span>
   <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_bar.html'>geom_bar</a></span><span class='op'>(</span>position <span class='op'>=</span> <span class='st'>"fill"</span><span class='op'>)</span>
-</div><div class='img'><img src='gender_discrimination-1.png' alt='' width='700' height='433' /></div><div class='input'>
+</div><div class='img'><img src='opportunity_cost-1.png' alt='' width='700' height='433' /></div><div class='input'>
 </div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
