@@ -1,10 +1,8 @@
 # openintro (development version)
 
 * Added new datasets:
-  * `earthquakes`, `mcu_films`, `salinity`, `snowfall`, `ssd_speed` by [@npaterno](https://github.com/npaterno)
-* Added new datasets: 
-  * `fact_opinion`, `flow_rates`, `race_justice` by [@npaterno](https://github.com/npaterno)
-  * `exam_grades`
+  * `earthquakes`, `mcu_films`, `salinity`, `snowfall`, `ssd_speed`, `fact_opinion`, `flow_rates`, `race_justice` by [@npaterno](https://github.com/npaterno)
+  * `exam_grades`, `opportunity_cost`
 * Updated `email` and `email50` datasets to make indicator variables factors, remove variables that don't exist in the data from the documentation, and update the documentation for `email50` to match the randomly sampled data
 
 # openintro 2.0.0
