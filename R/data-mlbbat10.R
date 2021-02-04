@@ -30,58 +30,56 @@
 #' @source \url{https://www.mlb.com}, retrieved 2011-04-22.
 #' @keywords datasets
 #' @examples
-#' \dontrun{
+#' library(ggplot2)
+#' library(dplyr)
+#' library(scales)
 #' d   <- mlbbat10[mlbbat10$at_bat > 200,]
 #' pos <- list(c("OF"), c("1B", "2B", "3B", "SS"), "DH", "C")
 #' POS <- c("OF", "IF", "DH", "C")
 #'
 #' #=====> On-base Percentage Across Positions <=====#
-#' out <- c()
-#' gp  <- c()
-#' for(i in 1:length(pos)){
-#' 	these <- which(d$position %in% pos[[i]])
-#' 	out   <- c(out, d[these, "obp"])
-#' 	gp    <- c(gp, rep(POS[i], length(these)))
-#' }
-#' plot(out ~ as.factor(gp))
-#' summary(lm(out ~ as.factor(gp)))
-#' anova(lm(out ~ as.factor(gp)))
+#' dplot1 <- d %>%
+#'   select(position, obp)
+#' dplot1 %>%
+#'   ggplot(aes(fill = position, x = position, y = obp)) +
+#'     geom_boxplot() +
+#'     labs(title = "On-base Percentage Across Positions", fill = NULL,
+#'                   y = "On-base Percentage", x = "Position") +
+#'     scale_y_continuous(labels = unit_format(unit = "%")) +
+#'     theme_bw()
+#'
 #'
 #' #=====> Batting Average Across Positions <=====#
-#' out <- c()
-#' gp  <- c()
-#' for(i in 1:length(pos)){
-#' 	these <- which(d$pos %in% pos[[i]])
-#' 	out   <- c(out, d[these,"AVG"])
-#' 	gp    <- c(gp, rep(POS[i], length(these)))
-#' }
-#' plot(out ~ as.factor(gp))
-#' summary(lm(out ~ as.factor(gp)))
-#' anova(lm(out ~ as.factor(gp)))
+#' dplot2 <- d %>%
+#'   select(position, bat_avg)
+#' dplot2 %>%
+#'   ggplot(aes(fill = position, x = position, y = bat_avg)) +
+#'     geom_boxplot() +
+#'     labs(title = "Batting Average Across Positions", fill = NULL,
+#'                   y = "Batting Average", x = "Position") +
+#'     theme_bw()
 #'
 #' #=====> Home Runs Across Positions <=====#
-#' out <- c()
-#' gp  <- c()
-#' for(i in 1:length(pos)){
-#' 	these <- which(d$pos %in% pos[[i]])
-#' 	out   <- c(out, d[these,"HR"])
-#' 	gp    <- c(gp, rep(POS[i], length(these)))
-#' }
-#' plot(out ~ as.factor(gp))
-#' summary(lm(out ~ as.factor(gp)))
-#' anova(lm(out ~ as.factor(gp)))
+#' dplot3 <- d %>%
+#'   select(position, home_run)
+#' dplot3 %>%
+#'   ggplot(aes(fill = position, x = position, y = home_run)) +
+#'     geom_col(show.legend = FALSE) +
+#'     labs(title = "Home Runs Across Positions",
+#'                 y = "Home Runs", x = "Position") +
+#'     scale_y_continuous(breaks = c(0, 250, 500, 750, 1000, 1250, 1500)) +
+#'     theme_bw()
 #'
 #' #=====> Runs Batted In Across Positions <=====#
-#' out <- c()
-#' gp  <- c()
-#' for(i in 1:length(pos)){
-#' 	these <- which(d$pos %in% pos[[i]])
-#' 	out   <- c(out, d[these,"RBI"])
-#' 	gp    <- c(gp, rep(POS[i], length(these)))
-#' }
-#' plot(out ~ as.factor(gp))
-#' summary(lm(out ~ as.factor(gp)))
-#' anova(lm(out ~ as.factor(gp)))
-#' }
-#'
+#' dplot3 <- d %>%
+#'   select(position, run)
+#' dplot3 %>%
+#'   ggplot(aes(fill = position, x = position, y = run)) +
+#'     geom_col(show.legend = FALSE) +
+#'     labs(title = "Runs Batted In Across Positions",
+#'                   y = "Runs", x = "Position") +
+#'     scale_y_continuous(
+#'       breaks = c(0, 1000, 2000, 3000, 4000, 5000, 6000, 7000)) +
+#'     theme_bw()
 "mlbbat10"
+
