@@ -37,44 +37,41 @@
 #'   filter(mlbbat10$at_bat > 200)
 #'
 #' # On-base Percentage Across Positions
-#' mlbbat10_200 %>%
-#'   ggplot(aes(fill = position, x = position, y = obp)) +
-#'     geom_boxplot() +
-#'     labs(title = "On-base Percentage Across Positions",
-#'          fill = NULL,
-#'          y = "On-base Percentage",
-#'          x = "Position") +
-#'     scale_y_continuous(labels = unit_format(unit = "%")) +
-#'     theme_bw()
+#'
+#'ggplot(data = mlbbat10_200, aes(fill = position, x = position, y = obp)) +
+#'   geom_boxplot() +
+#'   labs(title = "On-base Percentage Across Positions",
+#'        fill = NULL,
+#'        y = "On-base Percentage",
+#'        x = "Position") +
+#'   scale_y_continuous(labels = unit_format(unit = "%")) +
+#'   theme_bw()
 #'
 #'
 #' # Batting Average Across Positions
-#' mlbbat10_200 %>%
-#'   ggplot(aes(fill = position, x = position, y = bat_avg)) +
-#'     geom_boxplot() +
-#'     labs(title = "Batting Average Across Positions",
-#'          fill = NULL,
-#'          y = "Batting Average",
-#'          x = "Position") +
-#'     theme_bw()
+#'ggplot(data = mlbbat10_200, aes(fill = position, x = position, y = bat_avg)) +
+#'   geom_boxplot() +
+#'   labs(title = "Batting Average Across Positions",
+#'        fill = NULL,
+#'        y = "Batting Average",
+#'        x = "Position") +
+#'   theme_bw()
 #'
 #' # Home Runs Across Positions
-#' mlbbat10_200 %>%
-#'   ggplot(aes(fill = position, x = position, y = home_run)) +
-#'     geom_col(show.legend = FALSE) +
-#'     labs(title = "Home Runs Across Positions",
-#'          y = "Home Runs",
-#'          x = "Position") +
-#'     scale_y_continuous(breaks = c(0, 250, 500, 750, 1000, 1250, 1500)) +
-#'     theme_bw()
+#'ggplot(data = mlbbat10_200, aes(fill = position, x = position, y = home_run)) +
+#'   geom_col(show.legend = FALSE) +
+#'   labs(title = "Home Runs Across Positions",
+#'        y = "Home Runs",
+#'        x = "Position") +
+#'   scale_y_continuous(breaks = c(0, 250, 500, 750, 1000, 1250, 1500)) +
+#'   theme_bw()
 #'
 #' # Runs Batted In Across Positions
-#' mlbbat10_200 %>%
-#'   ggplot(aes(fill = position, x = position, y = run)) +
-#'     geom_col(show.legend = FALSE) +
-#'     labs(title = "Runs Batted In Across Positions",
-#'          y = "Runs",
-#'          x = "Position") +
-#'     scale_y_continuous(breaks = c(0, 1000, 2000, 3000, 4000, 5000, 6000, 7000)) +
-#'     theme_bw()
+#'ggplot(data = mlbbat10_200, aes(fill = position, x = position, y = run)) +
+#'   geom_col(show.legend = FALSE) +
+#'   labs(title = "Runs Batted In Across Positions",
+#'        y = "Runs",
+#'        x = "Position") +
+#'   scale_y_continuous(breaks = c(0, 1000, 2000, 3000, 4000, 5000, 6000, 7000)) +
+#'   theme_bw()
 "mlbbat10"
