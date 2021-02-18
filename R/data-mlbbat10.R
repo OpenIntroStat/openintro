@@ -30,58 +30,53 @@
 #' @source \url{https://www.mlb.com}, retrieved 2011-04-22.
 #' @keywords datasets
 #' @examples
-#' \dontrun{
-#' d   <- mlbbat10[mlbbat10$at_bat > 200,]
-#' pos <- list(c("OF"), c("1B", "2B", "3B", "SS"), "DH", "C")
-#' POS <- c("OF", "IF", "DH", "C")
 #'
-#' #=====> On-base Percentage Across Positions <=====#
-#' out <- c()
-#' gp  <- c()
-#' for(i in 1:length(pos)){
-#' 	these <- which(d$position %in% pos[[i]])
-#' 	out   <- c(out, d[these, "obp"])
-#' 	gp    <- c(gp, rep(POS[i], length(these)))
-#' }
-#' plot(out ~ as.factor(gp))
-#' summary(lm(out ~ as.factor(gp)))
-#' anova(lm(out ~ as.factor(gp)))
+#' library(ggplot2)
+#' library(dplyr)
+#' library(scales)
 #'
-#' #=====> Batting Average Across Positions <=====#
-#' out <- c()
-#' gp  <- c()
-#' for(i in 1:length(pos)){
-#' 	these <- which(d$pos %in% pos[[i]])
-#' 	out   <- c(out, d[these,"AVG"])
-#' 	gp    <- c(gp, rep(POS[i], length(these)))
-#' }
-#' plot(out ~ as.factor(gp))
-#' summary(lm(out ~ as.factor(gp)))
-#' anova(lm(out ~ as.factor(gp)))
+#' mlbbat10_200 <- mlbbat10 %>%
+#'   filter(mlbbat10$at_bat > 200)
 #'
-#' #=====> Home Runs Across Positions <=====#
-#' out <- c()
-#' gp  <- c()
-#' for(i in 1:length(pos)){
-#' 	these <- which(d$pos %in% pos[[i]])
-#' 	out   <- c(out, d[these,"HR"])
-#' 	gp    <- c(gp, rep(POS[i], length(these)))
-#' }
-#' plot(out ~ as.factor(gp))
-#' summary(lm(out ~ as.factor(gp)))
-#' anova(lm(out ~ as.factor(gp)))
+#' # On-base percentage across positions
+#' ggplot(mlbbat10_200, aes(x = position, y = obp, fill = position)) +
+#'   geom_boxplot(show.legend = FALSE) +
+#'   scale_y_continuous(labels = label_number(suffix = "%", accuracy = 0.01)) +
+#'   labs(
+#'     title = "On-base percentage across positions",
+#'     y = "On-base percentage across positions",
+#'     x = "Position"
+#'     )
 #'
-#' #=====> Runs Batted In Across Positions <=====#
-#' out <- c()
-#' gp  <- c()
-#' for(i in 1:length(pos)){
-#' 	these <- which(d$pos %in% pos[[i]])
-#' 	out   <- c(out, d[these,"RBI"])
-#' 	gp    <- c(gp, rep(POS[i], length(these)))
-#' }
-#' plot(out ~ as.factor(gp))
-#' summary(lm(out ~ as.factor(gp)))
-#' anova(lm(out ~ as.factor(gp)))
-#' }
+#' # Batting average across positions
+#' ggplot(mlbbat10_200, aes(x = bat_avg, fill = position)) +
+#'   geom_density(alpha = 0.5) +
+#'   labs(
+#'     title = "Batting average across positions",
+#'     fill = NULL,
+#'     y = "Batting average",
+#'     x = "Position"
+#'     )
+#'
+#' # Mean number of home runs across positions
+#' mlbbat10_200 %>%
+#'   group_by(position) %>%
+#'   summarise(mean_home_run = mean(home_run)) %>%
+#'   ggplot(aes(x = position, y = mean_home_run, fill = position)) +
+#'   geom_col(show.legend = FALSE) +
+#'   labs(
+#'     title = "Mean number of home runs across positions",
+#'     y = "Home runs",
+#'     x = "Position"
+#'     )
+#'
+#' # Runs batted in across positions
+#' ggplot(mlbbat10_200, aes(x = run, y = obp, fill = position)) +
+#'   geom_boxplot(show.legend = FALSE) +
+#'   labs(
+#'     title = "Runs batted in across positions",
+#'     y = "Runs",
+#'     x = "Position"
+#'     )
 #'
 "mlbbat10"
