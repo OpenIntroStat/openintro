@@ -82,6 +82,25 @@ makeTube(gradestv$tv, gradestv$grades, 1.5, type='robust')
 plot(gradestv)
 makeTube(gradestv$tv, gradestv$grades, 1.5, type='robust', stDev='o')
 
+# what can go wrong with a basic least squares model
+# 1
+x <- runif(100)
+y <- 25*x-20*x^2+rnorm(length(x), sd=1.5)
+plot(x,y)
+makeTube(x,y,type='q')
+# 2
+x <- c(-0.6, -0.46, -0.091, runif(97))
+y <- 25*x + rnorm(length(x))
+y[2] <- y[2] + 8
+y[1] <- y[1] + 1
+plot(x,y,ylim=range(y)+c(-10,5))
+makeTube(x,y)
+# 3
+x <- runif(100)
+y <- 5*x + rnorm(length(x), sd=x)
+plot(x,y)
+makeTube(x, y, stDev='l', bw=0.03)
+
 }
 \seealso{
 \code{\link{lmPlot}}
