@@ -34,18 +34,14 @@
 #' @export
 #' @examples
 #'
-#' #===> possum example <===#
-#' data(possum)
-#' x <- possum$total_l
-#' y <- possum$head_l
-#' plot(x,y)
-#' makeTube(x,y,1)
-#' makeTube(x,y,2)
-#' makeTube(x,y,3)
+#' # possum example
+#' plot(possum$total_l, possum$head_l)
+#' makeTube(possum$total_l, possum$head_l, 1)
+#' makeTube(possum$total_l, possum$head_l, 2)
+#' makeTube(possum$total_l, possum$head_l, 3)
 #'
-#' #===> Grades and TV example <===#
-#' data(gradestv)
-#' par(mfrow=c(2,2))
+#' # grades and TV example
+#' par(mfrow = c(2,2))
 #' plot(gradestv)
 #' makeTube(gradestv$tv, gradestv$grades, 1.5)
 #' plot(gradestv)
@@ -55,8 +51,8 @@
 #' plot(gradestv)
 #' makeTube(gradestv$tv, gradestv$grades, 1.5, type='robust', stDev='o')
 #'
-#' #===> What can go wrong with a basic least squares model <===#
-#' par(mfrow=c(1,3), mar=c(2.5, 2.5, 1, 2.5))
+#' # what can go wrong with a basic least squares model
+#' par(mfrow = c(1,3), mar = c(2.5, 2.5, 1, 2.5))
 #' # 1
 #' x <- runif(100)
 #' y <- 25*x-20*x^2+rnorm(length(x), sd=1.5)
