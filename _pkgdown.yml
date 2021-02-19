@@ -244,8 +244,6 @@ reference:
   - dotPlotStack
   - edaPlot
   - fadeColor
-  - gsearch
-  - gss2010
   - histPlot
   - linResPlot
   - lmPlot
