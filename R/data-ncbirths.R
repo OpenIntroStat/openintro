@@ -27,6 +27,9 @@
 #'   \item{whitemom}{Whether mom is \code{white} or \code{not white}.}
 #'   }
 #' @keywords datasets
+#' @seealso Note that we do not have ideal provenance for these data.
+#' For a better better documented and more recent dataset on a similar topic with
+#' similar variables, see [births14()].
 #' @examples
 #'
 #' library(ggplot2)
