@@ -133,23 +133,23 @@ with details on the circumstances of the collision.</p>
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
     <p>A data frame with 19302 observations on the following 17 variables.</p><dl>
-  <dt>opid</dt><dd><p>Three letter identification code for the operator (carrier) of the aircraft.</p></dd>
-  <dt>operator</dt><dd><p>Name of the aircraft operator.</p></dd>
-  <dt>atype</dt><dd><p>Make and model of aircraft.</p></dd>
-  <dt>remarks</dt><dd><p>Verbal remarks regarding the collision.</p></dd>
-  <dt>phase_of_flt</dt><dd><p>Phase of the flight during which the collision occurred: <code>Approach</code>, <code>Climb</code>, <code>Descent</code>, <code>En Route</code>, <code>Landing Roll</code>, <code>Parked</code>, <code>Take-off run</code>, <code>Taxi</code>.</p></dd>
-  <dt>ac_mass</dt><dd><p>Mass of the aircraft classified as 2250 kg or less (1), 2251-5700 kg (2), 5701-27000 kg (3), 27001-272000 kg (4), above 272000 kg (5).</p></dd>
-  <dt>num_engs</dt><dd><p>Number of engines on the aircraft.</p></dd>
-  <dt>date</dt><dd><p>Date of the collision (MM/DD/YYYY).</p></dd>
-  <dt>time_of_day</dt><dd><p>Light conditions: <code>Dawn</code>, <code>Day</code>, <code>Dusk</code>, <code>Night</code>.</p></dd>
-  <dt>state</dt><dd><p>Two letter abbreviation of the US state in which the collision occurred.</p></dd>
-  <dt>height</dt><dd><p>Feet above ground level.</p></dd>
-  <dt>speed</dt><dd><p>Knots (indicated air speed).</p></dd>
-  <dt>effect</dt><dd><p>Effect on flight: <code>Aborted Take-off</code>, <code>Engine Shut Down</code>, <code>None</code>, <code>Other</code>, <code>Precautionary Landing</code>.</p></dd>
-  <dt>sky</dt><dd><p>Type of cloud cover, if any: <code>No Cloud</code>, <code>Overcast</code>, <code>Some Cloud</code>.</p></dd>
-  <dt>species</dt><dd><p>Common name for bird or other wildlife.</p></dd>
-  <dt>birds_seen</dt><dd><p>Number of birds/wildlife seen by pilot: <code>1</code>, <code>2-10</code>, <code>11-100</code>, <code>Over 100</code>.</p></dd>
-  <dt>birds_struck</dt><dd><p>Number of birds/wildlife struck: <code>0</code>, <code>1</code>, <code>2-10</code>, <code>11-100</code>, <code>Over 100</code>.</p></dd>
+<dt>opid</dt><dd><p>Three letter identification code for the operator (carrier) of the aircraft.</p></dd>
+<dt>operator</dt><dd><p>Name of the aircraft operator.</p></dd>
+<dt>atype</dt><dd><p>Make and model of aircraft.</p></dd>
+<dt>remarks</dt><dd><p>Verbal remarks regarding the collision.</p></dd>
+<dt>phase_of_flt</dt><dd><p>Phase of the flight during which the collision occurred: <code>Approach</code>, <code>Climb</code>, <code>Descent</code>, <code>En Route</code>, <code>Landing Roll</code>, <code>Parked</code>, <code>Take-off run</code>, <code>Taxi</code>.</p></dd>
+<dt>ac_mass</dt><dd><p>Mass of the aircraft classified as 2250 kg or less (1), 2251-5700 kg (2), 5701-27000 kg (3), 27001-272000 kg (4), above 272000 kg (5).</p></dd>
+<dt>num_engs</dt><dd><p>Number of engines on the aircraft.</p></dd>
+<dt>date</dt><dd><p>Date of the collision (MM/DD/YYYY).</p></dd>
+<dt>time_of_day</dt><dd><p>Light conditions: <code>Dawn</code>, <code>Day</code>, <code>Dusk</code>, <code>Night</code>.</p></dd>
+<dt>state</dt><dd><p>Two letter abbreviation of the US state in which the collision occurred.</p></dd>
+<dt>height</dt><dd><p>Feet above ground level.</p></dd>
+<dt>speed</dt><dd><p>Knots (indicated air speed).</p></dd>
+<dt>effect</dt><dd><p>Effect on flight: <code>Aborted Take-off</code>, <code>Engine Shut Down</code>, <code>None</code>, <code>Other</code>, <code>Precautionary Landing</code>.</p></dd>
+<dt>sky</dt><dd><p>Type of cloud cover, if any: <code>No Cloud</code>, <code>Overcast</code>, <code>Some Cloud</code>.</p></dd>
+<dt>species</dt><dd><p>Common name for bird or other wildlife.</p></dd>
+<dt>birds_seen</dt><dd><p>Number of birds/wildlife seen by pilot: <code>1</code>, <code>2-10</code>, <code>11-100</code>, <code>Over 100</code>.</p></dd>
+<dt>birds_struck</dt><dd><p>Number of birds/wildlife struck: <code>0</code>, <code>1</code>, <code>2-10</code>, <code>11-100</code>, <code>Over 100</code>.</p></dd>
 
 </dl>
 
@@ -162,7 +162,7 @@ Retrieval date: Feb 4, 2012.</p>
 
     <p>The FAA National Wildlife Strike Database contains strike reports that are
 voluntarily reported to the FAA by pilots, airlines, airports and others.
-Current research indicates that only about 20% of strikes are reported.
+Current research indicates that only about 20\<!-- % of strikes are reported. -->
 Wildlife strike reporting is not uniform as some organizations have more
 robust voluntary reporting procedures. Because of variations in reporting,
 users are cautioned that the comparisons between individual airports or
@@ -172,7 +172,7 @@ airlines may be misleading.</p>
     <pre class="examples"><div class='input'>
 <span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://dplyr.tidyverse.org'>dplyr</a></span><span class='op'>)</span>
 <span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://ggplot2.tidyverse.org'>ggplot2</a></span><span class='op'>)</span>
-<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='http://forcats.tidyverse.org'>forcats</a></span><span class='op'>)</span>
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://forcats.tidyverse.org'>forcats</a></span><span class='op'>)</span>
 <span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://tidyr.tidyverse.org'>tidyr</a></span><span class='op'>)</span>
 
 <span class='co'># Phase of the flight during which the collision occurred, tabular</span>
@@ -218,7 +218,7 @@ airlines may be misleading.</p>
 
       <footer>
       <div class="copyright">
-  <p>Developed by Mine Çetinkaya-Rundel, David Diez, Andrew Bray, Albert Y. Kim, Ben Baumer, Chester Ismay, Christopher Barr.</p>
+  <p>Developed by Mine Çetinkaya-Rundel, David Diez, Andrew Bray, Albert Y. Kim, Ben Baumer, Chester Ismay, Nick Paterno, Christopher Barr.</p>
 </div>
 
 <div class="pkgdown">

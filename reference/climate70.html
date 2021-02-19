@@ -133,14 +133,14 @@ of interest (dx70 and dx90, which are described below).</p>
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
     <p>A data frame with 197 observations on the following 7 variables.</p><dl>
-  <dt>station</dt><dd><p>Station ID.</p></dd>
-  <dt>latitude</dt><dd><p>Latitude of the station.</p></dd>
-  <dt>longitude</dt><dd><p>Longitude of the station.</p></dd>
-  <dt>dx70_1948</dt><dd><p>Number of days above 70 degrees in 1948.</p></dd>
-  <dt>dx70_2018</dt><dd><p>Number of days above 70 degrees in 2018.</p></dd>
-  <dt>dx90_1948</dt><dd><p>Number of days above 90 degrees in 1948.</p></dd>
-  <dt>dx90_2018</dt><dd><p>Number of days above 90 degrees in 2018.</p></dd>
-  
+<dt>station</dt><dd><p>Station ID.</p></dd>
+<dt>latitude</dt><dd><p>Latitude of the station.</p></dd>
+<dt>longitude</dt><dd><p>Longitude of the station.</p></dd>
+<dt>dx70_1948</dt><dd><p>Number of days above 70 degrees in 1948.</p></dd>
+<dt>dx70_2018</dt><dd><p>Number of days above 70 degrees in 2018.</p></dd>
+<dt>dx90_1948</dt><dd><p>Number of days above 90 degrees in 1948.</p></dd>
+<dt>dx90_2018</dt><dd><p>Number of days above 90 degrees in 2018.</p></dd>
+
 </dl>
 
     <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
@@ -160,14 +160,13 @@ information for those years.</p>
 <span class='co'># 2018 were discarded for this (simple) data set.</span>
 <span class='fu'><a href='https://rdrr.io/r/graphics/plot.default.html'>plot</a></span><span class='op'>(</span><span class='va'>climate70</span><span class='op'>$</span><span class='va'>longitude</span>, <span class='va'>climate70</span><span class='op'>$</span><span class='va'>latitude</span><span class='op'>)</span>
 </div><div class='img'><img src='climate70-1.png' alt='' width='700' height='433' /></div><div class='input'>
-<span class='fu'><a href='https://rdrr.io/r/graphics/par.html'>par</a></span><span class='op'>(</span>mfrow <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>2</span>, <span class='fl'>2</span><span class='op'>)</span><span class='op'>)</span>
 <span class='fu'><a href='https://rdrr.io/r/graphics/plot.default.html'>plot</a></span><span class='op'>(</span><span class='va'>climate70</span><span class='op'>$</span><span class='va'>dx70_1948</span>, <span class='va'>climate70</span><span class='op'>$</span><span class='va'>dx70_2018</span><span class='op'>)</span>
-<span class='fu'><a href='https://rdrr.io/r/graphics/abline.html'>abline</a></span><span class='op'>(</span><span class='fl'>0</span>, <span class='fl'>1</span>, lty <span class='op'>=</span> <span class='fl'>2</span><span class='op'>)</span>
-<span class='fu'><a href='https://rdrr.io/r/graphics/plot.default.html'>plot</a></span><span class='op'>(</span><span class='va'>climate70</span><span class='op'>$</span><span class='va'>dx90_1948</span>, <span class='va'>climate70</span><span class='op'>$</span><span class='va'>dx90_2018</span><span class='op'>)</span>
-<span class='fu'><a href='https://rdrr.io/r/graphics/abline.html'>abline</a></span><span class='op'>(</span><span class='fl'>0</span>, <span class='fl'>1</span>, lty <span class='op'>=</span> <span class='fl'>2</span><span class='op'>)</span>
-<span class='fu'><a href='https://rdrr.io/r/graphics/hist.html'>hist</a></span><span class='op'>(</span><span class='va'>climate70</span><span class='op'>$</span><span class='va'>dx70_2018</span> <span class='op'>-</span> <span class='va'>climate70</span><span class='op'>$</span><span class='va'>dx70_1948</span><span class='op'>)</span>
-<span class='fu'><a href='https://rdrr.io/r/graphics/hist.html'>hist</a></span><span class='op'>(</span><span class='va'>climate70</span><span class='op'>$</span><span class='va'>dx90_2018</span> <span class='op'>-</span> <span class='va'>climate70</span><span class='op'>$</span><span class='va'>dx90_1948</span><span class='op'>)</span>
-</div><div class='img'><img src='climate70-2.png' alt='' width='700' height='433' /></div><div class='input'>
+</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/abline.html'>abline</a></span><span class='op'>(</span><span class='fl'>0</span>, <span class='fl'>1</span>, lty <span class='op'>=</span> <span class='fl'>2</span><span class='op'>)</span>
+</div><div class='img'><img src='climate70-2.png' alt='' width='700' height='433' /></div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/plot.default.html'>plot</a></span><span class='op'>(</span><span class='va'>climate70</span><span class='op'>$</span><span class='va'>dx90_1948</span>, <span class='va'>climate70</span><span class='op'>$</span><span class='va'>dx90_2018</span><span class='op'>)</span>
+</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/abline.html'>abline</a></span><span class='op'>(</span><span class='fl'>0</span>, <span class='fl'>1</span>, lty <span class='op'>=</span> <span class='fl'>2</span><span class='op'>)</span>
+</div><div class='img'><img src='climate70-3.png' alt='' width='700' height='433' /></div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/hist.html'>hist</a></span><span class='op'>(</span><span class='va'>climate70</span><span class='op'>$</span><span class='va'>dx70_2018</span> <span class='op'>-</span> <span class='va'>climate70</span><span class='op'>$</span><span class='va'>dx70_1948</span><span class='op'>)</span>
+</div><div class='img'><img src='climate70-4.png' alt='' width='700' height='433' /></div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/hist.html'>hist</a></span><span class='op'>(</span><span class='va'>climate70</span><span class='op'>$</span><span class='va'>dx90_2018</span> <span class='op'>-</span> <span class='va'>climate70</span><span class='op'>$</span><span class='va'>dx90_1948</span><span class='op'>)</span>
+</div><div class='img'><img src='climate70-5.png' alt='' width='700' height='433' /></div><div class='input'>
 <span class='fu'><a href='https://rdrr.io/r/stats/t.test.html'>t.test</a></span><span class='op'>(</span><span class='va'>climate70</span><span class='op'>$</span><span class='va'>dx70_2018</span> <span class='op'>-</span> <span class='va'>climate70</span><span class='op'>$</span><span class='va'>dx70_1948</span><span class='op'>)</span>
 </div><div class='output co'>#&gt; 
 #&gt; 	One Sample t-test
@@ -205,7 +204,7 @@ information for those years.</p>
 
       <footer>
       <div class="copyright">
-  <p>Developed by Mine Çetinkaya-Rundel, David Diez, Andrew Bray, Albert Y. Kim, Ben Baumer, Chester Ismay, Christopher Barr.</p>
+  <p>Developed by Mine Çetinkaya-Rundel, David Diez, Andrew Bray, Albert Y. Kim, Ben Baumer, Chester Ismay, Nick Paterno, Christopher Barr.</p>
 </div>
 
 <div class="pkgdown">
