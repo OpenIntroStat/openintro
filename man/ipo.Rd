@@ -28,37 +28,53 @@ two competing companies: Google and LinkedIn.
 Each of the three prospectuses is encoded in UTF-8 format and contains some
 non-word characters related to the layout of the original documents.  For
 analysis on the words, it is recommended that the data be processed with
-packages such as \code{tm} and \code{stringr}.  See example below.
+packages such as \href{https://juliasilge.github.io/tidytext/}{tidytext}.
+See examples below.
 }
 \examples{
 
-\dontrun{
-library(tm)
-library(wordcloud)
+library(tidytext)
+library(tibble)
+library(dplyr)
+library(ggplot2)
+library(forcats)
 
-# pre-process data
-corp <- Corpus(VectorSource(ipo), readerControl=list(language="en"))
-corp <- tm_map(corp, removePunctuation)
-corp <- tm_map(corp, tolower)
-corp <- tm_map(corp, removeNumbers)
-corp <- tm_map(corp, function(x)removeWords(x,stopwords()))
-f    <- corp[1] # facebook
-g    <- corp[2] # google
-l    <- corp[3] # linkedin
+# Analyzing Facebook IPO text
 
-tmat      <- TermDocumentMatrix(f)
-m         <- as.matrix(tmat)
-freq      <- rowSums(m)
-words     <- rownames(m)
-words.ord <- sort.int(freq, decreasing = T, index.return = F)
-barplot(words.ord[1:15], las = 2)
+facebook <- tibble(text = ipo$facebook, company = "Facebook")
 
-wordcloud(words, freq, min.freq = 100, col='blue')
+facebook \%>\%
+  unnest_tokens(word, text) \%>\%
+  anti_join(stop_words) \%>\%
+  count(word, sort = TRUE) \%>\%
+  slice_head(n = 20) \%>\%
+  ggplot(aes(y = fct_reorder(word, n), x = n, fill = n)) +
+  geom_col() +
+  labs(
+    title = "Top 20 most common words in Facebook IPO",
+    x = "Frequency",
+    y = "Word"
+    )
 
-tmat <- TermDocumentMatrix(c(f, g))
-m    <- as.matrix(tmat)
-comparison.cloud(m, max.words = 100)
-}
+# Comparisons to Google and LinkedIn IPO texts
+
+google   <- tibble(text = ipo$google  , company = "Google")
+linkedin <- tibble(text = ipo$linkedin, company = "LinkedIn")
+
+ipo_texts <- bind_rows(facebook, google, linkedin)
+
+ipo_texts \%>\%
+  unnest_tokens(word, text) \%>\%
+  count(company, word, sort = TRUE) \%>\%
+  bind_tf_idf(word, company, n) \%>\%
+  arrange(desc(tf_idf)) \%>\%
+  group_by(company) \%>\%
+  slice_max(tf_idf, n = 15) \%>\%
+  ungroup() \%>\%
+  ggplot(aes(tf_idf, fct_reorder(word, tf_idf), fill = company)) +
+  geom_col(show.legend = FALSE) +
+  facet_wrap(~company, ncol = 3, scales = "free") +
+  labs(x = "tf-idf", y = NULL)
 
 }
 \references{

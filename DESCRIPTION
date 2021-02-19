@@ -26,10 +26,11 @@ Suggests:
     broom,
     dplyr,
     forcats,
+    knitr,
     lubridate,
     scales,
     tidyr,
-    knitr
+    tidytext
 Imports: 
     ggplot2 (>= 2.2.1),
     graphics,
