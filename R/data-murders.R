@@ -12,6 +12,8 @@
 #' \item{annual_murders_per_mil}{Number of murders per year per million
 #' people.} }
 #' @keywords datasets
+#' @source We do not have provenance for these data hence recommend not using
+#' them for analysis.
 #' @examples
 #'
 #' library(ggplot2)
