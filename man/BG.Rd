@@ -24,8 +24,6 @@ Test <- function(col) {
   text(6, 2, "Affected Color")
 }
 
-par(mfrow = c(2, 2))
-
 # Works well since black color almost fully transparent
 Test(COL[5, 9])
 

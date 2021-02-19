@@ -120,7 +120,6 @@ dotPlot(tips$tip, tips$day,
         key=c("Tuesday", "Friday"))
 
 # adding a box
-par(mfrow=1:2)
 boxPlot(email$num_char[email$spam==0], xlim = c(0,3))
 boxPlot(email$num_char[email$spam==1], add = 2, axes = FALSE)
 axis(1, at = 1:2, labels = c(0, 1))

@@ -18,7 +18,6 @@ Data were simulated using \code{\link{rnorm}}.
 \examples{
 
 data(simulated_normal)
-par(mfrow = c(1, 3))
 lapply(simulated_normal, qqnorm)
 
 }

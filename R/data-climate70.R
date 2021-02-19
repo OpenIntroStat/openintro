@@ -31,7 +31,6 @@
 #' # 2018 were discarded for this (simple) data set.
 #' plot(climate70$longitude, climate70$latitude)
 #'
-#' par(mfrow = c(2, 2))
 #' plot(climate70$dx70_1948, climate70$dx70_2018)
 #' abline(0, 1, lty = 2)
 #' plot(climate70$dx90_1948, climate70$dx90_2018)

@@ -41,7 +41,6 @@
 #' makeTube(possum$total_l, possum$head_l, 3)
 #'
 #' # grades and TV example
-#' par(mfrow = c(2,2))
 #' plot(gradestv)
 #' makeTube(gradestv$tv, gradestv$grades, 1.5)
 #' plot(gradestv)

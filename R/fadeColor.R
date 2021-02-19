@@ -15,8 +15,6 @@
 #' new  <- mariokart$cond == 'new'
 #' used <- mariokart$cond == 'used'
 #'
-#' par(mfrow=1:2)
-#'
 #' #===> color numbers <===#
 #' dotPlot(mariokart$total_pr[new], ylim=c(0,3), xlim=c(25, 80), pch=20,
 #' 	col=2, cex=2, main='using regular colors')

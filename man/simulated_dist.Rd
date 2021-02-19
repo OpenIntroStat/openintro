@@ -20,7 +20,6 @@ from actual normal distributions.
 \examples{
 
 data(simulated_dist)
-par(mfrow = c(3, 2))
 lapply(simulated_dist, qqnorm)
 
 }

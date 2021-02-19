@@ -35,7 +35,6 @@
 #' axis(2, seq(0, 300, 100))
 #'
 #' # _____ Box plot of log(salary) against position _____ #
-#' par(las = 1, mar = c(4, 8, 1, 1))
 #' boxPlot(log(mlb$salary / 1000), mlb$position, horiz = TRUE, ylab = "")
 #'
 #'
