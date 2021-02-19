@@ -19,7 +19,6 @@ A data frame with 1236 rows and 8 variables:
 }
 \source{
 These data come from Child Health and Development Studies.
-Also see \code{\link[mosaicData:Gestation]{mosaicData::Gestation()}}.
 }
 \usage{
 babies
@@ -36,8 +35,8 @@ mother's pregnancy weight in pounds (\code{weight}), and whether the mother
 was a smoker (\code{smoke}).
 }
 \seealso{
-Note that we do not have ideal provenance for these data.
-For a better better documented and more recent dataset on a similar topic with
-similar variables, see \code{\link[=births14]{births14()}}.
+We do not have ideal provenance for these data. For a better
+documented and more recent dataset on a similar topic with similar variables,
+see \link{births14}. Additionally, \code{\link[mosaicData:Gestation]{mosaicData::Gestation()}} also contains similar data.
 }
 \keyword{datasets}

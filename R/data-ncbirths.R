@@ -1,11 +1,10 @@
-#' North Carolina births
+#' North Carolina births, 1000 cases
 #'
 #' In 2004, the state of North Carolina released to the public a large data set
 #' containing information on births recorded in this state. This data set has
 #' been of interest to medical researchers who are studying the relation
 #' between habits and practices of expectant mothers and the birth of their
 #' children. This is a random sample of 1,000 cases from this data set.
-#'
 #'
 #' @name ncbirths
 #' @docType data
@@ -27,9 +26,9 @@
 #'   \item{whitemom}{Whether mom is \code{white} or \code{not white}.}
 #'   }
 #' @keywords datasets
-#' @seealso Note that we do not have ideal provenance for these data.
-#' For a better better documented and more recent dataset on a similar topic with
-#' similar variables, see [births14()].
+#' @seealso We do not have ideal provenance for these data. For a better
+#' documented and more recent dataset on a similar topic with similar variables,
+#' see [births14].
 #' @examples
 #'
 #' library(ggplot2)

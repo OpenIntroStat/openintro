@@ -1,8 +1,7 @@
-#' North Carolina births
+#' North Carolina births, 100 cases
 #'
 #' Data on a random sample of 100 births for babies in North Carolina where the
 #' mother was not a smoker and another 50 where the mother was a smoker.
-#'
 #'
 #' @name births
 #' @docType data
@@ -19,6 +18,9 @@
 #'   \item{smoke}{Whether or not the mother was a smoker.}
 #'   }
 #' @source Birth records released by North Carolina in 2004.
+#' @seealso We do not have ideal provenance for these data. For a better
+#' documented and more recent dataset on a similar topic with similar variables,
+#' see [births14]. Additionally, [ncbirths] also contains similar data.
 #' @keywords datasets
 #' @examples
 #'

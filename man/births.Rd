@@ -3,7 +3,7 @@
 \docType{data}
 \name{births}
 \alias{births}
-\title{North Carolina births}
+\title{North Carolina births, 100 cases}
 \format{
 A data frame with 150 observations on the following 14 variables.
 \describe{
@@ -35,5 +35,10 @@ library(ggplot2)
 ggplot(births, aes(x = smoke, y = weight)) +
   geom_boxplot()
 
+}
+\seealso{
+We do not have ideal provenance for these data. For a better
+documented and more recent dataset on a similar topic with similar variables,
+see \link{births14}. Additionally, \link{ncbirths} also contains similar data.
 }
 \keyword{datasets}

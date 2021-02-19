@@ -5,7 +5,7 @@
   * `exam_grades`, `opportunity_cost`
   * `births14` by [@AmeliaMN](https://github.com/AmeliaMN)
 * Updated `email` and `email50` datasets to make indicator variables factors, remove variables that don't exist in the data from the documentation, and update the documentation for `email50` to match the randomly sampled data
-* Updated documentation for `ncbirths` and `births` to reflect poor data provenance and provide `births14` as an alternative
+* Updated documentation for `births`, `ncbirths`, `babies`, and `murders` for data provenance issues
 
 # openintro 2.0.0
 

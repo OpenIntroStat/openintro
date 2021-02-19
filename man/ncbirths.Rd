@@ -3,7 +3,7 @@
 \docType{data}
 \name{ncbirths}
 \alias{ncbirths}
-\title{North Carolina births}
+\title{North Carolina births, 1000 cases}
 \format{
 A data frame with 1000 observations on the following 13 variables.
 \describe{
@@ -51,8 +51,8 @@ ggplot(ncbirths, aes(x = mature, y = gained)) +
 
 }
 \seealso{
-Note that we do not have ideal provenance for these data.
-For a better better documented and more recent dataset on a similar topic with
-similar variables, see \code{\link[=births14]{births14()}}.
+We do not have ideal provenance for these data. For a better
+documented and more recent dataset on a similar topic with similar variables,
+see \link{births14}.
 }
 \keyword{datasets}
