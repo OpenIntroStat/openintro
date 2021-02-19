@@ -7,7 +7,7 @@
 \format{
 A data frame with 365 observations on the following variable.
 \describe{
-  \item{ami}{Number of daily occurrences of heart attacks in NY City.}
+\item{ami}{Number of daily occurrences of heart attacks in NY City.}
 }
 }
 \usage{

@@ -8,10 +8,10 @@
 \format{
 A data frame with 16 observations on the following 3 variables.
 \describe{
-  \item{station}{Station.}
-  \item{dist}{Distance.}
-  \item{travel_time}{Travel time.}
-  }
+\item{station}{Station.}
+\item{dist}{Distance.}
+\item{travel_time}{Travel time.}
+}
 }
 \usage{
 coast_starlight

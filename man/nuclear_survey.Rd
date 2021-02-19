@@ -17,7 +17,7 @@ Available at \url{https://news.gallup.com/poll/161198/favor-russian-nuclear-arms
 nuclear_survey
 }
 \description{
-A simple random sample of 1,028 US adults in March 2013 found that 56\%
+A simple random sample of 1,028 US adults in March 2013 found that 56\\%
 support nuclear arms reduction.
 }
 \examples{

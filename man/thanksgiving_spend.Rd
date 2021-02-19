@@ -9,8 +9,8 @@
 \format{
 A data frame with 436 observations on the following 1 variable.
 \describe{
-  \item{spending}{Amount of spending, in US dollars.}
-  }
+\item{spending}{Amount of spending, in US dollars.}
+}
 }
 \usage{
 thanksgiving_spend

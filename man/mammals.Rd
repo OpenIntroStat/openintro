@@ -7,19 +7,19 @@
 \format{
 A data frame with 62 observations on the following 11 variables.
 \describe{
-  \item{species}{Species of mammals}
-  \item{body_wt}{Total body weight of the mammal (in kg)}
-  \item{brain_wt}{Brain weight of the mammal (in kg)}
-  \item{non_dreaming}{Number of hours of non dreaming sleep}
-  \item{dreaming}{Number of hours of dreaming sleep}
-  \item{total_sleep}{Total number of hours of sleep}
-  \item{life_span}{Life span (in years)}
-  \item{gestation}{Gestation time (in days)}
-  \item{predation}{An index of how likely the mammal is to be preyed upon.
-  1 = least likely to be preyed upon. 5 = most likely to be preyed upon.}
-  \item{exposure}{An index of the how exposed the mammal is during sleep.
-  1 = least exposed (e.g., sleeps in a well-protected den). 5 = most exposed.}
-  \item{danger}{An index of how much danger the mammal
+\item{species}{Species of mammals}
+\item{body_wt}{Total body weight of the mammal (in kg)}
+\item{brain_wt}{Brain weight of the mammal (in kg)}
+\item{non_dreaming}{Number of hours of non dreaming sleep}
+\item{dreaming}{Number of hours of dreaming sleep}
+\item{total_sleep}{Total number of hours of sleep}
+\item{life_span}{Life span (in years)}
+\item{gestation}{Gestation time (in days)}
+\item{predation}{An index of how likely the mammal is to be preyed upon.
+1 = least likely to be preyed upon. 5 = most likely to be preyed upon.}
+\item{exposure}{An index of the how exposed the mammal is during sleep.
+1 = least exposed (e.g., sleeps in a well-protected den). 5 = most exposed.}
+\item{danger}{An index of how much danger the mammal
 faces from other animals. This index is based upon Predation and Exposure. 1
 = least danger from other animals. 5 = most danger from other animals.}
 }

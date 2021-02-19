@@ -9,30 +9,30 @@ The format is a list of 24 matrices.  Each matrix is a 2x2 table,
 and below are the named items in the list, which also represent the
 outcomes.
 \describe{
-  \item{major_cardio_event}{Major cardiovascular event. (Primary end point.)  }
-  \item{cardio_event_expanded}{Cardiovascular event in expanded composite endpoint.}
-  \item{myocardioal_infarction}{Total myocardial infarction. (Heart attack.)  }
-  \item{stroke}{Total stroke.}
-  \item{cardio_death}{Death from cardiovascular causes.}
-  \item{PCI}{Percutaneous coronary intervention.}
-  \item{CABG}{Coronary artery bypass graft.}
-  \item{total_coronary_heart_disease}{Total coronary heart disease.}
-  \item{ischemic_stroke}{Ischemic stroke.}
-  \item{hemorrhagic_stroke}{Hemorrhagic stroke.}
-  \item{chd_death}{Death from coronary heart disease.}
-  \item{myocardial_infarction_death}{Death from myocardial infraction.}
-  \item{stroke_death}{Death from stroke.}
-  \item{invasive_cancer}{Invasive cancer of any type. (Primary end point.)  }
-  \item{breast_cancer}{Breast cancer.}
-  \item{prostate_cancer}{Prostate cancer.}
-  \item{colorectal_cancer}{Colorectal cancer.}
-  \item{cancer_death}{Death from cancer.}
-  \item{death}{Death from any cause.}
-  \item{major_cardio_event_after_2y}{Major cardiovascular event, excluding the first 2 years of follow-up.}
-  \item{myocardial_infarction_after_2y}{Total myocardial infarction, excluding the first 2 years of follow-up.}
-  \item{invasive_cancer_after_2y}{Invasive cancer of any type, excluding the first 2 years of follow-up.}
-  \item{cancer_death_after_2y}{Death from cancer, excluding the first 2 years of follow-up.}
-  \item{death_after_2y}{Death from any cause, excluding the first 2 years of follow-up.}
+\item{major_cardio_event}{Major cardiovascular event. (Primary end point.)  }
+\item{cardio_event_expanded}{Cardiovascular event in expanded composite endpoint.}
+\item{myocardioal_infarction}{Total myocardial infarction. (Heart attack.)  }
+\item{stroke}{Total stroke.}
+\item{cardio_death}{Death from cardiovascular causes.}
+\item{PCI}{Percutaneous coronary intervention.}
+\item{CABG}{Coronary artery bypass graft.}
+\item{total_coronary_heart_disease}{Total coronary heart disease.}
+\item{ischemic_stroke}{Ischemic stroke.}
+\item{hemorrhagic_stroke}{Hemorrhagic stroke.}
+\item{chd_death}{Death from coronary heart disease.}
+\item{myocardial_infarction_death}{Death from myocardial infraction.}
+\item{stroke_death}{Death from stroke.}
+\item{invasive_cancer}{Invasive cancer of any type. (Primary end point.)  }
+\item{breast_cancer}{Breast cancer.}
+\item{prostate_cancer}{Prostate cancer.}
+\item{colorectal_cancer}{Colorectal cancer.}
+\item{cancer_death}{Death from cancer.}
+\item{death}{Death from any cause.}
+\item{major_cardio_event_after_2y}{Major cardiovascular event, excluding the first 2 years of follow-up.}
+\item{myocardial_infarction_after_2y}{Total myocardial infarction, excluding the first 2 years of follow-up.}
+\item{invasive_cancer_after_2y}{Invasive cancer of any type, excluding the first 2 years of follow-up.}
+\item{cancer_death_after_2y}{Death from cancer, excluding the first 2 years of follow-up.}
+\item{death_after_2y}{Death from any cause, excluding the first 2 years of follow-up.}
 }
 }
 \source{

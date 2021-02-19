@@ -7,10 +7,10 @@
 \format{
 A data frame with 36 observations on the following 3 variables.
 \describe{
-  \item{date}{First day of the month corresponding to the returns.}
-  \item{goog}{Google stock price change.}
-  \item{cat}{Caterpillar stock price change.}
-  \item{xom}{Exxon Mobil stock price change.}
+\item{date}{First day of the month corresponding to the returns.}
+\item{goog}{Google stock price change.}
+\item{cat}{Caterpillar stock price change.}
+\item{xom}{Exxon Mobil stock price change.}
 }
 }
 \source{

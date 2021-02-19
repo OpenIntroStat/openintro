@@ -7,11 +7,11 @@
 \format{
 A data frame with 278 rows and 3 variables:
 \describe{
-  \item{question}{ID for the question being posed.}
-  \item{response}{Noting whether the response was \code{correct}
-    or \code{incorrect}.}
-  \item{prob_random_correct}{The probability the person would have guessed
-    the answer correctly if they were guessing completely randomly.}
+\item{question}{ID for the question being posed.}
+\item{response}{Noting whether the response was \code{correct}
+or \code{incorrect}.}
+\item{prob_random_correct}{The probability the person would have guessed
+the answer correctly if they were guessing completely randomly.}
 }
 }
 \source{

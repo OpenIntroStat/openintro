@@ -7,9 +7,9 @@
 \format{
 A data frame with 100 rows and 3 variables.
 \describe{
-  \item{year_start}{The year snowfall measurement began on July 1.}
-  \item{year_end}{The year snowfall measurement ended on June 30.}
-  \item{total_snow}{Snowfall measured in inches.}
+\item{year_start}{The year snowfall measurement began on July 1.}
+\item{year_end}{The year snowfall measurement ended on June 30.}
+\item{total_snow}{Snowfall measured in inches.}
 }
 }
 \source{

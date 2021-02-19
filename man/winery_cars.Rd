@@ -7,11 +7,11 @@
 \format{
 A data frame with 52 observations on the following 2 variables.
 \describe{
-  \item{obs_number}{The observation number, e.g. observation 3 was immediately
-  preceded by observation 2.}
-  \item{time_until_next}{Time until this gondola car arrived since the last
-  car had left.}
-  }
+\item{obs_number}{The observation number, e.g. observation 3 was immediately
+preceded by observation 2.}
+\item{time_until_next}{Time until this gondola car arrived since the last
+car had left.}
+}
 }
 \source{
 In-person data collection by David Diez (OpenIntro) on 2013-07-04.

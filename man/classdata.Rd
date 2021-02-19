@@ -7,9 +7,9 @@
 \format{
 A data frame with 164 observations on the following 2 variables.
 \describe{
-  \item{m1}{Represents a first midterm score.}
-  \item{lecture}{Three classes: \code{a}, \code{b}, and \code{c}.}
-  }
+\item{m1}{Represents a first midterm score.}
+\item{lecture}{Three classes: \code{a}, \code{b}, and \code{c}.}
+}
 }
 \usage{
 classdata

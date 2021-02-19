@@ -7,12 +7,12 @@
 \format{
 A data frame with 1,414,593 observations on the following 6 variables.
 \describe{
-  \item{grade}{The status of the service member as \code{enlisted} \code{officer} or \code{warrant officer}.}
-  \item{branch}{The branch of the armed forces: \code{air force}, \code{army}, \code{marine corps}, \code{navy}.}
-  \item{gender}{Whether the service member is \code{female} or \code{male}.}
-  \item{race}{The race identified by the service member: \code{ami/aln} (american indian/alaskan native), \code{asian}, \code{black}, \code{multi} (multi-ethnic), \code{p/i} (pacific islander), \code{unk} (unknown), or \code{white}.}
-  \item{hisp}{Whether a service member identifies with being hispanic (\code{TRUE}) or not (\code{FALSE}).}
-  \item{rank}{The numeric rank of the service member (higher number indicates higher rank).}
+\item{grade}{The status of the service member as \code{enlisted} \code{officer} or \code{warrant officer}.}
+\item{branch}{The branch of the armed forces: \code{air force}, \code{army}, \code{marine corps}, \code{navy}.}
+\item{gender}{Whether the service member is \code{female} or \code{male}.}
+\item{race}{The race identified by the service member: \code{ami/aln} (american indian/alaskan native), \code{asian}, \code{black}, \code{multi} (multi-ethnic), \code{p/i} (pacific islander), \code{unk} (unknown), or \code{white}.}
+\item{hisp}{Whether a service member identifies with being hispanic (\code{TRUE}) or not (\code{FALSE}).}
+\item{rank}{The numeric rank of the service member (higher number indicates higher rank).}
 }
 }
 \source{

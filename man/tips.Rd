@@ -7,12 +7,12 @@
 \format{
 A data frame with 95 observations on the following 5 variables.
 \describe{
-  \item{week}{Week number.}
-  \item{day}{Day, either \code{Friday} or \code{Tuesday}.}
-  \item{n_peop}{Number of people associated with the group.}
-  \item{bill}{Total bill for the group.}
-  \item{tip}{Total tip from the group.}
-  }
+\item{week}{Week number.}
+\item{day}{Day, either \code{Friday} or \code{Tuesday}.}
+\item{n_peop}{Number of people associated with the group.}
+\item{bill}{Total bill for the group.}
+\item{tip}{Total tip from the group.}
+}
 }
 \source{
 Simulated data set.

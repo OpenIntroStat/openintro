@@ -7,9 +7,9 @@
 \format{
 A data frame with 95 observations on the following 2 variables.
 \describe{
-  \item{type}{a factor with levels \code{fiction} and \code{nonfiction}}
-  \item{format}{a factor with levels \code{hardcover} and \code{paperback}}
-  }
+\item{type}{a factor with levels \code{fiction} and \code{nonfiction}}
+\item{format}{a factor with levels \code{hardcover} and \code{paperback}}
+}
 }
 \usage{
 books

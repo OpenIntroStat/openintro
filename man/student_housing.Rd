@@ -7,7 +7,7 @@
 \format{
 A data frame with 175 observations on the following variable.
 \describe{
-  \item{price}{Monthly housing price, simulated.}
+\item{price}{Monthly housing price, simulated.}
 }
 }
 \usage{

@@ -7,9 +7,9 @@
 \format{
 A data frame with 90 observations on the following 2 variables.
 \describe{
-  \item{group}{a factor with levels \code{control} and \code{treatment}}
-  \item{outcome}{a factor with levels \code{died} and \code{survived}}
-  }
+\item{group}{a factor with levels \code{control} and \code{treatment}}
+\item{outcome}{a factor with levels \code{died} and \code{survived}}
+}
 }
 \source{
 Efficacy and safety of thrombolytic therapy after initially

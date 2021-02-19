@@ -7,8 +7,8 @@
 \format{
 A data frame with 20 observations on the following variable.
 \describe{
-  \item{scores}{a numeric vector}
-  }
+\item{scores}{a numeric vector}
+}
 }
 \usage{
 stats_scores

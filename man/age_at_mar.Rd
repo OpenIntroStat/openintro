@@ -9,8 +9,8 @@
 \format{
 A data frame with 5,534 observations and 1 variable.
 \describe{
-  \item{age}{Age a first marriage.}
-  }
+\item{age}{Age a first marriage.}
+}
 }
 \source{
 National Survey of Family Growth, 2006-2010 cycle,

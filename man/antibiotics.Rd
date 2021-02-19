@@ -10,8 +10,8 @@
 A data frame with 92 observations, each representing a child, on the
 following variable.
 \describe{
-  \item{condition}{Pre-existing medical condition.}
-  }
+\item{condition}{Pre-existing medical condition.}
+}
 }
 \usage{
 antibiotics

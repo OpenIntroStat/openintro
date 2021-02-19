@@ -7,25 +7,25 @@
 \format{
 A data frame with 1199 observations on the following 19 variables.
 \describe{
-  \item{name}{Player name}
-  \item{team}{Team abbreviation}
-  \item{position}{Player position}
-  \item{game}{Number of games}
-  \item{at_bat}{Number of at bats}
-  \item{run}{Number of runs}
-  \item{hit}{Number of hits}
-  \item{double}{Number of doubles}
-  \item{triple}{Number of triples}
-  \item{home_run}{Number of home runs}
-  \item{rbi}{Number of runs batted in}
-  \item{total_base}{Total bases, computed as 3*HR + 2*3B + 1*2B + H}
-  \item{walk}{Number of walks}
-  \item{strike_out}{Number of strikeouts}
-  \item{stolen_base}{Number of stolen bases}
-  \item{caught_stealing}{Number of times caught stealing}
-  \item{obp}{On base percentage}
-  \item{slg}{Slugging percentage (total_base / at_bat)}
-  \item{bat_avg}{Batting average}
+\item{name}{Player name}
+\item{team}{Team abbreviation}
+\item{position}{Player position}
+\item{game}{Number of games}
+\item{at_bat}{Number of at bats}
+\item{run}{Number of runs}
+\item{hit}{Number of hits}
+\item{double}{Number of doubles}
+\item{triple}{Number of triples}
+\item{home_run}{Number of home runs}
+\item{rbi}{Number of runs batted in}
+\item{total_base}{Total bases, computed as 3\emph{HR + 2}3B + 1*2B + H}
+\item{walk}{Number of walks}
+\item{strike_out}{Number of strikeouts}
+\item{stolen_base}{Number of stolen bases}
+\item{caught_stealing}{Number of times caught stealing}
+\item{obp}{On base percentage}
+\item{slg}{Slugging percentage (total_base / at_bat)}
+\item{bat_avg}{Batting average}
 }
 }
 \source{

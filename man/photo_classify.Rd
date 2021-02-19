@@ -7,8 +7,8 @@
 \format{
 A data frame with 1822 observations on the following 2 variables.
 \describe{
-  \item{mach_learn}{The prediction by the machine learning system as to whether the photo is about fashion or not.}
-  \item{truth}{The actual classification of the photo by a team of humans.}
+\item{mach_learn}{The prediction by the machine learning system as to whether the photo is about fashion or not.}
+\item{truth}{The actual classification of the photo by a team of humans.}
 }
 }
 \source{
@@ -24,10 +24,10 @@ While the data are not real, they resemble performance that would be
 reasonable to expect in a well-built classifier.
 }
 \details{
-The hypothetical ML algorithm has a precision of 90\%, meaning of those
-photos it claims are fashion, about 90\% of them are actually about fashion.
-The recall of the ML algorithm is about 64\%, meaning of the photos that are
-about fashion, it correctly predicts that they are about fashion about 64\%
+The hypothetical ML algorithm has a precision of 90\\%, meaning of those
+photos it claims are fashion, about 90\\% of them are actually about fashion.
+The recall of the ML algorithm is about 64\\%, meaning of the photos that are
+about fashion, it correctly predicts that they are about fashion about 64\\%
 of the time.
 }
 \examples{

@@ -7,17 +7,17 @@
 \format{
 A data frame with 36 observations and 8 variables.
 \describe{
-  \item{score}{Score in test of analytical skills.}
-  \item{fatheriq}{Father's IQ.}
-  \item{motheriq}{Mother's IQ.}
-  \item{speak}{Age in months when the child first said "mummy" or "daddy".}
-  \item{count}{Age in months when the child first counted to 10 successfully.}
-  \item{read}{Average number of hours per week the child's mother or father
-  reads to the child.}
-  \item{edutv}{Average number of hours per week the child watched an
-  educational program on TV during the past three months.}
-  \item{cartoons}{Average number of hours per week the child watched cartoons
-  on TV during the past three months.}
+\item{score}{Score in test of analytical skills.}
+\item{fatheriq}{Father's IQ.}
+\item{motheriq}{Mother's IQ.}
+\item{speak}{Age in months when the child first said "mummy" or "daddy".}
+\item{count}{Age in months when the child first counted to 10 successfully.}
+\item{read}{Average number of hours per week the child's mother or father
+reads to the child.}
+\item{edutv}{Average number of hours per week the child watched an
+educational program on TV during the past three months.}
+\item{cartoons}{Average number of hours per week the child watched cartoons
+on TV during the past three months.}
 }
 }
 \source{

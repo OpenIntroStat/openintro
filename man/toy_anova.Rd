@@ -7,9 +7,9 @@
 \format{
 A data frame with 70 observations on the following 3 variables.
 \describe{
-  \item{group}{a factor with levels \code{I} \code{II} \code{III}}
-  \item{outcome}{a numeric vector}
-  }
+\item{group}{a factor with levels \code{I} \code{II} \code{III}}
+\item{outcome}{a numeric vector}
+}
 }
 \usage{
 toy_anova

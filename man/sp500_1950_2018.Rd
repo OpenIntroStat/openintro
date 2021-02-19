@@ -7,13 +7,13 @@
 \format{
 A data frame with 17346 observations on the following 7 variables.
 \describe{
-  \item{Date}{Date of the form `"YYYY-MM-DD"`.}
-  \item{Open}{Opening price.}
-  \item{High}{Highest price of the day.}
-  \item{Low}{Lowest price of the day.}
-  \item{Close}{Closing price of the day.}
-  \item{Adj.Close}{Adjusted price at close after accounting for dividends paid out.}
-  \item{Volume}{Trading volume.}
+\item{Date}{Date of the form \code{"YYYY-MM-DD"}.}
+\item{Open}{Opening price.}
+\item{High}{Highest price of the day.}
+\item{Low}{Lowest price of the day.}
+\item{Close}{Closing price of the day.}
+\item{Adj.Close}{Adjusted price at close after accounting for dividends paid out.}
+\item{Volume}{Trading volume.}
 }
 }
 \source{

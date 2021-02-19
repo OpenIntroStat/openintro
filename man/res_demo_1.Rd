@@ -7,10 +7,10 @@
 \format{
 A data frame with 100 observations on the following 3 variables.
 \describe{
-  \item{x}{a numeric vector}
-  \item{y_lin}{a numeric vector}
-  \item{y_fan_back}{a numeric vector}
-  }
+\item{x}{a numeric vector}
+\item{y_lin}{a numeric vector}
+\item{y_fan_back}{a numeric vector}
+}
 }
 \usage{
 res_demo_1

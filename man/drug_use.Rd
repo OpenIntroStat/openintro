@@ -7,9 +7,9 @@
 \format{
 A data frame with 445 observations on the following 2 variables.
 \describe{
-  \item{student}{a factor with levels \code{not} \code{uses}}
-  \item{parents}{a factor with levels \code{not} \code{used}}
-  }
+\item{student}{a factor with levels \code{not} \code{uses}}
+\item{parents}{a factor with levels \code{not} \code{used}}
+}
 }
 \source{
 Ellis GJ and Stone LH. 1979. Marijuana Use in College: An

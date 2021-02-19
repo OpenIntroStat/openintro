@@ -7,9 +7,9 @@
 \format{
 A data frame with 5035 rows and 3 variables.
 \describe{
-  \item{age_group}{Age group of survey participant.}
-  \item{fact_correct}{Number of factual statements classified correctly (out of 5).}
-  \item{opinion_correct}{Number of opinion statements classified correctly (out of 5).}
+\item{age_group}{Age group of survey participant.}
+\item{fact_correct}{Number of factual statements classified correctly (out of 5).}
+\item{opinion_correct}{Number of opinion statements classified correctly (out of 5).}
 }
 }
 \source{

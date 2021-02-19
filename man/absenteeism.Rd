@@ -7,20 +7,20 @@
 \format{
 A data frame with 146 observations on the following 5 variables.
 \describe{
-  \item{eth}{Ethnicity, representing Aboriginal (`A`) or not (`N`).}
-  \item{sex}{Gender.}
-  \item{age}{Age bucket.}
-  \item{lrn}{Learner status, with average learner (`AL`) and
-  slow learner (`SL`).}
-  \item{days}{Number of days absent.}
-  }
+\item{eth}{Ethnicity, representing Aboriginal (\code{A}) or not (\code{N}).}
+\item{sex}{Gender.}
+\item{age}{Age bucket.}
+\item{lrn}{Learner status, with average learner (\code{AL}) and
+slow learner (\code{SL}).}
+\item{days}{Number of days absent.}
+}
 }
 \source{
 Venables WN, Ripley BD. 2002. Modern Applied Statistics with S.
 Fourth Edition. New York: Springer.
 
-Data can also be found in the R `MASS` package under the data set name
-`quine`.
+Data can also be found in the R \code{MASS} package under the data set name
+\code{quine}.
 }
 \usage{
 absenteeism

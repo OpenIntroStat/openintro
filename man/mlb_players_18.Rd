@@ -7,30 +7,30 @@
 \format{
 A data frame with 1270 observations on the following 19 variables.
 \describe{
-  \item{name}{Player name}
-  \item{team}{Team abbreviation}
-  \item{position}{Position abbreviation: \code{1B} = first base,
+\item{name}{Player name}
+\item{team}{Team abbreviation}
+\item{position}{Position abbreviation: \code{1B} = first base,
 \code{2B} = second base, \code{3B} = third base, \code{C} = catcher,
 \code{CF} = center field (outfield), \code{DH} = designated hitter,
 \code{LF} = left field (outfield), \code{P} = pitcher,
 \code{RF} = right field (outfield), \code{SS} = shortstop.}
-  \item{games}{Number of games played.}
-  \item{AB}{At bats.}
-  \item{R}{Runs.}
-  \item{H}{Hits.}
-  \item{doubles}{Doubles.}
-  \item{triples}{Triples.}
-  \item{HR}{Home runs.}
-  \item{RBI}{Runs batted in.}
-  \item{walks}{Walks.}
-  \item{strike_outs}{Strike outs.}
-  \item{stolen_bases}{Stolen bases.}
-  \item{caught_stealing_base}{Number of times caught stealing a base.}
-  \item{AVG}{Batting average.}
-  \item{OBP}{On-base percentage.}
-  \item{SLG}{Slugging percentage.}
-  \item{OPS}{On-base percentage plus slugging percentage.}
-  }
+\item{games}{Number of games played.}
+\item{AB}{At bats.}
+\item{R}{Runs.}
+\item{H}{Hits.}
+\item{doubles}{Doubles.}
+\item{triples}{Triples.}
+\item{HR}{Home runs.}
+\item{RBI}{Runs batted in.}
+\item{walks}{Walks.}
+\item{strike_outs}{Strike outs.}
+\item{stolen_bases}{Stolen bases.}
+\item{caught_stealing_base}{Number of times caught stealing a base.}
+\item{AVG}{Batting average.}
+\item{OBP}{On-base percentage.}
+\item{SLG}{Slugging percentage.}
+\item{OPS}{On-base percentage plus slugging percentage.}
+}
 }
 \source{
 \url{https://www.mlb.com/stats}

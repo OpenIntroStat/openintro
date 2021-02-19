@@ -7,11 +7,11 @@
 \format{
 A data frame with 838 observations on the following 5 variables.
 \describe{
-  \item{forename}{First name(s) of the victim.}
-  \item{age}{Age of the victim.}
-  \item{date}{Date of the murder (YYYY-MM-DD).}
-  \item{year}{Year of the murder.}
-  \item{borough}{The London borough in which the murder took place. See the Details section for a list of all the boroughs.}
+\item{forename}{First name(s) of the victim.}
+\item{age}{Age of the victim.}
+\item{date}{Date of the murder (YYYY-MM-DD).}
+\item{year}{Year of the murder.}
+\item{borough}{The London borough in which the murder took place. See the Details section for a list of all the boroughs.}
 }
 }
 \source{

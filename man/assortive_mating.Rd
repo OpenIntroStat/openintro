@@ -8,8 +8,8 @@
 \format{
 A data frame with 204 observations on the following 2 variables.
 \describe{
-  \item{self_male}{a factor with levels `blue`, `brown`, and `green`}
-  \item{partner_female}{a factor with `blue`, `brown`, and `green`}
+\item{self_male}{a factor with levels \code{blue}, \code{brown}, and \code{green}}
+\item{partner_female}{a factor with \code{blue}, \code{brown}, and \code{green}}
 }
 }
 \source{

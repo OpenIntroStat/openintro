@@ -7,13 +7,13 @@
 \format{
 A data frame with 233 observations, each representing a student.
 \describe{
-  \item{semester}{Semester when grades were recorded.}
-  \item{sex}{Sex of the student as recorded on the university registration system: Man or Woman.}
-  \item{exam1}{Exam 1 grade.}
-  \item{exam2}{Exam 2 grade.}
-  \item{exam3}{Exam 3 grade.}
-  \item{course_grade}{Overall course grade.}
-  }
+\item{semester}{Semester when grades were recorded.}
+\item{sex}{Sex of the student as recorded on the university registration system: Man or Woman.}
+\item{exam1}{Exam 1 grade.}
+\item{exam2}{Exam 2 grade.}
+\item{exam3}{Exam 3 grade.}
+\item{course_grade}{Overall course grade.}
+}
 }
 \usage{
 exam_grades

@@ -8,25 +8,25 @@
 A data frame with 143 observations on the following 12 variables.
 All prices are in US dollars.
 \describe{
-  \item{id}{Auction ID assigned by Ebay.}
-  \item{duration}{Auction length, in days.}
-  \item{n_bids}{Number of bids.}
-  \item{cond}{Game condition, either \code{new} or \code{used}.}
-  \item{start_pr}{Start price of the auction.}
-  \item{ship_pr}{Shipping price.}
-  \item{total_pr}{Total price, which equals the auction price plus the
-  shipping price.}
-  \item{ship_sp}{Shipping speed or method.}
-  \item{seller_rate}{The seller's rating on Ebay. This is the number
-  of positive ratings minus the number of negative ratings for the seller.}
-  \item{stock_photo}{Whether the auction feature photo was a stock
-  photo or not. If the picture was used in many auctions, then it was called a
-  stock photo.}
-  \item{wheels}{Number of Wii wheels included in the auction. These are steering
-  wheel attachments to make it seem as though you are actually driving in the
-  game. When used with the controller, turning the wheel actually causes the
-  character on screen to turn.}
-  \item{title}{The title of the auctions.}
+\item{id}{Auction ID assigned by Ebay.}
+\item{duration}{Auction length, in days.}
+\item{n_bids}{Number of bids.}
+\item{cond}{Game condition, either \code{new} or \code{used}.}
+\item{start_pr}{Start price of the auction.}
+\item{ship_pr}{Shipping price.}
+\item{total_pr}{Total price, which equals the auction price plus the
+shipping price.}
+\item{ship_sp}{Shipping speed or method.}
+\item{seller_rate}{The seller's rating on Ebay. This is the number
+of positive ratings minus the number of negative ratings for the seller.}
+\item{stock_photo}{Whether the auction feature photo was a stock
+photo or not. If the picture was used in many auctions, then it was called a
+stock photo.}
+\item{wheels}{Number of Wii wheels included in the auction. These are steering
+wheel attachments to make it seem as though you are actually driving in the
+game. When used with the controller, turning the wheel actually causes the
+character on screen to turn.}
+\item{title}{The title of the auctions.}
 }
 }
 \source{

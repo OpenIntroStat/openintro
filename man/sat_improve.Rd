@@ -7,8 +7,8 @@
 \format{
 A data frame with 30 observations on the following variable.
 \describe{
-  \item{sat_improve}{a numeric vector}
-  }
+\item{sat_improve}{a numeric vector}
+}
 }
 \usage{
 sat_improve

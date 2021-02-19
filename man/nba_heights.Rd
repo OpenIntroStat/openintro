@@ -8,10 +8,10 @@
 A data frame with 435 observations (players) on the following 4
 variables.
 \describe{
-  \item{last_name}{Last name.}
-  \item{first_name}{First name.}
-  \item{h_meters}{Height, in meters.}
-  \item{h_in}{Height, in inches.}
+\item{last_name}{Last name.}
+\item{first_name}{First name.}
+\item{h_meters}{Height, in meters.}
+\item{h_in}{Height, in inches.}
 }
 }
 \source{

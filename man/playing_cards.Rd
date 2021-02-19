@@ -7,9 +7,9 @@
 \format{
 A data frame with 52 observations on the following 2 variables.
 \describe{
-  \item{number}{The number or card type.}
-  \item{suit}{Card suit, which takes one of four values: \code{Club}, \code{Diamond}, \code{Heart}, or \code{Spade}.}
-  \item{face_card}{Whether the card counts as a face card.}
+\item{number}{The number or card type.}
+\item{suit}{Card suit, which takes one of four values: \code{Club}, \code{Diamond}, \code{Heart}, or \code{Spade}.}
+\item{face_card}{Whether the card counts as a face card.}
 }
 }
 \source{

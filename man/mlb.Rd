@@ -7,11 +7,11 @@
 \format{
 A data frame with 828 observations on the following 4 variables.
 \describe{
-  \item{player}{Player name}
-  \item{team}{Team}
-  \item{position}{Field position}
-  \item{salary}{Salary (in $1000s)}
-  }
+\item{player}{Player name}
+\item{team}{Team}
+\item{position}{Field position}
+\item{salary}{Salary (in $1000s)}
+}
 }
 \source{
 \url{http://content.usatoday.com/sportsdata/baseball/mlb/salaries/team},

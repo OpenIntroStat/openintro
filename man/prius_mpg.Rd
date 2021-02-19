@@ -7,11 +7,11 @@
 \format{
 A data frame with 19 observations on the following 10 variables.
 \describe{
-  \item{average_mpg}{Average mileage as estimated by the user.}
-  \item{state}{US State the user lives in.}
-  \item{stop_and_go}{Proportion of stop and go driving.}
-  \item{highway}{Proportion of highway driving.}
-  \item{last_updated}{Date estimate was last updated.}
+\item{average_mpg}{Average mileage as estimated by the user.}
+\item{state}{US State the user lives in.}
+\item{stop_and_go}{Proportion of stop and go driving.}
+\item{highway}{Proportion of highway driving.}
+\item{last_updated}{Date estimate was last updated.}
 }
 }
 \source{

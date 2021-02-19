@@ -7,10 +7,10 @@
 \format{
 A data frame with 1325 observations on the following 3 variables.
 \describe{
-  \item{speed}{a numeric vector}
-  \item{gender}{a factor with levels \code{female} and \code{male}}
-  \item{height}{a numeric vector}
-  }
+\item{speed}{a numeric vector}
+\item{gender}{a factor with levels \code{female} and \code{male}}
+\item{height}{a numeric vector}
+}
 }
 \usage{
 speed_gender_height

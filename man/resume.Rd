@@ -85,7 +85,7 @@ randomly assigned to the resumes, and the quality and attributes of a resume
 were assigned independent of the race and gender. This means that any
 effects we observe are in fact causal, and the effects related to race are
 both statistically significant and very large: white applicants had about a
-50\% better chance of getting a callback than black candidates.
+50\\% better chance of getting a callback than black candidates.
 
 Do you still have doubts lingering in the back of your mind about the
 validity of this study?  Maybe a counterargument about why the standard

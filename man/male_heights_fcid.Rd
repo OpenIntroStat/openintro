@@ -7,8 +7,8 @@
 \format{
 A data frame with 100 observations on the following variable.
 \describe{
-  \item{height_inch}{Height, in inches.}
-  }
+\item{height_inch}{Height, in inches.}
+}
 }
 \source{
 Simulated based on data from USDA.

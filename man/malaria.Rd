@@ -7,8 +7,8 @@
 \format{
 A data frame with 20 observations on the following 2 variables.
 \describe{
-  \item{treatment}{Whether a person was given the experimental `vaccine` or a `placebo`.}
-  \item{outcome}{Whether the person got an `infection` or `no infection`.}
+\item{treatment}{Whether a person was given the experimental \code{vaccine} or a \code{placebo}.}
+\item{outcome}{Whether the person got an \code{infection} or \verb{no infection}.}
 }
 }
 \source{

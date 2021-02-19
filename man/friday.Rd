@@ -7,12 +7,12 @@
 \format{
 A data frame with 61 observations and 6 variables.
 \describe{
-  \item{type}{Type of observation, \code{traffic}, \code{shopping}, or \code{accident}.}
-  \item{date}{Year and month of observation.}
-  \item{sixth}{Counts on the 6th of the month.}
-  \item{thirteenth}{Counts on the 13th of the month.}
-  \item{diff}{Difference between the sixth and the thirteenth.}
-  \item{location}{Location where data is collected.}
+\item{type}{Type of observation, \code{traffic}, \code{shopping}, or \code{accident}.}
+\item{date}{Year and month of observation.}
+\item{sixth}{Counts on the 6th of the month.}
+\item{thirteenth}{Counts on the 13th of the month.}
+\item{diff}{Difference between the sixth and the thirteenth.}
+\item{location}{Location where data is collected.}
 }
 }
 \source{

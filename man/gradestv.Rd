@@ -7,9 +7,9 @@
 \format{
 A data frame with 25 observations on the following 2 variables.
 \describe{
-  \item{tv}{Number of hours per week students watch TV.}
-  \item{grades}{Grades students got in a statistics class (out of 100).}
-  }
+\item{tv}{Number of hours per week students watch TV.}
+\item{grades}{Grades students got in a statistics class (out of 100).}
+}
 }
 \source{
 Simulated data

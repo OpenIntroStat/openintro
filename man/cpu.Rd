@@ -7,18 +7,18 @@
 \format{
 A data frame with 875 rows and 12 variables.
 \describe{
-  \item{company}{Manufacturer of the CPU.}
-  \item{name}{Model name of the processor.}
-  \item{codename}{Name given by manufacturer to all chips with this architecture.}
-  \item{cores}{Number of compute cores per processor.}
-  \item{threads}{The number of \emph{threads} represents the number of simultaneous calculations that can be ongoing in the processor.}
-  \item{base_clock}{Base speed for the CPU in GHz.}
-  \item{boost_clock}{Single-core max speed for the CPU in GHz.}
-  \item{socket}{Specifies the type of connection to the motherboard.}
-  \item{process}{Size of the process node used in production in nm.}
-  \item{l3_cache}{Size of the level 3 cache on the processor in MB.}
-  \item{tdp}{Total draw power of the processor.}
-  \item{released}{Date which the processor was released to the public.}
+\item{company}{Manufacturer of the CPU.}
+\item{name}{Model name of the processor.}
+\item{codename}{Name given by manufacturer to all chips with this architecture.}
+\item{cores}{Number of compute cores per processor.}
+\item{threads}{The number of \emph{threads} represents the number of simultaneous calculations that can be ongoing in the processor.}
+\item{base_clock}{Base speed for the CPU in GHz.}
+\item{boost_clock}{Single-core max speed for the CPU in GHz.}
+\item{socket}{Specifies the type of connection to the motherboard.}
+\item{process}{Size of the process node used in production in nm.}
+\item{l3_cache}{Size of the level 3 cache on the processor in MB.}
+\item{tdp}{Total draw power of the processor.}
+\item{released}{Date which the processor was released to the public.}
 }
 }
 \source{

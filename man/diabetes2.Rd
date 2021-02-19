@@ -7,9 +7,9 @@
 \format{
 A data frame with 699 observations on the following 2 variables.
 \describe{
-  \item{treatment}{The treatment the patient received.}
-  \item{outcome}{Whether there patient still needs insulin (\code{failure})
-  or met a basic positive outcome bar (\code{success}).}
+\item{treatment}{The treatment the patient received.}
+\item{outcome}{Whether there patient still needs insulin (\code{failure})
+or met a basic positive outcome bar (\code{success}).}
 }
 }
 \source{

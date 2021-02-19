@@ -7,7 +7,7 @@
 \format{
 A data frame with 500 observations on the following variable.
 \describe{
-  \item{vote_for}{a factor with levels \code{no} \code{yes}}
+\item{vote_for}{a factor with levels \code{no} \code{yes}}
 }
 }
 \usage{

@@ -7,9 +7,9 @@
 \format{
 A data frame with 45 observations on the following 2 variables.
 \describe{
-  \item{intervene}{Whether other diners intervened or not.}
-  \item{scenario}{How the woman was dressed.}
-  }
+\item{intervene}{Whether other diners intervened or not.}
+\item{scenario}{How the woman was dressed.}
+}
 }
 \usage{
 socialexp

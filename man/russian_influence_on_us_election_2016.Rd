@@ -7,9 +7,9 @@
 \format{
 A data frame with 506 observations on the following variable.
 \describe{
-  \item{influence_2016}{Response of the Russian survey participant to the question
-  of whether their government tried to influence the 2016 election in the
-  United States.}
+\item{influence_2016}{Response of the Russian survey participant to the question
+of whether their government tried to influence the 2016 election in the
+United States.}
 }
 }
 \source{

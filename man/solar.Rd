@@ -8,10 +8,10 @@
 A data frame with 284 observations on the following 3 variables.
 Each row represents a single day for one of the arrays.
 \describe{
-  \item{location}{Location for the array.}
-  \item{date}{Date.}
-  \item{kwh}{Number of kWh}
-  }
+\item{location}{Location for the array.}
+\item{date}{Date.}
+\item{kwh}{Number of kWh}
+}
 }
 \source{
 These data were provided by Larry Rosenfeld, a resident in San Francisco.

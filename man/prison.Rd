@@ -7,13 +7,13 @@
 \format{
 A data frame with 14 observations on the following 6 variables.
 \describe{
-  \item{pre_trt1}{Pre-treatment 1.}
-  \item{post_trt1}{Post-treatment 1.}
-  \item{pre_trt2}{Pre-treatment 2.}
-  \item{post_trt2}{Post-treatment 2.}
-  \item{pre_trt3}{Pre-treatment 3.}
-  \item{post_trt3}{Post-treatment 3.}
-  }
+\item{pre_trt1}{Pre-treatment 1.}
+\item{post_trt1}{Post-treatment 1.}
+\item{pre_trt2}{Pre-treatment 2.}
+\item{post_trt2}{Post-treatment 2.}
+\item{pre_trt3}{Pre-treatment 3.}
+\item{post_trt3}{Post-treatment 3.}
+}
 }
 \source{
 \url{http://stat.duke.edu/resources/datasets/prison-isolation}

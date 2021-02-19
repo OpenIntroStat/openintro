@@ -7,8 +7,8 @@
 \format{
 A data frame with 62 observations on the following variable.
 \describe{
-  \item{outcome}{a factor with levels \code{complications} \code{okay}}
-  }
+\item{outcome}{a factor with levels \code{complications} \code{okay}}
+}
 }
 \usage{
 transplant

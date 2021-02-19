@@ -7,10 +7,10 @@
 \format{
 A data frame with 18 observations on the following 3 variables.
 \describe{
-  \item{trmt}{a factor with levels \code{ctrl} \code{esc}}
-  \item{before}{a numeric vector}
-  \item{after}{a numeric vector}
-  }
+\item{trmt}{a factor with levels \code{ctrl} \code{esc}}
+\item{before}{a numeric vector}
+\item{after}{a numeric vector}
+}
 }
 \source{
 \url{https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(05)67380-1/fulltext}

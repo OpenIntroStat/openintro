@@ -7,10 +7,10 @@
 \format{
 A data frame with 249 observations on the following 4 variables.
 \describe{
-  \item{country_code}{Two-letter ISO country code.}
-  \item{country_name}{Country name.}
-  \item{year}{Year the two-letter ISO country code was assigned.}
-  \item{top_level_domain}{ op-level domain name.}
+\item{country_code}{Two-letter ISO country code.}
+\item{country_name}{Country name.}
+\item{year}{Year the two-letter ISO country code was assigned.}
+\item{top_level_domain}{ op-level domain name.}
 }
 }
 \source{

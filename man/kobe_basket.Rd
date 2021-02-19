@@ -7,15 +7,15 @@
 \format{
 A data frame with 133 rows and 6 variables:
 \describe{
-  \item{vs}{A categorical vector, ORL if the Los Angeles Lakers played
-  against Orlando}
-  \item{game}{A numerical vector, game in the 2009 NBA finals}
-  \item{quarter}{A categorical vector, quarter in the game, OT stands for
-  overtime}
-  \item{time}{A character vector, time at which Kobe took a shot}
-  \item{description}{A character vector, description of the shot}
-  \item{shot}{A categorical vector, H if the shot was a hit, M if the shot
-  was a miss}
+\item{vs}{A categorical vector, ORL if the Los Angeles Lakers played
+against Orlando}
+\item{game}{A numerical vector, game in the 2009 NBA finals}
+\item{quarter}{A categorical vector, quarter in the game, OT stands for
+overtime}
+\item{time}{A character vector, time at which Kobe took a shot}
+\item{description}{A character vector, description of the shot}
+\item{shot}{A categorical vector, H if the shot was a hit, M if the shot
+was a miss}
 }
 }
 \usage{

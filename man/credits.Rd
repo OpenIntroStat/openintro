@@ -7,8 +7,8 @@
 \format{
 A data frame with 100 observations on the following variable.
 \describe{
-  \item{credits}{Number of credits.}
-  }
+\item{credits}{Number of credits.}
+}
 }
 \source{
 Simulated data.

@@ -7,10 +7,10 @@
 \format{
 A data frame with 63 observations on the following 3 variables.
 \describe{
-  \item{year}{Year.}
-  \item{boys}{Number of boys born.}
-  \item{girls}{Number of girls born.}
-  }
+\item{year}{Year.}
+\item{boys}{Number of boys born.}
+\item{girls}{Number of girls born.}
+}
 }
 \source{
 Mathews, T. J., and Brady E. Hamilton. "Trend analysis of the sex

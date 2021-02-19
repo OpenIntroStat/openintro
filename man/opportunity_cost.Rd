@@ -7,9 +7,9 @@
 \format{
 A data frame with 150 observations on the following 2 variables.
 \describe{
-  \item{group}{a factor with levels \code{control} and \code{treatment}}
-  \item{decision}{a factor with levels \code{buy video} and \code{not buy video}}
-  }
+\item{group}{a factor with levels \code{control} and \code{treatment}}
+\item{decision}{a factor with levels \code{buy video} and \code{not buy video}}
+}
 }
 \source{
 Frederick S, Novemsky N, Wang J, Dhar R, Nowlis S. 2009.

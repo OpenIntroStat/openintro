@@ -8,9 +8,9 @@
 \format{
 A data frame with 648 observations on the following 2 variables.
 \describe{
-  \item{year}{Penny's year.}
-  \item{age}{Age as of 2004.}
-  }
+\item{year}{Penny's year.}
+\item{age}{Age as of 2004.}
+}
 }
 \usage{
 penny_ages

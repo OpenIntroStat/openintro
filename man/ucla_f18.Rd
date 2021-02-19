@@ -7,20 +7,20 @@
 \format{
 A data frame with 3950 observations on the following 14 variables.
 \describe{
-  \item{year}{Year the course was offered}
-  \item{term}{Term the course was offered}
-  \item{subject}{Subject}
-  \item{subject_abbr}{Subject abbreviation, if any}
-  \item{course}{Course name}
-  \item{course_num}{Course number, complete}
-  \item{course_numeric}{Course number, numeric only}
-  \item{seminar}{Boolean for if this is a seminar course}
-  \item{ind_study}{Boolean for if this is some form of independent  study}
-  \item{apprenticeship}{Boolean for if this is an apprenticeship}
-  \item{internship}{Boolean for if this is an internship}
-  \item{honors_contracts}{Boolean for if this is an honors contracts course}
-  \item{laboratory}{Boolean for if this is a lab}
-  \item{special_topic}{Boolean for if this is any of the special types of courses listed}
+\item{year}{Year the course was offered}
+\item{term}{Term the course was offered}
+\item{subject}{Subject}
+\item{subject_abbr}{Subject abbreviation, if any}
+\item{course}{Course name}
+\item{course_num}{Course number, complete}
+\item{course_numeric}{Course number, numeric only}
+\item{seminar}{Boolean for if this is a seminar course}
+\item{ind_study}{Boolean for if this is some form of independent  study}
+\item{apprenticeship}{Boolean for if this is an apprenticeship}
+\item{internship}{Boolean for if this is an internship}
+\item{honors_contracts}{Boolean for if this is an honors contracts course}
+\item{laboratory}{Boolean for if this is a lab}
+\item{special_topic}{Boolean for if this is any of the special types of courses listed}
 }
 }
 \source{

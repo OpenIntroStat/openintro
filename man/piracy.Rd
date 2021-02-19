@@ -7,14 +7,14 @@
 \format{
 A data frame with 534 observations on the following 8 variables.
 \describe{
-  \item{name}{Name of legislator.}
-  \item{party}{Party affiliation as democrat (\code{D}), Republican (\code{R}), or Independent (\code{I}).}
-  \item{state}{Two letter state abbreviation.}
-  \item{money_pro}{Amount of money in dollars contributed to the legislator's campaign in 2010 by groups generally thought to be supportive of PIPA/SOPA: movie and TV studios, record labels.}
-  \item{money_con}{Amount of money in dollars contributed to the legislator's campaign in 2010 by groups generally thought to be opposed to PIPA/SOPA: computer and internet companies.}
-  \item{years}{Number of years of service in Congress.}
-  \item{stance}{Degree of support for PIPA/SOPA with levels \code{Leaning No}, \code{No}, \code{Undecided}, \code{Unknown}, \code{Yes}}
-  \item{chamber}{Whether the legislator is a member of either the \code{house} or \code{senate}.}
+\item{name}{Name of legislator.}
+\item{party}{Party affiliation as democrat (\code{D}), Republican (\code{R}), or Independent (\code{I}).}
+\item{state}{Two letter state abbreviation.}
+\item{money_pro}{Amount of money in dollars contributed to the legislator's campaign in 2010 by groups generally thought to be supportive of PIPA/SOPA: movie and TV studios, record labels.}
+\item{money_con}{Amount of money in dollars contributed to the legislator's campaign in 2010 by groups generally thought to be opposed to PIPA/SOPA: computer and internet companies.}
+\item{years}{Number of years of service in Congress.}
+\item{stance}{Degree of support for PIPA/SOPA with levels \code{Leaning No}, \code{No}, \code{Undecided}, \code{Unknown}, \code{Yes}}
+\item{chamber}{Whether the legislator is a member of either the \code{house} or \code{senate}.}
 }
 }
 \source{

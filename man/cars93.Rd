@@ -7,14 +7,14 @@
 \format{
 A data frame with 54 observations on the following 6 variables.
 \describe{
-  \item{type}{The vehicle type with levels \code{large}, \code{midsize},
-  and \code{small}.}
-  \item{price}{Vehicle price (USD).}
-  \item{mpg_city}{Vehicle mileage in city (miles per gallon).}
-  \item{drive_train}{Vehicle drive train with levels \code{4WD}, \code{front},
-  and \code{rear}.}
-  \item{passengers}{The vehicle passenger capacity.}
-  \item{weight}{Vehicle weight (lbs).}
+\item{type}{The vehicle type with levels \code{large}, \code{midsize},
+and \code{small}.}
+\item{price}{Vehicle price (USD).}
+\item{mpg_city}{Vehicle mileage in city (miles per gallon).}
+\item{drive_train}{Vehicle drive train with levels \code{4WD}, \code{front},
+and \code{rear}.}
+\item{passengers}{The vehicle passenger capacity.}
+\item{weight}{Vehicle weight (lbs).}
 }
 }
 \source{

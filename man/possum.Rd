@@ -7,16 +7,16 @@
 \format{
 A data frame with 104 observations on the following 8 variables.
 \describe{
-  \item{site}{The site number where the possum was trapped.}
-  \item{pop}{Population, either \code{Vic} (Victoria) or \code{other}
-  (New South Wales or Queensland).}
-  \item{sex}{Gender, either \code{m} (male) or \code{f} (female).}
-  \item{age}{Age.}
-  \item{head_l}{Head length, in mm.}
-  \item{skull_w}{Skull width, in mm.}
-  \item{total_l}{Total length, in cm.}
-  \item{tail_l}{Tail length, in cm.}
-  }
+\item{site}{The site number where the possum was trapped.}
+\item{pop}{Population, either \code{Vic} (Victoria) or \code{other}
+(New South Wales or Queensland).}
+\item{sex}{Gender, either \code{m} (male) or \code{f} (female).}
+\item{age}{Age.}
+\item{head_l}{Head length, in mm.}
+\item{skull_w}{Skull width, in mm.}
+\item{total_l}{Total length, in cm.}
+\item{tail_l}{Tail length, in cm.}
+}
 }
 \source{
 Lindenmayer, D. B., Viggers, K. L., Cunningham, R. B., and Donnelly,

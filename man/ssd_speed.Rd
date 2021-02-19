@@ -7,13 +7,13 @@
 \format{
 A data frame with 54 rows and 7 variables.
 \describe{
-  \item{brand}{Brand name of the drive.}
-  \item{model}{Model name of the drive.}
-  \item{samples}{Number of user submitted benchmarks.}
-  \item{form_factor}{Physical form of the drive with levels \code{2.5}, \code{m.2}, and \code{mSATA}.}
-  \item{nvme}{If a drive uses the \emph{nvme} protocol this value is 1, 0 if it does not.}
-  \item{read}{Average read speed from user benchmarks in MB/s.}
-  \item{write}{Average write speed from user benchmarks in MB/s.}
+\item{brand}{Brand name of the drive.}
+\item{model}{Model name of the drive.}
+\item{samples}{Number of user submitted benchmarks.}
+\item{form_factor}{Physical form of the drive with levels \code{2.5}, \code{m.2}, and \code{mSATA}.}
+\item{nvme}{If a drive uses the \emph{nvme} protocol this value is 1, 0 if it does not.}
+\item{read}{Average read speed from user benchmarks in MB/s.}
+\item{write}{Average write speed from user benchmarks in MB/s.}
 }
 }
 \source{

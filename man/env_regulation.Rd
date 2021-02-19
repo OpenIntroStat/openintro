@@ -7,10 +7,10 @@
 \format{
 A data frame with 705 observations on the following variable.
 \describe{
-  \item{statement}{There were three possible outcomes for each person:
-  \code{"Regulations necessary"}, \code{"Private marketplace will ensure"},
-  and \code{"Don't know"}.}
-  }
+\item{statement}{There were three possible outcomes for each person:
+\code{"Regulations necessary"}, \code{"Private marketplace will ensure"},
+and \code{"Don't know"}.}
+}
 }
 \source{
 \url{http://www.pewinternet.org/2017/05/16/public-divides-over-environmental-regulation-and-energy-policy}

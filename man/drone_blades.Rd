@@ -7,9 +7,9 @@
 \format{
 A data frame with 2000 observations on the following 2 variables.
 \describe{
-  \item{supplier}{The supplier for the blade.}
-  \item{inspection}{The inspection conclusion.}
-  }
+\item{supplier}{The supplier for the blade.}
+\item{inspection}{The inspection conclusion.}
+}
 }
 \usage{
 drone_blades

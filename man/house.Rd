@@ -7,19 +7,19 @@
 \format{
 A data frame with 112 observations on the following 12 variables.
 \describe{
-  \item{congress}{The number of that year's Congress}
-  \item{year_start}{Starting year}
-  \item{year_end}{Ending year}
-  \item{seats}{Total number of seats}
-  \item{p1}{Name of the first political party}
-  \item{np1}{Number of seats held by the first political party}
-  \item{p2}{Name of the second political party}
-  \item{np2}{Number of seats held by the second political party}
-  \item{other}{Other}
-  \item{vac}{Vacancy}
-  \item{del}{Delegate}
-  \item{res}{Resident commissioner}
-  }
+\item{congress}{The number of that year's Congress}
+\item{year_start}{Starting year}
+\item{year_end}{Ending year}
+\item{seats}{Total number of seats}
+\item{p1}{Name of the first political party}
+\item{np1}{Number of seats held by the first political party}
+\item{p2}{Name of the second political party}
+\item{np2}{Number of seats held by the second political party}
+\item{other}{Other}
+\item{vac}{Vacancy}
+\item{del}{Delegate}
+\item{res}{Resident commissioner}
+}
 }
 \source{
 Party Divisions of the House of Representatives, 1789 to Present.

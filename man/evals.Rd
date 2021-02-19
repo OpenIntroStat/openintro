@@ -7,40 +7,40 @@
 \format{
 A data frame with 463 observations on the following 23 variables.
 \describe{
-  \item{course_id}{Variable identifying the course (out of 463 courses).}
-  \item{prof_id}{Variable identifying the professor who taught the course (out of 94 professors).}
-  \item{score}{Average professor evaluation score: (1) very unsatisfactory -
-  (5) excellent.}
-  \item{rank}{Rank of professor: teaching, tenure track, tenured.}
-  \item{ethnicity}{Ethnicity of professor: not minority, minority.}
-  \item{gender}{Gender of professor: female, male.}
-  \item{language}{Language of school where professor received education:
-  English or non-English.}
-  \item{age}{Age of professor.}
-  \item{cls_perc_eval}{Percent of students in class who completed evaluation.}
-  \item{cls_did_eval}{Number of students in class who completed evaluation.}
-  \item{cls_students}{Total number of students in class.}
-  \item{cls_level}{Class level: lower, upper.}
-  \item{cls_profs}{Number of professors teaching sections in course in
-  sample: single, multiple.}
-  \item{cls_credits}{Number of credits of class: one credit (lab, PE, etc.),
-  multi credit.}
-  \item{bty_f1lower}{Beauty rating of professor from lower level
-  female: (1) lowest - (10) highest.}
-  \item{bty_f1upper}{Beauty rating of professor from upper level female:
-  (1) lowest - (10) highest.}
-  \item{bty_f2upper}{Beauty rating of professor from second level female:
-  (1) lowest - (10) highest.}
-  \item{bty_m1lower}{Beauty rating of professor from lower level male:
-  (1) lowest - (10) highest.}
-  \item{bty_m1upper}{Beauty rating of professor from upper level male:
-  (1) lowest - (10) highest.}
-  \item{bty_m2upper}{Beauty rating of professor from second upper level male:
-  (1) lowest - (10) highest.}
-  \item{bty_avg}{Average beauty rating of professor.}
-  \item{pic_outfit}{Outfit of professor in picture: not formal, formal.}
-  \item{pic_color}{Color of professor's picture: color, black & white.}
-  }
+\item{course_id}{Variable identifying the course (out of 463 courses).}
+\item{prof_id}{Variable identifying the professor who taught the course (out of 94 professors).}
+\item{score}{Average professor evaluation score: (1) very unsatisfactory -
+(5) excellent.}
+\item{rank}{Rank of professor: teaching, tenure track, tenured.}
+\item{ethnicity}{Ethnicity of professor: not minority, minority.}
+\item{gender}{Gender of professor: female, male.}
+\item{language}{Language of school where professor received education:
+English or non-English.}
+\item{age}{Age of professor.}
+\item{cls_perc_eval}{Percent of students in class who completed evaluation.}
+\item{cls_did_eval}{Number of students in class who completed evaluation.}
+\item{cls_students}{Total number of students in class.}
+\item{cls_level}{Class level: lower, upper.}
+\item{cls_profs}{Number of professors teaching sections in course in
+sample: single, multiple.}
+\item{cls_credits}{Number of credits of class: one credit (lab, PE, etc.),
+multi credit.}
+\item{bty_f1lower}{Beauty rating of professor from lower level
+female: (1) lowest - (10) highest.}
+\item{bty_f1upper}{Beauty rating of professor from upper level female:
+(1) lowest - (10) highest.}
+\item{bty_f2upper}{Beauty rating of professor from second level female:
+(1) lowest - (10) highest.}
+\item{bty_m1lower}{Beauty rating of professor from lower level male:
+(1) lowest - (10) highest.}
+\item{bty_m1upper}{Beauty rating of professor from upper level male:
+(1) lowest - (10) highest.}
+\item{bty_m2upper}{Beauty rating of professor from second upper level male:
+(1) lowest - (10) highest.}
+\item{bty_avg}{Average beauty rating of professor.}
+\item{pic_outfit}{Outfit of professor in picture: not formal, formal.}
+\item{pic_color}{Color of professor's picture: color, black & white.}
+}
 }
 \source{
 Çetinkaya-Rundel M, Morgan KL, Stangl D. 2013. Looking Good on

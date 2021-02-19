@@ -7,11 +7,11 @@
 \format{
 A data frame with 30 observations on the following 2 variables.
 \describe{
-  \item{treatment}{The different treatments tried:
+\item{treatment}{The different treatments tried:
 \code{none} (control), \code{Heat} (via blow torch), \code{Acetone/ATF},
 \code{AeroKroil}, \code{Liquid Wrench}, \code{PB Blaster}, \code{Royal
 Purple}, and \code{WD-40}.}
-  \item{torque}{Torque required to loosen the rusty bolt,
+\item{torque}{Torque required to loosen the rusty bolt,
 which was measured in foot-pounds.}
 }
 }

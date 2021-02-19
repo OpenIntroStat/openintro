@@ -7,9 +7,9 @@
 \format{
 A data frame with 500 observations on the following 3 variables.
 \describe{
-  \item{group}{Group, representing data for a specific plot.}
-  \item{x}{x-value.}
-  \item{y}{y-value.}
+\item{group}{Group, representing data for a specific plot.}
+\item{x}{x-value.}
+\item{y}{y-value.}
 }
 }
 \usage{

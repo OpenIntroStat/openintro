@@ -7,9 +7,9 @@
 \format{
 A data frame with 50 observations on the following 2 variables.
 \describe{
-  \item{result}{a factor with levels \code{not yawn} \code{yawn}}
-  \item{group}{a factor with levels \code{ctrl} \code{trmt}}
-  }
+\item{result}{a factor with levels \code{not yawn} \code{yawn}}
+\item{group}{a factor with levels \code{ctrl} \code{trmt}}
+}
 }
 \source{
 MythBusters, Season 3, Episode 28.

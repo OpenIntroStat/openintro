@@ -7,8 +7,8 @@
 \format{
 A data frame with 6224 observations on the following 2 variables.
 \describe{
-  \item{result}{Whether the person `died` or `lived`.}
-  \item{inoculated}{Whether the person received inoculated.}
+\item{result}{Whether the person \code{died} or \code{lived}.}
+\item{inoculated}{Whether the person received inoculated.}
 }
 }
 \source{

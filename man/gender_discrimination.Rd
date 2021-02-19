@@ -7,9 +7,9 @@
 \format{
 A data frame with 48 observations on the following 2 variables.
 \describe{
-  \item{gender}{a factor with levels \code{female} and \code{male}}
-  \item{decision}{a factor with levels \code{not promoted} and \code{promoted}}
-  }
+\item{gender}{a factor with levels \code{female} and \code{male}}
+\item{decision}{a factor with levels \code{not promoted} and \code{promoted}}
+}
 }
 \source{
 Rosen B and Jerdee T. 1974. Influence of sex role stereotypes on

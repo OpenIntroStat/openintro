@@ -7,9 +7,9 @@
 \format{
 A data frame with 45341 observations on the following 3 variables.
 \describe{
-  \item{borough}{Name of the borough.}
-  \item{x}{The "easting" component of the coordinate, see details.}
-  \item{y}{The "northing" component of the coordinate, see details.}
+\item{borough}{Name of the borough.}
+\item{x}{The "easting" component of the coordinate, see details.}
+\item{y}{The "northing" component of the coordinate, see details.}
 }
 }
 \source{

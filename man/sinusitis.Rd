@@ -7,9 +7,9 @@
 \format{
 A data frame with 166 observations on the following 2 variables.
 \describe{
-  \item{group}{a factor with levels \code{control} and  \code{treatment}}
-  \item{self_reported_improvement}{a factor with levels \code{no} and \code{yes}}
-  }
+\item{group}{a factor with levels \code{control} and  \code{treatment}}
+\item{self_reported_improvement}{a factor with levels \code{no} and \code{yes}}
+}
 }
 \source{
 J.M. Garbutt et al. Amoxicillin for Acute Rhinosinusitis: A

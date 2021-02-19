@@ -7,11 +7,11 @@
 \format{
 A data frame with 121 observations on the following 3 variables.
 \describe{
-  \item{year}{Year}
-  \item{unemp}{Unemployment rate, in percent}
-  \item{us_data}{\code{1} if from the Bureau of Labor Statistics, \code{0}
-  otherwise}
-  }
+\item{year}{Year}
+\item{unemp}{Unemployment rate, in percent}
+\item{us_data}{\code{1} if from the Bureau of Labor Statistics, \code{0}
+otherwise}
+}
 }
 \source{
 The data are from Wikipedia at the following URL accessed on

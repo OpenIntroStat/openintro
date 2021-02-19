@@ -8,9 +8,9 @@
 \format{
 A data frame with 451 observations on the following 2 variables.
 \describe{
-  \item{group}{a factor with levels \code{control} and \code{treatment}}
-  \item{outcome}{a factor with levels \code{no event} and \code{stroke}}
-  }
+\item{group}{a factor with levels \code{control} and \code{treatment}}
+\item{outcome}{a factor with levels \code{no event} and \code{stroke}}
+}
 }
 \source{
 Chimowitz MI, Lynn MJ, Derdeyn CP, et al. 2011. Stenting versus
@@ -24,8 +24,8 @@ stent30
 }
 \description{
 An experiment that studies effectiveness of stents in treating patients at
-risk of stroke with some unexpected results. `stent30` represents
-the results 30 days after stroke and `stent365` represents the results
+risk of stroke with some unexpected results. \code{stent30} represents
+the results 30 days after stroke and \code{stent365} represents the results
 365 days after stroke.
 }
 \examples{

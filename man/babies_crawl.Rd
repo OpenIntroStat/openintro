@@ -7,12 +7,12 @@
 \format{
 A data frame with 12 observations on the following 5 variables.
 \describe{
-  \item{birth_month}{A factor with levels corresponding to months}
-  \item{avg_crawling_age}{a numeric vector}
-  \item{sd}{a numeric vector}
-  \item{n}{a numeric vector}
-  \item{temperature}{a numeric vector}
-  }
+\item{birth_month}{A factor with levels corresponding to months}
+\item{avg_crawling_age}{a numeric vector}
+\item{sd}{a numeric vector}
+\item{n}{a numeric vector}
+\item{temperature}{a numeric vector}
+}
 }
 \source{
 J.B. Benson. Season of birth and onset of locomotion: Theoretical

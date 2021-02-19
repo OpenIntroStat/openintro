@@ -7,26 +7,26 @@
 \format{
 A data frame with 201 observations on the following 20 variables.
 \describe{
-  \item{year}{Year the course was offered}
-  \item{term}{Term the course was offered}
-  \item{subject}{Subject}
-  \item{subject_abbr}{Subject abbreviation, if any}
-  \item{course}{Course name}
-  \item{course_num}{Course number, complete}
-  \item{course_numeric}{Course number, numeric only}
-  \item{seminar}{ Boolean for if this is a seminar course.}
-  \item{ind_study}{ Boolean for if this is some form of independent study}
-  \item{apprenticeship}{ Boolean for if this is an apprenticeship}
-  \item{internship}{ Boolean for if this is an internship}
-  \item{honors_contracts}{ Boolean for if this is an honors contracts course}
-  \item{laboratory}{Boolean for if this is a lab}
-  \item{special_topic}{ Boolean for if this is any of the special types of courses listed}
-  \item{textbook_isbn}{Textbook ISBN}
-  \item{bookstore_new}{ New price at the UCLA bookstore}
-  \item{bookstore_used}{ Used price at the UCLA bookstore}
-  \item{amazon_new}{New price sold by Amazon}
-  \item{amazon_used}{Used price sold by Amazon}
-  \item{notes}{Any relevant notes}
+\item{year}{Year the course was offered}
+\item{term}{Term the course was offered}
+\item{subject}{Subject}
+\item{subject_abbr}{Subject abbreviation, if any}
+\item{course}{Course name}
+\item{course_num}{Course number, complete}
+\item{course_numeric}{Course number, numeric only}
+\item{seminar}{ Boolean for if this is a seminar course.}
+\item{ind_study}{ Boolean for if this is some form of independent study}
+\item{apprenticeship}{ Boolean for if this is an apprenticeship}
+\item{internship}{ Boolean for if this is an internship}
+\item{honors_contracts}{ Boolean for if this is an honors contracts course}
+\item{laboratory}{Boolean for if this is a lab}
+\item{special_topic}{ Boolean for if this is any of the special types of courses listed}
+\item{textbook_isbn}{Textbook ISBN}
+\item{bookstore_new}{ New price at the UCLA bookstore}
+\item{bookstore_used}{ Used price at the UCLA bookstore}
+\item{amazon_new}{New price sold by Amazon}
+\item{amazon_used}{Used price sold by Amazon}
+\item{notes}{Any relevant notes}
 }
 }
 \source{
@@ -54,8 +54,8 @@ sample data.
 The most expensive book required for the course was generally used.
 
 The reason why we advocate for using raw amount differences instead of
-percent differences is that a 20\% savings on a $10 book is minor relative
-to a 20\% savings on a $100 book, meaning a small and largely insignificant
+percent differences is that a 20\\% savings on a $10 book is minor relative
+to a 20\\% savings on a $100 book, meaning a small and largely insignificant
 price difference on low-priced books would balance numerically (but not in a
 practical sense) a moderate but important price difference on more expensive
 books.  So while this tends to result in a bit less sensitivity in detecting

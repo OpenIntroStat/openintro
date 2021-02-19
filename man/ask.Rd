@@ -7,16 +7,16 @@
 \format{
 A data frame with 219 observations on the following 3 variables.
 \describe{
-  \item{question_class}{The type of question:
-  `general`, `pos_assumption`, and `neg_assumption`.}
-  \item{question}{The question corresponding to the
-  `question.class`}
-  \item{response}{The classified response from the seller,
-  either `disclose` or `hide`.}
-  }
+\item{question_class}{The type of question:
+\code{general}, \code{pos_assumption}, and \code{neg_assumption}.}
+\item{question}{The question corresponding to the
+\code{question.class}}
+\item{response}{The classified response from the seller,
+either \code{disclose} or \code{hide}.}
+}
 }
 \source{
-Minson JA, Ruedy NE, Schweitzer ME. There *is* such a thing as
+Minson JA, Ruedy NE, Schweitzer ME. There \emph{is} such a thing as
 a stupid question: Question disclosure in strategic communication.
 }
 \usage{
@@ -25,16 +25,18 @@ ask
 \description{
 Something is wrong with this data set. In this experiment, each individual was asked to be a seller of an iPod (a
 product commonly used to store music on before smart phones...).  They
-participant received $10 + 5\% of the sale price for participating.  The
+participant received $10 + 5\\% of the sale price for participating.  The
 iPod they were selling had frozen twice in the past inexplicably but
 otherwise worked fine. The prospective buyer starts off and then asks one of
 three final questions, depending on the seller's treatment group.
 }
 \details{
 The three possible questions:
-- General: What can you tell me about it?
-- Positive Assumption: It doesn't have any problems, does it?
-- Negative Assumption: What problems does it have?
+\itemize{
+\item General: What can you tell me about it?
+\item Positive Assumption: It doesn't have any problems, does it?
+\item Negative Assumption: What problems does it have?
+}
 
 The outcome variable is whether or not the participant discloses or hides
 the problem with the iPod.

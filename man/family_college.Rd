@@ -7,8 +7,8 @@
 \format{
 A data frame with 792 observations on the following 2 variables.
 \describe{
-  \item{teen}{Whether the teen goes to \code{college} or \code{not}.}
-  \item{parents}{Whether the parent holds a college \code{degree} or \code{not}.}
+\item{teen}{Whether the teen goes to \code{college} or \code{not}.}
+\item{parents}{Whether the parent holds a college \code{degree} or \code{not}.}
 }
 }
 \source{

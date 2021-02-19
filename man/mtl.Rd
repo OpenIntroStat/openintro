@@ -7,37 +7,37 @@
 \format{
 A data frame with 35 observations on the following 23 variables.
 \describe{
-  \item{subject}{ID for the individual.}
-  \item{sex}{Gender, which takes values \code{F} (female) or \code{M} (male).}
-  \item{ethnic}{Ethnicity, simplified to \code{Caucasian} and \code{Other}.}
-  \item{educ}{Years of educational.}
-  \item{e4grp}{APOE-4 status, taking a value of \code{E4} or \code{Non-E4}.}
-  \item{age}{Age, in years.}
-  \item{mmse}{Score from the Mini-Mental State Examination, which is a global
-  cognition evaluation.}
-  \item{ham_a}{Score on the Hamilton Rating Scale for anxiety.}
-  \item{ham_d}{Score on the Hamilton Rating Scale for depression.}
-  \item{dig_sym}{We (the authors of this R package) are unsure as to the meaning
-  of this variable.}
-  \item{delay_vp}{We (the authors of this R package) are unsure as to the meaning
-  of this variable.}
-  \item{bfr_selective_reminding_delayed}{We (the authors of this R package) are
-  unsure as to the meaning of this variable.}
-  \item{sitting}{Self-reported time sitting per day, averaged to the
-  nearest hour.}
-  \item{met_minwk}{Metabolic equivalent units score (activity level). A score of
-  \code{0} means \dQuote{no activity} while \code{3000} is considered
-  \dQuote{high activity}.}
-  \item{ipa_qgrp}{ Classification of \code{METminwk} into \code{Low} or
-  \code{High}.}
-  \item{aca1}{Thickness of the CA1 subregion of the MTL.}
-  \item{aca23dg}{Thickness of the CA23DG subregion of the MTL.}
-  \item{ae_cort}{Thickness of a subregion of the MTL.}
-  \item{a_fusi_cort}{Thickness of the fusiform gyrus subregion of the MTL.}
-  \item{a_ph_cort}{Thickness of the perirhinal cortex subregion of the MTL.}
-  \item{a_pe_cort}{Thickness of the entorhinal cortex subregion of the MTL.}
-  \item{asubic}{Thickness of the subiculum subregion of the MTL.}
-  \item{total}{Total MTL thickness.}
+\item{subject}{ID for the individual.}
+\item{sex}{Gender, which takes values \code{F} (female) or \code{M} (male).}
+\item{ethnic}{Ethnicity, simplified to \code{Caucasian} and \code{Other}.}
+\item{educ}{Years of educational.}
+\item{e4grp}{APOE-4 status, taking a value of \code{E4} or \code{Non-E4}.}
+\item{age}{Age, in years.}
+\item{mmse}{Score from the Mini-Mental State Examination, which is a global
+cognition evaluation.}
+\item{ham_a}{Score on the Hamilton Rating Scale for anxiety.}
+\item{ham_d}{Score on the Hamilton Rating Scale for depression.}
+\item{dig_sym}{We (the authors of this R package) are unsure as to the meaning
+of this variable.}
+\item{delay_vp}{We (the authors of this R package) are unsure as to the meaning
+of this variable.}
+\item{bfr_selective_reminding_delayed}{We (the authors of this R package) are
+unsure as to the meaning of this variable.}
+\item{sitting}{Self-reported time sitting per day, averaged to the
+nearest hour.}
+\item{met_minwk}{Metabolic equivalent units score (activity level). A score of
+\code{0} means \dQuote{no activity} while \code{3000} is considered
+\dQuote{high activity}.}
+\item{ipa_qgrp}{ Classification of \code{METminwk} into \code{Low} or
+\code{High}.}
+\item{aca1}{Thickness of the CA1 subregion of the MTL.}
+\item{aca23dg}{Thickness of the CA23DG subregion of the MTL.}
+\item{ae_cort}{Thickness of a subregion of the MTL.}
+\item{a_fusi_cort}{Thickness of the fusiform gyrus subregion of the MTL.}
+\item{a_ph_cort}{Thickness of the perirhinal cortex subregion of the MTL.}
+\item{a_pe_cort}{Thickness of the entorhinal cortex subregion of the MTL.}
+\item{asubic}{Thickness of the subiculum subregion of the MTL.}
+\item{total}{Total MTL thickness.}
 }
 }
 \source{

@@ -7,8 +7,8 @@
 \format{
 A data frame with 49 observations on the following variable.
 \describe{
-  \item{winnings}{Poker winnings and losses, in US dollars.}
-  }
+\item{winnings}{Poker winnings and losses, in US dollars.}
+}
 }
 \source{
 Anonymity has been requested by the player.

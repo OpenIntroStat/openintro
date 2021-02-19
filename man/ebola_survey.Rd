@@ -7,9 +7,9 @@
 \format{
 A data frame with 1042 observations on the following variable.
 \describe{
-  \item{quarantine}{Indicates whether the respondent is in \code{favor} or
-  \code{against} the mandatory quarantine.}
-  }
+\item{quarantine}{Indicates whether the respondent is in \code{favor} or
+\code{against} the mandatory quarantine.}
+}
 }
 \source{
 Poll ID NY141026 on maristpoll.marist.edu.

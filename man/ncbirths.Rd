@@ -7,21 +7,21 @@
 \format{
 A data frame with 1000 observations on the following 13 variables.
 \describe{
-  \item{fage}{Father's age in years.}
-  \item{mage}{Mother's age in years.}
-  \item{mature}{Maturity status of mother.}
-  \item{weeks}{Length of pregnancy in weeks.}
-  \item{premie}{Whether the birth was classified as premature (premie) or full-term.}
-  \item{visits}{Number of hospital visits during pregnancy.}
-  \item{gained}{Weight gained by mother during pregnancy in pounds.}
-  \item{weight}{Weight of the baby at birth in pounds.}
-  \item{lowbirthweight}{Whether baby was classified as low birthweight
-  (\code{low}) or not (\code{not low}).}
-  \item{gender}{Gender of the baby, \code{female} or \code{male}.}
-  \item{habit}{Status of the mother as a \code{nonsmoker} or a \code{smoker}.}
-  \item{marital}{Whether mother is \code{married} or \code{not married} at birth.}
-  \item{whitemom}{Whether mom is \code{white} or \code{not white}.}
-  }
+\item{fage}{Father's age in years.}
+\item{mage}{Mother's age in years.}
+\item{mature}{Maturity status of mother.}
+\item{weeks}{Length of pregnancy in weeks.}
+\item{premie}{Whether the birth was classified as premature (premie) or full-term.}
+\item{visits}{Number of hospital visits during pregnancy.}
+\item{gained}{Weight gained by mother during pregnancy in pounds.}
+\item{weight}{Weight of the baby at birth in pounds.}
+\item{lowbirthweight}{Whether baby was classified as low birthweight
+(\code{low}) or not (\code{not low}).}
+\item{gender}{Gender of the baby, \code{female} or \code{male}.}
+\item{habit}{Status of the mother as a \code{nonsmoker} or a \code{smoker}.}
+\item{marital}{Whether mother is \code{married} or \code{not married} at birth.}
+\item{whitemom}{Whether mom is \code{white} or \code{not white}.}
+}
 }
 \usage{
 ncbirths
@@ -49,5 +49,10 @@ ggplot(ncbirths, aes(x = mature, y = gained)) +
   geom_boxplot() +
   labs(x = "Mother's age category", y = "Weight gained during pregnancy")
 
+}
+\seealso{
+Note that we do not have ideal provenance for these data.
+For a better better documented and more recent dataset on a similar topic with
+similar variables, see \code{\link[=births14]{births14()}}.
 }
 \keyword{datasets}

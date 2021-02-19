@@ -7,9 +7,9 @@
 \format{
 A data frame with 193 observations on the following 2 variables.
 \describe{
-  \item{gpa}{Grade point average (GPA) of student.}
-  \item{study_hours}{Number of hours students study per week.}
-  }
+\item{gpa}{Grade point average (GPA) of student.}
+\item{study_hours}{Number of hours students study per week.}
+}
 }
 \source{
 Collected at a private US university as part of an anonymous survey

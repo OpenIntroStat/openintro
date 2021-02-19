@@ -16,7 +16,7 @@ Survey USA, Election Poll #16804, data collected July 8-11, 2010.
 leg_mari
 }
 \description{
-In a 2010 Survey USA poll, 70% of the 119 respondents between the ages of 18
+In a 2010 Survey USA poll, 70\% of the 119 respondents between the ages of 18
 and 34 said they would vote in the 2010 general election for Prop 19, which
 would change California law to legalize marijuana and allow it to be
 regulated and taxed.

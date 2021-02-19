@@ -7,10 +7,10 @@
 \format{
 A data frame with 16 observations on the following 3 variables.
 \describe{
-  \item{student}{a numeric vector}
-  \item{beers}{a numeric vector}
-  \item{bac}{a numeric vector}
-  }
+\item{student}{a numeric vector}
+\item{beers}{a numeric vector}
+\item{bac}{a numeric vector}
+}
 }
 \source{
 J. Malkevitch and L.M. Lesser. For All Practical Purposes:

@@ -8,19 +8,19 @@
 \format{
 A data frame with 103 observations on the following 8 variables.
 \describe{
-  \item{id}{ID number of the patient.}
-  \item{acceptyear}{Year of acceptance as a heart transplant candidate.}
-  \item{age}{Age of the patient at the beginning of the study.}
-  \item{survived}{Survival status with levels \code{alive} and \code{dead}.}
-  \item{survtime}{Number of days patients were alive after the date they were
-  determined to be a candidate for a heart transplant until the termination
-  date of the study}
-  \item{prior}{Whether or not the patient had prior surgery with levels
-  \code{yes} and \code{no}.}
-  \item{transplant}{Transplant status with levels \code{control} (did not
-  receive a transplant) and \code{treatment} (received a transplant).}
-  \item{wait}{Waiting Time for Transplant}
-  }
+\item{id}{ID number of the patient.}
+\item{acceptyear}{Year of acceptance as a heart transplant candidate.}
+\item{age}{Age of the patient at the beginning of the study.}
+\item{survived}{Survival status with levels \code{alive} and \code{dead}.}
+\item{survtime}{Number of days patients were alive after the date they were
+determined to be a candidate for a heart transplant until the termination
+date of the study}
+\item{prior}{Whether or not the patient had prior surgery with levels
+\code{yes} and \code{no}.}
+\item{transplant}{Transplant status with levels \code{control} (did not
+receive a transplant) and \code{treatment} (received a transplant).}
+\item{wait}{Waiting Time for Transplant}
+}
 }
 \source{
 \url{http://www.stat.ucla.edu/~jsanchez/data/stanford.txt}

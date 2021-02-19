@@ -7,13 +7,13 @@
 \format{
 A data frame with 23 rows and 7 variables.
 \describe{
-  \item{movie}{Title of the movie.}
-  \item{length_hrs}{Length of the movie: hours portion.}
-  \item{length_min}{Length of the movie: minutes portion.}
-  \item{release_date}{Date the movie was released in the US.}
-  \item{opening_weekend_us}{Box office totals for opening weekend in the US.}
-  \item{gross_us}{All box office totals in US.}
-  \item{gross_world}{All box office totals world wide.}
+\item{movie}{Title of the movie.}
+\item{length_hrs}{Length of the movie: hours portion.}
+\item{length_min}{Length of the movie: minutes portion.}
+\item{release_date}{Date the movie was released in the US.}
+\item{opening_weekend_us}{Box office totals for opening weekend in the US.}
+\item{gross_us}{All box office totals in US.}
+\item{gross_world}{All box office totals world wide.}
 }
 }
 \source{
