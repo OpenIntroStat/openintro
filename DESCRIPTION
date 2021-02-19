@@ -43,3 +43,4 @@ Depends:
 URL: https://github.com/OpenIntroStat/openintro
 BugReports: https://github.com/OpenIntroStat/openintro/issues
 VignetteBuilder: knitr
+Roxygen: list(markdown = TRUE)
