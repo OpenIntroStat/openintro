@@ -1,0 +1,57 @@
+state	new_tests_per_100k	test_pos_rate	state2	cases_per_100k	new_cases_per_100k	weekly_case_rate_change	state3	deaths_per_100k	new_deaths_per_100k	weekly_death_rate_change
+Alabama	1179	0.33	Alabama	9069	382	-0.10	Alabama	137	11.10	-0.07
+Alaska	6481	0.03	Alaska	7197	203	-0.12	Alaska	35	3.90	-0.31
+American Samoa	0		American Samoa	0	0		American Samoa	0	0.00	3.00
+Arizona	5116	0.14	Arizona	10402	701	-0.12	Arizona	176	14.00	
+Arkansas	2585	0.17	Arkansas	9463	429	-0.30	Arkansas	153	9.00	-0.14
+California	5538	0.09	California	7880	472	-0.34	California	93	8.70	-0.02
+Colorado	4473	0.05	Colorado	6960	208	-0.21	Colorado	99	2.20	-0.09
+Connecticut	15990	0.03	Connecticut	6640	402	-0.17	Connecticut	190	6.30	-0.32
+Delaware	6305	0.08	Delaware	7785	478	-0.07	Delaware	109	2.10	-0.18
+District of Columbia	6226	0.04	District of Columbia	5157	212	-0.30	District of Columbia	127	3.20	-0.57
+Florida	3636	0.10	Florida	7961	387	-0.17	Florida	124	5.70	-0.40
+Georgia	2785	0.14	Georgia	8373	510	-0.14	Georgia	129	9.30	-0.04
+Guam	1757	0.02	Guam	4736	46	-0.09	Guam	78	0.00	0.14
+Hawaii	2189	0.03	Hawaii	1758	55	-0.28	Hawaii	24	1.10	
+Idaho	802	0.32	Idaho	9440	240	-0.33	Idaho	99	3.70	0.00
+Illinois	5089	0.05	Illinois	8568	264	-0.17	Illinois	161	4.90	-0.18
+Indiana	4750	0.07	Indiana	9206	314	-0.22	Indiana	146	6.10	-0.23
+Iowa	566	0.32	Iowa	9963	254	-0.12	Iowa	143	5.30	0.26
+Kansas	1274	0.28	Kansas	9167	362	-0.24	Kansas	124	3.30	-0.14
+Kentucky	2304	0.20	Kentucky	7760	456	-0.15	Kentucky	76	6.60	-0.73
+Louisiana	3914	0.08	Louisiana	8154	330	-0.34	Louisiana	182	8.60	0.35
+Maine	5254	0.05	Maine	2746	254	-0.19	Maine	41	2.80	0.66
+Maryland	4496	0.06	Maryland	5688	250	-0.24	Maryland	114	5.00	-0.55
+Massachusetts	8889	0.05	Massachusetts	7263	445	-0.21	Massachusetts	206	7.00	0.02
+Michigan	2797	0.05	Michigan	5993	150	-0.22	Michigan	152	5.10	-0.05
+Minnesota	3402	0.05	Minnesota	8210	159	-0.18	Minnesota	110	3.20	-0.03
+Mississippi	1517	0.27	Mississippi	8840	393	-0.12	Mississippi	193	8.40	-0.22
+Missouri	1820	0.10	Missouri	7381	197	-0.16	Missouri	108	4.80	-0.29
+Montana	3054	0.07	Montana	8775	226	-0.20	Montana	110	5.10	-0.05
+Nebraska	4712	0.06	Nebraska	9810	312	0.12	Nebraska	98	2.40	0.60
+Nevada	3143	0.10	Nevada	9228	329	-0.30	Nevada	137	8.60	-0.50
+New Hampshire	4421	0.09	New Hampshire	4583	419	0.11	New Hampshire	73	4.00	-0.18
+New Jersey	4170	0.10	New Jersey	7403	399	-0.17	New Jersey	236	5.90	-0.11
+New Mexico	4379	0.06	New Mexico	8057	272	-0.28	New Mexico	149	9.80	-0.07
+New York	7952	0.06	New York	6699	483	-0.13	New York	213	6.70	0.16
+North Carolina	4416	0.10	North Carolina	7018	442	-0.16	North Carolina	85	5.60	-0.02
+North Dakota	3001	0.04	North Dakota	12858	134	-0.13	North Dakota	191	4.40	-0.04
+Northern Mariana Islands	2	1.00	Northern Mariana Islands	239	13		Northern Mariana Islands	4	0.00	-0.17
+Ohio	2640	0.12	Ohio	7386	329	-0.24	Ohio	92	4.70	
+Oklahoma	2761	0.17	Oklahoma	9447	472	-0.31	Oklahoma	82	7.10	0.01
+Oregon	3043	0.04	Oregon	3371	127	-0.35	Oregon	46	1.90	0.29
+Pennsylvania	1015	0.29	Pennsylvania	6254	298	-0.21	Pennsylvania	160	10.50	-0.61
+Puerto Rico	105	1.00	Puerto Rico	4631	221	0.00	Puerto Rico	52	2.10	-0.12
+Rhode Island	9519	0.04	Rhode Island	10386	501	-0.23	Rhode Island	197	7.40	0.00
+South Carolina	5666	0.11	South Carolina	8349	633	-0.03	South Carolina	131	7.50	-0.15
+South Dakota	683	0.29	South Dakota	12376	195	-0.29	South Dakota	196	7.30	0.06
+Tennessee	2493	0.15	Tennessee	10613	376	-0.27	Tennessee	133	7.00	0.00
+Texas	2946	0.16	Texas	7993	471	-0.17	Texas	122	8.20	-0.29
+Utah	2302	0.18	Utah	10997	415	-0.32	Utah	52	3.20	0.07
+Vermont	7096	0.02	Vermont	1765	156	-0.11	Vermont	27	1.10	0.00
+Virgin Islands	2078	0.08	Virgin Islands	2200	76	-0.29	Virgin Islands	23	0.00	
+Virginia	2533	0.18	Virginia	5615	394	-0.18	Virginia	72	4.10	
+Washington	2330	0.07	Washington	4115	195	-0.18	Washington	56	2.90	0.02
+West Virginia	5130	0.07	West Virginia	6304	355	-0.15	West Virginia	104	6.50	0.03
+Wisconsin	3375	0.07	Wisconsin	10037	238	-0.24	Wisconsin	107	4.80	-0.39
+Wyoming	4136	0.06	Wyoming	8694	260	-0.36	Wyoming	98	8.40	-0.17
