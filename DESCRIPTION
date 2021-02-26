@@ -34,6 +34,7 @@ Suggests:
 Imports: 
     ggplot2 (>= 2.2.1),
     graphics,
+    readr,
     rmarkdown,
     tibble
 Depends: 
