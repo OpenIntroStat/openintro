@@ -6,6 +6,7 @@
 ^\.github$
 ^CODE_OF_CONDUCT\.md$
 ^data-raw$
+^data-csv$
 ^_pkgdown\.yml$
 ^docs$
 ^pkgdown$
