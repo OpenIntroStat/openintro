@@ -42,7 +42,7 @@ Depends:
     airports,
     cherryblossom,
     usdata
-URL: https://github.com/OpenIntroStat/openintro
+URL: http://openintrostat.github.io/openintro, https://github.com/OpenIntroStat/openintro
 BugReports: https://github.com/OpenIntroStat/openintro/issues
 VignetteBuilder: knitr
 Roxygen: list(markdown = TRUE)
