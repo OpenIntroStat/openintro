@@ -10,7 +10,6 @@ write_pkg_data(
   overwrite = FALSE,
   out_type = c("csv", "tab", "R")
 )
-}
 \arguments{
 \item{pkg}{The R package where we'd like to generate CSVs of any
 data frames.}
