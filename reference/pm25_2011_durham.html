@@ -162,24 +162,24 @@ Environmental Protection Agency.</p>
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
 <span class='va'>pm25_2011_durham</span>
-</div><div class='output co'>#&gt; <span style='color: #555555;'># A tibble: 449 x 20</span><span>
-#&gt;    date  aqs_site_id   poc daily_mean_pm2_… units daily_aqi_value
-#&gt;    </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span> </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span>       </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span>            </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span> </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span>           </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>
-#&gt; </span><span style='color: #555555;'> 1</span><span> 1/3/… 37-063-0015     1              5.9 ug/m…              19
-#&gt; </span><span style='color: #555555;'> 2</span><span> 1/6/… 37-063-0015     1             10.4 ug/m…              34
-#&gt; </span><span style='color: #555555;'> 3</span><span> 1/9/… 37-063-0015     1              5.6 ug/m…              18
-#&gt; </span><span style='color: #555555;'> 4</span><span> 1/10… 37-063-0015     1              6.2 ug/m…              20
-#&gt; </span><span style='color: #555555;'> 5</span><span> 1/18… 37-063-0015     1              9.4 ug/m…              31
-#&gt; </span><span style='color: #555555;'> 6</span><span> 1/21… 37-063-0015     1              5   ug/m…              16
-#&gt; </span><span style='color: #555555;'> 7</span><span> 1/24… 37-063-0015     1             11.5 ug/m…              37
-#&gt; </span><span style='color: #555555;'> 8</span><span> 1/27… 37-063-0015     1              9.8 ug/m…              32
-#&gt; </span><span style='color: #555555;'> 9</span><span> 1/30… 37-063-0015     1             12.5 ug/m…              41
-#&gt; </span><span style='color: #555555;'>10</span><span> 2/2/… 37-063-0015     1              5.5 ug/m…              18
-#&gt; </span><span style='color: #555555;'># … with 439 more rows, and 14 more variables: daily_obs_count </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span style='color: #555555;'>,</span><span>
-#&gt; </span><span style='color: #555555;'>#   percent_complete </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span style='color: #555555;'>, aqs_parameter_code </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span style='color: #555555;'>, aqs_parameter_desc </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span style='color: #555555;'>,</span><span>
-#&gt; </span><span style='color: #555555;'>#   csa_code </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span style='color: #555555;'>, csa_name </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span style='color: #555555;'>, cbsa_code </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span style='color: #555555;'>, cbsa_name </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span style='color: #555555;'>,</span><span>
-#&gt; </span><span style='color: #555555;'>#   state_code </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span style='color: #555555;'>, state </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span style='color: #555555;'>, county_code </span><span style='color: #555555;font-style: italic;'>&lt;int&gt;</span><span style='color: #555555;'>, county </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span style='color: #555555;'>,</span><span>
-#&gt; </span><span style='color: #555555;'>#   site_latitude </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, site_longitude </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span></div><div class='input'>
+</div><div class='output co'>#&gt; <span style='color: #949494;'># A tibble: 449 x 20</span><span>
+#&gt;    date    aqs_site_id   poc daily_mean_pm2_5_concentra… units   daily_aqi_value
+#&gt;    </span><span style='color: #949494;font-style: italic;'>&lt;fct&gt;</span><span>   </span><span style='color: #949494;font-style: italic;'>&lt;fct&gt;</span><span>       </span><span style='color: #949494;font-style: italic;'>&lt;int&gt;</span><span>                       </span><span style='color: #949494;font-style: italic;'>&lt;dbl&gt;</span><span> </span><span style='color: #949494;font-style: italic;'>&lt;fct&gt;</span><span>             </span><span style='color: #949494;font-style: italic;'>&lt;dbl&gt;</span><span>
+#&gt; </span><span style='color: #BCBCBC;'> 1</span><span> 1/3/11  37-063-0015     1                         5.9 ug/m3 …              19
+#&gt; </span><span style='color: #BCBCBC;'> 2</span><span> 1/6/11  37-063-0015     1                        10.4 ug/m3 …              34
+#&gt; </span><span style='color: #BCBCBC;'> 3</span><span> 1/9/11  37-063-0015     1                         5.6 ug/m3 …              18
+#&gt; </span><span style='color: #BCBCBC;'> 4</span><span> 1/10/11 37-063-0015     1                         6.2 ug/m3 …              20
+#&gt; </span><span style='color: #BCBCBC;'> 5</span><span> 1/18/11 37-063-0015     1                         9.4 ug/m3 …              31
+#&gt; </span><span style='color: #BCBCBC;'> 6</span><span> 1/21/11 37-063-0015     1                         5   ug/m3 …              16
+#&gt; </span><span style='color: #BCBCBC;'> 7</span><span> 1/24/11 37-063-0015     1                        11.5 ug/m3 …              37
+#&gt; </span><span style='color: #BCBCBC;'> 8</span><span> 1/27/11 37-063-0015     1                         9.8 ug/m3 …              32
+#&gt; </span><span style='color: #BCBCBC;'> 9</span><span> 1/30/11 37-063-0015     1                        12.5 ug/m3 …              41
+#&gt; </span><span style='color: #BCBCBC;'>10</span><span> 2/2/11  37-063-0015     1                         5.5 ug/m3 …              18
+#&gt; </span><span style='color: #949494;'># … with 439 more rows, and 14 more variables: daily_obs_count &lt;int&gt;,</span><span>
+#&gt; </span><span style='color: #949494;'>#   percent_complete &lt;int&gt;, aqs_parameter_code &lt;int&gt;, aqs_parameter_desc &lt;fct&gt;,</span><span>
+#&gt; </span><span style='color: #949494;'>#   csa_code &lt;int&gt;, csa_name &lt;fct&gt;, cbsa_code &lt;int&gt;, cbsa_name &lt;fct&gt;,</span><span>
+#&gt; </span><span style='color: #949494;'>#   state_code &lt;int&gt;, state &lt;fct&gt;, county_code &lt;int&gt;, county &lt;fct&gt;,</span><span>
+#&gt; </span><span style='color: #949494;'>#   site_latitude &lt;dbl&gt;, site_longitude &lt;dbl&gt;</span><span></div><div class='input'>
 </div></span></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
