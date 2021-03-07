@@ -22,12 +22,7 @@
 #'   write_pkg_data("openintro")
 #'   list.files("data-csv")
 #' }
-write_pkg_data <- function(
-  pkg,
-  dir = paste0("data-", out_type),
-  overwrite = FALSE,
-  out_type = c("csv", "tab", "R")
-) {
+write_pkg_data <- function(pkg, dir = paste0("data-", out_type), overwrite = FALSE, out_type = c("csv", "tab", "R")) {
   out_type <- match.arg(out_type)
   stopifnot(pkg %in% dimnames(utils::installed.packages())[[1]])
   stopifnot(dir != "")
