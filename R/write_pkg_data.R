@@ -12,8 +12,9 @@
 #'   exists, one will be created (recursively).
 #' @param overwrite Boolean to indicate if to overwrite any existing
 #'   files that have conflicting names in the directory specified.
-#' @param out_type Format for the type of output. Only a CSV output
-#'   is currently supported (\code{"csv"}).
+#' @param out_type Format for the type of output as a CSV (\code{"csv"}),
+#'   tab-delimited text file (\code{"tab"}), or the R code to generate
+#'   the object (\code{"R"}).
 #' @export
 #' @examples
 #'
@@ -23,10 +24,11 @@
 #' }
 write_pkg_data <- function(
   pkg,
-  dir = "data-csv",
+  dir = paste0("data-", out_type),
   overwrite = FALSE,
-  out_type = "csv"
+  out_type = c("csv", "tab", "R")
 ) {
+  out_type <- match.arg(out_type)
   stopifnot(pkg %in% dimnames(utils::installed.packages())[[1]])
   stopifnot(dir != "")
   data_sets <- utils::data(package = "openintro")$results[, 3]
@@ -54,21 +56,26 @@ write_pkg_data <- function(
       tmp_data <- as.data.frame(tmp_data)
     }
     if (is.data.frame(tmp_data)) {
-      file_name <- paste0(data_sets[i], ".csv")
+      file_name <- switch(
+        out_type,
+        csv = paste0(data_sets[i], ".csv"),
+        tab = paste0(data_sets[i], ".txt"),
+        R = paste0(data_sets[i], ".R")
+      )
       if (file_name %in% list.files(dir) && !overwrite) {
-        # warning(
-        #   "`",
-        #   data_sets[i],
-        #   ".csv` already exists and was not overwritten"
-        # )
         overwrite_skip <- overwrite_skip + 1
         overwrite_skip_list <- append(overwrite_skip_list, data_sets[i])
       } else {
       	destination <- paste0(dir, file_name)
-        readr::write_csv(x = tmp_data, path = destination)
         # Future implementations for other data formats may use:
         # - readr::write_delim()
         # - writexl::write_xlsx()
+        switch(
+          out_type,
+          csv = readr::write_csv(x = tmp_data, path = destination),
+          tab = readr::write_delim(x = tmp_data, path = destination, delim = "\t"),
+          R = dput(x = tmp_data, file = destination)
+        )
         written <- written + 1
       }
     } else {
