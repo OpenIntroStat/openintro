@@ -12,20 +12,27 @@
 #'   exists, one will be created (recursively).
 #' @param overwrite Boolean to indicate if to overwrite any existing
 #'   files that have conflicting names in the directory specified.
+#' @param out_type Format for the type of output. Only a CSV output
+#'   is currently supported (\code{"csv"}).
 #' @export
 #' @examples
 #'
 #' \dontrun{
-#'   PackageData2Csv("openintro")
+#'   write_pkg_data("openintro")
 #'   list.files("data-csv")
 #' }
-PackageData2Csv <- function(pkg, dir = "data-csv", overwrite = FALSE) {
+write_pkg_data <- function(
+  pkg,
+  dir = "data-csv",
+  overwrite = FALSE,
+  out_type = "csv"
+) {
   stopifnot(pkg %in% dimnames(utils::installed.packages())[[1]])
   stopifnot(dir != "")
   data_sets <- utils::data(package = "openintro")$results[, 3]
-  if ("zzq" %in% data_sets) {
-    warning("Data set `zzq` was omitted.")
-    data_sets <- data_sets[data_sets != "zzq"]
+  if ("tmp_data" %in% data_sets) {
+    warning("Data set `tmp_data` was omitted.")
+    data_sets <- data_sets[data_sets != "tmp_data"]
   }
   # If the directory path ends in a /, remove it.
   dir <- gsub("/$", "", dir, perl = TRUE)
@@ -42,11 +49,11 @@ PackageData2Csv <- function(pkg, dir = "data-csv", overwrite = FALSE) {
   overwrite_skip_list <- c()
   pb <- utils::txtProgressBar(1, length(data_sets), style = 3)
   for (i in seq_along(data_sets)) {
-    eval(parse(text = paste0("zzq <- ", pkg, "::", data_sets[i])))
-    if (is.matrix(zzq)) {
-      zzq <- as.data.frame(zzq)
+    eval(parse(text = paste0("tmp_data <- ", pkg, "::", data_sets[i])))
+    if (is.matrix(tmp_data)) {
+      tmp_data <- as.data.frame(tmp_data)
     }
-    if (is.data.frame(zzq)) {
+    if (is.data.frame(tmp_data)) {
       file_name <- paste0(data_sets[i], ".csv")
       if (file_name %in% list.files(dir) && !overwrite) {
         # warning(
@@ -58,7 +65,10 @@ PackageData2Csv <- function(pkg, dir = "data-csv", overwrite = FALSE) {
         overwrite_skip_list <- append(overwrite_skip_list, data_sets[i])
       } else {
       	destination <- paste0(dir, file_name)
-        readr::write_csv(x = zzq, path = destination)
+        readr::write_csv(x = tmp_data, path = destination)
+        # Future implementations for other data formats may use:
+        # - readr::write_delim()
+        # - writexl::write_xlsx()
         written <- written + 1
       }
     } else {
