@@ -44,7 +44,8 @@ write_pkg_data <- function(pkg, dir = paste0("data-", out_type), overwrite = FAL
   skipped_list <- c()
   overwrite_skip <- 0
   overwrite_skip_list <- c()
-  pb <- utils::txtProgressBar(1, length(data_sets), style = 3)
+  txtpb_max <- ifelse(length(data_sets) > 1, length(data_sets), 2)
+  pb <- utils::txtProgressBar(1, txtpb_max, style = 3)
   for (i in seq_along(data_sets)) {
     eval(parse(text = paste0("tmp_data <- ", pkg, "::", data_sets[i])))
     if (is.matrix(tmp_data)) {
