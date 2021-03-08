@@ -26,7 +26,7 @@ write_pkg_data <- function(pkg, dir = paste0("data-", out_type), overwrite = FAL
   out_type <- match.arg(out_type)
   stopifnot(pkg %in% dimnames(utils::installed.packages())[[1]])
   stopifnot(dir != "")
-  data_sets <- utils::data(package = "openintro")$results[, 3]
+  data_sets <- utils::data(package = pkg)$results[, 3]
   if ("tmp_data" %in% data_sets) {
     warning("Data set `tmp_data` was omitted.")
     data_sets <- data_sets[data_sets != "tmp_data"]
