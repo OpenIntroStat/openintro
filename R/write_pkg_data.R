@@ -12,8 +12,9 @@
 #'   exists, one will be created (recursively).
 #' @param overwrite Boolean to indicate if to overwrite any existing
 #'   files that have conflicting names in the directory specified.
-#' @param out_type Format for the type of output. Only a CSV output
-#'   is currently supported (\code{"csv"}).
+#' @param out_type Format for the type of output as a CSV (\code{"csv"}),
+#'   tab-delimited text file (\code{"tab"}), or the R code to generate
+#'   the object (\code{"R"}).
 #' @export
 #' @examples
 #'
@@ -21,15 +22,11 @@
 #'   write_pkg_data("openintro")
 #'   list.files("data-csv")
 #' }
-write_pkg_data <- function(
-  pkg,
-  dir = "data-csv",
-  overwrite = FALSE,
-  out_type = "csv"
-) {
+write_pkg_data <- function(pkg, dir = paste0("data-", out_type), overwrite = FALSE, out_type = c("csv", "tab", "R")) {
+  out_type <- match.arg(out_type)
   stopifnot(pkg %in% dimnames(utils::installed.packages())[[1]])
   stopifnot(dir != "")
-  data_sets <- utils::data(package = "openintro")$results[, 3]
+  data_sets <- utils::data(package = pkg)$results[, 3]
   if ("tmp_data" %in% data_sets) {
     warning("Data set `tmp_data` was omitted.")
     data_sets <- data_sets[data_sets != "tmp_data"]
@@ -47,28 +44,34 @@ write_pkg_data <- function(
   skipped_list <- c()
   overwrite_skip <- 0
   overwrite_skip_list <- c()
-  pb <- utils::txtProgressBar(1, length(data_sets), style = 3)
+  txtpb_max <- ifelse(length(data_sets) > 1, length(data_sets), 2)
+  pb <- utils::txtProgressBar(1, txtpb_max, style = 3)
   for (i in seq_along(data_sets)) {
     eval(parse(text = paste0("tmp_data <- ", pkg, "::", data_sets[i])))
     if (is.matrix(tmp_data)) {
       tmp_data <- as.data.frame(tmp_data)
     }
     if (is.data.frame(tmp_data)) {
-      file_name <- paste0(data_sets[i], ".csv")
+      file_name <- switch(
+        out_type,
+        csv = paste0(data_sets[i], ".csv"),
+        tab = paste0(data_sets[i], ".txt"),
+        R = paste0(data_sets[i], ".R")
+      )
       if (file_name %in% list.files(dir) && !overwrite) {
-        # warning(
-        #   "`",
-        #   data_sets[i],
-        #   ".csv` already exists and was not overwritten"
-        # )
         overwrite_skip <- overwrite_skip + 1
         overwrite_skip_list <- append(overwrite_skip_list, data_sets[i])
       } else {
       	destination <- paste0(dir, file_name)
-        readr::write_csv(x = tmp_data, path = destination)
         # Future implementations for other data formats may use:
         # - readr::write_delim()
         # - writexl::write_xlsx()
+        switch(
+          out_type,
+          csv = readr::write_csv(x = tmp_data, path = destination),
+          tab = readr::write_delim(x = tmp_data, path = destination, delim = "\t"),
+          R = dput(x = tmp_data, file = destination)
+        )
         written <- written + 1
       }
     } else {

@@ -4,7 +4,12 @@
 \alias{write_pkg_data}
 \title{Create a CSV variant of .rda files}
 \usage{
-write_pkg_data(pkg, dir = "data-csv", overwrite = FALSE, out_type = "csv")
+write_pkg_data(
+  pkg,
+  dir = paste0("data-", out_type),
+  overwrite = FALSE,
+  out_type = c("csv", "tab", "R")
+)
 }
 \arguments{
 \item{pkg}{The R package where we'd like to generate CSVs of any
@@ -17,8 +22,9 @@ exists, one will be created (recursively).}
 \item{overwrite}{Boolean to indicate if to overwrite any existing
 files that have conflicting names in the directory specified.}
 
-\item{out_type}{Format for the type of output. Only a CSV output
-is currently supported (\code{"csv"}).}
+\item{out_type}{Format for the type of output as a CSV (\code{"csv"}),
+tab-delimited text file (\code{"tab"}), or the R code to generate
+the object (\code{"R"}).}
 }
 \description{
 The function should be run with a path to a package directory.
