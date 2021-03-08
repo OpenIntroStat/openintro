@@ -129,7 +129,12 @@ and for all data sets that are data frames, create CSV variants
 in a <code>data-csv</code> directory.</p>
     </div>
 
-    <pre class="usage"><span class='fu'>write_pkg_data</span><span class='op'>(</span><span class='va'>pkg</span>, dir <span class='op'>=</span> <span class='st'>"data-csv"</span>, overwrite <span class='op'>=</span> <span class='cn'>FALSE</span>, out_type <span class='op'>=</span> <span class='st'>"csv"</span><span class='op'>)</span></pre>
+    <pre class="usage"><span class='fu'>write_pkg_data</span><span class='op'>(</span>
+  <span class='va'>pkg</span>,
+  dir <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/paste.html'>paste0</a></span><span class='op'>(</span><span class='st'>"data-"</span>, <span class='va'>out_type</span><span class='op'>)</span>,
+  overwrite <span class='op'>=</span> <span class='cn'>FALSE</span>,
+  out_type <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"csv"</span>, <span class='st'>"tab"</span>, <span class='st'>"R"</span><span class='op'>)</span>
+<span class='op'>)</span></pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
@@ -152,8 +157,9 @@ files that have conflicting names in the directory specified.</p></td>
     </tr>
     <tr>
       <th>out_type</th>
-      <td><p>Format for the type of output. Only a CSV output
-is currently supported (<code>"csv"</code>).</p></td>
+      <td><p>Format for the type of output as a CSV (<code>"csv"</code>),
+tab-delimited text file (<code>"tab"</code>), or the R code to generate
+the object (<code>"R"</code>).</p></td>
     </tr>
     </table>
 
