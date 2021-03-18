@@ -5,9 +5,13 @@
 \alias{orings}
 \title{1986 Challenger disaster and O-rings}
 \format{
-A data frame with 23 observations on the following 2 variables.
-\describe{\item{temp}{Temperature, in Fahrenheit.}
-\item{damage}{Number of damaged O-rings (out of 6).} }
+A data frame with 23 observations on the following 4 variables.
+\describe{
+\item{mission}{Shuttle mission number.}
+\item{temperature}{Temperature, in Fahrenheit.}
+\item{damaged}{Number of damaged O-rings (out of 6).}
+\item{undamaged}{Number of undamaged O-rings (out of 6).}
+}
 }
 \source{
 \url{https://archive.ics.uci.edu/ml/datasets/Challenger+USA+Space+Shuttle+O-Ring}
@@ -28,7 +32,22 @@ the launch.
 }
 \examples{
 
-orings
+library(dplyr)
+library(forcats)
+library(tidyr)
+library(broom)
+
+# This is a wide data frame. You can convert it to a long
+# data frame to predict probability of O-ring damage based
+# on temperature using logistic regression.
+
+orings_long <- orings \%>\%
+  pivot_longer(cols = c(damaged, undamaged), names_to = "outcome", values_to = "n") \%>\%
+  uncount(n) \%>\%
+  mutate(outcome = fct_relevel(outcome, "undamaged", "damaged"))
+
+orings_mod <- glm(outcome ~ temperature, data = orings_long, family = "binomial")
+tidy(orings_mod)
 
 }
 \keyword{datasets}
