@@ -5,6 +5,7 @@
   * `exam_grades`, `opportunity_cost`
   * `births14` by [@AmeliaMN](https://github.com/AmeliaMN)
 * Updated `email` and `email50` datasets to make indicator variables factors, remove variables that don't exist in the data from the documentation, and update the documentation for `email50` to match the randomly sampled data
+* Updated `orings` data to require much less manipulation to do glm with
 * Updated documentation for `births`, `ncbirths`, `babies`, and `murders` for data provenance issues
 * Added a new function: `write_pkg_data()` for creating downloadable datasets on the OpenIntro site
 
