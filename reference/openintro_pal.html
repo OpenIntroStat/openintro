@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Changelog • openintro</title>
+<title>Return function to interpolate an OpenIntro color palette — openintro_pal • openintro</title>
 
 
 <!-- jquery -->
@@ -39,7 +39,8 @@
 
 
 
-<meta property="og:title" content="Changelog" />
+<meta property="og:title" content="Return function to interpolate an OpenIntro color palette — openintro_pal" />
+<meta property="og:description" content="Not exported" />
 
 
 
@@ -58,7 +59,7 @@
   </head>
 
   <body data-spy="scroll" data-target="#toc">
-    <div class="container template-news">
+    <div class="container template-reference-topic">
       <header>
       <div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -113,70 +114,41 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-      <h1 data-toc-skip>Changelog <small></small></h1>
-      <small>Source: <a href='https://github.com/OpenIntroStat/openintro/blob/master/NEWS.md'><code>NEWS.md</code></a></small>
+    <h1>Return function to interpolate an OpenIntro color palette</h1>
+    <small class="dont-index">Source: <a href='https://github.com/OpenIntroStat/openintro/blob/master/R/scale-openintro.R'><code>R/scale-openintro.R</code></a></small>
+    <div class="hidden name"><code>openintro_pal.Rd</code></div>
     </div>
 
-    <div id="openintro-development-version" class="section level1">
-<h1 class="page-header" data-toc-text="development version">
-<a href="#openintro-development-version" class="anchor"></a>openintro (development version)<small> Unreleased </small>
-</h1>
-<ul>
-<li>Added new datasets:
-<ul>
-<li>
-<code>earthquakes</code>, <code>mcu_films</code>, <code>salinity</code>, <code>snowfall</code>, <code>ssd_speed</code>, <code>fact_opinion</code>, <code>flow_rates</code>, <code>race_justice</code> by <a href="https://github.com/npaterno">@npaterno</a>
-</li>
-<li>
-<code>exam_grades</code>, <code>opportunity_cost</code>
-</li>
-<li>
-<code>births14</code> by <a href="https://github.com/AmeliaMN">@AmeliaMN</a>
-</li>
-</ul>
-</li>
-<li>Updated <code>email</code> and <code>email50</code> datasets to make indicator variables factors, remove variables that don’t exist in the data from the documentation, and update the documentation for <code>email50</code> to match the randomly sampled data</li>
-<li>Updated <code>orings</code> data to require much less manipulation to do glm with</li>
-<li>Updated documentation for <code>births</code>, <code>ncbirths</code>, <code>babies</code>, and <code>murders</code> for data provenance issues</li>
-<li>Added two new objects for colors: <code>openintro_colors</code> and <code>openintro_palettes</code>
-</li>
-<li>Added new functions:
-<ul>
-<li>
-<code><a href="../reference/write_pkg_data.html">write_pkg_data()</a></code> for creating downloadable datasets on the OpenIntro site</li>
-<li>
-<code><a href="../reference/scale_color_openintro.html">scale_color_openintro()</a></code> and <code><a href="../reference/scale_fill_openintro.html">scale_fill_openintro()</a></code> for constructing for OpenIntro color scales for ggplot2 (and less likely to be directly used <code><a href="../reference/openintro_pal.html">openintro_pal()</a></code> (unexported) and <code><a href="../reference/openintro_cols.html">openintro_cols()</a></code>)</li>
-</ul>
-</li>
-</ul>
-</div>
-    <div id="openintro-200" class="section level1">
-<h1 class="page-header" data-toc-text="2.0.0">
-<a href="#openintro-200" class="anchor"></a>openintro 2.0.0<small> 2020-07-03 </small>
-</h1>
-<ul>
-<li>Added a <code>NEWS.md</code> file to track changes to the package.</li>
-<li>Consolidated openintro, oilabs, and oidata packages.</li>
-<li>Updated all dataframe and variable names to use snake_case.</li>
-<li>Turned data.frames into tibbles.</li>
-<li>Simplified code in most examples to make it more accessible for the student audience for the package.</li>
-<li>Added new datasets used in OpenIntro Statistics, 4th Edition.</li>
-<li>Added new datasets used in new OpenIntro labs.</li>
-<li>Removed package startup message.</li>
-<li>Added dependency on the following packages: <a href="https://openintrostat.github.io/airports/">airports</a>, <a href="https://openintrostat.github.io/cherryblossom/">cherryblossom</a>, and <a href="https://openintrostat.github.io/usdata/">usdata</a>.</li>
-<li>Moved <code>run09</code>, <code>run12</code>, and <code>run19</code> datasets to the cherryblossom package.</li>
-<li>Moved <code>usairports</code> to the airports packages.</li>
-<li>Moved <code>county_complete</code>, <code>county</code>, <code>govrace10</code>, <code>houserace10</code>, <code>prrace08</code>, <code>senaterace10</code>, <code>state_stats</code>, <code>urban_owner</code>, <code>urban_rural_pop</code>, <code>vote_nsa</code> datasets and <code>state2abbr</code> and <code>abbr2state</code> functions to the usdata package.</li>
-</ul>
-</div>
-  </div>
+    <div class="ref-description">
+    <p>Not exported</p>
+    </div>
 
+    <pre class="usage"><span class='fu'>openintro_pal</span><span class='op'>(</span>palette <span class='op'>=</span> <span class='st'>"main"</span>, reverse <span class='op'>=</span> <span class='cn'>FALSE</span>, <span class='va'>...</span><span class='op'>)</span></pre>
+
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
+    <table class="ref-arguments">
+    <colgroup><col class="name" /><col class="desc" /></colgroup>
+    <tr>
+      <th>palette</th>
+      <td><p>Character name of palette in <a href='openintro_palettes.html'>openintro_palettes</a></p></td>
+    </tr>
+    <tr>
+      <th>reverse</th>
+      <td><p>Boolean indicating whether the palette should be reversed</p></td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td><p>Additional arguments to pass to <code><a href='https://rdrr.io/r/grDevices/colorRamp.html'>grDevices::colorRampPalette()</a></code></p></td>
+    </tr>
+    </table>
+
+
+  </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
       <h2 data-toc-skip>Contents</h2>
     </nav>
   </div>
-
 </div>
 
 

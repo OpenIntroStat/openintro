@@ -466,6 +466,18 @@
     <loc>https://openintrostat.github.io/openintro/reference/openintro-package.html</loc>
   </url>
   <url>
+    <loc>https://openintrostat.github.io/openintro/reference/openintro_colors.html</loc>
+  </url>
+  <url>
+    <loc>https://openintrostat.github.io/openintro/reference/openintro_cols.html</loc>
+  </url>
+  <url>
+    <loc>https://openintrostat.github.io/openintro/reference/openintro_pal.html</loc>
+  </url>
+  <url>
+    <loc>https://openintrostat.github.io/openintro/reference/openintro_palettes.html</loc>
+  </url>
+  <url>
     <loc>https://openintrostat.github.io/openintro/reference/opportunity_cost.html</loc>
   </url>
   <url>
@@ -554,6 +566,12 @@
   </url>
   <url>
     <loc>https://openintrostat.github.io/openintro/reference/satgpa.html</loc>
+  </url>
+  <url>
+    <loc>https://openintrostat.github.io/openintro/reference/scale_color_openintro.html</loc>
+  </url>
+  <url>
+    <loc>https://openintrostat.github.io/openintro/reference/scale_fill_openintro.html</loc>
   </url>
   <url>
     <loc>https://openintrostat.github.io/openintro/reference/scotus_healthcare.html</loc>
