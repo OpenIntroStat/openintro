@@ -66,6 +66,7 @@ reference:
   - dream
   - drone_blades
   - drug_use
+  - earthquakes
   - ebola_survey
   - elmhurst
   - email_test
@@ -148,6 +149,9 @@ reference:
   - nuclear_survey
   - nycflights
   - offshore_drilling
+  - openintro_colors
+  - openintro_palettes
+  - opportunity_cost
   - orings
   - oscars
   - outliers
@@ -254,6 +258,11 @@ reference:
   - myPDF
   - myPNG
   - normTail
+  - openintro_cols
+  - openintro_pal
   - PlotWLine
   - qqnormsim
+  - scale_color_openintro
+  - scale_fill_openintro
   - treeDiag
+  - write_pkg_data

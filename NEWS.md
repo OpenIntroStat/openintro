@@ -7,7 +7,10 @@
 * Updated `email` and `email50` datasets to make indicator variables factors, remove variables that don't exist in the data from the documentation, and update the documentation for `email50` to match the randomly sampled data
 * Updated `orings` data to require much less manipulation to do glm with
 * Updated documentation for `births`, `ncbirths`, `babies`, and `murders` for data provenance issues
-* Added a new function: `write_pkg_data()` for creating downloadable datasets on the OpenIntro site
+* Added two new objects for colors: `openintro_colors` and `openintro_palettes`
+* Added new functions: 
+  * `write_pkg_data()` for creating downloadable datasets on the OpenIntro site
+  * `scale_color_openintro()` and `scale_fill_openintro()` for constructing for OpenIntro color scales for ggplot2 (and less likely to be directly used `openintro_pal()` (unexported) and `openintro_cols()`)
 
 # openintro 2.0.0
 
