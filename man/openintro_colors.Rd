@@ -5,7 +5,7 @@
 \alias{openintro_colors}
 \title{OpenIntro colors}
 \format{
-A named character string with 7 elements: "blue", "green", "yellow", "black", "gray", "lgray"
+A named character string with 6 elements: "blue", "green", "yellow", "black", "gray"
 }
 \usage{
 openintro_colors

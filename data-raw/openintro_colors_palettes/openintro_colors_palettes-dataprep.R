@@ -8,7 +8,7 @@ library(usethis)
 openintro_colors <- COL[,1]
 
 openintro_palettes <- list(
-  main  = openintro_cols("blue", "green", "yellow", "red", "gray", "lgray"),
+  main  = openintro_cols("blue", "green", "yellow", "red", "gray"),
   two   = openintro_cols("blue", "green"),
   three = openintro_cols("blue", "green", "yellow"),
   four  = openintro_cols("blue", "green", "yellow", "red"),

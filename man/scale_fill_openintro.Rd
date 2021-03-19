@@ -13,7 +13,7 @@ scale_fill_openintro(palette = "main", discrete = TRUE, reverse = FALSE, ...)
 
 \item{reverse}{Boolean indicating whether the palette should be reversed}
 
-\item{...}{Additional arguments passed to \code{\link[ggplot22:discrete_scale]{ggplot22::discrete_scale()}} or
+\item{...}{Additional arguments passed to \code{\link[ggplot2:discrete_scale]{ggplot2::discrete_scale()}} or
 \code{\link[ggplot2:scale_gradient]{ggplot2::scale_fill_gradientn()}}, used respectively when discrete is TRUE or FALSE}
 }
 \description{

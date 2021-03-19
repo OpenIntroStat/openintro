@@ -4,7 +4,7 @@
 #'
 #' @name openintro_colors
 #' @docType data
-#' @format A named character string with 7 elements: "blue", "green", "yellow", "black", "gray", "lgray"
+#' @format A named character string with 6 elements: "blue", "green", "yellow", "black", "gray"
 #' @keywords datasets
 #' @examples
 #'
