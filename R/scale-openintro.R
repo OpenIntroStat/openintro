@@ -1,9 +1,9 @@
 # Much of what's here is built based on
 # https://drsimonj.svbtle.com/creating-corporate-colour-palettes-for-ggplot2
 
-#' Function to extract OpenIntro colors as hex codes
+#' Function to extract OpenIntro IMS colors as hex codes
 #'
-#' Uses full colors from [COL]
+#' Uses full colors from [IMSCOL]
 #'
 #' @param ... Character names of [openintro_colors]
 #' @export
@@ -22,7 +22,7 @@ openintro_cols <- function(...) {
   openintro::openintro_colors[cols]
 }
 
-#' Return function to interpolate an OpenIntro color palette
+#' Return function to interpolate an OpenIntro IMS color palette
 #'
 #' Not exported
 #'
@@ -40,7 +40,7 @@ openintro_pal <- function(palette = "main", reverse = FALSE, ...) {
   grDevices::colorRampPalette(pal, ...)
 }
 
-#' Color scale constructor for OpenIntro colors
+#' Color scale constructor for OpenIntro IMS colors
 #'
 #' @param palette Character name of palette in [openintro_palettes]
 #' @param discrete Boolean indicating whether color aesthetic is discrete or not
@@ -56,13 +56,13 @@ openintro_pal <- function(palette = "main", reverse = FALSE, ...) {
 #' # Categorical variable with three levels
 #' ggplot(evals, aes(x = bty_avg, y = score,
 #'                       color = rank, shape = rank)) +
-#'   geom_jitter(size = 2, alpha = 0.8) +
+#'   geom_jitter(size = 2, alpha = 0.6) +
 #'   scale_color_openintro("three")
 #'
 #' # Categorical variable with two levels
 #' ggplot(evals, aes(x = bty_avg, y = score,
 #'                   color = language, shape = language)) +
-#'   geom_jitter(size = 2, alpha = 0.8) +
+#'   geom_jitter(size = 2, alpha = 0.6) +
 #'   scale_color_openintro("two")
 #'
 #' # Continuous variable
@@ -77,12 +77,12 @@ openintro_pal <- function(palette = "main", reverse = FALSE, ...) {
 #' ggplot(evals, aes(x = bty_avg, y = score,
 #'                   color = score)) +
 #'   geom_jitter(size = 2) +
-#'   scale_color_gradient(low = COL[1,1], high = COL[1,8])
+#'   scale_color_gradient(low = IMSCOL["blue", "full"], high = IMSCOL["blue", "f6"])
 #'
 #' ggplot(evals, aes(x = bty_avg, y = score,
 #'                   color = cls_perc_eval)) +
 #'   geom_jitter(size = 2) +
-#'   scale_color_gradient(low = COL[2,1], high = COL[2,8])
+#'   scale_color_gradient(low = COL["red", "full"], high = COL["red", "f8"])
 #'
 scale_color_openintro <- function(palette = "main", discrete = TRUE, reverse = FALSE, ...) {
   pal <- openintro_pal(palette = palette, reverse = reverse)
@@ -94,7 +94,7 @@ scale_color_openintro <- function(palette = "main", discrete = TRUE, reverse = F
   }
 }
 
-#' Fill scale constructor for OpenIntro colors
+#' Fill scale constructor for OpenIntro IMS colors
 #'
 #' @param palette Character name of palette in [openintro_palettes]
 #' @param discrete Boolean indicating whether color aesthetic is discrete or not
@@ -118,11 +118,10 @@ scale_color_openintro <- function(palette = "main", discrete = TRUE, reverse = F
 #'   geom_bar() +
 #'   scale_fill_openintro("three")
 #'
-#' # Continuous variable many levels
+#' # Continuous variable with levels
 #' # Generates a palette, but may not be the best palette
-#' evals %>%
-#'   mutate(score_rounded = as.factor(round(score))) %>%
-#'   ggplot(aes(x = score_rounded, fill = score_rounded)) +
+#' # in terms of color-blind and grayscale friendliness
+#' ggplot(diamonds, aes(x = clarity, fill = clarity)) +
 #'   geom_bar() +
 #'   scale_fill_openintro()
 #'
@@ -131,12 +130,13 @@ scale_color_openintro <- function(palette = "main", discrete = TRUE, reverse = F
 #' ggplot(evals, aes(x = bty_avg, y = score,
 #'                   color = score)) +
 #'   geom_jitter(size = 2) +
-#'   scale_color_gradient(low = COL[1,1], high = COL[1,8])
+#'   scale_color_gradient(low = IMSCOL["blue", "full"], high = IMSCOL["blue", "f6"])
 #'
 #' ggplot(evals, aes(x = bty_avg, y = score,
 #'                   color = cls_perc_eval)) +
 #'   geom_jitter(size = 2) +
-#'   scale_color_gradient(low = COL[2,1], high = COL[2,8])
+#'   scale_color_gradient(low = IMSCOL["green", "full"], high = IMSCOL["green", "f6"])
+#'
 scale_fill_openintro <- function(palette = "main", discrete = TRUE, reverse = FALSE, ...) {
   pal <- openintro_pal(palette = palette, reverse = reverse)
 

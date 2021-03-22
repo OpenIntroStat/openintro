@@ -4,17 +4,20 @@ library(openintro)
 library(usethis)
 
 # Create colors and color palettes ---------------------------------------------
+# Uses IMD colors
+# TO DO: Add option to choose COL (official OpenIntro colors) as well
 
-openintro_colors <- COL[,1]
+openintro_colors <- IMSCOL[,1]
 
 openintro_palettes <- list(
-  main  = openintro_cols("blue", "green", "yellow", "red", "gray"),
+  main  = openintro_cols("blue", "green", "pink", "yellow", "red"),
   two   = openintro_cols("blue", "green"),
-  three = openintro_cols("blue", "green", "yellow"),
-  four  = openintro_cols("blue", "green", "yellow", "red"),
-  five  = openintro_cols("blue", "green", "yellow", "red", "gray"),
+  three = openintro_cols("blue", "green", "pink"),
+  four  = openintro_cols("blue", "green", "pink", "yellow"),
+  five  = openintro_cols("blue", "green", "pink", "yellow", "red"),
+  six   = openintro_cols("blue", "green", "pink", "yellow", "red", "gray"),
   cool  = openintro_cols("blue", "green"),
-  hot   = openintro_cols("yellow", "red"),
+  hot   = openintro_cols("pink", "yellow", "red"),
   gray  = openintro_cols("lgray", "gray", "black")
 )
 

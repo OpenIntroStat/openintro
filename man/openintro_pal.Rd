@@ -2,7 +2,7 @@
 % Please edit documentation in R/scale-openintro.R
 \name{openintro_pal}
 \alias{openintro_pal}
-\title{Return function to interpolate an OpenIntro color palette}
+\title{Return function to interpolate an OpenIntro IMS color palette}
 \usage{
 openintro_pal(palette = "main", reverse = FALSE, ...)
 }

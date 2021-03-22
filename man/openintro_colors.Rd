@@ -5,13 +5,13 @@
 \alias{openintro_colors}
 \title{OpenIntro colors}
 \format{
-A named character string with 6 elements: "blue", "green", "yellow", "black", "gray"
+A named character string with 9 elements: "blue", "green", "pink", "yellow", "red", "black", "gray", "lgray
 }
 \usage{
 openintro_colors
 }
 \description{
-A character string of full colors from \code{COL[,1]}
+A character string of full colors from \code{IMSCOL[,1]}
 }
 \examples{
 

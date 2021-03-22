@@ -2,7 +2,7 @@
 % Please edit documentation in R/scale-openintro.R
 \name{openintro_cols}
 \alias{openintro_cols}
-\title{Function to extract OpenIntro colors as hex codes}
+\title{Function to extract OpenIntro IMS colors as hex codes}
 \usage{
 openintro_cols(...)
 }
@@ -10,7 +10,7 @@ openintro_cols(...)
 \item{...}{Character names of \link{openintro_colors}}
 }
 \description{
-Uses full colors from \link{COL}
+Uses full colors from \link{IMSCOL}
 }
 \examples{
 

@@ -2,7 +2,7 @@
 % Please edit documentation in R/scale-openintro.R
 \name{scale_color_openintro}
 \alias{scale_color_openintro}
-\title{Color scale constructor for OpenIntro colors}
+\title{Color scale constructor for OpenIntro IMS colors}
 \usage{
 scale_color_openintro(palette = "main", discrete = TRUE, reverse = FALSE, ...)
 }
@@ -17,7 +17,7 @@ scale_color_openintro(palette = "main", discrete = TRUE, reverse = FALSE, ...)
 \code{\link[ggplot2:scale_gradient]{ggplot2::scale_color_gradientn()}}, used respectively when discrete is TRUE or FALSE}
 }
 \description{
-Color scale constructor for OpenIntro colors
+Color scale constructor for OpenIntro IMS colors
 }
 \examples{
 
@@ -26,13 +26,13 @@ library(ggplot2)
 # Categorical variable with three levels
 ggplot(evals, aes(x = bty_avg, y = score,
                       color = rank, shape = rank)) +
-  geom_jitter(size = 2, alpha = 0.8) +
+  geom_jitter(size = 2, alpha = 0.6) +
   scale_color_openintro("three")
 
 # Categorical variable with two levels
 ggplot(evals, aes(x = bty_avg, y = score,
                   color = language, shape = language)) +
-  geom_jitter(size = 2, alpha = 0.8) +
+  geom_jitter(size = 2, alpha = 0.6) +
   scale_color_openintro("two")
 
 # Continuous variable
@@ -47,11 +47,11 @@ ggplot(evals, aes(x = bty_avg, y = score,
 ggplot(evals, aes(x = bty_avg, y = score,
                   color = score)) +
   geom_jitter(size = 2) +
-  scale_color_gradient(low = COL[1,1], high = COL[1,8])
+  scale_color_gradient(low = IMSCOL["blue", "full"], high = IMSCOL["blue", "f6"])
 
 ggplot(evals, aes(x = bty_avg, y = score,
                   color = cls_perc_eval)) +
   geom_jitter(size = 2) +
-  scale_color_gradient(low = COL[2,1], high = COL[2,8])
+  scale_color_gradient(low = COL["red", "full"], high = COL["red", "f8"])
 
 }

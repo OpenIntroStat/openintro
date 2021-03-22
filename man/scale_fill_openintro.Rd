@@ -2,7 +2,7 @@
 % Please edit documentation in R/scale-openintro.R
 \name{scale_fill_openintro}
 \alias{scale_fill_openintro}
-\title{Fill scale constructor for OpenIntro colors}
+\title{Fill scale constructor for OpenIntro IMS colors}
 \usage{
 scale_fill_openintro(palette = "main", discrete = TRUE, reverse = FALSE, ...)
 }
@@ -17,7 +17,7 @@ scale_fill_openintro(palette = "main", discrete = TRUE, reverse = FALSE, ...)
 \code{\link[ggplot2:scale_gradient]{ggplot2::scale_fill_gradientn()}}, used respectively when discrete is TRUE or FALSE}
 }
 \description{
-Fill scale constructor for OpenIntro colors
+Fill scale constructor for OpenIntro IMS colors
 }
 \examples{
 
@@ -34,11 +34,10 @@ ggplot(evals, aes(x = rank, fill = rank)) +
   geom_bar() +
   scale_fill_openintro("three")
 
-# Continuous variable many levels
+# Continuous variable with levels
 # Generates a palette, but may not be the best palette
-evals \%>\%
-  mutate(score_rounded = as.factor(round(score))) \%>\%
-  ggplot(aes(x = score_rounded, fill = score_rounded)) +
+# in terms of color-blind and grayscale friendliness
+ggplot(diamonds, aes(x = clarity, fill = clarity)) +
   geom_bar() +
   scale_fill_openintro()
 
@@ -47,10 +46,11 @@ evals \%>\%
 ggplot(evals, aes(x = bty_avg, y = score,
                   color = score)) +
   geom_jitter(size = 2) +
-  scale_color_gradient(low = COL[1,1], high = COL[1,8])
+  scale_color_gradient(low = IMSCOL["blue", "full"], high = IMSCOL["blue", "f6"])
 
 ggplot(evals, aes(x = bty_avg, y = score,
                   color = cls_perc_eval)) +
   geom_jitter(size = 2) +
-  scale_color_gradient(low = COL[2,1], high = COL[2,8])
+  scale_color_gradient(low = IMSCOL["green", "full"], high = IMSCOL["green", "f6"])
+
 }
