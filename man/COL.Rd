@@ -5,7 +5,7 @@
 \alias{COL}
 \title{OpenIntro Statistics colors}
 \format{
-A \code{7-by-4} matrix of 7 colors with four fading scales: blue,
+A \code{7-by-13} matrix of 7 colors with thirteen fading scales: blue,
 green, yellow, red, black, gray, and light gray.
 }
 \source{
