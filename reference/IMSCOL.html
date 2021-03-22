@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>OpenIntro palettes — openintro_palettes • openintro</title>
+<title>Introduction to Modern Statistics (IMS) Colors — IMSCOL • openintro</title>
 
 
 <!-- jquery -->
@@ -39,8 +39,10 @@
 
 
 
-<meta property="og:title" content="OpenIntro palettes — openintro_palettes" />
-<meta property="og:description" content="A list with  OpenIntro color palettes" />
+<meta property="og:title" content="Introduction to Modern Statistics (IMS) Colors — IMSCOL" />
+<meta property="og:description" content="These are the core colors used for the Introduction to Modern Statistics textbook.
+The blue, green, pink, yellow, and red colors are also gray-scaled, meaning no
+changes are required when printing black and white copies." />
 
 
 
@@ -114,70 +116,34 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>OpenIntro palettes</h1>
-    <small class="dont-index">Source: <a href='https://github.com/OpenIntroStat/openintro/blob/master/R/data-openintro-palettes.R'><code>R/data-openintro-palettes.R</code></a></small>
-    <div class="hidden name"><code>openintro_palettes.Rd</code></div>
+    <h1>Introduction to Modern Statistics (IMS) Colors</h1>
+    <small class="dont-index">Source: <a href='https://github.com/OpenIntroStat/openintro/blob/master/R/data-IMSCOL.R'><code>R/data-IMSCOL.R</code></a></small>
+    <div class="hidden name"><code>IMSCOL.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>A list with  OpenIntro color palettes</p>
+    <p>These are the core colors used for the Introduction to Modern Statistics textbook.
+The blue, green, pink, yellow, and red colors are also gray-scaled, meaning no
+changes are required when printing black and white copies.</p>
     </div>
 
-    <pre class="usage"><span class='va'>openintro_palettes</span></pre>
+    <pre class="usage"><span class='va'>IMSCOL</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>A list with 8 color palettes: main, two, three, four, five, cool, hot, gray</p>
+    <p>A <code>8-by-13</code> matrix of 7 colors with four fading scales: blue,
+green, pink, yellow, red, black, gray, and light gray.</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
-<span class='va'>openintro_palettes</span>
-</div><div class='output co'>#&gt; $main
-#&gt;      blue     green      pink    yellow       red 
-#&gt; "#569BBD" "#114B5F" "#D89A9E" "#F4DC00" "#F05133" 
-#&gt; 
-#&gt; $two
-#&gt;      blue     green 
-#&gt; "#569BBD" "#114B5F" 
-#&gt; 
-#&gt; $three
-#&gt;      blue     green      pink 
-#&gt; "#569BBD" "#114B5F" "#D89A9E" 
-#&gt; 
-#&gt; $four
-#&gt;      blue     green      pink    yellow 
-#&gt; "#569BBD" "#114B5F" "#D89A9E" "#F4DC00" 
-#&gt; 
-#&gt; $five
-#&gt;      blue     green      pink    yellow       red 
-#&gt; "#569BBD" "#114B5F" "#D89A9E" "#F4DC00" "#F05133" 
-#&gt; 
-#&gt; $six
-#&gt;      blue     green      pink    yellow       red      gray 
-#&gt; "#569BBD" "#114B5F" "#D89A9E" "#F4DC00" "#F05133" "#808080" 
-#&gt; 
-#&gt; $cool
-#&gt;      blue     green 
-#&gt; "#569BBD" "#114B5F" 
-#&gt; 
-#&gt; $hot
-#&gt;      pink    yellow       red 
-#&gt; "#D89A9E" "#F4DC00" "#F05133" 
-#&gt; 
-#&gt; $gray
-#&gt;     lgray      gray     black 
-#&gt; "#D9D9D9" "#808080" "#000000" 
-#&gt; </div><div class='input'>
-<span class='va'>openintro_palettes</span><span class='op'>$</span><span class='va'>main</span>
-</div><div class='output co'>#&gt;      blue     green      pink    yellow       red 
-#&gt; "#569BBD" "#114B5F" "#D89A9E" "#F4DC00" "#F05133" </div><div class='input'><span class='va'>openintro_palettes</span><span class='op'>$</span><span class='va'>three</span>
-</div><div class='output co'>#&gt;      blue     green      pink 
-#&gt; "#569BBD" "#114B5F" "#D89A9E" </div><div class='input'><span class='va'>openintro_palettes</span><span class='op'>$</span><span class='va'>cool</span>
-</div><div class='output co'>#&gt;      blue     green 
-#&gt; "#569BBD" "#114B5F" </div><div class='input'><span class='va'>openintro_palettes</span><span class='op'>$</span><span class='va'>hot</span>
-</div><div class='output co'>#&gt;      pink    yellow       red 
-#&gt; "#D89A9E" "#F4DC00" "#F05133" </div><div class='input'>
+<span class='fu'><a href='https://rdrr.io/r/graphics/plot.default.html'>plot</a></span><span class='op'>(</span><span class='fl'>1</span><span class='op'>:</span><span class='fl'>7</span>, <span class='fl'>7</span><span class='op'>:</span><span class='fl'>1</span>, col<span class='op'>=</span><span class='va'>IMSCOL</span>, pch<span class='op'>=</span><span class='fl'>19</span>, cex<span class='op'>=</span><span class='fl'>6</span>, xlab<span class='op'>=</span><span class='st'>""</span>, ylab<span class='op'>=</span><span class='st'>""</span>,
+     xlim<span class='op'>=</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>0.5</span>,<span class='fl'>7.5</span><span class='op'>)</span>, ylim<span class='op'>=</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='op'>-</span><span class='fl'>2.5</span>,<span class='fl'>8</span><span class='op'>)</span>, axes<span class='op'>=</span><span class='cn'>FALSE</span><span class='op'>)</span>
+</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/text.html'>text</a></span><span class='op'>(</span><span class='fl'>1</span><span class='op'>:</span><span class='fl'>7</span>, <span class='fl'>7</span><span class='op'>:</span><span class='fl'>1</span><span class='op'>+</span><span class='fl'>0.7</span>, <span class='fu'><a href='https://rdrr.io/r/base/paste.html'>paste</a></span><span class='op'>(</span><span class='st'>"IMSCOL["</span>, <span class='fl'>1</span><span class='op'>:</span><span class='fl'>7</span>, <span class='st'>"]"</span>, sep<span class='op'>=</span><span class='st'>""</span><span class='op'>)</span>, cex<span class='op'>=</span><span class='fl'>0.9</span><span class='op'>)</span>
+</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/points.html'>points</a></span><span class='op'>(</span><span class='fl'>1</span><span class='op'>:</span><span class='fl'>7</span>, <span class='fl'>7</span><span class='op'>:</span><span class='fl'>1</span><span class='op'>-</span><span class='fl'>0.7</span>, col<span class='op'>=</span><span class='va'>IMSCOL</span><span class='op'>[</span>,<span class='fl'>2</span><span class='op'>]</span>, pch<span class='op'>=</span><span class='fl'>19</span>, cex<span class='op'>=</span><span class='fl'>6</span><span class='op'>)</span>
+</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/points.html'>points</a></span><span class='op'>(</span><span class='fl'>1</span><span class='op'>:</span><span class='fl'>7</span>, <span class='fl'>7</span><span class='op'>:</span><span class='fl'>1</span><span class='op'>-</span><span class='fl'>1.4</span>, col<span class='op'>=</span><span class='va'>IMSCOL</span><span class='op'>[</span>,<span class='fl'>3</span><span class='op'>]</span>, pch<span class='op'>=</span><span class='fl'>19</span>, cex<span class='op'>=</span><span class='fl'>6</span><span class='op'>)</span>
+</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/points.html'>points</a></span><span class='op'>(</span><span class='fl'>1</span><span class='op'>:</span><span class='fl'>7</span>, <span class='fl'>7</span><span class='op'>:</span><span class='fl'>1</span><span class='op'>-</span><span class='fl'>2.1</span>, col<span class='op'>=</span><span class='va'>IMSCOL</span><span class='op'>[</span>,<span class='fl'>4</span><span class='op'>]</span>, pch<span class='op'>=</span><span class='fl'>19</span>, cex<span class='op'>=</span><span class='fl'>6</span><span class='op'>)</span>
+</div><div class='img'><img src='IMSCOL-1.png' alt='' width='700' height='433' /></div><div class='input'>
 </div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
