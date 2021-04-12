@@ -10,10 +10,10 @@
 #' @format A data frame with 4 rows and 5 variables.
 #' \describe{
 #'   \item{race}{Race of respondent.}
-#'   \item{yes}{Number of respondents who answered "yes".}
-#'   \item{no}{Number of respondents who answered "no".}
-#'   \item{not_sure}{Number of respondents who answered "not sure".}
-#'   \item{unweighted_n}{Sample size for each race. }
+#'   \item{yes}{Percentage of respondents who answered "yes".}
+#'   \item{no}{Percentage of respondents who answered "no".}
+#'   \item{not_sure}{Percentage of respondents who answered "not sure".}
+#'   \item{unweighted_n}{Sample size for each race.}
 #' }
 #' @examples
 #'
