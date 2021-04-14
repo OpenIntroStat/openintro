@@ -1,14 +1,17 @@
-library(readr)
+# Load packages ----------------------------------------------------------------
 
-# load data ---------------------------------------------------------------------
+library(tidyverse)
+library(usethis)
 
-flow_rates <- read.csv("river_flow.csv")
+# Load data --------------------------------------------------------------------
 
-# cleaning: correct data type and format for date -------------------------------
+flow_rates_raw <- read_csv(here::here("data-raw/flow_rates/river_flow.csv"))
 
-flow_rates$date <- as.Date(flow_rates$date, 
-                           format = "%m/%d/%Y")
+# Cleaning: correct data type and format for date ------------------------------
 
-# save --------------------------------------------------------------------------
+flow_rates <- flow_rates_raw %>%
+  mutate(date = as.Date(date, format = "%m/%d/%Y"))
+
+# Dave -------------------------------------------------------------------------
 
 usethis::use_data(flow_rates, overwrite = TRUE)
