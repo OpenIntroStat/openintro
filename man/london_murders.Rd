@@ -62,9 +62,7 @@ london_murders \%>\%
 
 }
 \references{
-Inspired by
-\href{https://www.theguardian.com/news/datablog/interactive/2011/oct/05/murder-london-map}{The
-Guardian Datablog}.
+Inspired by \href{https://www.theguardian.com/news/datablog/interactive/2011/oct/05/murder-london-map}{The Guardian Datablog}.
 }
 \keyword{London}
 \keyword{crime}

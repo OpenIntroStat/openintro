@@ -30,9 +30,7 @@
 #'   \item{year}{Year of the murder.}
 #'   \item{borough}{The London borough in which the murder took place. See the Details section for a list of all the boroughs.}
 #' }
-#' @references Inspired by
-#' \href{https://www.theguardian.com/news/datablog/interactive/2011/oct/05/murder-london-map}{The
-#' Guardian Datablog}.
+#' @references Inspired by [The Guardian Datablog](https://www.theguardian.com/news/datablog/interactive/2011/oct/05/murder-london-map).
 #' @source
 #' \url{https://www.theguardian.com/news/datablog/2011/oct/05/murder-london-list#data}
 #' @keywords datasets London murder crime map

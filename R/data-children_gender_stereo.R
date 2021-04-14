@@ -2,9 +2,8 @@
 #'
 #' Stereotypes are common, but at what age do they start? This study
 #' investigates stereotypes in young children aged 5-7 years old. There are
-#' four studies reported in the
-#' \href{https://science.sciencemag.org/content/355/6323/389}{paper}, and all four
-#' data sets are provided here.
+#' four studies reported in the [paper](https://science.sciencemag.org/content/355/6323/389),
+#' and all four data sets are provided here.
 #'
 #' The structure of the data object is a little unusual, so we recommend
 #' reviewing the Examples section before starting your analysis.
@@ -20,9 +19,8 @@
 #' @docType data
 #' @format This data object is more unusual than most. It is a list of 4 data
 #' frames. The four data frames correspond to the data used in Studies 1-4 of
-#' the referenced
-#' \href{https://science.sciencemag.org/content/355/6323/389}{paper}, and these
-#' data frames each have variables (columns) that are among the following:
+#' the referenced [paper](https://science.sciencemag.org/content/355/6323/389),
+#' and these data frames each have variables (columns) that are among the following:
 #' \describe{
 #'   \item{subject}{Subject ID. Note that Subject 1 in the first data frame
 #'   (data set) does \bold{not} correspond to Subject 1 in the second data frame.}
@@ -42,7 +40,7 @@
 #'   \code{stereotype} variable reports the fraction of photos where she picked
 #'   a woman. That is, this variable differs in meaning depending on the gender
 #'   of the child. (This variable design is a little confusing, but it is useful
-#'   when analyzing the data.)  }
+#'   when analyzing the data.)}
 #'   \item{high_achieve_caution}{The proportion of trials where the child said
 #'   that children of their own gender were high-achieving in school.}
 #'   \item{interest}{Average score that measured the interest of the child in
@@ -54,19 +52,16 @@
 #' ability emerge early and influence children's interests". Science 355:6323
 #' (389-391). \url{https://science.sciencemag.org/content/355/6323/389}.
 #'
-#' The original data may be found
-#' \href{https://osf.io/yund6/?view_only=9a8505d4e87b456a89f255b43e21234e}{here}.
+#' The original data may be found [here](https://osf.io/yund6/?view_only=9a8505d4e87b456a89f255b43e21234e).
 #' @keywords datasets
 #' @examples
-#'
 #'
 #' # This data set is a little funny to work with.
 #' # If wanting to review the data for a study, we
 #' # recommend first assigning the corresponding
-#' # data frame to a new variable with a shorter
-#' # name. For instance, below we assign the second
-#' # study's data to an object called `d`
-#' # (d is for data!).
+#' # data frame to a new variable. For instance,
+#' # below we assign the second study's data to an
+#' # object called `d` (d is for data!).
 #' d <- children_gender_stereo[[2]]
 #'
 "children_gender_stereo"

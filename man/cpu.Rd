@@ -22,7 +22,7 @@ A data frame with 875 rows and 12 variables.
 }
 }
 \source{
-\href{https://www.techpowerup.com/cpu-specs/?released=2019&sort=name}{TechPowerUp CPU Database}
+\href{https://www.techpowerup.com/cpu-specs/?released=2019&sort=name}{TechPowerUp CPU Database}.
 }
 \usage{
 cpu
@@ -31,11 +31,26 @@ cpu
 Data on computer processors released between 2010 and 2020.
 }
 \examples{
-boxplot(base_clock~company, data = cpu, main="CPU Base Speed",
-  xlab = "Company", ylab = "Base Clock (GHz)")
 
-plot(cpu$process, cpu$boost_clock, main="Process Node Size V Boost Speed",
-  xlab = "Process node size (nm)", ylab = "Boost Clock (GHz)")
+library(ggplot2)
+
+# CPU base speed
+ggplot(cpu, aes(x = company, y = base_clock)) +
+  geom_boxplot() +
+  labs(
+    x = "Company",
+    y = "Base Clock (GHz)",
+    title = "CPU base speed"
+    )
+
+# Process node size vs. boost speed
+ggplot(cpu, aes(x = process, y = boost_clock)) +
+  geom_point() +
+  labs(
+    x = "Process node size (nm)",
+    y = "Boost Clock (GHz)",
+    title = "Process node size vs. boost speed"
+  )
 
 }
 \keyword{datasets}
