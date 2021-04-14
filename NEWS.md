@@ -1,5 +1,6 @@
 # openintro (development version)
 
+* Added `LazyDataCompression: xz` to DESCRIPTION per CRAN.
 * Added new datasets:
   * `earthquakes`, `mcu_films`, `salinity`, `snowfall`, `ssd_speed`, `fact_opinion`, `flow_rates`, `race_justice` by [@npaterno](https://github.com/npaterno)
   * `exam_grades`, `opportunity_cost`
