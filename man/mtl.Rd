@@ -26,10 +26,8 @@ unsure as to the meaning of this variable.}
 \item{sitting}{Self-reported time sitting per day, averaged to the
 nearest hour.}
 \item{met_minwk}{Metabolic equivalent units score (activity level). A score of
-\code{0} means \dQuote{no activity} while \code{3000} is considered
-\dQuote{high activity}.}
-\item{ipa_qgrp}{ Classification of \code{METminwk} into \code{Low} or
-\code{High}.}
+\code{0} means "no activity" while \code{3000} is considered "high activity".}
+\item{ipa_qgrp}{Classification of \code{METminwk} into \code{Low} or \code{High}.}
 \item{aca1}{Thickness of the CA1 subregion of the MTL.}
 \item{aca23dg}{Thickness of the CA23DG subregion of the MTL.}
 \item{ae_cort}{Thickness of a subregion of the MTL.}
@@ -44,7 +42,7 @@ nearest hour.}
 Siddarth P, Burggren AC, Eyre HA, Small GW, Merrill DA. 2018.
 Sedentary behavior associated with reduced medial temporal lobe thickness in
 middle-aged and older adults. PLoS ONE 13(4): e0195549.
-\url{https://doi.org/10.1371/journal.pone.0195549}
+\url{doi:10.1371/journal.pone.0195549}.
 
 Thank you to Professor Silas Bergen of Winona State University for pointing
 us to this data set!
@@ -60,11 +58,10 @@ lobe (MTL) in the brain.
 }
 \examples{
 
+library(ggplot2)
 
-# Examine the relationship between the METminwk and IPAQgrp variables.
-a <- mtl[, c("met_minwk", "ipa_qgrp")]
-a[order(a$met_minwk), ]
-
+ggplot(mtl, aes(x = ipa_qgrp, y = met_minwk)) +
+  geom_boxplot()
 
 }
 \references{
