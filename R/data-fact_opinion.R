@@ -15,6 +15,7 @@
 #' @examples
 #'
 #' library(ggplot2)
+#' library(dplyr)
 #'
 #' # Distribution of fact_correct by age group
 #' ggplot(fact_opinion, aes(x = age_group, y = fact_correct)) +
