@@ -29,6 +29,7 @@ statements they classified correctly (out of 5).
 
 library(ggplot2)
 library(dplyr)
+library(tidyr)
 
 # Distribution of fact_correct by age group
 ggplot(fact_opinion, aes(x = age_group, y = fact_correct)) +
