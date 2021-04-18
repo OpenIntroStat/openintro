@@ -1,6 +1,5 @@
 
-openintro <a href="https://www.openintro.org/"><img src="man/figures/openintro-hex.png" align="right" height="170"></a>
-=======================================================================================================================
+# openintro <img src="man/figures/logo.png" align="right" alt="" width="120" />
 
 <!-- badges: start -->
 
@@ -20,27 +19,29 @@ include color transparency; some plotting elements may not show up
 properly (or at all) when run in some versions of Windows operating
 system.
 
-Installation
-------------
+## Installation
 
 You can install the released version of openintro from
 [CRAN](https://CRAN.R-project.org) with:
 
-    install.packages("openintro")
+``` r
+install.packages("openintro")
+```
 
 You can install the development version of openintro from GitHub with:
 
-    # install.packages("devtools")
-    library(devtools)
-    install_github("OpenIntroStat/openintro")
+``` r
+# install.packages("devtools")
+library(devtools)
+install_github("OpenIntroStat/openintro")
+```
 
 This package was produced as part of the OpenIntro project. For the
 accompanying textbook, visit [openintro.org](https://openintro.org). A
 PDF of the textbook is free and paperbacks can be purchased online
 (royalty-free).
 
-Questions, bugs, feature requests
----------------------------------
+## Questions, bugs, feature requests
 
 You can file an issue to get help, report a bug, or make a feature
 request.
@@ -63,8 +64,7 @@ qualifiers](https://help.github.com/articles/searching-issues-and-pull-requests/
 (e.g. `is:pr`, `is:closed`) as needed. For example, you’d simply remove
 `is:open` to search *all* issues in the repo, open or closed.
 
-Contributing
-------------
+## Contributing
 
 Process for adding new data to the package
 
@@ -115,8 +115,7 @@ discussion before making the pull request.
     contribution, e.g. “added by
     [@mine-cetinkaya-rundel](https://github.com/mine-cetinkaya-rundel)”.
 
-Code of Conduct
----------------
+## Code of Conduct
 
 Please note that the openintro project is released with a [Contributor
 Code of

@@ -6,6 +6,8 @@
 \alias{openintro-package}
 \title{openintro: Data Sets and Supplemental Functions from 'OpenIntro' Textbooks and Labs}
 \description{
+\if{html}{\figure{logo.png}{options: align='right' alt='logo' width='120'}}
+
 Supplemental functions and data for 'OpenIntro' resources, which 
     includes open-source textbooks and resources for introductory statistics 
     (<https://www.openintro.org/>). The package contains data sets used in our 
