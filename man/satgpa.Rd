@@ -55,6 +55,6 @@ tidy(mod)
 
 }
 \references{
-\url{https://www.dartmouth.edu/~chance/course/Syllabi/Princeton96/Class12.html}
+\url{https://chance.dartmouth.edu/course/Syllabi/Princeton96/ETSValidation.html}
 }
 \keyword{datasets}

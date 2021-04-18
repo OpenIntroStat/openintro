@@ -20,9 +20,9 @@ A data frame with 978 observations on the following 10 variables.
 }
 }
 \source{
-\url{http://www.getitdunnrun.com}
-
-\url{https://www.gopherstateevents.com}
+Data were collected from GSE Timing:
+\href{https://www.gsetiming.com/results/fitness_events/results.asp?event_type=5&event_id=718}{2018 data},
+\href{https://www.gsetiming.com/results/fitness_events/results.asp?event_type=5&event_id=640}{2017 race data}.
 }
 \usage{
 get_it_dunn_run
@@ -30,7 +30,8 @@ get_it_dunn_run
 \description{
 Get it Dunn is a small regional run that got extra attention when a runner,
 Nichole Porath, made the Guiness Book of World Records for the fastest time
-pushing a double stroller in a half marathon.
+pushing a double stroller in a half marathon. This dataset contains results
+from the 2017 and 2018 races.
 }
 \examples{
 

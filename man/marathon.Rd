@@ -13,7 +13,7 @@ A data frame with 60 observations on the following 3 variables.
 }
 }
 \source{
-\url{http://www.webcitation.org/5kx7ilFLp}
+\url{https://www.webcitation.org/5kx7ilFLp}
 }
 \usage{
 marathon

@@ -13,7 +13,7 @@
 #'   \item{h_meters}{Height, in meters.}
 #'   \item{h_in}{Height, in inches.}
 #' }
-#' @source Collected from \url{http://www.nba.com}.
+#' @source Collected from [NBA](https://www.nba.com/).
 #' @keywords datasets
 #' @examples
 #'

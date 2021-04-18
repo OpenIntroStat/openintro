@@ -19,7 +19,7 @@
 #'   \item{pre_trt3}{Pre-treatment 3.}
 #'   \item{post_trt3}{Post-treatment 3.}
 #'   }
-#' @source \url{http://stat.duke.edu/resources/datasets/prison-isolation}
+#' @source \url{https://stat.duke.edu/datasets/prison-isolation}
 #' @keywords datasets
 #' @examples
 #'

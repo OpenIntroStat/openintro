@@ -13,7 +13,7 @@ A data frame with 792 observations on the following 2 variables.
 }
 \source{
 Simulation based off of summary information provided at
-\url{https://nces.ed.gov/pubs2001/2001126.pdf}
+\url{https://nces.ed.gov/pubs2001/2001126.pdf}.
 }
 \usage{
 family_college

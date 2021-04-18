@@ -17,8 +17,8 @@ Supplemental functions and data for 'OpenIntro' resources, which
 \seealso{
 Useful links:
 \itemize{
-  \item \url{http://openintrostat.github.io/openintro}
-  \item \url{https://github.com/OpenIntroStat/openintro}
+  \item \url{http://openintrostat.github.io/openintro/}
+  \item \url{https://github.com/OpenIntroStat/openintro/}
   \item Report bugs at \url{https://github.com/OpenIntroStat/openintro/issues}
 }
 

@@ -46,6 +46,6 @@
 #'
 #' Another relevant reference is a book by
 #' Hans Rosling, Anna Rosling Ronnlund, and Ola Rosling called
-#' [Factfulness](https://www.gapminder.org/factfulness-book).
+#' [Factfulness](https://www.gapminder.org/factfulness-book/).
 #'
 "rosling_responses"

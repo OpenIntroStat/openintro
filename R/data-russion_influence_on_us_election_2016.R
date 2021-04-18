@@ -18,7 +18,7 @@
 #'   United States.}
 #' }
 #' @source
-#' \url{https://www.pewresearch.org/global/2018/08/21/russians-say-their-government-did-not-try-to-influence-u-s-presidential-election}
+#' \url{https://www.pewresearch.org/global/2018/08/21/russians-say-their-government-did-not-try-to-influence-u-s-presidential-election/}
 #' @keywords datasets
 #' @examples
 #'

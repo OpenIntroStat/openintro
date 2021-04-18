@@ -34,7 +34,7 @@ These cars represent a random sample for 1993 models that were in both
 \code{small}, \code{midsize}, and \code{large} were include.
 
 Further description can be found in Lock (1993). Use the URL
-\url{http://www.amstat.org/publications/jse/v1n1/datasets.lock.html}.
+\url{http://jse.amstat.org/v1n1/datasets.lock.html}.
 }
 \examples{
 

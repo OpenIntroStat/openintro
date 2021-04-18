@@ -14,7 +14,7 @@ A data frame with 828 observations on the following 4 variables.
 }
 }
 \source{
-\url{http://content.usatoday.com/sportsdata/baseball/mlb/salaries/team},
+\url{https://databases.usatoday.com/mlb-salaries/},
 retrieved 2011-02-23.
 }
 \usage{

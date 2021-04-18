@@ -47,7 +47,7 @@ Earth Science Information Network (CIESIN), Columbia University
 In collaboration with: World Economic Forum, Geneva, Switzerland Joint
 Research Centre of the European Commission, Ispra, Italy.
 
-Available at \url{https://sedac.ciesin.columbia.edu/es/esi/ESI2005_Main_Report.pdf}.
+Available at \url{https://www.earth.columbia.edu/news/2005/images/ESI2005_policysummary.pdf}.
 }
 \usage{
 esi

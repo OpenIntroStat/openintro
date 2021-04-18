@@ -15,7 +15,7 @@ variables.
 }
 }
 \source{
-Collected from \url{http://www.nba.com}.
+Collected from \href{https://www.nba.com/}{NBA}.
 }
 \usage{
 nba_heights

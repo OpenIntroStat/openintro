@@ -1,22 +1,9 @@
-## Resubmission
-
-This is a resubmission. In this version I have:
-
-* Removed 14 datasets and 2 functions that made sense to move into other packages 
-  in order to reduce the package size. Note that the package size is still greater 
-  than 5MB. See note below.
-
-* Added dependency on 3 packages (airports, cherryblossom, and usdata) that where 
-  the datasets and functions from this package were moved into.
-  
-* Added a vignette on associated packages and datasets they contain. 
-  
 ## Test environments
 
-* local OS X install, R 4.0.1
-* GitHub Actions (ubuntu-16.04): release
+* local OS X install, R 4.0.4
+* GitHub Actions (ubuntu-20.04): release, devel
 * GitHub Actions (windows): release
-* Github Actions (macOS): release, devel
+* Github Actions (macOS): release
 * win-builder: release, devel, oldrelease
 * r-hub: windows-x86_64-oldrel, ubuntu-gcc-release, fedora-clang-devel
 
@@ -25,17 +12,6 @@ This is a resubmission. In this version I have:
 There were no ERRORs or WARNINGs.
 
 There were 2 NOTEs, explained below.
-
-* checking CRAN incoming feasibility ... NOTE
-  Maintainer: ‘Mine Çetinkaya-Rundel <cetinkaya.mine@gmail.com>’
-
-  New maintainer:
-    Mine Çetinkaya-Rundel <cetinkaya.mine@gmail.com>
-  Old maintainer(s):
-    David M Diez <david@openintro.org>
-  
-  * David M Diez notified CRAN about the change in package maintainer on 
-  2020-06-09 by email.
 
 * checking installed package size ... NOTE
     installed size is  7.1Mb

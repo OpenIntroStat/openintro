@@ -17,7 +17,7 @@
 #'   \item{gross_us}{All box office totals in US.}
 #'   \item{gross_world}{All box office totals world wide.}
 #' }
-#' @source [Internet Movie Database](http://www.imdb.com).
+#' @source [Internet Movie Database](https://www.imdb.com/).
 #' @examples
 #'
 #' library(ggplot2)

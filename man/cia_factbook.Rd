@@ -7,22 +7,23 @@
 \title{CIA Factbook Details on Countries}
 \format{
 A data frame with 259 observations on the following 11 variables.
-\describe{\item{country}{Country name.} \item{area}{Land
-area, in square kilometers. (1 square kilometer is 0.386 square miles}
+\describe{
+\item{country}{Country name.}
+\item{area}{Land area, in square kilometers. (1 square kilometer is 0.386 square miles}
 \item{birth_rate}{Birth rate, in births per 1,000 people.}
 \item{death_rate}{Death rate, in deaths per 1,000 people.}
-\item{infant_mortality_rate}{Infant mortality, in deaths per 1,000
-live births.} \item{internet_users}{Total number of internet users.}
+\item{infant_mortality_rate}{Infant mortality, in deaths per 1,000 live births.}
+\item{internet_users}{Total number of internet users.}
 \item{life_exp_at_birth}{Live expectancy at birth, in years.}
-\item{maternal_mortality_rate}{Number of female deaths per 100,000
-live births where the death is related to pregnancy or birth.}
+\item{maternal_mortality_rate}{Number of female deaths per 100,000 live births where the death is related to pregnancy or birth.}
 \item{net_migration_rate}{Net migration rate.}
 \item{population}{Total population.}
-\item{population_growth_rate}{Population growth rate.} }
+\item{population_growth_rate}{Population growth rate.}
+}
 }
 \source{
 CIA Factbook, Country Comparisons, 2014.
-\url{https://www.cia.gov/library/publications/the-world-factbook/rankorder/rankorderguide.html}
+\url{https://www.cia.gov/the-world-factbook/references/guide-to-country-comparisons/}
 }
 \usage{
 cia_factbook

@@ -16,7 +16,7 @@ A data frame with 14 observations on the following 6 variables.
 }
 }
 \source{
-\url{http://stat.duke.edu/resources/datasets/prison-isolation}
+\url{https://stat.duke.edu/datasets/prison-isolation}
 }
 \usage{
 prison
