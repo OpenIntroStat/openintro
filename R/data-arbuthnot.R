@@ -16,7 +16,7 @@
 #'   \item{girls}{number of female christenings (births)}
 #' }
 #' @source These data are excerpted from the `Arbuthnot` data set in the
-#' [HistData](https://cran.r-project.org/web/packages/HistData/index.html) package.
+#' [HistData](https://CRAN.R-project.org/package=HistData) package.
 #' @examples
 #'
 #' library(ggplot2)

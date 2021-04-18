@@ -6,7 +6,7 @@
 #' area. We do not have ideal provenance for these data. For a better documented
 #' and more recent dataset on a similar topic with similar variables,
 #' see [births14]. Additionally, `Gestation` dataset in the
-#' [mosaicData](https://cran.r-project.org/web/packages/mosaicData/index.html)
+#' [mosaicData](https://CRAN.R-project.org/package=mosaicData)
 #' package also contains similar data.
 #'
 #' @name babies

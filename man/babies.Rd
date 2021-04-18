@@ -30,7 +30,7 @@ women in the Kaiser Foundation Health Plan in the San Francisco East Bay
 area. We do not have ideal provenance for these data. For a better documented
 and more recent dataset on a similar topic with similar variables,
 see \link{births14}. Additionally, \code{Gestation} dataset in the
-\href{https://cran.r-project.org/web/packages/mosaicData/index.html}{mosaicData}
+\href{https://CRAN.R-project.org/package=mosaicData}{mosaicData}
 package also contains similar data.
 }
 \keyword{datasets}
