@@ -27,16 +27,10 @@ babies
 The Child Health and Development Studies investigate a range of topics. One
 study, in particular, considered all pregnancies between 1960 and 1967 among
 women in the Kaiser Foundation Health Plan in the San Francisco East Bay
-area. The goal is to model the weight of the infants (\code{bwt}, in ounces)
-using variables including length of pregnancy in days (\code{gestation}),
-mother's age in years (\code{age}), mother's height in inches
-(\code{height}), whether the child was the first born (\code{parity}),
-mother's pregnancy weight in pounds (\code{weight}), and whether the mother
-was a smoker (\code{smoke}).
-}
-\seealso{
-We do not have ideal provenance for these data. For a better
-documented and more recent dataset on a similar topic with similar variables,
-see \link{births14}. Additionally, \code{\link[mosaicData:Gestation]{mosaicData::Gestation()}} also contains similar data.
+area. We do not have ideal provenance for these data. For a better documented
+and more recent dataset on a similar topic with similar variables,
+see \link{births14}. Additionally, \code{Gestation} dataset in the
+\href{https://cran.r-project.org/web/packages/mosaicData/index.html}{mosaicData}
+package also contains similar data.
 }
 \keyword{datasets}
