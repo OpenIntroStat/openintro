@@ -25,7 +25,7 @@
 #' For the academic paper, see Tilcsik A, Rivera LA. 2016. Class Advantage,
 #' Commitment Penalty. The Gendered Effect of Social Class Signals in an Elite
 #' Labor Market. American Sociological Review 81:6 p1097-1131.
-#' \url{https://journals.sagepub.com/doi/abs/10.1177/0003122416668154}.
+#' \doi{10.1177/0003122416668154}.
 #' @keywords datasets
 #' @examples
 #'

@@ -11,7 +11,7 @@
 #' National Center for Health Statistics.
 #' Natality Detail File, 2014 United States.
 #' Inter-university Consortium for Political and Social Research, 2016-10-07.
-#' <doi:10.3886/ICPSR36461.v1>.
+#' \doi{10.3886/ICPSR36461.v1}.
 #'
 #' @name births14
 #' @docType data

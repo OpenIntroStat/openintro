@@ -38,8 +38,7 @@
 #' }
 #' @source Manson JE, et al. 2018. Marine n-3 Fatty Acids and Prevention of
 #' Cardiovascular Disease and Cancer. NEJMoa1811403.
-#'
-#' \url{https://www.nejm.org/doi/full/10.1056/NEJMoa1811403}
+#' \doi{10.1056/NEJMoa1811403}.
 #' @keywords datasets
 #' @examples
 #'
