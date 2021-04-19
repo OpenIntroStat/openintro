@@ -18,6 +18,8 @@ navbar:
     menu:
     - text: Datasets of OpenIntro
       href: articles/datasets.html
+  - text: News
+    href: news/index.html
   right:
   - text: OpenIntro
     href: https://www.openintro.org
