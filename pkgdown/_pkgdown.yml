@@ -2,12 +2,21 @@ url: https://openintrostat.github.io/openintro
 
 template:
   bootstrap: 4
-  bslib:
-    navbar-bg: "#569BBD"
 
 authors:
   Mine Çetinkaya-Rundel:
     href: "http://mine-cr.com/"
+
+home:
+  links:
+  - text: Learn more
+    href: https://www.openintro.org
+
+footer:
+  left:
+    structure: [project]
+    components:
+      project: "<b>openintro</b> is an R package developed by the contributors of the <a href='https://www.openintro.org/'>OpenIntro</a> project"
 
 navbar:
   left:
@@ -19,11 +28,6 @@ navbar:
       href: articles/datasets.html
   - text: News
     href: news/index.html
-  right:
-  - text: OpenIntro
-    href: https://www.openintro.org
-  - text: Code of Conduct
-    href: CODE_OF_CONDUCT.html
 
 reference:
 - title: Datasets
