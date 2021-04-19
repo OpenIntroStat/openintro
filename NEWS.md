@@ -1,4 +1,4 @@
-# openintro (development version)
+# openintro 2.1.0
 
 * Added `LazyDataCompression: xz` to DESCRIPTION per CRAN.
 * Added new datasets:
