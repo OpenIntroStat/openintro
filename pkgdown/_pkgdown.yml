@@ -2,6 +2,8 @@ url: https://openintrostat.github.io/openintro
 
 template:
   bootstrap: 4
+  bslib:
+    navbar-bg: "#569BBD"
 
 home:
   links:
@@ -249,6 +251,7 @@ reference:
   - edaPlot
   - fadeColor
   - histPlot
+  - lab_report
   - linResPlot
   - lmPlot
   - loop
