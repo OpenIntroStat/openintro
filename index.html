@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>Data Sets and Supplemental Functions from OpenIntro Textbooks and Labs • openintro</title>
 <!-- favicons --><link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
@@ -12,11 +12,13 @@
 <link rel="apple-touch-icon" type="image/png" sizes="120x120" href="apple-touch-icon-120x120.png">
 <link rel="apple-touch-icon" type="image/png" sizes="76x76" href="apple-touch-icon-76x76.png">
 <link rel="apple-touch-icon" type="image/png" sizes="60x60" href="apple-touch-icon-60x60.png">
-<!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script><!-- Bootstrap --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha256-bZLfwXAP04zRMK2BjiO8iu9pf4FbLqX6zitd+tIvLhE=" crossorigin="anonymous">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script><!-- bootstrap-toc --><link rel="stylesheet" href="bootstrap-toc.css">
-<script src="bootstrap-toc.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
+<script src="deps/jquery-3.5.1/jquery-3.5.1.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="deps/bootstrap-4.5.3/bootstrap.min.css" rel="stylesheet">
+<script src="deps/bootstrap-4.5.3/bootstrap.bundle.min.js"></script><script src="deps/bs3compat-0.2.4/tabs.js"></script><script src="deps/bs3compat-0.2.4/bs3compat.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
-<!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- pkgdown --><link href="pkgdown.css" rel="stylesheet">
+<!-- bootstrap-toc --><link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.css">
+<script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- pkgdown --><link href="pkgdown.css" rel="stylesheet">
+<link href="syntax-highlighting.css" rel="stylesheet">
 <script src="pkgdown.js"></script><meta property="og:title" content="Data Sets and Supplemental Functions from OpenIntro Textbooks and Labs">
 <meta property="og:description" content="Supplemental functions and data for OpenIntro resources, which 
     includes open-source textbooks and resources for introductory statistics 
@@ -31,93 +33,75 @@
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
 </head>
-<body data-spy="scroll" data-target="#toc">
-    <div class="container template-home">
-      <header><div class="navbar navbar-default navbar-fixed-top" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <span class="navbar-brand">
-        <a class="navbar-link" href="index.html">openintro</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.1.0</span>
-      </span>
-    </div>
+<body data-spy="scroll" data-target="#toc" data-headroom>
+    
 
-    <div id="navbar" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-<li>
-  <a href="reference/index.html">Reference</a>
+      <nav class="navbar fixed-top navbar-light navbar-expand-lg bg-light"><div class="container">
+    <a class="navbar-brand mb-0 h1" href="index.html">openintro</a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <button type="button" id="version-badge" class="badge badge-default d-none d-lg-block" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Released version">2.1.0</button>
+
+    <div id="navbar" class="collapse navbar-collapse">
+      <ul class="navbar-nav mr-auto ml-3">
+<li class="nav-item">
+  <a class="nav-link" href="reference/index.html">Reference</a>
 </li>
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    Articles
-     
-    <span class="caret"></span>
-  </a>
-  <ul class="dropdown-menu" role="menu">
-<li>
-      <a href="articles/datasets.html">Datasets of OpenIntro</a>
-    </li>
-  </ul>
-</li>
-      </ul>
-<ul class="nav navbar-nav navbar-right">
-<li>
-  <a href="https://www.openintro.org">OpenIntro</a>
-</li>
-<li>
-  <a href="CODE_OF_CONDUCT.html">Code of Conduct</a>
-</li>
-      </ul>
-</div>
-<!--/.nav-collapse -->
+<li class="nav-item dropdown">
+  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">Articles</a>
+  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+    <a class="dropdown-item" href="articles/datasets.html">Datasets of OpenIntro</a>
   </div>
-<!--/.container -->
+</li>
+      </ul>
+<ul class="navbar-nav ml-1">
+<li class="nav-item">
+  <a class="nav-link" href="https://www.openintro.org">OpenIntro</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" href="CODE_OF_CONDUCT.html">Code of Conduct</a>
+</li>
+      </ul>
 </div>
-<!--/.navbar -->
-
-      
-
-      </header><div class="row">
+  </div>
+</nav><div class="container template-home">
+<div class="row">
   <div class="contents col-md-9">
-<div id="openintro-" class="section level1">
-<div class="page-header"><h1 class="hasAnchor">
-<a href="#openintro-" class="anchor"></a>openintro <img src="reference/figures/logo.png" align="right" alt="" width="120">
-</h1></div>
+<img src="package-logo.png" class="pkg-logo" alt="" width="120"><div id="openintro-" class="section level1">
+<div class="pb-2 mt-4 mb-2 border-bottom"><h1 class="hasAnchor">
+<a href="#openintro-" class="anchor"></a>openintro </h1></div>
 <!-- badges: start -->
 
-<p>Supplemental functions and data for OpenIntro resources, which includes open-source textbooks and resources for introductory statistics at <a href="https://www.openintro.org/">openintro.org</a>. The package contains data sets used in our open-source textbooks along with custom plotting functions for reproducing book figures. The package also contains the datasets used in OpenIntro labs. Note that many functions and examples include color transparency; some plotting elements may not show up properly (or at all) when run in some versions of Windows operating system.</p>
+<p>Supplemental functions and data for OpenIntro resources, which includes open-source textbooks and resources for introductory statistics at <a href="https://www.openintro.org/" class="external-link">openintro.org</a>. The package contains data sets used in our open-source textbooks along with custom plotting functions for reproducing book figures. The package also contains the datasets used in OpenIntro labs. Note that many functions and examples include color transparency; some plotting elements may not show up properly (or at all) when run in some versions of Windows operating system.</p>
 <div id="installation" class="section level2">
 <h2 class="hasAnchor">
 <a href="#installation" class="anchor"></a>Installation</h2>
-<p>You can install the released version of openintro from <a href="https://CRAN.R-project.org">CRAN</a> with:</p>
+<p>You can install the released version of openintro from <a href="https://CRAN.R-project.org" class="external-link">CRAN</a> with:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span><span class="op">(</span><span class="st">"openintro"</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"openintro"</span><span class="op">)</span></code></pre></div>
 <p>You can install the development version of openintro from GitHub with:</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="co"># install.packages("devtools")</span>
-<span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va">devtools</span><span class="op">)</span>
+<span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va">devtools</span><span class="op">)</span>
 <span class="fu">install_github</span><span class="op">(</span><span class="st">"OpenIntroStat/openintro"</span><span class="op">)</span></code></pre></div>
-<p>This package was produced as part of the OpenIntro project. For the accompanying textbook, visit <a href="https://openintro.org">openintro.org</a>. A PDF of the textbook is free and paperbacks can be purchased online (royalty-free).</p>
+<p>This package was produced as part of the OpenIntro project. For the accompanying textbook, visit <a href="https://openintro.org" class="external-link">openintro.org</a>. A PDF of the textbook is free and paperbacks can be purchased online (royalty-free).</p>
 </div>
 <div id="questions-bugs-feature-requests" class="section level2">
 <h2 class="hasAnchor">
 <a href="#questions-bugs-feature-requests" class="anchor"></a>Questions, bugs, feature requests</h2>
 <p>You can file an issue to get help, report a bug, or make a feature request.</p>
-<p>When filing an issue to get help or report a bug, please make a minimal <strong>repr</strong>oducible <strong>ex</strong>ample using the <a href="https://reprex.tidyverse.org/">reprex</a> package. If you haven’t heard of or used reprex before, you’re in for a treat! Seriously, reprex will make all of your R-question-asking endeavors easier (which is a pretty insane ROI for the five to ten minutes it’ll take you to learn what it’s all about). For additional reprex pointers, check out the <a href="https://www.tidyverse.org/help/">Get help!</a> section of the tidyverse site.</p>
-<p>Before opening a new issue, be sure to <a href="https://github.com/openintrostat/openintro/issues">search issues and pull requests</a> to make sure the bug hasn’t been reported and/or already fixed in the development version. By default, the search will be pre-populated with <code>is:issue is:open</code>. You can <a href="https://help.github.com/articles/searching-issues-and-pull-requests/">edit the qualifiers</a> (e.g. <code>is:pr</code>, <code>is:closed</code>) as needed. For example, you’d simply remove <code>is:open</code> to search <em>all</em> issues in the repo, open or closed.</p>
+<p>When filing an issue to get help or report a bug, please make a minimal <strong>repr</strong>oducible <strong>ex</strong>ample using the <a href="https://reprex.tidyverse.org/" class="external-link">reprex</a> package. If you haven’t heard of or used reprex before, you’re in for a treat! Seriously, reprex will make all of your R-question-asking endeavors easier (which is a pretty insane ROI for the five to ten minutes it’ll take you to learn what it’s all about). For additional reprex pointers, check out the <a href="https://www.tidyverse.org/help/" class="external-link">Get help!</a> section of the tidyverse site.</p>
+<p>Before opening a new issue, be sure to <a href="https://github.com/openintrostat/openintro/issues" class="external-link">search issues and pull requests</a> to make sure the bug hasn’t been reported and/or already fixed in the development version. By default, the search will be pre-populated with <code>is:issue is:open</code>. You can <a href="https://help.github.com/articles/searching-issues-and-pull-requests/" class="external-link">edit the qualifiers</a> (e.g. <code>is:pr</code>, <code>is:closed</code>) as needed. For example, you’d simply remove <code>is:open</code> to search <em>all</em> issues in the repo, open or closed.</p>
 </div>
 <div id="contributing" class="section level2">
 <h2 class="hasAnchor">
 <a href="#contributing" class="anchor"></a>Contributing</h2>
 <p>Process for adding new data to the package</p>
 <p>The following steps use the <strong>devtools</strong> and <strong>usethis</strong> packages for various steps. We recommend using this process when suggesting new datasets to be added to the package. If the dataset is large (&gt;500MB) or you’d like to add a function, please open an issue first for discussion before making the pull request.</p>
-<ol>
+<ol style="list-style-type: decimal">
 <li>Fork and clone the repo with <code>usethis::create_from_github("OpenIntroStat/openintro")</code>
 <ul>
 <li>Note: If you have write access to the repo, you can skip this step.</li>
@@ -127,25 +111,26 @@
 <li>If adding a file that is not an .rda file to begin with (Excel, csv, etc.), create a folder in the <code>data-raw</code> folder with the name of the dataset (how you’d like it to show up in the package). Please use <code>snake_case</code> for naming, e.g. <code>name_of_dataset</code>.</li>
 <li>Place your dataset in its raw form in the folder.</li>
 <li>Also in the <code>data-raw</code> folder, create a new R script called <code>name_of_dataset-dataprep.R</code> and write the code needed to read in the file, make any modifications to the data that are needed (if any), and end with <code>usethis::use_data()</code> to save the data in the package as an .rda file with the ideal compression. See examples from other folders in <code>data-raw</code> for sample code. The contents of this folder do not end up in the package (the entire folder is ignored in the <code>.Rbuildignore</code>) so you don’t need to worry about adding package dependencies etc.</li>
-<li>In the <code>R</code> folder, create an R script called <code>data-name_of_dataset</code> and add documentation using Roxygen style. See other documentation files for help with style. In the examples, use tidyverse syntax but do not use <code><a href="https://rdrr.io/r/base/library.html">library(tidyverse)</a></code> and only use the relevant packages, e.g. <code><a href="https://dplyr.tidyverse.org">library(dplyr)</a></code>, <code><a href="https://ggplot2.tidyverse.org">library(ggplot2)</a></code>.</li>
+<li>In the <code>R</code> folder, create an R script called <code>data-name_of_dataset</code> and add documentation using Roxygen style. See other documentation files for help with style. In the examples, use tidyverse syntax but do not use <code><a href="https://rdrr.io/r/base/library.html" class="external-link">library(tidyverse)</a></code> and only use the relevant packages, e.g. <code><a href="https://dplyr.tidyverse.org" class="external-link">library(dplyr)</a></code>, <code><a href="https://ggplot2.tidyverse.org" class="external-link">library(ggplot2)</a></code>.</li>
 <li>Restart R and run <code>devtools::load_all()</code> to make sure the data loads and run your examples to confirm they all work.</li>
 <li>Run <code>devtools::docment()</code>, restart R, and then <code>devtools::load_all()</code>. Then, check out <code>?name_of_dataset</code> to make sure the documentation looks as expected.</li>
 <li>Run <code>devtools::check()</code>. The only NOTE you should see as a result of the check should be about the package size. If any other ERRORs, NOTEs, or WARNINGs are generated, resolve them or open an issue for help.</li>
 <li>In the <code>pkgdown.yml</code> file, add the name of the dataset under <code>reference</code>, in the correct alphabetical order.</li>
-<li>Add a note in the <code>NEWS.md</code> with the new dataset you’ve added with a link to your GitHub username so we can acknowledge your contribution, e.g. “added by <a href="https://github.com/mine-cetinkaya-rundel">@mine-cetinkaya-rundel</a>”.</li>
+<li>Add a note in the <code>NEWS.md</code> with the new dataset you’ve added with a link to your GitHub username so we can acknowledge your contribution, e.g. “added by <a href="https://github.com/mine-cetinkaya-rundel" class="external-link">@mine-cetinkaya-rundel</a>”.</li>
 </ol>
 </div>
 <div id="code-of-conduct" class="section level2">
 <h2 class="hasAnchor">
 <a href="#code-of-conduct" class="anchor"></a>Code of Conduct</h2>
-<p>Please note that the openintro project is released with a <a href="https://contributor-covenant.org/version/2/0/CODE_OF_CONDUCT.html">Contributor Code of Conduct</a>. By contributing to this project, you agree to abide by its terms.</p>
+<p>Please note that the openintro project is released with a <a href="https://contributor-covenant.org/version/2/0/CODE_OF_CONDUCT.html" class="external-link">Contributor Code of Conduct</a>. By contributing to this project, you agree to abide by its terms.</p>
 </div>
 </div>
   </div>
 
-  <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
-    <div class="links">
-<h2>Links</h2>
+  <div class="col-md-3 d-none d-md-block" id="sidebar">
+      <div class="sticky-top">
+        <div class="links">
+<h2 data-toc-skip>Links</h2>
 <ul class="list-unstyled">
 <li>Download from CRAN at <br><a href="https://cloud.r-project.org/package=openintro">https://​cloud.r-project.org/​package=openintro</a>
 </li>
@@ -157,21 +142,24 @@
 </li>
 </ul>
 </div>
+
 <div class="license">
-<h2>License</h2>
+<h2 data-toc-skip>License</h2>
 <ul class="list-unstyled">
 <li><a href="LICENSE.html">Full license</a></li>
 <li><small><a href="https://www.r-project.org/Licenses/GPL-3">GPL-3</a></small></li>
 </ul>
 </div>
+
 <div class="community">
-<h2>Community</h2>
+<h2 data-toc-skip>Community</h2>
 <ul class="list-unstyled">
 <li><a href="CODE_OF_CONDUCT.html">Code of conduct</a></li>
 </ul>
 </div>
+
 <div class="developers">
-<h2>Developers</h2>
+<h2 data-toc-skip>Developers</h2>
 <ul class="list-unstyled">
 <li>Mine Çetinkaya-Rundel <br><small class="roles"> Author, maintainer </small> <a href="https://orcid.org/0000-0001-6452-2420" target="orcid.widget" aria-label="ORCID"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
 <li>David Diez <br><small class="roles"> Author </small>  </li>
@@ -184,23 +172,27 @@
 </ul>
 </div>
 
-  <div class="dev-status">
-<h2>Dev status</h2>
+<div class="dev-status">
+<h2 data-toc-skip>Dev status</h2>
 <ul class="list-unstyled">
-<li><a href="https://cran.r-project.org/package=openintro"><img src="https://www.r-pkg.org/badges/version/openintro" alt="CRAN status"></a></li>
-<li><a href="https://github.com/OpenIntroStat/openintro/actions"><img src="https://github.com/OpenIntroStat/openintro/workflows/R-CMD-check/badge.svg" alt="R build status"></a></li>
+<li><a href="https://cran.r-project.org/package=openintro" class="external-link"><img src="https://www.r-pkg.org/badges/version/openintro" alt="CRAN status"></a></li>
+<li><a href="https://github.com/OpenIntroStat/openintro/actions" class="external-link"><img src="https://github.com/OpenIntroStat/openintro/workflows/R-CMD-check/badge.svg" alt="R build status"></a></li>
 </ul>
 </div>
-</div>
-</div>
 
-
-      <footer><div class="copyright">
-  <p>Developed by Mine Çetinkaya-Rundel, David Diez, Andrew Bray, Albert Y. Kim, Ben Baumer, Chester Ismay, Nick Paterno, Christopher Barr.</p>
+      </div>
+  </div>
 </div>
 
-<div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
+
+      <footer><div class="pkgdown-footer-left">
+  <p></p>
+<p>Developed by Mine Çetinkaya-Rundel, David Diez, Andrew Bray, Albert Y. Kim, Ben Baumer, Chester Ismay, Nick Paterno, Christopher Barr.</p>
+</div>
+
+<div class="pkgdown-footer-right">
+  <p></p>
+<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 1.6.1.9001.</p>
 </div>
 
       </footer>
@@ -208,6 +200,8 @@
 
   
 
+
+  
 
   </body>
 </html>
