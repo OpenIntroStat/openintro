@@ -8,6 +8,13 @@
 
 <title>Can Americans categorize facts and opinions? — fact_opinion • openintro</title>
 
+<!-- favicons -->
+<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+<link rel="apple-touch-icon" type="image/png" sizes="180x180" href="../apple-touch-icon.png" />
+<link rel="apple-touch-icon" type="image/png" sizes="120x120" href="../apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon" type="image/png" sizes="76x76" href="../apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon" type="image/png" sizes="60x60" href="../apple-touch-icon-60x60.png" />
 
 <!-- jquery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -40,8 +47,12 @@
 
 
 <meta property="og:title" content="Can Americans categorize facts and opinions? — fact_opinion" />
-<meta property="og:description" content="Pew Research Center conducted a survey in 2018, asking
-participants to categorize five factual and five opinion statements." />
+<meta property="og:description" content="Pew Research Center conducted a survey in 2018, asking a sample of
+U.S. adults to categorize five factual and five opinion statements.
+This dataset provides data from this survey, with information on the age
+group of the participant as well as the number of factual and opinion
+statements they classified correctly (out of 5)." />
+<meta property="og:image" content="https://openintrostat.github.io/openintro/logo.png" />
 
 
 
@@ -73,7 +84,7 @@ participants to categorize five factual and five opinion statements." />
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">openintro</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.0.0.9000</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.1.0</span>
       </span>
     </div>
 
@@ -121,8 +132,11 @@ participants to categorize five factual and five opinion statements." />
     </div>
 
     <div class="ref-description">
-    <p>Pew Research Center conducted a survey in 2018, asking
-participants to categorize five factual and five opinion statements.</p>
+    <p>Pew Research Center conducted a survey in 2018, asking a sample of
+U.S. adults to categorize five factual and five opinion statements.
+This dataset provides data from this survey, with information on the age
+group of the participant as well as the number of factual and opinion
+statements they classified correctly (out of 5).</p>
     </div>
 
     <pre class="usage"><span class='va'>fact_opinion</span></pre>
@@ -130,7 +144,7 @@ participants to categorize five factual and five opinion statements.</p>
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>A data frame with 5035 rows and 3 variables.</p><dl>
+    <p>A data frame with 5,035 rows and 3 variables.</p><dl>
 <dt>age_group</dt><dd><p>Age group of survey participant.</p></dd>
 <dt>fact_correct</dt><dd><p>Number of factual statements classified correctly (out of 5).</p></dd>
 <dt>opinion_correct</dt><dd><p>Number of opinion statements classified correctly (out of 5).</p></dd>
@@ -139,13 +153,61 @@ participants to categorize five factual and five opinion statements.</p>
 
     <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
 
-    <p><a href='https://www.pewresearch.org/fact-tank/2018/10/23/younger-americans-are-better-than-older-americans-at-telling-factual-news-statements-from-opinions/'>Pew Research Center</a></p>
+    <p><a href='https://www.pewresearch.org/fact-tank/2018/10/23/younger-americans-are-better-than-older-americans-at-telling-factual-news-statements-from-opinions/'>Younger Americans are better than older Americans at telling factual news statements from opinions</a>, Pew Research Center, October 23, 2018.</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/boxplot.html'>boxplot</a></span><span class='op'>(</span><span class='va'>fact_correct</span><span class='op'>~</span><span class='va'>age_group</span>, data <span class='op'>=</span> <span class='va'>fact_opinion</span>,
-  main <span class='op'>=</span> <span class='st'>"Number of Factual Statements Correctly Categorized"</span>,
-  xlab <span class='op'>=</span> <span class='st'>"Age Group"</span>, ylab <span class='op'>=</span> <span class='st'>"Number Correct (out of 5)"</span><span class='op'>)</span>
+    <pre class="examples"><div class='input'>
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://ggplot2.tidyverse.org'>ggplot2</a></span><span class='op'>)</span>
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://dplyr.tidyverse.org'>dplyr</a></span><span class='op'>)</span>
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://tidyr.tidyverse.org'>tidyr</a></span><span class='op'>)</span>
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://forcats.tidyverse.org'>forcats</a></span><span class='op'>)</span>
+
+<span class='co'># Distribution of fact_correct by age group</span>
+<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span><span class='va'>fact_opinion</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>age_group</span>, y <span class='op'>=</span> <span class='va'>fact_correct</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_boxplot.html'>geom_boxplot</a></span><span class='op'>(</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span><span class='op'>(</span>
+    x <span class='op'>=</span> <span class='st'>"Age group"</span>,
+    y <span class='op'>=</span> <span class='st'>"Number correct (factual)"</span>,
+    title <span class='op'>=</span> <span class='st'>"Number of factual statements classified correctly by age group"</span>
+    <span class='op'>)</span>
 </div><div class='img'><img src='fact_opinion-1.png' alt='' width='700' height='433' /></div><div class='input'>
+<span class='co'># Distribution of opinion_correct by age group</span>
+<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span><span class='va'>fact_opinion</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>age_group</span>, y <span class='op'>=</span> <span class='va'>opinion_correct</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_boxplot.html'>geom_boxplot</a></span><span class='op'>(</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span><span class='op'>(</span>
+    x <span class='op'>=</span> <span class='st'>"Age group"</span>,
+    y <span class='op'>=</span> <span class='st'>"Number correct (opinion)"</span>,
+    title <span class='op'>=</span> <span class='st'>"Number of opinion statements classified correctly by age group"</span>
+    <span class='op'>)</span>
+</div><div class='img'><img src='fact_opinion-2.png' alt='' width='700' height='433' /></div><div class='input'>
+<span class='co'># Replicating the figure from Pew report (see source for link)</span>
+<span class='va'>fact_opinion</span> <span class='op'>%&gt;%</span>
+  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/mutate.html'>mutate</a></span><span class='op'>(</span>
+    facts <span class='op'>=</span> <span class='fu'><a href='https://dplyr.tidyverse.org/reference/case_when.html'>case_when</a></span><span class='op'>(</span>
+      <span class='va'>fact_correct</span> <span class='op'>&lt;=</span> <span class='fl'>2</span>        <span class='op'>~</span> <span class='st'>"Two or fewer"</span>,
+      <span class='va'>fact_correct</span> <span class='op'>%in%</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>3</span>,<span class='fl'>4</span><span class='op'>)</span> <span class='op'>~</span> <span class='st'>"Three or four"</span>,
+      <span class='va'>fact_correct</span> <span class='op'>==</span> <span class='fl'>5</span>        <span class='op'>~</span> <span class='st'>"All five"</span>
+      <span class='op'>)</span>,
+    facts <span class='op'>=</span> <span class='fu'><a href='https://forcats.tidyverse.org/reference/fct_relevel.html'>fct_relevel</a></span><span class='op'>(</span><span class='va'>facts</span>, <span class='st'>"Two or fewer"</span>, <span class='st'>"Three or four"</span>, <span class='st'>"All five"</span><span class='op'>)</span>,
+    opinions <span class='op'>=</span> <span class='fu'><a href='https://dplyr.tidyverse.org/reference/case_when.html'>case_when</a></span><span class='op'>(</span>
+      <span class='va'>opinion_correct</span> <span class='op'>&lt;=</span> <span class='fl'>2</span>        <span class='op'>~</span> <span class='st'>"Two or fewer"</span>,
+      <span class='va'>opinion_correct</span> <span class='op'>%in%</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>3</span>,<span class='fl'>4</span><span class='op'>)</span> <span class='op'>~</span> <span class='st'>"Three or four"</span>,
+      <span class='va'>opinion_correct</span> <span class='op'>==</span> <span class='fl'>5</span>        <span class='op'>~</span> <span class='st'>"All five"</span>
+      <span class='op'>)</span>,
+    opinions <span class='op'>=</span> <span class='fu'><a href='https://forcats.tidyverse.org/reference/fct_relevel.html'>fct_relevel</a></span><span class='op'>(</span><span class='va'>opinions</span>, <span class='st'>"Two or fewer"</span>, <span class='st'>"Three or four"</span>, <span class='st'>"All five"</span><span class='op'>)</span>
+  <span class='op'>)</span> <span class='op'>%&gt;%</span>
+  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/select.html'>select</a></span><span class='op'>(</span><span class='op'>-</span><span class='va'>fact_correct</span>, <span class='op'>-</span><span class='va'>opinion_correct</span><span class='op'>)</span> <span class='op'>%&gt;%</span>
+  <span class='fu'><a href='https://tidyr.tidyverse.org/reference/pivot_longer.html'>pivot_longer</a></span><span class='op'>(</span>cols <span class='op'>=</span> <span class='op'>-</span><span class='va'>age_group</span>, names_to <span class='op'>=</span> <span class='st'>"question_type"</span>, values_to <span class='op'>=</span> <span class='st'>"n_correct"</span><span class='op'>)</span> <span class='op'>%&gt;%</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>y <span class='op'>=</span> <span class='fu'><a href='https://forcats.tidyverse.org/reference/fct_rev.html'>fct_rev</a></span><span class='op'>(</span><span class='va'>age_group</span><span class='op'>)</span>, fill <span class='op'>=</span> <span class='va'>n_correct</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_bar.html'>geom_bar</a></span><span class='op'>(</span>position <span class='op'>=</span> <span class='st'>"fill"</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/facet_wrap.html'>facet_wrap</a></span><span class='op'>(</span><span class='op'>~</span><span class='va'>question_type</span>, ncol <span class='op'>=</span> <span class='fl'>1</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/scale_viridis.html'>scale_fill_viridis_d</a></span><span class='op'>(</span>guide <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/guide_legend.html'>guide_legend</a></span><span class='op'>(</span>reverse <span class='op'>=</span> <span class='cn'>TRUE</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span><span class='op'>(</span>
+    x <span class='op'>=</span> <span class='st'>"Proportion"</span>,
+    y <span class='op'>=</span> <span class='st'>"Age group"</span>,
+    fill <span class='op'>=</span> <span class='st'>"Number of\ncorrect\nclassifications"</span>
+  <span class='op'>)</span>
+</div><div class='img'><img src='fact_opinion-3.png' alt='' width='700' height='433' /></div><div class='input'>
 </div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">

@@ -8,6 +8,13 @@
 
 <title>Gender Stereotypes in 5-7 year old Children — children_gender_stereo • openintro</title>
 
+<!-- favicons -->
+<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+<link rel="apple-touch-icon" type="image/png" sizes="180x180" href="../apple-touch-icon.png" />
+<link rel="apple-touch-icon" type="image/png" sizes="120x120" href="../apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon" type="image/png" sizes="76x76" href="../apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon" type="image/png" sizes="60x60" href="../apple-touch-icon-60x60.png" />
 
 <!-- jquery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -42,9 +49,9 @@
 <meta property="og:title" content="Gender Stereotypes in 5-7 year old Children — children_gender_stereo" />
 <meta property="og:description" content="Stereotypes are common, but at what age do they start? This study
 investigates stereotypes in young children aged 5-7 years old. There are
-four studies reported in the
-paper, and all four
-data sets are provided here." />
+four studies reported in the paper,
+and all four data sets are provided here." />
+<meta property="og:image" content="https://openintrostat.github.io/openintro/logo.png" />
 
 
 
@@ -76,7 +83,7 @@ data sets are provided here." />
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">openintro</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.0.0.9000</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.1.0</span>
       </span>
     </div>
 
@@ -126,9 +133,8 @@ data sets are provided here." />
     <div class="ref-description">
     <p>Stereotypes are common, but at what age do they start? This study
 investigates stereotypes in young children aged 5-7 years old. There are
-four studies reported in the
-<a href='https://science.sciencemag.org/content/355/6323/389'>paper</a>, and all four
-data sets are provided here.</p>
+four studies reported in the <a href='https://science.sciencemag.org/content/355/6323/389'>paper</a>,
+and all four data sets are provided here.</p>
     </div>
 
     <pre class="usage"><span class='va'>children_gender_stereo</span></pre>
@@ -138,9 +144,8 @@ data sets are provided here.</p>
 
     <p>This data object is more unusual than most. It is a list of 4 data
 frames. The four data frames correspond to the data used in Studies 1-4 of
-the referenced
-<a href='https://science.sciencemag.org/content/355/6323/389'>paper</a>, and these
-data frames each have variables (columns) that are among the following:</p><dl>
+the referenced <a href='https://science.sciencemag.org/content/355/6323/389'>paper</a>,
+and these data frames each have variables (columns) that are among the following:</p><dl>
 <dt>subject</dt><dd><p>Subject ID. Note that Subject 1 in the first data frame
 (data set) does <b>not</b> correspond to Subject 1 in the second data frame.</p></dd>
 <dt>gender</dt><dd><p>Gender of the subject.</p></dd>
@@ -174,8 +179,7 @@ the &#8220;smart&#8221; game and their interest in the &#8220;try-hard&#8221; ga
     <p>Bian L, Leslie SJ, Cimpian A. 2017. "Gender stereotypes about intellectual
 ability emerge early and influence children's interests". Science 355:6323
 (389-391). <a href='https://science.sciencemag.org/content/355/6323/389'>https://science.sciencemag.org/content/355/6323/389</a>.</p>
-<p>The original data may be found
-<a href='https://osf.io/yund6/?view_only=9a8505d4e87b456a89f255b43e21234e'>here</a>.</p>
+<p>The original data may be found <a href='https://osf.io/yund6/?view_only=9a8505d4e87b456a89f255b43e21234e'>here</a>.</p>
     <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
 
     <p>The structure of the data object is a little unusual, so we recommend
@@ -187,14 +191,12 @@ here.</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
-
 <span class='co'># This data set is a little funny to work with.</span>
 <span class='co'># If wanting to review the data for a study, we</span>
 <span class='co'># recommend first assigning the corresponding</span>
-<span class='co'># data frame to a new variable with a shorter</span>
-<span class='co'># name. For instance, below we assign the second</span>
-<span class='co'># study's data to an object called `d`</span>
-<span class='co'># (d is for data!).</span>
+<span class='co'># data frame to a new variable. For instance,</span>
+<span class='co'># below we assign the second study's data to an</span>
+<span class='co'># object called `d` (d is for data!).</span>
 <span class='va'>d</span> <span class='op'>&lt;-</span> <span class='va'>children_gender_stereo</span><span class='op'>[[</span><span class='fl'>2</span><span class='op'>]</span><span class='op'>]</span>
 
 </div></pre>

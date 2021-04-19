@@ -8,6 +8,13 @@
 
 <title>Medial temporal lobe (MTL) and other data for 26 participants — mtl • openintro</title>
 
+<!-- favicons -->
+<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+<link rel="apple-touch-icon" type="image/png" sizes="180x180" href="../apple-touch-icon.png" />
+<link rel="apple-touch-icon" type="image/png" sizes="120x120" href="../apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon" type="image/png" sizes="76x76" href="../apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon" type="image/png" sizes="60x60" href="../apple-touch-icon-60x60.png" />
 
 <!-- jquery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -44,6 +51,7 @@
 middle-aged or older. The purpose of the study was to understand the
 relationship between sedentary behavior and thickness of the medial temporal
 lobe (MTL) in the brain." />
+<meta property="og:image" content="https://openintrostat.github.io/openintro/logo.png" />
 
 
 
@@ -75,7 +83,7 @@ lobe (MTL) in the brain." />
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">openintro</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.0.0.9000</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.1.0</span>
       </span>
     </div>
 
@@ -154,10 +162,8 @@ unsure as to the meaning of this variable.</p></dd>
 <dt>sitting</dt><dd><p>Self-reported time sitting per day, averaged to the
 nearest hour.</p></dd>
 <dt>met_minwk</dt><dd><p>Metabolic equivalent units score (activity level). A score of
-<code>0</code> means &#8220;no activity&#8221; while <code>3000</code> is considered
-&#8220;high activity&#8221;.</p></dd>
-<dt>ipa_qgrp</dt><dd><p>Classification of <code>METminwk</code> into <code>Low</code> or
-<code>High</code>.</p></dd>
+<code>0</code> means "no activity" while <code>3000</code> is considered "high activity".</p></dd>
+<dt>ipa_qgrp</dt><dd><p>Classification of <code>METminwk</code> into <code>Low</code> or <code>High</code>.</p></dd>
 <dt>aca1</dt><dd><p>Thickness of the CA1 subregion of the MTL.</p></dd>
 <dt>aca23dg</dt><dd><p>Thickness of the CA23DG subregion of the MTL.</p></dd>
 <dt>ae_cort</dt><dd><p>Thickness of a subregion of the MTL.</p></dd>
@@ -174,7 +180,8 @@ nearest hour.</p></dd>
     <p>Siddarth P, Burggren AC, Eyre HA, Small GW, Merrill DA. 2018.
 Sedentary behavior associated with reduced medial temporal lobe thickness in
 middle-aged and older adults. PLoS ONE 13(4): e0195549.
-<a href='https://doi.org/10.1371/journal.pone.0195549'>https://doi.org/10.1371/journal.pone.0195549</a></p>
+doi: <a href='https://doi.org/10.1371/journal.pone.0195549'>10.1371/journal.pone.0195549</a>
+.</p>
 <p>Thank you to Professor Silas Bergen of Winona State University for pointing
 us to this data set!</p>
     <h2 class="hasAnchor" id="references"><a class="anchor" href="#references"></a>References</h2>
@@ -184,26 +191,12 @@ us to this data set!</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://ggplot2.tidyverse.org'>ggplot2</a></span><span class='op'>)</span>
 
-<span class='co'># Examine the relationship between the METminwk and IPAQgrp variables.</span>
-<span class='va'>a</span> <span class='op'>&lt;-</span> <span class='va'>mtl</span><span class='op'>[</span>, <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"met_minwk"</span>, <span class='st'>"ipa_qgrp"</span><span class='op'>)</span><span class='op'>]</span>
-<span class='va'>a</span><span class='op'>[</span><span class='fu'><a href='https://rdrr.io/r/base/order.html'>order</a></span><span class='op'>(</span><span class='va'>a</span><span class='op'>$</span><span class='va'>met_minwk</span><span class='op'>)</span>, <span class='op'>]</span>
-</div><div class='output co'>#&gt; <span style='color: #949494;'># A tibble: 35 x 2</span><span>
-#&gt;    met_minwk ipa_qgrp
-#&gt;        </span><span style='color: #949494;font-style: italic;'>&lt;dbl&gt;</span><span> </span><span style='color: #949494;font-style: italic;'>&lt;chr&gt;</span><span>   
-#&gt; </span><span style='color: #BCBCBC;'> 1</span><span>       99  Low     
-#&gt; </span><span style='color: #BCBCBC;'> 2</span><span>      132  Low     
-#&gt; </span><span style='color: #BCBCBC;'> 3</span><span>      360  Low     
-#&gt; </span><span style='color: #BCBCBC;'> 4</span><span>      396  Low     
-#&gt; </span><span style='color: #BCBCBC;'> 5</span><span>      495  Low     
-#&gt; </span><span style='color: #BCBCBC;'> 6</span><span>      594  Low     
-#&gt; </span><span style='color: #BCBCBC;'> 7</span><span>      644. Low     
-#&gt; </span><span style='color: #BCBCBC;'> 8</span><span>      684  Low     
-#&gt; </span><span style='color: #BCBCBC;'> 9</span><span>      693  Low     
-#&gt; </span><span style='color: #BCBCBC;'>10</span><span>      693  Low     
-#&gt; </span><span style='color: #949494;'># … with 25 more rows</span><span></div><div class='input'>
-
-</div></span></pre>
+<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span><span class='va'>mtl</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>ipa_qgrp</span>, y <span class='op'>=</span> <span class='va'>met_minwk</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_boxplot.html'>geom_boxplot</a></span><span class='op'>(</span><span class='op'>)</span>
+</div><div class='img'><img src='mtl-1.png' alt='' width='700' height='433' /></div><div class='input'>
+</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">

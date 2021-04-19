@@ -8,6 +8,13 @@
 
 <title>Changelog • openintro</title>
 
+<!-- favicons -->
+<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+<link rel="apple-touch-icon" type="image/png" sizes="180x180" href="../apple-touch-icon.png" />
+<link rel="apple-touch-icon" type="image/png" sizes="120x120" href="../apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon" type="image/png" sizes="76x76" href="../apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon" type="image/png" sizes="60x60" href="../apple-touch-icon-60x60.png" />
 
 <!-- jquery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -40,6 +47,7 @@
 
 
 <meta property="og:title" content="Changelog" />
+<meta property="og:image" content="https://openintrostat.github.io/openintro/logo.png" />
 
 
 
@@ -71,7 +79,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">openintro</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.0.0.9000</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.1.0</span>
       </span>
     </div>
 
@@ -122,6 +130,7 @@
 <a href="#openintro-development-version" class="anchor"></a>openintro (development version)<small> Unreleased </small>
 </h1>
 <ul>
+<li>Added <code>LazyDataCompression: xz</code> to DESCRIPTION per CRAN.</li>
 <li>Added new datasets:
 <ul>
 <li>
@@ -135,8 +144,10 @@
 </li>
 </ul>
 </li>
+<li>Removed redundant <code>prof_evals</code> dataset</li>
 <li>Updated <code>email</code> and <code>email50</code> datasets to make indicator variables factors, remove variables that don’t exist in the data from the documentation, and update the documentation for <code>email50</code> to match the randomly sampled data</li>
 <li>Updated <code>orings</code> data to require much less manipulation to do glm with</li>
+<li>Updated <code>epa2012</code> to have NAs for empty levels and updated documentation to describe the variables better</li>
 <li>Updated documentation for <code>births</code>, <code>ncbirths</code>, <code>babies</code>, and <code>murders</code> for data provenance issues</li>
 <li>Updated <code>midterms_house</code> to have party levels “Democrat” and “Republican” (not “Democratic”)</li>
 <li>Added two new objects for colors: <code>openintro_colors</code> and <code>openintro_palettes</code>

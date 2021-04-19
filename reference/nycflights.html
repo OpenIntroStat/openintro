@@ -8,6 +8,13 @@
 
 <title>Flights data — nycflights • openintro</title>
 
+<!-- favicons -->
+<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+<link rel="apple-touch-icon" type="image/png" sizes="180x180" href="../apple-touch-icon.png" />
+<link rel="apple-touch-icon" type="image/png" sizes="120x120" href="../apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon" type="image/png" sizes="76x76" href="../apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon" type="image/png" sizes="60x60" href="../apple-touch-icon-60x60.png" />
 
 <!-- jquery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -42,6 +49,7 @@
 <meta property="og:title" content="Flights data — nycflights" />
 <meta property="og:description" content="On-time data for a random sample of flights that departed NYC (i.e. JFK,
 LGA or EWR) in 2013." />
+<meta property="og:image" content="https://openintrostat.github.io/openintro/logo.png" />
 
 
 
@@ -73,7 +81,7 @@ LGA or EWR) in 2013." />
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">openintro</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.0.0.9000</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.1.0</span>
       </span>
     </div>
 
@@ -149,10 +157,50 @@ Negative times represent early departures/arrivals.</p></dd>
 
     <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
 
-    <p>Hadley Wickham (2014). <code>nycflights13</code>: Data about flights departing
-NYC in 2013. R package version 0.1.
-<a href='https://CRAN.R-project.org/package=nycflights13'>https://CRAN.R-project.org/package=nycflights13</a></p>
+    <p>Hadley Wickham (2014). <a href='https://CRAN.R-project.org/package=nycflights13'>nycflights13</a>: Data about flights departing
+NYC in 2013. R package version 0.1.</p>
 
+    <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
+    <pre class="examples"><div class='input'>
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://dplyr.tidyverse.org'>dplyr</a></span><span class='op'>)</span>
+
+<span class='co'># Longest departure delays</span>
+<span class='va'>nycflights</span> <span class='op'>%&gt;%</span>
+  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/select.html'>select</a></span><span class='op'>(</span><span class='va'>flight</span>, <span class='va'>origin</span>, <span class='va'>dest</span>, <span class='va'>dep_delay</span>, <span class='va'>arr_delay</span><span class='op'>)</span> <span class='op'>%&gt;%</span>
+  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/arrange.html'>arrange</a></span><span class='op'>(</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/desc.html'>desc</a></span><span class='op'>(</span><span class='va'>dep_delay</span><span class='op'>)</span><span class='op'>)</span>
+</div><div class='output co'>#&gt; <span style='color: #949494;'># A tibble: 32,735 x 5</span><span>
+#&gt;    flight origin dest  dep_delay arr_delay
+#&gt;     </span><span style='color: #949494;font-style: italic;'>&lt;int&gt;</span><span> </span><span style='color: #949494;font-style: italic;'>&lt;chr&gt;</span><span>  </span><span style='color: #949494;font-style: italic;'>&lt;chr&gt;</span><span>     </span><span style='color: #949494;font-style: italic;'>&lt;dbl&gt;</span><span>     </span><span style='color: #949494;font-style: italic;'>&lt;dbl&gt;</span><span>
+#&gt; </span><span style='color: #BCBCBC;'> 1</span><span>     51 JFK    HNL        </span><span style='text-decoration: underline;'>1</span><span>301      </span><span style='text-decoration: underline;'>1</span><span>272
+#&gt; </span><span style='color: #BCBCBC;'> 2</span><span>   </span><span style='text-decoration: underline;'>1</span><span>223 EWR    SLC         849       847
+#&gt; </span><span style='color: #BCBCBC;'> 3</span><span>   </span><span style='text-decoration: underline;'>2</span><span>019 LGA    STL         803       802
+#&gt; </span><span style='color: #BCBCBC;'> 4</span><span>    503 JFK    SAN         790       769
+#&gt; </span><span style='color: #BCBCBC;'> 5</span><span>   </span><span style='text-decoration: underline;'>2</span><span>042 EWR    ATL         502       490
+#&gt; </span><span style='color: #BCBCBC;'> 6</span><span>   </span><span style='text-decoration: underline;'>4</span><span>949 LGA    GSO         473       444
+#&gt; </span><span style='color: #BCBCBC;'> 7</span><span>   </span><span style='text-decoration: underline;'>1</span><span>373 JFK    MIA         436       399
+#&gt; </span><span style='color: #BCBCBC;'> 8</span><span>    479 LGA    IAH         427       435
+#&gt; </span><span style='color: #BCBCBC;'> 9</span><span>   </span><span style='text-decoration: underline;'>2</span><span>226 LGA    MDW         423       422
+#&gt; </span><span style='color: #BCBCBC;'>10</span><span>    745 LGA    DEN         422       405
+#&gt; </span><span style='color: #949494;'># … with 32,725 more rows</span><span></div><div class='input'>
+<span class='co'># Longest arrival delays</span>
+<span class='va'>nycflights</span> <span class='op'>%&gt;%</span>
+  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/select.html'>select</a></span><span class='op'>(</span><span class='va'>flight</span>, <span class='va'>origin</span>, <span class='va'>dest</span>, <span class='va'>dep_delay</span>, <span class='va'>arr_delay</span><span class='op'>)</span> <span class='op'>%&gt;%</span>
+  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/arrange.html'>arrange</a></span><span class='op'>(</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/desc.html'>desc</a></span><span class='op'>(</span><span class='va'>arr_delay</span><span class='op'>)</span><span class='op'>)</span>
+</div><div class='output co'>#&gt; </span><span style='color: #949494;'># A tibble: 32,735 x 5</span><span>
+#&gt;    flight origin dest  dep_delay arr_delay
+#&gt;     </span><span style='color: #949494;font-style: italic;'>&lt;int&gt;</span><span> </span><span style='color: #949494;font-style: italic;'>&lt;chr&gt;</span><span>  </span><span style='color: #949494;font-style: italic;'>&lt;chr&gt;</span><span>     </span><span style='color: #949494;font-style: italic;'>&lt;dbl&gt;</span><span>     </span><span style='color: #949494;font-style: italic;'>&lt;dbl&gt;</span><span>
+#&gt; </span><span style='color: #BCBCBC;'> 1</span><span>     51 JFK    HNL        </span><span style='text-decoration: underline;'>1</span><span>301      </span><span style='text-decoration: underline;'>1</span><span>272
+#&gt; </span><span style='color: #BCBCBC;'> 2</span><span>   </span><span style='text-decoration: underline;'>1</span><span>223 EWR    SLC         849       847
+#&gt; </span><span style='color: #BCBCBC;'> 3</span><span>   </span><span style='text-decoration: underline;'>2</span><span>019 LGA    STL         803       802
+#&gt; </span><span style='color: #BCBCBC;'> 4</span><span>    503 JFK    SAN         790       769
+#&gt; </span><span style='color: #BCBCBC;'> 5</span><span>   </span><span style='text-decoration: underline;'>2</span><span>042 EWR    ATL         502       490
+#&gt; </span><span style='color: #BCBCBC;'> 6</span><span>   </span><span style='text-decoration: underline;'>4</span><span>949 LGA    GSO         473       444
+#&gt; </span><span style='color: #BCBCBC;'> 7</span><span>    479 LGA    IAH         427       435
+#&gt; </span><span style='color: #BCBCBC;'> 8</span><span>   </span><span style='text-decoration: underline;'>1</span><span>139 LGA    DFW         413       434
+#&gt; </span><span style='color: #BCBCBC;'> 9</span><span>   </span><span style='text-decoration: underline;'>2</span><span>226 LGA    MDW         423       422
+#&gt; </span><span style='color: #BCBCBC;'>10</span><span>   </span><span style='text-decoration: underline;'>3</span><span>325 JFK    DFW         355       421
+#&gt; </span><span style='color: #949494;'># … with 32,725 more rows</span><span></div><div class='input'>
+</div></span></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
