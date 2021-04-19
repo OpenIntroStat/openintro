@@ -5,10 +5,9 @@ template:
   bslib:
     navbar-bg: "#569BBD"
 
-home:
-  links:
-    - text: Learn more
-      href: https://www.openintro.org
+authors:
+  Mine Çetinkaya-Rundel:
+    href: "http://mine-cr.com/"
 
 navbar:
   left:
