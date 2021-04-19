@@ -1,0 +1,72 @@
+---
+title: "Lab 1: Intro to R"
+author: "Author Name"
+date: "`r Sys.Date()`"
+output: openintro::lab_report
+---
+
+```{r load-packages, message=FALSE}
+library(tidyverse)
+library(openintro)
+```
+
+### Exercise 1
+
+```{r view-girls-counts}
+arbuthnot$girls
+```
+
+
+### Exercise 2
+
+Insert any text here.
+
+```{r trend-girls}
+# Insert code for Exercise 2 here
+```
+
+
+### Exercise 3
+
+Insert any text here.
+
+```{r plot-prop-boys-arbuthnot}
+# Insert code for Exercise 3 here
+```
+
+
+### Exercise 4
+
+Insert any text here.
+
+```{r dim-present}
+# Insert code for Exercise 4 here
+```
+
+
+### Exercise 5
+
+Insert any text here.
+
+```{r count-compare}
+# Insert code for Exercise 5 here
+```
+
+
+### Exercise 6
+
+Insert any text here.
+
+```{r plot-prop-boys-present}
+# Insert code for Exercise 6 here
+```
+
+
+### Exercise 7
+
+Insert any text here.
+
+```{r find-max-total}
+# Insert code for Exercise 7 here
+```
+

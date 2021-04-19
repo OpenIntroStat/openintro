@@ -1,0 +1,5 @@
+name: Lab Report
+description: >
+ Template for creating reports for OpenIntro Statistics Labs
+create_dir: true
+

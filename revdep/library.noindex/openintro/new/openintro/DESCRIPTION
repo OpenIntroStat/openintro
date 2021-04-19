@@ -1,0 +1,50 @@
+Package: openintro
+Title: Data Sets and Supplemental Functions from 'OpenIntro' Textbooks
+        and Labs
+Version: 2.1.0
+Authors@R: c(
+    person("Mine", "\u00C7etinkaya-Rundel", email = "cetinkaya.mine@gmail.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0001-6452-2420")),
+    person("David", "Diez", email = "david.m.diez@gmail.com", role = c("aut")),
+    person("Andrew", "Bray", email = "andrew.bray@gmail.com", role = c("aut")),
+    person("Albert Y.", "Kim", email = "albert.ys.kim@gmail.com", role = c("aut"), comment = c(ORCID = "0000-0001-7824-306X")),
+    person("Ben", "Baumer", email = "ben.baumer@gmail.com", role = c("aut")),
+    person("Chester", "Ismay", email = "chester.ismay@gmail.com", role = c("aut")),
+    person("Nick", "Paterno", email = "nicholas.paterno@gmail.com", role = c("aut")),
+    person("Christopher", "Barr", role = c("aut"))
+    )
+Description: Supplemental functions and data for 'OpenIntro' resources, which 
+    includes open-source textbooks and resources for introductory statistics 
+    (<https://www.openintro.org/>). The package contains data sets used in our 
+    open-source textbooks along with custom plotting functions for reproducing 
+    book figures. Note that many functions and examples include color 
+    transparency; some plotting elements may not show up properly (or at all) 
+    when run in some versions of Windows operating system.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+LazyDataCompression: xz
+RoxygenNote: 7.1.1
+Suggests: broom, dplyr, forcats, knitr, lubridate, scales, tidyr,
+        tidytext
+Imports: ggplot2 (>= 2.2.1), graphics, readr, rmarkdown, tibble
+Depends: R (>= 2.10), airports, cherryblossom, usdata
+URL: http://openintrostat.github.io/openintro/,
+        https://github.com/OpenIntroStat/openintro/
+BugReports: https://github.com/OpenIntroStat/openintro/issues
+VignetteBuilder: knitr
+Roxygen: list(markdown = TRUE)
+RemoteType: local
+RemoteUrl: /Users/mine/Desktop/R Packages/openintro
+NeedsCompilation: no
+Packaged: 2021-04-19 12:22:10 UTC; mine
+Author: Mine Çetinkaya-Rundel [aut, cre]
+    (<https://orcid.org/0000-0001-6452-2420>),
+  David Diez [aut],
+  Andrew Bray [aut],
+  Albert Y. Kim [aut] (<https://orcid.org/0000-0001-7824-306X>),
+  Ben Baumer [aut],
+  Chester Ismay [aut],
+  Nick Paterno [aut],
+  Christopher Barr [aut]
+Maintainer: Mine Çetinkaya-Rundel <cetinkaya.mine@gmail.com>
+Built: R 4.0.5; ; 2021-04-19 12:22:12 UTC; unix

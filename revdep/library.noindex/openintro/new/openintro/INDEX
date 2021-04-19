@@ -1,0 +1,280 @@
+ArrowLines              Create a Line That may have Arrows on the Ends
+AxisInDollars           Build Better Looking Axis Labels for US Dollars
+AxisInPercent           Build Better Looking Axis Labels for
+                        Percentages
+BG                      Add background color to a plot
+Braces                  Plot a Braces Symbol
+CCP                     Plot a Cartesian Coordinate Plane
+COL                     OpenIntro Statistics colors
+CT2DF                   Contingency Table to Data Frame
+ChiSquareTail           Plot upper tail in chi-square distribution
+IMSCOL                  Introduction to Modern Statistics (IMS) Colors
+MosaicPlot              Custom Mosaic Plot
+PlotWLine               Plot data and add a regression line
+absenteeism             Absenteeism from school in New South Wales
+acs12                   American Community Survey, 2012
+age_at_mar              Age at first marriage of 5,534 US women.
+ames                    Housing prices in Ames, Iowa
+ami_occurrences         Acute Myocardial Infarction (Heart Attack)
+                        Events
+antibiotics             Pre-existing conditions in 92 children
+arbuthnot               Male and female births in London
+ask                     How important is it to ask pointed questions?
+association             Simulated data for association plots
+assortive_mating        Eye color of couples
+avandia                 Cardiovascular problems for two types of
+                        Diabetes medicines
+babies                  The Child Health and Development Studies
+babies_crawl            Crawling age
+bac                     Beer and blood alcohol content
+ball_bearing            Lifespan of ball bearings
+bdims                   Body measurements of 507 physically active
+                        individuals.
+birds                   Aircraft-Wildlife Collisions
+births                  North Carolina births, 100 cases
+births14                US births
+books                   Sample of books on a shelf
+boxPlot                 Box plot
+buildAxis               Axis function substitute
+burger                  Burger preferences
+calc_streak             Calculate hit streaks
+cancer_in_dogs          Cancer in dogs
+cards                   Deck of cards
+cars93                  cars93
+cchousing               Community college housing (simulated data)
+census                  Random sample of 2000 U.S. Census Data
+cherry                  Summary information for 31 cherry trees
+children_gender_stereo
+                        Gender Stereotypes in 5-7 year old Children
+china                   Child care hours
+cia_factbook            CIA Factbook Details on Countries
+classdata               Simulated class data
+cle_sac                 Cleveland and Sacramento
+climate70               Temperature Summary Data, Geography Limited
+coast_starlight         Coast Starlight Amtrak train
+contTable               Generate Contingency Tables for LaTeX
+corr_match              Sample data sets for correlation problems
+country_iso             Country ISO information
+cpr                     CPR data set
+cpu                     CPU's Released between 2010 and 2020.
+credits                 College credits.
+densityPlot             Density plot
+diabetes2               Type 2 Diabetes Clinical Trial for Patients
+                        10-17 Years Old
+dlsegments              Create a Double Line Segment Plot
+dotPlot                 Dot plot
+dotPlotStack            Add a Stacked Dot Plot to an Existing Plot
+dream                   Survey on views of the DREAM Act
+drone_blades            Quadcopter Drone Blades
+drug_use                Drug use of students and parents
+earthquakes             Earthquakes
+ebola_survey            Survey on Ebola quarantine
+edaPlot                 Exploratory data analysis plot
+elmhurst                Elmhurst College gift aid
+email                   Data frame representing information about a
+                        collection of emails
+email50                 Sample of 50 emails
+env_regulation          American Adults on Regulation and Renewable
+                        Energy
+epa2012                 Vehicle info from the EPA
+esi                     Environmental Sustainability Index 2005
+ethanol                 Ethanol Treatment for Tumors Experiment
+evals                   Professor evaluations and beauty
+exam_grades             Exam and course grades for statistics students
+exams                   Exam scores
+exclusive_relationship
+                        Number of Exclusive Relationships
+fact_opinion            Can Americans categorize facts and opinions?
+fadeColor               Fade colors
+family_college          Simulated sample of parent / teen college
+                        attendance
+fastfood                Nutrition in fast food
+fcid                    Summary of male heights from USDA Food
+                        Commodity Intake Database
+fheights                Female college student heights, in inches
+fish_oil_18             Findings on n-3 Fatty Acid Supplement Health
+                        Benefits
+flow_rates              River flow data
+friday                  Friday the 13th
+full_body_scan          Poll about use of full-body airport scanners
+gear_company            Fake data for a gear company example
+gender_discrimination   Bank manager recommendations based on gender
+get_it_dunn_run         Get it Dunn Run, Race Times
+gifted                  Analytical skills of young gifted children
+global_warming_pew      Pew survey on global warming
+goog                    Google stock data
+gov_poll                Pew Research poll on government approval
+                        ratings
+gpa                     Survey of Duke students on GPA, studying, and
+                        more
+gpa_iq                  Sample of students and their GPA and IQ
+gpa_study_hours         gpa_study_hours
+gradestv                Simulated data for analyzing the relationship
+                        between watching TV and grades
+gsearch                 Simulated Google search experiment
+gss2010                 2010 General Social Survey
+health_coverage         Health Coverage and Health Status
+healthcare_law_survey   Pew Research Center poll on health care,
+                        including question variants
+heart_transplant        Heart Transplant Data
+helium                  Helium football
+helmet                  Socioeconomic status and reduced-fee school
+                        lunches
+hfi                     Human Freedom Index
+histPlot                Histogram or hollow histogram
+house                   United States House of Representatives
+                        historical make-up
+housing                 Simulated data set on student housing
+hsb2                    High School and Beyond survey
+husbands_wives          Great Britain: husband and wife pairs
+immigration             Poll on illegal workers in the US
+infmortrate             Infant Mortality Rates, 2012
+ipo                     Facebook, Google, and LinkedIn IPO filings
+ipod                    Length of songs on an iPod
+jury                    Simulated juror data set
+kobe_basket             Kobe Bryant basketball performance
+lab_report              lab_report
+law_resume              Gender, Socioeconomic Class, and Interview
+                        Invites
+leg_mari                Legalization of Marijuana Support in 2010
+                        California Survey
+linResPlot              Create simple regression plot with residual
+                        plot
+lmPlot                  Linear regression plot with residual plot
+loans_full_schema       Loan data from Lending Club
+london_boroughs         London Borough Boundaries
+london_murders          London Murders, 2006-2011
+loop                    Output a message while inside a loop
+lsegments               Create a Line Segment Plot
+mail_me                 Influence of a Good Mood on Helpfulness
+major_survey            Survey of Duke students and the area of their
+                        major
+makeTube                Regression tube
+malaria                 Malaria Vaccine Trial
+male_heights            Sample of 100 male heights
+male_heights_fcid       Random sample of adult male heights
+mammals                 Sleep in Mammals
+mammogram               Experiment with Mammogram Randomized
+marathon                New York City Marathon Times
+mariokart               Wii Mario Kart auctions from Ebay
+mcu_films               Marvel Cinematic Universe films
+midterms_house          President's party performance and unemployment
+                        rate
+migraine                Migraines and acupuncture
+military                US Military Demographics
+mlb                     Salary data for Major League Baseball (2010)
+mlb_players_18          Batter Statistics for 2018 Major League
+                        Baseball (MLB) Season
+mlbbat10                Major League Baseball Player Hitting Statistics
+                        for 2010
+mtl                     Medial temporal lobe (MTL) and other data for
+                        26 participants
+murders                 Data for 20 metropolitan areas.
+myPDF                   Custom PDF function
+nba_heights             NBA Player heights from 2008-9
+nba_players_19          NBA Players for the 2018-2019 season
+ncbirths                North Carolina births, 1000 cases
+normTail                Normal distribution tails
+nuclear_survey          Nuclear Arms Reduction Survey
+nycflights              Flights data
+offshore_drilling       California poll on drilling off the California
+                        coast
+openintro_colors        OpenIntro colors
+openintro_cols          Function to extract OpenIntro IMS colors as hex
+                        codes
+openintro_pal           Return function to interpolate an OpenIntro IMS
+                        color palette
+openintro_palettes      OpenIntro palettes
+opportunity_cost        Opportunity cost of purchases
+orings                  1986 Challenger disaster and O-rings
+oscars                  Oscar winners, 1929 to 2018
+outliers                Simulated data sets for different types of
+                        outliers
+penelope                Guesses at the weight of Penelope (a cow)
+penetrating_oil         What's the best way to loosen a rusty bolt?
+penny_ages              Penny Ages
+pew_energy_2018         Pew Survey on Energy Sources in 2018
+photo_classify          Photo classifications: fashion or not
+piracy                  Piracy and PIPA/SOPA
+playing_cards           Table of Playing Cards in 52-Card Deck
+pm25_2011_durham        Air quality for Durham, NC
+poker                   Poker winnings during 50 sessions
+possum                  possum
+ppp_201503              US Poll on who it is better to raise taxes on
+present                 Birth counts
+president               United States Presidental History
+prison                  Prison isolation experiment
+prius_mpg               User reported fuel efficiency for 2017 Toyota
+                        Prius Prime
+qqnormsim               Generate simulated QQ plots
+race_justice            Yahoo! News Race and Justice poll results
+res_demo_1              Simulated data for regression
+res_demo_2              Simulated data for regression
+resume                  Which resume attributes drive job callbacks?
+                        (Race and gender under study.)
+rosling_responses       Sample Responses to Two Public Health Questions
+russian_influence_on_us_election_2016
+                        Russians' Opinions on US Election Influence in
+                        2016
+salinity                Salinity.
+sat_improve             Simulated data for SAT score improvement
+satgpa                  SAT and GPA data
+scale_color_openintro   Color scale constructor for OpenIntro IMS
+                        colors
+scale_fill_openintro    Fill scale constructor for OpenIntro IMS colors
+scotus_healthcare       Public Opinion with SCOTUS ruling on American
+                        Healthcare Act
+seattlepets             Names of pets in Seattle
+simulated_dist          Simulated data sets, not necessarily drawn from
+                        a normal distribution.
+simulated_normal        Simulated data sets, drawn from a normal
+                        distribution.
+simulated_scatter       Simulated data for sample scatterplots
+sinusitis               Sinusitis and antibiotic experiment
+sleep_deprivation       Survey on sleep deprivation and transportation
+                        workers
+smallpox                Smallpox vaccine results
+smoking                 UK Smoking Data
+snowfall                Snowfall at Paradise, Mt. Rainier National Park
+socialexp               Social experiment
+solar                   Energy Output From Two Solar Arrays in San
+                        Francisco
+sp500                   Financial information for 50 S&P 500 companies
+sp500_1950_2018         Daily observations for the S&P 500
+sp500_seq               S&P 500 stock data
+speed_gender_height     Speed, gender, and height of 1325 students
+ssd_speed               SSD read and write speeds
+starbucks               Starbucks nutrition
+stats_scores            Final exam scores for twenty students
+stem_cell               Embryonic stem cells to treat heart attack (in
+                        sheep)
+stent30                 Stents for the treatment of stroke
+stocks_18               Monthly Returns for a few stocks
+student_housing         Community college housing (simulated data,
+                        2015)
+student_sleep           Sleep for 110 students (simulated)
+sulphinpyrazone         Treating heart attacks
+supreme_court           Supreme Court approval rating
+teacher                 Teacher Salaries in St. Louis, Michigan
+textbooks               Textbook data for UCLA Bookstore and Amazon
+thanksgiving_spend      Thanksgiving spending, simulated based on
+                        Gallup poll.
+tips                    Tip data
+toohey                  Simulated polling data set
+tourism                 Turkey tourism
+toy_anova               Simulated data set for ANOVA
+transplant              Transplant consultant success rate (fake data)
+treeDiag                Construct tree diagrams
+ucla_f18                UCLA courses in Fall 2018
+ucla_textbooks_f18      Sample of UCLA course textbooks for Fall 2018
+ukdemo                  United Kingdom Demographic Data
+unempl                  Annual unemployment since 1890
+unemploy_pres           President's party performance and unemployment
+                        rate
+winery_cars             Time Between Gondola Cars at Sterling Winery
+write_pkg_data          Create a CSV variant of .rda files
+xom                     Exxon Mobile stock data
+yawn                    Contagiousness of yawning
+yrbss                   Youth Risk Behavior Surveillance System (YRBSS)
+yrbss_samp              Sample of Youth Risk Behavior Surveillance
+                        System (YRBSS)
