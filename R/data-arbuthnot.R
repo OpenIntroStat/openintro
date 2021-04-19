@@ -1,4 +1,3 @@
-
 #' Male and female births in London
 #'
 #' Arbuthnot's data describes male and female christenings (births) for
@@ -16,8 +15,21 @@
 #'   \item{boys}{number of male christenings (births)}
 #'   \item{girls}{number of female christenings (births)}
 #' }
-#' @source These data are excerpted from the [HistData::Arbuthnot]
-#' data set in the HistData package.
+#' @source These data are excerpted from the `Arbuthnot` data set in the
+#' [HistData](https://CRAN.R-project.org/package=HistData) package.
 #' @examples
-#' data(arbuthnot)
+#'
+#' library(ggplot2)
+#' library(tidyr)
+#'
+#' # All births
+#' ggplot(arbuthnot, aes(x = year, y = boys + girls, group = 1)) +
+#'   geom_line()
+#'
+#' # Boys and girls
+#' arbuthnot %>%
+#'   pivot_longer(cols = -year, names_to = "sex", values_to = "n") %>%
+#'   ggplot(aes(x = year, y = n, color = sex, group = sex)) +
+#'   geom_line()
+#'
 "arbuthnot"

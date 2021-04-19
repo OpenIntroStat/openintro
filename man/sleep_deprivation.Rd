@@ -15,7 +15,7 @@ A data frame with 1087 observations on the following 2 variables.
 \source{
 National Sleep Foundation, 2012 Sleep in America Poll:
 Transportation Workers' Sleep, 2012.
-\url{https://sleepfoundation.org/sleep-polls-data/sleep-in-america-poll/2012-transportation-workers-and-sleep}
+\url{https://www.sleepfoundation.org/professionals/sleep-americar-polls/2012-sleep-america-poll-transportation-workers-sleep}
 }
 \usage{
 sleep_deprivation

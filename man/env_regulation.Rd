@@ -13,7 +13,7 @@ and \code{"Don't know"}.}
 }
 }
 \source{
-\url{http://www.pewinternet.org/2017/05/16/public-divides-over-environmental-regulation-and-energy-policy}
+\url{https://www.pewresearch.org/science/2017/05/16/public-divides-over-environmental-regulation-and-energy-policy/}
 }
 \usage{
 env_regulation

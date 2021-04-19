@@ -9,7 +9,7 @@
 #'   \item{day}{Day the earthquake took place}
 #'   \item{richter}{Magnitude of earthquake using the Richter Scale.}
 #'   \item{area}{City or geographic location of earthquakes.}
-#'   \item{region}{Country or countries if the earthquake occured on a border.}
+#'   \item{region}{Country or countries if the earthquake occurred on a border.}
 #'   \item{deaths}{Approximate number of deaths caused by earthquake}
 #' }
 #' @source World Almanac and Book of Facts: 2011.

@@ -13,7 +13,7 @@ coal_mining : List of responses on coal mining.  $ nuclear_power_plants:
 List of responses on nuclear.
 }
 \source{
-\url{https://www.pewresearch.org/science/2018/05/14/majorities-see-government-efforts-to-protect-the-environment-as-insufficient}
+\url{https://www.pewresearch.org/science/2018/05/14/majorities-see-government-efforts-to-protect-the-environment-as-insufficient/}
 }
 \usage{
 pew_energy_2018

@@ -23,9 +23,8 @@ Negative times represent early departures/arrivals.}
 }
 }
 \source{
-Hadley Wickham (2014). \code{nycflights13}: Data about flights departing
+Hadley Wickham (2014). \href{https://CRAN.R-project.org/package=nycflights13}{nycflights13}: Data about flights departing
 NYC in 2013. R package version 0.1.
-\url{https://CRAN.R-project.org/package=nycflights13}
 }
 \usage{
 nycflights
@@ -33,5 +32,20 @@ nycflights
 \description{
 On-time data for a random sample of flights that departed NYC (i.e. JFK,
 LGA or EWR) in 2013.
+}
+\examples{
+
+library(dplyr)
+
+# Longest departure delays
+nycflights \%>\%
+  select(flight, origin, dest, dep_delay, arr_delay) \%>\%
+  arrange(desc(dep_delay))
+
+# Longest arrival delays
+nycflights \%>\%
+  select(flight, origin, dest, dep_delay, arr_delay) \%>\%
+  arrange(desc(arr_delay))
+
 }
 \keyword{datasets}

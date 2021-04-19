@@ -13,7 +13,7 @@ A data frame with 222 observations on the following 2 variables.
 }
 \source{
 CIA World Factbook,
-\url{https://www.cia.gov/library/publications/the-world-factbook/rankorder/rawdata_2091.txt}.
+\url{https://www.cia.gov/the-world-factbook/field/infant-mortality-rate/country-comparison}.
 }
 \usage{
 infmortrate

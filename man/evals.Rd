@@ -43,8 +43,10 @@ female: (1) lowest - (10) highest.}
 }
 }
 \source{
-Çetinkaya-Rundel M, Morgan KL, Stangl D. 2013. Looking Good on
-Course Evaluations. CHANCE 26(2).
+Daniel S. Hamermesh, Amy Parker, Beauty in the classroom:
+instructors’ pulchritude and putative pedagogical productivity, Economics
+of Education Review, Volume 24, Issue 4, 2005.
+\doi{10.1016/j.econedurev.2004.07.013}.
 }
 \usage{
 evals
@@ -55,7 +57,6 @@ taught by a sample of 94 professors from the University of Texas at Austin. In a
 six students rate the professors' physical appearance. The result is a data
 frame where each row contains a different course and each column has
 information on the course and the professor who taught that course.
-\url{https://www.openintro.org/stat/data/?data=evals}
 }
 \examples{
 

@@ -5,7 +5,7 @@
 \alias{births14}
 \title{US births}
 \format{
-A data frame with 1000 observations on the following 13 variables.
+A data frame with 1,000 observations on the following 13 variables.
 \describe{
 \item{fage}{Father's age in years.}
 \item{mage}{Mother's age in years.}
@@ -15,11 +15,11 @@ A data frame with 1000 observations on the following 13 variables.
 \item{visits}{Number of hospital visits during pregnancy.}
 \item{gained}{Weight gained by mother during pregnancy in pounds.}
 \item{weight}{Weight of the baby at birth in pounds.}
-\item{lowbirthweight}{Whether baby was classified as low birthweight (\code{low}) or not (\code{not low}).}
+\item{lowbirthweight}{Whether baby was classified as low birthweight (\code{low}) or not (\verb{not low}).}
 \item{sex}{Sex of the baby, \code{female} or \code{male}.}
 \item{habit}{Status of the mother as a \code{nonsmoker} or a \code{smoker}.}
-\item{marital}{Whether mother is \code{married} or \code{not married} at birth.}
-\item{whitemom}{Whether mom is \code{white} or \code{not white}.}
+\item{marital}{Whether mother is \code{married} or \verb{not married} at birth.}
+\item{whitemom}{Whether mom is \code{white} or \verb{not white}.}
 }
 }
 \source{
@@ -28,7 +28,7 @@ Centers for Disease Control and Prevention.
 National Center for Health Statistics.
 Natality Detail File, 2014 United States.
 Inter-university Consortium for Political and Social Research, 2016-10-07.
-\url{https://doi.org/10.3886/ICPSR36461.v1}.
+\doi{10.3886/ICPSR36461.v1}.
 }
 \usage{
 births14

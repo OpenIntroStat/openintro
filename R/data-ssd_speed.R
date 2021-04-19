@@ -1,8 +1,6 @@
 #' SSD read and write speeds
 #'
-#' User submitted data on 1TB solid state drives (SSD). Compiled from data
-#' available on \href{https://ssd.userbenchmark.com/}{UserBenchmark}
-#' on September 1, 2020.
+#' User submitted data on 1TB solid state drives (SSD).
 #'
 #' @format A data frame with 54 rows and 7 variables.
 #' \describe{
@@ -14,7 +12,7 @@
 #'   \item{read}{Average read speed from user benchmarks in MB/s.}
 #'   \item{write}{Average write speed from user benchmarks in MB/s.}
 #' }
-#' @source \href{https://ssd.userbenchmark.com/}{UserBenchmark}.
+#' @source [UserBenchmark](https://ssd.userbenchmark.com/), retrieved September 1, 2020.
 #' @examples
 #'
 #' library(ggplot2)

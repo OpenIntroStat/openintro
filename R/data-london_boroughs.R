@@ -5,7 +5,7 @@
 #'
 #' Map data was made available through the Ordnance Survey Open Data
 #' initiative.  The data use the
-#' \href{https://en.wikipedia.org/wiki/Ordnance_Survey_National_Grid}{National Grid} coordinate system,
+#' [National Grid](https://en.wikipedia.org/wiki/Ordnance_Survey_National_Grid) coordinate system,
 #' based upon eastings (\code{x}) and northings (\code{y}) instead of longitude and latitude.
 #'
 #' The \code{name} variable covers all 32 boroughs in Greater London:
@@ -32,7 +32,7 @@
 #' \url{https://data.london.gov.uk/dataset/ordnance-survey-code-point}
 #'
 #' Contains Ordinance Survey data released under the
-#' \href{http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2}{Open Government License, OGL v2}.
+#' [Open Government License, OGL v2](http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/).
 #' @keywords datasets London map borough
 #' @examples
 #'

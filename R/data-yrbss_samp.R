@@ -27,9 +27,7 @@
 #'   \item{school_night_hours_sleep}{How many hours of sleep do you typically
 #'   get on a school night?}
 #'   }
-#' @source
-#' \href{http://www.openintro.org/r?go=cdc_yrbss_2013&r=r_package_man_file}{CDC's
-#' Youth Risk Behavior Surveillance System (YRBSS)}
+#' @source [CDC's Youth Risk Behavior Surveillance System (YRBSS)](https://www.cdc.gov/healthyyouth/data/yrbs/data.htm)
 #' @keywords datasets
 #' @examples
 #'

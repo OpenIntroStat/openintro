@@ -11,7 +11,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-# openintro <a href="https://www.openintro.org/"><img src="man/figures/openintro-hex.png" align="right" height="170"></a>
+# openintro <img src="man/figures/logo.png" align="right" alt="" width="120" />
 
 <!-- badges: start -->
 [![CRAN status](https://www.r-pkg.org/badges/version/openintro)](https://cran.r-project.org/package=openintro)
@@ -19,7 +19,7 @@ knitr::opts_chunk$set(
 <!-- badges: end -->
 
 
-Supplemental functions and data for 'OpenIntro' resources, which includes  open-source textbooks and resources for introductory statistics at [openintro.org](https://www.openintro.org/). 
+Supplemental functions and data for OpenIntro resources, which includes  open-source textbooks and resources for introductory statistics at [openintro.org](https://www.openintro.org/). 
 The package contains data sets used in our open-source textbooks along with custom plotting functions for reproducing book figures. 
 The package also contains the datasets used in OpenIntro labs. 
 Note that many functions and examples include color transparency; some plotting elements may not show up properly (or at all) when run in some versions of Windows operating system.

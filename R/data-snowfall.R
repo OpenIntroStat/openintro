@@ -11,7 +11,7 @@
 #'   \item{year_end}{The year snowfall measurement ended on June 30.}
 #'   \item{total_snow}{Snowfall measured in inches.}
 #' }
-#' @source \href{https://www.nps.gov/mora/planyourvisit/annual-snowfall-totals.htm}{National Parks Services}.
+#' @source [National Parks Services](https://www.nps.gov/mora/planyourvisit/annual-snowfall-totals.htm).
 #' @examples
 #'
 #' library(ggplot2)

@@ -12,7 +12,7 @@
 #'   \item{gender}{Gender}
 #'   \item{time}{Running time (in hours)}
 #'  }
-#' @source \url{http://www.webcitation.org/5kx7ilFLp}
+#' @source \url{https://www.webcitation.org/5kx7ilFLp}
 #' @keywords datasets
 #' @examples
 #'

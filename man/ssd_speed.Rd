@@ -17,15 +17,13 @@ A data frame with 54 rows and 7 variables.
 }
 }
 \source{
-\href{https://ssd.userbenchmark.com/}{UserBenchmark}.
+\href{https://ssd.userbenchmark.com/}{UserBenchmark}, retrieved September 1, 2020.
 }
 \usage{
 ssd_speed
 }
 \description{
-User submitted data on 1TB solid state drives (SSD). Compiled from data
-available on \href{https://ssd.userbenchmark.com/}{UserBenchmark}
-on September 1, 2020.
+User submitted data on 1TB solid state drives (SSD).
 }
 \examples{
 

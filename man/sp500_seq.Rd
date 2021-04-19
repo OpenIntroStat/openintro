@@ -12,7 +12,7 @@ A data frame with 2948 observations on the following variable.
 }
 }
 \source{
-\url{http://www.google.com/finance}
+\href{https://www.google.com/finance/}{Google Finance}.
 }
 \usage{
 sp500_seq

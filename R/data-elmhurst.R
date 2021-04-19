@@ -15,7 +15,7 @@
 #' the 2011 class at Elmhurst College that accompanied an article titled What
 #' Students Really Pay to Go to College published online by The Chronicle of
 #' Higher Education:
-#' \url{http://chronicle.com/article/What-Students-Really-Pay-to-Go/131435}.
+#' \url{https://www.chronicle.com/article/what-students-really-pay-to-go-to-college/}.
 #' @keywords datasets
 #' @examples
 #'

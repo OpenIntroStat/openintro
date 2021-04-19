@@ -11,7 +11,7 @@
 #'   \item{parents}{Whether the parent holds a college \code{degree} or \code{not}.}
 #' }
 #' @source Simulation based off of summary information provided at
-#' \url{https://nces.ed.gov/pubs2001/2001126.pdf}
+#' \url{https://eric.ed.gov/?id=ED460660}.
 #' @keywords datasets
 #' @examples
 #'

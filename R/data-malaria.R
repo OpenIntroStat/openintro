@@ -21,13 +21,20 @@
 #' }
 #' @source Lyke et al. 2017. PfSPZ vaccine induces strain-transcending T cells
 #' and durable protection against heterologous controlled human malaria
-#' infection.  PNAS 114(10):2711-2716.
-#' \url{https://doi.org/10.1073/pnas.1615324114}
+#' infection. PNAS 114(10):2711-2716.
+#' \doi{10.1073/pnas.1615324114}.
 #' @keywords datasets
 #' @examples
 #'
-#' data(malaria)
-#' table(malaria)
+#' library(dplyr)
+#'
+#' # Calculate conditional probabilities of infection after vaccine/placebo
+#' malaria %>%
+#'   count(treatment, outcome) %>%
+#'   group_by(treatment) %>%
+#'   mutate(prop = n / sum(n))
+#'
+#' # Fisher's exact text
 #' fisher.test(table(malaria))
 #'
 "malaria"
