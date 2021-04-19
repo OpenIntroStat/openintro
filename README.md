@@ -9,10 +9,10 @@ status](https://www.r-pkg.org/badges/version/openintro)](https://cran.r-project.
 status](https://github.com/OpenIntroStat/openintro/workflows/R-CMD-check/badge.svg)](https://github.com/OpenIntroStat/openintro/actions)
 <!-- badges: end -->
 
-Supplemental functions and data for ‘OpenIntro’ resources, which
-includes open-source textbooks and resources for introductory statistics
-at [openintro.org](https://www.openintro.org/). The package contains
-data sets used in our open-source textbooks along with custom plotting
+Supplemental functions and data for OpenIntro resources, which includes
+open-source textbooks and resources for introductory statistics at
+[openintro.org](https://www.openintro.org/). The package contains data
+sets used in our open-source textbooks along with custom plotting
 functions for reproducing book figures. The package also contains the
 datasets used in OpenIntro labs. Note that many functions and examples
 include color transparency; some plotting elements may not show up
