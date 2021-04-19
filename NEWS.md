@@ -8,6 +8,7 @@
 * Removed redundant `prof_evals` dataset
 * Updated `email` and `email50` datasets to make indicator variables factors, remove variables that don't exist in the data from the documentation, and update the documentation for `email50` to match the randomly sampled data
 * Updated `orings` data to require much less manipulation to do glm with
+* Updated `epa2012` to have NAs for empty levels and updated documentation to describe the variables better
 * Updated documentation for `births`, `ncbirths`, `babies`, and `murders` for data provenance issues
 * Updated `midterms_house` to have party levels "Democrat" and "Republican" (not "Democratic")
 * Added two new objects for colors: `openintro_colors` and `openintro_palettes`
