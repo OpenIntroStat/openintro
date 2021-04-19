@@ -25,7 +25,16 @@ A data frame with 1129 observations on the following 28 variables.
 \item{transmission}{Transmission type.}
 \item{transmission_desc}{Transmission type description.}
 \item{no_gears}{Number of gears.}
-\item{trans_lockup}{Whether transmission locks up, a factor with levels \code{N} and \verb{Y.\} \\item\{trans_creeper_gear\}\{a factor with level }N\verb{only.\} \\item\{drive_sys\}\{Drive system, a factor with levels.\} \\item\{drive_desc\}\{Drive system description.\} \\item\{fuel_usage\}\{Fuel usage, a factor with levels.\} \\item\{fuel_usage_desc\}\{Fuel usage description.\} \\item\{class\}\{Class of car.\} \\item\{car_truck\}\{Car or truck, a factor with levels}car\verb{, }1\verb{, }2\verb{.\} \\item\{release_date\}\{Date of vehicle release.\} \\item\{fuel_cell\}\{Whether the car has a fuel cell or not, a factor with levels }N\verb{, }Y`.}
+\item{trans_lockup}{Whether transmission locks up, a factor with levels \code{N} and \code{Y}.}
+\item{trans_creeper_gear}{A factor with level \code{N} only.}
+\item{drive_sys}{Drive system, a factor with levels.}
+\item{drive_desc}{Drive system description.}
+\item{fuel_usage}{Fuel usage, a factor with levels.}
+\item{fuel_usage_desc}{Fuel usage description.}
+\item{class}{Class of car.}
+\item{car_truck}{Car or truck, a factor with levels \code{car}, \code{1}, \code{2}.}
+\item{release_date}{Date of vehicle release.}
+\item{fuel_cell}{Whether the car has a fuel cell or not, a factor with levels \code{N}, \code{Y}.}
 }
 }
 \source{

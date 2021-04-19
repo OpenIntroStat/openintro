@@ -25,8 +25,8 @@
 #'   \item{transmission}{Transmission type.}
 #'   \item{transmission_desc}{Transmission type description.}
 #'   \item{no_gears}{Number of gears.}
-#'   \item{trans_lockup}{Whether transmission locks up, a factor with levels `N` and `Y.}
-#'   \item{trans_creeper_gear}{a factor with level `N` only.}
+#'   \item{trans_lockup}{Whether transmission locks up, a factor with levels `N` and `Y`.}
+#'   \item{trans_creeper_gear}{A factor with level `N` only.}
 #'   \item{drive_sys}{Drive system, a factor with levels.}
 #'   \item{drive_desc}{Drive system description.}
 #'   \item{fuel_usage}{Fuel usage, a factor with levels.}
