@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Community college housing (simulated data, 2015) — student_housing • openintro</title>
+<title>Lizard speeds — lizards • openintro</title>
 <!-- favicons --><link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
 <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="../apple-touch-icon.png">
@@ -19,9 +19,10 @@
 <!-- bootstrap-toc --><link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.css">
 <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- pkgdown --><link href="../pkgdown.css" rel="stylesheet">
 <link href="../syntax-highlighting.css" rel="stylesheet">
-<script src="../pkgdown.js"></script><meta property="og:title" content="Community college housing (simulated data, 2015) — student_housing">
-<meta property="og:description" content="These are simulated data and intended to represent housing prices of
-students at a college.">
+<script src="../pkgdown.js"></script><meta property="og:title" content="Lizard speeds — lizards">
+<meta property="og:description" content="Data on top speeds measured on a laboratory race track for two species
+of lizards: Western fence lizard (Sceloporus occidentalis) and
+Sagebrush lizard (Sceloporus graciosus).">
 <meta property="og:image" content="https://openintrostat.github.io/openintro/logo.png">
 <!-- mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-AMS-MML_HTMLorMML.js" integrity="sha256-84DKXVJXs0/F8OTMzX4UR909+jtl4G7SPypPavF+GfA=" crossorigin="anonymous"></script><!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -69,66 +70,68 @@ students at a college.">
 <div class="row">
   <div class="col-md-9 contents">
     <img src="../package-logo.png" class="pkg-logo" alt=""><div class="page-header pb-2 mt-4 mb-2 border-bottom toc-ignore">
-    <h1 class="display-4">Community college housing (simulated data, 2015)</h1>
-    <small class="dont-index">Source: <a href="https://github.com/OpenIntroStat/openintro/blob/master/R/data-student_housing.R"><code>R/data-student_housing.R</code></a></small>
-    <div class="d-none name"><code>student_housing.Rd</code></div>
+    <h1 class="display-4">Lizard speeds</h1>
+    <small class="dont-index">Source: <a href="https://github.com/OpenIntroStat/openintro/blob/master/R/data-lizards.R"><code>R/data-lizards.R</code></a></small>
+    <div class="d-none name"><code>lizards.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>These are simulated data and intended to represent housing prices of
-students at a college.</p>
+    <p>Data on top speeds measured on a laboratory race track for two species
+of lizards: Western fence lizard (Sceloporus occidentalis) and
+Sagebrush lizard (Sceloporus graciosus).</p>
     </div>
 
-    <pre class="usage"><code class="sourceCode R"><span class="va">student_housing</span></code></pre>
+    <pre class="usage"><code class="sourceCode R"><span class="va">lizards</span></code></pre>
 
 
     <h2 class="hasAnchor" id="format">
 <a class="anchor" href="#format"></a>Format</h2>
 
-    <p>A data frame with 175 observations on the following variable.</p>
+    <p>A data frame with 48 observations on the following 3 variables.</p>
 <dl>
-<dt>price</dt>
-<dd><p>Monthly housing price, simulated.</p></dd>
+<dt>top_speed</dt>
+<dd><p>Top speed of lizard, meters per second.</p></dd>
+<dt>common_name</dt>
+<dd><p>Common name: <code>Western fence lizard</code> and <code>Sagebrush lizard</code>.</p></dd>
+<dt>scientific_name</dt>
+<dd><p>Scientific name (Genus and species): <code>Sceloporus occidentalis</code> and <code>Sceloporus graciosus</code>.</p></dd>
 
 </dl>
-<h2 class="hasAnchor" id="examples">
+<h2 class="hasAnchor" id="source">
+<a class="anchor" href="#source"></a>Source</h2>
+
+    <p>Adolph, S. C. 1987.  Physiological and behavioral ecology of the lizards
+Sceloporus occidentalis and Sceloporus graciosus. Dissertation.
+University of Washington, Seattle, Washington, USA.</p>
+
+    <h2 class="hasAnchor" id="examples">
 <a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><code class="sourceCode R"><div class="input">
-<span class="fu"><a href="https://rdrr.io/r/base/Random.html">set.seed</a></span><span class="op">(</span><span class="fl">5</span><span class="op">)</span>
-<span class="va">generate_student_housing</span><span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/data.frame.html">data.frame</a></span><span class="op">(</span>
-    price <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/Round.html">round</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/stats/Normal.html">rnorm</a></span><span class="op">(</span><span class="fl">175</span>, <span class="fl">515</span>, <span class="fl">65</span><span class="op">)</span> <span class="op">+</span> <span class="fu"><a href="https://rdrr.io/r/base/Log.html">exp</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/stats/Normal.html">rnorm</a></span><span class="op">(</span><span class="fl">175</span>, <span class="fl">4.2</span>, <span class="fl">1</span><span class="op">)</span><span class="op">)</span><span class="op">)</span><span class="op">)</span>
-<span class="fu"><a href="https://rdrr.io/r/graphics/hist.html">hist</a></span><span class="op">(</span><span class="va">student_housing</span><span class="op">$</span><span class="va">price</span>, <span class="fl">20</span><span class="op">)</span>
-</div>
-<div class="img"><img src="student_housing-1.png" alt="" width="700" height="433"></div>
-<div class="input">
-<span class="fu"><a href="https://rdrr.io/r/stats/t.test.html">t.test</a></span><span class="op">(</span><span class="va">student_housing</span><span class="op">$</span><span class="va">price</span><span class="op">)</span>
-</div>
-<div class="output co">#&gt; 
-#&gt; 	One Sample t-test
-#&gt; 
-#&gt; data:  student_housing$price
-#&gt; t = 63.433, df = 174, p-value &lt; 2.2e-16
-#&gt; alternative hypothesis: true mean is not equal to 0
-#&gt; 95 percent confidence interval:
-#&gt;  597.7138 636.1034
-#&gt; sample estimates:
-#&gt; mean of x 
-#&gt;  616.9086 
-#&gt; </div>
-<div class="input">
-<span class="fu"><a href="https://rdrr.io/r/base/mean.html">mean</a></span><span class="op">(</span><span class="va">student_housing</span><span class="op">$</span><span class="va">price</span><span class="op">)</span>
-</div>
-<div class="output co">#&gt; [1] 616.9086</div>
-<div class="input">
-<span class="fu"><a href="https://rdrr.io/r/stats/sd.html">sd</a></span><span class="op">(</span><span class="va">student_housing</span><span class="op">$</span><span class="va">price</span><span class="op">)</span>
-</div>
-<div class="output co">#&gt; [1] 128.6541</div>
-<div class="input">
-<span class="fu"><a href="https://rdrr.io/r/base/identical.html">identical</a></span><span class="op">(</span><span class="va">student_housing</span>, <span class="va">generate_student_housing</span><span class="op">)</span>
-</div>
-<div class="output co">#&gt; [1] FALSE</div>
-<div class="input">
+<span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://ggplot2.tidyverse.org">ggplot2</a></span><span class="op">)</span>
+<span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://dplyr.tidyverse.org">dplyr</a></span><span class="op">)</span>
 
+<span class="co"># Top speed by species</span>
+<span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span><span class="va">lizards</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">top_speed</span>, color <span class="op">=</span> <span class="va">common_name</span>, fill <span class="op">=</span> <span class="va">common_name</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span>
+  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_density.html">geom_density</a></span><span class="op">(</span>alpha <span class="op">=</span> <span class="fl">0.5</span><span class="op">)</span>
+</div>
+<div class="img"><img src="lizards-1.png" alt="" width="700" height="433"></div>
+<div class="input">
+<span class="co"># Top speed summary statistics by species</span>
+<span class="va">lizards</span> <span class="op">%&gt;%</span>
+  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/group_by.html">group_by</a></span><span class="op">(</span><span class="va">common_name</span><span class="op">)</span> <span class="op">%&gt;%</span>
+  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/summarise.html">summarise</a></span><span class="op">(</span>
+    n    <span class="op">=</span> <span class="fu"><a href="https://dplyr.tidyverse.org/reference/context.html">n</a></span><span class="op">(</span><span class="op">)</span>,
+    mean <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/mean.html">mean</a></span><span class="op">(</span><span class="va">top_speed</span><span class="op">)</span>,
+    sd   <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/stats/sd.html">sd</a></span><span class="op">(</span><span class="va">top_speed</span><span class="op">)</span>
+  <span class="op">)</span>
+</div>
+<div class="output co">#&gt; <span style="color: #949494;"># A tibble: 2 x 4</span><span>
+#&gt;   common_name              n  mean    sd
+#&gt;   </span><span style="color: #949494;font-style: italic;">&lt;chr&gt;</span><span>                </span><span style="color: #949494;font-style: italic;">&lt;int&gt;</span><span> </span><span style="color: #949494;font-style: italic;">&lt;dbl&gt;</span><span> </span><span style="color: #949494;font-style: italic;">&lt;dbl&gt;</span><span>
+#&gt; </span><span style="color: #BCBCBC;">1</span><span> Sagebrush lizard        26  1.61 0.324
+#&gt; </span><span style="color: #BCBCBC;">2</span><span> Western fence lizard    22  2.31 0.555</span>
+</div>
+<div class="input">
 </div></code></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
