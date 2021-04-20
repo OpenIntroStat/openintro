@@ -1,3 +1,8 @@
+# openintro (development version)
+
+* Added new datasets:
+  * `lizards` (thanks Stephen Adolph!)
+
 # openintro 2.1.0
 
 * Added `LazyDataCompression: xz` to DESCRIPTION per CRAN.
