@@ -101,7 +101,7 @@ discussion before making the pull request.
     e.g. `library(dplyr)`, `library(ggplot2)`.
 7.  Restart R and run `devtools::load_all()` to make sure the data loads
     and run your examples to confirm they all work.
-8.  Run `devtools::docment()`, restart R, and then
+8.  Run `devtools::document()`, restart R, and then
     `devtools::load_all()`. Then, check out `?name_of_dataset` to make
     sure the documentation looks as expected.
 9.  Run `devtools::check()`. The only NOTE you should see as a result of
