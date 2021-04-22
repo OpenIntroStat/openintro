@@ -5,8 +5,8 @@ library(usethis)
 
 # load data -------------------------------------------------------------------
 
-lizards <- read_csv(here::here("data-raw/lizards/lizards.csv"))
+lizard_run <- read_csv(here::here("data-raw/lizard_run/lizards.csv"))
 
 # Save ------------------------------------------------------------------------
 
-usethis::use_data(lizards, overwrite = TRUE)
+usethis::use_data(lizard_run, overwrite = TRUE)

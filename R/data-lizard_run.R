@@ -4,7 +4,7 @@
 #' of lizards: Western fence lizard (Sceloporus occidentalis) and
 #' Sagebrush lizard (Sceloporus graciosus).
 #'
-#' @name lizards
+#' @name lizard_run
 #' @docType data
 #' @format A data frame with 48 observations on the following 3 variables.
 #' \describe{
@@ -21,11 +21,11 @@
 #' library(dplyr)
 #'
 #' # Top speed by species
-#' ggplot(lizards, aes(x = top_speed, color = common_name, fill = common_name)) +
+#' ggplot(lizard_run, aes(x = top_speed, color = common_name, fill = common_name)) +
 #'   geom_density(alpha = 0.5)
 #'
 #' # Top speed summary statistics by species
-#' lizards %>%
+#' lizard_run %>%
 #'   group_by(common_name) %>%
 #'   summarise(
 #'     n    = n(),
@@ -33,4 +33,4 @@
 #'     sd   = sd(top_speed)
 #'   )
 #'
-"lizards"
+"lizard_run"
