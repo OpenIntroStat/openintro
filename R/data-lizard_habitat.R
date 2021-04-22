@@ -9,8 +9,11 @@
 #' @docType data
 #' @format A data frame with 332 observations on the following 2 variables.
 #' \describe{
-#'   \item{site}{Site of lizard sighting: `desert`, `mountain`, or `valley`.}
-#'   \item{sunlight}{Sunlight level at time of sighting: `partial`, `shade`, or `sun`.}
+#'   \item{site}{Site of lizard observation: `desert`, `mountain`, or `valley`.}
+#'   \item{sunlight}{Sunlight level at time of observation:
+#'   `sun` (lizard was observed perching in full sunlight),
+#'   `partial` (lizard was observed perching with part of its body in the sun, part in the shade),
+#'   `shade`(lizard was observed perching in the shade).}
 #' }
 #' @source Adolph, S. C. 1990. Influence of behavioral thermoregulation on
 #' microhabitat use by two Sceloporus lizards.  Ecology 71: 315-327.

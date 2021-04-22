@@ -7,8 +7,11 @@
 \format{
 A data frame with 332 observations on the following 2 variables.
 \describe{
-\item{site}{Site of lizard sighting: \code{desert}, \code{mountain}, or \code{valley}.}
-\item{sunlight}{Sunlight level at time of sighting: \code{partial}, \code{shade}, or \code{sun}.}
+\item{site}{Site of lizard observation: \code{desert}, \code{mountain}, or \code{valley}.}
+\item{sunlight}{Sunlight level at time of observation:
+\code{sun} (lizard was observed perching in full sunlight),
+\code{partial} (lizard was observed perching with part of its body in the sun, part in the shade),
+\code{shade}(lizard was observed perching in the shade).}
 }
 }
 \source{
