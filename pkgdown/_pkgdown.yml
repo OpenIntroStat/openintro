@@ -1,16 +1,26 @@
 url: https://openintrostat.github.io/openintro
 
+home:
+  title: Data sets and supplemental functions from OpenIntro textbooks and labs
+  description: Supplemental functions and data for OpenIntro resources, including open-source textbooks and resources for introductory statistics.
+  links:
+  - text: Learn more
+    href: https://www.openintro.org
+
 template:
   bootstrap: 4
+  opengraph:
+    image:
+      src: man/figures/logo.png
+      alt: "Data sets and supplemental functions from OpenIntro textbooks and labs"
+    twitter:
+      creator: "@mine-cetinkaya-rundel"
+      site: "@OpenIntroOrg"
+      card: summary_large_image
 
 authors:
   Mine Çetinkaya-Rundel:
     href: "http://mine-cr.com/"
-
-home:
-  links:
-  - text: Learn more
-    href: https://www.openintro.org
 
 footer:
   left:
