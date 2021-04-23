@@ -5,6 +5,10 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="Create a 3 x 3 grid of quantile-quantile plots, the first of which corresponds
+to the input data. The other eight plots arise from simulating random normal
+data with the same mean, standard deviation, and length as the data. For use
+in comparing known-normal qqplots to an observed qqplot to assess normality.">
 <title>Generate simulated QQ plots — qqnormsim • openintro</title>
 <!-- favicons --><link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
@@ -24,7 +28,11 @@
 to the input data. The other eight plots arise from simulating random normal
 data with the same mean, standard deviation, and length as the data. For use
 in comparing known-normal qqplots to an observed qqplot to assess normality.">
-<meta property="og:image" content="https://openintrostat.github.io/openintro/logo.png">
+<meta property="og:image" content="https://openintrostat.github.io/openintro/reference/figures/logo.png">
+<meta property="og:image:alt" content="Data sets and supplemental functions from OpenIntro textbooks and labs">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="@mine-cetinkaya-rundel">
+<meta name="twitter:site" content="@OpenIntroOrg">
 <!-- mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-AMS-MML_HTMLorMML.js" integrity="sha256-84DKXVJXs0/F8OTMzX4UR909+jtl4G7SPypPavF+GfA=" crossorigin="anonymous"></script><!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -48,8 +56,8 @@ in comparing known-normal qqplots to an observed qqplot to assess normality.">
   <a class="nav-link" href="../reference/index.html">Reference</a>
 </li>
 <li class="nav-item dropdown">
-  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">Articles</a>
-  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" id="dropdown-articles">Articles</a>
+  <div class="dropdown-menu" aria-labelledby="dropdown-articles">
     <a class="dropdown-item" href="../articles/datasets.html">Datasets of OpenIntro</a>
   </div>
 </li>
@@ -59,7 +67,7 @@ in comparing known-normal qqplots to an observed qqplot to assess normality.">
       </ul>
 <ul class="navbar-nav ml-1">
 <li class="nav-item">
-  <a class="nav-link" href="https://github.com/OpenIntroStat/openintro/">
+  <a class="nav-link" href="https://github.com/OpenIntroStat/openintro/" aria-label="github">
     <span class="fab fa fab fa-github fa-lg"></span>
      
   </a>
@@ -93,7 +101,7 @@ in comparing known-normal qqplots to an observed qqplot to assess normality.</p>
       <dd class="col-sm-9" id="ref-arguments desc"><p>data frame to use.</p></dd>
     </dl>
 <h2 class="hasAnchor" id="value">
-<a class="anchor" href="#value"></a>Value</h2>
+<a class="anchor" href="#value" aria-hidden="true"></a>Value</h2>
 
     <p>A 3 x 3 grid of qqplots.</p>
 

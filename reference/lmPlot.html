@@ -5,6 +5,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="Plot data, the linear model, and a residual plot simultaneously.">
 <title>Linear regression plot with residual plot — lmPlot • openintro</title>
 <!-- favicons --><link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
@@ -21,7 +22,11 @@
 <link href="../syntax-highlighting.css" rel="stylesheet">
 <script src="../pkgdown.js"></script><meta property="og:title" content="Linear regression plot with residual plot — lmPlot">
 <meta property="og:description" content="Plot data, the linear model, and a residual plot simultaneously.">
-<meta property="og:image" content="https://openintrostat.github.io/openintro/logo.png">
+<meta property="og:image" content="https://openintrostat.github.io/openintro/reference/figures/logo.png">
+<meta property="og:image:alt" content="Data sets and supplemental functions from OpenIntro textbooks and labs">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="@mine-cetinkaya-rundel">
+<meta name="twitter:site" content="@OpenIntroOrg">
 <!-- mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-AMS-MML_HTMLorMML.js" integrity="sha256-84DKXVJXs0/F8OTMzX4UR909+jtl4G7SPypPavF+GfA=" crossorigin="anonymous"></script><!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -45,8 +50,8 @@
   <a class="nav-link" href="../reference/index.html">Reference</a>
 </li>
 <li class="nav-item dropdown">
-  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">Articles</a>
-  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" id="dropdown-articles">Articles</a>
+  <div class="dropdown-menu" aria-labelledby="dropdown-articles">
     <a class="dropdown-item" href="../articles/datasets.html">Datasets of OpenIntro</a>
   </div>
 </li>
@@ -56,7 +61,7 @@
       </ul>
 <ul class="navbar-nav ml-1">
 <li class="nav-item">
-  <a class="nav-link" href="https://github.com/OpenIntroStat/openintro/">
+  <a class="nav-link" href="https://github.com/OpenIntroStat/openintro/" aria-label="github">
     <span class="fab fa fab fa-github fa-lg"></span>
      
   </a>
@@ -185,16 +190,16 @@ primary plot to the residual plot, in height.</p></dd>
       <dd class="col-sm-9" id="ref-arguments desc"><p>Additional arguments to <code>plot</code>.</p></dd>
     </dl>
 <h2 class="hasAnchor" id="see-also">
-<a class="anchor" href="#see-also"></a>See also</h2>
+<a class="anchor" href="#see-also" aria-hidden="true"></a>See also</h2>
 
     <div class="dont-index"><p><code><a href="makeTube.html">makeTube</a></code></p></div>
     <h2 class="hasAnchor" id="author">
-<a class="anchor" href="#author"></a>Author</h2>
+<a class="anchor" href="#author" aria-hidden="true"></a>Author</h2>
 
     <p>David Diez</p>
 
     <h2 class="hasAnchor" id="examples">
-<a class="anchor" href="#examples"></a>Examples</h2>
+<a class="anchor" href="#examples" aria-hidden="true"></a>Examples</h2>
     <pre class="examples"><code class="sourceCode R"><div class="input">
 <span class="fu">lmPlot</span><span class="op">(</span><span class="va">satgpa</span><span class="op">$</span><span class="va">sat_sum</span>, <span class="va">satgpa</span><span class="op">$</span><span class="va">fy_gpa</span><span class="op">)</span>
 </div>

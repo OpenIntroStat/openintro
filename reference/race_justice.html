@@ -5,6 +5,12 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content='Results from a Yahoo! News poll conducted by YouGov on May 29-39, 2020.
+In total 1060 U.S. adults were asked a series of questions regarding race and
+justice in the wake of the killing of George Floyd by a police officer.
+Results in this data set are percentages for the question, "Do you think
+Blacks and Whites receive equal treatment from the police?" For this
+particular question there were 1059 respondents.'>
 <title>Yahoo! News Race and Justice poll results — race_justice • openintro</title>
 <!-- favicons --><link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
@@ -26,7 +32,11 @@ justice in the wake of the killing of George Floyd by a police officer.
 Results in this data set are percentages for the question, "Do you think
 Blacks and Whites receive equal treatment from the police?" For this
 particular question there were 1059 respondents.'>
-<meta property="og:image" content="https://openintrostat.github.io/openintro/logo.png">
+<meta property="og:image" content="https://openintrostat.github.io/openintro/reference/figures/logo.png">
+<meta property="og:image:alt" content="Data sets and supplemental functions from OpenIntro textbooks and labs">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="@mine-cetinkaya-rundel">
+<meta name="twitter:site" content="@OpenIntroOrg">
 <!-- mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-AMS-MML_HTMLorMML.js" integrity="sha256-84DKXVJXs0/F8OTMzX4UR909+jtl4G7SPypPavF+GfA=" crossorigin="anonymous"></script><!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -50,8 +60,8 @@ particular question there were 1059 respondents.'>
   <a class="nav-link" href="../reference/index.html">Reference</a>
 </li>
 <li class="nav-item dropdown">
-  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">Articles</a>
-  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" id="dropdown-articles">Articles</a>
+  <div class="dropdown-menu" aria-labelledby="dropdown-articles">
     <a class="dropdown-item" href="../articles/datasets.html">Datasets of OpenIntro</a>
   </div>
 </li>
@@ -61,7 +71,7 @@ particular question there were 1059 respondents.'>
       </ul>
 <ul class="navbar-nav ml-1">
 <li class="nav-item">
-  <a class="nav-link" href="https://github.com/OpenIntroStat/openintro/">
+  <a class="nav-link" href="https://github.com/OpenIntroStat/openintro/" aria-label="github">
     <span class="fab fa fab fa-github fa-lg"></span>
      
   </a>
@@ -91,7 +101,7 @@ particular question there were 1059 respondents.</p>
 
 
     <h2 class="hasAnchor" id="format">
-<a class="anchor" href="#format"></a>Format</h2>
+<a class="anchor" href="#format" aria-hidden="true"></a>Format</h2>
 
     <p>A data frame with 1,059 rows and 2 variables.</p>
 <dl>
@@ -103,12 +113,12 @@ people receive equal treatment from the police?", with levels <code>Yes</code>, 
 
 </dl>
 <h2 class="hasAnchor" id="source">
-<a class="anchor" href="#source"></a>Source</h2>
+<a class="anchor" href="#source" aria-hidden="true"></a>Source</h2>
 
     <p><a href="https://docs.cdn.yougov.com/s23agrrx47/20200531_yahoo_race_and_justice_crosstabs.pdf">Yahoo! News Race and Justice - May 31, 2020</a>.</p>
 
     <h2 class="hasAnchor" id="examples">
-<a class="anchor" href="#examples"></a>Examples</h2>
+<a class="anchor" href="#examples" aria-hidden="true"></a>Examples</h2>
     <pre class="examples"><code class="sourceCode R"><div class="input">
 <span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://ggplot2.tidyverse.org">ggplot2</a></span><span class="op">)</span>
 <span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://dplyr.tidyverse.org">dplyr</a></span><span class="op">)</span>

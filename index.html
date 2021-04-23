@@ -5,7 +5,8 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Data Sets and Supplemental Functions from OpenIntro Textbooks and Labs • openintro</title>
+<meta name="description" content="Supplemental functions and data for OpenIntro resources, including open-source textbooks and resources for introductory statistics.">
+<title>Data sets and supplemental functions from OpenIntro textbooks and labs • openintro</title>
 <!-- favicons --><link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
 <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="apple-touch-icon.png">
@@ -19,15 +20,13 @@
 <!-- bootstrap-toc --><link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.css">
 <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- pkgdown --><link href="pkgdown.css" rel="stylesheet">
 <link href="syntax-highlighting.css" rel="stylesheet">
-<script src="pkgdown.js"></script><meta property="og:title" content="Data Sets and Supplemental Functions from OpenIntro Textbooks and Labs">
-<meta property="og:description" content="Supplemental functions and data for OpenIntro resources, which 
-    includes open-source textbooks and resources for introductory statistics 
-    (&lt;https://www.openintro.org/&gt;). The package contains data sets used in our 
-    open-source textbooks along with custom plotting functions for reproducing 
-    book figures. Note that many functions and examples include color 
-    transparency; some plotting elements may not show up properly (or at all) 
-    when run in some versions of Windows operating system.">
-<meta property="og:image" content="https://openintrostat.github.io/openintro/logo.png">
+<script src="pkgdown.js"></script><meta property="og:title" content="Data sets and supplemental functions from OpenIntro textbooks and labs">
+<meta property="og:description" content="Supplemental functions and data for OpenIntro resources, including open-source textbooks and resources for introductory statistics.">
+<meta property="og:image" content="https://openintrostat.github.io/openintro/reference/figures/logo.png">
+<meta property="og:image:alt" content="Data sets and supplemental functions from OpenIntro textbooks and labs">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="@mine-cetinkaya-rundel">
+<meta name="twitter:site" content="@OpenIntroOrg">
 <!-- mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-AMS-MML_HTMLorMML.js" integrity="sha256-84DKXVJXs0/F8OTMzX4UR909+jtl4G7SPypPavF+GfA=" crossorigin="anonymous"></script><!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -51,8 +50,8 @@
   <a class="nav-link" href="reference/index.html">Reference</a>
 </li>
 <li class="nav-item dropdown">
-  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">Articles</a>
-  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" id="dropdown-articles">Articles</a>
+  <div class="dropdown-menu" aria-labelledby="dropdown-articles">
     <a class="dropdown-item" href="articles/datasets.html">Datasets of OpenIntro</a>
   </div>
 </li>
@@ -62,7 +61,7 @@
       </ul>
 <ul class="navbar-nav ml-1">
 <li class="nav-item">
-  <a class="nav-link" href="https://github.com/OpenIntroStat/openintro/">
+  <a class="nav-link" href="https://github.com/OpenIntroStat/openintro/" aria-label="github">
     <span class="fab fa fab fa-github fa-lg"></span>
      
   </a>
@@ -75,13 +74,13 @@
   <div class="contents col-md-9">
 <img src="package-logo.png" class="pkg-logo" alt="" width="120"><div id="openintro-" class="section level1">
 <div class="pb-2 mt-4 mb-2 border-bottom"><h1 class="hasAnchor">
-<a href="#openintro-" class="anchor"></a>openintro </h1></div>
+<a href="#openintro-" class="anchor" aria-hidden="true"></a>openintro </h1></div>
 <!-- badges: start -->
 
 <p>Supplemental functions and data for OpenIntro resources, which includes open-source textbooks and resources for introductory statistics at <a href="https://www.openintro.org/" class="external-link">openintro.org</a>. The package contains data sets used in our open-source textbooks along with custom plotting functions for reproducing book figures. The package also contains the datasets used in OpenIntro labs. Note that many functions and examples include color transparency; some plotting elements may not show up properly (or at all) when run in some versions of Windows operating system.</p>
 <div id="installation" class="section level2">
 <h2 class="hasAnchor">
-<a href="#installation" class="anchor"></a>Installation</h2>
+<a href="#installation" class="anchor" aria-hidden="true"></a>Installation</h2>
 <p>You can install the released version of openintro from <a href="https://CRAN.R-project.org" class="external-link">CRAN</a> with:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"openintro"</span><span class="op">)</span></code></pre></div>
@@ -94,14 +93,14 @@
 </div>
 <div id="questions-bugs-feature-requests" class="section level2">
 <h2 class="hasAnchor">
-<a href="#questions-bugs-feature-requests" class="anchor"></a>Questions, bugs, feature requests</h2>
+<a href="#questions-bugs-feature-requests" class="anchor" aria-hidden="true"></a>Questions, bugs, feature requests</h2>
 <p>You can file an issue to get help, report a bug, or make a feature request.</p>
 <p>When filing an issue to get help or report a bug, please make a minimal <strong>repr</strong>oducible <strong>ex</strong>ample using the <a href="https://reprex.tidyverse.org/" class="external-link">reprex</a> package. If you haven’t heard of or used reprex before, you’re in for a treat! Seriously, reprex will make all of your R-question-asking endeavors easier (which is a pretty insane ROI for the five to ten minutes it’ll take you to learn what it’s all about). For additional reprex pointers, check out the <a href="https://www.tidyverse.org/help/" class="external-link">Get help!</a> section of the tidyverse site.</p>
 <p>Before opening a new issue, be sure to <a href="https://github.com/openintrostat/openintro/issues" class="external-link">search issues and pull requests</a> to make sure the bug hasn’t been reported and/or already fixed in the development version. By default, the search will be pre-populated with <code>is:issue is:open</code>. You can <a href="https://help.github.com/articles/searching-issues-and-pull-requests/" class="external-link">edit the qualifiers</a> (e.g. <code>is:pr</code>, <code>is:closed</code>) as needed. For example, you’d simply remove <code>is:open</code> to search <em>all</em> issues in the repo, open or closed.</p>
 </div>
 <div id="contributing" class="section level2">
 <h2 class="hasAnchor">
-<a href="#contributing" class="anchor"></a>Contributing</h2>
+<a href="#contributing" class="anchor" aria-hidden="true"></a>Contributing</h2>
 <p>Process for adding new data to the package</p>
 <p>The following steps use the <strong>devtools</strong> and <strong>usethis</strong> packages for various steps. We recommend using this process when suggesting new datasets to be added to the package. If the dataset is large (&gt;500MB) or you’d like to add a function, please open an issue first for discussion before making the pull request.</p>
 <ol style="list-style-type: decimal">
@@ -124,7 +123,7 @@
 </div>
 <div id="code-of-conduct" class="section level2">
 <h2 class="hasAnchor">
-<a href="#code-of-conduct" class="anchor"></a>Code of Conduct</h2>
+<a href="#code-of-conduct" class="anchor" aria-hidden="true"></a>Code of Conduct</h2>
 <p>Please note that the openintro project is released with a <a href="https://contributor-covenant.org/version/2/0/CODE_OF_CONDUCT.html" class="external-link">Contributor Code of Conduct</a>. By contributing to this project, you agree to abide by its terms.</p>
 </div>
 </div>
@@ -180,7 +179,9 @@
 <h2 data-toc-skip>Dev status</h2>
 <ul class="list-unstyled">
 <li><a href="https://cran.r-project.org/package=openintro" class="external-link"><img src="https://www.r-pkg.org/badges/version/openintro" alt="CRAN status"></a></li>
+<li><a href="https://lifecycle.r-lib.org/articles/stages.html#stable" class="external-link"><img src="https://img.shields.io/badge/lifecycle-stable-green.svg" alt="Lifecycle: stable"></a></li>
 <li><a href="https://github.com/OpenIntroStat/openintro/actions" class="external-link"><img src="https://github.com/OpenIntroStat/openintro/workflows/R-CMD-check/badge.svg" alt="R build status"></a></li>
+<li><a href="https://cran.r-project.org/package=openintro" class="external-link"><img src="http://cranlogs.r-pkg.org/badges/openintro" alt="CRAN RStudio mirror downloads"></a></li>
 </ul>
 </div>
 
