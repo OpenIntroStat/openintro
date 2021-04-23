@@ -5,8 +5,12 @@
 
 [![CRAN
 status](https://www.r-pkg.org/badges/version/openintro)](https://cran.r-project.org/package=openintro)
+[![Lifecycle:
+stable](https://img.shields.io/badge/lifecycle-stable-green.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
 [![R build
 status](https://github.com/OpenIntroStat/openintro/workflows/R-CMD-check/badge.svg)](https://github.com/OpenIntroStat/openintro/actions)
+[![CRAN RStudio mirror
+downloads](http://cranlogs.r-pkg.org/badges/openintro)](https://cran.r-project.org/package=openintro)
 <!-- badges: end -->
 
 Supplemental functions and data for OpenIntro resources, which includes
