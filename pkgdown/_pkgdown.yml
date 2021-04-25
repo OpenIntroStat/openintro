@@ -166,8 +166,6 @@ reference:
   - nuclear_survey
   - nycflights
   - offshore_drilling
-  - openintro_colors
-  - openintro_palettes
   - opportunity_cost
   - orings
   - oscars
@@ -255,10 +253,19 @@ reference:
   - toohey
   - toy_anova
 - title: Color palettes
+  desc: >
+    These are the color palettes used in OpenIntro books.
   contents:
   - COL
   - IMSCOL
+  - openintro_colors
+  - openintro_palettes
 - title: Functions
+  desc: >
+    These functions are used for creating visualisations and
+    summary tables in the books as well as for keeping the
+    OpenIntro datasets website up to date with the datasets
+    in this package.
   contents:
   - ArrowLines
   - AxisInDollars
