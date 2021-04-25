@@ -1,7 +1,8 @@
 # openintro (development version)
 
 * Added new datasets:
-  * `lizards` (thanks Stephen Adolph!)
+  * `lizard_run` and `lizard_habitat` (thanks Stephen Adolph!)
+  * `daycare_fines`
 
 # openintro 2.1.0
 
