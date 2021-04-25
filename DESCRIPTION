@@ -30,6 +30,7 @@ Suggests:
     knitr,
     lubridate,
     scales,
+    testthat (>= 3.0.0),
     tidyr,
     tidytext
 Imports: 
@@ -47,3 +48,4 @@ URL: http://openintrostat.github.io/openintro/, https://github.com/OpenIntroStat
 BugReports: https://github.com/OpenIntroStat/openintro/issues
 VignetteBuilder: knitr
 Roxygen: list(markdown = TRUE)
+Config/testthat/edition: 3

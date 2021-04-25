@@ -41,6 +41,9 @@ navbar:
 
 reference:
 - title: Datasets
+  desc: >
+    These are real datasets collected as part of surveys, polls, other
+    observational studies, or experiments.
   contents:
   - absenteeism
   - acs12
@@ -50,7 +53,6 @@ reference:
   - antibiotics
   - arbuthnot
   - ask
-  - association
   - assortive_mating
   - avandia
   - babies_crawl
@@ -58,6 +60,7 @@ reference:
   - bac
   - ball_bearing
   - bdims
+  - biontech_adolescents
   - birds
   - births
   - births14
@@ -66,17 +69,14 @@ reference:
   - cancer_in_dogs
   - cards
   - cars93
-  - cchousing
   - census
   - cherry
   - children_gender_stereo
   - china
   - cia_factbook
-  - classdata
   - cle_sac
   - climate70
   - coast_starlight
-  - COL
   - corr_match
   - country_iso
   - cpr
@@ -102,7 +102,6 @@ reference:
   - exams
   - exclusive_relationship
   - fact_opinion
-  - family_college
   - fastfood
   - fcid
   - fheights
@@ -120,8 +119,6 @@ reference:
   - gpa_iq
   - gpa_study_hours
   - gpa
-  - gradestv
-  - gsearch
   - gss2010
   - health_coverage
   - healthcare_law_survey
@@ -130,15 +127,12 @@ reference:
   - helmet
   - hfi
   - house
-  - housing
   - hsb2
   - husbands_wives
   - immigration
-  - IMSCOL
   - infmortrate
   - ipo
   - ipod
-  - jury
   - kobe_basket
   - law_resume
   - leg_mari
@@ -177,7 +171,6 @@ reference:
   - opportunity_cost
   - orings
   - oscars
-  - outliers
   - penelope
   - penetrating_oil
   - penny_ages
@@ -194,19 +187,13 @@ reference:
   - prison
   - prius_mpg
   - race_justice
-  - res_demo_1
-  - res_demo_2
   - resume
   - rosling_responses
   - russian_influence_on_us_election_2016
   - salinity
-  - sat_improve
   - satgpa
   - scotus_healthcare
   - seattlepets
-  - simulated_dist
-  - simulated_normal
-  - simulated_scatter
   - sinusitis
   - sleep_deprivation
   - smallpox
@@ -225,17 +212,12 @@ reference:
   - stent30
   - stent365
   - stocks_18
-  - student_housing
-  - student_sleep
   - sulphinpyrazone
   - supreme_court
   - teacher
   - textbooks
-  - thanksgiving_spend
   - tips
-  - toohey
   - tourism
-  - toy_anova
   - transplant
   - ucla_f18
   - ucla_textbooks_f18
@@ -247,7 +229,35 @@ reference:
   - yawn
   - yrbss_samp
   - yrbss
-
+- title: Simulated datasets
+  desc: >
+    These are simulated datasets, primarly used in the textbooks for illustrating
+    a particular concept or showcasing features of a particular methodology.
+  contents:
+  - association
+  - cchousing
+  - classdata
+  - family_college
+  - gradestv
+  - gsearch
+  - housing
+  - jury
+  - outliers
+  - res_demo_1
+  - res_demo_2
+  - sat_improve
+  - simulated_dist
+  - simulated_normal
+  - simulated_scatter
+  - student_housing
+  - student_sleep
+  - thanksgiving_spend
+  - toohey
+  - toy_anova
+- title: Color palettes
+  contents:
+  - COL
+  - IMSCOL
 - title: Functions
   contents:
   - ArrowLines
