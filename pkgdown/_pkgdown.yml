@@ -77,7 +77,6 @@ reference:
   - cle_sac
   - climate70
   - coast_starlight
-  - COL
   - corr_match
   - country_iso
   - cpr
@@ -135,7 +134,6 @@ reference:
   - hsb2
   - husbands_wives
   - immigration
-  - IMSCOL
   - infmortrate
   - ipo
   - ipod
@@ -248,7 +246,10 @@ reference:
   - yawn
   - yrbss_samp
   - yrbss
-
+- title: Color palettes
+  contents:
+  - COL
+  - IMSCOL
 - title: Functions
   contents:
   - ArrowLines
