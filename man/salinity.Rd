@@ -3,7 +3,7 @@
 \docType{data}
 \name{salinity}
 \alias{salinity}
-\title{Salinity.}
+\title{Salinity in Bimini Lagoon, Bahamas}
 \format{
 A data frame with 30 rows and 2 variables.
 \describe{
@@ -21,7 +21,6 @@ salinity
 Data collected at three different water masses in the Bimini Lagoon, Bahamas.
 }
 \examples{
-
 library(ggplot2)
 library(broom)
 

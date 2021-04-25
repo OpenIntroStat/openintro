@@ -1,4 +1,4 @@
-#' Which resume attributes drive job callbacks?  (Race and gender under study.)
+#' Which resume attributes drive job callbacks?
 #'
 #' This experiment data comes from a study that sought to understand the
 #' influence of race and gender on job application callback rates. The study

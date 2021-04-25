@@ -3,7 +3,7 @@
 \docType{data}
 \name{possum}
 \alias{possum}
-\title{possum}
+\title{Possums in Australia and New Guinea}
 \format{
 A data frame with 104 observations on the following 8 variables.
 \describe{
@@ -33,12 +33,13 @@ data set by the same name in the \code{DAAG} package, however, the data set
 included here includes fewer variables.
 }
 \examples{
-
 library(ggplot2)
 
+# Skull width vs. head length
 ggplot(possum, aes(x = head_l, y = skull_w)) +
   geom_point()
 
+# Total length vs. sex
 ggplot(possum, aes(x = total_l, fill = sex)) +
   geom_density(alpha = 0.5)
 

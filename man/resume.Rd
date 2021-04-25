@@ -3,7 +3,7 @@
 \docType{data}
 \name{resume}
 \alias{resume}
-\title{Which resume attributes drive job callbacks?  (Race and gender under study.)}
+\title{Which resume attributes drive job callbacks?}
 \format{
 A data frame with 4870 observations, representing 4870 resumes, over
 30 different variables that describe the job details, the outcome

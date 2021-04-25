@@ -1,4 +1,4 @@
-#' Salinity.
+#' Salinity in Bimini Lagoon, Bahamas
 #'
 #' Data collected at three different water masses in the Bimini Lagoon, Bahamas.
 #'
@@ -11,7 +11,6 @@
 #' @source Till, R. (1974) Statistical Methods for the Earth Scientist: An Introduction. London: Macmillon, 104.
 #'
 #' @examples
-#'
 #' library(ggplot2)
 #' library(broom)
 #'
