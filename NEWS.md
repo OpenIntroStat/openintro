@@ -2,7 +2,7 @@
 
 * Added new datasets:
   * `lizard_run` and `lizard_habitat` (thanks Stephen Adolph!)
-  * `daycare_fines`, `biontech_adolescents`
+  * `daycare_fines`, `biontech_adolescents`, `nyc_marathon`
 * Add tests for some of the new datasets
 
 # openintro 2.1.0

@@ -3,7 +3,7 @@
 \docType{data}
 \name{marathon}
 \alias{marathon}
-\title{New York City Marathon Times}
+\title{New York City Marathon Times (outdated)}
 \format{
 A data frame with 60 observations on the following 3 variables.
 \describe{
@@ -20,10 +20,9 @@ marathon
 }
 \description{
 Marathon times of male and female winners of the New York City Marathon
-1970-1999.
+1970-1999. See \link{nyc_marathon} for a more updated dataset.
 }
 \examples{
-
 library(ggplot2)
 
 ggplot(marathon, aes(x = time)) +
@@ -31,6 +30,5 @@ ggplot(marathon, aes(x = time)) +
 
 ggplot(marathon, aes(y = time, x = gender)) +
   geom_boxplot()
-
 }
 \keyword{datasets}

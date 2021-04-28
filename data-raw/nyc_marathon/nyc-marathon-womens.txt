@@ -1,0 +1,52 @@
+year | name 					| country       | time    | note
+1970 | 							| 				|		  | No woman finishers
+1971 | Beth Bonner	 			| United States	| 2:55:22 | World record
+1972 | Nina Kuscsik	 			| United States	| 3:08:41 | 
+1973 | Nina Kuscsik	 			| United States	| 2:57:07 | Second victory
+1974 | Kathrine Switzer	 		| United States	| 3:07:29 | 
+1975 | Kim Merritt	 			| United States	| 2:46:14 | Course record
+1976 | Miki Gorman	 			| United States	| 2:39:11 | Course record
+1977 | Miki Gorman	 			| United States	| 2:43:10 | Second victory
+1978 | Grete Waitz	 			| Norway		| 2:32:30 | World record
+1979 | Grete Waitz	 			| Norway		| 2:27:33 | World record, second victory
+1980 | Grete Waitz	 			| Norway		| 2:25:42 | World record, third victory
+1981 | Allison Roe	 			| New Zealand	| 2:25:29 | Course record (course measured short)
+1982 | Grete Waitz	 			| Norway		| 2:27:14 | Fourth victory
+1983 | Grete Waitz	 			| Norway		| 2:27:00 | Fifth victory
+1984 | Grete Waitz	 			| Norway		| 2:29:30 | Sixth victory
+1985 | Grete Waitz	 			| Norway		| 2:28:34 | Seventh victory
+1986 | Grete Waitz	 			| Norway		| 2:28:06 | Eighth victory
+1987 | Priscilla Welch	 		| United Kingdom| 2:30:17 | 
+1988 | Grete Waitz	 			| Norway		| 2:28:07 | Ninth victory
+1989 | Ingrid Kristiansen		| Norway		| 2:25:30 | 
+1990 | Wanda Panfil	 			| Poland		| 2:30:45 | 
+1991 | Liz McColgan	 			| United Kingdom| 2:27:32 | 
+1992 | Lisa Ondieki	 			| Australia		| 2:24:40 | Course record
+1993 | Uta Pippig	 			| Germany		| 2:26:24 | 
+1994 | Tegla Loroupe	 		| Kenya			| 2:27:37 | 
+1995 | Tegla Loroupe	 		| Kenya			| 2:28:06 | Second victory
+1996 | Anuța Cătună	 			| Romania		| 2:28:18 | 
+1997 | Franziska Rochat-Moser	| Switzerland	| 2:28:43 | 
+1998 | Franca Fiacconi	 		| Italy			| 2:25:17 | 
+1999 | Adriana Fernández		| Mexico		| 2:25:06 | 
+2000 | Lyudmila Petrova	 		| Russia		| 2:25:45 | 
+2001 | Margaret Okayo	 		| Kenya			| 2:24:21 | Course record
+2002 | Joyce Chepchumba	 		| Kenya			| 2:25:56 | 
+2003 | Margaret Okayo	 		| Kenya			| 2:22:31 | Current course record, second victory
+2004 | Paula Radcliffe	 		| United Kingdom| 2:23:10 | 
+2005 | Jeļena Prokopčuka		| Latvia		| 2:24:41 | 
+2006 | Jeļena Prokopčuka		| Latvia		| 2:25:05 | Second victory
+2007 | Paula Radcliffe	 		| United Kingdom| 2:23:09 | Second victory
+2008 | Paula Radcliffe	 		| United Kingdom| 2:23:56 | Third victory
+2009 | Derartu Tulu	 			| Ethiopia		| 2:28:52 | 
+2010 | Edna Kiplagat	 		| Kenya			| 2:28:20 | 
+2011 | Firehiwot Dado	 		| Ethiopia		| 2:23:15 | 
+2012 | 							|				|		  | Canceled due to Hurricane Sandy
+2013 | Priscah Jeptoo	 		| Kenya			| 2:25:07 | 
+2014 | Mary Keitany	 			| Kenya			| 2:25:07 | 
+2015 | Mary Keitany	 			| Kenya			| 2:24:25 | Second victory
+2016 | Mary Keitany	 			| Kenya			| 2:24:26 | Third victory
+2017 | Shalane Flanagan	 		| United States	| 2:26:53 | 
+2018 | Mary Keitany	 			| Kenya			| 2:22:48 | Fourth victory
+2019 | Joyciline Jepkosgei		| Kenya			| 2:22:38 | 
+2020 | Stephanie Bruce			| United States	| 2:35:28 | Virtual event held due to the COVID-19 
