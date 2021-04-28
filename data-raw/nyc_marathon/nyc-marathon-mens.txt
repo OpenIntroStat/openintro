@@ -1,0 +1,52 @@
+year | name 					| country       | time    | note
+1970 | Gary Muhrcke	         	| United States	| 2:31:38 |	Course record
+1971 | Norman Higgins	    	| United States	| 2:22:54 |	Course record
+1972 | Sheldon Karlin	    	| United States	| 2:27:52 |	
+1973 | Tom Fleming	        	| United States	| 2:21:54 |	Course record
+1974 | Norbert Sander	    	| United States	| 2:26:30 |	
+1975 | Tom Fleming	        	| United States	| 2:19:27 |	Course record, second victory
+1976 | Bill Rodgers	    		| United States	| 2:10:10 |	Course record
+1977 | Bill Rodgers	    		| United States	| 2:11:28 |	Second victory
+1978 | Bill Rodgers	    		| United States	| 2:12:12 |	Third victory
+1979 | Bill Rodgers	    		| United States	| 2:11:42 |	Fourth victory
+1980 | Alberto Salazar	    	| United States	| 2:09:41 |	Course record
+1981 | Alberto Salazar	    	| United States	| 2:08:13 |	Course record (course measured short), second victory
+1982 | Alberto Salazar	    	| United States	| 2:09:29 |	Third victory
+1983 | Rod Dixon	        	| New Zealand	| 2:08:59 |	
+1984 | Orlando Pizzolato		| Italy			| 2:14:53 |	
+1985 | Orlando Pizzolato		| Italy			| 2:11:34 |	Second victory
+1986 | Gianni Poli	 			| Italy			| 2:11:06 |	
+1987 | Ibrahim Hussein	 		| Kenya			| 2:11:01 |	
+1988 | Steve Jones	 			| United Kingdom| 2:08:20 |	
+1989 | Juma Ikangaa	 			| Tanzania		| 2:08:01 |	Course record
+1990 | Douglas Wakiihuri		| Kenya			| 2:12:39 |	
+1991 | Salvador García	 		| Mexico		| 2:09:28 |	
+1992 | Willie Mtolo	 			| South Africa	| 2:09:29 |	
+1993 | Andrés Espinosa	 		| Mexico		| 2:10:04 |	
+1994 | Germán Silva	 			| Mexico		| 2:11:21 |	
+1995 | Germán Silva	 			| Mexico		| 2:11:00 |	Second victory
+1996 | Giacomo Leone	 		| Italy			| 2:09:54 |	
+1997 | John Kagwe	 			| Kenya			| 2:08:12 |	
+1998 | John Kagwe	 			| Kenya			| 2:08:45 |	Second victory
+1999 | Joseph Chebet			| Kenya			| 2:09:14 |	
+2000 | Abdelkader El Mouaziz	| Morocco		| 2:10:09 |	
+2001 | Tesfaye Jifar	 		| Ethiopia		| 2:07:43 |	Course record
+2002 | Rodgers Rop	 			| Kenya			| 2:08:07 |	
+2003 | Martin Lel	 			| Kenya			| 2:10:30 |	
+2004 | Hendrick Ramaala	 		| South Africa	| 2:09:28 |	
+2005 | Paul Tergat	 			| Kenya			| 2:09:30 |	
+2006 | Marílson Gomes dos Santos| Brazil		| 2:09:58 |	
+2007 | Martin Lel	 			| Kenya			| 2:09:04 |	Second victory
+2008 | Marílson Gomes dos Santos| Brazil		| 2:08:43 |	Second victory
+2009 | Meb Keflezighi	 		| United States	| 2:09:15 |	
+2010 | Gebregziabher Gebremariam| Ethiopia		| 2:08:14 |	
+2011 | Geoffrey Mutai	 		| Kenya			| 2:05:06 |	Current course record
+2012 | 							| 				| 		  |	Canceled due to Hurricane Sandy
+2013 | Geoffrey Mutai	 		| Kenya			| 2:08:24 |	Second victory
+2014 | Wilson Kipsang	 		| Kenya			| 2:10:59 |	
+2015 | Stanley Biwott	 		| Kenya			| 2:10:34 |	
+2016 | Ghirmay Ghebreslassie	| Eritrea		| 2:07:51 |	
+2017 | Geoffrey Kamworor	 	| Kenya			| 2:10:53 |	
+2018 | Lelisa Desisa	 		| Ethiopia		| 2:05:59 |	
+2019 | Geoffrey Kamworor	 	| Kenya			| 2:08:13 |	Second victory
+2020 | Kevin Quinn	 			| United Kingdom| 2:23:48 |	Virtual event held due to the COVID-19
