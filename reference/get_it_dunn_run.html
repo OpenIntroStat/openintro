@@ -136,22 +136,22 @@ from the 2017 and 2018 races.</p>
         <span class="op">!</span><span class="fu"><a href="https://rdrr.io/r/base/NA.html">is.na</a></span><span class="op">(</span><span class="va">age</span><span class="op">)</span> <span class="op">&amp;</span> <span class="va">state</span> <span class="op">%in%</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"MN"</span>, <span class="st">"WI"</span><span class="op">)</span><span class="op">)</span>
 <span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">d</span><span class="op">)</span>
 </div>
-<div class="output co">#&gt; <span style="color: #949494;"># A tibble: 6 x 10</span><span>
+<div class="co">#&gt; <span style="color: #949494;"># A tibble: 6 x 10</span>
 #&gt;   date       race  bib_num first_name last_initial sex     age city      state
-#&gt;   </span><span style="color: #949494;font-style: italic;">&lt;chr&gt;</span><span>      </span><span style="color: #949494;font-style: italic;">&lt;chr&gt;</span><span>   </span><span style="color: #949494;font-style: italic;">&lt;int&gt;</span><span> </span><span style="color: #949494;font-style: italic;">&lt;chr&gt;</span><span>      </span><span style="color: #949494;font-style: italic;">&lt;chr&gt;</span><span>        </span><span style="color: #949494;font-style: italic;">&lt;chr&gt;</span><span> </span><span style="color: #949494;font-style: italic;">&lt;dbl&gt;</span><span> </span><span style="color: #949494;font-style: italic;">&lt;chr&gt;</span><span>     </span><span style="color: #949494;font-style: italic;">&lt;chr&gt;</span><span>
-#&gt; </span><span style="color: #BCBCBC;">1</span><span> 2018-05-12 5k          1 Jeff       A            M        59 MENOMONIE WI   
-#&gt; </span><span style="color: #BCBCBC;">2</span><span> 2018-05-12 5k          2 Julie      A            F        58 Menomonie WI   
-#&gt; </span><span style="color: #BCBCBC;">3</span><span> 2018-05-12 5k          3 Amy        A            F        31 Elmwood   WI   
-#&gt; </span><span style="color: #BCBCBC;">4</span><span> 2018-05-12 5k          4 Ashley     A            F        33 Cadott    WI   
-#&gt; </span><span style="color: #BCBCBC;">5</span><span> 2018-05-12 5k          6 Bob        A            M        60 Boyd      WI   
-#&gt; </span><span style="color: #BCBCBC;">6</span><span> 2018-05-12 5k          7 Eric       A            M        30 Boyd      WI   
-#&gt; </span><span style="color: #949494;"># … with 1 more variable: run_time_minutes &lt;dbl&gt;</span><span></span>
+#&gt;   <span style="color: #949494;font-style: italic;">&lt;chr&gt;</span><span>      </span><span style="color: #949494;font-style: italic;">&lt;chr&gt;</span><span>   </span><span style="color: #949494;font-style: italic;">&lt;int&gt;</span><span> </span><span style="color: #949494;font-style: italic;">&lt;chr&gt;</span><span>      </span><span style="color: #949494;font-style: italic;">&lt;chr&gt;</span><span>        </span><span style="color: #949494;font-style: italic;">&lt;chr&gt;</span><span> </span><span style="color: #949494;font-style: italic;">&lt;dbl&gt;</span><span> </span><span style="color: #949494;font-style: italic;">&lt;chr&gt;</span><span>     </span><span style="color: #949494;font-style: italic;">&lt;chr&gt;</span>
+#&gt; <span style="color: #BCBCBC;">1</span><span> 2018-05-12 5k          1 Jeff       A            M        59 MENOMONIE WI   </span>
+#&gt; <span style="color: #BCBCBC;">2</span><span> 2018-05-12 5k          2 Julie      A            F        58 Menomonie WI   </span>
+#&gt; <span style="color: #BCBCBC;">3</span><span> 2018-05-12 5k          3 Amy        A            F        31 Elmwood   WI   </span>
+#&gt; <span style="color: #BCBCBC;">4</span><span> 2018-05-12 5k          4 Ashley     A            F        33 Cadott    WI   </span>
+#&gt; <span style="color: #BCBCBC;">5</span><span> 2018-05-12 5k          6 Bob        A            M        60 Boyd      WI   </span>
+#&gt; <span style="color: #BCBCBC;">6</span><span> 2018-05-12 5k          7 Eric       A            M        30 Boyd      WI   </span>
+#&gt; <span style="color: #949494;"># … with 1 more variable: run_time_minutes &lt;dbl&gt;</span>
 </div>
 <div class="input">
 <span class="va">m</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/lm.html">lm</a></span><span class="op">(</span><span class="va">run_time_minutes</span> <span class="op">~</span> <span class="va">sex</span> <span class="op">+</span> <span class="va">age</span> <span class="op">+</span> <span class="va">state</span>, <span class="va">d</span><span class="op">)</span>
 <span class="fu"><a href="https://rdrr.io/r/base/summary.html">summary</a></span><span class="op">(</span><span class="va">m</span><span class="op">)</span>
 </div>
-<div class="output co">#&gt; 
+<div class="co">#&gt; 
 #&gt; Call:
 #&gt; lm(formula = run_time_minutes ~ sex + age + state, data = d)
 #&gt; 

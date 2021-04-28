@@ -178,7 +178,7 @@ observations on the following 21 variables.</p>
                 data<span class="op">=</span><span class="va">e</span>, family<span class="op">=</span><span class="va">binomial</span><span class="op">)</span>
 <span class="fu"><a href="https://rdrr.io/r/base/summary.html">summary</a></span><span class="op">(</span><span class="va">g</span><span class="op">)</span>
 </div>
-<div class="output co">#&gt; 
+<div class="co">#&gt; 
 #&gt; Call:
 #&gt; glm(formula = spam ~ to_multiple + winner + format + re_subj + 
 #&gt;     exclaim_subj + cc + attach + dollar + inherit + password, 
@@ -217,7 +217,7 @@ observations on the following 21 variables.</p>
 <span class="co">#______ Variable Selection Via AIC ______#</span>
 <span class="va">g.</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/step.html">step</a></span><span class="op">(</span><span class="va">g</span><span class="op">)</span>
 </div>
-<div class="output co">#&gt; Start:  AIC=1970.26
+<div class="co">#&gt; Start:  AIC=1970.26
 #&gt; spam ~ to_multiple + winner + format + re_subj + exclaim_subj + 
 #&gt;     cc + attach + dollar + inherit + password
 #&gt; 

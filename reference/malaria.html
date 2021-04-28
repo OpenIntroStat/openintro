@@ -134,19 +134,19 @@ any infections to be treated effectively.</p>
   <span class="fu"><a href="https://dplyr.tidyverse.org/reference/group_by.html">group_by</a></span><span class="op">(</span><span class="va">treatment</span><span class="op">)</span> <span class="op">%&gt;%</span>
   <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span><span class="op">(</span>prop <span class="op">=</span> <span class="va">n</span> <span class="op">/</span> <span class="fu"><a href="https://rdrr.io/r/base/sum.html">sum</a></span><span class="op">(</span><span class="va">n</span><span class="op">)</span><span class="op">)</span>
 </div>
-<div class="output co">#&gt; <span style="color: #949494;"># A tibble: 3 x 4</span><span>
-#&gt; </span><span style="color: #949494;"># Groups:   treatment [2]</span><span>
+<div class="co">#&gt; <span style="color: #949494;"># A tibble: 3 x 4</span>
+#&gt; <span style="color: #949494;"># Groups:   treatment [2]</span>
 #&gt;   treatment outcome          n  prop
-#&gt;   </span><span style="color: #949494;font-style: italic;">&lt;fct&gt;</span><span>     </span><span style="color: #949494;font-style: italic;">&lt;fct&gt;</span><span>        </span><span style="color: #949494;font-style: italic;">&lt;int&gt;</span><span> </span><span style="color: #949494;font-style: italic;">&lt;dbl&gt;</span><span>
-#&gt; </span><span style="color: #BCBCBC;">1</span><span> placebo   infection        6 1    
-#&gt; </span><span style="color: #BCBCBC;">2</span><span> vaccine   infection        5 0.357
-#&gt; </span><span style="color: #BCBCBC;">3</span><span> vaccine   no infection     9 0.643</span>
+#&gt;   <span style="color: #949494;font-style: italic;">&lt;fct&gt;</span><span>     </span><span style="color: #949494;font-style: italic;">&lt;fct&gt;</span><span>        </span><span style="color: #949494;font-style: italic;">&lt;int&gt;</span><span> </span><span style="color: #949494;font-style: italic;">&lt;dbl&gt;</span>
+#&gt; <span style="color: #BCBCBC;">1</span><span> placebo   infection        6 1    </span>
+#&gt; <span style="color: #BCBCBC;">2</span><span> vaccine   infection        5 0.357</span>
+#&gt; <span style="color: #BCBCBC;">3</span><span> vaccine   no infection     9 0.643</span>
 </div>
 <div class="input">
 <span class="co"># Fisher's exact text</span>
 <span class="fu"><a href="https://rdrr.io/r/stats/fisher.test.html">fisher.test</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/table.html">table</a></span><span class="op">(</span><span class="va">malaria</span><span class="op">)</span><span class="op">)</span>
 </div>
-<div class="output co">#&gt; 
+<div class="co">#&gt; 
 #&gt; 	Fisher's Exact Test for Count Data
 #&gt; 
 #&gt; data:  table(malaria)

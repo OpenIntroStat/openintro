@@ -128,13 +128,13 @@ Hans Rosling, Anna Rosling Ronnlund, and Ola Rosling called
 <span class="op">)</span>
 <span class="va">frac_correct</span>
 </div>
-<div class="output co">#&gt;                    children_in_2100 children_with_1_or_more_vaccination 
+<div class="co">#&gt;                    children_in_2100 children_with_1_or_more_vaccination 
 #&gt;                           0.1491228                           0.2400000 </div>
 <div class="input">
 <span class="va">n</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/table.html">table</a></span><span class="op">(</span><span class="va">rosling_responses</span><span class="op">$</span><span class="va">question</span><span class="op">)</span>
 <span class="va">n</span>
 </div>
-<div class="output co">#&gt; 
+<div class="co">#&gt; 
 #&gt;                    children_in_2100 children_with_1_or_more_vaccination 
 #&gt;                                 228                                  50 </div>
 <div class="input">
@@ -149,20 +149,20 @@ Hans Rosling, Anna Rosling Ronnlund, and Ola Rosling called
 <span class="co"># Lower bounds.</span>
 <span class="va">frac_correct</span> <span class="op">-</span> <span class="fl">1.96</span> <span class="op">*</span> <span class="va">se</span>
 </div>
-<div class="output co">#&gt;                    children_in_2100 children_with_1_or_more_vaccination 
+<div class="co">#&gt;                    children_in_2100 children_with_1_or_more_vaccination 
 #&gt;                           0.1028853                           0.1216186 </div>
 <div class="input">
 <span class="co"># Upper bounds.</span>
 <span class="va">frac_correct</span> <span class="op">+</span> <span class="fl">1.96</span> <span class="op">*</span> <span class="va">se</span>
 </div>
-<div class="output co">#&gt;                    children_in_2100 children_with_1_or_more_vaccination 
+<div class="co">#&gt;                    children_in_2100 children_with_1_or_more_vaccination 
 #&gt;                           0.1953603                           0.3583814 </div>
 <div class="input">
 <span class="co"># Construct Z-scores and p-values.</span>
 <span class="va">z</span> <span class="op">&lt;-</span> <span class="op">(</span><span class="va">frac_correct</span> <span class="op">-</span> <span class="va">expected</span><span class="op">)</span> <span class="op">/</span> <span class="va">se</span>
 <span class="fu"><a href="https://rdrr.io/r/stats/TDist.html">pt</a></span><span class="op">(</span><span class="va">z</span>, df <span class="op">=</span> <span class="va">n</span> <span class="op">-</span> <span class="fl">1</span><span class="op">)</span>
 </div>
-<div class="output co">#&gt;                    children_in_2100 children_with_1_or_more_vaccination 
+<div class="co">#&gt;                    children_in_2100 children_with_1_or_more_vaccination 
 #&gt;                        1.058928e-13                        6.435567e-02 </div>
 <div class="input">
 </div></code></pre>

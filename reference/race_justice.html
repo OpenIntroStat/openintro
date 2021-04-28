@@ -129,22 +129,22 @@ people receive equal treatment from the police?", with levels <code>Yes</code>, 
   <span class="fu"><a href="https://dplyr.tidyverse.org/reference/group_by.html">group_by</a></span><span class="op">(</span><span class="va">race_eth</span><span class="op">)</span> <span class="op">%&gt;%</span>
   <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span><span class="op">(</span>prop <span class="op">=</span> <span class="va">n</span> <span class="op">/</span> <span class="fu"><a href="https://rdrr.io/r/base/sum.html">sum</a></span><span class="op">(</span><span class="va">n</span><span class="op">)</span><span class="op">)</span>
 </div>
-<div class="output co">#&gt; <span style="color: #949494;"># A tibble: 12 x 4</span><span>
-#&gt; </span><span style="color: #949494;"># Groups:   race_eth [4]</span><span>
+<div class="co">#&gt; <span style="color: #949494;"># A tibble: 12 x 4</span>
+#&gt; <span style="color: #949494;"># Groups:   race_eth [4]</span>
 #&gt;    race_eth response     n   prop
-#&gt;    </span><span style="color: #949494;font-style: italic;">&lt;fct&gt;</span><span>    </span><span style="color: #949494;font-style: italic;">&lt;fct&gt;</span><span>    </span><span style="color: #949494;font-style: italic;">&lt;int&gt;</span><span>  </span><span style="color: #949494;font-style: italic;">&lt;dbl&gt;</span><span>
-#&gt; </span><span style="color: #BCBCBC;"> 1</span><span> White    Yes        201 0.260 
-#&gt; </span><span style="color: #BCBCBC;"> 2</span><span> White    No         486 0.630 
-#&gt; </span><span style="color: #BCBCBC;"> 3</span><span> White    Not sure    85 0.110 
-#&gt; </span><span style="color: #BCBCBC;"> 4</span><span> Black    Yes          6 0.059</span><span style="text-decoration: underline;">4</span><span>
-#&gt; </span><span style="color: #BCBCBC;"> 5</span><span> Black    No          92 0.911 
-#&gt; </span><span style="color: #BCBCBC;"> 6</span><span> Black    Not sure     3 0.029</span><span style="text-decoration: underline;">7</span><span>
-#&gt; </span><span style="color: #BCBCBC;"> 7</span><span> Hispanic Yes         15 0.144 
-#&gt; </span><span style="color: #BCBCBC;"> 8</span><span> Hispanic No          75 0.721 
-#&gt; </span><span style="color: #BCBCBC;"> 9</span><span> Hispanic Not sure    14 0.135 
-#&gt; </span><span style="color: #BCBCBC;">10</span><span> Other    Yes         14 0.171 
-#&gt; </span><span style="color: #BCBCBC;">11</span><span> Other    No          47 0.573 
-#&gt; </span><span style="color: #BCBCBC;">12</span><span> Other    Not sure    21 0.256 </span>
+#&gt;    <span style="color: #949494;font-style: italic;">&lt;fct&gt;</span><span>    </span><span style="color: #949494;font-style: italic;">&lt;fct&gt;</span><span>    </span><span style="color: #949494;font-style: italic;">&lt;int&gt;</span><span>  </span><span style="color: #949494;font-style: italic;">&lt;dbl&gt;</span>
+#&gt; <span style="color: #BCBCBC;"> 1</span><span> White    Yes        201 0.260 </span>
+#&gt; <span style="color: #BCBCBC;"> 2</span><span> White    No         486 0.630 </span>
+#&gt; <span style="color: #BCBCBC;"> 3</span><span> White    Not sure    85 0.110 </span>
+#&gt; <span style="color: #BCBCBC;"> 4</span><span> Black    Yes          6 0.059</span><span style="text-decoration: underline;">4</span>
+#&gt; <span style="color: #BCBCBC;"> 5</span><span> Black    No          92 0.911 </span>
+#&gt; <span style="color: #BCBCBC;"> 6</span><span> Black    Not sure     3 0.029</span><span style="text-decoration: underline;">7</span>
+#&gt; <span style="color: #BCBCBC;"> 7</span><span> Hispanic Yes         15 0.144 </span>
+#&gt; <span style="color: #BCBCBC;"> 8</span><span> Hispanic No          75 0.721 </span>
+#&gt; <span style="color: #BCBCBC;"> 9</span><span> Hispanic Not sure    14 0.135 </span>
+#&gt; <span style="color: #BCBCBC;">10</span><span> Other    Yes         14 0.171 </span>
+#&gt; <span style="color: #BCBCBC;">11</span><span> Other    No          47 0.573 </span>
+#&gt; <span style="color: #BCBCBC;">12</span><span> Other    Not sure    21 0.256 </span>
 </div>
 <div class="input">
 <span class="co"># Stacked bar plot of counts</span>

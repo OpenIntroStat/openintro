@@ -190,8 +190,7 @@ explore whether the dynamics have changed in the used market.</p>
        title <span class="op">=</span> <span class="st">"Amazon vs. UCLA Bookstore prices of new textbooks"</span>,
        subtitle <span class="op">=</span> <span class="st">"Orange line represents y = x"</span><span class="op">)</span>
 </div>
-<div class="output co">#&gt; <span class="warning">Warning: Removed 133 rows containing missing values (geom_point).</span>
-</div>
+<div class="co">#&gt; <span class="warning">Warning: </span>Removed 133 rows containing missing values (geom_point).</div>
 <div class="img"><img src="ucla_textbooks_f18-1.png" alt="" width="700" height="433"></div>
 <div class="input">
 <span class="co"># The following outliers were double checked for accuracy</span>
@@ -201,34 +200,33 @@ explore whether the dynamics have changed in the used market.</p>
 <span class="va">ucla_textbooks_f18_with_diff</span> <span class="op">%&gt;%</span>
   <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html">filter</a></span><span class="op">(</span><span class="va">diff</span> <span class="op">&gt;</span> <span class="fl">20</span> <span class="op">|</span> <span class="va">diff</span> <span class="op">&lt;</span> <span class="op">-</span><span class="fl">20</span><span class="op">)</span>
 </div>
-<div class="output co">#&gt; <span style="color: #949494;"># A tibble: 6 x 21</span><span>
+<div class="co">#&gt; <span style="color: #949494;"># A tibble: 6 x 21</span>
 #&gt;    year term  subject    subject_abbr course   course_num course_numeric seminar
-#&gt;   </span><span style="color: #949494;font-style: italic;">&lt;dbl&gt;</span><span> </span><span style="color: #949494;font-style: italic;">&lt;fct&gt;</span><span> </span><span style="color: #949494;font-style: italic;">&lt;fct&gt;</span><span>      </span><span style="color: #949494;font-style: italic;">&lt;fct&gt;</span><span>        </span><span style="color: #949494;font-style: italic;">&lt;fct&gt;</span><span>    </span><span style="color: #949494;font-style: italic;">&lt;fct&gt;</span><span>               </span><span style="color: #949494;font-style: italic;">&lt;int&gt;</span><span> </span><span style="color: #949494;font-style: italic;">&lt;lgl&gt;</span><span>  
-#&gt; </span><span style="color: #BCBCBC;">1</span><span>  </span><span style="text-decoration: underline;">2</span><span>018 Fall  Film and … FILM TV      Introdu… 4                       4 FALSE  
-#&gt; </span><span style="color: #BCBCBC;">2</span><span>  </span><span style="text-decoration: underline;">2</span><span>018 Fall  Nursing    </span><span style="color: #BB0000;">NA</span><span>           Introdu… 10                     10 FALSE  
-#&gt; </span><span style="color: #BCBCBC;">3</span><span>  </span><span style="text-decoration: underline;">2</span><span>018 Fall  English C… ENGCOMP      Introdu… 1                       1 FALSE  
-#&gt; </span><span style="color: #BCBCBC;">4</span><span>  </span><span style="text-decoration: underline;">2</span><span>018 Fall  Life Scie… LIFESCI      Life: C… 15                     15 FALSE  
-#&gt; </span><span style="color: #BCBCBC;">5</span><span>  </span><span style="text-decoration: underline;">2</span><span>018 Fall  Nursing    </span><span style="color: #BB0000;">NA</span><span>           Pathoph… 54B                    54 FALSE  
-#&gt; </span><span style="color: #BCBCBC;">6</span><span>  </span><span style="text-decoration: underline;">2</span><span>018 Fall  Earth, Pl… EPS SCI      Introdu… 1                       1 FALSE  
-#&gt; </span><span style="color: #949494;"># … with 13 more variables: ind_study &lt;lgl&gt;, apprenticeship &lt;lgl&gt;,</span><span>
-#&gt; </span><span style="color: #949494;">#   internship &lt;lgl&gt;, honors_contracts &lt;lgl&gt;, laboratory &lt;lgl&gt;,</span><span>
-#&gt; </span><span style="color: #949494;">#   special_topic &lt;lgl&gt;, textbook_isbn &lt;chr&gt;, bookstore_new &lt;dbl&gt;,</span><span>
-#&gt; </span><span style="color: #949494;">#   bookstore_used &lt;dbl&gt;, amazon_new &lt;dbl&gt;, amazon_used &lt;dbl&gt;, notes &lt;fct&gt;,</span><span>
-#&gt; </span><span style="color: #949494;">#   diff &lt;dbl&gt;</span><span></span>
+#&gt;   <span style="color: #949494;font-style: italic;">&lt;dbl&gt;</span><span> </span><span style="color: #949494;font-style: italic;">&lt;fct&gt;</span><span> </span><span style="color: #949494;font-style: italic;">&lt;fct&gt;</span><span>      </span><span style="color: #949494;font-style: italic;">&lt;fct&gt;</span><span>        </span><span style="color: #949494;font-style: italic;">&lt;fct&gt;</span><span>    </span><span style="color: #949494;font-style: italic;">&lt;fct&gt;</span><span>               </span><span style="color: #949494;font-style: italic;">&lt;int&gt;</span><span> </span><span style="color: #949494;font-style: italic;">&lt;lgl&gt;</span><span>  </span>
+#&gt; <span style="color: #BCBCBC;">1</span><span>  </span><span style="text-decoration: underline;">2</span><span>018 Fall  Film and … FILM TV      Introdu… 4                       4 FALSE  </span>
+#&gt; <span style="color: #BCBCBC;">2</span><span>  </span><span style="text-decoration: underline;">2</span><span>018 Fall  Nursing    </span><span style="color: #BB0000;">NA</span><span>           Introdu… 10                     10 FALSE  </span>
+#&gt; <span style="color: #BCBCBC;">3</span><span>  </span><span style="text-decoration: underline;">2</span><span>018 Fall  English C… ENGCOMP      Introdu… 1                       1 FALSE  </span>
+#&gt; <span style="color: #BCBCBC;">4</span><span>  </span><span style="text-decoration: underline;">2</span><span>018 Fall  Life Scie… LIFESCI      Life: C… 15                     15 FALSE  </span>
+#&gt; <span style="color: #BCBCBC;">5</span><span>  </span><span style="text-decoration: underline;">2</span><span>018 Fall  Nursing    </span><span style="color: #BB0000;">NA</span><span>           Pathoph… 54B                    54 FALSE  </span>
+#&gt; <span style="color: #BCBCBC;">6</span><span>  </span><span style="text-decoration: underline;">2</span><span>018 Fall  Earth, Pl… EPS SCI      Introdu… 1                       1 FALSE  </span>
+#&gt; <span style="color: #949494;"># … with 13 more variables: ind_study &lt;lgl&gt;, apprenticeship &lt;lgl&gt;,</span>
+#&gt; <span style="color: #949494;">#   internship &lt;lgl&gt;, honors_contracts &lt;lgl&gt;, laboratory &lt;lgl&gt;,</span>
+#&gt; <span style="color: #949494;">#   special_topic &lt;lgl&gt;, textbook_isbn &lt;chr&gt;, bookstore_new &lt;dbl&gt;,</span>
+#&gt; <span style="color: #949494;">#   bookstore_used &lt;dbl&gt;, amazon_new &lt;dbl&gt;, amazon_used &lt;dbl&gt;, notes &lt;fct&gt;,</span>
+#&gt; <span style="color: #949494;">#   diff &lt;dbl&gt;</span>
 </div>
 <div class="input">
 <span class="co"># Distribution of price differences</span>
 <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span><span class="va">ucla_textbooks_f18_with_diff</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">diff</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span>
   <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_histogram.html">geom_histogram</a></span><span class="op">(</span>binwidth <span class="op">=</span> <span class="fl">5</span><span class="op">)</span>
 </div>
-<div class="output co">#&gt; <span class="warning">Warning: Removed 133 rows containing non-finite values (stat_bin).</span>
-</div>
+<div class="co">#&gt; <span class="warning">Warning: </span>Removed 133 rows containing non-finite values (stat_bin).</div>
 <div class="img"><img src="ucla_textbooks_f18-2.png" alt="" width="700" height="433"></div>
 <div class="input">
 <span class="co"># t-test of price differences</span>
 <span class="fu"><a href="https://rdrr.io/r/stats/t.test.html">t.test</a></span><span class="op">(</span><span class="va">ucla_textbooks_f18_with_diff</span><span class="op">$</span><span class="va">diff</span><span class="op">)</span>
 </div>
-<div class="output co">#&gt; 
+<div class="co">#&gt; 
 #&gt; 	One Sample t-test
 #&gt; 
 #&gt; data:  ucla_textbooks_f18_with_diff$diff

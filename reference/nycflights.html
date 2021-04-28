@@ -134,20 +134,20 @@ NYC in 2013. R package version 0.1.</p>
   <span class="fu"><a href="https://dplyr.tidyverse.org/reference/select.html">select</a></span><span class="op">(</span><span class="va">flight</span>, <span class="va">origin</span>, <span class="va">dest</span>, <span class="va">dep_delay</span>, <span class="va">arr_delay</span><span class="op">)</span> <span class="op">%&gt;%</span>
   <span class="fu"><a href="https://dplyr.tidyverse.org/reference/arrange.html">arrange</a></span><span class="op">(</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/desc.html">desc</a></span><span class="op">(</span><span class="va">dep_delay</span><span class="op">)</span><span class="op">)</span>
 </div>
-<div class="output co">#&gt; <span style="color: #949494;"># A tibble: 32,735 x 5</span><span>
+<div class="co">#&gt; <span style="color: #949494;"># A tibble: 32,735 x 5</span>
 #&gt;    flight origin dest  dep_delay arr_delay
-#&gt;     </span><span style="color: #949494;font-style: italic;">&lt;int&gt;</span><span> </span><span style="color: #949494;font-style: italic;">&lt;chr&gt;</span><span>  </span><span style="color: #949494;font-style: italic;">&lt;chr&gt;</span><span>     </span><span style="color: #949494;font-style: italic;">&lt;dbl&gt;</span><span>     </span><span style="color: #949494;font-style: italic;">&lt;dbl&gt;</span><span>
-#&gt; </span><span style="color: #BCBCBC;"> 1</span><span>     51 JFK    HNL        </span><span style="text-decoration: underline;">1</span><span>301      </span><span style="text-decoration: underline;">1</span><span>272
-#&gt; </span><span style="color: #BCBCBC;"> 2</span><span>   </span><span style="text-decoration: underline;">1</span><span>223 EWR    SLC         849       847
-#&gt; </span><span style="color: #BCBCBC;"> 3</span><span>   </span><span style="text-decoration: underline;">2</span><span>019 LGA    STL         803       802
-#&gt; </span><span style="color: #BCBCBC;"> 4</span><span>    503 JFK    SAN         790       769
-#&gt; </span><span style="color: #BCBCBC;"> 5</span><span>   </span><span style="text-decoration: underline;">2</span><span>042 EWR    ATL         502       490
-#&gt; </span><span style="color: #BCBCBC;"> 6</span><span>   </span><span style="text-decoration: underline;">4</span><span>949 LGA    GSO         473       444
-#&gt; </span><span style="color: #BCBCBC;"> 7</span><span>   </span><span style="text-decoration: underline;">1</span><span>373 JFK    MIA         436       399
-#&gt; </span><span style="color: #BCBCBC;"> 8</span><span>    479 LGA    IAH         427       435
-#&gt; </span><span style="color: #BCBCBC;"> 9</span><span>   </span><span style="text-decoration: underline;">2</span><span>226 LGA    MDW         423       422
-#&gt; </span><span style="color: #BCBCBC;">10</span><span>    745 LGA    DEN         422       405
-#&gt; </span><span style="color: #949494;"># … with 32,725 more rows</span><span></span>
+#&gt;     <span style="color: #949494;font-style: italic;">&lt;int&gt;</span><span> </span><span style="color: #949494;font-style: italic;">&lt;chr&gt;</span><span>  </span><span style="color: #949494;font-style: italic;">&lt;chr&gt;</span><span>     </span><span style="color: #949494;font-style: italic;">&lt;dbl&gt;</span><span>     </span><span style="color: #949494;font-style: italic;">&lt;dbl&gt;</span>
+#&gt; <span style="color: #BCBCBC;"> 1</span><span>     51 JFK    HNL        </span><span style="text-decoration: underline;">1</span><span>301      </span><span style="text-decoration: underline;">1</span><span>272</span>
+#&gt; <span style="color: #BCBCBC;"> 2</span><span>   </span><span style="text-decoration: underline;">1</span><span>223 EWR    SLC         849       847</span>
+#&gt; <span style="color: #BCBCBC;"> 3</span><span>   </span><span style="text-decoration: underline;">2</span><span>019 LGA    STL         803       802</span>
+#&gt; <span style="color: #BCBCBC;"> 4</span><span>    503 JFK    SAN         790       769</span>
+#&gt; <span style="color: #BCBCBC;"> 5</span><span>   </span><span style="text-decoration: underline;">2</span><span>042 EWR    ATL         502       490</span>
+#&gt; <span style="color: #BCBCBC;"> 6</span><span>   </span><span style="text-decoration: underline;">4</span><span>949 LGA    GSO         473       444</span>
+#&gt; <span style="color: #BCBCBC;"> 7</span><span>   </span><span style="text-decoration: underline;">1</span><span>373 JFK    MIA         436       399</span>
+#&gt; <span style="color: #BCBCBC;"> 8</span><span>    479 LGA    IAH         427       435</span>
+#&gt; <span style="color: #BCBCBC;"> 9</span><span>   </span><span style="text-decoration: underline;">2</span><span>226 LGA    MDW         423       422</span>
+#&gt; <span style="color: #BCBCBC;">10</span><span>    745 LGA    DEN         422       405</span>
+#&gt; <span style="color: #949494;"># … with 32,725 more rows</span>
 </div>
 <div class="input">
 <span class="co"># Longest arrival delays</span>
@@ -155,20 +155,20 @@ NYC in 2013. R package version 0.1.</p>
   <span class="fu"><a href="https://dplyr.tidyverse.org/reference/select.html">select</a></span><span class="op">(</span><span class="va">flight</span>, <span class="va">origin</span>, <span class="va">dest</span>, <span class="va">dep_delay</span>, <span class="va">arr_delay</span><span class="op">)</span> <span class="op">%&gt;%</span>
   <span class="fu"><a href="https://dplyr.tidyverse.org/reference/arrange.html">arrange</a></span><span class="op">(</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/desc.html">desc</a></span><span class="op">(</span><span class="va">arr_delay</span><span class="op">)</span><span class="op">)</span>
 </div>
-<div class="output co">#&gt; <span style="color: #949494;"># A tibble: 32,735 x 5</span><span>
+<div class="co">#&gt; <span style="color: #949494;"># A tibble: 32,735 x 5</span>
 #&gt;    flight origin dest  dep_delay arr_delay
-#&gt;     </span><span style="color: #949494;font-style: italic;">&lt;int&gt;</span><span> </span><span style="color: #949494;font-style: italic;">&lt;chr&gt;</span><span>  </span><span style="color: #949494;font-style: italic;">&lt;chr&gt;</span><span>     </span><span style="color: #949494;font-style: italic;">&lt;dbl&gt;</span><span>     </span><span style="color: #949494;font-style: italic;">&lt;dbl&gt;</span><span>
-#&gt; </span><span style="color: #BCBCBC;"> 1</span><span>     51 JFK    HNL        </span><span style="text-decoration: underline;">1</span><span>301      </span><span style="text-decoration: underline;">1</span><span>272
-#&gt; </span><span style="color: #BCBCBC;"> 2</span><span>   </span><span style="text-decoration: underline;">1</span><span>223 EWR    SLC         849       847
-#&gt; </span><span style="color: #BCBCBC;"> 3</span><span>   </span><span style="text-decoration: underline;">2</span><span>019 LGA    STL         803       802
-#&gt; </span><span style="color: #BCBCBC;"> 4</span><span>    503 JFK    SAN         790       769
-#&gt; </span><span style="color: #BCBCBC;"> 5</span><span>   </span><span style="text-decoration: underline;">2</span><span>042 EWR    ATL         502       490
-#&gt; </span><span style="color: #BCBCBC;"> 6</span><span>   </span><span style="text-decoration: underline;">4</span><span>949 LGA    GSO         473       444
-#&gt; </span><span style="color: #BCBCBC;"> 7</span><span>    479 LGA    IAH         427       435
-#&gt; </span><span style="color: #BCBCBC;"> 8</span><span>   </span><span style="text-decoration: underline;">1</span><span>139 LGA    DFW         413       434
-#&gt; </span><span style="color: #BCBCBC;"> 9</span><span>   </span><span style="text-decoration: underline;">2</span><span>226 LGA    MDW         423       422
-#&gt; </span><span style="color: #BCBCBC;">10</span><span>   </span><span style="text-decoration: underline;">3</span><span>325 JFK    DFW         355       421
-#&gt; </span><span style="color: #949494;"># … with 32,725 more rows</span><span></span>
+#&gt;     <span style="color: #949494;font-style: italic;">&lt;int&gt;</span><span> </span><span style="color: #949494;font-style: italic;">&lt;chr&gt;</span><span>  </span><span style="color: #949494;font-style: italic;">&lt;chr&gt;</span><span>     </span><span style="color: #949494;font-style: italic;">&lt;dbl&gt;</span><span>     </span><span style="color: #949494;font-style: italic;">&lt;dbl&gt;</span>
+#&gt; <span style="color: #BCBCBC;"> 1</span><span>     51 JFK    HNL        </span><span style="text-decoration: underline;">1</span><span>301      </span><span style="text-decoration: underline;">1</span><span>272</span>
+#&gt; <span style="color: #BCBCBC;"> 2</span><span>   </span><span style="text-decoration: underline;">1</span><span>223 EWR    SLC         849       847</span>
+#&gt; <span style="color: #BCBCBC;"> 3</span><span>   </span><span style="text-decoration: underline;">2</span><span>019 LGA    STL         803       802</span>
+#&gt; <span style="color: #BCBCBC;"> 4</span><span>    503 JFK    SAN         790       769</span>
+#&gt; <span style="color: #BCBCBC;"> 5</span><span>   </span><span style="text-decoration: underline;">2</span><span>042 EWR    ATL         502       490</span>
+#&gt; <span style="color: #BCBCBC;"> 6</span><span>   </span><span style="text-decoration: underline;">4</span><span>949 LGA    GSO         473       444</span>
+#&gt; <span style="color: #BCBCBC;"> 7</span><span>    479 LGA    IAH         427       435</span>
+#&gt; <span style="color: #BCBCBC;"> 8</span><span>   </span><span style="text-decoration: underline;">1</span><span>139 LGA    DFW         413       434</span>
+#&gt; <span style="color: #BCBCBC;"> 9</span><span>   </span><span style="text-decoration: underline;">2</span><span>226 LGA    MDW         423       422</span>
+#&gt; <span style="color: #BCBCBC;">10</span><span>   </span><span style="text-decoration: underline;">3</span><span>325 JFK    DFW         355       421</span>
+#&gt; <span style="color: #949494;"># … with 32,725 more rows</span>
 </div>
 <div class="input">
 </div></code></pre>

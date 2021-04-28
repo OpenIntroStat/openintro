@@ -117,7 +117,7 @@ which was measured in foot-pounds.</p></dd>
 <span class="va">m</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/lm.html">lm</a></span><span class="op">(</span><span class="va">torque</span> <span class="op">~</span> <span class="va">treatment</span>, data <span class="op">=</span> <span class="va">penetrating_oil</span><span class="op">)</span>
 <span class="fu"><a href="https://rdrr.io/r/stats/anova.html">anova</a></span><span class="op">(</span><span class="va">m</span><span class="op">)</span>
 </div>
-<div class="output co">#&gt; Analysis of Variance Table
+<div class="co">#&gt; Analysis of Variance Table
 #&gt; 
 #&gt; Response: torque
 #&gt;           Df Sum Sq Mean Sq F value   Pr(&gt;F)   
@@ -154,7 +154,7 @@ which was measured in foot-pounds.</p></dd>
   <span class="op">}</span>
 <span class="op">}</span>
 </div>
-<div class="output co">#&gt; 0.3 -  AeroKroil Heat 
+<div class="co">#&gt; 0.3 -  AeroKroil Heat 
 #&gt; 0.3 -  AeroKroil Liquid Wrench 
 #&gt; 0.3 -  Heat none 
 #&gt; 0.3 -  Liquid Wrench none </div>
@@ -162,13 +162,13 @@ which was measured in foot-pounds.</p></dd>
 <span class="co"># Smallest p-value using Bonferroni</span>
 <span class="fu"><a href="https://rdrr.io/r/base/Extremes.html">min</a></span><span class="op">(</span><span class="fl">2</span> <span class="op">*</span> <span class="va">K</span> <span class="op">*</span> <span class="fu"><a href="https://rdrr.io/r/stats/TDist.html">pt</a></span><span class="op">(</span><span class="op">-</span><span class="fu"><a href="https://rdrr.io/r/base/MathFun.html">abs</a></span><span class="op">(</span><span class="va">diff</span> <span class="op">/</span> <span class="va">se</span><span class="op">)</span>, <span class="va">df</span><span class="op">)</span><span class="op">)</span>
 </div>
-<div class="output co">#&gt; [1] 0.2030646</div>
+<div class="co">#&gt; [1] 0.2030646</div>
 <div class="input">
 
 <span class="co"># Better pairwise comparison method.</span>
 <span class="fu"><a href="https://rdrr.io/r/stats/anova.html">anova</a></span><span class="op">(</span><span class="va">m1</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/aov.html">aov</a></span><span class="op">(</span><span class="va">torque</span> <span class="op">~</span> <span class="va">treatment</span>, data <span class="op">=</span> <span class="va">penetrating_oil</span><span class="op">)</span><span class="op">)</span>
 </div>
-<div class="output co">#&gt; Analysis of Variance Table
+<div class="co">#&gt; Analysis of Variance Table
 #&gt; 
 #&gt; Response: torque
 #&gt;           Df Sum Sq Mean Sq F value   Pr(&gt;F)   
@@ -179,7 +179,7 @@ which was measured in foot-pounds.</p></dd>
 <div class="input">
 <span class="fu"><a href="https://rdrr.io/r/stats/TukeyHSD.html">TukeyHSD</a></span><span class="op">(</span><span class="va">m1</span><span class="op">)</span>
 </div>
-<div class="output co">#&gt;   Tukey multiple comparisons of means
+<div class="co">#&gt;   Tukey multiple comparisons of means
 #&gt;     95% family-wise confidence level
 #&gt; 
 #&gt; Fit: aov(formula = torque ~ treatment, data = penetrating_oil)

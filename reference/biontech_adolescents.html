@@ -133,12 +133,12 @@ March 21, 2021. (Retrieved April 25, 2021.)</p>
 <span class="va">biontech_adolescents</span> <span class="op">%&gt;%</span>
   <span class="fu"><a href="https://dplyr.tidyverse.org/reference/count.html">count</a></span><span class="op">(</span><span class="va">group</span>, <span class="va">outcome</span><span class="op">)</span>
 </div>
-<div class="output co">#&gt; <span style="color: #949494;"># A tibble: 3 x 3</span><span>
+<div class="co">#&gt; <span style="color: #949494;"># A tibble: 3 x 3</span>
 #&gt;   group   outcome         n
-#&gt;   </span><span style="color: #949494;font-style: italic;">&lt;fct&gt;</span><span>   </span><span style="color: #949494;font-style: italic;">&lt;fct&gt;</span><span>       </span><span style="color: #949494;font-style: italic;">&lt;int&gt;</span><span>
-#&gt; </span><span style="color: #BCBCBC;">1</span><span> vaccine no COVID-19  </span><span style="text-decoration: underline;">1</span><span>131
-#&gt; </span><span style="color: #BCBCBC;">2</span><span> placebo COVID-19       18
-#&gt; </span><span style="color: #BCBCBC;">3</span><span> placebo no COVID-19  </span><span style="text-decoration: underline;">1</span><span>111</span>
+#&gt;   <span style="color: #949494;font-style: italic;">&lt;fct&gt;</span><span>   </span><span style="color: #949494;font-style: italic;">&lt;fct&gt;</span><span>       </span><span style="color: #949494;font-style: italic;">&lt;int&gt;</span>
+#&gt; <span style="color: #BCBCBC;">1</span><span> vaccine no COVID-19  </span><span style="text-decoration: underline;">1</span><span>131</span>
+#&gt; <span style="color: #BCBCBC;">2</span><span> placebo COVID-19       18</span>
+#&gt; <span style="color: #BCBCBC;">3</span><span> placebo no COVID-19  </span><span style="text-decoration: underline;">1</span><span>111</span>
 </div>
 <div class="input">
 <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span><span class="va">biontech_adolescents</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>y <span class="op">=</span> <span class="va">group</span>, fill <span class="op">=</span> <span class="va">outcome</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span>

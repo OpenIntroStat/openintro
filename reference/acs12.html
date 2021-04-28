@@ -129,17 +129,14 @@ e.g. <code>Jan thru Mar</code>.</p></dd>
     <pre class="examples"><code class="sourceCode R"><div class="input">
 <span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://dplyr.tidyverse.org">dplyr</a></span><span class="op">)</span>
 </div>
-<div class="output co">#&gt; <span class="message"></span>
-#&gt; <span class="message">Attaching package: ‘dplyr’</span>
-</div>
-<div class="output co">#&gt; <span class="message">The following objects are masked from ‘package:stats’:</span>
-#&gt; <span class="message"></span>
-#&gt; <span class="message">    filter, lag</span>
-</div>
-<div class="output co">#&gt; <span class="message">The following objects are masked from ‘package:base’:</span>
-#&gt; <span class="message"></span>
-#&gt; <span class="message">    intersect, setdiff, setequal, union</span>
-</div>
+<div class="co">#&gt; 
+#&gt; Attaching package: ‘dplyr’</div>
+<div class="co">#&gt; The following objects are masked from ‘package:stats’:
+#&gt; 
+#&gt;     filter, lag</div>
+<div class="co">#&gt; The following objects are masked from ‘package:base’:
+#&gt; 
+#&gt;     intersect, setdiff, setequal, union</div>
 <div class="input">
 <span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://ggplot2.tidyverse.org">ggplot2</a></span><span class="op">)</span>
 <span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://broom.tidymodels.org/">broom</a></span><span class="op">)</span>
@@ -157,18 +154,17 @@ e.g. <code>Jan thru Mar</code>.</p></dd>
   <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_point.html">geom_point</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span>
   <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_smooth.html">geom_smooth</a></span><span class="op">(</span>method <span class="op">=</span> <span class="st">"lm"</span><span class="op">)</span>
 </div>
-<div class="output co">#&gt; <span class="message">`geom_smooth()` using formula 'y ~ x'</span>
-</div>
+<div class="co">#&gt; `geom_smooth()` using formula 'y ~ x'</div>
 <div class="img"><img src="acs12-1.png" alt="" width="700" height="433"></div>
 <div class="input">
 <span class="fu"><a href="https://rdrr.io/r/stats/lm.html">lm</a></span><span class="op">(</span><span class="va">income</span> <span class="op">~</span> <span class="va">age</span>, data <span class="op">=</span> <span class="va">acs12_emp</span><span class="op">)</span> <span class="op">%&gt;%</span>
   <span class="fu"><a href="https://generics.r-lib.org/reference/tidy.html">tidy</a></span><span class="op">(</span><span class="op">)</span>
 </div>
-<div class="output co">#&gt; <span style="color: #949494;"># A tibble: 2 x 5</span><span>
+<div class="co">#&gt; <span style="color: #949494;"># A tibble: 2 x 5</span>
 #&gt;   term        estimate std.error statistic  p.value
-#&gt;   </span><span style="color: #949494;font-style: italic;">&lt;chr&gt;</span><span>          </span><span style="color: #949494;font-style: italic;">&lt;dbl&gt;</span><span>     </span><span style="color: #949494;font-style: italic;">&lt;dbl&gt;</span><span>     </span><span style="color: #949494;font-style: italic;">&lt;dbl&gt;</span><span>    </span><span style="color: #949494;font-style: italic;">&lt;dbl&gt;</span><span>
-#&gt; </span><span style="color: #BCBCBC;">1</span><span> (Intercept)   </span><span style="text-decoration: underline;">46</span><span>579.    </span><span style="text-decoration: underline;">13</span><span>600.     3.43  0.000</span><span style="text-decoration: underline;">664</span><span>
-#&gt; </span><span style="color: #BCBCBC;">2</span><span> age             156.      297.     0.524 0.600   </span>
+#&gt;   <span style="color: #949494;font-style: italic;">&lt;chr&gt;</span><span>          </span><span style="color: #949494;font-style: italic;">&lt;dbl&gt;</span><span>     </span><span style="color: #949494;font-style: italic;">&lt;dbl&gt;</span><span>     </span><span style="color: #949494;font-style: italic;">&lt;dbl&gt;</span><span>    </span><span style="color: #949494;font-style: italic;">&lt;dbl&gt;</span>
+#&gt; <span style="color: #BCBCBC;">1</span><span> (Intercept)   </span><span style="text-decoration: underline;">46</span><span>579.    </span><span style="text-decoration: underline;">13</span><span>600.     3.43  0.000</span><span style="text-decoration: underline;">664</span>
+#&gt; <span style="color: #BCBCBC;">2</span><span> age             156.      297.     0.524 0.600   </span>
 </div>
 <div class="input">
 <span class="co"># log-transormed model</span>
@@ -176,18 +172,17 @@ e.g. <code>Jan thru Mar</code>.</p></dd>
   <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_point.html">geom_point</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span>
   <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_smooth.html">geom_smooth</a></span><span class="op">(</span>method <span class="op">=</span> <span class="st">"lm"</span><span class="op">)</span>
 </div>
-<div class="output co">#&gt; <span class="message">`geom_smooth()` using formula 'y ~ x'</span>
-</div>
+<div class="co">#&gt; `geom_smooth()` using formula 'y ~ x'</div>
 <div class="img"><img src="acs12-2.png" alt="" width="700" height="433"></div>
 <div class="input">
 <span class="fu"><a href="https://rdrr.io/r/stats/lm.html">lm</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/Log.html">log</a></span><span class="op">(</span><span class="va">income</span><span class="op">)</span> <span class="op">~</span> <span class="va">age</span>, data <span class="op">=</span> <span class="va">acs12_emp</span><span class="op">)</span> <span class="op">%&gt;%</span>
   <span class="fu"><a href="https://generics.r-lib.org/reference/tidy.html">tidy</a></span><span class="op">(</span><span class="op">)</span>
 </div>
-<div class="output co">#&gt; <span style="color: #949494;"># A tibble: 2 x 5</span><span>
+<div class="co">#&gt; <span style="color: #949494;"># A tibble: 2 x 5</span>
 #&gt;   term        estimate std.error statistic   p.value
-#&gt;   </span><span style="color: #949494;font-style: italic;">&lt;chr&gt;</span><span>          </span><span style="color: #949494;font-style: italic;">&lt;dbl&gt;</span><span>     </span><span style="color: #949494;font-style: italic;">&lt;dbl&gt;</span><span>     </span><span style="color: #949494;font-style: italic;">&lt;dbl&gt;</span><span>     </span><span style="color: #949494;font-style: italic;">&lt;dbl&gt;</span><span>
-#&gt; </span><span style="color: #BCBCBC;">1</span><span> (Intercept)   9.81     0.256       38.3  2.47</span><span style="color: #949494;">e</span><span style="color: #BB0000;">-152</span><span>
-#&gt; </span><span style="color: #BCBCBC;">2</span><span> age           0.013</span><span style="text-decoration: underline;">8</span><span>   0.005</span><span style="text-decoration: underline;">59</span><span>      2.46 1.41</span><span style="color: #949494;">e</span><span style="color: #BB0000;">-  2</span><span></span>
+#&gt;   <span style="color: #949494;font-style: italic;">&lt;chr&gt;</span><span>          </span><span style="color: #949494;font-style: italic;">&lt;dbl&gt;</span><span>     </span><span style="color: #949494;font-style: italic;">&lt;dbl&gt;</span><span>     </span><span style="color: #949494;font-style: italic;">&lt;dbl&gt;</span><span>     </span><span style="color: #949494;font-style: italic;">&lt;dbl&gt;</span>
+#&gt; <span style="color: #BCBCBC;">1</span><span> (Intercept)   9.81     0.256       38.3  2.47</span><span style="color: #949494;">e</span><span style="color: #BB0000;">-152</span>
+#&gt; <span style="color: #BCBCBC;">2</span><span> age           0.013</span><span style="text-decoration: underline;">8</span><span>   0.005</span><span style="text-decoration: underline;">59</span><span>      2.46 1.41</span><span style="color: #949494;">e</span><span style="color: #BB0000;">-  2</span>
 </div>
 <div class="input">
 </div></code></pre>

@@ -143,15 +143,15 @@ the problem with the iPod.</p>
 <span class="va">ask</span> <span class="op">%&gt;%</span>
   <span class="fu"><a href="https://dplyr.tidyverse.org/reference/count.html">count</a></span><span class="op">(</span><span class="va">question_class</span>, <span class="va">response</span><span class="op">)</span>
 </div>
-<div class="output co">#&gt; <span style="color: #949494;"># A tibble: 6 x 3</span><span>
+<div class="co">#&gt; <span style="color: #949494;"># A tibble: 6 x 3</span>
 #&gt;   question_class response     n
-#&gt;   </span><span style="color: #949494;font-style: italic;">&lt;chr&gt;</span><span>          </span><span style="color: #949494;font-style: italic;">&lt;chr&gt;</span><span>    </span><span style="color: #949494;font-style: italic;">&lt;int&gt;</span><span>
-#&gt; </span><span style="color: #BCBCBC;">1</span><span> general        disclose     2
-#&gt; </span><span style="color: #BCBCBC;">2</span><span> general        hide        71
-#&gt; </span><span style="color: #BCBCBC;">3</span><span> neg_assumption disclose    36
-#&gt; </span><span style="color: #BCBCBC;">4</span><span> neg_assumption hide        37
-#&gt; </span><span style="color: #BCBCBC;">5</span><span> pos_assumption disclose    23
-#&gt; </span><span style="color: #BCBCBC;">6</span><span> pos_assumption hide        50</span>
+#&gt;   <span style="color: #949494;font-style: italic;">&lt;chr&gt;</span><span>          </span><span style="color: #949494;font-style: italic;">&lt;chr&gt;</span><span>    </span><span style="color: #949494;font-style: italic;">&lt;int&gt;</span>
+#&gt; <span style="color: #BCBCBC;">1</span><span> general        disclose     2</span>
+#&gt; <span style="color: #BCBCBC;">2</span><span> general        hide        71</span>
+#&gt; <span style="color: #BCBCBC;">3</span><span> neg_assumption disclose    36</span>
+#&gt; <span style="color: #BCBCBC;">4</span><span> neg_assumption hide        37</span>
+#&gt; <span style="color: #BCBCBC;">5</span><span> pos_assumption disclose    23</span>
+#&gt; <span style="color: #BCBCBC;">6</span><span> pos_assumption hide        50</span>
 </div>
 <div class="input">
 <span class="co"># Visualize relative frequencies of responses based on question type</span>
@@ -163,7 +163,7 @@ the problem with the iPod.</p>
 <span class="co"># Perform chi-square test</span>
 <span class="op">(</span><span class="va">test</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/chisq.test.html">chisq.test</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/table.html">table</a></span><span class="op">(</span><span class="va">ask</span><span class="op">$</span><span class="va">question_class</span>, <span class="va">ask</span><span class="op">$</span><span class="va">response</span><span class="op">)</span><span class="op">)</span><span class="op">)</span>
 </div>
-<div class="output co">#&gt; 
+<div class="co">#&gt; 
 #&gt; 	Pearson's Chi-squared test
 #&gt; 
 #&gt; data:  table(ask$question_class, ask$response)
@@ -174,7 +174,7 @@ the problem with the iPod.</p>
 <span class="co"># per table cell.</span>
 <span class="va">test</span><span class="op">$</span><span class="va">expected</span>
 </div>
-<div class="output co">#&gt;                 
+<div class="co">#&gt;                 
 #&gt;                  disclose     hide
 #&gt;   general        20.33333 52.66667
 #&gt;   neg_assumption 20.33333 52.66667

@@ -149,7 +149,7 @@
 <span class="va">d</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/subset.html">subset</a></span><span class="op">(</span><span class="va">mlb_players_18</span>, <span class="op">!</span><span class="va">position</span> <span class="op">%in%</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"P"</span>, <span class="st">"DH"</span><span class="op">)</span> <span class="op">&amp;</span> <span class="va">AB</span> <span class="op">&gt;=</span> <span class="fl">100</span><span class="op">)</span>
 <span class="fu"><a href="https://rdrr.io/r/base/dim.html">dim</a></span><span class="op">(</span><span class="va">d</span><span class="op">)</span>
 </div>
-<div class="output co">#&gt; [1] 429  19</div>
+<div class="co">#&gt; [1] 429  19</div>
 <div class="input">
 <span class="co"># _____ Per Position, No Further Grouping _____ #</span>
 <span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html">plot</a></span><span class="op">(</span><span class="va">d</span><span class="op">$</span><span class="va">OBP</span> <span class="op">~</span> <span class="fu"><a href="https://rdrr.io/r/base/factor.html">as.factor</a></span><span class="op">(</span><span class="va">d</span><span class="op">$</span><span class="va">position</span><span class="op">)</span><span class="op">)</span>
@@ -159,7 +159,7 @@
 <span class="va">model</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/lm.html">lm</a></span><span class="op">(</span><span class="va">OBP</span> <span class="op">~</span> <span class="fu"><a href="https://rdrr.io/r/base/factor.html">as.factor</a></span><span class="op">(</span><span class="va">position</span><span class="op">)</span>, <span class="va">d</span><span class="op">)</span>
 <span class="fu"><a href="https://rdrr.io/r/base/summary.html">summary</a></span><span class="op">(</span><span class="va">model</span><span class="op">)</span>
 </div>
-<div class="output co">#&gt; 
+<div class="co">#&gt; 
 #&gt; Call:
 #&gt; lm(formula = OBP ~ as.factor(position), data = d)
 #&gt; 
@@ -187,7 +187,7 @@
 <div class="input">
 <span class="fu"><a href="https://rdrr.io/r/stats/anova.html">anova</a></span><span class="op">(</span><span class="va">model</span><span class="op">)</span>
 </div>
-<div class="output co">#&gt; Analysis of Variance Table
+<div class="co">#&gt; Analysis of Variance Table
 #&gt; 
 #&gt; Response: OBP
 #&gt;                      Df  Sum Sq   Mean Sq F value   Pr(&gt;F)   
@@ -203,7 +203,7 @@
 <span class="va">POS</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"OF"</span>, <span class="st">"IF"</span>, <span class="st">"C"</span><span class="op">)</span>
 <span class="fu"><a href="https://rdrr.io/r/base/table.html">table</a></span><span class="op">(</span><span class="va">d</span><span class="op">$</span><span class="va">position</span><span class="op">)</span>
 </div>
-<div class="output co">#&gt; 
+<div class="co">#&gt; 
 #&gt; 1B 2B 3B  C CF LF RF SS 
 #&gt; 51 56 55 64 53 53 54 43 </div>
 <div class="input">
@@ -221,7 +221,7 @@
 <div class="input">
 <span class="fu"><a href="https://rdrr.io/r/base/summary.html">summary</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/stats/lm.html">lm</a></span><span class="op">(</span><span class="va">out</span> <span class="op">~</span> <span class="fu"><a href="https://rdrr.io/r/base/factor.html">as.factor</a></span><span class="op">(</span><span class="va">gp</span><span class="op">)</span><span class="op">)</span><span class="op">)</span>
 </div>
-<div class="output co">#&gt; 
+<div class="co">#&gt; 
 #&gt; Call:
 #&gt; lm(formula = out ~ as.factor(gp))
 #&gt; 
@@ -244,7 +244,7 @@
 <div class="input">
 <span class="fu"><a href="https://rdrr.io/r/stats/anova.html">anova</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/stats/lm.html">lm</a></span><span class="op">(</span><span class="va">out</span> <span class="op">~</span> <span class="fu"><a href="https://rdrr.io/r/base/factor.html">as.factor</a></span><span class="op">(</span><span class="va">gp</span><span class="op">)</span><span class="op">)</span><span class="op">)</span>
 </div>
-<div class="output co">#&gt; Analysis of Variance Table
+<div class="co">#&gt; Analysis of Variance Table
 #&gt; 
 #&gt; Response: out
 #&gt;                Df  Sum Sq   Mean Sq F value   Pr(&gt;F)   

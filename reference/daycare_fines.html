@@ -170,19 +170,19 @@ The Journal of Legal Studies 29, no. 1 (2000): 1-17.</p>
   <span class="fu"><a href="https://dplyr.tidyverse.org/reference/summarise.html">summarise</a></span><span class="op">(</span>avg_late_pickups <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/mean.html">mean</a></span><span class="op">(</span><span class="va">late_pickups</span><span class="op">)</span>, .groups <span class="op">=</span> <span class="st">"drop"</span><span class="op">)</span> <span class="op">%&gt;%</span>
   <span class="fu"><a href="https://tidyr.tidyverse.org/reference/pivot_wider.html">pivot_wider</a></span><span class="op">(</span>names_from <span class="op">=</span> <span class="va">study_period_4</span>, values_from <span class="op">=</span> <span class="va">avg_late_pickups</span><span class="op">)</span>
 </div>
-<div class="output co">#&gt; <span style="color: #949494;"># A tibble: 10 x 5</span><span>
+<div class="co">#&gt; <span style="color: #949494;"># A tibble: 10 x 5</span>
 #&gt;    center `before fine` `first 4 weeks with f… `last 8 weeks with … `after fine`
-#&gt;     </span><span style="color: #949494;font-style: italic;">&lt;int&gt;</span><span>         </span><span style="color: #949494;font-style: italic;">&lt;dbl&gt;</span><span>                  </span><span style="color: #949494;font-style: italic;">&lt;dbl&gt;</span><span>                </span><span style="color: #949494;font-style: italic;">&lt;dbl&gt;</span><span>        </span><span style="color: #949494;font-style: italic;">&lt;dbl&gt;</span><span>
-#&gt; </span><span style="color: #BCBCBC;"> 1</span><span>      1          7.25                    9.5                14.1         15.2 
-#&gt; </span><span style="color: #BCBCBC;"> 2</span><span>      2          5.25                    9                  13.9         13.2 
-#&gt; </span><span style="color: #BCBCBC;"> 3</span><span>      3          8.5                    10.2                20.1         22   
-#&gt; </span><span style="color: #BCBCBC;"> 4</span><span>      4          9                      15                  21.2         20.2 
-#&gt; </span><span style="color: #BCBCBC;"> 5</span><span>      5         11.8                    20                  27           29.5 
-#&gt; </span><span style="color: #BCBCBC;"> 6</span><span>      6          6.25                   10                  14.8         12   
-#&gt; </span><span style="color: #BCBCBC;"> 7</span><span>      7          8.75                    8                   6.88         6.75
-#&gt; </span><span style="color: #BCBCBC;"> 8</span><span>      8         13.2                    10.5                11.1          9.25
-#&gt; </span><span style="color: #BCBCBC;"> 9</span><span>      9          4.75                    5.5                 5.62         4.75
-#&gt; </span><span style="color: #BCBCBC;">10</span><span>     10         13.2                    12.2                13.6         12.2 </span>
+#&gt;     <span style="color: #949494;font-style: italic;">&lt;int&gt;</span><span>         </span><span style="color: #949494;font-style: italic;">&lt;dbl&gt;</span><span>                  </span><span style="color: #949494;font-style: italic;">&lt;dbl&gt;</span><span>                </span><span style="color: #949494;font-style: italic;">&lt;dbl&gt;</span><span>        </span><span style="color: #949494;font-style: italic;">&lt;dbl&gt;</span>
+#&gt; <span style="color: #BCBCBC;"> 1</span><span>      1          7.25                    9.5                14.1         15.2 </span>
+#&gt; <span style="color: #BCBCBC;"> 2</span><span>      2          5.25                    9                  13.9         13.2 </span>
+#&gt; <span style="color: #BCBCBC;"> 3</span><span>      3          8.5                    10.2                20.1         22   </span>
+#&gt; <span style="color: #BCBCBC;"> 4</span><span>      4          9                      15                  21.2         20.2 </span>
+#&gt; <span style="color: #BCBCBC;"> 5</span><span>      5         11.8                    20                  27           29.5 </span>
+#&gt; <span style="color: #BCBCBC;"> 6</span><span>      6          6.25                   10                  14.8         12   </span>
+#&gt; <span style="color: #BCBCBC;"> 7</span><span>      7          8.75                    8                   6.88         6.75</span>
+#&gt; <span style="color: #BCBCBC;"> 8</span><span>      8         13.2                    10.5                11.1          9.25</span>
+#&gt; <span style="color: #BCBCBC;"> 9</span><span>      9          4.75                    5.5                 5.62         4.75</span>
+#&gt; <span style="color: #BCBCBC;">10</span><span>     10         13.2                    12.2                13.6         12.2 </span>
 </div>
 <div class="input">
 <span class="va">daycare_fines</span> <span class="op">%&gt;%</span>
@@ -190,19 +190,19 @@ The Journal of Legal Studies 29, no. 1 (2000): 1-17.</p>
   <span class="fu"><a href="https://dplyr.tidyverse.org/reference/summarise.html">summarise</a></span><span class="op">(</span>avg_late_pickups <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/mean.html">mean</a></span><span class="op">(</span><span class="va">late_pickups</span><span class="op">)</span>, .groups <span class="op">=</span> <span class="st">"drop"</span><span class="op">)</span> <span class="op">%&gt;%</span>
   <span class="fu"><a href="https://tidyr.tidyverse.org/reference/pivot_wider.html">pivot_wider</a></span><span class="op">(</span>names_from <span class="op">=</span> <span class="va">study_period_3</span>, values_from <span class="op">=</span> <span class="va">avg_late_pickups</span><span class="op">)</span>
 </div>
-<div class="output co">#&gt; <span style="color: #949494;"># A tibble: 10 x 4</span><span>
+<div class="co">#&gt; <span style="color: #949494;"># A tibble: 10 x 4</span>
 #&gt;    center `before fine` `with fine` `after fine`
-#&gt;     </span><span style="color: #949494;font-style: italic;">&lt;int&gt;</span><span>         </span><span style="color: #949494;font-style: italic;">&lt;dbl&gt;</span><span>       </span><span style="color: #949494;font-style: italic;">&lt;dbl&gt;</span><span>        </span><span style="color: #949494;font-style: italic;">&lt;dbl&gt;</span><span>
-#&gt; </span><span style="color: #BCBCBC;"> 1</span><span>      1          7.25       12.6         15.2 
-#&gt; </span><span style="color: #BCBCBC;"> 2</span><span>      2          5.25       12.2         13.2 
-#&gt; </span><span style="color: #BCBCBC;"> 3</span><span>      3          8.5        16.8         22   
-#&gt; </span><span style="color: #BCBCBC;"> 4</span><span>      4          9          19.2         20.2 
-#&gt; </span><span style="color: #BCBCBC;"> 5</span><span>      5         11.8        24.7         29.5 
-#&gt; </span><span style="color: #BCBCBC;"> 6</span><span>      6          6.25       13.2         12   
-#&gt; </span><span style="color: #BCBCBC;"> 7</span><span>      7          8.75        7.25         6.75
-#&gt; </span><span style="color: #BCBCBC;"> 8</span><span>      8         13.2        10.9          9.25
-#&gt; </span><span style="color: #BCBCBC;"> 9</span><span>      9          4.75        5.58         4.75
-#&gt; </span><span style="color: #BCBCBC;">10</span><span>     10         13.2        13.2         12.2 </span>
+#&gt;     <span style="color: #949494;font-style: italic;">&lt;int&gt;</span><span>         </span><span style="color: #949494;font-style: italic;">&lt;dbl&gt;</span><span>       </span><span style="color: #949494;font-style: italic;">&lt;dbl&gt;</span><span>        </span><span style="color: #949494;font-style: italic;">&lt;dbl&gt;</span>
+#&gt; <span style="color: #BCBCBC;"> 1</span><span>      1          7.25       12.6         15.2 </span>
+#&gt; <span style="color: #BCBCBC;"> 2</span><span>      2          5.25       12.2         13.2 </span>
+#&gt; <span style="color: #BCBCBC;"> 3</span><span>      3          8.5        16.8         22   </span>
+#&gt; <span style="color: #BCBCBC;"> 4</span><span>      4          9          19.2         20.2 </span>
+#&gt; <span style="color: #BCBCBC;"> 5</span><span>      5         11.8        24.7         29.5 </span>
+#&gt; <span style="color: #BCBCBC;"> 6</span><span>      6          6.25       13.2         12   </span>
+#&gt; <span style="color: #BCBCBC;"> 7</span><span>      7          8.75        7.25         6.75</span>
+#&gt; <span style="color: #BCBCBC;"> 8</span><span>      8         13.2        10.9          9.25</span>
+#&gt; <span style="color: #BCBCBC;"> 9</span><span>      9          4.75        5.58         4.75</span>
+#&gt; <span style="color: #BCBCBC;">10</span><span>     10         13.2        13.2         12.2 </span>
 </div>
 <div class="input">
 <span class="co"># The following plot matches Figure 1 of the source article</span>

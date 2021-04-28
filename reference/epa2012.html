@@ -162,53 +162,53 @@
 <span class="co"># Variable descriptions</span>
 <span class="fu"><a href="https://dplyr.tidyverse.org/reference/distinct.html">distinct</a></span><span class="op">(</span><span class="va">epa2012</span>, <span class="va">air_aspir_method_desc</span>, <span class="va">air_aspir_method</span><span class="op">)</span>
 </div>
-<div class="output co">#&gt; <span style="color: #949494;"># A tibble: 4 x 2</span><span>
+<div class="co">#&gt; <span style="color: #949494;"># A tibble: 4 x 2</span>
 #&gt;   air_aspir_method air_aspir_method_desc
-#&gt;   </span><span style="color: #949494;font-style: italic;">&lt;fct&gt;</span><span>            </span><span style="color: #949494;font-style: italic;">&lt;fct&gt;</span><span>                
-#&gt; </span><span style="color: #BCBCBC;">1</span><span> </span><span style="color: #BB0000;">NA</span><span>               Naturally Aspirated  
-#&gt; </span><span style="color: #BCBCBC;">2</span><span> TC               Turbocharged         
-#&gt; </span><span style="color: #BCBCBC;">3</span><span> SC               Supercharged         
-#&gt; </span><span style="color: #BCBCBC;">4</span><span> </span><span style="color: #BB0000;">NA</span><span>               </span><span style="color: #BB0000;">NA</span><span>                   </span>
+#&gt;   <span style="color: #949494;font-style: italic;">&lt;fct&gt;</span><span>            </span><span style="color: #949494;font-style: italic;">&lt;fct&gt;</span><span>                </span>
+#&gt; <span style="color: #BCBCBC;">1</span><span> </span><span style="color: #BB0000;">NA</span><span>               Naturally Aspirated  </span>
+#&gt; <span style="color: #BCBCBC;">2</span><span> TC               Turbocharged         </span>
+#&gt; <span style="color: #BCBCBC;">3</span><span> SC               Supercharged         </span>
+#&gt; <span style="color: #BCBCBC;">4</span><span> </span><span style="color: #BB0000;">NA</span><span>               </span><span style="color: #BB0000;">NA</span><span>                   </span>
 </div>
 <div class="input">
 <span class="fu"><a href="https://dplyr.tidyverse.org/reference/distinct.html">distinct</a></span><span class="op">(</span><span class="va">epa2012</span>, <span class="va">transmission_desc</span>, <span class="va">transmission</span><span class="op">)</span>
 </div>
-<div class="output co">#&gt; <span style="color: #949494;"># A tibble: 7 x 2</span><span>
+<div class="co">#&gt; <span style="color: #949494;"># A tibble: 7 x 2</span>
 #&gt;   transmission transmission_desc                                       
-#&gt;   </span><span style="color: #949494;font-style: italic;">&lt;fct&gt;</span><span>        </span><span style="color: #949494;font-style: italic;">&lt;fct&gt;</span><span>                                                   
-#&gt; </span><span style="color: #BCBCBC;">1</span><span> M            Manual                                                  
-#&gt; </span><span style="color: #BCBCBC;">2</span><span> AM           Automated Manual                                        
-#&gt; </span><span style="color: #BCBCBC;">3</span><span> SA           Semi-Automatic                                          
-#&gt; </span><span style="color: #BCBCBC;">4</span><span> A            Automatic                                               
-#&gt; </span><span style="color: #BCBCBC;">5</span><span> SCV          Selectable Continuously Variable (e.g. CVT with paddles)
-#&gt; </span><span style="color: #BCBCBC;">6</span><span> CVT          Continuously Variable                                   
-#&gt; </span><span style="color: #BCBCBC;">7</span><span> OT           Other                                                   </span>
+#&gt;   <span style="color: #949494;font-style: italic;">&lt;fct&gt;</span><span>        </span><span style="color: #949494;font-style: italic;">&lt;fct&gt;</span><span>                                                   </span>
+#&gt; <span style="color: #BCBCBC;">1</span><span> M            Manual                                                  </span>
+#&gt; <span style="color: #BCBCBC;">2</span><span> AM           Automated Manual                                        </span>
+#&gt; <span style="color: #BCBCBC;">3</span><span> SA           Semi-Automatic                                          </span>
+#&gt; <span style="color: #BCBCBC;">4</span><span> A            Automatic                                               </span>
+#&gt; <span style="color: #BCBCBC;">5</span><span> SCV          Selectable Continuously Variable (e.g. CVT with paddles)</span>
+#&gt; <span style="color: #BCBCBC;">6</span><span> CVT          Continuously Variable                                   </span>
+#&gt; <span style="color: #BCBCBC;">7</span><span> OT           Other                                                   </span>
 </div>
 <div class="input">
 <span class="fu"><a href="https://dplyr.tidyverse.org/reference/distinct.html">distinct</a></span><span class="op">(</span><span class="va">epa2012</span>, <span class="va">drive_desc</span>, <span class="va">drive_sys</span><span class="op">)</span>
 </div>
-<div class="output co">#&gt; <span style="color: #949494;"># A tibble: 5 x 2</span><span>
+<div class="co">#&gt; <span style="color: #949494;"># A tibble: 5 x 2</span>
 #&gt;   drive_sys drive_desc             
-#&gt;   </span><span style="color: #949494;font-style: italic;">&lt;fct&gt;</span><span>     </span><span style="color: #949494;font-style: italic;">&lt;fct&gt;</span><span>                  
-#&gt; </span><span style="color: #BCBCBC;">1</span><span> R         2-Wheel Drive, Rear    
-#&gt; </span><span style="color: #BCBCBC;">2</span><span> A         All Wheel Drive        
-#&gt; </span><span style="color: #BCBCBC;">3</span><span> F         2-Wheel Drive, Front   
-#&gt; </span><span style="color: #BCBCBC;">4</span><span> 4         4-Wheel Drive          
-#&gt; </span><span style="color: #BCBCBC;">5</span><span> P         Part-time 4-Wheel Drive</span>
+#&gt;   <span style="color: #949494;font-style: italic;">&lt;fct&gt;</span><span>     </span><span style="color: #949494;font-style: italic;">&lt;fct&gt;</span><span>                  </span>
+#&gt; <span style="color: #BCBCBC;">1</span><span> R         2-Wheel Drive, Rear    </span>
+#&gt; <span style="color: #BCBCBC;">2</span><span> A         All Wheel Drive        </span>
+#&gt; <span style="color: #BCBCBC;">3</span><span> F         2-Wheel Drive, Front   </span>
+#&gt; <span style="color: #BCBCBC;">4</span><span> 4         4-Wheel Drive          </span>
+#&gt; <span style="color: #BCBCBC;">5</span><span> P         Part-time 4-Wheel Drive</span>
 </div>
 <div class="input">
 <span class="fu"><a href="https://dplyr.tidyverse.org/reference/distinct.html">distinct</a></span><span class="op">(</span><span class="va">epa2012</span>, <span class="va">fuel_usage_desc</span>, <span class="va">fuel_usage</span><span class="op">)</span>
 </div>
-<div class="output co">#&gt; <span style="color: #949494;"># A tibble: 7 x 2</span><span>
+<div class="co">#&gt; <span style="color: #949494;"># A tibble: 7 x 2</span>
 #&gt;   fuel_usage fuel_usage_desc                          
-#&gt;   </span><span style="color: #949494;font-style: italic;">&lt;fct&gt;</span><span>      </span><span style="color: #949494;font-style: italic;">&lt;fct&gt;</span><span>                                    
-#&gt; </span><span style="color: #BCBCBC;">1</span><span> GP         Gasoline (Premium Unleaded Recommended)  
-#&gt; </span><span style="color: #BCBCBC;">2</span><span> GPR        Gasoline (Premium Unleaded Required)     
-#&gt; </span><span style="color: #BCBCBC;">3</span><span> G          Gasoline (Regular Unleaded Recommended)  
-#&gt; </span><span style="color: #BCBCBC;">4</span><span> EL         Electricity                              
-#&gt; </span><span style="color: #BCBCBC;">5</span><span> DU         Diesel                                   
-#&gt; </span><span style="color: #BCBCBC;">6</span><span> GM         Gasoline (Mid Grade Unleaded Recommended)
-#&gt; </span><span style="color: #BCBCBC;">7</span><span> H          Hydrogen                                 </span>
+#&gt;   <span style="color: #949494;font-style: italic;">&lt;fct&gt;</span><span>      </span><span style="color: #949494;font-style: italic;">&lt;fct&gt;</span><span>                                    </span>
+#&gt; <span style="color: #BCBCBC;">1</span><span> GP         Gasoline (Premium Unleaded Recommended)  </span>
+#&gt; <span style="color: #BCBCBC;">2</span><span> GPR        Gasoline (Premium Unleaded Required)     </span>
+#&gt; <span style="color: #BCBCBC;">3</span><span> G          Gasoline (Regular Unleaded Recommended)  </span>
+#&gt; <span style="color: #BCBCBC;">4</span><span> EL         Electricity                              </span>
+#&gt; <span style="color: #BCBCBC;">5</span><span> DU         Diesel                                   </span>
+#&gt; <span style="color: #BCBCBC;">6</span><span> GM         Gasoline (Mid Grade Unleaded Recommended)</span>
+#&gt; <span style="color: #BCBCBC;">7</span><span> H          Hydrogen                                 </span>
 </div>
 <div class="input">
 <span class="co"># Guzzlers and their mileages</span>

@@ -290,41 +290,41 @@ through their platform.</p>
     <pre class="examples"><code class="sourceCode R"><div class="input">
 <span class="va">loans_full_schema</span>
 </div>
-<div class="output co">#&gt; <span style="color: #949494;"># A tibble: 10,000 x 55</span><span>
+<div class="co">#&gt; <span style="color: #949494;"># A tibble: 10,000 x 55</span>
 #&gt;    emp_title        emp_length state homeownership annual_income verified_income
-#&gt;    </span><span style="color: #949494;font-style: italic;">&lt;chr&gt;</span><span>                 </span><span style="color: #949494;font-style: italic;">&lt;dbl&gt;</span><span> </span><span style="color: #949494;font-style: italic;">&lt;fct&gt;</span><span> </span><span style="color: #949494;font-style: italic;">&lt;fct&gt;</span><span>                 </span><span style="color: #949494;font-style: italic;">&lt;dbl&gt;</span><span> </span><span style="color: #949494;font-style: italic;">&lt;fct&gt;</span><span>          
-#&gt; </span><span style="color: #BCBCBC;"> 1</span><span> </span><span style="color: #949494;">"</span><span>global config …          3 NJ    MORTGAGE              </span><span style="text-decoration: underline;">90</span><span>000 Verified       
-#&gt; </span><span style="color: #BCBCBC;"> 2</span><span> </span><span style="color: #949494;">"</span><span>warehouse offi…         10 HI    RENT                  </span><span style="text-decoration: underline;">40</span><span>000 Not Verified   
-#&gt; </span><span style="color: #BCBCBC;"> 3</span><span> </span><span style="color: #949494;">"</span><span>assembly</span><span style="color: #949494;">"</span><span>                3 WI    RENT                  </span><span style="text-decoration: underline;">40</span><span>000 Source Verified
-#&gt; </span><span style="color: #BCBCBC;"> 4</span><span> </span><span style="color: #949494;">"</span><span>customer servi…          1 PA    RENT                  </span><span style="text-decoration: underline;">30</span><span>000 Not Verified   
-#&gt; </span><span style="color: #BCBCBC;"> 5</span><span> </span><span style="color: #949494;">"</span><span>security super…         10 CA    RENT                  </span><span style="text-decoration: underline;">35</span><span>000 Verified       
-#&gt; </span><span style="color: #BCBCBC;"> 6</span><span> </span><span style="color: #949494;">""</span><span>                       </span><span style="color: #BB0000;">NA</span><span> KY    OWN                   </span><span style="text-decoration: underline;">34</span><span>000 Not Verified   
-#&gt; </span><span style="color: #BCBCBC;"> 7</span><span> </span><span style="color: #949494;">"</span><span>hr </span><span style="color: #949494;">"</span><span>                    10 MI    MORTGAGE              </span><span style="text-decoration: underline;">35</span><span>000 Source Verified
-#&gt; </span><span style="color: #BCBCBC;"> 8</span><span> </span><span style="color: #949494;">"</span><span>police</span><span style="color: #949494;">"</span><span>                 10 AZ    MORTGAGE             </span><span style="text-decoration: underline;">110</span><span>000 Source Verified
-#&gt; </span><span style="color: #BCBCBC;"> 9</span><span> </span><span style="color: #949494;">"</span><span>parts</span><span style="color: #949494;">"</span><span>                  10 NV    MORTGAGE              </span><span style="text-decoration: underline;">65</span><span>000 Source Verified
-#&gt; </span><span style="color: #BCBCBC;">10</span><span> </span><span style="color: #949494;">"</span><span>4th person</span><span style="color: #949494;">"</span><span>              3 IL    RENT                  </span><span style="text-decoration: underline;">30</span><span>000 Not Verified   
-#&gt; </span><span style="color: #949494;"># … with 9,990 more rows, and 49 more variables: debt_to_income &lt;dbl&gt;,</span><span>
-#&gt; </span><span style="color: #949494;">#   annual_income_joint &lt;dbl&gt;, verification_income_joint &lt;fct&gt;,</span><span>
-#&gt; </span><span style="color: #949494;">#   debt_to_income_joint &lt;dbl&gt;, delinq_2y &lt;int&gt;,</span><span>
-#&gt; </span><span style="color: #949494;">#   months_since_last_delinq &lt;int&gt;, earliest_credit_line &lt;dbl&gt;,</span><span>
-#&gt; </span><span style="color: #949494;">#   inquiries_last_12m &lt;int&gt;, total_credit_lines &lt;int&gt;,</span><span>
-#&gt; </span><span style="color: #949494;">#   open_credit_lines &lt;int&gt;, total_credit_limit &lt;int&gt;,</span><span>
-#&gt; </span><span style="color: #949494;">#   total_credit_utilized &lt;int&gt;, num_collections_last_12m &lt;int&gt;,</span><span>
-#&gt; </span><span style="color: #949494;">#   num_historical_failed_to_pay &lt;int&gt;, months_since_90d_late &lt;int&gt;,</span><span>
-#&gt; </span><span style="color: #949494;">#   current_accounts_delinq &lt;int&gt;, total_collection_amount_ever &lt;int&gt;,</span><span>
-#&gt; </span><span style="color: #949494;">#   current_installment_accounts &lt;int&gt;, accounts_opened_24m &lt;int&gt;,</span><span>
-#&gt; </span><span style="color: #949494;">#   months_since_last_credit_inquiry &lt;int&gt;, num_satisfactory_accounts &lt;int&gt;,</span><span>
-#&gt; </span><span style="color: #949494;">#   num_accounts_120d_past_due &lt;int&gt;, num_accounts_30d_past_due &lt;int&gt;,</span><span>
-#&gt; </span><span style="color: #949494;">#   num_active_debit_accounts &lt;int&gt;, total_debit_limit &lt;int&gt;,</span><span>
-#&gt; </span><span style="color: #949494;">#   num_total_cc_accounts &lt;int&gt;, num_open_cc_accounts &lt;int&gt;,</span><span>
-#&gt; </span><span style="color: #949494;">#   num_cc_carrying_balance &lt;int&gt;, num_mort_accounts &lt;int&gt;,</span><span>
-#&gt; </span><span style="color: #949494;">#   account_never_delinq_percent &lt;dbl&gt;, tax_liens &lt;int&gt;,</span><span>
-#&gt; </span><span style="color: #949494;">#   public_record_bankrupt &lt;int&gt;, loan_purpose &lt;fct&gt;, application_type &lt;fct&gt;,</span><span>
-#&gt; </span><span style="color: #949494;">#   loan_amount &lt;int&gt;, term &lt;dbl&gt;, interest_rate &lt;dbl&gt;, installment &lt;dbl&gt;,</span><span>
-#&gt; </span><span style="color: #949494;">#   grade &lt;fct&gt;, sub_grade &lt;fct&gt;, issue_month &lt;fct&gt;, loan_status &lt;fct&gt;,</span><span>
-#&gt; </span><span style="color: #949494;">#   initial_listing_status &lt;fct&gt;, disbursement_method &lt;fct&gt;, balance &lt;dbl&gt;,</span><span>
-#&gt; </span><span style="color: #949494;">#   paid_total &lt;dbl&gt;, paid_principal &lt;dbl&gt;, paid_interest &lt;dbl&gt;,</span><span>
-#&gt; </span><span style="color: #949494;">#   paid_late_fees &lt;dbl&gt;</span><span></span>
+#&gt;    <span style="color: #949494;font-style: italic;">&lt;chr&gt;</span><span>                 </span><span style="color: #949494;font-style: italic;">&lt;dbl&gt;</span><span> </span><span style="color: #949494;font-style: italic;">&lt;fct&gt;</span><span> </span><span style="color: #949494;font-style: italic;">&lt;fct&gt;</span><span>                 </span><span style="color: #949494;font-style: italic;">&lt;dbl&gt;</span><span> </span><span style="color: #949494;font-style: italic;">&lt;fct&gt;</span><span>          </span>
+#&gt; <span style="color: #BCBCBC;"> 1</span><span> </span><span style="color: #949494;">"</span><span>global config …          3 NJ    MORTGAGE              </span><span style="text-decoration: underline;">90</span><span>000 Verified       </span>
+#&gt; <span style="color: #BCBCBC;"> 2</span><span> </span><span style="color: #949494;">"</span><span>warehouse offi…         10 HI    RENT                  </span><span style="text-decoration: underline;">40</span><span>000 Not Verified   </span>
+#&gt; <span style="color: #BCBCBC;"> 3</span><span> </span><span style="color: #949494;">"</span><span>assembly</span><span style="color: #949494;">"</span><span>                3 WI    RENT                  </span><span style="text-decoration: underline;">40</span><span>000 Source Verified</span>
+#&gt; <span style="color: #BCBCBC;"> 4</span><span> </span><span style="color: #949494;">"</span><span>customer servi…          1 PA    RENT                  </span><span style="text-decoration: underline;">30</span><span>000 Not Verified   </span>
+#&gt; <span style="color: #BCBCBC;"> 5</span><span> </span><span style="color: #949494;">"</span><span>security super…         10 CA    RENT                  </span><span style="text-decoration: underline;">35</span><span>000 Verified       </span>
+#&gt; <span style="color: #BCBCBC;"> 6</span><span> </span><span style="color: #949494;">""</span><span>                       </span><span style="color: #BB0000;">NA</span><span> KY    OWN                   </span><span style="text-decoration: underline;">34</span><span>000 Not Verified   </span>
+#&gt; <span style="color: #BCBCBC;"> 7</span><span> </span><span style="color: #949494;">"</span><span>hr </span><span style="color: #949494;">"</span><span>                    10 MI    MORTGAGE              </span><span style="text-decoration: underline;">35</span><span>000 Source Verified</span>
+#&gt; <span style="color: #BCBCBC;"> 8</span><span> </span><span style="color: #949494;">"</span><span>police</span><span style="color: #949494;">"</span><span>                 10 AZ    MORTGAGE             </span><span style="text-decoration: underline;">110</span><span>000 Source Verified</span>
+#&gt; <span style="color: #BCBCBC;"> 9</span><span> </span><span style="color: #949494;">"</span><span>parts</span><span style="color: #949494;">"</span><span>                  10 NV    MORTGAGE              </span><span style="text-decoration: underline;">65</span><span>000 Source Verified</span>
+#&gt; <span style="color: #BCBCBC;">10</span><span> </span><span style="color: #949494;">"</span><span>4th person</span><span style="color: #949494;">"</span><span>              3 IL    RENT                  </span><span style="text-decoration: underline;">30</span><span>000 Not Verified   </span>
+#&gt; <span style="color: #949494;"># … with 9,990 more rows, and 49 more variables: debt_to_income &lt;dbl&gt;,</span>
+#&gt; <span style="color: #949494;">#   annual_income_joint &lt;dbl&gt;, verification_income_joint &lt;fct&gt;,</span>
+#&gt; <span style="color: #949494;">#   debt_to_income_joint &lt;dbl&gt;, delinq_2y &lt;int&gt;,</span>
+#&gt; <span style="color: #949494;">#   months_since_last_delinq &lt;int&gt;, earliest_credit_line &lt;dbl&gt;,</span>
+#&gt; <span style="color: #949494;">#   inquiries_last_12m &lt;int&gt;, total_credit_lines &lt;int&gt;,</span>
+#&gt; <span style="color: #949494;">#   open_credit_lines &lt;int&gt;, total_credit_limit &lt;int&gt;,</span>
+#&gt; <span style="color: #949494;">#   total_credit_utilized &lt;int&gt;, num_collections_last_12m &lt;int&gt;,</span>
+#&gt; <span style="color: #949494;">#   num_historical_failed_to_pay &lt;int&gt;, months_since_90d_late &lt;int&gt;,</span>
+#&gt; <span style="color: #949494;">#   current_accounts_delinq &lt;int&gt;, total_collection_amount_ever &lt;int&gt;,</span>
+#&gt; <span style="color: #949494;">#   current_installment_accounts &lt;int&gt;, accounts_opened_24m &lt;int&gt;,</span>
+#&gt; <span style="color: #949494;">#   months_since_last_credit_inquiry &lt;int&gt;, num_satisfactory_accounts &lt;int&gt;,</span>
+#&gt; <span style="color: #949494;">#   num_accounts_120d_past_due &lt;int&gt;, num_accounts_30d_past_due &lt;int&gt;,</span>
+#&gt; <span style="color: #949494;">#   num_active_debit_accounts &lt;int&gt;, total_debit_limit &lt;int&gt;,</span>
+#&gt; <span style="color: #949494;">#   num_total_cc_accounts &lt;int&gt;, num_open_cc_accounts &lt;int&gt;,</span>
+#&gt; <span style="color: #949494;">#   num_cc_carrying_balance &lt;int&gt;, num_mort_accounts &lt;int&gt;,</span>
+#&gt; <span style="color: #949494;">#   account_never_delinq_percent &lt;dbl&gt;, tax_liens &lt;int&gt;,</span>
+#&gt; <span style="color: #949494;">#   public_record_bankrupt &lt;int&gt;, loan_purpose &lt;fct&gt;, application_type &lt;fct&gt;,</span>
+#&gt; <span style="color: #949494;">#   loan_amount &lt;int&gt;, term &lt;dbl&gt;, interest_rate &lt;dbl&gt;, installment &lt;dbl&gt;,</span>
+#&gt; <span style="color: #949494;">#   grade &lt;fct&gt;, sub_grade &lt;fct&gt;, issue_month &lt;fct&gt;, loan_status &lt;fct&gt;,</span>
+#&gt; <span style="color: #949494;">#   initial_listing_status &lt;fct&gt;, disbursement_method &lt;fct&gt;, balance &lt;dbl&gt;,</span>
+#&gt; <span style="color: #949494;">#   paid_total &lt;dbl&gt;, paid_principal &lt;dbl&gt;, paid_interest &lt;dbl&gt;,</span>
+#&gt; <span style="color: #949494;">#   paid_late_fees &lt;dbl&gt;</span>
 </div>
 <div class="input">
 
