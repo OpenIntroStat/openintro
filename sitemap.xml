@@ -1,7 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://openintrostat.github.io/openintro/404.html</loc>
+  </url>
+  <url>
+    <loc>https://openintrostat.github.io/openintro/CODE_OF_CONDUCT.html</loc>
+  </url>
+  <url>
+    <loc>https://openintrostat.github.io/openintro/LICENSE.html</loc>
+  </url>
+  <url>
+    <loc>https://openintrostat.github.io/openintro/articles/datasets.html</loc>
+  </url>
+  <url>
+    <loc>https://openintrostat.github.io/openintro/articles/index.html</loc>
+  </url>
+  <url>
+    <loc>https://openintrostat.github.io/openintro/authors.html</loc>
+  </url>
+  <url>
     <loc>https://openintrostat.github.io/openintro/index.html</loc>
+  </url>
+  <url>
+    <loc>https://openintrostat.github.io/openintro/news/index.html</loc>
   </url>
   <url>
     <loc>https://openintrostat.github.io/openintro/reference/ArrowLines.html</loc>
@@ -223,6 +244,9 @@
     <loc>https://openintrostat.github.io/openintro/reference/epa2012.html</loc>
   </url>
   <url>
+    <loc>https://openintrostat.github.io/openintro/reference/epa2021.html</loc>
+  </url>
+  <url>
     <loc>https://openintrostat.github.io/openintro/reference/esi.html</loc>
   </url>
   <url>
@@ -344,6 +368,9 @@
   </url>
   <url>
     <loc>https://openintrostat.github.io/openintro/reference/immigration.html</loc>
+  </url>
+  <url>
+    <loc>https://openintrostat.github.io/openintro/reference/index.html</loc>
   </url>
   <url>
     <loc>https://openintrostat.github.io/openintro/reference/infmortrate.html</loc>
@@ -725,8 +752,5 @@
   </url>
   <url>
     <loc>https://openintrostat.github.io/openintro/reference/yrbss_samp.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/articles/datasets.html</loc>
   </url>
 </urlset>
