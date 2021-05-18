@@ -4,6 +4,7 @@
   * `lizard_run` and `lizard_habitat` (thanks Stephen Adolph!)
   * `daycare_fines`, `biontech_adolescents`, `nyc_marathon`, `epa2021`
 * Add tests for some of the new datasets
+* Better terminology: `sex_discrimination`
 
 # openintro 2.1.0
 
