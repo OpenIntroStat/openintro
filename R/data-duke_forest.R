@@ -1,12 +1,12 @@
-#'  Houses for sale in Duke Forest, Durham, NC in Nov 2020
+#'  Sale prices of houses in Duke Forest, Durham, NC
 #'
-#'  Data on houses that were for sale in the Duke Forest neighborhood of
+#'  Data on houses that were recently sold in the Duke Forest neighborhood of
 #'  Durham, NC in November 2020.
 #'
 #' @format A data frame with 98 rows and 13 variables.
 #' \describe{
 #'    \item{address}{Address of house.}
-#'    \item{price}{Listing price, in USD.}
+#'    \item{price}{Sale price, in USD.}
 #'    \item{bed}{Number of bedrooms.}
 #'    \item{bath}{Number of bathrooms.}
 #'    \item{area}{Area of home, in square feet.}
@@ -28,7 +28,7 @@
 #'   geom_boxplot() +
 #'   labs(
 #'     x = "Number of bedrooms",
-#'     y = "Listing price (USD)",
+#'     y = "Sale price (USD)",
 #'     title = "Homes for sale in Duke Forest, Durham, NC",
 #'     subtitle = "Data are from November 2020"
 #'     )
@@ -38,7 +38,7 @@
 #'   geom_point() +
 #'   labs(
 #'     x = "Area (square feet)",
-#'     y = "Listing price (USD)",
+#'     y = "Sale price (USD)",
 #'     title = "Homes for sale in Duke Forest, Durham, NC",
 #'     subtitle = "Data are from November 2020"
 #'     )

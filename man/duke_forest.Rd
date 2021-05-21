@@ -3,12 +3,12 @@
 \docType{data}
 \name{duke_forest}
 \alias{duke_forest}
-\title{Houses for sale in Duke Forest, Durham, NC in Nov 2020}
+\title{Sale prices of houses in Duke Forest, Durham, NC}
 \format{
 A data frame with 98 rows and 13 variables.
 \describe{
 \item{address}{Address of house.}
-\item{price}{Listing price, in USD.}
+\item{price}{Sale price, in USD.}
 \item{bed}{Number of bedrooms.}
 \item{bath}{Number of bathrooms.}
 \item{area}{Area of home, in square feet.}
@@ -29,7 +29,7 @@ Data were collected from \href{https://www.zillow.com/}{Zillow.com} in November 
 duke_forest
 }
 \description{
-Data on houses that were for sale in the Duke Forest neighborhood of
+Data on houses that were recently sold in the Duke Forest neighborhood of
 Durham, NC in November 2020.
 }
 \examples{
@@ -41,7 +41,7 @@ ggplot(duke_forest, aes(x = as.factor(bed), y = price)) +
   geom_boxplot() +
   labs(
     x = "Number of bedrooms",
-    y = "Listing price (USD)",
+    y = "Sale price (USD)",
     title = "Homes for sale in Duke Forest, Durham, NC",
     subtitle = "Data are from November 2020"
     )
@@ -51,7 +51,7 @@ ggplot(duke_forest, aes(x = area, y = price)) +
   geom_point() +
   labs(
     x = "Area (square feet)",
-    y = "Listing price (USD)",
+    y = "Sale price (USD)",
     title = "Homes for sale in Duke Forest, Durham, NC",
     subtitle = "Data are from November 2020"
     )
