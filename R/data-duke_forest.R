@@ -13,7 +13,7 @@
 #'    \item{type}{Type of home (all are Single Family).}
 #'    \item{year_built}{Year the home was built.}
 #'    \item{heating}{Heating sytem.}
-#'    \item{cooling}{Cooling system (`central` or `other`).}
+#'    \item{cooling}{Cooling system (`other` or `central`).}
 #'    \item{parking}{Type of parking available and number of parking spaces.}
 #'    \item{lot}{Area of the entire property, in acres.}
 #'    \item{hoa}{If the home belongs to an Home Owners Association, the associted fee (`NA` otherwise).}

@@ -15,7 +15,7 @@ A data frame with 98 rows and 13 variables.
 \item{type}{Type of home (all are Single Family).}
 \item{year_built}{Year the home was built.}
 \item{heating}{Heating sytem.}
-\item{cooling}{Cooling system (\code{central} or \code{other}).}
+\item{cooling}{Cooling system (\code{other} or \code{central}).}
 \item{parking}{Type of parking available and number of parking spaces.}
 \item{lot}{Area of the entire property, in acres.}
 \item{hoa}{If the home belongs to an Home Owners Association, the associted fee (\code{NA} otherwise).}
