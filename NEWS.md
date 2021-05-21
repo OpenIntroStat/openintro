@@ -2,7 +2,7 @@
 
 * Added new datasets:
   * `lizard_run` and `lizard_habitat` (thanks Stephen Adolph!)
-  * `daycare_fines`, `biontech_adolescents`, `nyc_marathon`, `epa2021`
+  * `daycare_fines`, `biontech_adolescents`, `nyc_marathon`, `epa2021`, `duke_forest`
 * Add tests for some of the new datasets
 * Better terminology: `sex_discrimination`
 
