@@ -1,4 +1,4 @@
-# openintro (development version)
+# openintro 2.2.0
 
 * Added new datasets:
   * `lizard_run` and `lizard_habitat` (thanks Stephen Adolph!)
