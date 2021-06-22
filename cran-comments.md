@@ -5,7 +5,7 @@
 * GitHub Actions (windows): release
 * Github Actions (macOS): release
 * win-builder: release, devel, oldrelease
-* r-hub: windows-x86_64-devel, ubuntu-gcc-release, fedora-clang-devel
+* r-hub: windows-x86_64-devel, ubuntu-gcc-release, fedora-clang-devel, r-release-linux-x86_64
 
 ## R CMD check results
 
