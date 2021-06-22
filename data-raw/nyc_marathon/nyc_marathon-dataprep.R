@@ -16,7 +16,8 @@ mens <- mens_raw %>%
     time_min = minute(time_hms),
     time_sec = second(time_hms),
     time_hrs = time_hr + time_min/60 + time_sec/(60*60),
-    division = "Men"
+    division = "Men",
+    name = iconv(name, from = "latin1", to = "ASCII", "")
     ) %>%
   select(-time_hms, -time_hr, -time_min, -time_sec) %>%
   relocate(note, .after = division)
@@ -30,7 +31,8 @@ womens <- womens_raw %>%
     time_min = minute(time_hms),
     time_sec = second(time_hms),
     time_hrs = time_hr + time_min/60 + time_sec/(60*60),
-    division = "Women"
+    division = "Women",
+    name = iconv(name, from = "latin1", to = "ASCII", "")
   ) %>%
   select(-time_hms, -time_hr, -time_min, -time_sec) %>%
   relocate(note, .after = division)
