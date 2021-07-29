@@ -28,9 +28,11 @@
 #'
 #'ggplot(plot_data, aes(annual_salary))+
 #'geom_histogram(binwidth = 25000, color = "white")+
-#'labs(title = "Current Salary of Blizzard Employees",
-#'     x = "Salary",
-#'          y = "Number of Employees")
+#'labs(
+#'  title = "Current Salary of Blizzard Employees",
+#'  x = "Salary",
+#'  y = "Number of Employees"
+#')
 #' 
 #' @source
 #'   [Bloomberg](https://www.bloomberg.com/news/articles/2020-08-03/blizzard-workers-share-salaries-in-revolt-over-wage-disparities)
