@@ -1,9 +1,11 @@
 #' Major League Baseball Teams Data.
-#' 
+#'
 #' A subset of data on Major League Baseball teams from
 #' Lahman's Baseball Database. The full data set is available
 #' in the [Lahman R package](https://github.com/cdalzell/Lahman).
 #'
+#' @name mlb_teams
+#' @docType data
 #' @format A data frame with 2784 rows and 41 variables.
 #' \describe{
 #'   \item{year}{Year of play.}
@@ -50,9 +52,9 @@
 #'   }
 #' @examples
 #' library(dplyr)
-#' 
+#'
 #' # List the World Series winning teams for each year
-#' mlb_teams %>% 
+#' mlb_teams %>%
 #'   filter(world_series_winner=="Y")%>%
 #'   select(year,team_name,ball_park)
 #'
@@ -63,5 +65,6 @@
 #'   arrange((team_name))
 #'
 #' @source [Lahmans Baseball Database](http://www.seanlahman.com/baseball-archive/statistics/)
+#' @keywords datasets
 #'
 "mlb_teams"

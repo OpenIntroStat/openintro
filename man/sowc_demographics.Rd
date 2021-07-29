@@ -52,7 +52,7 @@ library(ggplot2)
 # List countries and areas' life expectancy, ordered by rank of life expectancy in 2018
 sowc_demographics \%>\%
   mutate(life_expectancy_change = life_expectancy_2018 - life_expectancy_1970) \%>\%
-  mutate(rank_life_expectancy = round(rank(-life_expectancy_2018),0)) \%>\%  
+  mutate(rank_life_expectancy = round(rank(-life_expectancy_2018),0)) \%>\%
   select(countries_and_areas,rank_life_expectancy,life_expectancy_2018,life_expectancy_change) \%>\%
   arrange(rank_life_expectancy)
 
@@ -62,15 +62,17 @@ sowc_demographics \%>\%
   mutate(population_millions = total_pop_2018/1000) \%>\%
   select(countries_and_areas,rank,migration_rate,population_millions) \%>\%
   arrange(rank)
-  
+
 # Scatterplot of life expectancy v population in 2018
 ggplot(sowc_demographics, aes(life_expectancy_1970, life_expectancy_2018, size = total_pop_2018))+
- geom_point(alpha = 0.5)+
- labs(title = "Life Expectancy",
-  subtitle = "1970 v. 2018", 
-  x = "Life Expectancy in 1970",
-  y = "Life Expectancy in 2018",
-  size = "2018 Total Population")
+geom_point(alpha = 0.5)+
+  labs(
+    title = "Life Expectancy",
+    subtitle = "1970 v. 2018",
+    x = "Life Expectancy in 1970",
+    y = "Life Expectancy in 2018",
+    size = "2018 Total Population"
+)
 
 }
 \keyword{datasets}

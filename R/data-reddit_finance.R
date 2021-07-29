@@ -4,7 +4,9 @@
 #' Only responses that represent the respondent (not other contributors in the household) are listed.
 #' Does not include retired individuals. As per instructed, respondents give dollar values in their
 #' native currency.
-#' 
+#'
+#' @name reddit_finance
+#' @docType data
 #' @format A data frame with 1998 rows and 65 variables.
 #' \describe{
 #'   \item{num_incomes}{How many individuals contribute to your household income?}
@@ -73,9 +75,9 @@
 #'   \item{2020_edu_exp}{Education expenses.}
 #'   \item{2020_other_exp}{Other expenses.}
 #' }
-#' 
+#'
 #' @examples
-#' 
+#'
 #' library(ggplot2)
 #' # Histogram of Expected Retirement Age.
 #' ggplot(reddit_finance, aes(retire_age))+
@@ -85,15 +87,17 @@
 #'     x = "Age Bracket",
 #'     y = "Number of Respondents"
 #' )
-#' 
+#'
 #' # Histogram of Dollar Amount at Which FI was reached.
 #' ggplot(reddit_finance, aes(whn_fin_indy_num))+
 #' geom_histogram(na.rm = TRUE, bins = 20)+
-#' labs(title = "At what amount invested did you consider \nyourself Financially Independent?",
-#' x = "Dollar Amount (in local currency)",
-#' y = "Number of Respondents")
-#' 
+#'   labs(title = "At what amount invested did you consider \n yourself Financially Independent?",
+#'   x = "Dollar Amount (in local currency)",
+#'   y = "Number of Respondents"
+#' )
+#'
 #' @source
 #'   \href{https://www.reddit.com/r/financialindependence/comments/m1q8ia/official_2020_fi_survey_results/}{Reddit.}
+#' @keywords datasets
 #'
 "reddit_finance"
