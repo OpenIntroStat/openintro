@@ -35,7 +35,7 @@ plot_data <- blizzard_salary \%>\%
   mutate(annual_salary = case_when(
     salary_type == "week" ~ current_salary*52,
     salary_type == "hour" ~ current_salary*40*52,
-.    TRUE ~ current_salary
+   TRUE ~ current_salary
   )
 )
 
