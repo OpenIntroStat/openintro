@@ -57,10 +57,10 @@
 #'   select(year,team_name,ball_park)
 #'
 #' # List the teams with their average number of wins and losses
-#'  mlb_teams %>%
-#'    group_by(team_name)%>%
-#'    summarize(mean_wins=mean(wins),mean_losses=mean(losses))%>%
-#'    arrange((team_name))
+#' mlb_teams %>%
+#'   group_by(team_name)%>%
+#'   summarize(mean_wins=mean(wins),mean_losses=mean(losses))%>%
+#'   arrange((team_name))
 #'
 #' @source [Lahmans Baseball Database](http://www.seanlahman.com/baseball-archive/statistics/)
 #'
