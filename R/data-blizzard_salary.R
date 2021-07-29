@@ -19,11 +19,12 @@
 #' library(dplyr)
 #'
 #'plot_data <- blizzard_salary %>% 
-#'mutate(annual_salary = case_when(
-#'salary_type == "week" ~ current_salary*52,
-#'salary_type == "hour" ~ current_salary*40*52,
-#'TRUE ~ current_salary
-#'))
+#'  mutate(annual_salary = case_when(
+#'    salary_type == "week" ~ current_salary*52,
+#'    salary_type == "hour" ~ current_salary*40*52,
+#'.   TRUE ~ current_salary
+#'  )
+#')
 #'
 #'ggplot(plot_data, aes(annual_salary))+
 #'geom_histogram(binwidth = 25000, color = "white")+
