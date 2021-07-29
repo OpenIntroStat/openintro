@@ -80,9 +80,11 @@
 #' # Histogram of Expected Retirement Age.
 #' ggplot(reddit_finance, aes(retire_age))+
 #' geom_bar(na.rm = TRUE)+
-#' labs(title = "At what age do you expect to retire?",
-#' x = "Age Bracket",
-#' y = "Number of Respondents")
+#'   labs(
+#'     title = "At what age do you expect to retire?",
+#'     x = "Age Bracket",
+#'     y = "Number of Respondents"
+#' )
 #' 
 #' # Histogram of Dollar Amount at Which FI was reached.
 #' ggplot(reddit_finance, aes(whn_fin_indy_num))+
