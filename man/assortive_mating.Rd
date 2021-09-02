@@ -3,6 +3,7 @@
 \docType{data}
 \name{assortive_mating}
 \alias{assortive_mating}
+\alias{assortative_mating}
 \alias{assortive.mating}
 \title{Eye color of couples}
 \format{
@@ -17,7 +18,7 @@ B. Laeng et al. Why do blue-eyed men prefer women with the same eye
 color? In: Behavioral Ecology and Sociobiology 61.3 (2007), pp. 371-384.
 }
 \usage{
-assortive_mating
+assortative_mating
 }
 \description{
 Colors of the eye colors of male and female partners.

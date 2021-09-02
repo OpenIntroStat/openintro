@@ -18,4 +18,4 @@
 #'
 #' data(assortive_mating)
 #' table(assortive_mating)
-"assortive_mating"
+"assortative_mating"
