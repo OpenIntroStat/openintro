@@ -53,7 +53,7 @@ reference:
   - antibiotics
   - arbuthnot
   - ask
-  - assortive_mating
+  - assortative_mating
   - avandia
   - babies_crawl
   - babies
@@ -64,6 +64,7 @@ reference:
   - birds
   - births
   - births14
+  - blizzard_salary
   - books
   - burger
   - cancer_in_dogs
@@ -76,6 +77,7 @@ reference:
   - cia_factbook
   - cle_sac
   - climate70
+  - climber_drugs
   - coast_starlight
   - corr_match
   - country_iso
@@ -91,7 +93,6 @@ reference:
   - earthquakes
   - ebola_survey
   - elmhurst
-  - email_test
   - email
   - email50
   - env_regulation
@@ -104,6 +105,7 @@ reference:
   - exams
   - exclusive_relationship
   - fact_opinion
+  - family_college
   - fastfood
   - fcid
   - fheights
@@ -158,6 +160,7 @@ reference:
   - migraine
   - military
   - mlb_players_18
+  - mlb_teams
   - mlb
   - mlbbat10
   - mtl
@@ -166,8 +169,8 @@ reference:
   - nba_players_19
   - ncbirths
   - nuclear_survey
-  - nycflights
   - nyc_marathon
+  - nycflights
   - offshore_drilling
   - opportunity_cost
   - orings
@@ -188,9 +191,10 @@ reference:
   - prison
   - prius_mpg
   - race_justice
+  - reddit_finance
   - resume
   - rosling_responses
-  - russian_influence_on_us_election_2016
+  - russion_influence_on_us_election_2016
   - salinity
   - satgpa
   - scotus_healthcare
@@ -203,6 +207,9 @@ reference:
   - snowfall
   - socialexp
   - solar
+  - sowc_child_mortality
+  - sowc_demographics
+  - sowc_maternal_newborn
   - sp500_1950_2018
   - sp500_seq
   - sp500
@@ -227,6 +234,7 @@ reference:
   - unempl
   - unemploy_pres
   - winery_cars
+  - world_pop
   - xom
   - yawn
   - yrbss_samp
