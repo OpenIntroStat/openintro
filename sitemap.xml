@@ -121,6 +121,9 @@
     <loc>https://openintrostat.github.io/openintro/reference/births14.html</loc>
   </url>
   <url>
+    <loc>https://openintrostat.github.io/openintro/reference/blizzard_salary.html</loc>
+  </url>
+  <url>
     <loc>https://openintrostat.github.io/openintro/reference/books.html</loc>
   </url>
   <url>
@@ -170,6 +173,9 @@
   </url>
   <url>
     <loc>https://openintrostat.github.io/openintro/reference/climate70.html</loc>
+  </url>
+  <url>
+    <loc>https://openintrostat.github.io/openintro/reference/climber_drugs.html</loc>
   </url>
   <url>
     <loc>https://openintrostat.github.io/openintro/reference/coast_starlight.html</loc>
@@ -475,6 +481,9 @@
     <loc>https://openintrostat.github.io/openintro/reference/mlb_players_18.html</loc>
   </url>
   <url>
+    <loc>https://openintrostat.github.io/openintro/reference/mlb_teams.html</loc>
+  </url>
+  <url>
     <loc>https://openintrostat.github.io/openintro/reference/mlbbat10.html</loc>
   </url>
   <url>
@@ -589,6 +598,9 @@
     <loc>https://openintrostat.github.io/openintro/reference/race_justice.html</loc>
   </url>
   <url>
+    <loc>https://openintrostat.github.io/openintro/reference/reddit_finance.html</loc>
+  </url>
+  <url>
     <loc>https://openintrostat.github.io/openintro/reference/res_demo_1.html</loc>
   </url>
   <url>
@@ -656,6 +668,15 @@
   </url>
   <url>
     <loc>https://openintrostat.github.io/openintro/reference/solar.html</loc>
+  </url>
+  <url>
+    <loc>https://openintrostat.github.io/openintro/reference/sowc_child_mortality.html</loc>
+  </url>
+  <url>
+    <loc>https://openintrostat.github.io/openintro/reference/sowc_demographics.html</loc>
+  </url>
+  <url>
+    <loc>https://openintrostat.github.io/openintro/reference/sowc_maternal_newborn.html</loc>
   </url>
   <url>
     <loc>https://openintrostat.github.io/openintro/reference/sp500.html</loc>
@@ -743,6 +764,9 @@
   </url>
   <url>
     <loc>https://openintrostat.github.io/openintro/reference/winery_cars.html</loc>
+  </url>
+  <url>
+    <loc>https://openintrostat.github.io/openintro/reference/world_pop.html</loc>
   </url>
   <url>
     <loc>https://openintrostat.github.io/openintro/reference/write_pkg_data.html</loc>

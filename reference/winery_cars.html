@@ -98,12 +98,13 @@ revenue.</p>
 <span class="r-in"><span class="va">winery_cars</span><span class="op">$</span><span class="va">car_number</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/rep.html">rep</a></span><span class="op">(</span><span class="fl">1</span><span class="op">:</span><span class="fl">7</span>, <span class="fl">10</span><span class="op">)</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fu"><a href="https://rdrr.io/r/base/nrow.html">nrow</a></span><span class="op">(</span><span class="va">winery_cars</span><span class="op">)</span><span class="op">]</span></span>
 <span class="r-in"><span class="va">col</span> <span class="op">&lt;-</span> <span class="va">COL</span><span class="op">[</span><span class="fu"><a href="https://rdrr.io/r/base/ifelse.html">ifelse</a></span><span class="op">(</span><span class="va">winery_cars</span><span class="op">$</span><span class="va">car_number</span> <span class="op">==</span> <span class="fl">3</span>, <span class="fl">4</span>, <span class="fl">1</span><span class="op">)</span><span class="op">]</span></span>
 <span class="r-in"><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html">plot</a></span><span class="op">(</span><span class="va">winery_cars</span><span class="op">[</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"obs_number"</span>, <span class="st">"time_until_next"</span><span class="op">)</span><span class="op">]</span>,</span>
-<span class="r-in">     col <span class="op">=</span> <span class="va">col</span>, pch <span class="op">=</span> <span class="fl">19</span><span class="op">)</span></span>
+<span class="r-in">  col <span class="op">=</span> <span class="va">col</span>, pch <span class="op">=</span> <span class="fl">19</span></span>
+<span class="r-in"><span class="op">)</span></span>
 <span class="r-plt"><img src="winery_cars-1.png" alt="" width="700" height="433"></span>
 <span class="r-in"><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html">plot</a></span><span class="op">(</span><span class="va">winery_cars</span><span class="op">$</span><span class="va">car_number</span>, <span class="va">winery_cars</span><span class="op">$</span><span class="va">time_until_next</span>,</span>
-<span class="r-in">     col <span class="op">=</span> <span class="fu"><a href="fadeColor.html">fadeColor</a></span><span class="op">(</span><span class="va">col</span>, <span class="st">"88"</span><span class="op">)</span>, pch <span class="op">=</span> <span class="fl">19</span><span class="op">)</span></span>
+<span class="r-in">  col <span class="op">=</span> <span class="fu"><a href="fadeColor.html">fadeColor</a></span><span class="op">(</span><span class="va">col</span>, <span class="st">"88"</span><span class="op">)</span>, pch <span class="op">=</span> <span class="fl">19</span></span>
+<span class="r-in"><span class="op">)</span></span>
 <span class="r-plt"><img src="winery_cars-2.png" alt="" width="700" height="433"></span>
-<span class="r-in"></span>
 </code></pre></div>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">

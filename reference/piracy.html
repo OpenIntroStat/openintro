@@ -110,24 +110,30 @@ linked below.</p>
 <span class="r-in">  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/summarise.html">summarise</a></span><span class="op">(</span>money_pro_mean <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/mean.html">mean</a></span><span class="op">(</span><span class="va">money_pro</span>, na.rm <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
 <span class="r-in">  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">stance</span>, y <span class="op">=</span> <span class="va">money_pro_mean</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
 <span class="r-in">  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_bar.html">geom_col</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
-<span class="r-in">  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html">labs</a></span><span class="op">(</span>x <span class="op">=</span> <span class="st">"Stance"</span>, y <span class="op">=</span> <span class="st">"Average contribution, in $"</span>,</span>
-<span class="r-in">       title <span class="op">=</span> <span class="st">"Average contribution to the legislator's campaign in 2010"</span>,</span>
-<span class="r-in">       subtitle <span class="op">=</span> <span class="st">"by groups supportive of PIPA/SOPA (movie and TV studios, record labels)"</span><span class="op">)</span></span>
+<span class="r-in">  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html">labs</a></span><span class="op">(</span></span>
+<span class="r-in">    x <span class="op">=</span> <span class="st">"Stance"</span>, y <span class="op">=</span> <span class="st">"Average contribution, in $"</span>,</span>
+<span class="r-in">    title <span class="op">=</span> <span class="st">"Average contribution to the legislator's campaign in 2010"</span>,</span>
+<span class="r-in">    subtitle <span class="op">=</span> <span class="st">"by groups supportive of PIPA/SOPA (movie and TV studios, record labels)"</span></span>
+<span class="r-in">  <span class="op">)</span></span>
 <span class="r-plt"><img src="piracy-1.png" alt="" width="700" height="433"></span>
 <span class="r-in"></span>
 <span class="r-in"><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span><span class="va">pipa</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">stance</span>, y <span class="op">=</span> <span class="va">money_pro</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
 <span class="r-in">  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_boxplot.html">geom_boxplot</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
-<span class="r-in">  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html">labs</a></span><span class="op">(</span>x <span class="op">=</span> <span class="st">"Stance"</span>, y <span class="op">=</span> <span class="st">"Contribution, in $"</span>,</span>
-<span class="r-in">       title <span class="op">=</span> <span class="st">"Contribution by groups supportive of PIPA/SOPA"</span>,</span>
-<span class="r-in">       subtitle <span class="op">=</span> <span class="st">"Movie and TV studios, record labels"</span><span class="op">)</span></span>
+<span class="r-in">  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html">labs</a></span><span class="op">(</span></span>
+<span class="r-in">    x <span class="op">=</span> <span class="st">"Stance"</span>, y <span class="op">=</span> <span class="st">"Contribution, in $"</span>,</span>
+<span class="r-in">    title <span class="op">=</span> <span class="st">"Contribution by groups supportive of PIPA/SOPA"</span>,</span>
+<span class="r-in">    subtitle <span class="op">=</span> <span class="st">"Movie and TV studios, record labels"</span></span>
+<span class="r-in">  <span class="op">)</span></span>
 <span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>Removed 6 rows containing non-finite values (stat_boxplot).</span>
 <span class="r-plt"><img src="piracy-2.png" alt="" width="700" height="433"></span>
 <span class="r-in"></span>
 <span class="r-in"><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span><span class="va">pipa</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">stance</span>, y <span class="op">=</span> <span class="va">money_con</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
 <span class="r-in">  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_boxplot.html">geom_boxplot</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
-<span class="r-in">  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html">labs</a></span><span class="op">(</span>x <span class="op">=</span> <span class="st">"Stance"</span>, y <span class="op">=</span> <span class="st">"Contribution, in $"</span>,</span>
-<span class="r-in">       title <span class="op">=</span> <span class="st">"Contribution by groups opposed to PIPA/SOPA"</span>,</span>
-<span class="r-in">       subtitle <span class="op">=</span> <span class="st">"Computer and internet companies"</span><span class="op">)</span></span>
+<span class="r-in">  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html">labs</a></span><span class="op">(</span></span>
+<span class="r-in">    x <span class="op">=</span> <span class="st">"Stance"</span>, y <span class="op">=</span> <span class="st">"Contribution, in $"</span>,</span>
+<span class="r-in">    title <span class="op">=</span> <span class="st">"Contribution by groups opposed to PIPA/SOPA"</span>,</span>
+<span class="r-in">    subtitle <span class="op">=</span> <span class="st">"Computer and internet companies"</span></span>
+<span class="r-in">  <span class="op">)</span></span>
 <span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>Removed 6 rows containing non-finite values (stat_boxplot).</span>
 <span class="r-plt"><img src="piracy-3.png" alt="" width="700" height="433"></span>
 <span class="r-in"></span>
@@ -142,11 +148,12 @@ linked below.</p>
 <span class="r-in">  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_manual.html">scale_color_manual</a></span><span class="op">(</span>values <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"gray"</span>, <span class="st">"red"</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
 <span class="r-in">  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_continuous.html">scale_y_log10</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
 <span class="r-in">  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_continuous.html">scale_x_log10</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
-<span class="r-in">  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html">labs</a></span><span class="op">(</span>x <span class="op">=</span> <span class="st">"Contribution by pro-PIPA groups"</span>,</span>
-<span class="r-in">       y <span class="op">=</span> <span class="st">"Contribution by anti-PIPA groups"</span>,</span>
-<span class="r-in">       color <span class="op">=</span> <span class="st">"For PIPA"</span><span class="op">)</span></span>
+<span class="r-in">  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html">labs</a></span><span class="op">(</span></span>
+<span class="r-in">    x <span class="op">=</span> <span class="st">"Contribution by pro-PIPA groups"</span>,</span>
+<span class="r-in">    y <span class="op">=</span> <span class="st">"Contribution by anti-PIPA groups"</span>,</span>
+<span class="r-in">    color <span class="op">=</span> <span class="st">"For PIPA"</span></span>
+<span class="r-in">  <span class="op">)</span></span>
 <span class="r-plt"><img src="piracy-4.png" alt="" width="700" height="433"></span>
-<span class="r-in"></span>
 </code></pre></div>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">

@@ -94,25 +94,24 @@ Environmental Protection Agency.</p>
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples" aria-hidden="true"></a>Examples</h2>
     <div class="ref-examples sourceCode"><pre class="sourceCode r"><code><span class="r-in"></span>
 <span class="r-in"><span class="va">pm25_2011_durham</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 449 x 20</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    date    aqs_site_id   poc daily_mean_pm2_5_concentra… units   daily_aqi_value</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;fct&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;fct&gt;</span>       <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>                       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;fct&gt;</span>             <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span> 1/3/11  37-063-0015     1                         5.9 ug/m3 …              19</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span> 1/6/11  37-063-0015     1                        10.4 ug/m3 …              34</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span> 1/9/11  37-063-0015     1                         5.6 ug/m3 …              18</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span> 1/10/11 37-063-0015     1                         6.2 ug/m3 …              20</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span> 1/18/11 37-063-0015     1                         9.4 ug/m3 …              31</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span> 1/21/11 37-063-0015     1                         5   ug/m3 …              16</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span> 1/24/11 37-063-0015     1                        11.5 ug/m3 …              37</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> 1/27/11 37-063-0015     1                         9.8 ug/m3 …              32</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> 1/30/11 37-063-0015     1                        12.5 ug/m3 …              41</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> 2/2/11  37-063-0015     1                         5.5 ug/m3 …              18</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 449 × 20</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    date    aqs_site_id   poc daily_mean_pm2_5_concentration units    daily_aqi_value</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;fct&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;fct&gt;</span>       <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>                          <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;fct&gt;</span>              <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span> 1/3/11  37-063-0015     1                            5.9 ug/m3 LC              19</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span> 1/6/11  37-063-0015     1                           10.4 ug/m3 LC              34</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span> 1/9/11  37-063-0015     1                            5.6 ug/m3 LC              18</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span> 1/10/11 37-063-0015     1                            6.2 ug/m3 LC              20</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span> 1/18/11 37-063-0015     1                            9.4 ug/m3 LC              31</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span> 1/21/11 37-063-0015     1                            5   ug/m3 LC              16</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span> 1/24/11 37-063-0015     1                           11.5 ug/m3 LC              37</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> 1/27/11 37-063-0015     1                            9.8 ug/m3 LC              32</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> 1/30/11 37-063-0015     1                           12.5 ug/m3 LC              41</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> 2/2/11  37-063-0015     1                            5.5 ug/m3 LC              18</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># … with 439 more rows, and 14 more variables: daily_obs_count &lt;int&gt;,</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   percent_complete &lt;int&gt;, aqs_parameter_code &lt;int&gt;, aqs_parameter_desc &lt;fct&gt;,</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   csa_code &lt;int&gt;, csa_name &lt;fct&gt;, cbsa_code &lt;int&gt;, cbsa_name &lt;fct&gt;,</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   state_code &lt;int&gt;, state &lt;fct&gt;, county_code &lt;int&gt;, county &lt;fct&gt;,</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   site_latitude &lt;dbl&gt;, site_longitude &lt;dbl&gt;</span></span>
-<span class="r-in"></span>
 </code></pre></div>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">

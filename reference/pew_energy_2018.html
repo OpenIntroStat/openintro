@@ -162,7 +162,9 @@ took the published percentages and backed out the breakdown</p>
 <span class="r-out co"><span class="r-pr">#&gt;</span> favor_increase    no_increase </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>           1118           1423 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"><span class="va">Prop</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">x</span><span class="op">)</span> <span class="op">{</span> <span class="fu"><a href="https://rdrr.io/r/base/table.html">table</a></span><span class="op">(</span><span class="va">x</span><span class="op">)</span> <span class="op">/</span> <span class="fu"><a href="https://rdrr.io/r/base/length.html">length</a></span><span class="op">(</span><span class="va">x</span><span class="op">)</span> <span class="op">}</span></span>
+<span class="r-in"><span class="va">Prop</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">x</span><span class="op">)</span> <span class="op">{</span></span>
+<span class="r-in">  <span class="fu"><a href="https://rdrr.io/r/base/table.html">table</a></span><span class="op">(</span><span class="va">x</span><span class="op">)</span> <span class="op">/</span> <span class="fu"><a href="https://rdrr.io/r/base/length.html">length</a></span><span class="op">(</span><span class="va">x</span><span class="op">)</span></span>
+<span class="r-in"><span class="op">}</span></span>
 <span class="r-in"><span class="fu"><a href="https://rdrr.io/r/base/lapply.html">lapply</a></span><span class="op">(</span><span class="va">pew_energy_2018</span>, <span class="va">Prop</span><span class="op">)</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> $solar_panel_farms</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> x</span>
@@ -194,7 +196,6 @@ took the published percentages and backed out the breakdown</p>
 <span class="r-out co"><span class="r-pr">#&gt;</span> favor_increase    no_increase </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>      0.4399843      0.5600157 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"></span>
 </code></pre></div>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">

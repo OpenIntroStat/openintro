@@ -153,8 +153,9 @@ a letter next to the phone, which sometimes had a stamp on it.</p>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-in"></span>
 <span class="r-in"><span class="va">m</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/glm.html">glm</a></span><span class="op">(</span><span class="va">mailed_letter</span> <span class="op">~</span> <span class="va">stamped</span> <span class="op">+</span> <span class="va">found_coin</span> <span class="op">+</span> <span class="va">gender</span>,</span>
-<span class="r-in">    data <span class="op">=</span> <span class="va">mail_me</span>,</span>
-<span class="r-in">    family <span class="op">=</span> <span class="va">binomial</span><span class="op">)</span></span>
+<span class="r-in">  data <span class="op">=</span> <span class="va">mail_me</span>,</span>
+<span class="r-in">  family <span class="op">=</span> <span class="va">binomial</span></span>
+<span class="r-in"><span class="op">)</span></span>
 <span class="r-in"><span class="fu"><a href="https://rdrr.io/r/base/summary.html">summary</a></span><span class="op">(</span><span class="va">m</span><span class="op">)</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Call:</span>
@@ -182,8 +183,6 @@ a letter next to the phone, which sometimes had a stamp on it.</p>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Number of Fisher Scoring iterations: 5</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"></span>
-<span class="r-in"></span>
 </code></pre></div>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">

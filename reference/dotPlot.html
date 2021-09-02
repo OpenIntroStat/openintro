@@ -127,9 +127,10 @@ specified, the elements of <code>cex</code> will correspond to the elements of
 <span class="r-in"></span>
 <span class="r-in"><span class="co"># Price by type</span></span>
 <span class="r-in"><span class="fu">dotPlot</span><span class="op">(</span><span class="va">cars93</span><span class="op">$</span><span class="va">price</span>,</span>
-<span class="r-in">        <span class="va">cars93</span><span class="op">$</span><span class="va">type</span>,</span>
-<span class="r-in">        key <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"large"</span>, <span class="st">"midsize"</span>, <span class="st">"small"</span><span class="op">)</span>,</span>
-<span class="r-in">        cex <span class="op">=</span> <span class="fl">1</span><span class="op">:</span><span class="fl">3</span><span class="op">)</span></span>
+<span class="r-in">  <span class="va">cars93</span><span class="op">$</span><span class="va">type</span>,</span>
+<span class="r-in">  key <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"large"</span>, <span class="st">"midsize"</span>, <span class="st">"small"</span><span class="op">)</span>,</span>
+<span class="r-in">  cex <span class="op">=</span> <span class="fl">1</span><span class="op">:</span><span class="fl">3</span></span>
+<span class="r-in"><span class="op">)</span></span>
 <span class="r-plt"><img src="dotPlot-1.png" alt="" width="700" height="433"></span>
 <span class="r-in"></span>
 <span class="r-in"><span class="co"># Hours worked by educational attainment or degree</span></span>
@@ -137,27 +138,30 @@ specified, the elements of <code>cex</code> will correspond to the elements of
 <span class="r-in">  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html">filter</a></span><span class="op">(</span><span class="op">!</span><span class="fu"><a href="https://rdrr.io/r/base/NA.html">is.na</a></span><span class="op">(</span><span class="va">hrs1</span><span class="op">)</span> <span class="op">&amp;</span> <span class="op">!</span><span class="fu"><a href="https://rdrr.io/r/base/NA.html">is.na</a></span><span class="op">(</span><span class="va">degree</span><span class="op">)</span><span class="op">)</span></span>
 <span class="r-in"></span>
 <span class="r-in"><span class="fu">dotPlot</span><span class="op">(</span><span class="va">gss2010_nona</span><span class="op">$</span><span class="va">hrs1</span>,</span>
-<span class="r-in">        <span class="va">gss2010_nona</span><span class="op">$</span><span class="va">degree</span>,</span>
-<span class="r-in">        col <span class="op">=</span> <span class="fu"><a href="fadeColor.html">fadeColor</a></span><span class="op">(</span><span class="st">"black"</span>, <span class="st">"11"</span><span class="op">)</span><span class="op">)</span></span>
+<span class="r-in">  <span class="va">gss2010_nona</span><span class="op">$</span><span class="va">degree</span>,</span>
+<span class="r-in">  col <span class="op">=</span> <span class="fu"><a href="fadeColor.html">fadeColor</a></span><span class="op">(</span><span class="st">"black"</span>, <span class="st">"11"</span><span class="op">)</span></span>
+<span class="r-in"><span class="op">)</span></span>
 <span class="r-plt"><img src="dotPlot-2.png" alt="" width="700" height="433"></span>
 <span class="r-in"></span>
 <span class="r-in"><span class="co"># levels reordered</span></span>
 <span class="r-in"><span class="fu">dotPlot</span><span class="op">(</span><span class="va">gss2010_nona</span><span class="op">$</span><span class="va">hrs1</span>,</span>
-<span class="r-in">        <span class="va">gss2010_nona</span><span class="op">$</span><span class="va">degree</span>,</span>
-<span class="r-in">        col <span class="op">=</span> <span class="fu"><a href="fadeColor.html">fadeColor</a></span><span class="op">(</span><span class="st">"black"</span>, <span class="st">"11"</span><span class="op">)</span>,</span>
-<span class="r-in">        key <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"LT HIGH SCHOOL"</span>, <span class="st">"HIGH SCHOOL"</span>, <span class="st">"BACHELOR"</span>, <span class="st">"JUNIOR COLLEGE"</span>, <span class="st">"GRADUATE"</span><span class="op">)</span><span class="op">)</span></span>
+<span class="r-in">  <span class="va">gss2010_nona</span><span class="op">$</span><span class="va">degree</span>,</span>
+<span class="r-in">  col <span class="op">=</span> <span class="fu"><a href="fadeColor.html">fadeColor</a></span><span class="op">(</span><span class="st">"black"</span>, <span class="st">"11"</span><span class="op">)</span>,</span>
+<span class="r-in">  key <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"LT HIGH SCHOOL"</span>, <span class="st">"HIGH SCHOOL"</span>, <span class="st">"BACHELOR"</span>, <span class="st">"JUNIOR COLLEGE"</span>, <span class="st">"GRADUATE"</span><span class="op">)</span></span>
+<span class="r-in"><span class="op">)</span></span>
 <span class="r-plt"><img src="dotPlot-3.png" alt="" width="700" height="433"></span>
 <span class="r-in"></span>
 <span class="r-in"><span class="co"># with boxPlot() overlaid</span></span>
 <span class="r-in"><span class="fu">dotPlot</span><span class="op">(</span><span class="va">mariokart</span><span class="op">$</span><span class="va">total_pr</span>,</span>
-<span class="r-in">        <span class="va">mariokart</span><span class="op">$</span><span class="va">cond</span>,</span>
-<span class="r-in">        ylim <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">0.5</span>,<span class="fl">2.5</span><span class="op">)</span>, xlim <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">25</span>, <span class="fl">80</span><span class="op">)</span>, cex <span class="op">=</span> <span class="fl">1</span><span class="op">)</span></span>
+<span class="r-in">  <span class="va">mariokart</span><span class="op">$</span><span class="va">cond</span>,</span>
+<span class="r-in">  ylim <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">0.5</span>, <span class="fl">2.5</span><span class="op">)</span>, xlim <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">25</span>, <span class="fl">80</span><span class="op">)</span>, cex <span class="op">=</span> <span class="fl">1</span></span>
+<span class="r-in"><span class="op">)</span></span>
 <span class="r-in"><span class="fu"><a href="boxPlot.html">boxPlot</a></span><span class="op">(</span><span class="va">mariokart</span><span class="op">$</span><span class="va">total_pr</span>,</span>
-<span class="r-in">        <span class="va">mariokart</span><span class="op">$</span><span class="va">cond</span>,</span>
-<span class="r-in">        add <span class="op">=</span> <span class="fl">1</span><span class="op">:</span><span class="fl">2</span> <span class="op">+</span> <span class="fl">0.1</span>,</span>
-<span class="r-in">        key <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"new"</span>, <span class="st">"used"</span><span class="op">)</span>, horiz <span class="op">=</span> <span class="cn">TRUE</span>, axes <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span>
+<span class="r-in">  <span class="va">mariokart</span><span class="op">$</span><span class="va">cond</span>,</span>
+<span class="r-in">  add <span class="op">=</span> <span class="fl">1</span><span class="op">:</span><span class="fl">2</span> <span class="op">+</span> <span class="fl">0.1</span>,</span>
+<span class="r-in">  key <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"new"</span>, <span class="st">"used"</span><span class="op">)</span>, horiz <span class="op">=</span> <span class="cn">TRUE</span>, axes <span class="op">=</span> <span class="cn">FALSE</span></span>
+<span class="r-in"><span class="op">)</span></span>
 <span class="r-plt"><img src="dotPlot-4.png" alt="" width="700" height="433"></span>
-<span class="r-in"></span>
 </code></pre></div>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">

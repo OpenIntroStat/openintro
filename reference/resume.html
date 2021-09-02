@@ -173,23 +173,21 @@ the conclusions, please find the link below and explore!</p>
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples" aria-hidden="true"></a>Examples</h2>
     <div class="ref-examples sourceCode"><pre class="sourceCode r"><code><span class="r-in"></span>
 <span class="r-in"><span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">resume</span>, <span class="fl">5</span><span class="op">)</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 5 x 30</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   job_ad_id job_city job_industry  job_type  job_fed_contrac… job_equal_opp_emp…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>         <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>              <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">1</span>       384 Chicago  manufacturing supervis…               <span style="color: #BB0000;">NA</span>                  1</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">2</span>       384 Chicago  manufacturing supervis…               <span style="color: #BB0000;">NA</span>                  1</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">3</span>       384 Chicago  manufacturing supervis…               <span style="color: #BB0000;">NA</span>                  1</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">4</span>       384 Chicago  manufacturing supervis…               <span style="color: #BB0000;">NA</span>                  1</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">5</span>       385 Chicago  other_service secretary                0                  1</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 5 × 30</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   job_ad_id job_city job_industry  job_type   job_fed_contract… job_equal_opp_e…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>         <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                  <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>            <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">1</span>       384 Chicago  manufacturing supervisor                <span style="color: #BB0000;">NA</span>                1</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">2</span>       384 Chicago  manufacturing supervisor                <span style="color: #BB0000;">NA</span>                1</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">3</span>       384 Chicago  manufacturing supervisor                <span style="color: #BB0000;">NA</span>                1</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">4</span>       384 Chicago  manufacturing supervisor                <span style="color: #BB0000;">NA</span>                1</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">5</span>       385 Chicago  other_service secretary                  0                1</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># … with 24 more variables: job_ownership &lt;chr&gt;, job_req_any &lt;dbl&gt;,</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   job_req_communication &lt;dbl&gt;, job_req_education &lt;dbl&gt;,</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   job_req_min_experience &lt;chr&gt;, job_req_computer &lt;dbl&gt;,</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   job_req_organization &lt;dbl&gt;, job_req_school &lt;chr&gt;, received_callback &lt;dbl&gt;,</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   firstname &lt;chr&gt;, race &lt;chr&gt;, gender &lt;chr&gt;, years_college &lt;int&gt;,</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   college_degree &lt;dbl&gt;, honors &lt;int&gt;, worked_during_school &lt;int&gt;,</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   years_experience &lt;int&gt;, computer_skills &lt;int&gt;, special_skills &lt;int&gt;,</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   volunteer &lt;int&gt;, military &lt;int&gt;, employment_holes &lt;int&gt;,</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   has_email_address &lt;int&gt;, resume_quality &lt;chr&gt;</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   years_experience &lt;int&gt;, computer_skills &lt;int&gt;, special_skills &lt;int&gt;, …</span></span>
 <span class="r-in"></span>
 <span class="r-in"><span class="co"># Some checks to confirm balance between race and</span></span>
 <span class="r-in"><span class="co"># other attributes of a resume. There should be</span></span>
@@ -264,9 +262,10 @@ the conclusions, please find the link below and explore!</p>
 <span class="r-in"><span class="co"># Regarding the callback outcome for race,</span></span>
 <span class="r-in"><span class="co"># we observe a very large difference.</span></span>
 <span class="r-in"><span class="fu"><a href="https://rdrr.io/r/base/tapply.html">tapply</a></span><span class="op">(</span></span>
-<span class="r-in">    <span class="va">resume</span><span class="op">$</span><span class="va">received_callback</span>,</span>
-<span class="r-in">    <span class="va">resume</span><span class="op">[</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"race"</span>, <span class="st">"gender"</span><span class="op">)</span><span class="op">]</span>,</span>
-<span class="r-in">    <span class="va">mean</span><span class="op">)</span></span>
+<span class="r-in">  <span class="va">resume</span><span class="op">$</span><span class="va">received_callback</span>,</span>
+<span class="r-in">  <span class="va">resume</span><span class="op">[</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"race"</span>, <span class="st">"gender"</span><span class="op">)</span><span class="op">]</span>,</span>
+<span class="r-in">  <span class="va">mean</span></span>
+<span class="r-in"><span class="op">)</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>        gender</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> race             f          m</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   black 0.06627784 0.05828780</span>
@@ -285,11 +284,13 @@ the conclusions, please find the link below and explore!</p>
 <span class="r-out co"><span class="r-pr">#&gt;</span> black white </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  2435  2435 </span>
 <span class="r-in"><span class="va">cb_white</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/with.html">with</a></span><span class="op">(</span></span>
-<span class="r-in">    <span class="fu"><a href="https://rdrr.io/r/base/subset.html">subset</a></span><span class="op">(</span><span class="va">resume</span>, <span class="va">race</span> <span class="op">==</span> <span class="st">"white"</span><span class="op">)</span>,</span>
-<span class="r-in">    <span class="fu"><a href="https://rdrr.io/r/base/tapply.html">tapply</a></span><span class="op">(</span><span class="va">received_callback</span>, <span class="va">job_ad_id</span>, <span class="va">mean</span><span class="op">)</span><span class="op">)</span></span>
+<span class="r-in">  <span class="fu"><a href="https://rdrr.io/r/base/subset.html">subset</a></span><span class="op">(</span><span class="va">resume</span>, <span class="va">race</span> <span class="op">==</span> <span class="st">"white"</span><span class="op">)</span>,</span>
+<span class="r-in">  <span class="fu"><a href="https://rdrr.io/r/base/tapply.html">tapply</a></span><span class="op">(</span><span class="va">received_callback</span>, <span class="va">job_ad_id</span>, <span class="va">mean</span><span class="op">)</span></span>
+<span class="r-in"><span class="op">)</span></span>
 <span class="r-in"><span class="va">cb_black</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/with.html">with</a></span><span class="op">(</span></span>
-<span class="r-in">    <span class="fu"><a href="https://rdrr.io/r/base/subset.html">subset</a></span><span class="op">(</span><span class="va">resume</span>, <span class="va">race</span> <span class="op">==</span> <span class="st">"black"</span><span class="op">)</span>,</span>
-<span class="r-in">    <span class="fu"><a href="https://rdrr.io/r/base/tapply.html">tapply</a></span><span class="op">(</span><span class="va">received_callback</span>, <span class="va">job_ad_id</span>, <span class="va">mean</span><span class="op">)</span><span class="op">)</span></span>
+<span class="r-in">  <span class="fu"><a href="https://rdrr.io/r/base/subset.html">subset</a></span><span class="op">(</span><span class="va">resume</span>, <span class="va">race</span> <span class="op">==</span> <span class="st">"black"</span><span class="op">)</span>,</span>
+<span class="r-in">  <span class="fu"><a href="https://rdrr.io/r/base/tapply.html">tapply</a></span><span class="op">(</span><span class="va">received_callback</span>, <span class="va">job_ad_id</span>, <span class="va">mean</span><span class="op">)</span></span>
+<span class="r-in"><span class="op">)</span></span>
 <span class="r-in"><span class="co"># Next, compute the differences, where the</span></span>
 <span class="r-in"><span class="co"># names(cb_white) part ensures we matched up the</span></span>
 <span class="r-in"><span class="co"># job ad IDs.</span></span>
@@ -317,11 +318,13 @@ the conclusions, please find the link below and explore!</p>
 <span class="r-out co"><span class="r-pr">#&gt;</span>    f    m </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 3746 1124 </span>
 <span class="r-in"><span class="va">cb_male</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/with.html">with</a></span><span class="op">(</span></span>
-<span class="r-in">    <span class="fu"><a href="https://rdrr.io/r/base/subset.html">subset</a></span><span class="op">(</span><span class="va">resume</span>, <span class="va">gender</span> <span class="op">==</span> <span class="st">"m"</span><span class="op">)</span>,</span>
-<span class="r-in">    <span class="fu"><a href="https://rdrr.io/r/base/tapply.html">tapply</a></span><span class="op">(</span><span class="va">received_callback</span>, <span class="va">job_ad_id</span>, <span class="va">mean</span><span class="op">)</span><span class="op">)</span></span>
+<span class="r-in">  <span class="fu"><a href="https://rdrr.io/r/base/subset.html">subset</a></span><span class="op">(</span><span class="va">resume</span>, <span class="va">gender</span> <span class="op">==</span> <span class="st">"m"</span><span class="op">)</span>,</span>
+<span class="r-in">  <span class="fu"><a href="https://rdrr.io/r/base/tapply.html">tapply</a></span><span class="op">(</span><span class="va">received_callback</span>, <span class="va">job_ad_id</span>, <span class="va">mean</span><span class="op">)</span></span>
+<span class="r-in"><span class="op">)</span></span>
 <span class="r-in"><span class="va">cb_female</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/with.html">with</a></span><span class="op">(</span></span>
-<span class="r-in">    <span class="fu"><a href="https://rdrr.io/r/base/subset.html">subset</a></span><span class="op">(</span><span class="va">resume</span>, <span class="va">gender</span> <span class="op">==</span> <span class="st">"f"</span><span class="op">)</span>,</span>
-<span class="r-in">    <span class="fu"><a href="https://rdrr.io/r/base/tapply.html">tapply</a></span><span class="op">(</span><span class="va">received_callback</span>, <span class="va">job_ad_id</span>, <span class="va">mean</span><span class="op">)</span><span class="op">)</span></span>
+<span class="r-in">  <span class="fu"><a href="https://rdrr.io/r/base/subset.html">subset</a></span><span class="op">(</span><span class="va">resume</span>, <span class="va">gender</span> <span class="op">==</span> <span class="st">"f"</span><span class="op">)</span>,</span>
+<span class="r-in">  <span class="fu"><a href="https://rdrr.io/r/base/tapply.html">tapply</a></span><span class="op">(</span><span class="va">received_callback</span>, <span class="va">job_ad_id</span>, <span class="va">mean</span><span class="op">)</span></span>
+<span class="r-in"><span class="op">)</span></span>
 <span class="r-in"><span class="va">diff</span> <span class="op">&lt;-</span> <span class="va">cb_female</span> <span class="op">-</span> <span class="va">cb_male</span><span class="op">[</span><span class="fu"><a href="https://rdrr.io/r/base/names.html">names</a></span><span class="op">(</span><span class="va">cb_female</span><span class="op">)</span><span class="op">]</span></span>
 <span class="r-in"><span class="co"># The `na.rm = TRUE` part ensures we limit to jobs</span></span>
 <span class="r-in"><span class="co"># where both a male and female resume were sent.</span></span>
@@ -350,7 +353,6 @@ the conclusions, please find the link below and explore!</p>
 <span class="r-in"><span class="co"># means the race finding will almost certainy will</span></span>
 <span class="r-in"><span class="co"># hold. However, it is possible that we'll find</span></span>
 <span class="r-in"><span class="co"># more interesting results with the gender investigation.</span></span>
-<span class="r-in"></span>
 </code></pre></div>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">

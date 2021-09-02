@@ -87,21 +87,22 @@ rows and columns.</p></dd>
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples" aria-hidden="true"></a>Examples</h2>
     <div class="ref-examples sourceCode"><pre class="sourceCode r"><code><span class="r-in"></span>
 <span class="r-in"><span class="va">a</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/matrix.html">matrix</a></span><span class="op">(</span></span>
-<span class="r-in">    <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">459</span>, <span class="fl">727</span>, <span class="fl">854</span>, <span class="fl">385</span>, <span class="fl">99</span>, <span class="fl">4198</span>, <span class="fl">6245</span>, <span class="fl">4821</span>, <span class="fl">1634</span>, <span class="fl">578</span><span class="op">)</span>,</span>
-<span class="r-in">    <span class="fl">2</span>,</span>
-<span class="r-in">    byrow <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
+<span class="r-in">  <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">459</span>, <span class="fl">727</span>, <span class="fl">854</span>, <span class="fl">385</span>, <span class="fl">99</span>, <span class="fl">4198</span>, <span class="fl">6245</span>, <span class="fl">4821</span>, <span class="fl">1634</span>, <span class="fl">578</span><span class="op">)</span>,</span>
+<span class="r-in">  <span class="fl">2</span>,</span>
+<span class="r-in">  byrow <span class="op">=</span> <span class="cn">TRUE</span></span>
+<span class="r-in"><span class="op">)</span></span>
 <span class="r-in"><span class="va">b</span> <span class="op">&lt;-</span></span>
-<span class="r-in"><span class="fu">CT2DF</span><span class="op">(</span></span>
+<span class="r-in">  <span class="fu">CT2DF</span><span class="op">(</span></span>
 <span class="r-in">    <span class="va">a</span>,</span>
 <span class="r-in">    <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"No"</span>, <span class="st">"Yes"</span><span class="op">)</span>,</span>
 <span class="r-in">    <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"Excellent"</span>, <span class="st">"Very good"</span>, <span class="st">"Good"</span>, <span class="st">"Fair"</span>, <span class="st">"Poor"</span><span class="op">)</span>,</span>
-<span class="r-in">    <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"coverage"</span>, <span class="st">"health_status"</span><span class="op">)</span><span class="op">)</span></span>
+<span class="r-in">    <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"coverage"</span>, <span class="st">"health_status"</span><span class="op">)</span></span>
+<span class="r-in">  <span class="op">)</span></span>
 <span class="r-in"><span class="fu"><a href="https://rdrr.io/r/base/table.html">table</a></span><span class="op">(</span><span class="va">b</span><span class="op">)</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>         health_status</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> coverage Excellent Fair Good Poor Very good</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>      No        459  385  854   99       727</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>      Yes      4198 1634 4821  578      6245</span>
-<span class="r-in"></span>
 </code></pre></div>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">

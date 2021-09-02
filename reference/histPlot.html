@@ -137,39 +137,43 @@ bin margin to the left bin. Otherwise the ties default to the right bin.</p></dd
 <span class="r-in"></span>
 <span class="r-in"><span class="co"># overlaid hollow histograms</span></span>
 <span class="r-in"><span class="fu">histPlot</span><span class="op">(</span><span class="va">tips</span><span class="op">$</span><span class="va">tip</span><span class="op">[</span><span class="va">tips</span><span class="op">$</span><span class="va">day</span> <span class="op">==</span> <span class="st">"Tuesday"</span><span class="op">]</span>,</span>
-<span class="r-in">         probability <span class="op">=</span> <span class="cn">TRUE</span>,</span>
-<span class="r-in">         hollow <span class="op">=</span> <span class="cn">TRUE</span>,</span>
-<span class="r-in">         main <span class="op">=</span> <span class="st">"Tips by day"</span><span class="op">)</span></span>
+<span class="r-in">  probability <span class="op">=</span> <span class="cn">TRUE</span>,</span>
+<span class="r-in">  hollow <span class="op">=</span> <span class="cn">TRUE</span>,</span>
+<span class="r-in">  main <span class="op">=</span> <span class="st">"Tips by day"</span></span>
+<span class="r-in"><span class="op">)</span></span>
 <span class="r-in"><span class="fu">histPlot</span><span class="op">(</span><span class="va">tips</span><span class="op">$</span><span class="va">tip</span><span class="op">[</span><span class="va">tips</span><span class="op">$</span><span class="va">day</span> <span class="op">==</span> <span class="st">"Friday"</span><span class="op">]</span>,</span>
-<span class="r-in">         probability <span class="op">=</span> <span class="cn">TRUE</span>,</span>
-<span class="r-in">         hollow <span class="op">=</span> <span class="cn">TRUE</span>,</span>
-<span class="r-in">         add <span class="op">=</span> <span class="cn">TRUE</span>,</span>
-<span class="r-in">         lty <span class="op">=</span> <span class="fl">3</span>,</span>
-<span class="r-in">         border <span class="op">=</span> <span class="st">"red"</span><span class="op">)</span></span>
+<span class="r-in">  probability <span class="op">=</span> <span class="cn">TRUE</span>,</span>
+<span class="r-in">  hollow <span class="op">=</span> <span class="cn">TRUE</span>,</span>
+<span class="r-in">  add <span class="op">=</span> <span class="cn">TRUE</span>,</span>
+<span class="r-in">  lty <span class="op">=</span> <span class="fl">3</span>,</span>
+<span class="r-in">  border <span class="op">=</span> <span class="st">"red"</span></span>
+<span class="r-in"><span class="op">)</span></span>
 <span class="r-in"><span class="fu"><a href="https://rdrr.io/r/graphics/legend.html">legend</a></span><span class="op">(</span><span class="st">"topright"</span>,</span>
-<span class="r-in">       col <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"black"</span>, <span class="st">"red"</span><span class="op">)</span>,</span>
-<span class="r-in">       lty <span class="op">=</span> <span class="fl">1</span><span class="op">:</span><span class="fl">2</span>,</span>
-<span class="r-in">       legend <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"Tuesday"</span>, <span class="st">"Friday"</span><span class="op">)</span><span class="op">)</span></span>
+<span class="r-in">  col <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"black"</span>, <span class="st">"red"</span><span class="op">)</span>,</span>
+<span class="r-in">  lty <span class="op">=</span> <span class="fl">1</span><span class="op">:</span><span class="fl">2</span>,</span>
+<span class="r-in">  legend <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"Tuesday"</span>, <span class="st">"Friday"</span><span class="op">)</span></span>
+<span class="r-in"><span class="op">)</span></span>
 <span class="r-plt"><img src="histPlot-2.png" alt="" width="700" height="433"></span>
 <span class="r-in"></span>
 <span class="r-in"><span class="co"># breaks and colors</span></span>
 <span class="r-in"><span class="fu">histPlot</span><span class="op">(</span><span class="va">tips</span><span class="op">$</span><span class="va">tip</span>,</span>
-<span class="r-in">         col <span class="op">=</span> <span class="fu"><a href="fadeColor.html">fadeColor</a></span><span class="op">(</span><span class="st">"yellow"</span>, <span class="st">"33"</span><span class="op">)</span>,</span>
-<span class="r-in">         border <span class="op">=</span> <span class="st">"darkblue"</span>,</span>
-<span class="r-in">         probability <span class="op">=</span> <span class="cn">TRUE</span>,</span>
-<span class="r-in">         breaks <span class="op">=</span> <span class="fl">30</span>,</span>
-<span class="r-in">         lwd <span class="op">=</span> <span class="fl">3</span><span class="op">)</span></span>
+<span class="r-in">  col <span class="op">=</span> <span class="fu"><a href="fadeColor.html">fadeColor</a></span><span class="op">(</span><span class="st">"yellow"</span>, <span class="st">"33"</span><span class="op">)</span>,</span>
+<span class="r-in">  border <span class="op">=</span> <span class="st">"darkblue"</span>,</span>
+<span class="r-in">  probability <span class="op">=</span> <span class="cn">TRUE</span>,</span>
+<span class="r-in">  breaks <span class="op">=</span> <span class="fl">30</span>,</span>
+<span class="r-in">  lwd <span class="op">=</span> <span class="fl">3</span></span>
+<span class="r-in"><span class="op">)</span></span>
 <span class="r-plt"><img src="histPlot-3.png" alt="" width="700" height="433"></span>
 <span class="r-in"></span>
 <span class="r-in"><span class="co"># custom breaks</span></span>
 <span class="r-in"><span class="va">brks</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="op">-</span><span class="fl">1</span>, <span class="fl">0</span>, <span class="fl">1</span>, <span class="fl">2</span>, <span class="fl">3</span>, <span class="fl">4</span>, <span class="fu"><a href="https://rdrr.io/r/base/seq.html">seq</a></span><span class="op">(</span><span class="fl">5</span>, <span class="fl">20</span>, <span class="fl">5</span><span class="op">)</span>, <span class="fl">22</span>, <span class="fl">24</span>, <span class="fl">26</span><span class="op">)</span></span>
 <span class="r-in"><span class="fu">histPlot</span><span class="op">(</span><span class="va">tips</span><span class="op">$</span><span class="va">tip</span>,</span>
-<span class="r-in">         probability <span class="op">=</span> <span class="cn">TRUE</span>,</span>
-<span class="r-in">         breaks <span class="op">=</span> <span class="va">brks</span>,</span>
-<span class="r-in">         col <span class="op">=</span> <span class="fu"><a href="fadeColor.html">fadeColor</a></span><span class="op">(</span><span class="st">"darkgoldenrod4"</span>, <span class="st">"33"</span><span class="op">)</span>,</span>
-<span class="r-in">         xlim <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">0</span>, <span class="fl">26</span><span class="op">)</span><span class="op">)</span></span>
+<span class="r-in">  probability <span class="op">=</span> <span class="cn">TRUE</span>,</span>
+<span class="r-in">  breaks <span class="op">=</span> <span class="va">brks</span>,</span>
+<span class="r-in">  col <span class="op">=</span> <span class="fu"><a href="fadeColor.html">fadeColor</a></span><span class="op">(</span><span class="st">"darkgoldenrod4"</span>, <span class="st">"33"</span><span class="op">)</span>,</span>
+<span class="r-in">  xlim <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">0</span>, <span class="fl">26</span><span class="op">)</span></span>
+<span class="r-in"><span class="op">)</span></span>
 <span class="r-plt"><img src="histPlot-4.png" alt="" width="700" height="433"></span>
-<span class="r-in"></span>
 </code></pre></div>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">

@@ -96,7 +96,7 @@ statements they classified correctly (out of 5).</p>
 <span class="r-in">    x <span class="op">=</span> <span class="st">"Age group"</span>,</span>
 <span class="r-in">    y <span class="op">=</span> <span class="st">"Number correct (factual)"</span>,</span>
 <span class="r-in">    title <span class="op">=</span> <span class="st">"Number of factual statements classified correctly by age group"</span></span>
-<span class="r-in">    <span class="op">)</span></span>
+<span class="r-in">  <span class="op">)</span></span>
 <span class="r-plt"><img src="fact_opinion-1.png" alt="" width="700" height="433"></span>
 <span class="r-in"></span>
 <span class="r-in"><span class="co"># Distribution of opinion_correct by age group</span></span>
@@ -106,23 +106,23 @@ statements they classified correctly (out of 5).</p>
 <span class="r-in">    x <span class="op">=</span> <span class="st">"Age group"</span>,</span>
 <span class="r-in">    y <span class="op">=</span> <span class="st">"Number correct (opinion)"</span>,</span>
 <span class="r-in">    title <span class="op">=</span> <span class="st">"Number of opinion statements classified correctly by age group"</span></span>
-<span class="r-in">    <span class="op">)</span></span>
+<span class="r-in">  <span class="op">)</span></span>
 <span class="r-plt"><img src="fact_opinion-2.png" alt="" width="700" height="433"></span>
 <span class="r-in"></span>
 <span class="r-in"><span class="co"># Replicating the figure from Pew report (see source for link)</span></span>
 <span class="r-in"><span class="va">fact_opinion</span> <span class="op"><a href="https://forcats.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
 <span class="r-in">  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span><span class="op">(</span></span>
 <span class="r-in">    facts <span class="op">=</span> <span class="fu"><a href="https://dplyr.tidyverse.org/reference/case_when.html">case_when</a></span><span class="op">(</span></span>
-<span class="r-in">      <span class="va">fact_correct</span> <span class="op">&lt;=</span> <span class="fl">2</span>        <span class="op">~</span> <span class="st">"Two or fewer"</span>,</span>
-<span class="r-in">      <span class="va">fact_correct</span> <span class="op"><a href="https://rdrr.io/r/base/match.html">%in%</a></span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">3</span>,<span class="fl">4</span><span class="op">)</span> <span class="op">~</span> <span class="st">"Three or four"</span>,</span>
-<span class="r-in">      <span class="va">fact_correct</span> <span class="op">==</span> <span class="fl">5</span>        <span class="op">~</span> <span class="st">"All five"</span></span>
-<span class="r-in">      <span class="op">)</span>,</span>
+<span class="r-in">      <span class="va">fact_correct</span> <span class="op">&lt;=</span> <span class="fl">2</span> <span class="op">~</span> <span class="st">"Two or fewer"</span>,</span>
+<span class="r-in">      <span class="va">fact_correct</span> <span class="op"><a href="https://rdrr.io/r/base/match.html">%in%</a></span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">3</span>, <span class="fl">4</span><span class="op">)</span> <span class="op">~</span> <span class="st">"Three or four"</span>,</span>
+<span class="r-in">      <span class="va">fact_correct</span> <span class="op">==</span> <span class="fl">5</span> <span class="op">~</span> <span class="st">"All five"</span></span>
+<span class="r-in">    <span class="op">)</span>,</span>
 <span class="r-in">    facts <span class="op">=</span> <span class="fu"><a href="https://forcats.tidyverse.org/reference/fct_relevel.html">fct_relevel</a></span><span class="op">(</span><span class="va">facts</span>, <span class="st">"Two or fewer"</span>, <span class="st">"Three or four"</span>, <span class="st">"All five"</span><span class="op">)</span>,</span>
 <span class="r-in">    opinions <span class="op">=</span> <span class="fu"><a href="https://dplyr.tidyverse.org/reference/case_when.html">case_when</a></span><span class="op">(</span></span>
-<span class="r-in">      <span class="va">opinion_correct</span> <span class="op">&lt;=</span> <span class="fl">2</span>        <span class="op">~</span> <span class="st">"Two or fewer"</span>,</span>
-<span class="r-in">      <span class="va">opinion_correct</span> <span class="op"><a href="https://rdrr.io/r/base/match.html">%in%</a></span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">3</span>,<span class="fl">4</span><span class="op">)</span> <span class="op">~</span> <span class="st">"Three or four"</span>,</span>
-<span class="r-in">      <span class="va">opinion_correct</span> <span class="op">==</span> <span class="fl">5</span>        <span class="op">~</span> <span class="st">"All five"</span></span>
-<span class="r-in">      <span class="op">)</span>,</span>
+<span class="r-in">      <span class="va">opinion_correct</span> <span class="op">&lt;=</span> <span class="fl">2</span> <span class="op">~</span> <span class="st">"Two or fewer"</span>,</span>
+<span class="r-in">      <span class="va">opinion_correct</span> <span class="op"><a href="https://rdrr.io/r/base/match.html">%in%</a></span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">3</span>, <span class="fl">4</span><span class="op">)</span> <span class="op">~</span> <span class="st">"Three or four"</span>,</span>
+<span class="r-in">      <span class="va">opinion_correct</span> <span class="op">==</span> <span class="fl">5</span> <span class="op">~</span> <span class="st">"All five"</span></span>
+<span class="r-in">    <span class="op">)</span>,</span>
 <span class="r-in">    opinions <span class="op">=</span> <span class="fu"><a href="https://forcats.tidyverse.org/reference/fct_relevel.html">fct_relevel</a></span><span class="op">(</span><span class="va">opinions</span>, <span class="st">"Two or fewer"</span>, <span class="st">"Three or four"</span>, <span class="st">"All five"</span><span class="op">)</span></span>
 <span class="r-in">  <span class="op">)</span> <span class="op"><a href="https://forcats.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
 <span class="r-in">  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/select.html">select</a></span><span class="op">(</span><span class="op">-</span><span class="va">fact_correct</span>, <span class="op">-</span><span class="va">opinion_correct</span><span class="op">)</span> <span class="op"><a href="https://forcats.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
@@ -137,7 +137,6 @@ statements they classified correctly (out of 5).</p>
 <span class="r-in">    fill <span class="op">=</span> <span class="st">"Number of\ncorrect\nclassifications"</span></span>
 <span class="r-in">  <span class="op">)</span></span>
 <span class="r-plt"><img src="fact_opinion-3.png" alt="" width="700" height="433"></span>
-<span class="r-in"></span>
 </code></pre></div>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
