@@ -1,3 +1,9 @@
+# Development Version
+
+* Added new datasets:
+  * `reddit_finance`, `blizzard_salary` and `climber_drugs` by [@npaterno](https://github.com/npaterno)
+  * `mlb_teams`, `world_pop`, `sowc_demographics`, sowc_maternal_newborn` and `sowc_child_mortality` by [@karenjh2](https://github.com/karenjh2)
+
 # openintro 2.2.0
 
 * Added new datasets:
