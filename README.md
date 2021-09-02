@@ -11,6 +11,7 @@ stable](https://img.shields.io/badge/lifecycle-stable-green.svg)](https://lifecy
 status](https://github.com/OpenIntroStat/openintro/workflows/R-CMD-check/badge.svg)](https://github.com/OpenIntroStat/openintro/actions)
 [![CRAN RStudio mirror
 downloads](http://cranlogs.r-pkg.org/badges/openintro)](https://cran.r-project.org/package=openintro)
+[![R-CMD-check](https://github.com/OpenIntroStat/openintro/workflows/R-CMD-check/badge.svg)](https://github.com/OpenIntroStat/openintro/actions)
 <!-- badges: end -->
 
 Supplemental functions and data for OpenIntro resources, which includes
