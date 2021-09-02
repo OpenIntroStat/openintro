@@ -29,7 +29,6 @@ This function is not yet very flexible.
 
 plot(0:1, 0:1, type = "n")
 Braces(0.5, 0.5, face.radians = 3 * pi / 2)
-
 }
 \seealso{
 \code{\link{dlsegments}}

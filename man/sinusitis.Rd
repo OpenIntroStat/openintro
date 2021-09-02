@@ -26,6 +26,5 @@ to one of two groups: treatment or control.
 \examples{
 
 sinusitis
-
 }
 \keyword{datasets}

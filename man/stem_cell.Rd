@@ -28,6 +28,5 @@ capacity, which generally suggests a stronger recovery.
 \examples{
 
 stem_cell
-
 }
 \keyword{datasets}

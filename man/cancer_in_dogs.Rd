@@ -29,6 +29,5 @@ dogs that are exposed to the herbicide 2,4-Dichlorophenoxyacetic acid
 \examples{
 
 table(cancer_in_dogs)
-
 }
 \keyword{datasets}

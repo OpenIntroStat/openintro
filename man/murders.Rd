@@ -34,7 +34,6 @@ ggplot(murders, aes(x = perc_pov, y = annual_murders_per_mil)) +
   labs(
     x = "Percent in poverty",
     y = "Number of murders per year per million people"
-    )
-
+  )
 }
 \keyword{datasets}

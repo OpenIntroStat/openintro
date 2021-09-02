@@ -116,9 +116,10 @@ Plot data, the linear model, and a residual plot simultaneously.
 
 lmPlot(satgpa$sat_sum, satgpa$fy_gpa)
 
-lmPlot(gradestv$tv, gradestv$grades, xAxis=4,
-	xlab='time watching TV', yR=0.2, highlight=c(1,15,20))
-
+lmPlot(gradestv$tv, gradestv$grades,
+  xAxis = 4,
+  xlab = "time watching TV", yR = 0.2, highlight = c(1, 15, 20)
+)
 }
 \seealso{
 \code{\link{makeTube}}

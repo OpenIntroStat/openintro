@@ -24,7 +24,6 @@ library(dplyr)
 
 drone_blades \%>\%
   count(supplier, inspection)
-
 }
 \references{
 OpenIntro Statistics, Third Edition and Fourth Edition.

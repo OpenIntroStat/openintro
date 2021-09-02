@@ -16,5 +16,4 @@ Uses full colors from \link{IMSCOL}
 
 openintro_cols("blue")
 openintro_cols("red")
-
 }

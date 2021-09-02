@@ -33,7 +33,6 @@ Marine Corps.  Demographic information on the Coast Guard is contained in
 the original data set but has not been included here.
 }
 \examples{
-
 \dontrun{
 library(dplyr)
 library(ggplot2)

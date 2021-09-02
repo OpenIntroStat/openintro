@@ -17,10 +17,10 @@
 #'
 #' data(COL)
 #' ChiSquareTail(11.7,
-#'               7,
-#'               c(0, 25),
-#'               col = COL[1])
-#'
+#'   7,
+#'   c(0, 25),
+#'   col = COL[1]
+#' )
 ChiSquareTail <- function(U,
                           df,
                           xlim = c(0, 10),
@@ -29,7 +29,7 @@ ChiSquareTail <- function(U,
                           ...) {
   x <- c(0, seq(xlim[1], xlim[2] + 3, length.out = 300))
   y <- c(0, stats::dchisq(x[-1], df))
-  graphics::plot(x, y, type = 'l', axes = FALSE, xlim = xlim)
+  graphics::plot(x, y, type = "l", axes = FALSE, xlim = xlim)
   graphics::abline(h = 0)
   if (axes) {
     axis(1)

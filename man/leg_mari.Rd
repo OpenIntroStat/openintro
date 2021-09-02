@@ -25,7 +25,5 @@ regulated and taxed.
 
 
 table(leg_mari)
-
-
 }
 \keyword{datasets}

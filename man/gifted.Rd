@@ -47,7 +47,6 @@ age of four.
 \examples{
 
 gifted
-
 }
 \keyword{datasets}
 \keyword{regression}

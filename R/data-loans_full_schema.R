@@ -129,6 +129,4 @@
 #' @examples
 #'
 #' loans_full_schema
-#'
-#'
 "loans_full_schema"

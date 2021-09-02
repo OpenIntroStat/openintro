@@ -28,6 +28,5 @@ survived for at least 24 hours.
 \examples{
 
 table(cpr)
-
 }
 \keyword{datasets}

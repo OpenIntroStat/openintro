@@ -17,6 +17,5 @@ Exam scores from a class of 19 students.
 \examples{
 
 hist(exams$scores)
-
 }
 \keyword{datasets}

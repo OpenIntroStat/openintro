@@ -14,5 +14,4 @@
 #' @examples
 #'
 #' transplant
-#'
 "transplant"

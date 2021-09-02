@@ -34,7 +34,6 @@ library(ggplot2)
 
 ggplot(births, aes(x = smoke, y = weight)) +
   geom_boxplot()
-
 }
 \seealso{
 We do not have ideal provenance for these data. For a better

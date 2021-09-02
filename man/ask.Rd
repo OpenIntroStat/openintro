@@ -60,6 +60,5 @@ ggplot(ask, aes(x = question_class, fill = response)) +
 # Check the test's assumption around sufficient expected observations
 # per table cell.
 test$expected
-
 }
 \keyword{datasets}

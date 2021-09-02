@@ -7,7 +7,8 @@ library(usethis)
 # load data -------------------------------------------------------------------
 
 lizard_habitat <- read_excel(here::here("data-raw/lizard_habitat/S. occidentalis perch sunlight data for Jo Hardin.xls"),
-                             skip = 14)
+  skip = 14
+)
 
 lizard_habitat <- lizard_habitat %>%
   mutate(

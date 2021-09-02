@@ -26,7 +26,7 @@
 #'     x = "Age group",
 #'     y = "Number correct (factual)",
 #'     title = "Number of factual statements classified correctly by age group"
-#'     )
+#'   )
 #'
 #' # Distribution of opinion_correct by age group
 #' ggplot(fact_opinion, aes(x = age_group, y = opinion_correct)) +
@@ -35,22 +35,22 @@
 #'     x = "Age group",
 #'     y = "Number correct (opinion)",
 #'     title = "Number of opinion statements classified correctly by age group"
-#'     )
+#'   )
 #'
 #' # Replicating the figure from Pew report (see source for link)
 #' fact_opinion %>%
 #'   mutate(
 #'     facts = case_when(
-#'       fact_correct <= 2        ~ "Two or fewer",
-#'       fact_correct %in% c(3,4) ~ "Three or four",
-#'       fact_correct == 5        ~ "All five"
-#'       ),
+#'       fact_correct <= 2 ~ "Two or fewer",
+#'       fact_correct %in% c(3, 4) ~ "Three or four",
+#'       fact_correct == 5 ~ "All five"
+#'     ),
 #'     facts = fct_relevel(facts, "Two or fewer", "Three or four", "All five"),
 #'     opinions = case_when(
-#'       opinion_correct <= 2        ~ "Two or fewer",
-#'       opinion_correct %in% c(3,4) ~ "Three or four",
-#'       opinion_correct == 5        ~ "All five"
-#'       ),
+#'       opinion_correct <= 2 ~ "Two or fewer",
+#'       opinion_correct %in% c(3, 4) ~ "Three or four",
+#'       opinion_correct == 5 ~ "All five"
+#'     ),
 #'     opinions = fct_relevel(opinions, "Two or fewer", "Three or four", "All five")
 #'   ) %>%
 #'   select(-fact_correct, -opinion_correct) %>%
@@ -64,7 +64,6 @@
 #'     y = "Age group",
 #'     fill = "Number of\ncorrect\nclassifications"
 #'   )
-#'
 #' @source [Younger Americans are better than older Americans at telling factual news statements from opinions](https://www.pewresearch.org/fact-tank/2018/10/23/younger-americans-are-better-than-older-americans-at-telling-factual-news-statements-from-opinions/), Pew Research Center, October 23, 2018.
 #'
 "fact_opinion"

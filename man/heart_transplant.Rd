@@ -51,7 +51,6 @@ ggplot(heart_transplant, aes(x = transplant, y = survtime)) +
 ggplot(heart_transplant, aes(x = transplant, fill = survived)) +
   geom_bar(position = "fill") +
   labs(x = "Transplant", y = "Proportion", fill = "Outcome")
-
 }
 \references{
 Turnbull B, Brown B, and Hu M (1974). "Survivorship of heart

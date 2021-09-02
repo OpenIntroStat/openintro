@@ -38,6 +38,5 @@ library(ggplot2)
 ggplot(absenteeism, aes(x = eth, y = days)) +
   geom_boxplot() +
   coord_flip()
-
 }
 \keyword{datasets}

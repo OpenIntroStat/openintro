@@ -17,5 +17,4 @@
 #' @examples
 #'
 #' unemploy_pres
-#'
 "unemploy_pres"

@@ -34,5 +34,4 @@
 #'
 #' ggplot(opportunity_cost, aes(y = group, fill = decision)) +
 #'   geom_bar(position = "fill")
-#'
 "opportunity_cost"

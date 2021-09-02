@@ -1,9 +1,9 @@
 #' Health Coverage and Health Status
-#' 
+#'
 #' Survey responses for 20,000 responses to the Behavioral Risk Factor
 #' Surveillance System.
-#' 
-#' 
+#'
+#'
 #' @name health_coverage
 #' @aliases health_coverage health.coverage
 #' @docType data
@@ -14,9 +14,7 @@
 #' Behavioral Risk Factor Surveillance System, BRFSS 2010 Survey Data.
 #' @keywords datasets
 #' @examples
-#' 
-#' 
+#'
+#'
 #' table(health_coverage)
-#' 
-#' 
 "health_coverage"

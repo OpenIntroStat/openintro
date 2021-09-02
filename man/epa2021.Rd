@@ -69,8 +69,7 @@ epa2021 \%>\%
   summarise(
     mean_city = mean(city_mpg),
     mean_hwy  = mean(hwy_mpg)
-    )
-
+  )
 }
 \seealso{
 epa2012

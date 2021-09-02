@@ -45,7 +45,6 @@
 #'   add_tally()
 #'
 #' london_murders_counts
-#'
 #' \dontrun{
 #' # Add number of murders to geographic boundary data
 #' london_boroughs_murders <- inner_join(london_boroughs, london_murders_counts, by = "borough")
@@ -53,7 +52,7 @@
 #' # Map murders
 #' ggplot(london_boroughs_murders) +
 #'   geom_polygon(aes(x = x, y = y, group = borough, fill = n), colour = "white") +
-#'     scale_fill_distiller(direction = 1) +
+#'   scale_fill_distiller(direction = 1) +
 #'   labs(x = "Easting", y = "Northing", fill = "Number of murders")
 #' }
 "london_boroughs"

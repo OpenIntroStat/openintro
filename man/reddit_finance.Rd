@@ -90,21 +90,21 @@ native currency.
 
 library(ggplot2)
 # Histogram of Expected Retirement Age.
-ggplot(reddit_finance, aes(retire_age))+
-geom_bar(na.rm = TRUE)+
+ggplot(reddit_finance, aes(retire_age)) +
+  geom_bar(na.rm = TRUE) +
   labs(
     title = "At what age do you expect to retire?",
     x = "Age Bracket",
     y = "Number of Respondents"
-)
+  )
 
 # Histogram of Dollar Amount at Which FI was reached.
-ggplot(reddit_finance, aes(whn_fin_indy_num))+
-geom_histogram(na.rm = TRUE, bins = 20)+
-  labs(title = "At what amount invested did you consider \n yourself Financially Independent?",
-  x = "Dollar Amount (in local currency)",
-  y = "Number of Respondents"
-)
-
+ggplot(reddit_finance, aes(whn_fin_indy_num)) +
+  geom_histogram(na.rm = TRUE, bins = 20) +
+  labs(
+    title = "At what amount invested did you consider \n yourself Financially Independent?",
+    x = "Dollar Amount (in local currency)",
+    y = "Number of Respondents"
+  )
 }
 \keyword{datasets}

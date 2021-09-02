@@ -21,7 +21,6 @@ different lectures who were all given the same exam.
 \examples{
 
 anova(lm(m1 ~ lecture, classdata))
-
 }
 \references{
 OpenIntro Statistics, Chapter 8.

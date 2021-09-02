@@ -25,7 +25,5 @@ treatment of migraines.
 
 
 migraine
-
-
 }
 \keyword{datasets}

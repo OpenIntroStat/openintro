@@ -21,6 +21,5 @@ Simulated data for regression
 \examples{
 
 res_demo_1
-
 }
 \keyword{datasets}

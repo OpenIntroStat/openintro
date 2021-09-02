@@ -24,6 +24,5 @@ Summary of 445 student-parent pairs.
 \examples{
 
 table(drug_use)
-
 }
 \keyword{datasets}

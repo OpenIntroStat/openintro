@@ -6,7 +6,7 @@ raw_data <- read.csv(here::here("data-raw/sowc_demographics/sowc_demographics.cs
 # cleaning ----------------------------------------------------------------------
 
 # no cleaning required
-sowc_demographics<- raw_data
+sowc_demographics <- raw_data
 
 # save --------------------------------------------------------------------------
 

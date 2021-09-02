@@ -36,10 +36,10 @@ Plot a chi-square distribution and shade the upper tail.
 
 data(COL)
 ChiSquareTail(11.7,
-              7,
-              c(0, 25),
-              col = COL[1])
-
+  7,
+  c(0, 25),
+  col = COL[1]
+)
 }
 \seealso{
 \code{\link{normTail}}

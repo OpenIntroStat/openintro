@@ -26,6 +26,5 @@ Colors of the eye colors of male and female partners.
 
 data(assortive_mating)
 table(assortive_mating)
-
 }
 \keyword{datasets}

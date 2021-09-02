@@ -15,7 +15,7 @@ race_justice <- race_justice_table %>%
     response = str_to_sentence(response),
     response = fct_relevel(response, "Yes", "No", "Not sure"),
     race_eth = fct_relevel(race_eth, "White", "Black", "Hispanic", "Other")
-    )
+  )
 
 # Add to package
 use_data(race_justice, overwrite = TRUE)

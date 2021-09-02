@@ -42,6 +42,5 @@ table(opportunity_cost)
 
 ggplot(opportunity_cost, aes(y = group, fill = decision)) +
   geom_bar(position = "fill")
-
 }
 \keyword{datasets}

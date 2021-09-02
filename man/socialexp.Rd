@@ -26,6 +26,5 @@ whether or not they intervened.
 \examples{
 
 table(socialexp)
-
 }
 \keyword{datasets}

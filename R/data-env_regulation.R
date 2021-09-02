@@ -29,5 +29,4 @@
 #' @examples
 #'
 #' table(env_regulation)
-#'
 "env_regulation"

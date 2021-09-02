@@ -21,6 +21,5 @@ openintro_palettes$main
 openintro_palettes$three
 openintro_palettes$cool
 openintro_palettes$hot
-
 }
 \keyword{datasets}

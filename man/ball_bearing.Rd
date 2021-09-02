@@ -29,6 +29,5 @@ ggplot(ball_bearing, aes(x = life_span)) +
   geom_histogram(binwidth = 1)
 
 qqnorm(ball_bearing$life_span)
-
 }
 \keyword{datasets}

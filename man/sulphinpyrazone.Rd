@@ -26,6 +26,5 @@ a heart attack with Sulphinpyrazone.
 \examples{
 
 sulphinpyrazone
-
 }
 \keyword{datasets}

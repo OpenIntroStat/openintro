@@ -34,7 +34,6 @@
 #' # myPNG("myPlot.png")
 #' histPlot(mariokart$total_pr)
 #' # dev.off()
-#'
 myPDF <- function(fileName,
                   width = 5,
                   height = 3,
@@ -42,7 +41,7 @@ myPDF <- function(fileName,
                   mgp = c(2.8, 0.55, 0),
                   las = 1,
                   tcl = -0.3,
-                  ...){
+                  ...) {
   grDevices::pdf(fileName, width, height)
-  graphics::par(mar=mar, mgp=mgp, las=las, tcl=tcl, ...)
+  graphics::par(mar = mar, mgp = mgp, las = las, tcl = tcl, ...)
 }

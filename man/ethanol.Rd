@@ -32,6 +32,5 @@ the tumors.
 
 table(ethanol)
 fisher.test(table(ethanol))
-
 }
 \keyword{datasets}

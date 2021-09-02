@@ -26,17 +26,18 @@ individual cases.
 \examples{
 
 a <- matrix(
-    c(459, 727, 854, 385, 99, 4198, 6245, 4821, 1634, 578),
-    2,
-    byrow = TRUE)
+  c(459, 727, 854, 385, 99, 4198, 6245, 4821, 1634, 578),
+  2,
+  byrow = TRUE
+)
 b <-
-CT2DF(
+  CT2DF(
     a,
     c("No", "Yes"),
     c("Excellent", "Very good", "Good", "Fair", "Poor"),
-    c("coverage", "health_status"))
+    c("coverage", "health_status")
+  )
 table(b)
-
 }
 \seealso{
 \code{\link{MosaicPlot}}

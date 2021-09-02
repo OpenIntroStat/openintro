@@ -25,6 +25,5 @@ supported the use of the scanners.
 \examples{
 
 full_body_scan
-
 }
 \keyword{datasets}

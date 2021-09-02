@@ -18,5 +18,4 @@
 #'
 #' ggplot(thanksgiving_spend, aes(x = spending)) +
 #'   geom_histogram(binwidth = 20)
-#'
 "thanksgiving_spend"

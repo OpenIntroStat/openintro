@@ -15,5 +15,4 @@
 #' @examples
 #'
 #' hist(penny_ages$year)
-#'
 "penny_ages"

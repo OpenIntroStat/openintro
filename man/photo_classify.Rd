@@ -34,6 +34,5 @@ of the time.
 
 data(photo_classify)
 table(photo_classify)
-
 }
 \keyword{datasets}

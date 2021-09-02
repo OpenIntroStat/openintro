@@ -28,6 +28,5 @@ library(ggplot2)
 ggplot(ppp_201503, aes(x = party, fill = taxes)) +
   geom_bar(position = "fill") +
   labs(x = "Party", x = "Proportion", fill = "Taxes")
-
 }
 \keyword{datasets}

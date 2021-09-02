@@ -62,7 +62,6 @@ ggplot(smoking, aes(x = gender, fill = smoke)) +
 
 ggplot(smoking, aes(x = marital_status, fill = smoke)) +
   geom_bar(position = "fill")
-
 }
 \keyword{datasets}
 \keyword{smoking}

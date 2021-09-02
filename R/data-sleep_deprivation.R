@@ -20,5 +20,4 @@
 #' @examples
 #'
 #' sleep_deprivation
-#'
 "sleep_deprivation"

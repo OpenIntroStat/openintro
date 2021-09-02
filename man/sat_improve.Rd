@@ -20,6 +20,5 @@ score improvement company.
 \examples{
 
 sat_improve
-
 }
 \keyword{datasets}

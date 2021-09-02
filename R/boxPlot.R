@@ -43,51 +43,57 @@
 #'
 #' # bivariate
 #' boxPlot(email$num_char, email$spam,
-#'         xlab = "Spam",
-#'         ylab = "Number of characters in emails")
+#'   xlab = "Spam",
+#'   ylab = "Number of characters in emails"
+#' )
 #'
 #' # faded outliers
 #' boxPlot(email$num_char, email$spam,
-#'         xlab = "Spam",
-#'         ylab = "Number of characters in emails",
-#'         col = fadeColor("black", 18))
+#'   xlab = "Spam",
+#'   ylab = "Number of characters in emails",
+#'   col = fadeColor("black", 18)
+#' )
 #'
 #' # horizontal plots
 #' boxPlot(email$num_char, email$spam,
-#'         horiz = TRUE,
-#'         xlab = "Spam",
-#'         ylab = "Number of characters in emails",
-#'         col = fadeColor("black", 18))
+#'   horiz = TRUE,
+#'   xlab = "Spam",
+#'   ylab = "Number of characters in emails",
+#'   col = fadeColor("black", 18)
+#' )
 #'
 #' # bivariate relationships where categorical data have more than 2 levels
 #' boxPlot(email$num_char, email$image,
-#'         horiz = TRUE,
-#'         xlab = "Number of attached images",
-#'         ylab = "Number of characters in emails",
-#'         col = fadeColor("black", 18))
+#'   horiz = TRUE,
+#'   xlab = "Number of attached images",
+#'   ylab = "Number of characters in emails",
+#'   col = fadeColor("black", 18)
+#' )
 #'
 #' # key can be used to restrict to only the desired groups
 #' boxPlot(email$num_char, email$image,
-#'         horiz = TRUE, key = c(0, 1, 2),
-#'         xlab = "Number of attached images (limited to 0, 1, 2)",
-#'         ylab = "Number of characters in emails",
-#'         col = fadeColor("black", 18))
+#'   horiz = TRUE, key = c(0, 1, 2),
+#'   xlab = "Number of attached images (limited to 0, 1, 2)",
+#'   ylab = "Number of characters in emails",
+#'   col = fadeColor("black", 18)
+#' )
 #'
 #' # combine boxPlot and dotPlot
 #' boxPlot(tips$tip, tips$day,
-#'         horiz = TRUE, key = c("Tuesday", "Friday"))
+#'   horiz = TRUE, key = c("Tuesday", "Friday")
+#' )
 #' dotPlot(tips$tip, tips$day,
-#'         add=TRUE, at = 1:2+0.05,
-#'         key=c("Tuesday", "Friday"))
+#'   add = TRUE, at = 1:2 + 0.05,
+#'   key = c("Tuesday", "Friday")
+#' )
 #'
 #' # adding a box
-#' boxPlot(email$num_char[email$spam==0], xlim = c(0,3))
-#' boxPlot(email$num_char[email$spam==1], add = 2, axes = FALSE)
+#' boxPlot(email$num_char[email$spam == 0], xlim = c(0, 3))
+#' boxPlot(email$num_char[email$spam == 1], add = 2, axes = FALSE)
 #' axis(1, at = 1:2, labels = c(0, 1))
-#' boxPlot(email$num_char[email$spam==0], ylim = c(0,3), horiz = TRUE)
-#' boxPlot(email$num_char[email$spam==1], add = 2, horiz = TRUE, axes = FALSE)
+#' boxPlot(email$num_char[email$spam == 0], ylim = c(0, 3), horiz = TRUE)
+#' boxPlot(email$num_char[email$spam == 1], add = 2, horiz = TRUE, axes = FALSE)
 #' axis(2, at = 1:2, labels = c(0, 1))
-#'
 boxPlot <- function(x, fact = NULL, horiz = FALSE, width = 2 / 3, lwd = 1, lcol = "black", medianLwd = 2, pch = 20, pchCex = 1.8, col = grDevices::rgb(0, 0, 0, 0.25), add = FALSE, key = NULL, axes = TRUE, xlab = "", ylab = "", xlim = NULL, ylim = NULL, na.rm = TRUE, ...) {
   if (!is.null(fact)[1]) {
     if (na.rm) {

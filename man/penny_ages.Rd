@@ -21,6 +21,5 @@ Sample of pennies and their ages. Taken in 2004.
 \examples{
 
 hist(penny_ages$year)
-
 }
 \keyword{datasets}

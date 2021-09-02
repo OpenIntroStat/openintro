@@ -20,6 +20,5 @@ inspection.
 \examples{
 
 gear_company
-
 }
 \keyword{datasets}

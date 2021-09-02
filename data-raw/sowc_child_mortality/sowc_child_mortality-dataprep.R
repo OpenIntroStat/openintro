@@ -6,7 +6,7 @@ raw_data <- read.csv(here::here("data-raw/sowc_child_mortality/sowc_child_mortal
 # cleaning ----------------------------------------------------------------------
 
 # no cleaning required
-sowc_child_mortality<- raw_data
+sowc_child_mortality <- raw_data
 
 # save --------------------------------------------------------------------------
 

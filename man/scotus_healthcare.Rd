@@ -26,6 +26,5 @@ decision.
 \examples{
 
 table(scotus_healthcare)
-
 }
 \keyword{datasets}

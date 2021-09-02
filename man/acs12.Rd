@@ -61,6 +61,5 @@ ggplot(acs12_emp, mapping = aes(x = age, y = log(income))) +
 
 lm(log(income) ~ age, data = acs12_emp) \%>\%
   tidy()
-
 }
 \keyword{datasets}

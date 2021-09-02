@@ -48,7 +48,6 @@ ggplot(mammals, aes(x = log(body_wt), y = log(brain_wt))) +
   geom_point() +
   geom_smooth(method = "lm") +
   labs(x = "Log of body weight", x = "Log of brain weight")
-
 }
 \references{
 T. Allison and D. Cicchetti, "Sleep in mammals: ecological and

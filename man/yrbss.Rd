@@ -40,6 +40,5 @@ Select variables from YRBSS.
 \examples{
 
 table(yrbss$physically_active_7d)
-
 }
 \keyword{datasets}

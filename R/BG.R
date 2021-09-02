@@ -9,9 +9,11 @@
 #' @examples
 #'
 #' Test <- function(col) {
-#'   plot(1:7, col = COL[1:7], pch = 19, cex = 5,
-#'       xlim = c(0, 8),
-#'       ylim = c(0, 9))
+#'   plot(1:7,
+#'     col = COL[1:7], pch = 19, cex = 5,
+#'     xlim = c(0, 8),
+#'     ylim = c(0, 9)
+#'   )
 #'   BG(col)
 #'   points(2:8, col = COL[1:7], pch = 19, cex = 5)
 #'   text(2, 6, "Correct Color")
@@ -29,13 +31,13 @@
 #'
 #' # Basically useless due to heavy color gradient
 #' Test(COL[4, 2])
-#'
 BG <- function(col = openintro::COL[5, 9]) {
   rect(
-      graphics::par("usr")[1],
-      graphics::par("usr")[3],
-      graphics::par("usr")[2],
-      graphics::par("usr")[4],
-      col = col,
-      border = NA)
+    graphics::par("usr")[1],
+    graphics::par("usr")[3],
+    graphics::par("usr")[2],
+    graphics::par("usr")[4],
+    col = col,
+    border = NA
+  )
 }

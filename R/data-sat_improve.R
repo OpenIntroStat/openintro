@@ -14,5 +14,4 @@
 #' @examples
 #'
 #' sat_improve
-#'
 "sat_improve"

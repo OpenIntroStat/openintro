@@ -10,4 +10,4 @@ snowfall <- read_csv(here::here("data-raw/snowfall/snowfall.csv"))
 
 # save -------------------------------------------------------------------------
 
-usethis::use_data(snowfall, overwrite= TRUE)
+usethis::use_data(snowfall, overwrite = TRUE)

@@ -17,8 +17,9 @@
 #'
 #' ggplot(ami_occurrences, mapping = aes(x = ami)) +
 #'   geom_bar() +
-#'   labs(x = "Acute Myocardial Infarction events",
-#'        y = "Count",
-#'        title = "Acute Myocardial Infarction events in NYC")
-#'
+#'   labs(
+#'     x = "Acute Myocardial Infarction events",
+#'     y = "Count",
+#'     title = "Acute Myocardial Infarction events in NYC"
+#'   )
 "ami_occurrences"

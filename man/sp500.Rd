@@ -46,8 +46,10 @@ ggplot(sp500, aes(x = ent_value, y = earn_before)) +
 
 ggplot(sp500, aes(x = ev_over_rev, y = forward_pe)) +
   geom_point() +
-  labs(x = "Enterprise value / revenue, logged",
-       y = "Market cap / forecasted earnings, logged")
+  labs(
+    x = "Enterprise value / revenue, logged",
+    y = "Market cap / forecasted earnings, logged"
+  )
 
 ggplot(sp500, aes(x = ent_value, y = earn_before)) +
   geom_point() +
@@ -59,9 +61,10 @@ ggplot(sp500, aes(x = ev_over_rev, y = forward_pe)) +
   geom_point() +
   scale_x_log10() +
   scale_y_log10() +
-  labs(x = "Enterprise value / revenue, logged",
-       y = "Market cap / forecasted earnings, logged")
-
+  labs(
+    x = "Enterprise value / revenue, logged",
+    y = "Market cap / forecasted earnings, logged"
+  )
 }
 \keyword{500}
 \keyword{SP}

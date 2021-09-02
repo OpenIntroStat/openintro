@@ -46,11 +46,11 @@
 #'     title = "Top 20 most common words in Facebook IPO",
 #'     x = "Frequency",
 #'     y = "Word"
-#'     )
+#'   )
 #'
 #' # Comparisons to Google and LinkedIn IPO texts
 #'
-#' google   <- tibble(text = ipo$google  , company = "Google")
+#' google <- tibble(text = ipo$google, company = "Google")
 #' linkedin <- tibble(text = ipo$linkedin, company = "LinkedIn")
 #'
 #' ipo_texts <- bind_rows(facebook, google, linkedin)
@@ -67,5 +67,4 @@
 #'   geom_col(show.legend = FALSE) +
 #'   facet_wrap(~company, ncol = 3, scales = "free") +
 #'   labs(x = "tf-idf", y = NULL)
-#'
 "ipo"

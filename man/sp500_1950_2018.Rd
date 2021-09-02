@@ -28,11 +28,11 @@ Data runs from 1950 to near the end of 2018.
 \examples{
 
 data(sp500_1950_2018)
-sp500.ten.years <- subset(sp500_1950_2018,
-    "2009-01-01" <= as.Date(Date) & as.Date(Date) <= "2018-12-31")
+sp500.ten.years <- subset(
+  sp500_1950_2018,
+  "2009-01-01" <= as.Date(Date) & as.Date(Date) <= "2018-12-31"
+)
 d <- diff(sp500.ten.years$Adj.Close)
 mean(d > 0)
-
-
 }
 \keyword{datasets}

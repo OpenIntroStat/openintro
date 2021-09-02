@@ -23,6 +23,4 @@
 #'
 #'
 #' president
-#'
-#'
 "president"

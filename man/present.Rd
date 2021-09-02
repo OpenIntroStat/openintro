@@ -30,6 +30,5 @@ library(ggplot2)
 
 ggplot(present, mapping = aes(x = year, y = boys / girls)) +
   geom_line()
-
 }
 \keyword{datasets}

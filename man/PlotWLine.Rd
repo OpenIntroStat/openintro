@@ -50,7 +50,6 @@ Plot data and add a regression line.
 \examples{
 
 PlotWLine(1:10, seq(-5, -2, length.out = 10) + rnorm(10))
-
 }
 \seealso{
 \code{\link{makeTube}}

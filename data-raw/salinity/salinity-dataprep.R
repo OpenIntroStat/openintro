@@ -10,4 +10,4 @@ salinity <- read_csv(here::here("data-raw/salinity/salinity.csv"))
 
 # save -------------------------------------------------------------------------
 
-usethis::use_data(salinity, overwrite= TRUE)
+usethis::use_data(salinity, overwrite = TRUE)

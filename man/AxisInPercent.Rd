@@ -34,7 +34,6 @@ Convert and simplify axis labels that are in percentages.
 x <- sample(50e6, 100)
 hist(x, axes = FALSE)
 AxisInDollars(1, pretty(x))
-
 }
 \seealso{
 \code{\link{buildAxis}} \code{\link{AxisInDollars}} \code{\link{AxisInDollars}}

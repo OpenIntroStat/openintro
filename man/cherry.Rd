@@ -34,6 +34,5 @@ ggplot(cherry, aes(x = diam, y = volume)) +
 
 mod <- lm(volume ~ diam + height, cherry)
 tidy(mod)
-
 }
 \keyword{datasets}

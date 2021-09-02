@@ -26,6 +26,5 @@ Country International Organization for Standardization (ISO) information.
 \examples{
 
 country_iso
-
 }
 \keyword{datasets}

@@ -17,5 +17,4 @@
 #' @examples
 #'
 #' offshore_drilling
-#'
 "offshore_drilling"

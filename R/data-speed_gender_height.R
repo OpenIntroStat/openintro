@@ -16,5 +16,4 @@
 #' @examples
 #'
 #' speed_gender_height
-#'
 "speed_gender_height"

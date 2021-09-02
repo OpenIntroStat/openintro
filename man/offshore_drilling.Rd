@@ -25,6 +25,5 @@ California.
 \examples{
 
 offshore_drilling
-
 }
 \keyword{datasets}

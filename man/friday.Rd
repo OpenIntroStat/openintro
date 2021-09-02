@@ -48,14 +48,13 @@ library(ggplot2)
 friday \%>\%
   filter(type == "traffic") \%>\%
   ggplot(aes(x = sixth)) +
-    geom_histogram(binwidth = 2000) +
-    xlim(110000, 140000)
+  geom_histogram(binwidth = 2000) +
+  xlim(110000, 140000)
 
 friday \%>\%
   filter(type == "traffic") \%>\%
   ggplot(aes(x = thirteenth)) +
-    geom_histogram(binwidth = 2000) +
-    xlim(110000, 140000)
-
+  geom_histogram(binwidth = 2000) +
+  xlim(110000, 140000)
 }
 \keyword{datasets}

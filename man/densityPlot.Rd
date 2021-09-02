@@ -105,27 +105,37 @@ purposes.
 
 # hollow histograms
 histPlot(tips$tip[tips$day == "Tuesday"],
-         hollow = TRUE, xlim = c(0, 30),
-         lty = 1, main = "Tips by day")
+  hollow = TRUE, xlim = c(0, 30),
+  lty = 1, main = "Tips by day"
+)
 histPlot(tips$tip[tips$day == "Friday"],
-         hollow = TRUE, border = "red",
-         add = TRUE, main = "Tips by day")
-legend("topright", col = c("black", "red"),
-       lty = 1:2, legend = c("Tuesday", "Friday"))
+  hollow = TRUE, border = "red",
+  add = TRUE, main = "Tips by day"
+)
+legend("topright",
+  col = c("black", "red"),
+  lty = 1:2, legend = c("Tuesday", "Friday")
+)
 
 # density plots
 densityPlot(tips$tip, tips$day,
-            col = c("black", "red"), main = "Tips by day")
-legend("topright", col = c("black", "red"),
-       lty = 1:2, legend = c("Tuesday", "Friday"))
+  col = c("black", "red"), main = "Tips by day"
+)
+legend("topright",
+  col = c("black", "red"),
+  lty = 1:2, legend = c("Tuesday", "Friday")
+)
 
-densityPlot(tips$tip, histo = "faded",
-            breaks = 15, main = "Tips by day")
+densityPlot(tips$tip,
+  histo = "faded",
+  breaks = 15, main = "Tips by day"
+)
 
-densityPlot(tips$tip, histo = "hollow",
-            breaks = 30, fadingBorder = "66",
-	           lty = 1, main = "Tips by day")
-
+densityPlot(tips$tip,
+  histo = "hollow",
+  breaks = 30, fadingBorder = "66",
+  lty = 1, main = "Tips by day"
+)
 }
 \seealso{
 \code{\link{histPlot}}, \code{\link{dotPlot}},

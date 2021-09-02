@@ -22,5 +22,4 @@
 #'
 #' ggplot(present, mapping = aes(x = year, y = boys / girls)) +
 #'   geom_line()
-#'
 "present"

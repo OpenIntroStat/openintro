@@ -36,213 +36,226 @@
 #' @export
 #' @examples
 #'
-#' dlsegments(c(-3,3), c(1, 1000),
-#'            r=c("o", "o"), l=c("c", "o"), COL=COL[4])
+#' dlsegments(c(-3, 3), c(1, 1000),
+#'   r = c("o", "o"), l = c("c", "o"), COL = COL[4]
+#' )
 #'
-#' dlsegments(c(-3,3), c(1, 1000),
-#'            r=c("o", "o"), l=c("c", "o"), type="un", COL=COL[4])
+#' dlsegments(c(-3, 3), c(1, 1000),
+#'   r = c("o", "o"), l = c("c", "o"), type = "un", COL = COL[4]
+#' )
 #'
-#' dlsegments(c(-3,3), c(1, 1000),
-#'            r=c("o", "o"), l=c("c", "o"), type="in", COL=COL[4])
-#'
+#' dlsegments(c(-3, 3), c(1, 1000),
+#'   r = c("o", "o"), l = c("c", "o"), type = "in", COL = COL[4]
+#' )
 dlsegments <-
-function(x1=c(3,7), x2=c(5,9), l=c("o","o"), r=c("c", "c"), type=c("n", "u", "i"), COL=2, lwd=2.224, ylim=c(-0.35,2), mar=rep(0,4), hideOrig=FALSE){
-  # x1=c(-1,4); x2=c(3,1000);type="inter"
+  function(x1 = c(3, 7), x2 = c(5, 9), l = c("o", "o"), r = c("c", "c"), type = c("n", "u", "i"), COL = 2, lwd = 2.224, ylim = c(-0.35, 2), mar = rep(0, 4), hideOrig = FALSE) {
+    # x1=c(-1,4); x2=c(3,1000);type="inter"
 
-  type <- type[1]
+    type <- type[1]
 
-  if (x1[1] == x1[2] && (l[1] != "c" || r[1] != "c")) {
-    warning("'x1' is open, changing to closed")
-    l[1] <- "c"
-    r[1] <- "c"
-  }
-
-  if (x2[1] == x2[2] && (l[2] != "c" || r[2] != "c")) {
-    warning("'x2' is open, changing to closed")
-    l[2] <- "c"
-    r[2] <- "c"
-  }
-
-  x1   <- sort(x1)
-  x2   <- sort(x2)
-  xR   <- range(x1[x1 > -1000 & x1 < 1000],
-                x2[x2 > -1000 & x2 < 1000])
-  L <- ifelse(x1[1] < -999 || x2[1] < -999, 0.4, 0.15)
-  R <- ifelse(x1[2] > 999 || x2[2] > 999, 0.4, 0.15)
-  xlim <- xR + c(-L,R)*diff(xR)
-  if (xlim[1] == xlim[2]) {
-    xlim[1] <- round(xlim[1] - 3.25)
-    xlim[2] <- round(xlim[2] + 3.25)
-  }
-  graphics::par(mar=mar)
-  graphics::plot(1e5, xlim=xlim, ylim=ylim, axes=FALSE, type="n")
-  x1[1] <- ifelse(x1[1] < -999, xlim[1], x1[1])
-  x1[2] <- ifelse(x1[2] >  999, xlim[2], x1[2])
-  x2[1] <- ifelse(x2[1] < -999, xlim[1], x2[1])
-  x2[2] <- ifelse(x2[2] >  999, xlim[2], x2[2])
-
-  #___ Line 1 ___#
-  code1 <- ifelse(x1[1] == xlim[1] && x1[2] == xlim[2], 3,
-           ifelse(x1[1] == xlim[1], 1,
-           ifelse(x1[2] == xlim[2], 2, 0)))
-  if (!hideOrig) {
-    if(code1 > 0){
-      graphics::arrows(x1[1], 1.1082, x1[2], 1.1082,
-             length=0.07, code=code1, lwd=0.592)
-    } else {
-      lines(x1, rep(1.1082, 2), lwd=0.592)
+    if (x1[1] == x1[2] && (l[1] != "c" || r[1] != "c")) {
+      warning("'x1' is open, changing to closed")
+      l[1] <- "c"
+      r[1] <- "c"
     }
-    if(x1[1] > xlim[1]){
-      graphics::points(x1[1], 1.1082, pch=19, col="#FFFFFF")
-      graphics::points(x1[1], 1.1082, pch=ifelse(l[1] == "c", 19, 1))
-    }
-    if(x1[2] < xlim[2]){
-      graphics::points(x1[2], 1.1082, pch=19, col="#FFFFFF")
-      graphics::points(x1[2], 1.1082, pch=ifelse(r[1] == "c", 19, 1))
-    }
-  }
 
-  #___ Line 2 ___#
-  code2 <- ifelse(x2[1] == xlim[1] && x2[2] == xlim[2], 3,
-           ifelse(x2[1] == xlim[1], 1,
-           ifelse(x2[2] == xlim[2], 2, 0)))
-  if (!hideOrig) {
-    if(code2 > 0){
-      graphics::arrows(x2[1], 1.729, x2[2], 1.729,
-             length=0.07, code=code2, lwd=0.592)
-    } else {
-      graphics::lines(x2, rep(1.729, 2), lwd=0.592)
+    if (x2[1] == x2[2] && (l[2] != "c" || r[2] != "c")) {
+      warning("'x2' is open, changing to closed")
+      l[2] <- "c"
+      r[2] <- "c"
     }
-    if(x2[1] > xlim[1]){
-      graphics::points(x2[1], 1.729, pch=19, col="#FFFFFF")
-      graphics::points(x2[1], 1.729, pch=ifelse(l[2] == "c", 19, 1))
-    }
-    if(x2[2] < xlim[2]){
-      graphics::points(x2[2], 1.729, pch=19, col="#FFFFFF")
-      graphics::points(x2[2], 1.729, pch=ifelse(r[2] == "c", 19, 1))
-    }
-  }
 
-  #___ Build Axis ___#
-  graphics::arrows(xlim[1], 0.55012, xlim[2], 0.55012,
-         length=0.07, code=3, lwd=0.592)
-  if (TRUE) { # (ticks) {
-    if (diff(xlim) < 11) {
-      xs <- round(xlim[1]):round(xlim[2])
-      if (abs(xs[1] - xlim[1]) < diff(xlim)/20) {
-        xs <- utils::tail(xs, -1)
+    x1 <- sort(x1)
+    x2 <- sort(x2)
+    xR <- range(
+      x1[x1 > -1000 & x1 < 1000],
+      x2[x2 > -1000 & x2 < 1000]
+    )
+    L <- ifelse(x1[1] < -999 || x2[1] < -999, 0.4, 0.15)
+    R <- ifelse(x1[2] > 999 || x2[2] > 999, 0.4, 0.15)
+    xlim <- xR + c(-L, R) * diff(xR)
+    if (xlim[1] == xlim[2]) {
+      xlim[1] <- round(xlim[1] - 3.25)
+      xlim[2] <- round(xlim[2] + 3.25)
+    }
+    graphics::par(mar = mar)
+    graphics::plot(1e5, xlim = xlim, ylim = ylim, axes = FALSE, type = "n")
+    x1[1] <- ifelse(x1[1] < -999, xlim[1], x1[1])
+    x1[2] <- ifelse(x1[2] > 999, xlim[2], x1[2])
+    x2[1] <- ifelse(x2[1] < -999, xlim[1], x2[1])
+    x2[2] <- ifelse(x2[2] > 999, xlim[2], x2[2])
+
+    # ___ Line 1 ___#
+    code1 <- ifelse(x1[1] == xlim[1] && x1[2] == xlim[2], 3,
+      ifelse(x1[1] == xlim[1], 1,
+        ifelse(x1[2] == xlim[2], 2, 0)
+      )
+    )
+    if (!hideOrig) {
+      if (code1 > 0) {
+        graphics::arrows(x1[1], 1.1082, x1[2], 1.1082,
+          length = 0.07, code = code1, lwd = 0.592
+        )
+      } else {
+        lines(x1, rep(1.1082, 2), lwd = 0.592)
       }
-      if (abs(utils::tail(xs, 1) - xlim[2]) < diff(xlim)/20) {
-        xs <- utils::head(xs, -1)
+      if (x1[1] > xlim[1]) {
+        graphics::points(x1[1], 1.1082, pch = 19, col = "#FFFFFF")
+        graphics::points(x1[1], 1.1082, pch = ifelse(l[1] == "c", 19, 1))
       }
-    } else {
-      xs <- union(x1, x2)
-      xs <- xs[! xs %in% xlim]
+      if (x1[2] < xlim[2]) {
+        graphics::points(x1[2], 1.1082, pch = 19, col = "#FFFFFF")
+        graphics::points(x1[2], 1.1082, pch = ifelse(r[1] == "c", 19, 1))
+      }
     }
-    if (length(xs) > 0) {
-      y1 <- rep(0.45, length(xs))
-      y2 <- y1 + 0.2
-      graphics::segments(xs, y1, xs, y2)
-      graphics::text(xs, (y1+y2)/2, xs, pos=1)
+
+    # ___ Line 2 ___#
+    code2 <- ifelse(x2[1] == xlim[1] && x2[2] == xlim[2], 3,
+      ifelse(x2[1] == xlim[1], 1,
+        ifelse(x2[2] == xlim[2], 2, 0)
+      )
+    )
+    if (!hideOrig) {
+      if (code2 > 0) {
+        graphics::arrows(x2[1], 1.729, x2[2], 1.729,
+          length = 0.07, code = code2, lwd = 0.592
+        )
+      } else {
+        graphics::lines(x2, rep(1.729, 2), lwd = 0.592)
+      }
+      if (x2[1] > xlim[1]) {
+        graphics::points(x2[1], 1.729, pch = 19, col = "#FFFFFF")
+        graphics::points(x2[1], 1.729, pch = ifelse(l[2] == "c", 19, 1))
+      }
+      if (x2[2] < xlim[2]) {
+        graphics::points(x2[2], 1.729, pch = 19, col = "#FFFFFF")
+        graphics::points(x2[2], 1.729, pch = ifelse(r[2] == "c", 19, 1))
+      }
     }
-  }
 
-  #___ Intersection ___#
-  if (tolower(substr(type, 1, 1)) == "i") {
+    # ___ Build Axis ___#
+    graphics::arrows(xlim[1], 0.55012, xlim[2], 0.55012,
+      length = 0.07, code = 3, lwd = 0.592
+    )
+    if (TRUE) { # (ticks) {
+      if (diff(xlim) < 11) {
+        xs <- round(xlim[1]):round(xlim[2])
+        if (abs(xs[1] - xlim[1]) < diff(xlim) / 20) {
+          xs <- utils::tail(xs, -1)
+        }
+        if (abs(utils::tail(xs, 1) - xlim[2]) < diff(xlim) / 20) {
+          xs <- utils::head(xs, -1)
+        }
+      } else {
+        xs <- union(x1, x2)
+        xs <- xs[!xs %in% xlim]
+      }
+      if (length(xs) > 0) {
+        y1 <- rep(0.45, length(xs))
+        y2 <- y1 + 0.2
+        graphics::segments(xs, y1, xs, y2)
+        graphics::text(xs, (y1 + y2) / 2, xs, pos = 1)
+      }
+    }
 
-    #___ x1 < x2 ___#
-    left  <- max(x1[1], x2[1])
-    right <- min(x1[2], x2[2])
-    if (left < right) {
-      pch    <- c(2,2)
-      pch[1] <- ifelse(x1[1] > x2[1], l[1], l[2])
-      if (x1[1] == x2[1]) {
-        pch[1] <- ifelse(all(l == "c"), "c", "o")
+    # ___ Intersection ___#
+    if (tolower(substr(type, 1, 1)) == "i") {
+
+      # ___ x1 < x2 ___#
+      left <- max(x1[1], x2[1])
+      right <- min(x1[2], x2[2])
+      if (left < right) {
+        pch <- c(2, 2)
+        pch[1] <- ifelse(x1[1] > x2[1], l[1], l[2])
+        if (x1[1] == x2[1]) {
+          pch[1] <- ifelse(all(l == "c"), "c", "o")
+        }
+        pch[2] <- ifelse(x1[2] < x2[2], r[1], r[2])
+        if (x1[2] == x2[2]) {
+          pch[2] <- ifelse(all(r == "c"), "c", "o")
+        }
+        pch <- ifelse(pch == "o", 1, 19)
+        graphics::lines(c(left, right), rep(0.55012, 2),
+          lwd = lwd, col = COL[1]
+        )
+        graphics::points(c(left, right), rep(0.55012, 2),
+          pch = 19, col = "#FFFFFF"
+        )
+        graphics::points(c(left, right), rep(0.55012, 2),
+          pch = pch, col = COL[1]
+        )
+      } else if (left == right) {
+
+        # ___ Intersection Is Point ___#
+        pch1 <- ifelse(x1[1] < x2[1], l[2], l[1])
+        pch2 <- ifelse(x1[2] < x2[2], r[1], r[2])
+        if (pch1 == "c" && pch[2] == "c") {
+          X <- ifelse(x1[1] < x2[1], x2[1], x1[1])
+          graphics::points(X, 0.55012, pch = 19, col = COL[1])
+        }
       }
-      pch[2] <- ifelse(x1[2] < x2[2], r[1], r[2])
-      if (x1[2] == x2[2]) {
-        pch[2] <- ifelse(all(r == "c"), "c", "o")
+    }
+
+    # ___ Union ___#
+    if (tolower(substr(type, 1, 1)) == "u") {
+      if (code1 > 0) {
+        graphics::arrows(x1[1], 0.55012, x1[2], 0.55012,
+          length = 0.07, code = code1, lwd = lwd, col = COL[1]
+        )
+      } else {
+        lines(x1, rep(0.55012, 2), lwd = lwd, col = COL[1])
       }
+
+      if (code2 > 0) {
+        graphics::arrows(x2[1], 0.55012, x2[2], 0.55012,
+          length = 0.07, code = code2, lwd = lwd, col = COL[1]
+        )
+      } else {
+        lines(x2, rep(0.55012, 2), lwd = lwd, col = COL[1])
+      }
+
+      X <- c()
+      pch <- c()
+
+      # ___ Left Point ___#
+      if (x1[1] > xlim[1] && x2[1] > xlim[1]) {
+        cond <- x1[1] < x2[1]
+        X <- append(X, ifelse(cond, x1[1], x2[1]))
+        pch <- append(pch, ifelse(cond, l[1], l[2]))
+      }
+
+      # ___ Right Point ___#
+      if (x1[2] < xlim[2] && x2[2] < xlim[2]) {
+        cond <- x1[2] > x2[2]
+        X <- append(X, ifelse(cond, x1[2], x2[2]))
+        pch <- append(pch, ifelse(cond, r[1], r[2]))
+      }
+
+      # ___ Middle Point 1 ___#
+      if (x1[2] < x2[1]) {
+        X <- append(X, x1[2])
+        pch <- append(pch, r[1])
+        X <- append(X, x2[1])
+        pch <- append(pch, l[2])
+      } else if (x1[2] == x2[1] && r[1] == "o" && l[2] == "o") {
+        X <- append(X, x1[2])
+        pch <- append(pch, "o")
+      }
+
+      # ___ Middle Point 2 ___#
+      if (x1[1] > x2[2]) {
+        X <- append(X, x1[1])
+        pch <- append(pch, l[1])
+        X <- append(X, x2[2])
+        pch <- append(pch, r[2])
+      } else if (x1[1] == x2[2] && r[2] == "o" && l[1] == "o") {
+        X <- append(X, x1[1])
+        pch <- append(pch, "o")
+      }
+
+      # ___ Add Points ___#
       pch <- ifelse(pch == "o", 1, 19)
-      graphics::lines(c(left,right), rep(0.55012, 2),
-            lwd=lwd, col=COL[1])
-      graphics::points(c(left, right), rep(0.55012, 2),
-             pch=19, col="#FFFFFF")
-      graphics::points(c(left, right), rep(0.55012, 2),
-             pch=pch, col=COL[1])
-
-    } else if (left == right) {
-
-      #___ Intersection Is Point ___#
-      pch1 <- ifelse(x1[1] < x2[1], l[2], l[1])
-      pch2 <- ifelse(x1[2] < x2[2], r[1], r[2])
-      if (pch1 == "c" && pch[2] == "c") {
-        X <- ifelse(x1[1] < x2[1], x2[1], x1[1])
-        graphics::points(X, 0.55012, pch=19, col=COL[1])
-      }
+      graphics::points(X, rep(0.55012, length(X)), pch = 19, col = "#FFFFFF")
+      graphics::points(X, rep(0.55012, length(X)), pch = pch, col = COL[1])
     }
   }
-
-  #___ Union ___#
-  if (tolower(substr(type, 1, 1)) == "u") {
-    if(code1 > 0){
-      graphics::arrows(x1[1], 0.55012, x1[2], 0.55012,
-             length=0.07, code=code1, lwd=lwd, col=COL[1])
-    } else {
-      lines(x1, rep(0.55012, 2), lwd=lwd, col=COL[1])
-    }
-
-    if(code2 > 0){
-      graphics::arrows(x2[1], 0.55012, x2[2], 0.55012,
-             length=0.07, code=code2, lwd=lwd, col=COL[1])
-    } else {
-      lines(x2, rep(0.55012, 2), lwd=lwd, col=COL[1])
-    }
-
-    X   <- c()
-    pch <- c()
-
-    #___ Left Point ___#
-    if (x1[1] > xlim[1] && x2[1] > xlim[1]) {
-      cond <- x1[1] < x2[1]
-      X    <- append(X, ifelse(cond, x1[1], x2[1]))
-      pch  <- append(pch, ifelse(cond, l[1], l[2]))
-    }
-
-    #___ Right Point ___#
-    if (x1[2] < xlim[2] && x2[2] < xlim[2]) {
-      cond <- x1[2] > x2[2]
-      X    <- append(X, ifelse(cond, x1[2], x2[2]))
-      pch  <- append(pch, ifelse(cond, r[1], r[2]))
-    }
-
-    #___ Middle Point 1 ___#
-    if (x1[2] < x2[1]) {
-      X    <- append(X, x1[2])
-      pch  <- append(pch, r[1])
-      X    <- append(X, x2[1])
-      pch  <- append(pch, l[2])
-    } else if (x1[2] == x2[1] && r[1] == "o" && l[2] == "o") {
-      X    <- append(X, x1[2])
-      pch  <- append(pch, "o")
-    }
-
-    #___ Middle Point 2 ___#
-    if (x1[1] > x2[2]) {
-      X    <- append(X, x1[1])
-      pch  <- append(pch, l[1])
-      X    <- append(X, x2[2])
-      pch  <- append(pch, r[2])
-    } else if (x1[1] == x2[2] && r[2] == "o" && l[1] == "o") {
-      X    <- append(X, x1[1])
-      pch  <- append(pch, "o")
-    }
-
-    #___ Add Points ___#
-    pch <- ifelse(pch == "o", 1, 19)
-    graphics::points(X, rep(0.55012, length(X)), pch=19, col="#FFFFFF")
-    graphics::points(X, rep(0.55012, length(X)), pch=pch, col=COL[1])
-
-
-  }
-}

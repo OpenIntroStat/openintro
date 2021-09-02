@@ -30,6 +30,5 @@ library(ggplot2)
 ggplot(bac, aes(x = beers, y = bac)) +
   geom_point() +
   labs(x = "Number of beers", y = "Blood alcohol content")
-
 }
 \keyword{datasets}

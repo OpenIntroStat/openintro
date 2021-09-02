@@ -32,6 +32,5 @@ simpler for intro stat analyses.
 \examples{
 
 table(russian_influence_on_us_election_2016)
-
 }
 \keyword{datasets}

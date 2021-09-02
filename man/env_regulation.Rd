@@ -38,6 +38,5 @@ things simpler for intro stat analyses.
 \examples{
 
 table(env_regulation)
-
 }
 \keyword{datasets}

@@ -31,17 +31,24 @@
 #' @export
 #'
 #' @examples
-#' treeDiag(c("Flight on time?","Luggage on time?"),
-#'          c(0.8, 0.2), list(c(0.97, 0.03), c(0.15, 0.85)))
-#' treeDiag(c("Breakfast?","Go to class"), c(.4,.6),
-#'          list(c(0.4,0.36,0.34), c(0.6,0.3,0.1)), c("Yes", "No"),
-#'          c("Statistics","English","Sociology"), showWork = TRUE)
-#' treeDiag(c("Breakfast?","Go to class"), c(0.4, 0.11, 0.49),
-#'          list(c(0.4, 0.36, 0.24), c(0.6, 0.3, 0.1), c(0.1, 0.4, 0.5)),
-#'          c("one", "two", "three"), c("Statistics", "English", "Sociology"))
+#' treeDiag(
+#'   c("Flight on time?", "Luggage on time?"),
+#'   c(0.8, 0.2), list(c(0.97, 0.03), c(0.15, 0.85))
+#' )
+#' treeDiag(c("Breakfast?", "Go to class"), c(.4, .6),
+#'   list(c(0.4, 0.36, 0.34), c(0.6, 0.3, 0.1)), c("Yes", "No"),
+#'   c("Statistics", "English", "Sociology"),
+#'   showWork = TRUE
+#' )
+#' treeDiag(
+#'   c("Breakfast?", "Go to class"), c(0.4, 0.11, 0.49),
+#'   list(c(0.4, 0.36, 0.24), c(0.6, 0.3, 0.1), c(0.1, 0.4, 0.5)),
+#'   c("one", "two", "three"), c("Statistics", "English", "Sociology")
+#' )
 #' treeDiag(c("Dow Jones rise?", "NASDAQ rise?"),
-#'          c(0.53, 0.47), list(c(0.75, 0.25), c(0.72, 0.28)),
-#'          solSub = list(c("(a)", "(b)"), c("(c)", "(d)")), solwd = 0.08)
+#'   c(0.53, 0.47), list(c(0.75, 0.25), c(0.72, 0.28)),
+#'   solSub = list(c("(a)", "(b)"), c("(c)", "(d)")), solwd = 0.08
+#' )
 treeDiag <- function(main,
                      p1,
                      p2,

@@ -15,5 +15,4 @@
 #' @examples
 #'
 #' table(nuclear_survey)
-#'
 "nuclear_survey"

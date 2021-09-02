@@ -109,8 +109,9 @@ ggplot(aug_m3, aes(x = cond, y = .resid)) +
 
 ggplot(aug_m3, aes(x = wheels, y = .resid)) +
   geom_point() +
-  labs(x = "Number of wheels", y = "Residuals",
-       title = "Notice curvature")
-
+  labs(
+    x = "Number of wheels", y = "Residuals",
+    title = "Notice curvature"
+  )
 }
 \keyword{datasets}

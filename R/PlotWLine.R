@@ -20,10 +20,9 @@
 #' @examples
 #'
 #' PlotWLine(1:10, seq(-5, -2, length.out = 10) + rnorm(10))
-#'
 PlotWLine <- function(x, y,
-                      xlab = '',
-                      ylab = '',
+                      xlab = "",
+                      ylab = "",
                       col = fadeColor(4, "88"),
                       cex = 1.2,
                       pch = 20,
@@ -31,18 +30,19 @@ PlotWLine <- function(x, y,
                       nMax = 4,
                       yR = 0.1,
                       axes = TRUE,
-                      ...){
+                      ...) {
   graphics::par(las = 0)
   yR <- range(y) + c(-1, 1) * 0.1 * diff(range(y))
   graphics::plot(x, y,
-       pch = 20,
-       cex = cex,
-       col = col,
-       xlab = '',
-       ylab = '',
-       ylim = yR,
-       axes = FALSE,
-       ...)
+    pch = 20,
+    cex = cex,
+    col = col,
+    xlab = "",
+    ylab = "",
+    ylim = yR,
+    axes = FALSE,
+    ...
+  )
   if (axes) {
     buildAxis(1, x, n, nMax = nMax)
   }

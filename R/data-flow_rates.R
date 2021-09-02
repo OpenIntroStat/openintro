@@ -20,7 +20,7 @@
 #'   labs(
 #'     title = "River flow rates by site",
 #'     x = "Site",
-#'     y = expression(paste("Flow (ft"^3*"/s)"))
+#'     y = expression(paste("Flow (ft"^3 * "/s)"))
 #'   )
 #'
 #' # River flow rates over time
@@ -29,10 +29,9 @@
 #'   labs(
 #'     title = "River flow rates over time",
 #'     x = "Date",
-#'     y = expression(paste("Flow (ft"^3*"/s)")),
+#'     y = expression(paste("Flow (ft"^3 * "/s)")),
 #'     color = "Site", shape = "Site"
 #'   )
-#'
 #' @source [Pierce County Water Data Viewer](https://waterquality.piercecountywa.org/applications/public.html?publicuser=Guest#waterdata/stationoverview).
 #'
 "flow_rates"

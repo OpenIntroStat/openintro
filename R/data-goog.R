@@ -21,5 +21,4 @@
 #' @examples
 #'
 #' goog
-#'
 "goog"

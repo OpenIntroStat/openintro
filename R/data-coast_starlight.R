@@ -19,5 +19,4 @@
 #'
 #' ggplot(coast_starlight, aes(x = dist, y = travel_time)) +
 #'   geom_point()
-#'
 "coast_starlight"

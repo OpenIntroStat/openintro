@@ -19,6 +19,5 @@ Simulated data for a fake political candidate.
 \examples{
 
 toohey
-
 }
 \keyword{datasets}

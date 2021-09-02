@@ -62,7 +62,6 @@ library(ggplot2)
 
 ggplot(mtl, aes(x = ipa_qgrp, y = met_minwk)) +
   geom_boxplot()
-
 }
 \references{
 A New York Times article references this study.

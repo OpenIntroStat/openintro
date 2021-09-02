@@ -73,6 +73,5 @@ here.
 # below we assign the second study's data to an
 # object called `d` (d is for data!).
 d <- children_gender_stereo[[2]]
-
 }
 \keyword{datasets}

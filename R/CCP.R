@@ -41,10 +41,9 @@
 #'
 #' CCP()
 #'
-#' CCP(xylab=TRUE, ylim=c(-3.5, 2), xpos=3, cex.coord=1)
+#' CCP(xylab = TRUE, ylim = c(-3.5, 2), xpos = 3, cex.coord = 1)
 #'
-#' CCP(xlim=c(-8, 8), ylim=c(-10, 6), ticklabs=c(2,2), cex.xylab=0.8)
-#'
+#' CCP(xlim = c(-8, 8), ylim = c(-10, 6), ticklabs = c(2, 2), cex.xylab = 0.8)
 CCP <-
   function(xlim = c(-4, 4), ylim = c(-4, 4), mar = rep(0, 4), length = 0.1, tcl = 0.007, xylab = FALSE, ticks = 1, ticklabs = 1, xpos = 1, ypos = 2, cex.coord = 1, cex.xylab = 1.5, add = FALSE) {
 

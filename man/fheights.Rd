@@ -17,6 +17,5 @@ fheights
 \examples{
 
 hist(fheights$heights)
-
 }
 \keyword{datasets}

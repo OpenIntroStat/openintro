@@ -29,6 +29,5 @@ adults between October 26th and 28th, 2014.
 \examples{
 
 table(ebola_survey)
-
 }
 \keyword{datasets}

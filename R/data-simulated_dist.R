@@ -15,5 +15,4 @@
 #'
 #' data(simulated_dist)
 #' lapply(simulated_dist, qqnorm)
-#'
 "simulated_dist"

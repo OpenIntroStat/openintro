@@ -20,5 +20,4 @@
 #' @examples
 #'
 #' table(socialexp)
-#'
 "socialexp"

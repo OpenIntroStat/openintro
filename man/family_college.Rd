@@ -27,6 +27,5 @@ library(dplyr)
 
 family_college \%>\%
   count(teen, parents)
-
 }
 \keyword{datasets}

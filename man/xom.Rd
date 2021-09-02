@@ -28,6 +28,5 @@ Monthly data covering 2006 through early 2014.
 \examples{
 
 xom
-
 }
 \keyword{datasets}

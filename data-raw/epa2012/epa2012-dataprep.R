@@ -14,7 +14,7 @@ epa2012 <- openintro::epa2012 %>%
     release_date = lubridate::mdy(as.character(release_date)),
     air_aspir_method = if_else(air_aspir_method_desc == "Naturally Aspirated", "NA", as.character(air_aspir_method)),
     air_aspir_method = as.factor(air_aspir_method)
-    )
+  )
 
 # Add to package
 use_data(epa2012, overwrite = TRUE)

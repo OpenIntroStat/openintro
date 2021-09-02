@@ -36,7 +36,7 @@ ggplot(satgpa, aes(x = sat_v, fy_gpa)) +
   labs(
     x = "Verbal SAT percentile",
     y = "First year (college) grade point average"
-    )
+  )
 
 mod <- lm(fy_gpa ~ sat_v, data = satgpa)
 tidy(mod)
@@ -48,11 +48,10 @@ ggplot(satgpa, aes(x = sat_m, fy_gpa)) +
   labs(
     x = "Math SAT percentile",
     y = "First year (college) grade point average"
-    )
+  )
 
 mod <- lm(fy_gpa ~ sat_m, data = satgpa)
 tidy(mod)
-
 }
 \references{
 \url{https://chance.dartmouth.edu/course/Syllabi/Princeton96/ETSValidation.html}

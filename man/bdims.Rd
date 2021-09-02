@@ -82,6 +82,7 @@ multiple regression and discriminant analysis.
 library(ggplot2)
 ggplot(bdims, aes(x = hgt)) +
   geom_histogram(binwidth = 5)
+
 ggplot(bdims, aes(x = hgt, y = wgt)) +
   geom_point() +
   labs(x = "Height", y = "Weight")
@@ -93,6 +94,5 @@ ggplot(bdims, aes(x = hgt, y = sho_gi)) +
 ggplot(bdims, aes(x = hgt, y = hip_gi)) +
   geom_point() +
   labs(x = "Height", y = "Hip girth")
-
 }
 \keyword{datasets}

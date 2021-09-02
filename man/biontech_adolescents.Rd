@@ -39,6 +39,5 @@ biontech_adolescents \%>\%
 
 ggplot(biontech_adolescents, aes(y = group, fill = outcome)) +
   geom_bar()
-
 }
 \keyword{datasets}

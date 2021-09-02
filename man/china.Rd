@@ -26,6 +26,5 @@ national and local governments.
 \examples{
 
 summary(china)
-
 }
 \keyword{datasets}

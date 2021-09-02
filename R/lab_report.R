@@ -28,11 +28,13 @@
 
 lab_report <- function(highlight = "pygments", theme = "spacelab",
                        toc = TRUE, toc_float = TRUE,
-                       code_download = TRUE, code_folding = "show"){
-  rmarkdown::html_document(highlight = highlight,
-                           theme = theme,
-                           toc = toc,
-                           toc_float = toc_float,
-                           code_download = code_download,
-                           code_folding = code_folding)
+                       code_download = TRUE, code_folding = "show") {
+  rmarkdown::html_document(
+    highlight = highlight,
+    theme = theme,
+    toc = toc,
+    toc_float = toc_float,
+    code_download = code_download,
+    code_folding = code_folding
+  )
 }

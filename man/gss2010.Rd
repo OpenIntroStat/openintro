@@ -27,7 +27,5 @@ Data from the 2010 General Social Survey.
 
 
 gss2010
-
-
 }
 \keyword{datasets}

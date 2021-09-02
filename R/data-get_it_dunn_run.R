@@ -26,9 +26,11 @@
 #' @keywords datasets
 #' @examples
 #'
-#' d <- subset(get_it_dunn_run,
-#'     race == "5k" & date == "2018-05-12" &
-#'         !is.na(age) & state %in% c("MN", "WI"))
+#' d <- subset(
+#'   get_it_dunn_run,
+#'   race == "5k" & date == "2018-05-12" &
+#'     !is.na(age) & state %in% c("MN", "WI")
+#' )
 #' head(d)
 #' m <- lm(run_time_minutes ~ sex + age + state, d)
 #' summary(m)
@@ -36,5 +38,4 @@
 #' boxplot(m$residuals ~ d$sex)
 #' plot(m$residuals ~ d$age)
 #' hist(m$residuals)
-#'
 "get_it_dunn_run"

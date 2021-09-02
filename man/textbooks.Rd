@@ -42,6 +42,5 @@ ggplot(textbooks, aes(x = diff)) +
   geom_histogram(binwidth = 5)
 
 t.test(textbooks$diff)
-
 }
 \keyword{datasets}

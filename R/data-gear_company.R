@@ -14,5 +14,4 @@
 #' @examples
 #'
 #' gear_company
-#'
 "gear_company"

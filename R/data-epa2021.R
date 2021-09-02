@@ -62,6 +62,5 @@
 #'   summarise(
 #'     mean_city = mean(city_mpg),
 #'     mean_hwy  = mean(hwy_mpg)
-#'     )
-#'
+#'   )
 "epa2021"

@@ -26,6 +26,5 @@ been getting warmer over the past few decades, or not?"
 \examples{
 
 global_warming_pew
-
 }
 \keyword{datasets}

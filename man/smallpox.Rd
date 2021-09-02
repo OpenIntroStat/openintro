@@ -30,6 +30,5 @@ the likelihood of death.
 
 data(smallpox)
 table(smallpox)
-
 }
 \keyword{datasets}

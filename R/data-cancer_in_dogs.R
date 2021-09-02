@@ -21,5 +21,4 @@
 #' @examples
 #'
 #' table(cancer_in_dogs)
-#'
 "cancer_in_dogs"

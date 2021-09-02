@@ -15,9 +15,9 @@ duke_forest <- duke_forest_raw %>%
       cooling == "Central" ~ "central",
       cooling == "Central, Other" ~ "central",
       TRUE ~ "other"
-      ),
+    ),
     cooling = fct_rev(cooling)
-    ) %>%
+  ) %>%
   rename(url = link) %>%
   relocate(url, .after = last_col())
 

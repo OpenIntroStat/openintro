@@ -26,6 +26,5 @@ Summary of tourism in Turkey.
 \examples{
 
 tourism
-
 }
 \keyword{datasets}

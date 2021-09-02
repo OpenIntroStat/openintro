@@ -36,7 +36,6 @@ ggplot(infmortrate, aes(x = inf_mort_rate)) +
 
 ggplot(infmortrate, aes(x = inf_mort_rate)) +
   geom_density()
-
 }
 \keyword{datasets}
 \keyword{distribution}

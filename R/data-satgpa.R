@@ -29,7 +29,7 @@
 #'   labs(
 #'     x = "Verbal SAT percentile",
 #'     y = "First year (college) grade point average"
-#'     )
+#'   )
 #'
 #' mod <- lm(fy_gpa ~ sat_v, data = satgpa)
 #' tidy(mod)
@@ -41,9 +41,8 @@
 #'   labs(
 #'     x = "Math SAT percentile",
 #'     y = "First year (college) grade point average"
-#'     )
+#'   )
 #'
 #' mod <- lm(fy_gpa ~ sat_m, data = satgpa)
 #' tidy(mod)
-#'
 "satgpa"

@@ -21,5 +21,4 @@
 #' @examples
 #'
 #' table(ebola_survey)
-#'
 "ebola_survey"

@@ -6,7 +6,7 @@ raw_data <- read.csv(here::here("data-raw/sowc_maternal_newborn/sowc_maternal_ne
 # cleaning ----------------------------------------------------------------------
 # no clean required
 
-sowc_maternal_newborn<- raw_data
+sowc_maternal_newborn <- raw_data
 
 # save --------------------------------------------------------------------------
 

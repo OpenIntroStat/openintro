@@ -25,6 +25,5 @@ library(ggplot2)
 ggplot(simulated_scatter, aes(x = x, y = y)) +
   geom_point() +
   facet_wrap(~group)
-
 }
 \keyword{datasets}

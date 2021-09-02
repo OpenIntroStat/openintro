@@ -7,7 +7,8 @@ library(readxl)
 # Load data --------------------------------------------------------------------
 
 epa2021_raw <- read_excel(here::here("data-raw/epa2021/2021 FE Guide for DOE-release dates before 4-10-2021-no-sales -4-9-2021UpdatePorscheforpublic.xlsx"),
-           sheet = 1)
+  sheet = 1
+)
 
 epa2021_selected <- epa2021_raw %>%
   select(
@@ -32,7 +33,7 @@ epa2021 <- epa2021_selected %>%
     across(where(is.character), as.factor),
     air_aspir_method = if_else(air_aspir_method_desc == "Naturally Aspirated", "NA", as.character(air_aspir_method)),
     air_aspir_method = as.factor(air_aspir_method)
-    )
+  )
 
 # Add to package
 use_data(epa2021, overwrite = TRUE)

@@ -30,7 +30,5 @@ were kept in the order given above, or the two statements were reversed.
 
 
 healthcare_law_survey
-
-
 }
 \keyword{datasets}

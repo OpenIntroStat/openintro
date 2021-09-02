@@ -13,5 +13,4 @@
 #' @examples
 #'
 #' stats_scores
-#'
 "stats_scores"

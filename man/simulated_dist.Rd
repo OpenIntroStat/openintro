@@ -21,6 +21,5 @@ from actual normal distributions.
 
 data(simulated_dist)
 lapply(simulated_dist, qqnorm)
-
 }
 \keyword{datasets}

@@ -26,13 +26,12 @@ Explore different plotting methods using a click interface.
 \examples{
 
 data(mlbbat10)
-bat <- mlbbat10[mlbbat10$at_bat > 200,]
-#edaPlot(bat)
+bat <- mlbbat10[mlbbat10$at_bat > 200, ]
+# edaPlot(bat)
 
 data(mariokart)
-mk <- mariokart[mariokart$total_pr < 100,]
-#edaPlot(mk)
-
+mk <- mariokart[mariokart$total_pr < 100, ]
+# edaPlot(mk)
 }
 \seealso{
 \code{\link{histPlot}}, \code{\link{densityPlot}},

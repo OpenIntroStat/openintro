@@ -36,9 +36,11 @@ oscars <- oscars_combined %>%
     age = (decimal_date(oscar_date) - decimal_date(birth_date)) %>% floor(),
     ## gender -> award
     award = ifelse(gender == "male", "Best actor", "Best actress")
-    ) %>%
-  select(oscar_no, oscar_yr, award, name, movie, age, birth_pl,
-         birth_date, birth_mo, birth_d, birth_y)
+  ) %>%
+  select(
+    oscar_no, oscar_yr, award, name, movie, age, birth_pl,
+    birth_date, birth_mo, birth_d, birth_y
+  )
 
 # Save -------------------------------------------------------------------------
 use_data(oscars, overwrite = TRUE)
