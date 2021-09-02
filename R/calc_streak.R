@@ -6,14 +6,15 @@
 #' @examples
 #' data(kobe_basket)
 #' calc_streak(kobe_basket$shot)
-#'
 #' @export
 
 calc_streak <- function(x) {
-  if (!is.atomic(x))
+  if (!is.atomic(x)) {
     x <- x[, 1]
-  if (any(!x %in% c("H","M")))
+  }
+  if (any(!x %in% c("H", "M"))) {
     stop('Input should only contain hits ("H") and misses ("M")')
+  }
 
   y <- rep(0, length(x))
   y[x == "H"] <- 1

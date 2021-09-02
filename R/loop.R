@@ -20,10 +20,9 @@
 #' @export
 #' @examples
 #'
-#' for(i in 1:160){
-#' 	loop(i, 160, 20, paste("iter", i))
+#' for (i in 1:160) {
+#'   loop(i, 160, 20, paste("iter", i))
 #' }
-#'
 loop <- function(i, n = NULL, every = 1, extra = NULL) {
   if (i %% every == 0) {
     if (is.null(n)[1]) {

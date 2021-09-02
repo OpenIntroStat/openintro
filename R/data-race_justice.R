@@ -45,7 +45,6 @@
 #' equal treatment from the police?",
 #'     fill = "Response"
 #'   )
-#'
 #' @source [Yahoo! News Race and Justice - May 31, 2020](https://docs.cdn.yougov.com/s23agrrx47/20200531_yahoo_race_and_justice_crosstabs.pdf).
 #'
 "race_justice"

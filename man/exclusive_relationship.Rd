@@ -22,6 +22,5 @@ relationships these students have been in.
 summary(exclusive_relationship$num)
 table(exclusive_relationship$num)
 hist(exclusive_relationship$num)
-
 }
 \keyword{datasets}

@@ -11,8 +11,7 @@ page3 <- read_html("https://www.zillow.com/homes/recently_sold/3_p/?searchQueryS
 
 # function: read_zillow --------------------------------------------------------
 
-read_zillow <- function(page){
-
+read_zillow <- function(page) {
   addresses <- page %>%
     html_nodes(".list-card-addr") %>%
     html_text()
@@ -37,7 +36,6 @@ read_zillow <- function(page){
     details = details,
     link    = links
   )
-
 }
 
 # all houses -------------------------------------------------------------------
@@ -46,7 +44,7 @@ df1 <- read_zillow(page1)
 df2 <- read_zillow(page2)
 df3 <- read_zillow(page3)
 
-df_raw  <- bind_rows(df1, df2, df3)
+df_raw <- bind_rows(df1, df2, df3)
 
 # clean data -------------------------------------------------------------------
 
@@ -73,8 +71,7 @@ df_raw <- df_raw %>%
 
 # function: get_features -------------------------------------------------------
 
-get_features <- function(url){
-
+get_features <- function(url) {
   page <- read_html(url)
 
   Sys.sleep(rpois(1, lambda = 1))
@@ -88,7 +85,6 @@ get_features <- function(url){
       ~ setNames(.x[2], .x[1])
     ) %>%
     unlist()
-
 }
 
 # get features -----------------------------------------------------------------
@@ -104,7 +100,7 @@ df <- df %>%
   mutate(
     lot = parse_number(lot),
     lot = if_else(lot > 100, round(lot / 43560, 2), lot)
-    ) %>%
+  ) %>%
   filter(type == "Single Family")
 
 # write csv --------------------------------------------------------------------

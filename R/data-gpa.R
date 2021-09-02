@@ -15,5 +15,4 @@
 #' @examples
 #'
 #' gpa
-#'
 "gpa"

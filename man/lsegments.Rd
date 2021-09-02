@@ -42,12 +42,11 @@ Creae a simple plot showing a line segment.
 }
 \examples{
 
-lsegments(c(2,7), "o", "c", ylim=c(-0.3, 0.2))
+lsegments(c(2, 7), "o", "c", ylim = c(-0.3, 0.2))
 
-lsegments(c(5,7), "c", "c", ylim=c(-0.3, 0.2))
+lsegments(c(5, 7), "c", "c", ylim = c(-0.3, 0.2))
 
-lsegments(c(4,1000), "o", "o", ylim=c(-0.3, 0.2))
-
+lsegments(c(4, 1000), "o", "o", ylim = c(-0.3, 0.2))
 }
 \seealso{
 \code{\link{dlsegments}}, \code{\link{CCP}},

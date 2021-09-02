@@ -30,5 +30,4 @@
 #'
 #' ggplot(biontech_adolescents, aes(y = group, fill = outcome)) +
 #'   geom_bar()
-#'
 "biontech_adolescents"

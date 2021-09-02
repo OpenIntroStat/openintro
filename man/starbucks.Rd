@@ -28,6 +28,5 @@ Nutrition facts for several Starbucks food items
 \examples{
 
 starbucks
-
 }
 \keyword{datasets}

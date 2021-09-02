@@ -17,5 +17,4 @@
 #' @examples
 #'
 #' full_body_scan
-#'
 "full_body_scan"

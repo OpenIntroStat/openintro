@@ -20,6 +20,5 @@ Data on 78 students including GPA, IQ, and gender.
 \examples{
 
 gpa_iq
-
 }
 \keyword{datasets}

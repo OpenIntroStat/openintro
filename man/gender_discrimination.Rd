@@ -29,6 +29,5 @@ table(gender_discrimination)
 
 ggplot(gender_discrimination, aes(y = gender, fill = decision)) +
   geom_bar(position = "fill")
-
 }
 \keyword{datasets}

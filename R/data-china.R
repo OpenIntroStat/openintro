@@ -18,5 +18,4 @@
 #' @examples
 #'
 #' summary(china)
-#'
 "china"

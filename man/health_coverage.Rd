@@ -25,7 +25,5 @@ Surveillance System.
 
 
 table(health_coverage)
-
-
 }
 \keyword{datasets}

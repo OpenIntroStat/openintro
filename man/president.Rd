@@ -31,7 +31,5 @@ States of America.
 
 
 president
-
-
 }
 \keyword{datasets}

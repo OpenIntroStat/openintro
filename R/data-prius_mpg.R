@@ -16,7 +16,7 @@
 #'   \item{stop_and_go}{Proportion of stop and go driving.}
 #'   \item{highway}{Proportion of highway driving.}
 #'   \item{last_updated}{Date estimate was last updated.}
-#'}
+#' }
 #' @source Fueleconomy.gov,
 #' \url{https://www.fueleconomy.gov/mpg/MPG.do?action=mpgData&vehicleID=38531&browser=true&details=on},
 #' retrieved 2019-04-14.
@@ -28,5 +28,4 @@
 #'
 #' ggplot(prius_mpg, aes(x = average_mpg)) +
 #'   geom_histogram(binwidth = 25)
-#'
 "prius_mpg"

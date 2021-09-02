@@ -27,5 +27,4 @@
 #'
 #' # 365-day results
 #' table(stent365)
-#'
 "stent30"

@@ -23,6 +23,5 @@ A SurveyUSA poll.
 \examples{
 
 table(dream)
-
 }
 \keyword{datasets}

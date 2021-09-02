@@ -17,5 +17,4 @@
 #' @examples
 #'
 #' outliers
-#'
 "outliers"

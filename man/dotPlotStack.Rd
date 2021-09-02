@@ -31,7 +31,6 @@ the dot plot are returned from the function in a list.
 \examples{
 
 #
-
 }
 \seealso{
 \code{\link{dotPlot}}, \code{\link{histPlot}}

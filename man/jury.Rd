@@ -20,7 +20,5 @@ juries.
 
 
 jury
-
-
 }
 \keyword{datasets}

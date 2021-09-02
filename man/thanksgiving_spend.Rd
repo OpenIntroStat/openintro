@@ -25,7 +25,6 @@ library(ggplot2)
 
 ggplot(thanksgiving_spend, aes(x = spending)) +
   geom_histogram(binwidth = 20)
-
 }
 \keyword{datasets}
 \keyword{distribution}

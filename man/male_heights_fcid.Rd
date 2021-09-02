@@ -23,6 +23,5 @@ This sample is based on data from the USDA Food Commodity Intake Database.
 
 data(male_heights_fcid)
 histPlot(male_heights_fcid$height_inch)
-
 }
 \keyword{datasets}

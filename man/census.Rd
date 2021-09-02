@@ -34,7 +34,6 @@ library(ggplot2)
 census \%>\%
   filter(total_family_income > 0) \%>\%
   ggplot(aes(x = total_family_income)) +
-    geom_histogram(binwidth = 25000)
-
+  geom_histogram(binwidth = 25000)
 }
 \keyword{datasets}

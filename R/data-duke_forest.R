@@ -31,7 +31,7 @@
 #'     y = "Sale price (USD)",
 #'     title = "Homes for sale in Duke Forest, Durham, NC",
 #'     subtitle = "Data are from November 2020"
-#'     )
+#'   )
 #'
 #' # Area and price
 #' ggplot(duke_forest, aes(x = area, y = price)) +
@@ -41,7 +41,6 @@
 #'     y = "Sale price (USD)",
 #'     title = "Homes for sale in Duke Forest, Durham, NC",
 #'     subtitle = "Data are from November 2020"
-#'     )
-#'
+#'   )
 #' @source Data were collected from [Zillow.com](https://www.zillow.com/) in November 2020.
 "duke_forest"

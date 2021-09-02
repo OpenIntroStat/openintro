@@ -21,6 +21,5 @@ ANOVA is based off of.
 \examples{
 
 toy_anova
-
 }
 \keyword{datasets}

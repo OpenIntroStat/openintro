@@ -20,6 +20,5 @@ used a particular medical consultant.
 \examples{
 
 transplant
-
 }
 \keyword{datasets}

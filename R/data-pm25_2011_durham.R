@@ -36,5 +36,4 @@
 #' @examples
 #'
 #' pm25_2011_durham
-#'
 "pm25_2011_durham"

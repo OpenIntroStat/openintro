@@ -36,6 +36,5 @@ ggplot(elmhurst, aes(x = family_income, y = gift_aid)) +
 
 mod <- lm(gift_aid ~ family_income, data = elmhurst)
 tidy(mod)
-
 }
 \keyword{datasets}

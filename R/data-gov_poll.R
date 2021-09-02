@@ -16,5 +16,4 @@
 #' @examples
 #'
 #' gov_poll
-#'
 "gov_poll"

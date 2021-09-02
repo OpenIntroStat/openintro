@@ -22,6 +22,5 @@ about their height, fastest speed they have ever driven, and gender.
 \examples{
 
 speed_gender_height
-
 }
 \keyword{datasets}

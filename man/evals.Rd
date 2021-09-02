@@ -61,6 +61,5 @@ information on the course and the professor who taught that course.
 \examples{
 
 evals
-
 }
 \keyword{datasets}

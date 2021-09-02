@@ -26,5 +26,4 @@
 #' ggplot(cle_sac, aes(x = personal_income)) +
 #'   geom_histogram(binwidth = 20000) +
 #'   facet_wrap(~city)
-#'
 "cle_sac"

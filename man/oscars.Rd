@@ -49,6 +49,5 @@ ggplot(oscars, aes(x = factor(birth_mo))) +
 
 oscars \%>\%
   count(birth_pl, sort = TRUE)
-
 }
 \keyword{datasets}

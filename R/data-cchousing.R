@@ -14,5 +14,4 @@
 #' @examples
 #'
 #' hist(cchousing$price)
-#'
 "cchousing"

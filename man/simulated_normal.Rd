@@ -19,6 +19,5 @@ Data were simulated using \code{\link{rnorm}}.
 
 data(simulated_normal)
 lapply(simulated_normal, qqnorm)
-
 }
 \keyword{datasets}

@@ -54,7 +54,6 @@ histPlot(mariokart$total_pr)
 # myPNG("myPlot.png")
 histPlot(mariokart$total_pr)
 # dev.off()
-
 }
 \seealso{
 \code{\link{edaPlot}}

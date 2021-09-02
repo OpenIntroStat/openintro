@@ -23,6 +23,5 @@ support nuclear arms reduction.
 \examples{
 
 table(nuclear_survey)
-
 }
 \keyword{datasets}

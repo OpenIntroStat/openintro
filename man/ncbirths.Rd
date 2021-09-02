@@ -48,7 +48,6 @@ ggplot(ncbirths, aes(x = whitemom, y = visits)) +
 ggplot(ncbirths, aes(x = mature, y = gained)) +
   geom_boxplot() +
   labs(x = "Mother's age category", y = "Weight gained during pregnancy")
-
 }
 \seealso{
 We do not have ideal provenance for these data. For a better

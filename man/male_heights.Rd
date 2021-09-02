@@ -17,7 +17,6 @@ Random sample based on Food Commodity Intake Database distribution
 \examples{
 
 male_heights
-
 }
 \references{
 What We Eat In America - Food Commodity Intake Database.

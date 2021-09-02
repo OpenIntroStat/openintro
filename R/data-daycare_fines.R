@@ -58,5 +58,4 @@
 #'   ggplot(aes(x = week, y = avg_late_pickups, group = group, color = group)) +
 #'   geom_point() +
 #'   geom_line()
-#'
 "daycare_fines"

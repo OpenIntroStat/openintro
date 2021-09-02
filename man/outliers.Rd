@@ -23,6 +23,5 @@ Data sets for showing different types of outliers
 \examples{
 
 outliers
-
 }
 \keyword{datasets}

@@ -28,6 +28,5 @@ near them (control).
 \examples{
 
 yawn
-
 }
 \keyword{datasets}

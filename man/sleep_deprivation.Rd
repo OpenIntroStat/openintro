@@ -28,6 +28,5 @@ non-transportation workers.
 \examples{
 
 sleep_deprivation
-
 }
 \keyword{datasets}

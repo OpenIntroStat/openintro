@@ -7,7 +7,7 @@ library(usethis)
 # Uses IMD colors
 # TO DO: Add option to choose COL (official OpenIntro colors) as well
 
-openintro_colors <- IMSCOL[,1]
+openintro_colors <- IMSCOL[, 1]
 
 openintro_palettes <- list(
   main  = openintro_cols("blue", "green", "pink", "yellow", "red"),

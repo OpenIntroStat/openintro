@@ -52,5 +52,4 @@
 #' @examples
 #'
 #' evals
-#'
 "evals"

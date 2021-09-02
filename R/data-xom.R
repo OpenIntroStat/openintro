@@ -20,5 +20,4 @@
 #' @examples
 #'
 #' xom
-#'
 "xom"

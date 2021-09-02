@@ -20,6 +20,5 @@ Simulated data set.
 \examples{
 
 table(books)
-
 }
 \keyword{datasets}

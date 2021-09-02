@@ -28,6 +28,5 @@ A comparison of cardiovascular problems for Rosiglitazone and Pioglitazone.
 \examples{
 
 table(avandia)
-
 }
 \keyword{datasets}

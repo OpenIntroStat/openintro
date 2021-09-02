@@ -80,7 +80,6 @@ myH <- c(1, 0.45)
 par(mar = c(0.35, 0.654, 0.35, 0.654))
 layout(myMat, myW, myH)
 linResPlot(x, y, col = COL[1, 2])
-
 }
 \seealso{
 \code{\link{makeTube}}

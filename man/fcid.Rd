@@ -18,6 +18,5 @@ Sample of heights based on the weighted sample in the survey.
 \examples{
 
 fcid
-
 }
 \keyword{datasets}

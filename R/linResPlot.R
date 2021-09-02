@@ -36,17 +36,16 @@
 #' par(mar = c(0.35, 0.654, 0.35, 0.654))
 #' layout(myMat, myW, myH)
 #' linResPlot(x, y, col = COL[1, 2])
-#'
 linResPlot <- function(x, y,
                        axes = FALSE,
                        wBox = TRUE,
                        wLine = TRUE,
-                       lCol = '#00000088',
+                       lCol = "#00000088",
                        lty = 1,
                        lwd = 1,
-                       main = '',
-                       xlab = '',
-                       ylab = '',
+                       main = "",
+                       xlab = "",
+                       ylab = "",
                        marRes = NULL,
                        col = fadeColor(4, "88"),
                        pch = 20,
@@ -54,45 +53,47 @@ linResPlot <- function(x, y,
                        yR = 0.1,
                        ylim = NULL,
                        subset = NULL,
-                       ...){
-  if(is.null(ylim)[1]){
+                       ...) {
+  if (is.null(ylim)[1]) {
     YR <- range(y) + c(-1, 1) * yR * diff(range(y))
   } else {
     YR <- ylim
   }
   plot(x, y,
-       axes = axes,
-       main = main,
-       xlab = '',
-       ylab = ylab,
-       col = col,
-       pch = pch,
-       cex = cex,
-       ylim = YR,
-       ...)
-  if(wBox){
+    axes = axes,
+    main = main,
+    xlab = "",
+    ylab = ylab,
+    col = col,
+    pch = pch,
+    cex = cex,
+    ylim = YR,
+    ...
+  )
+  if (wBox) {
     graphics::box()
   }
   g <- stats::lm(y ~ x, subset = subset)
-  if(wLine){
+  if (wLine) {
     graphics::abline(g, col = lCol, lty = lty, lwd = lwd)
   }
-  if(!is.null(marRes)[1]){
+  if (!is.null(marRes)[1]) {
     graphics::par(mar = marRes)
   }
   X <- list(x = x)
   y <- y - stats::predict(g, X)
   YR <- range(y) + c(-1, 1) * yR * diff(range(y))
   graphics::plot(x, y,
-       axes = axes,
-       xlab = xlab,
-       ylab = '',
-       col = col,
-       pch = pch,
-       cex = cex,
-       ylim = YR,
-       ...)
-  if(wBox){
+    axes = axes,
+    xlab = xlab,
+    ylab = "",
+    col = col,
+    pch = pch,
+    cex = cex,
+    ylim = YR,
+    ...
+  )
+  if (wBox) {
     graphics::box()
   }
   graphics::abline(h = 0, lty = 3, col = lCol)

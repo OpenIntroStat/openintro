@@ -40,6 +40,5 @@ lines(solar.ha$date, solar.ha$kwh, col = 4)
 
 d <- merge(solar.ha, solar.is, by = "date")
 plot(d$date, d$kwh.x / d$kwh.y, type = "l")
-
 }
 \keyword{datasets}

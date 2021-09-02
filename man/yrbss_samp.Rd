@@ -40,6 +40,5 @@ A sample of the \code{\link{yrbss}} data set.
 \examples{
 
 table(yrbss_samp$physically_active_7d)
-
 }
 \keyword{datasets}

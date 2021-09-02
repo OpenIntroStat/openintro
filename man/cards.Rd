@@ -28,6 +28,5 @@ table(cards$color)
 table(cards$suit)
 table(cards$face)
 table(cards$suit, cards$face)
-
 }
 \keyword{datasets}

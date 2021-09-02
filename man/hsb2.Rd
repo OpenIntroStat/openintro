@@ -37,8 +37,6 @@ ggplot(hsb2, aes(x = read - write, y = ses)) +
   labs(
     x = "Difference between reading and writing scores",
     y = "Socio-economic status"
-    )
-
-
+  )
 }
 \keyword{datasets}

@@ -29,6 +29,5 @@ each month was collected.
 \examples{
 
 goog
-
 }
 \keyword{datasets}

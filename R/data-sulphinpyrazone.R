@@ -18,5 +18,4 @@
 #' @examples
 #'
 #' sulphinpyrazone
-#'
 "sulphinpyrazone"

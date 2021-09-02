@@ -12,6 +12,6 @@ midterms_house <- midterms_house_orig %>%
     party = as.character(party),
     party = if_else(party == "Democratic", "Democrat", party),
     party = as.factor(party)
-    )
+  )
 
 usethis::use_data(midterms_house, overwrite = TRUE)

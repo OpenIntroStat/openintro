@@ -15,5 +15,4 @@
 #' @examples
 #'
 #' supreme_court
-#'
 "supreme_court"

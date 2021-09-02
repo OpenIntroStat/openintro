@@ -18,5 +18,4 @@
 #' @examples
 #'
 #' country_iso
-#'
 "country_iso"

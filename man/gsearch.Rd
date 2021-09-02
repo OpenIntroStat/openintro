@@ -27,6 +27,5 @@ table(gsearch$type, gsearch$outcome)
 ggplot(gsearch, aes(x = type, fill = outcome)) +
   geom_bar(position = "fill") +
   labs(y = "proportion")
-
 }
 \keyword{datasets}

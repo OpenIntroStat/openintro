@@ -17,10 +17,9 @@
 #'   the object (\code{"R"}).
 #' @export
 #' @examples
-#'
 #' \dontrun{
-#'   write_pkg_data("openintro")
-#'   list.files("data-csv")
+#' write_pkg_data("openintro")
+#' list.files("data-csv")
 #' }
 write_pkg_data <- function(pkg, dir = paste0("data-", out_type), overwrite = FALSE, out_type = c("csv", "tab", "R")) {
   out_type <- match.arg(out_type)
@@ -52,8 +51,7 @@ write_pkg_data <- function(pkg, dir = paste0("data-", out_type), overwrite = FAL
       tmp_data <- as.data.frame(tmp_data)
     }
     if (is.data.frame(tmp_data)) {
-      file_name <- switch(
-        out_type,
+      file_name <- switch(out_type,
         csv = paste0(data_sets[i], ".csv"),
         tab = paste0(data_sets[i], ".txt"),
         R = paste0(data_sets[i], ".R")
@@ -62,12 +60,11 @@ write_pkg_data <- function(pkg, dir = paste0("data-", out_type), overwrite = FAL
         overwrite_skip <- overwrite_skip + 1
         overwrite_skip_list <- append(overwrite_skip_list, data_sets[i])
       } else {
-      	destination <- paste0(dir, file_name)
+        destination <- paste0(dir, file_name)
         # Future implementations for other data formats may use:
         # - readr::write_delim()
         # - writexl::write_xlsx()
-        switch(
-          out_type,
+        switch(out_type,
           csv = readr::write_csv(x = tmp_data, path = destination),
           tab = readr::write_delim(x = tmp_data, path = destination, delim = "\t"),
           R = dput(x = tmp_data, file = destination)
@@ -80,8 +77,9 @@ write_pkg_data <- function(pkg, dir = paste0("data-", out_type), overwrite = FAL
     }
     utils::setTxtProgressBar(pb, i)
   }
-  overwrite_skip_listed <-  paste0(
-    "  - ", overwrite_skip_list, collapse = "\n"
+  overwrite_skip_listed <- paste0(
+    "  - ", overwrite_skip_list,
+    collapse = "\n"
   )
   overwrite_skip_listed <-
     ifelse(
@@ -89,14 +87,14 @@ write_pkg_data <- function(pkg, dir = paste0("data-", out_type), overwrite = FAL
       "",
       paste0(overwrite_skip_listed, "\n")
     )
-  skipped_listed <-  paste0("  - ", skipped_list, collapse = "\n")
+  skipped_listed <- paste0("  - ", skipped_list, collapse = "\n")
   skipped_listed <-
     ifelse(skipped_listed == "  - ", "", skipped_listed)
   message(
     "\n\n- ", written, " data sets were written.\n",
     "- ", overwrite_skip, " data sets were skipped, because they already ",
-      "existed.\n", overwrite_skip_listed,
+    "existed.\n", overwrite_skip_listed,
     "- ", skipped, " data sets were not matrices or data frames and so ",
-      "could not be written.\n", skipped_listed
+    "could not be written.\n", skipped_listed
   )
 }

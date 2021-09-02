@@ -58,6 +58,5 @@ ggplot(race_justice, aes(x = race_eth, fill = response)) +
 equal treatment from the police?",
     fill = "Response"
   )
-
 }
 \keyword{datasets}

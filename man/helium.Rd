@@ -37,7 +37,5 @@ controversy, "The Columbus Dispatch (November, 21, 1993), B7.
 
 boxPlot(helium$air, xlab = "air")
 boxPlot(helium$helium, xlab = "helium")
-
-
 }
 \keyword{datasets}

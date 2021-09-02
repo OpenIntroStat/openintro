@@ -18,5 +18,4 @@
 #'
 #' ggplot(credits, aes(x = credits)) +
 #'   geom_histogram(binwidth = 1)
-#'
 "credits"

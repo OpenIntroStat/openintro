@@ -18,8 +18,10 @@ births <- full_births %>%
     marital = DMAR,
     whitemom = MBRACE
   ) %>%
-  select(fage_cat, mage, weeks, visits,
-         gained, weight_g, sex, habit, marital, whitemom)
+  select(
+    fage_cat, mage, weeks, visits,
+    gained, weight_g, sex, habit, marital, whitemom
+  )
 
 births <- births %>%
   mutate(
@@ -83,12 +85,14 @@ births <- births %>%
     )
   )
 births <- births %>%
-  select(fage_cat, mage, mature, weeks, premie, visits,
-         gained, weight, lowbirthweight, sex, habit,
-         marital, whitemom)
+  select(
+    fage_cat, mage, mature, weeks, premie, visits,
+    gained, weight, lowbirthweight, sex, habit,
+    marital, whitemom
+  )
 
 simulate_ages <- function(.x, .y) {
-  if(is.na(.y)) {
+  if (is.na(.y)) {
     rep(NA_integer_, times = nrow(.x))
   } else if (.y == "Under 15 years") {
     sample(11:14, size = nrow(.x), replace = TRUE)
@@ -109,10 +113,12 @@ births <- births %>%
   ungroup()
 
 births <- births %>%
-  mutate(weight = round(weight, digits=2)) %>%
-  select(fage, mage, mature, weeks, premie, visits,
-         gained, weight, lowbirthweight, sex, habit,
-         marital, whitemom)
+  mutate(weight = round(weight, digits = 2)) %>%
+  select(
+    fage, mage, mature, weeks, premie, visits,
+    gained, weight, lowbirthweight, sex, habit,
+    marital, whitemom
+  )
 set.seed(42)
 births14 <- births %>%
   sample_n(1000)

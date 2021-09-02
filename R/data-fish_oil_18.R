@@ -50,5 +50,4 @@
 #' (tab <- fish_oil_18[["myocardioal_infarction"]])
 #' chisq.test(tab)
 #' fisher.test(tab)
-#'
 "fish_oil_18"

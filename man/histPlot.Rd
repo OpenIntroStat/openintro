@@ -76,36 +76,40 @@ histPlot(tips$tip, main = "Tips")
 
 # overlaid hollow histograms
 histPlot(tips$tip[tips$day == "Tuesday"],
-         probability = TRUE,
-         hollow = TRUE,
-         main = "Tips by day")
+  probability = TRUE,
+  hollow = TRUE,
+  main = "Tips by day"
+)
 histPlot(tips$tip[tips$day == "Friday"],
-         probability = TRUE,
-         hollow = TRUE,
-         add = TRUE,
-         lty = 3,
-         border = "red")
+  probability = TRUE,
+  hollow = TRUE,
+  add = TRUE,
+  lty = 3,
+  border = "red"
+)
 legend("topright",
-       col = c("black", "red"),
-       lty = 1:2,
-       legend = c("Tuesday", "Friday"))
+  col = c("black", "red"),
+  lty = 1:2,
+  legend = c("Tuesday", "Friday")
+)
 
 # breaks and colors
 histPlot(tips$tip,
-         col = fadeColor("yellow", "33"),
-         border = "darkblue",
-         probability = TRUE,
-         breaks = 30,
-         lwd = 3)
+  col = fadeColor("yellow", "33"),
+  border = "darkblue",
+  probability = TRUE,
+  breaks = 30,
+  lwd = 3
+)
 
 # custom breaks
 brks <- c(-1, 0, 1, 2, 3, 4, seq(5, 20, 5), 22, 24, 26)
 histPlot(tips$tip,
-         probability = TRUE,
-         breaks = brks,
-         col = fadeColor("darkgoldenrod4", "33"),
-         xlim = c(0, 26))
-
+  probability = TRUE,
+  breaks = brks,
+  col = fadeColor("darkgoldenrod4", "33"),
+  xlim = c(0, 26)
+)
 }
 \seealso{
 \code{\link{boxPlot}}, \code{\link{dotPlot}},

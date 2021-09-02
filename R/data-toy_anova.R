@@ -15,5 +15,4 @@
 #' @examples
 #'
 #' toy_anova
-#'
 "toy_anova"

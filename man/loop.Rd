@@ -23,10 +23,9 @@ or the procedures in each iteration take a long time.
 }
 \examples{
 
-for(i in 1:160){
-	loop(i, 160, 20, paste("iter", i))
+for (i in 1:160) {
+  loop(i, 160, 20, paste("iter", i))
 }
-
 }
 \seealso{
 \code{\link{myPDF}}

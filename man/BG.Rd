@@ -15,9 +15,11 @@ Overlays a colored rectangle over the entire plotting region.
 \examples{
 
 Test <- function(col) {
-  plot(1:7, col = COL[1:7], pch = 19, cex = 5,
-      xlim = c(0, 8),
-      ylim = c(0, 9))
+  plot(1:7,
+    col = COL[1:7], pch = 19, cex = 5,
+    xlim = c(0, 8),
+    ylim = c(0, 9)
+  )
   BG(col)
   points(2:8, col = COL[1:7], pch = 19, cex = 5)
   text(2, 6, "Correct Color")
@@ -35,7 +37,6 @@ Test(COL[5, 3])
 
 # Basically useless due to heavy color gradient
 Test(COL[4, 2])
-
 }
 \seealso{
 \code{\link{COL}}

@@ -16,5 +16,4 @@
 #' @examples
 #'
 #' table(drug_use)
-#'
 "drug_use"

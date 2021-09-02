@@ -28,6 +28,5 @@ must be observed before each Up day.
 \examples{
 
 sp500_seq
-
 }
 \keyword{datasets}

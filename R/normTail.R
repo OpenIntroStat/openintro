@@ -44,13 +44,14 @@
 #' @examples
 #'
 #' normTail(3, 2, 5)
-#' normTail(3, 2, 1, xLab = 'symbol')
-#' normTail(3, 2, M = 1:2, xLab = 'symbol', cex.axis = 0.8)
+#' normTail(3, 2, 1, xLab = "symbol")
+#' normTail(3, 2, M = 1:2, xLab = "symbol", cex.axis = 0.8)
 #' normTail(3, 2, U = 5, axes = FALSE)
 #' normTail(L = -1, U = 2, M = c(0, 1), axes = 3, xAxisIncr = 2)
-#' normTail(L = -1, U = 2, M = c(0, 1),
-#'          xLab = 'symbol', cex.axis = 0.8, xAxisIncr = 2)
-#'
+#' normTail(
+#'   L = -1, U = 2, M = c(0, 1),
+#'   xLab = "symbol", cex.axis = 0.8, xAxisIncr = 2
+#' )
 `normTail` <- function(m = 0,
                        s = 1,
                        L = NULL,
@@ -59,15 +60,15 @@
                        df = 1000,
                        curveColor = 1,
                        border = 1,
-                       col = '#CCCCCC',
+                       col = "#CCCCCC",
                        xlim = NULL,
                        ylim = NULL,
-                       xlab = '',
-                       ylab = '',
+                       xlab = "",
+                       ylab = "",
                        digits = 2,
                        axes = 1,
                        detail = 999,
-                       xLab = c('number', 'symbol'),
+                       xLab = c("number", "symbol"),
                        cex.axis = 1,
                        xAxisIncr = 1,
                        add = FALSE,
@@ -76,10 +77,11 @@
     xlim <- m + c(-1, 1) * 3.5 * s
   }
   temp <- diff(range(xlim))
-  x    <- seq(xlim[1] - temp / 4,
-              xlim[2] + temp / 4,
-              length.out = detail)
-  y    <- stats::dt((x - m) / s, df) / s
+  x <- seq(xlim[1] - temp / 4,
+    xlim[2] + temp / 4,
+    length.out = detail
+  )
+  y <- stats::dt((x - m) / s, df) / s
   if (is.null(ylim)[1]) {
     ylim <- range(c(0, y))
   }
@@ -87,14 +89,15 @@
     lines(x, y, col = curveColor, ...)
   } else {
     plot(x, y,
-         type = 'l',
-         xlim = xlim,
-         ylim = ylim,
-         xlab = xlab,
-         ylab = ylab,
-         axes = FALSE,
-         col = curveColor,
-         ...)
+      type = "l",
+      xlim = xlim,
+      ylim = ylim,
+      xlab = xlab,
+      ylab = ylab,
+      axes = FALSE,
+      col = curveColor,
+      ...
+    )
   }
   if (!is.null(L[1])) {
     these <- (x <= L)
@@ -116,21 +119,25 @@
   }
 
   if (!add && (axes == 1 || axes > 2)) {
-    if (xLab[1] == 'symbol') {
-      xAt  <- m + (-3:3) * s
-      xLab <- expression(mu - 3 * sigma,
-                         mu - 2 * sigma,
-                         mu - sigma,
-                         mu,
-                         mu + sigma,
-                         mu + 2 * sigma,
-                         mu + 3 * sigma)
-    } else if (xLab[1] != 'number') {
+    if (xLab[1] == "symbol") {
+      xAt <- m + (-3:3) * s
+      xLab <- expression(
+        mu - 3 * sigma,
+        mu - 2 * sigma,
+        mu - sigma,
+        mu,
+        mu + sigma,
+        mu + 2 * sigma,
+        mu + 3 * sigma
+      )
+    } else if (xLab[1] != "number") {
       stop('Argument "xLab" not recognized.\n')
     } else {
-      temp <- s * seq(xAxisIncr,
-                      max(abs(xlim - m)) / s,
-                      xAxisIncr)
+      temp <- s * seq(
+        xAxisIncr,
+        max(abs(xlim - m)) / s,
+        xAxisIncr
+      )
       xAt <- m + c(-temp, 0, temp)
       xLab <- round(xAt, digits = digits)
     }

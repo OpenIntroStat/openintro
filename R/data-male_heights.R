@@ -13,5 +13,4 @@
 #' @examples
 #'
 #' male_heights
-#'
 "male_heights"

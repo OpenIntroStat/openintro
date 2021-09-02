@@ -29,6 +29,5 @@ Summary information from the NBA players for the 2018-2019 season.
 
 hist(nba_players_19$height, 20)
 table(nba_players_19$team)
-
 }
 \keyword{datasets}

@@ -20,5 +20,4 @@
 #' @examples
 #'
 #' sp500_seq
-#'
 "sp500_seq"

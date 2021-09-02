@@ -69,33 +69,37 @@ library(dplyr)
 
 # Price by type
 dotPlot(cars93$price,
-        cars93$type,
-        key = c("large", "midsize", "small"),
-        cex = 1:3)
+  cars93$type,
+  key = c("large", "midsize", "small"),
+  cex = 1:3
+)
 
 # Hours worked by educational attainment or degree
 gss2010_nona <- gss2010 \%>\%
   filter(!is.na(hrs1) & !is.na(degree))
 
 dotPlot(gss2010_nona$hrs1,
-        gss2010_nona$degree,
-        col = fadeColor("black", "11"))
+  gss2010_nona$degree,
+  col = fadeColor("black", "11")
+)
 
 # levels reordered
 dotPlot(gss2010_nona$hrs1,
-        gss2010_nona$degree,
-        col = fadeColor("black", "11"),
-        key = c("LT HIGH SCHOOL", "HIGH SCHOOL", "BACHELOR", "JUNIOR COLLEGE", "GRADUATE"))
+  gss2010_nona$degree,
+  col = fadeColor("black", "11"),
+  key = c("LT HIGH SCHOOL", "HIGH SCHOOL", "BACHELOR", "JUNIOR COLLEGE", "GRADUATE")
+)
 
 # with boxPlot() overlaid
 dotPlot(mariokart$total_pr,
-        mariokart$cond,
-        ylim = c(0.5,2.5), xlim = c(25, 80), cex = 1)
+  mariokart$cond,
+  ylim = c(0.5, 2.5), xlim = c(25, 80), cex = 1
+)
 boxPlot(mariokart$total_pr,
-        mariokart$cond,
-        add = 1:2 + 0.1,
-        key = c("new", "used"), horiz = TRUE, axes = FALSE)
-
+  mariokart$cond,
+  add = 1:2 + 0.1,
+  key = c("new", "used"), horiz = TRUE, axes = FALSE
+)
 }
 \seealso{
 \code{\link{histPlot}}, \code{\link{densityPlot}},

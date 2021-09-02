@@ -35,6 +35,5 @@ table(stent30)
 
 # 365-day results
 table(stent365)
-
 }
 \keyword{datasets}

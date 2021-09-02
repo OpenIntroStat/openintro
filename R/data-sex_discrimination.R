@@ -20,5 +20,4 @@
 #'
 #' ggplot(sex_discrimination, aes(y = sex, fill = decision)) +
 #'   geom_bar(position = "fill")
-#'
 "sex_discrimination"

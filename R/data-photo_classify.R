@@ -24,5 +24,4 @@
 #'
 #' data(photo_classify)
 #' table(photo_classify)
-#'
 "photo_classify"

@@ -26,6 +26,5 @@ Heights of all NBA players from the 2008-9 season.
 \examples{
 
 qqnorm(nba_heights$h_meters)
-
 }
 \keyword{datasets}

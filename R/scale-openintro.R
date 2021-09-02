@@ -11,13 +11,12 @@
 #'
 #' openintro_cols("blue")
 #' openintro_cols("red")
-#'
 openintro_cols <- function(...) {
-
   cols <- c(...)
 
-  if (is.null(cols))
-    return (openintro::openintro_colors)
+  if (is.null(cols)) {
+    return(openintro::openintro_colors)
+  }
 
   openintro::openintro_colors[cols]
 }
@@ -32,7 +31,6 @@ openintro_cols <- function(...) {
 #' @importFrom grDevices colorRampPalette
 #'
 openintro_pal <- function(palette = "main", reverse = FALSE, ...) {
-
   pal <- openintro::openintro_palettes[[palette]]
 
   if (reverse) pal <- rev(pal)
@@ -54,36 +52,45 @@ openintro_pal <- function(palette = "main", reverse = FALSE, ...) {
 #' library(ggplot2)
 #'
 #' # Categorical variable with three levels
-#' ggplot(evals, aes(x = bty_avg, y = score,
-#'                       color = rank, shape = rank)) +
+#' ggplot(evals, aes(
+#'   x = bty_avg, y = score,
+#'   color = rank, shape = rank
+#' )) +
 #'   geom_jitter(size = 2, alpha = 0.6) +
 #'   scale_color_openintro("three")
 #'
 #' # Categorical variable with two levels
-#' ggplot(evals, aes(x = bty_avg, y = score,
-#'                   color = language, shape = language)) +
+#' ggplot(evals, aes(
+#'   x = bty_avg, y = score,
+#'   color = language, shape = language
+#' )) +
 #'   geom_jitter(size = 2, alpha = 0.6) +
 #'   scale_color_openintro("two")
 #'
 #' # Continuous variable
 #' # Generates a palette, but not recommended
-#' ggplot(evals, aes(x = bty_avg, y = score,
-#'                   color = score)) +
+#' ggplot(evals, aes(
+#'   x = bty_avg, y = score,
+#'   color = score
+#' )) +
 #'   geom_jitter(size = 2, alpha = 0.8) +
 #'   scale_color_openintro(discrete = FALSE)
 #'
 #' # For continous palettes
 #' # use scale_color_gradient instead
-#' ggplot(evals, aes(x = bty_avg, y = score,
-#'                   color = score)) +
+#' ggplot(evals, aes(
+#'   x = bty_avg, y = score,
+#'   color = score
+#' )) +
 #'   geom_jitter(size = 2) +
 #'   scale_color_gradient(low = IMSCOL["blue", "full"], high = IMSCOL["blue", "f6"])
 #'
-#' ggplot(evals, aes(x = bty_avg, y = score,
-#'                   color = cls_perc_eval)) +
+#' ggplot(evals, aes(
+#'   x = bty_avg, y = score,
+#'   color = cls_perc_eval
+#' )) +
 #'   geom_jitter(size = 2) +
 #'   scale_color_gradient(low = COL["red", "full"], high = COL["red", "f8"])
-#'
 scale_color_openintro <- function(palette = "main", discrete = TRUE, reverse = FALSE, ...) {
   pal <- openintro_pal(palette = palette, reverse = reverse)
 
@@ -127,16 +134,19 @@ scale_color_openintro <- function(palette = "main", discrete = TRUE, reverse = F
 #'
 #' # For continuous palettes
 #' # use scale_color_gradient instead
-#' ggplot(evals, aes(x = bty_avg, y = score,
-#'                   color = score)) +
+#' ggplot(evals, aes(
+#'   x = bty_avg, y = score,
+#'   color = score
+#' )) +
 #'   geom_jitter(size = 2) +
 #'   scale_color_gradient(low = IMSCOL["blue", "full"], high = IMSCOL["blue", "f6"])
 #'
-#' ggplot(evals, aes(x = bty_avg, y = score,
-#'                   color = cls_perc_eval)) +
+#' ggplot(evals, aes(
+#'   x = bty_avg, y = score,
+#'   color = cls_perc_eval
+#' )) +
 #'   geom_jitter(size = 2) +
 #'   scale_color_gradient(low = IMSCOL["green", "full"], high = IMSCOL["green", "f6"])
-#'
 scale_fill_openintro <- function(palette = "main", discrete = TRUE, reverse = FALSE, ...) {
   pal <- openintro_pal(palette = palette, reverse = reverse)
 

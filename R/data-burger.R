@@ -16,5 +16,4 @@
 #' @examples
 #'
 #' table(burger)
-#'
 "burger"

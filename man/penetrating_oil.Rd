@@ -66,6 +66,5 @@ min(2 * K * pt(-abs(diff / se), df))
 # Better pairwise comparison method.
 anova(m1 <- aov(torque ~ treatment, data = penetrating_oil))
 TukeyHSD(m1)
-
 }
 \keyword{datasets}

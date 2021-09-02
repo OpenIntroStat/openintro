@@ -20,5 +20,4 @@
 #' @examples
 #'
 #' table(cpr)
-#'
 "cpr"

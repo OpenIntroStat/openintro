@@ -40,6 +40,5 @@ table(lizard_habitat)
 ggplot(lizard_habitat, aes(y = site, fill = sunlight)) +
   geom_bar(position = "fill") +
   labs(x = "Proportion")
-
 }
 \keyword{datasets}

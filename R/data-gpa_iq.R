@@ -14,5 +14,4 @@
 #' @examples
 #'
 #' gpa_iq
-#'
 "gpa_iq"

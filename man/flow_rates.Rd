@@ -33,7 +33,7 @@ ggplot(flow_rates, aes(x = site, y = flow)) +
   labs(
     title = "River flow rates by site",
     x = "Site",
-    y = expression(paste("Flow (ft"^3*"/s)"))
+    y = expression(paste("Flow (ft"^3 * "/s)"))
   )
 
 # River flow rates over time
@@ -42,9 +42,8 @@ ggplot(flow_rates, aes(x = date, y = flow, color = site, shape = site)) +
   labs(
     title = "River flow rates over time",
     x = "Date",
-    y = expression(paste("Flow (ft"^3*"/s)")),
+    y = expression(paste("Flow (ft"^3 * "/s)")),
     color = "Site", shape = "Site"
   )
-
 }
 \keyword{datasets}

@@ -23,7 +23,6 @@
 #' retrieved 2012-02-20.
 #' @keywords datasets military demographics
 #' @examples
-#'
 #' \dontrun{
 #' library(dplyr)
 #' library(ggplot2)

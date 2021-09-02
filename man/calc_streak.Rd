@@ -19,5 +19,4 @@ Calculate hit streaks
 \examples{
 data(kobe_basket)
 calc_streak(kobe_basket$shot)
-
 }

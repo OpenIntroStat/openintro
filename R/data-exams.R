@@ -11,5 +11,4 @@
 #' @examples
 #'
 #' hist(exams$scores)
-#'
 "exams"

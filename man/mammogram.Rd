@@ -28,7 +28,5 @@ had died from breast cancer within 25 years.
 
 table(mammogram)
 chisq.test(table(mammogram))
-
-
 }
 \keyword{datasets}

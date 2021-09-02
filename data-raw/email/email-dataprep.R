@@ -8,23 +8,23 @@ library(usethis)
 # Make categorical variables factor
 email <- openintro::email %>%
   mutate(
-    spam        = factor(spam       , levels = c(0, 1)),
+    spam        = factor(spam, levels = c(0, 1)),
     to_multiple = factor(to_multiple, levels = c(0, 1)),
-    from        = factor(from       , levels = c(0, 1)),
-    sent_email  = factor(sent_email , levels = c(0, 1)),
-    format      = factor(format     , levels = c(0, 1)),
-    re_subj     = factor(re_subj    , levels = c(0, 1)),
+    from        = factor(from, levels = c(0, 1)),
+    sent_email  = factor(sent_email, levels = c(0, 1)),
+    format      = factor(format, levels = c(0, 1)),
+    re_subj     = factor(re_subj, levels = c(0, 1)),
     urgent_subj = factor(urgent_subj, levels = c(0, 1))
   )
 
 email50 <- openintro::email50 %>%
   mutate(
-    spam        = factor(spam       , levels = c(0, 1)),
+    spam        = factor(spam, levels = c(0, 1)),
     to_multiple = factor(to_multiple, levels = c(0, 1)),
-    from        = factor(from       , levels = c(0, 1)),
-    sent_email  = factor(sent_email , levels = c(0, 1)),
-    format      = factor(format     , levels = c(0, 1)),
-    re_subj     = factor(re_subj    , levels = c(0, 1)),
+    from        = factor(from, levels = c(0, 1)),
+    sent_email  = factor(sent_email, levels = c(0, 1)),
+    format      = factor(format, levels = c(0, 1)),
+    re_subj     = factor(re_subj, levels = c(0, 1)),
     urgent_subj = factor(urgent_subj, levels = c(0, 1))
   )
 

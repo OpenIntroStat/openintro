@@ -12,7 +12,6 @@
 #' @examples
 #'
 #' res_demo_1
-#'
 "res_demo_1"
 
 
@@ -33,5 +32,4 @@
 #' @examples
 #'
 #' res_demo_2
-#'
 "res_demo_2"

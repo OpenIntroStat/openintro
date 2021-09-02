@@ -8,7 +8,7 @@ library(tidyverse)
 biontech_adolescents_table <- tribble(
   ~group,    ~`COVID-19`, ~`no COVID-19`,
   "vaccine", 0,           1131,
-  "placebo", 18,          1129-18
+  "placebo", 18,          1129 - 18
 )
 
 biontech_adolescents <- biontech_adolescents_table %>%

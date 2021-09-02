@@ -34,5 +34,4 @@
 #' nycflights %>%
 #'   select(flight, origin, dest, dep_delay, arr_delay) %>%
 #'   arrange(desc(arr_delay))
-#'
 "nycflights"

@@ -21,5 +21,4 @@
 #' @examples
 #'
 #' stem_cell
-#'
 "stem_cell"

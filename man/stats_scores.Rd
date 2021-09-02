@@ -19,6 +19,5 @@ Scores range from 57 to 94.
 \examples{
 
 stats_scores
-
 }
 \keyword{datasets}

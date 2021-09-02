@@ -43,14 +43,17 @@ ggplot(diamonds, aes(x = clarity, fill = clarity)) +
 
 # For continuous palettes
 # use scale_color_gradient instead
-ggplot(evals, aes(x = bty_avg, y = score,
-                  color = score)) +
+ggplot(evals, aes(
+  x = bty_avg, y = score,
+  color = score
+)) +
   geom_jitter(size = 2) +
   scale_color_gradient(low = IMSCOL["blue", "full"], high = IMSCOL["blue", "f6"])
 
-ggplot(evals, aes(x = bty_avg, y = score,
-                  color = cls_perc_eval)) +
+ggplot(evals, aes(
+  x = bty_avg, y = score,
+  color = cls_perc_eval
+)) +
   geom_jitter(size = 2) +
   scale_color_gradient(low = IMSCOL["green", "full"], high = IMSCOL["green", "f6"])
-
 }

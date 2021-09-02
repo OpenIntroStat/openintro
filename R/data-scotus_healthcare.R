@@ -18,5 +18,4 @@
 #' @examples
 #'
 #' table(scotus_healthcare)
-#'
 "scotus_healthcare"

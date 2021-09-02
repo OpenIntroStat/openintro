@@ -16,30 +16,31 @@
 #' @examples
 #'
 #' a <- matrix(
-#'     c(459, 727, 854, 385, 99, 4198, 6245, 4821, 1634, 578),
-#'     2,
-#'     byrow = TRUE)
+#'   c(459, 727, 854, 385, 99, 4198, 6245, 4821, 1634, 578),
+#'   2,
+#'   byrow = TRUE
+#' )
 #' b <-
-#' CT2DF(
+#'   CT2DF(
 #'     a,
 #'     c("No", "Yes"),
 #'     c("Excellent", "Very good", "Good", "Fair", "Poor"),
-#'     c("coverage", "health_status"))
+#'     c("coverage", "health_status")
+#'   )
 #' table(b)
-#'
 CT2DF <-
-function (x,
-          rn = row.names(x),
-          cn = colnames(x),
-          dfn = c("row.var", "col.var")) {
-  rs <- rowSums(x)
-  cs <- colSums(x)
-  v1 <- rep(rn, rs)
-  v2 <- c()
-  for (i in 1:nrow(x)) {
-    v2 <- append(v2, rep(cn, x[i, ]))
+  function(x,
+           rn = row.names(x),
+           cn = colnames(x),
+           dfn = c("row.var", "col.var")) {
+    rs <- rowSums(x)
+    cs <- colSums(x)
+    v1 <- rep(rn, rs)
+    v2 <- c()
+    for (i in 1:nrow(x)) {
+      v2 <- append(v2, rep(cn, x[i, ]))
+    }
+    d <- data.frame(as.character(v1), as.character(v2))
+    colnames(d) <- dfn
+    return(d)
   }
-  d <- data.frame(as.character(v1), as.character(v2))
-  colnames(d) <- dfn
-  return(d)
-}

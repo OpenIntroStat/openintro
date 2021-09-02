@@ -33,9 +33,8 @@ and for all data sets that are data frames, create CSV variants
 in a \code{data-csv} directory.
 }
 \examples{
-
 \dontrun{
-  write_pkg_data("openintro")
-  list.files("data-csv")
+write_pkg_data("openintro")
+list.files("data-csv")
 }
 }

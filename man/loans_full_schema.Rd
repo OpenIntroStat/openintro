@@ -137,7 +137,5 @@ applications!
 \examples{
 
 loans_full_schema
-
-
 }
 \keyword{datasets}

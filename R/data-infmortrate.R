@@ -26,5 +26,4 @@
 #'
 #' ggplot(infmortrate, aes(x = inf_mort_rate)) +
 #'   geom_density()
-#'
 "infmortrate"

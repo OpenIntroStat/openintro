@@ -22,5 +22,4 @@
 #'
 #' data(smallpox)
 #' table(smallpox)
-#'
 "smallpox"

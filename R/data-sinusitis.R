@@ -18,5 +18,4 @@
 #' @examples
 #'
 #' sinusitis
-#'
 "sinusitis"

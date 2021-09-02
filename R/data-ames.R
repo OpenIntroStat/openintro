@@ -101,4 +101,3 @@
 #' an end of semester regression project." Journal of Statistics Education 19.3
 #' (2011).
 "ames"
-

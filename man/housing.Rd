@@ -18,7 +18,5 @@ Each observation represents a simulated rent price for a student.
 
 
 housing
-
-
 }
 \keyword{datasets}

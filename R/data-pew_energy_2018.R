@@ -24,7 +24,8 @@
 #' lapply(pew_energy_2018, head)
 #' lapply(pew_energy_2018, length)
 #' lapply(pew_energy_2018, table)
-#' Prop <- function(x) { table(x) / length(x) }
+#' Prop <- function(x) {
+#'   table(x) / length(x)
+#' }
 #' lapply(pew_energy_2018, Prop)
-#'
 "pew_energy_2018"

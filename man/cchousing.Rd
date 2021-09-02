@@ -20,6 +20,5 @@ students at a community college.
 \examples{
 
 hist(cchousing$price)
-
 }
 \keyword{datasets}

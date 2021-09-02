@@ -22,5 +22,4 @@
 #'
 #' ggplot(midterms_house, aes(x = unemp, y = house_change)) +
 #'   geom_point()
-#'
 "midterms_house"

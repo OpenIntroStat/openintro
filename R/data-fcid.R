@@ -12,5 +12,4 @@
 #' @examples
 #'
 #' fcid
-#'
 "fcid"

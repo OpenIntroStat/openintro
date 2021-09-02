@@ -18,6 +18,5 @@ A character string of full colors from \code{IMSCOL[,1]}
 openintro_colors
 
 openintro_colors["blue"]
-
 }
 \keyword{datasets}

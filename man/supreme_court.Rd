@@ -22,6 +22,5 @@ Summary of a random survey of 976 people.
 \examples{
 
 supreme_court
-
 }
 \keyword{datasets}

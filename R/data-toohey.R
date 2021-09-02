@@ -13,5 +13,4 @@
 #' @examples
 #'
 #' toohey
-#'
 "toohey"

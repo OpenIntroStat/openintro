@@ -23,12 +23,10 @@
 #' x <- sample(50e6, 100)
 #' hist(x, axes = FALSE)
 #' AxisInDollars(1, pretty(x))
-#'
-AxisInPercent <- function(
-    side,
-    at,
-    include.symbol = TRUE,
-    simplify = TRUE, ...) {
+AxisInPercent <- function(side,
+                          at,
+                          include.symbol = TRUE,
+                          simplify = TRUE, ...) {
   at. <- at
   if (include.symbol) {
     at. <- paste0(at., "%")

@@ -20,9 +20,10 @@
 #'
 #' ggplot(antibiotics, aes(x = condition)) +
 #'   geom_bar() +
-#'   labs(x = "Conidition", y = "Count",
-#'        title = "Pre-existing coniditions of children",
-#'        subtitle = "in antibiotic use study") +
+#'   labs(
+#'     x = "Conidition", y = "Count",
+#'     title = "Pre-existing coniditions of children",
+#'     subtitle = "in antibiotic use study"
+#'   ) +
 #'   coord_flip()
-#'
 "antibiotics"

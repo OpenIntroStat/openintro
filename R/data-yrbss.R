@@ -32,5 +32,4 @@
 #' @examples
 #'
 #' table(yrbss$physically_active_7d)
-#'
 "yrbss"

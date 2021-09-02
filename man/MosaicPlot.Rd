@@ -48,7 +48,6 @@ data(email)
 data(COL)
 email$spam <- ifelse(email$spam == 0, "not\nspam", "spam")
 MosaicPlot(number ~ spam, email, col = COL[1:3], off = 0.02)
-
 }
 \author{
 David Diez

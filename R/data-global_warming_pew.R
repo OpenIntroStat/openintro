@@ -18,5 +18,4 @@
 #' @examples
 #'
 #' global_warming_pew
-#'
 "global_warming_pew"

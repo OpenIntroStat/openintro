@@ -36,5 +36,4 @@
 #'
 #' # Fisher's exact text
 #' fisher.test(table(malaria))
-#'
 "malaria"

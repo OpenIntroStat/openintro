@@ -29,7 +29,5 @@ political ideology.
 
 
 immigration
-
-
 }
 \keyword{datasets}

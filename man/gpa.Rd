@@ -21,6 +21,5 @@ hours they study at night, number of nights they go out, and their gender.
 \examples{
 
 gpa
-
 }
 \keyword{datasets}

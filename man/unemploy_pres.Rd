@@ -26,6 +26,5 @@ Covers midterm elections.
 \examples{
 
 unemploy_pres
-
 }
 \keyword{datasets}

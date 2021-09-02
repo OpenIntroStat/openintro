@@ -40,7 +40,6 @@
 #' # Construct Z-scores and p-values.
 #' z <- (frac_correct - expected) / se
 #' pt(z, df = n - 1)
-#'
 #' @source The samples we describe are plausible based on the exact rates observed in larger samples.
 #' For more info on the actual rates observed, visit \url{https://www.gapminder.org}.
 #'

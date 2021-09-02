@@ -15,5 +15,4 @@
 #' @examples
 #'
 #' table(dream)
-#'
 "dream"

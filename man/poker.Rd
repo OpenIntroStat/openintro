@@ -25,6 +25,5 @@ library(ggplot2)
 
 ggplot(poker, aes(x = winnings)) +
   geom_histogram(binwidth = 250)
-
 }
 \keyword{datasets}

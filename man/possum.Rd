@@ -42,6 +42,5 @@ ggplot(possum, aes(x = head_l, y = skull_w)) +
 # Total length vs. sex
 ggplot(possum, aes(x = total_l, fill = sex)) +
   geom_density(alpha = 0.5)
-
 }
 \keyword{datasets}

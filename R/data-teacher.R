@@ -27,17 +27,20 @@
 #' # Salary and education level
 #' ggplot(teacher, aes(x = degree, y = base)) +
 #'   geom_boxplot() +
-#'   labs(x = "Highest educational degree attained",
-#'        y = "Base annual salary, in $",
-#'        color = "Degree",
-#'        title = "Salary and education level")
+#'   labs(
+#'     x = "Highest educational degree attained",
+#'     y = "Base annual salary, in $",
+#'     color = "Degree",
+#'     title = "Salary and education level"
+#'   )
 #'
 #' # Salary and years of employment
 #' ggplot(teacher, aes(x = years, y = base, color = degree)) +
 #'   geom_point() +
-#'   labs(x = "Number of years employed by the school district",
-#'        y = "Base annual salary, in $",
-#'        color = "Degree",
-#'        title = "Salary and years of employment")
-#'
+#'   labs(
+#'     x = "Number of years employed by the school district",
+#'     y = "Base annual salary, in $",
+#'     color = "Degree",
+#'     title = "Salary and years of employment"
+#'   )
 "teacher"

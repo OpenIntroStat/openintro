@@ -44,6 +44,5 @@ Environmental Protection Agency.
 \examples{
 
 pm25_2011_durham
-
 }
 \keyword{datasets}

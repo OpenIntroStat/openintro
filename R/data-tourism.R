@@ -18,5 +18,4 @@
 #' @examples
 #'
 #' tourism
-#'
 "tourism"

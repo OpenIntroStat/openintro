@@ -24,6 +24,5 @@ Sample burger place preferences versus gender.
 \examples{
 
 table(burger)
-
 }
 \keyword{datasets}

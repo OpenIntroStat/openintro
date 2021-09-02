@@ -44,40 +44,39 @@
 #' plot(gradestv)
 #' makeTube(gradestv$tv, gradestv$grades, 1.5)
 #' plot(gradestv)
-#' makeTube(gradestv$tv, gradestv$grades, 1.5, stDev='o')
+#' makeTube(gradestv$tv, gradestv$grades, 1.5, stDev = "o")
 #' plot(gradestv)
-#' makeTube(gradestv$tv, gradestv$grades, 1.5, type='robust')
+#' makeTube(gradestv$tv, gradestv$grades, 1.5, type = "robust")
 #' plot(gradestv)
-#' makeTube(gradestv$tv, gradestv$grades, 1.5, type='robust', stDev='o')
+#' makeTube(gradestv$tv, gradestv$grades, 1.5, type = "robust", stDev = "o")
 #'
 #' # what can go wrong with a basic least squares model
 #' # 1
 #' x <- runif(100)
-#' y <- 25*x-20*x^2+rnorm(length(x), sd=1.5)
-#' plot(x,y)
-#' makeTube(x,y,type='q')
+#' y <- 25 * x - 20 * x^2 + rnorm(length(x), sd = 1.5)
+#' plot(x, y)
+#' makeTube(x, y, type = "q")
 #' # 2
 #' x <- c(-0.6, -0.46, -0.091, runif(97))
-#' y <- 25*x + rnorm(length(x))
+#' y <- 25 * x + rnorm(length(x))
 #' y[2] <- y[2] + 8
 #' y[1] <- y[1] + 1
-#' plot(x,y,ylim=range(y)+c(-10,5))
-#' makeTube(x,y)
+#' plot(x, y, ylim = range(y) + c(-10, 5))
+#' makeTube(x, y)
 #' # 3
 #' x <- runif(100)
-#' y <- 5*x + rnorm(length(x), sd=x)
-#' plot(x,y)
-#' makeTube(x, y, stDev='l', bw=0.03)
-#'
+#' y <- 5 * x + rnorm(length(x), sd = x)
+#' plot(x, y)
+#' makeTube(x, y, stDev = "l", bw = 0.03)
 makeTube <- function(x, y,
                      Z = 2,
                      R = 1,
-                     col = '#00000022',
-                     border = '#00000000',
-                     type = c('lin', 'quad', 'robust'),
-                     stDev = c('constant', 'linear', 'other'),
+                     col = "#00000022",
+                     border = "#00000000",
+                     type = c("lin", "quad", "robust"),
+                     stDev = c("constant", "linear", "other"),
                      length.out = 99,
-                     bw = 'default',
+                     bw = "default",
                      plotTube = TRUE,
                      addLine = TRUE,
                      ...) {
@@ -88,19 +87,19 @@ makeTube <- function(x, y,
   X <- seq(R[1], R[2], length.out = length.out)
   type <- match.arg(type)
   stDev <- match.arg(stDev)
-  if (type == 'lin') {
+  if (type == "lin") {
     g <- stats::lm(y ~ x)
     hold <- data.frame(x = X)
     Y <- stats::predict(g, hold)
     S <- stats::sd(g$residuals)
-  } else if (type == 'quad') {
+  } else if (type == "quad") {
     x2 <- x^2
     g <- stats::lm(y ~ x + x2)
     hold <- data.frame(x = X, x2 = X^2)
     Y <- stats::predict(g, hold)
     S <- stats::sd(g$residuals)
-  } else if (type == 'robust') {
-    if (bw[1] == 'default') {
+  } else if (type == "robust") {
+    if (bw[1] == "default") {
       bw <- stats::bw.nrd0(x)
     }
     Y <- rep(NA, length(X))
@@ -118,8 +117,8 @@ makeTube <- function(x, y,
   } else {
     stop('Argument "type" not recognized.\n')
   }
-  if (stDev == 'other') {
-    if (bw[1] == 'default') {
+  if (stDev == "other") {
+    if (bw[1] == "default") {
       bw <- stats::bw.nrd0(x)
     }
     S <- rep(NA, length(X))
@@ -136,18 +135,18 @@ makeTube <- function(x, y,
     X <- X[these]
     Y <- Y[these]
     S <- S[these]
-  } else if (stDev == 'linear') {
-    if (bw[1] == 'default') {
+  } else if (stDev == "linear") {
+    if (bw[1] == "default") {
       bw <- stats::bw.nrd0(x)
     }
-    S    <- rep(NA, length(X))
+    S <- rep(NA, length(X))
     sWts <- rep(NA, length(X))
     for (i in 1:length(X)) {
-      if (min(x - X[i]) < 2*bw) {
-        temp    <- stats::dnorm(x-X[i], sd = bw)
+      if (min(x - X[i]) < 2 * bw) {
+        temp <- stats::dnorm(x - X[i], sd = bw)
         sWts[i] <- sum(temp)
         if (sWts[i] > 0) {
-          wtdV <- sum(temp*(y-Y[i])^2)/sWts[i]
+          wtdV <- sum(temp * (y - Y[i])^2) / sWts[i]
           S[i] <- sqrt(wtdV)
         }
       }
@@ -158,7 +157,7 @@ makeTube <- function(x, y,
     X <- X[these]
     Y <- Y[these]
     S <- S[these]
-  } else if (stDev != 'constant') {
+  } else if (stDev != "constant") {
     stop('Did not recognize form of the "stDev" argument.\n')
   }
   x <- c(X, rev(X))

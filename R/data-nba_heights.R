@@ -18,5 +18,4 @@
 #' @examples
 #'
 #' qqnorm(nba_heights$h_meters)
-#'
 "nba_heights"

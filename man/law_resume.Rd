@@ -42,7 +42,5 @@ tapply(law_resume$outcome == "interview", law_resume[, c("class", "gender")], me
 m <- glm(I(outcome == "interview") ~ gender * class, data = law_resume, family = binomial)
 summary(m)
 predict(m, type = "response")
-
-
 }
 \keyword{datasets}

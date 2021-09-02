@@ -35,9 +35,11 @@ from the 2017 and 2018 races.
 }
 \examples{
 
-d <- subset(get_it_dunn_run,
-    race == "5k" & date == "2018-05-12" &
-        !is.na(age) & state \%in\% c("MN", "WI"))
+d <- subset(
+  get_it_dunn_run,
+  race == "5k" & date == "2018-05-12" &
+    !is.na(age) & state \%in\% c("MN", "WI")
+)
 head(d)
 m <- lm(run_time_minutes ~ sex + age + state, d)
 summary(m)
@@ -45,6 +47,5 @@ plot(m$fitted, m$residuals)
 boxplot(m$residuals ~ d$sex)
 plot(m$residuals ~ d$age)
 hist(m$residuals)
-
 }
 \keyword{datasets}

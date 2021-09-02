@@ -24,6 +24,5 @@ The poll's focus is on Obama and then Democrats and Republicans in Congress.
 \examples{
 
 gov_poll
-
 }
 \keyword{datasets}
