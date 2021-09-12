@@ -22,7 +22,7 @@
 #'       If longer than 10 years, then this is represented by the value
 #'       \code{10}.}
 #'   \item{state}{Two-letter state code.}
-#'   \item{home_ownership}{The ownership status of the
+#'   \item{homeownership}{The ownership status of the
 #'       applicant's residence.}
 #'   \item{annual_income}{Annual income.}
 #'   \item{verified_income}{Type of verification
