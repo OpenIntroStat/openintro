@@ -2,7 +2,7 @@
 name: Feature request
 about: Suggest an idea for this project
 title: '[Feature]:'
-labels: '["documentation", "enhancement", "question"]'
+labels: '["documentation", "enhancement", "question", "help wanted", "good first issue"]'
 assignees: ''
 body:
   - type: input
@@ -41,8 +41,8 @@ body:
     id: add_context
     attributes:
       label: Additional context
-      description: Additional context
-      placeholder: Add any other context about the feature request here.
+      description: Add any other context about the feature request here.
+      placeholder: 
 ---
 
 Welcome to the openintro GitHub repo! 
