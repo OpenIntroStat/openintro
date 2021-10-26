@@ -2,7 +2,6 @@ name: Bug report
 description: Report an error or unexpected behavior you came across while using the openintro package
 title: '[Bug]:'
 labels: '["bug", "duplicate", "help wanted", "question","good first issue"]'
-assignees: ''
 body:
   - type: markdown
     attributes:
