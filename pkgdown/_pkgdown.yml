@@ -26,10 +26,10 @@ authors:
     href: "http://mine-cr.com/"
 
 footer:
-  left:
-    structure: [project]
-    components:
-      project: "<b>openintro</b> is an R package developed by the contributors of the <a href='https://www.openintro.org/'>OpenIntro</a> project"
+  structure:
+    left: [project]
+  components:
+    project: "<b>openintro</b> is an R package developed by the contributors of the <a href='https://www.openintro.org/'>OpenIntro</a> project"
 
 navbar:
   left:
