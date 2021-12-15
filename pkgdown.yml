@@ -3,7 +3,7 @@ pkgdown: 2.0.1.9000
 pkgdown_sha: 2cdb2e208661026722435f2fcda0d401f5c6d20f
 articles:
   datasets: datasets.html
-last_built: 2021-12-15T02:33Z
+last_built: 2021-12-15T03:14Z
 urls:
   reference: https://openintrostat.github.io/openintro/reference
   article: https://openintrostat.github.io/openintro/articles
