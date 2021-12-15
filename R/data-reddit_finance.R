@@ -75,10 +75,12 @@
 #'   \item{2020_edu_exp}{Education expenses.}
 #'   \item{2020_other_exp}{Other expenses.}
 #' }
-#'
+#' @source [Reddit Official 2020 FI Survey Results](https://www.reddit.com/r/financialindependence/comments/m1q8ia/official_2020_fi_survey_results/).
+#' @keywords datasets
 #' @examples
 #'
 #' library(ggplot2)
+#'
 #' # Histogram of Expected Retirement Age.
 #' ggplot(reddit_finance, aes(retire_age)) +
 #'   geom_bar(na.rm = TRUE) +
@@ -92,12 +94,9 @@
 #' ggplot(reddit_finance, aes(whn_fin_indy_num)) +
 #'   geom_histogram(na.rm = TRUE, bins = 20) +
 #'   labs(
-#'     title = "At what amount invested did you consider \n yourself Financially Independent?",
+#'     title = "At what amount invested did you consider\nyourself Financially Independent?",
 #'     x = "Dollar Amount (in local currency)",
 #'     y = "Number of Respondents"
 #'   )
-#' @source
-#'   \href{https://www.reddit.com/r/financialindependence/comments/m1q8ia/official_2020_fi_survey_results/}{Reddit.}
-#' @keywords datasets
 #'
 "reddit_finance"

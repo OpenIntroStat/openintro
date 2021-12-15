@@ -19,7 +19,7 @@ A data frame with 466 rows and 9 variables.
 }
 }
 \source{
-\href{https://www.bloomberg.com/news/articles/2020-08-03/blizzard-workers-share-salaries-in-revolt-over-wage-disparities}{Bloomberg}
+\href{https://www.bloomberg.com/news/articles/2020-08-03/blizzard-workers-share-salaries-in-revolt-over-wage-disparities}{Bloomberg - Blizzard workers share salaries in revolt over wage disparities}.
 }
 \usage{
 blizzard_salary
@@ -45,5 +45,6 @@ ggplot(plot_data, aes(annual_salary)) +
     x = "Salary",
     y = "Number of Employees"
   )
+
 }
 \keyword{datasets}
