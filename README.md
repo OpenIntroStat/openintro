@@ -1,5 +1,5 @@
 
-# openintro <img src="man/figures/logo.png" align="right" alt="" width="120" />
+# openintro <img src="man/figures/logo.png" align="right" alt="Hex logo for package" width="120" />
 
 <!-- badges: start -->
 
@@ -73,9 +73,9 @@ Process for adding new data to the package
 
 The following steps use the **devtools** and **usethis** packages for
 various steps. We recommend using this process when suggesting new
-datasets to be added to the package. If the dataset is large (&gt;500MB)
-or you’d like to add a function, please open an issue first for
-discussion before making the pull request.
+datasets to be added to the package. If the dataset is large (>500MB) or
+you’d like to add a function, please open an issue first for discussion
+before making the pull request.
 
 1.  Fork and clone the repo with
     `usethis::create_from_github("OpenIntroStat/openintro")`
