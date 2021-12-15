@@ -8,7 +8,10 @@ home:
     href: https://www.openintro.org
 
 template:
-  bootstrap: 4
+  bootstrap: 5
+  bslib:
+    primary: "#569BBD"
+    base_font: {google: "Atkinson Hyperlegible"}
   opengraph:
     image:
       src: man/figures/logo.png
