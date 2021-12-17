@@ -4,7 +4,7 @@
   * `reddit_finance`, `blizzard_salary`, `climber_drugs` and `simpsons_paradox_covid ` by [@npaterno](https://github.com/npaterno)
   * `mlb_teams`, `world_pop`, `sowc_demographics`, `sowc_maternal_newborn`, `sowc_child_mortality`, `gdp_countries` and `mn_police_use_of_force` by [@karenjh2](https://github.com/karenjh2)
   * `sa_gdp_elec` by [@mmeece](https://github.com/mmeece)
-  * `lakisha` by [@thiagoscarelli](https://github.com/thiagoscarelli)
+  * `labor_market_discrimination` by [@thiagoscarelli](https://github.com/thiagoscarelli)
 
 # openintro 2.2.0
 

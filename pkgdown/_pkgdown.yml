@@ -116,6 +116,7 @@ reference:
   - flow_rates
   - friday
   - full_body_scan
+  - gpd_countries
   - gear_company
   - gender_discrimination
   - get_it_dunn_run
@@ -141,6 +142,7 @@ reference:
   - ipo
   - ipod
   - kobe_basket
+  - labor_market_discrimination
   - law_resume
   - leg_mari
   - lizard_habitat
@@ -166,6 +168,7 @@ reference:
   - mlb_teams
   - mlb
   - mlbbat10
+  - mn_police_use_of_force
   - mtl
   - murders
   - nba_heights
@@ -198,11 +201,13 @@ reference:
   - resume
   - rosling_responses
   - russian_influence_on_us_election_2016
+  - sa_gdp_elec
   - salinity
   - satgpa
   - scotus_healthcare
   - seattlepets
   - sex_discrimination
+  - simpsons_paradox_covid
   - sinusitis
   - sleep_deprivation
   - smallpox
