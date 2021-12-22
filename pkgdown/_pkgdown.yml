@@ -116,7 +116,7 @@ reference:
   - flow_rates
   - friday
   - full_body_scan
-  - gpd_countries
+  - gdp_countries
   - gear_company
   - gender_discrimination
   - get_it_dunn_run
