@@ -16,6 +16,8 @@
 #'   \item{location}{Current office of employment.}
 #'   \item{performance_rating}{Most recent review performance rating.}
 #' }
+#' @source [Bloomberg - Blizzard workers share salaries in revolt over wage disparities](https://www.bloomberg.com/news/articles/2020-08-03/blizzard-workers-share-salaries-in-revolt-over-wage-disparities).
+#' @keywords datasets
 #' @examples
 #' library(ggplot2)
 #' library(dplyr)
@@ -34,8 +36,5 @@
 #'     x = "Salary",
 #'     y = "Number of Employees"
 #'   )
-#' @source
-#'   [Bloomberg](https://www.bloomberg.com/news/articles/2020-08-03/blizzard-workers-share-salaries-in-revolt-over-wage-disparities)
-#' @keywords datasets
 #'
 "blizzard_salary"

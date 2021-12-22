@@ -13,8 +13,11 @@
 #'   \item{screening_analysis}{Indicates that the concentration was determined by screening analysis.}
 #'   \item{concomitant}{Indicates that this substance was always detected concomitantly with the previous one, within the same urine sample.}
 #' }
+#' @source [PLOS One - Drug Use on Mont Blanc: A Study Using Automated Urine Collection](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0156786#sec012)
+#' @keywords datasets
 #' @examples
 #' library(dplyr)
+#'
 #' # Calculate the average concentration of each substance and number of occurrences.
 #' climber_drugs %>%
 #'   group_by(substance) %>%
@@ -24,7 +27,5 @@
 #' climber_drugs %>%
 #'   group_by(substance) %>%
 #'   summarize(prop = n() / 154)
-#' @source [PLOS One](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0156786#sec012)
-#' @keywords datasets
 #'
 "climber_drugs"

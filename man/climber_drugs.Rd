@@ -16,7 +16,7 @@ A data frame with 211 rows and 6 variables.
 }
 }
 \source{
-\href{https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0156786#sec012}{PLOS One}
+\href{https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0156786#sec012}{PLOS One - Drug Use on Mont Blanc: A Study Using Automated Urine Collection}
 }
 \usage{
 climber_drugs
@@ -26,6 +26,7 @@ Anonymous data was collected from urine samples at huts along the climb of Mont 
 }
 \examples{
 library(dplyr)
+
 # Calculate the average concentration of each substance and number of occurrences.
 climber_drugs \%>\%
   group_by(substance) \%>\%
@@ -35,5 +36,6 @@ climber_drugs \%>\%
 climber_drugs \%>\%
   group_by(substance) \%>\%
   summarize(prop = n() / 154)
+
 }
 \keyword{datasets}
