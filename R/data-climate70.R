@@ -21,7 +21,7 @@
 #'   \item{dx90_1948}{Number of days above 90 degrees in 1948.}
 #'   \item{dx90_2018}{Number of days above 90 degrees in 2018.}
 #'   }
-#' @source \url{https://www.ncdc.noaa.gov/cdo-web/datasets}, retrieved 2019-04-24.
+#' @source \url{https://www.ncdc.noaa.gov/cdo-web}, retrieved 2019-04-24.
 #' @keywords datasets
 #' @examples
 #'

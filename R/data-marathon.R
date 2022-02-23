@@ -1,7 +1,8 @@
 #' New York City Marathon Times (outdated)
 #'
 #' Marathon times of male and female winners of the New York City Marathon
-#' 1970-1999. See [nyc_marathon] for a more updated dataset.
+#' 1970-1999. See [nyc_marathon] for a more updated dataset. We recommend not
+#' using this dataset since the data source has been taken off the web.
 #'
 #' @name marathon
 #' @docType data
@@ -11,7 +12,7 @@
 #'   \item{gender}{Gender}
 #'   \item{time}{Running time (in hours)}
 #'  }
-#' @source \url{https://www.webcitation.org/5kx7ilFLp}
+#' @source Data source has been removed.
 #' @keywords datasets
 #' @examples
 #' library(ggplot2)

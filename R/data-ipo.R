@@ -17,7 +17,6 @@
 #' contains the line-by-line text of the IPO Prospectus of Facebook, Google,
 #' and LinkedIn, respectively.
 #' @references Zweig, J., 2020. Mark Zuckerberg: CEO For Life?. WSJ.
-#' Available at: \url{https://www.wsj.com/articles/BL-TOTALB-326}.
 #' @source All IPO prospectuses are available from the U.S. Securities and Exchange Commission:
 #' [Facebook](https://www.sec.gov/Archives/edgar/data/1326801/000119312512034517/d287954ds1.htm),
 #' [Google](https://www.sec.gov/Archives/edgar/data/1288776/000119312504073639/ds1.htm),

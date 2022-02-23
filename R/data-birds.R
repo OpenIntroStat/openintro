@@ -35,7 +35,7 @@
 #'   \item{birds_struck}{Number of birds/wildlife struck: \code{0}, \code{1}, \code{2-10}, \code{11-100}, \code{Over 100}.}
 #' }
 #' @source Aircraft Wildlife Strike Data: Search Tool - FAA Wildlife Strike Database.
-#' Available at \url{https://dev.socrata.com/foundry/datahub.transportation.gov/jhay-dgxy}.
+#' Available at \url{https://datahub.transportation.gov/Aviation/Aircraft-Wildlife-Strike-Data-Search-Tool-FAA-Wild/jhay-dgxy}.
 #' Retrieval date: Feb 4, 2012.
 #' @keywords datasets bird airplane flight wildlife
 #' @examples

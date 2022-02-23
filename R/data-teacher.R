@@ -18,7 +18,7 @@
 #'   \item{retirement}{Amount paid into the retirement fund of the teacher per year, in dollars.}
 #'   \item{total}{Total annual salary of the teacher, resulting from the sum of base salary + fica + retirement, in dollars.}
 #' }
-#' @source Originally posted on \url{https://dev.socrata.com/data}, removed in 2020.
+#' @source Originally posted on SODA Developers (dev.socrata.com/data), removed in 2020.
 #' @keywords teacher salary Michigan degree education datasets
 #' @examples
 #'

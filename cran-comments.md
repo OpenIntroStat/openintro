@@ -1,6 +1,6 @@
 ## Test environments
 
-* local OS X install, R 4.1.0
+* local OS X install, R 4.1.2
 * GitHub Actions (ubuntu-20.04): release, devel
 * GitHub Actions (windows): release
 * Github Actions (macOS): release

@@ -15,8 +15,8 @@
 #' }
 #' @source
 #' - [World Bank I](https://databank.worldbank.org/source/world-development-indicators)
-#' - [World Bank II](http://www.doingbusiness.org/)
-#' - [Carbon Dioxide Information Analysis Center, Environmental Sciences Division, Oak Ridge National Laboratory](https://www.climatewatchdata.org/ghg-emissions)
+#' - [World Bank II](https://www.worldbank.org/en/programs/business-enabling-environment)
+#' - [Carbon Dioxide Information Analysis Center, Environmental Sciences Division, Oak Ridge National Laboratory](https://www.climatewatchdata.org)
 #' @examples
 #' library(ggplot2)
 #'

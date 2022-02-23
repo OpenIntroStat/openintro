@@ -18,7 +18,7 @@ A data frame with 71 observations on the following 8 variables.
 }
 }
 \source{
-Originally posted on \url{https://dev.socrata.com/data}, removed in 2020.
+Originally posted on SODA Developers (dev.socrata.com/data), removed in 2020.
 }
 \usage{
 teacher

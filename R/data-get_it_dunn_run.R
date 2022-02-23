@@ -21,8 +21,8 @@
 #'   \item{run_time_minutes}{Run time, in minutes.}
 #'   }
 #' @source Data were collected from GSE Timing:
-#' [2018 data](https://www.gsetiming.com/results/fitness_events/results.asp?event_type=5&event_id=718),
-#' [2017 race data](https://www.gsetiming.com/results/fitness_events/results.asp?event_type=5&event_id=640).
+#' [2018 data](https://gsetiming.com/results/fitness_events/results.asp?event_type=5&event_id=718),
+#' [2017 race data](https://gsetiming.com/results/fitness_events/results.asp?event_type=5&event_id=640).
 #' @keywords datasets
 #' @examples
 #'
