@@ -7,7 +7,7 @@
 \format{
 A data frame with 31 rows and 3 variables.
 \describe{
-\item{site}{Location where measurments were taken.}
+\item{site}{Location where measurements were taken.}
 \item{date}{Date measurements were taken.}
 \item{flow}{Flow rate of the river in cubic feet per second.}
 }
