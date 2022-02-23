@@ -21,8 +21,8 @@ A data frame with 978 observations on the following 10 variables.
 }
 \source{
 Data were collected from GSE Timing:
-\href{https://www.gsetiming.com/results/fitness_events/results.asp?event_type=5&event_id=718}{2018 data},
-\href{https://www.gsetiming.com/results/fitness_events/results.asp?event_type=5&event_id=640}{2017 race data}.
+\href{https://gsetiming.com/results/fitness_events/results.asp?event_type=5&event_id=718}{2018 data},
+\href{https://gsetiming.com/results/fitness_events/results.asp?event_type=5&event_id=640}{2017 race data}.
 }
 \usage{
 get_it_dunn_run

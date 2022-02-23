@@ -74,7 +74,7 @@ A tibble with 4870 observations of 63 variables.
 }
 }
 \source{
-Bertrand, Marianne, and Mullainathan, Sendhil. Replication data for: Are Emily and Greg More Employable Than Lakisha and Jamal? A Field Experiment on Labor Market Discrimination. Nashville, TN: American Economic Association [publisher], 2004. Ann Arbor, MI: Inter-university Consortium for Political and Social Research [distributor], 2019-12-06. \url{https://doi.org/10.3886/E116023V1}.
+Bertrand, Marianne, and Mullainathan, Sendhil. Replication data for: Are Emily and Greg More Employable Than Lakisha and Jamal? A Field Experiment on Labor Market Discrimination. Nashville, TN: American Economic Association [publisher], 2004. Ann Arbor, MI: Inter-university Consortium for Political and Social Research [distributor], 2019-12-06. \doi{10.3886/E116023V1}.
 
 \href{https://www.nber.org/system/files/working_papers/w9873/w9873.pdf}{NBER Working Papers}
 

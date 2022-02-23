@@ -78,7 +78,6 @@ ipo_texts \%>\%
 }
 \references{
 Zweig, J., 2020. Mark Zuckerberg: CEO For Life?. WSJ.
-Available at: \url{https://www.wsj.com/articles/BL-TOTALB-326}.
 }
 \keyword{corpus}
 \keyword{datasets}
