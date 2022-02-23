@@ -51,7 +51,7 @@ A data frame with 2784 rows and 41 variables.
 }
 }
 \source{
-\href{http://www.seanlahman.com/baseball-archive/statistics/}{Lahmans Baseball Database}
+\href{https://www.seanlahman.com/baseball-archive/statistics/}{Lahmans Baseball Database}
 }
 \usage{
 mlb_teams

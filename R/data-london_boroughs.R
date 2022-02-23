@@ -32,7 +32,7 @@
 #' \url{https://data.london.gov.uk/dataset/ordnance-survey-code-point}
 #'
 #' Contains Ordinance Survey data released under the
-#' [Open Government License, OGL v2](http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/).
+#' [Open Government License, OGL v2](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/).
 #' @keywords datasets London map borough
 #' @examples
 #'

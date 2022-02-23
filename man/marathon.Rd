@@ -13,14 +13,15 @@ A data frame with 60 observations on the following 3 variables.
 }
 }
 \source{
-\url{https://www.webcitation.org/5kx7ilFLp}
+Data source has been removed.
 }
 \usage{
 marathon
 }
 \description{
 Marathon times of male and female winners of the New York City Marathon
-1970-1999. See \link{nyc_marathon} for a more updated dataset.
+1970-1999. See \link{nyc_marathon} for a more updated dataset. We recommend not
+using this dataset since the data source has been taken off the web.
 }
 \examples{
 library(ggplot2)
