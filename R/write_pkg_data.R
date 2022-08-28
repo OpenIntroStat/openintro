@@ -69,8 +69,8 @@ write_pkg_data <- function(pkg, dir = paste0("data-", out_type), overwrite = FAL
         	  dump(list = data_sets[i], file = destination)
         	} else {
           switch(out_type,
-            csv = readr::write_csv(x = tmp_data, path = destination),
-            tab = readr::write_delim(x = tmp_data, path = destination, delim = "\t")
+            csv = readr::write_csv(x = tmp_data, file = destination),
+            tab = readr::write_delim(x = tmp_data, file = destination, delim = "\t")
           )
         }
         written <- written + 1
