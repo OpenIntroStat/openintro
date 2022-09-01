@@ -1,4 +1,4 @@
-#' Daily observations for the S\&P 500
+#' Daily observations for the S&P 500
 #'
 #' Data runs from 1950 to near the end of 2018.
 #'

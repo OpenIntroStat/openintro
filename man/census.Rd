@@ -18,7 +18,7 @@ A data frame with 500 observations on the following 8 variables.
 }
 }
 \source{
-\url{http://factfinder.census.gov}
+\url{https://data.census.gov/cedsci}
 }
 \usage{
 census

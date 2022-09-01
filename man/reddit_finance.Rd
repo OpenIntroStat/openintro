@@ -75,7 +75,7 @@ A data frame with 1998 rows and 65 variables.
 }
 }
 \source{
-\href{https://www.reddit.com/r/financialindependence/comments/m1q8ia/official_2020_fi_survey_results/}{Reddit Official 2020 FI Survey Results}.
+Reddit Official 2020 FI Survey Results, https://www.reddit.com/r/financialindependence/comments/m1q8ia/official_2020_fi_survey_results.
 }
 \usage{
 reddit_finance

@@ -1,3 +1,8 @@
+# openintro 2.4.0
+
+* Fix HTML version of manual
+* Remove some URLs that no longer work
+
 # openintro 2.3.0
 
 * Added new datasets:

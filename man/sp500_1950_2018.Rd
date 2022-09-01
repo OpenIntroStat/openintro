@@ -3,7 +3,7 @@
 \docType{data}
 \name{sp500_1950_2018}
 \alias{sp500_1950_2018}
-\title{Daily observations for the S\&P 500}
+\title{Daily observations for the S&P 500}
 \format{
 A data frame with 17346 observations on the following 7 variables.
 \describe{

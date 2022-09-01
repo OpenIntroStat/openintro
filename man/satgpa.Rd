@@ -54,6 +54,6 @@ mod <- lm(fy_gpa ~ sat_m, data = satgpa)
 tidy(mod)
 }
 \references{
-\url{https://chance.dartmouth.edu/course/Syllabi/Princeton96/ETSValidation.html}
+https://chance.dartmouth.edu/course/Syllabi/Princeton96/ETSValidation.html
 }
 \keyword{datasets}
