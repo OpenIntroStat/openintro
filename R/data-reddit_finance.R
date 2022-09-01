@@ -75,7 +75,7 @@
 #'   \item{2020_edu_exp}{Education expenses.}
 #'   \item{2020_other_exp}{Other expenses.}
 #' }
-#' @source [Reddit Official 2020 FI Survey Results](https://www.reddit.com/r/financialindependence/comments/m1q8ia/official_2020_fi_survey_results/).
+#' @source Reddit Official 2020 FI Survey Results, https://www.reddit.com/r/financialindependence/comments/m1q8ia/official_2020_fi_survey_results.
 #' @keywords datasets
 #' @examples
 #'
