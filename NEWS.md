@@ -1,3 +1,5 @@
+# openintro 2.4.0
+
 # openintro 2.3.0
 
 * Added new datasets:
