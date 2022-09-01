@@ -7,8 +7,8 @@
 \format{
 This data object is more unusual than most. It is a list of 4 data
 frames. The four data frames correspond to the data used in Studies 1-4 of
-the referenced \href{https://www.science.org/doi/10.1126/science.aah6524}{paper},
-and these data frames each have variables (columns) that are among the following:
+the referenced paper, and these data frames each have variables (columns)
+that are among the following:
 \describe{
 \item{subject}{Subject ID. Note that Subject 1 in the first data frame
 (data set) does \bold{not} correspond to Subject 1 in the second data frame.}
@@ -40,7 +40,7 @@ the \dQuote{smart} game and their interest in the \dQuote{try-hard} game.}
 \source{
 Bian L, Leslie SJ, Cimpian A. 2017. "Gender stereotypes about intellectual
 ability emerge early and influence children's interests". Science 355:6323
-(389-391). \url{https://www.science.org/doi/10.1126/science.aah6524}.
+(389-391). https://www.science.org/doi/10.1126/science.aah6524.
 
 The original data may be found \href{https://osf.io/yund6/?view_only=9a8505d4e87b456a89f255b43e21234e}{here}.
 }
@@ -50,8 +50,7 @@ children_gender_stereo
 \description{
 Stereotypes are common, but at what age do they start? This study
 investigates stereotypes in young children aged 5-7 years old. There are
-four studies reported in the \href{https://www.science.org/doi/10.1126/science.aah6524}{paper},
-and all four data sets are provided here.
+four studies reported in the paper, and all four data sets are provided here.
 }
 \details{
 The structure of the data object is a little unusual, so we recommend
