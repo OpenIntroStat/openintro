@@ -89,5 +89,4 @@
 #' labor_market_discrimination %>%
 #'   group_by(race) %>%
 #'   summarise(call_back = mean(call))
-
 "labor_market_discrimination"
