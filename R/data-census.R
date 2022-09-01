@@ -16,7 +16,7 @@
 #'   \item{marital_status}{Marital status with levels \code{Divorced}, \code{Married/spouse absent}, \code{Married/spouse present}, \code{Never married/single}, \code{Separated} and \code{Widowed}.}
 #'   \item{total_personal_income}{Total personal income (in U.S. dollars).}
 #' }
-#' @source \url{http://factfinder.census.gov}
+#' @source \url{https://data.census.gov/cedsci}
 #' @keywords datasets
 #' @examples
 #'
