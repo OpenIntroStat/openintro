@@ -1,5 +1,9 @@
 # openintro 2.4.0
 
+* Added new datasets:
+  * `fish_age`, `nba_finals` and `nba_finals_teams` by [@npaterno](https://github.com/npaterno)
+  * `lego_population` and `lego_sample` by [@mmeece](https://github.com/mmeece)
+  * `lecture_learning` by [@jonathanaakin](https://github.com/jonathanaakin)
 * Fix HTML version of manual
 * Remove some URLs that no longer work
 
