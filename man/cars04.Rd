@@ -38,7 +38,7 @@ A data frame with 428 rows and 19 columns. This is a record of characteristics o
 
 library(ggplot2)
 
-# Vehicle price by type
+# Highway gas mileage
 ggplot(cars04, aes(x = hwy_mpg)) +
  geom_histogram(bins = 15, color = "white",
  fill = openintro::IMSCOL["green", "full"]) +
