@@ -13,6 +13,5 @@ comics <- raw_data %>%
   mutate(publisher = ifelse(publisher == "dc", "DC", "Marvel"))
 
 
-# save -------------------------------------------------------------------------
 
 usethis::use_data(comics, overwrite = TRUE)
