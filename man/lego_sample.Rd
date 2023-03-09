@@ -26,6 +26,10 @@ A data frame with 75 rows and 15 variables.
 }
 \source{
 \href{https://www.tandfonline.com/doi/full/10.1080/26939169.2021.1946450}{Peterson, A. D., & Ziegler, L. (2021). Building a multiple linear regression model with LEGO brick data. Journal of Statistics and Data Science Education, 29(3),1-7. doi.org/10.1080/26939169.2021.1946450  }
+
+\href{lego.brickinstructions.com}{BrickInstructions.com. (n.d.). Retrieved February 2, 2021 from}
+
+\href{https://brickset.com}{Brickset. (n.d.). BRICKSET: Your LEGO® set guide. Retrieved February 2, 2021 from}
 }
 \usage{
 lego_sample
@@ -38,7 +42,7 @@ Data from their article was scrapped from multiple sources including brickset.co
 library(ggplot2)
 library(dplyr)
 
-small<-filter(lego_sample, theme =="Friends" | theme == "City" )
+small <- filter(lego_sample, theme == "Friends" | theme == "City" )
 
 ggplot(small, aes(pieces, amazon_price))+
 geom_point(alpha = 0.3) +

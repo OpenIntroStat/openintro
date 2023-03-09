@@ -37,11 +37,11 @@ library(ggplot2)
 library(dplyr)
 library(openintro)
 
-plot_data <- nba_finals_teams \%>\% 
+plot_data <- nba_finals_teams \%>\%
   filter(apps != 0)
 
 ggplot(plot_data, aes(win)) +
-  geom_histogram(fill = IMSCOL["blue", "full"], color = "white", binwidth = 2) +
+  geom_histogram(color = "white", binwidth = 2) +
   theme_minimal() +
   labs(
     title = "Number of NBA Finals series wins",
@@ -50,7 +50,7 @@ ggplot(plot_data, aes(win)) +
   )
 
 ggplot(plot_data, aes(apps, win)) +
-  geom_point(color = IMSCOL["blue", "full"]) +
+  geom_point() +
   theme_minimal() +
   labs(
     title = "Can we predict how many NBA Championships a

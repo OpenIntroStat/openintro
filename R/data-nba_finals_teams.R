@@ -1,14 +1,14 @@
 #' NBA Finals Team Summary
 #'
-#' A data set with individual team summaries for the NBA Finals series from 1950 to 2022. To win the Finals, a team must win 4 games. The maximum number of games in a series is 7. 
-#' 
-#' Notes: 
+#' A data set with individual team summaries for the NBA Finals series from 1950 to 2022. To win the Finals, a team must win 4 games. The maximum number of games in a series is 7.
+#'
+#' Notes:
 #' 1. The Chicago Stags folded in 1950, the Washington Capitols in 1951 and the Baltimore Bullets in 1954.
-#' 2. This list uses current team names. For example, the Seattle SuperSonics are not on the list as that team moved and became the Oklahoma City Thunder. 
+#' 2. This list uses current team names. For example, the Seattle SuperSonics are not on the list as that team moved and became the Oklahoma City Thunder.
 #'
 #' @name nba_finals_teams
 #' @docType data
-#' @format A data frame with 33 rows and 7 variables: 
+#' @format A data frame with 33 rows and 7 variables:
 #' \describe{
 #'   \item{team}{Team name.}
 #'   \item{win}{Number of NBA Championships won.}
@@ -21,25 +21,25 @@
 #' @source [List of NBA Champions.](https://en.wikipedia.org/wiki/List_of_NBA_champions)
 #' @keywords datasets
 #'
-#' @examples 
+#' @examples
 #' library(ggplot2)
 #' library(dplyr)
 #' library(openintro)
-#' 
-#' plot_data <- nba_finals_teams %>% 
+#'
+#' plot_data <- nba_finals_teams %>%
 #'   filter(apps != 0)
 #'
 #' ggplot(plot_data, aes(win)) +
-#'   geom_histogram(fill = IMSCOL["blue", "full"], color = "white", binwidth = 2) +
+#'   geom_histogram(color = "white", binwidth = 2) +
 #'   theme_minimal() +
 #'   labs(
 #'     title = "Number of NBA Finals series wins",
 #'     x = "Number of wins",
 #'     y = "Number of teams"
 #'   )
-#' 
+#'
 #' ggplot(plot_data, aes(apps, win)) +
-#'   geom_point(color = IMSCOL["blue", "full"]) +
+#'   geom_point() +
 #'   theme_minimal() +
 #'   labs(
 #'     title = "Can we predict how many NBA Championships a
@@ -47,5 +47,5 @@
 #'     x = "Number of NBA Finals appearances",
 #'     y = "Number of NBA Finals series wins"
 #'   )
-#' 
+#'
 "nba_finals_teams"
