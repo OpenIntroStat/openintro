@@ -22,7 +22,7 @@ License: GPL-3
 Encoding: UTF-8
 LazyData: true
 LazyDataCompression: xz
-RoxygenNote: 7.2.1
+RoxygenNote: 7.2.3
 Suggests: 
     broom,
     dplyr,
