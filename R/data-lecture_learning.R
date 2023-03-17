@@ -9,13 +9,13 @@
 #' preferred lecture delivery method. Finally, students completed an assessment
 #' at the end of the lecture to determine memory recall.
 #'
-#'
 #' @format A data frame with 552 rows and 8 variables.
 #' \describe{
 #'   \item{student}{Identification number of a specific student.
 #'   Each identification appears twice because same student heard both lecture
 #'   delivery methods.}
-#'   \item{gender}{Gender of student. Recored by the study as a binary variable.}
+#'   \item{gender}{Gender of student. Recored a binary variable with levels
+#'   Male and Female in the study.}
 #'   \item{method}{Delivery method of lecture was either in-person(Live) or
 #'   pre-recorded(Video).}
 #'   \item{mindwander}{An indicator of distraction during the lecture. It is a
@@ -36,7 +36,6 @@
 #' @examples
 #' library(dplyr)
 #' library(ggplot2)
-#' library(openintro)
 #'
 #' # Calculate the average memory test proportion by lecture delivery method
 #' # and gender.
@@ -46,9 +45,8 @@
 #'
 #' # Compare visually the differences in memory test proportions by delivery
 #' # method and gender.
-#' ggplot(data = lecture_learning, aes(x = method, y = memory, fill = gender)) +
+#' ggplot(lecture_learning, aes(x = method, y = memory, fill = gender)) +
 #'   geom_boxplot() +
-#'   geom_jitter() +
 #'   theme_minimal() +
 #'   labs(
 #'     title = "Difference in memory test proportions",
