@@ -3,14 +3,18 @@ library(janitor)
 library(dplyr)
 
 # load data ---------------------------------------------------------------------
-lego_population <- read_excel(here::here("data-raw/lego_population/lego_population.xlsx"))
+
+lego_population_raw <- read_excel(
+  here::here("data-raw/lego_population/lego_population.xlsx"),
+  na = c("", "NA")
+  )
 
 # cleaning ----------------------------------------------------------------------
 
 # cleaning: Making Variables Snake Case
 
-lego_population <- lego_population %>% 
-  clean_names() %>% 
+lego_population <- lego_population_raw %>%
+  clean_names() %>%
   select(-availability)
 
 # save --------------------------------------------------------------------------
