@@ -112,6 +112,7 @@ reference:
   - fastfood
   - fcid
   - fheights
+  - fish_age
   - fish_oil_18
   - flow_rates
   - friday
@@ -144,7 +145,10 @@ reference:
   - kobe_basket
   - labor_market_discrimination
   - law_resume
+  - lecture_learning
   - leg_mari
+  - lego_population
+  - lego_sample
   - lizard_habitat
   - lizard_run
   - loan50
@@ -171,6 +175,8 @@ reference:
   - mn_police_use_of_force
   - mtl
   - murders
+  - nba_finals_teams
+  - nba_finals
   - nba_heights
   - nba_players_19
   - ncbirths
