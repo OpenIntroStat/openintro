@@ -1,9 +1,9 @@
 pandoc: 2.7.3
-pkgdown: 2.0.6.9000
-pkgdown_sha: 956f076f661eb2de9413f64ea24a580cf444466d
+pkgdown: 2.0.7.9000
+pkgdown_sha: c354aa7e5ea1f9936692494c28c89e5bdd31fc68
 articles:
   datasets: datasets.html
-last_built: 2022-09-01T02:01Z
+last_built: 2023-03-22T15:12Z
 urls:
   reference: https://openintrostat.github.io/openintro/reference
   article: https://openintrostat.github.io/openintro/articles
