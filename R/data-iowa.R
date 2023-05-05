@@ -18,20 +18,20 @@
 #' library(ggplot2)
 #' library(dplyr)
 #'
-#'plot_data <- iowa %>%
-#'  filter(candidate != "Total") %>%
-#'  group_by(candidate) %>%
-#'  summarize(total_votes = sum(votes) / 1000)
+#' plot_data <- iowa %>%
+#'   filter(candidate != "Total") %>%
+#'   group_by(candidate) %>%
+#'   summarize(total_votes = sum(votes) / 1000)
 #'
-#'ggplot(plot_data, aes(total_votes, candidate)) +
-#'  geom_col() +
-#'  theme_minimal() +
-#'  labs(
-#'    title = "2016 Presidential Election in Iowa",
-#'    subtitle = "Popular vote",
-#'    y = "",
-#'    x = "Number of Votes (in thousands)
-#'    "
-#'  )
+#' ggplot(plot_data, aes(total_votes, candidate)) +
+#'   geom_col() +
+#'   theme_minimal() +
+#'   labs(
+#'     title = "2016 Presidential Election in Iowa",
+#'     subtitle = "Popular vote",
+#'     y = "",
+#'     x = "Number of Votes (in thousands)
+#'     "
+#'   )
 
 "iowa"
