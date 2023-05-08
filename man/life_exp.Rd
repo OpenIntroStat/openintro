@@ -10,7 +10,7 @@ A data frame with 3142 observations on the following 4 variables.
 \item{state}{Name of the state.}
 \item{county}{Name of the county.}
 \item{expectancy}{Life expectancy in the county.}
-\item{income}{Median income in the county, measured in US \$.}
+\item{income}{Median income in the county, measured in US $.}
 }
 }
 \usage{
