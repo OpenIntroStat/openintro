@@ -32,7 +32,8 @@ Suggests:
     scales,
     testthat (>= 3.0.0),
     tidyr,
-    tidytext
+    tidytext,
+    stringr
 Imports: 
     ggplot2 (>= 2.2.1),
     graphics,

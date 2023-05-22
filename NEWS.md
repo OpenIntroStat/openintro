@@ -6,6 +6,8 @@
   * `lecture_learning` by [@jonathanaakin](https://github.com/jonathanaakin)
 * Fix HTML version of manual
 * Remove some URLs that no longer work
+* Added new datasets:
+  * `cars04`, `life_exp`, `comics`, `nyc`, `gss_wordsum_class`, `manhattan`, `iran`, `iowa`, `twins`, `LAhomes`, `movies`, `ucb_admit`, `soda` ported from IMS Tutorials by [@npaterno](https://github.com/npaterno)
 
 # openintro 2.3.0
 
