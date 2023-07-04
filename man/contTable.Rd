@@ -4,7 +4,14 @@
 \alias{contTable}
 \title{Generate Contingency Tables for LaTeX}
 \usage{
-contTable(x, prop = c("none", "row", "col"), show = FALSE, digits = 3)
+contTable(
+  x,
+  prop = c("none", "row", "col"),
+  show = FALSE,
+  digits = 3,
+  caption = NULL,
+  label = NULL
+)
 }
 \arguments{
 \item{x}{A data frame (with two columns) or a table.}
@@ -18,6 +25,17 @@ work should be shown.}
 
 \item{digits}{The number of digits after the decimal that should be shown
 for row or column proportions.}
+
+\item{caption}{A string that contains the table caption. The default value is
+\code{NULL}. If \code{x} is a data frame and \code{caption=NULL}, then
+\code{contTable} creates a sensible caption from the data frame's column
+names. If \code{x} is a table and \code{caption=NULL}, then the caption is an
+empty string.}
+
+\item{label}{The latex table label. The default value is \code{NULL}. If
+\code{x} is a data frame and \code{label=NULL}, then \code{contTable} creates
+a sensible label from the data frame's column names. If \code{x} is a table
+and \code{label=NULL}, then the label is an empty string.}
 }
 \description{
 Input a data frame or a table, and the LaTeX output will be returned.
