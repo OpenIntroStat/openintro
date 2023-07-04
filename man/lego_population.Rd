@@ -9,7 +9,7 @@ A data frame with 1304 rows and 14 variables.
 \describe{
 \item{item_number}{Set Item number}
 \item{set_name}{Name of the set.}
-\item{theme}{Set theme either Duplo, City or Friends.}
+\item{theme}{Set theme: Duplo, City or Friends.}
 \item{pieces}{Number of pieces in the set.}
 \item{price}{Recommended retail price from LEGO.}
 \item{amazon_price}{Price of the set at Amazon.}
@@ -21,7 +21,6 @@ A data frame with 1304 rows and 14 variables.
 \item{weight}{Weight of the set of LEGOS in pounds and kilograms.}
 \item{unique_pieces}{Number of pieces classified as unique in the instruction manual.}
 \item{size}{Size of the lego pieces: Large if safe for small children and Small for older children.}
-
 }
 }
 \source{
@@ -42,15 +41,16 @@ Data from their article was scrapped from multiple sources including brickset.co
 library(ggplot2)
 library(dplyr)
 
-small <- filter(lego_population, theme == "Friends" | theme == "City" )
-
-ggplot(small, aes(pieces, amazon_price))+
-geom_point(alpha = 0.3) +
+lego_population \%>\%
+  filter(theme == "Friends" | theme == "City" ) \%>\%
+  ggplot(aes(x = pieces, y = amazon_price)) +
+  geom_point(alpha = 0.3) +
   labs(
-    x= "Pieces in the Set",
+    x = "Pieces in the Set",
     y = "Amazon Price",
-    title = "Amazon Price vs # of Pieces in Lego Sets"
-)
+    title = "Amazon Price vs Number of Pieces in Lego Sets",
+    subtitle = "Friends and City Themes"
+  )
 
 }
 \keyword{datasets}
