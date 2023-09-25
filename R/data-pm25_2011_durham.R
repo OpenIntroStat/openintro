@@ -1,7 +1,7 @@
 #' Air quality for Durham, NC
 #'
 #' Daily air quality is measured by the air quality index (AQI) reported by the
-#' Environmental Protection Agency.
+#' Environmental Protection Agency in 2011.
 #'
 #'
 #' @name pm25_2011_durham

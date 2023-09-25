@@ -1,11 +1,11 @@
 #' New York City Marathon Times
 #'
 #' Marathon times of runners in the Men and Women divisions of the New York
-#' City Marathon, 1970 - 2020.
+#' City Marathon, 1970 - 2022.
 #'
 #' @name nyc_marathon
 #' @docType data
-#' @format A data frame with 102 observations on the following 7 variables.
+#' @format A data frame with 106 observations on the following 7 variables.
 #' \describe{
 #'   \item{year}{Year of marathom.}
 #'   \item{name}{Name of winner.}
