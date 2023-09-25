@@ -4,9 +4,12 @@ library(readr)
 # load data ---------------------------------------------------------------------
 raw_data <- read.csv(here::here("data-raw/paralympic_1500/paralympic_1500.csv"))
 
-# cleaning: none required
+# cleaning ---------------------------------------------------------------------
 
-paralympic_1500 <- raw_data
+paralympic_1500 <- raw_data |>
+  mutate(time_min = time) |>
+  mutate(time = paste(min,sec,sep=":")) |>
+  select(-min, -sec)
 
 # save --------------------------------------------------------------------------
 
