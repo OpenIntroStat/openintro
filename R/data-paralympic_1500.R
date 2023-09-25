@@ -17,9 +17,8 @@
 #'   \item{division}{Division: `Men` or `Women`.}
 #'   \item{name}{Name of the athlete.}
 #'   \item{country_of_athlete}{Country of athlete.}
-#'   \item{min}{Number of minutes in gold medal time.}
-#'   \item{sec}{Number of residual seconds in gold medal time.}
-#'   \item{time}{Time of gold medal race, in decimal minutes (min + sec/60).}
+#'   \item{time}{Time of gold medal race, in m:s.}
+#'   \item{time_min}{Time of gold medal race, in decimal minutes (min + sec/60).}
 #' }
 #' @source [https://www.paralympic.org/](https://www.paralympic.org/) and [https://en.wikipedia.org/wiki/1500_metres_at_the_Olympics](https://en.wikipedia.org/wiki/1500_metres_at_the_Olympics).
 #' @keywords datasets
