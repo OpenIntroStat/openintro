@@ -38,22 +38,36 @@ precise random sample uniformly distributed across the United States.
 }
 \examples{
 
-# Data taken from across the US.
-summarized_temp <- us_temp |>
-     group_by(station, year, latitude, longitude) |>
-     summarize(tmax_med = median(tmax, na.rm = TRUE)) |>
-     mutate(plot_shift = ifelse(year == "1950", 0, 1))
-
+library(ggplot2)
+library(maps)
 library(sf)
+library(dplyr)
 
+# Summarize temperature by station and year for plotting
+summarized_temp <- us_temp |>
+  group_by(station, year, latitude, longitude) |>
+  summarize(tmax_med = median(tmax, na.rm = TRUE), .groups = "drop") |>
+  mutate(plot_shift = ifelse(year == "1950", 0, 2))
+
+# Make a map of the US as a baseline
 usa <- st_as_sf(maps::map("state", fill = TRUE, plot = FALSE))
+
+# Layer the US map with summarized temperatures
 ggplot(data = usa) +
-    geom_sf() +
-    geom_point(data = summarized_temp,
-               aes(x = longitude + plot_shift, y = latitude,
-                   color = tmax_med, shape = year)) +
-    scale_color_gradient(high = "red", low = "yellow") +
-    ggtitle("Median of the high temp, 1950 & 2022") +
-    labs(x = "longitude", color = "median high temp")
+  geom_sf() +
+  geom_point(
+    data = summarized_temp,
+    aes(x = longitude + plot_shift, y = latitude, fill = tmax_med, shape = year),
+    color = "black", size = 3
+  ) +
+  scale_fill_gradient(high = "red", low = "yellow") +
+  scale_shape_manual(values = c(21, 24)) +
+  labs(
+    title = "Median high temperature, 1950 and 2022",
+    x = "Longitude",
+    y = "Latitude",
+    fill = "Median\nhigh temp",
+    shape = "Year"
+  )
 }
 \keyword{datasets}
