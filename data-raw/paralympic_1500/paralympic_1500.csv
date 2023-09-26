@@ -1,4 +1,4 @@
-﻿year,city,country_of_games,division,type,name,country_of_athlete,min,sec,time
+year,city,country_of_games,division,type,name,country_of_athlete,min,sec,time
 1896,Athens,Greece,Men,Olympic,Edwin Flack,Australia,4,33.2,4.553333333
 1900,Paris,France,Men,Olympic,Charles Bennett,Great Britain,4,6.2,4.103333333
 1904,St Louis,USA,Men,Olympic,Jim Lightbody,USA,4,5.4,4.09
@@ -14,7 +14,7 @@
 1956,Melbourne,Australia,Men,Olympic,Ron Delany,Ireland,3,41.2,3.686666667
 1960,Rome,Italy,Men,Olympic,Herb Elliott,Australia,3,35.6,3.593333333
 1964,Tokyo,Japan,Men,Olympic,Peter Snell,New Zealand,3,38.1,3.635
-1968,Mexico City,Mexico,men,Olympic,Kipchoge Keino,Kenya,3,34.91,3.581833333
+1968,Mexico City,Mexico,Men,Olympic,Kipchoge Keino,Kenya,3,34.91,3.581833333
 1972,Munich,Germany,Men,Olympic,Pekka Vasala,Finland,3,36.3,3.605
 1972,Munich,Germany,Women,Olympic,Lyudmila Bragina,Soviet Union,4,1.38,4.023
 1976,Montreal,Canada,Men,Olympic,John Walker,New Zealand,3,39.17,3.652833333
