@@ -29,12 +29,10 @@ Suggests:
     forcats,
     knitr,
     lubridate,
-    maps,
     scales,
     testthat (>= 3.0.0),
     tidyr,
     tidytext,
-    sf,
     stringr
 Imports: 
     ggplot2 (>= 2.2.1),
