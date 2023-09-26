@@ -33,11 +33,10 @@ library(tidyr)
 
 # Count the number of one-year-old fish at each location.
 
-fish_age \%>\%
-  count(year, location, one_year_old) \%>\%
-  filter(one_year_old == "yes") \%>\%
-  pivot_wider(names_from = location, values_from = n) \%>\%
-  select(-one_year_old)
+fish_age |>
+  filter(one_year_old == "yes") |>
+  count(year, location) |>
+  pivot_wider(names_from = location, values_from = n)
 
 }
 \keyword{datasets}
