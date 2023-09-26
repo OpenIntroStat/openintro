@@ -72,6 +72,7 @@ reference:
   - burger
   - cancer_in_dogs
   - cards
+  - cars04
   - cars93
   - census
   - cherry
@@ -82,6 +83,7 @@ reference:
   - climate70
   - climber_drugs
   - coast_starlight
+  - comics
   - corr_match
   - country_iso
   - cpr
@@ -108,7 +110,6 @@ reference:
   - exams
   - exclusive_relationship
   - fact_opinion
-  - family_college
   - fastfood
   - fcid
   - fheights
@@ -128,6 +129,7 @@ reference:
   - gpa_iq
   - gpa_study_hours
   - gpa
+  - gss_wordsum_class
   - gss2010
   - health_coverage
   - healthcare_law_survey
@@ -140,15 +142,19 @@ reference:
   - husbands_wives
   - immigration
   - infmortrate
+  - iowa
   - ipo
   - ipod
+  - iran
   - kobe_basket
   - labor_market_discrimination
+  - LAhomes
   - law_resume
   - lecture_learning
   - leg_mari
   - lego_population
   - lego_sample
+  - life_exp
   - lizard_habitat
   - lizard_run
   - loan50
@@ -162,6 +168,7 @@ reference:
   - male_heights
   - mammals
   - mammogram
+  - manhattan
   - marathon
   - mariokart
   - mcu_films
@@ -173,6 +180,7 @@ reference:
   - mlb
   - mlbbat10
   - mn_police_use_of_force
+  - movies
   - mtl
   - murders
   - nba_finals_teams
@@ -182,11 +190,13 @@ reference:
   - ncbirths
   - nuclear_survey
   - nyc_marathon
+  - nyc
   - nycflights
   - offshore_drilling
   - opportunity_cost
   - orings
   - oscars
+  - paralympic_1500
   - penelope
   - penetrating_oil
   - penny_ages
@@ -195,6 +205,7 @@ reference:
   - piracy
   - playing_cards
   - pm25_2011_durham
+  - pm25_2022_durham
   - poker
   - possum
   - ppp_201503
@@ -220,6 +231,7 @@ reference:
   - smoking
   - snowfall
   - socialexp
+  - soda
   - solar
   - sowc_child_mortality
   - sowc_demographics
@@ -242,11 +254,13 @@ reference:
   - tips
   - tourism
   - transplant
+  - twins
   - ucla_f18
   - ucla_textbooks_f18
   - ukdemo
   - unempl
   - unemploy_pres
+  - usb_admit
   - winery_cars
   - world_pop
   - xom
