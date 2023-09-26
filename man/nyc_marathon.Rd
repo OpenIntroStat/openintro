@@ -5,7 +5,7 @@
 \alias{nyc_marathon}
 \title{New York City Marathon Times}
 \format{
-A data frame with 102 observations on the following 7 variables.
+A data frame with 106 observations on the following 7 variables.
 \describe{
 \item{year}{Year of marathom.}
 \item{name}{Name of winner.}
@@ -24,7 +24,7 @@ nyc_marathon
 }
 \description{
 Marathon times of runners in the Men and Women divisions of the New York
-City Marathon, 1970 - 2020.
+City Marathon, 1970 - 2022.
 }
 \examples{
 library(ggplot2)

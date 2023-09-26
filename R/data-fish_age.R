@@ -27,9 +27,9 @@
 #'
 #' # Count the number of one-year-old fish at each location.
 #'
-#' fish_age %>%
-#'   filter(one_year_old == "yes") %>%
-#'   count(year, location) %>%
+#' fish_age |>
+#'   filter(one_year_old == "yes") |>
+#'   count(year, location) |>
 #'   pivot_wider(names_from = location, values_from = n)
 #'
 "fish_age"

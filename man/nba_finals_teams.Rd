@@ -37,24 +37,22 @@ library(ggplot2)
 library(dplyr)
 library(openintro)
 
-plot_data <- nba_finals_teams \%>\%
+teams_with_apps <- nba_finals_teams \%>\%
   filter(apps != 0)
 
-ggplot(plot_data, aes(win)) +
-  geom_histogram(color = "white", binwidth = 2) +
-  theme_minimal() +
+ggplot(teams_with_apps, aes(x = win)) +
+  geom_histogram(binwidth = 2) +
   labs(
     title = "Number of NBA Finals series wins",
     x = "Number of wins",
     y = "Number of teams"
   )
 
-ggplot(plot_data, aes(apps, win)) +
-  geom_point() +
-  theme_minimal() +
+ggplot(teams_with_apps, aes(x = apps, y = win)) +
+  geom_point(alpha = 0.3) +
   labs(
     title = "Can we predict how many NBA Championships a
-       \nteam has based on the number of appearances?",
+team has based on the number of appearances?",
     x = "Number of NBA Finals appearances",
     y = "Number of NBA Finals series wins"
   )

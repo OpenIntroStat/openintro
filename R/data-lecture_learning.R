@@ -39,9 +39,9 @@
 #'
 #' # Calculate the average memory test proportion by lecture delivery method
 #' # and gender.
-#' lecture_learning %>%
-#'   group_by(method, gender) %>%
-#'   summarize(average_memory = mean(memory), count = n())
+#' lecture_learning |>
+#'   group_by(method, gender) |>
+#'   summarize(average_memory = mean(memory), count = n(), .groups = "drop")
 #'
 #' # Compare visually the differences in memory test proportions by delivery
 #' # method and gender.
@@ -61,10 +61,9 @@
 #'
 #' # Calculating the proportion of students who were most motivated to remain
 #' # attentive in each delivery method.
-#' lecture_learning %>%
-#'   count(motivation_both) %>%
+#' lecture_learning |>
+#'   count(motivation_both) |>
 #'   mutate(proportion = n / sum(n))
 #'
 #' @source [PLOS One](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0141587)
-#'
 "lecture_learning"
