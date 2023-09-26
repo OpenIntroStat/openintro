@@ -9,7 +9,7 @@ A data frame with 75 rows and 15 variables.
 \describe{
 \item{item_number}{Set Item number}
 \item{set_name}{Name of the set.}
-\item{theme}{Set theme either Duplo, City or Friends.}
+\item{theme}{Set theme: Duplo, City or Friends.}
 \item{pieces}{Number of pieces in the set.}
 \item{price}{Recommended retail price from LEGO.}
 \item{amazon_price}{Price of the set at Amazon.}
@@ -42,15 +42,16 @@ Data from their article was scrapped from multiple sources including brickset.co
 library(ggplot2)
 library(dplyr)
 
-small <- filter(lego_sample, theme == "Friends" | theme == "City" )
-
-ggplot(small, aes(pieces, amazon_price))+
-geom_point(alpha = 0.3) +
+lego_sample \%>\%
+  filter(theme == "Friends" | theme == "City" ) \%>\%
+  ggplot(aes(x = pieces, y = amazon_price)) +
+  geom_point(alpha = 0.3) +
   labs(
-    x= "Pieces in the Set",
+    x = "Pieces in the Set",
     y = "Amazon Price",
-    title = "Amazon Price vs # of Pieces in Lego Sets"
-)
+    title = "Amazon Price vs Number of Pieces in Lego Sets",
+    subtitle = "Friends and City Themes"
+  )
 
 }
 \keyword{datasets}
