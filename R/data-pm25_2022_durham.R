@@ -29,10 +29,29 @@
 #'   \item{site_latitude}{A numeric vector of the latitude.}
 #'   \item{site_longitude}{A numeric vector of the longitude.}
 #'   }
-#' @source US Environmental Protection Agency, AirData, 2011.
-#' \url{http://www3.epa.gov/airdata/ad_data_daily.html}
+#' @source US Environmental Protection Agency, AirData, 2022.
+#' \url{https://www.epa.gov/outdoor-air-quality-data/download-daily-data}
 #' @keywords datasets
 #' @examples
 #'
-#' pm25_2011_durham
-"pm25_2011_durham"
+#' library(tidyverse)
+#' library(lubridate)
+#'
+#' monthly_pm25 <- pm25_2022_durham |>
+#'     mutate(month = month(mdy(date), label = TRUE)) |>
+#'     group_by(month) |>
+#'     summarize(mean_pm25 = mean(daily_mean_pm2_5_concentration), na.rm = TRUE)
+#'
+#' monthly_pm25
+#'
+#' pm25_2022_durham |>
+#'      mutate(month = month(mdy(date), label = FALSE)) |>
+#'      ggplot() +
+#'          geom_point(aes(x = month, y = daily_mean_pm2_5_concentration)) +
+#'          geom_line(data = monthly_pm25, aes(x = month, y = mean_pm25),
+#'                    color = "blue") +
+#'          labs(x = "", y = "",
+#'               title = "pm 2.5 concentration, 2022, Durham, NC") +
+#'          scale_x_continuous(breaks = 1:12, labels = month.name[1:12])
+#'
+"pm25_2022_durham"
