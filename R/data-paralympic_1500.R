@@ -15,6 +15,7 @@
 #'   \item{city}{City of the games.}
 #'   \item{country_of_games}{Country of the games.}
 #'   \item{division}{Division: `Men` or `Women`.}
+#'   \item{type}{Type.}
 #'   \item{name}{Name of the athlete.}
 #'   \item{country_of_athlete}{Country of athlete.}
 #'   \item{time}{Time of gold medal race, in m:s.}

@@ -4,7 +4,7 @@ library(tidyverse)
 
 # load data --------------------------------------------------------------------
 
-paralympic_1500_raw <- read.csv(here::here("data-raw/paralympic_1500/paralympic_1500.csv"))
+paralympic_1500_raw <- read_csv(here::here("data-raw/paralympic_1500/paralympic_1500.csv"))
 
 # cleaning ---------------------------------------------------------------------
 
