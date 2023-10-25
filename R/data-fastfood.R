@@ -1,6 +1,7 @@
 #' Nutrition in fast food
 #'
-#' Nutrition amounts in 515 fast food items.
+#' Nutrition amounts in 515 fast food items.  The author of the data
+#' scraped only entrees (not sides, drinks, desserts, etc.).
 #'
 #' @name fastfood
 #' @docType data
@@ -24,6 +25,7 @@
 #'   \item{calcium}{Calcium}
 #'   \item{salad}{Salad or not}
 #'   }
+#' @source The original source is [fastfoodnutrition.com](fastfoodnutrition.com). Retrieved from [Tidy Tuesday Fast food entree data](https://github.com/rfordatascience/tidytuesday/tree/master/data/2018/2018-09-04).
 #' @keywords datasets
 #'
 "fastfood"
