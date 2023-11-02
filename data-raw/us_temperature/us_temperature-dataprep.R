@@ -7,9 +7,9 @@ library(lubridate)
 
 # Load data --------------------------------------------------------------------
 
-us_temp <- read_csv("data-raw/us_temp/us_temp.csv") |>
+us_temperature <- read_csv("data-raw/us_temp/us_temperature.csv") |>
   select(location, everything())
 
 # Add to package
-use_data(us_temp, overwrite = TRUE)
+usethis::use_data(us_temperature, overwrite = TRUE)
 
