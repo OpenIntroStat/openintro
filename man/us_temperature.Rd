@@ -11,6 +11,7 @@ A data frame with 18759 observations on the following 9 variables.
 \item{station}{Formal ID of the NOAA weather station.}
 \item{latitude}{Latitude of the NOAA weather station.}
 \item{longitude}{Longitude of the NOAA weather station.}
+\item{elevation}{Elevation of the NOAA weather station.}
 \item{date}{Date the measurement was taken (Y-m-d).}
 \item{tmax}{Maximum daily temperature (Farenheit).}
 \item{tmin}{Minimum daily temperature (Farenheit).}
@@ -35,7 +36,7 @@ analysis would consider more than two years of data and a random or more
 complete sampling of weather stations across the US.
 }
 \examples{
-library(ggplot2)
+library(tidyverse)
 
 summarized_temp <- us_temperature |>
   group_by(station, year, latitude, longitude) |>

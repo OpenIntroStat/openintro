@@ -17,6 +17,7 @@
 #'   \item{station}{Formal ID of the NOAA weather station.}
 #'   \item{latitude}{Latitude of the NOAA weather station.}
 #'   \item{longitude}{Longitude of the NOAA weather station.}
+#'   \item{elevation}{Elevation of the NOAA weather station.}
 #'   \item{date}{Date the measurement was taken (Y-m-d).}
 #'   \item{tmax}{Maximum daily temperature (Farenheit).}
 #'   \item{tmin}{Minimum daily temperature (Farenheit).}
@@ -25,7 +26,7 @@
 #' @source [NOAA Climate Data Online](https://www.ncdc.noaa.gov/cdo-web/). Retrieved 23 September, 2023.
 #' @keywords datasets
 #' @examples
-#' library(ggplot2)
+#' library(tidyverse)
 #'
 #' summarized_temp <- us_temperature |>
 #'   group_by(station, year, latitude, longitude) |>
