@@ -9,7 +9,7 @@
 #' analysis would consider more than two years of data and a random or more
 #' complete sampling of weather stations across the US.
 #'
-#' @name us_temp
+#' @name us_temperature
 #' @docType data
 #' @format A data frame with 18759 observations on the following 9 variables.
 #' \describe{
@@ -28,7 +28,7 @@
 #' library(ggplot2)
 #' library(sf)
 #'
-#' summarized_temp <- us_temp |>
+#' summarized_temp <- us_temperature |>
 #'   group_by(station, year, latitude, longitude) |>
 #'   summarize(tmax_med = median(tmax, na.rm = TRUE)) |>
 #'   mutate(plot_shift = ifelse(year == "1950", 0, 1))
@@ -44,4 +44,4 @@
 #'   labs(x = "longitude",
 #'        color = "median high temp") +
 #'   guides(shape = guide_legend(override.aes = list(color = "black")))
-"us_temp"
+"us_temperature"
