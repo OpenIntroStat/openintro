@@ -26,7 +26,9 @@
 #' @source [NOAA Climate Data Online](https://www.ncdc.noaa.gov/cdo-web/). Retrieved 23 September, 2023.
 #' @keywords datasets
 #' @examples
-#' library(tidyverse)
+#' library(dplyr)
+#' library(ggplot2)
+#' library(tidyr)
 #'
 #' summarized_temp <- us_temperature |>
 #'   group_by(station, year, latitude, longitude) |>

@@ -36,7 +36,9 @@ analysis would consider more than two years of data and a random or more
 complete sampling of weather stations across the US.
 }
 \examples{
-library(tidyverse)
+library(dplyr)
+library(ggplot2)
+library(tidyr)
 
 summarized_temp <- us_temperature |>
   group_by(station, year, latitude, longitude) |>
