@@ -36,14 +36,13 @@ complete sampling of weather stations across the US.
 }
 \examples{
 library(ggplot2)
-library(sf)
 
 summarized_temp <- us_temperature |>
   group_by(station, year, latitude, longitude) |>
   summarize(tmax_med = median(tmax, na.rm = TRUE)) |>
   mutate(plot_shift = ifelse(year == "1950", 0, 1))
 
-usa <- st_as_sf(maps::map("state", fill = TRUE, plot = FALSE))
+usa <- sf::st_as_sf(maps::map("state", fill = TRUE, plot = FALSE))
 ggplot(data = usa) +
   geom_sf() +
   geom_point(data = summarized_temp,
