@@ -38,12 +38,12 @@ complete sampling of weather stations across the US.
 \examples{
 library(dplyr)
 library(ggplot2)
-library(tidyr)
 
 summarized_temp <- us_temperature |>
   group_by(station, year, latitude, longitude) |>
   summarize(tmax_med = median(tmax, na.rm = TRUE)) |>
-  mutate(plot_shift = ifelse(year == "1950", 0, 1))
+  mutate(plot_shift = ifelse(year == "1950", 0, 1)) |>
+  mutate(year = as.factor(year))
 
 usa <- sf::st_as_sf(maps::map("state", fill = TRUE, plot = FALSE))
 ggplot(data = usa) +
