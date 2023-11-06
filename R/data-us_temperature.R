@@ -28,6 +28,7 @@
 #' @examples
 #' library(dplyr)
 #' library(ggplot2)
+#' library(maps)
 #'
 #' summarized_temp <- us_temperature |>
 #'   group_by(station, year, latitude, longitude) |>
