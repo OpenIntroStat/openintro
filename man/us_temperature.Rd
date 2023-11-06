@@ -45,9 +45,10 @@ summarized_temp <- us_temperature |>
   mutate(plot_shift = ifelse(year == "1950", 0, 1)) |>
   mutate(year = as.factor(year))
 
-usa <- sf::st_as_sf(maps::map("state", fill = TRUE, plot = FALSE))
-ggplot(data = usa) +
-  geom_sf() +
+usa <- ggplot2::map_data("state")
+
+ggplot(data = usa, aes(x = long, y = lat)) +
+  geom_polygon(aes(group = group), color = "black", fill = "white") +
   geom_point(data = summarized_temp,
              aes(x = longitude + plot_shift, y = latitude,
                  color = tmax_med, shape = year)) +
