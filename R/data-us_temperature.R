@@ -36,7 +36,7 @@
 #'   mutate(plot_shift = ifelse(year == "1950", 0, 1)) |>
 #'   mutate(year = as.factor(year))
 #'
-#' usa <- ggplot2::map_data("state")
+#' usa <- map_data("state")
 #'
 #' ggplot(data = usa, aes(x = long, y = lat)) +
 #'   geom_polygon(aes(group = group), color = "black", fill = "white") +
