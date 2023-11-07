@@ -57,7 +57,7 @@
 #'
 #' # Use a paired t-test to determine whether memory test proportion score
 #' # differed by delivery method.
-#' t.test(memory ~ method, data = lecture_learning, paired = TRUE)
+#' mosaic::t_test(memory ~ method, data = lecture_learning, paired = TRUE)
 #'
 #' # Calculating the proportion of students who were most motivated to remain
 #' # attentive in each delivery method.

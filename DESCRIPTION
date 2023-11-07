@@ -34,7 +34,8 @@ Suggests:
     tidyr,
     tidytext,
     stringr,
-    maps
+    maps,
+    mosaic
 Imports: 
     ggplot2 (>= 2.2.1),
     graphics,
