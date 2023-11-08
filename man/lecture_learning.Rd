@@ -72,7 +72,7 @@ ggplot(lecture_learning, aes(x = method, y = memory, fill = gender)) +
 # differed by delivery method. Note that paired t-tests are identical
 # to one sample t-test on the difference between the Live and Video methods.
 learning_diff <- lecture_learning |>
-  pivot_wider(id_cols = student, names_from = method, values_from = memory) |>
+  tidyr::pivot_wider(id_cols = student, names_from = method, values_from = memory) |>
   mutate(time_diff = Live - Video)
 t.test(time_diff ~ 1, data = learning_diff)
 
