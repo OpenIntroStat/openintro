@@ -12,4 +12,3 @@ us_temperature <- read_csv("data-raw/us_temperature/us_temperature.csv") |>
 
 # Add to package
 usethis::use_data(us_temperature, overwrite = TRUE)
-

@@ -65,9 +65,9 @@ write_pkg_data <- function(pkg, dir = paste0("data-", out_type), overwrite = FAL
         # - readr::write_delim()
         # - writexl::write_xlsx()
         if (out_type == "R") {
-        	  eval(parse(text = paste0(data_sets[i], " <- tmp_data")))
-        	  dump(list = data_sets[i], file = destination)
-        	} else {
+          eval(parse(text = paste0(data_sets[i], " <- tmp_data")))
+          dump(list = data_sets[i], file = destination)
+        } else {
           switch(out_type,
             csv = readr::write_csv(x = tmp_data, file = destination),
             tab = readr::write_delim(x = tmp_data, file = destination, delim = "\t")

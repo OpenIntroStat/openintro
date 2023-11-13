@@ -14,12 +14,12 @@ names(raw_data)[1] <- "country"
 options(scipen = 999)
 
 # set data type to numeric
-raw_data %>% 
-  mutate_at('year_1960', as.numeric) %>% str()
+raw_data %>%
+  mutate_at("year_1960", as.numeric) %>%
+  str()
 
-gdp_countries<- raw_data
+gdp_countries <- raw_data
 
 # save --------------------------------------------------------------------------
 
 usethis::use_data(gdp_countries, overwrite = TRUE)
-

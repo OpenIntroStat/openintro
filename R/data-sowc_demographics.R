@@ -43,9 +43,9 @@
 #'   mutate(life_expectancy_change = life_expectancy_2018 - life_expectancy_1970) %>%
 #'   mutate(rank_life_expectancy = round(rank(-life_expectancy_2018), 0)) %>%
 #'   select(
-#'   countries_and_areas, rank_life_expectancy, life_expectancy_2018,
+#'     countries_and_areas, rank_life_expectancy, life_expectancy_2018,
 #'     life_expectancy_change
-#'     ) %>%
+#'   ) %>%
 #'   arrange(rank_life_expectancy)
 #'
 #' # List countries and areas' migration rate and population, ordered by rank of migration rate

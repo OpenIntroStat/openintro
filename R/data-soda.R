@@ -16,5 +16,4 @@
 #'
 #' soda %>%
 #'   count(location, drink)
-
 "soda"

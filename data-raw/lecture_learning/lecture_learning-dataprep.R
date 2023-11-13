@@ -20,9 +20,11 @@ raw_data <- raw_data %>%
 
 # change column names from original to more meaningful and standardized names
 
-colnames(raw_data) <- c("Student", "Gender", "Age", "MWlive", "MWvideo",
-                       "MEMlive", "MEMvideo", "INTlive", "INTvideo", "MOTlive",
-                       "MOTvideo", "MOTcompare")
+colnames(raw_data) <- c(
+  "Student", "Gender", "Age", "MWlive", "MWvideo",
+  "MEMlive", "MEMvideo", "INTlive", "INTvideo", "MOTlive",
+  "MOTvideo", "MOTcompare"
+)
 
 # create tidy datasets out of the raw_data data by making type of instruction
 # its own Method column and creates response values column; must do this
@@ -72,8 +74,8 @@ lecture_learning <- lecture_learning %>%
     Interest == 2 ~ "little interest",
     Interest == 3 ~ "neutral",
     Interest == 4 ~ "more interest",
-    Interest == 5 ~ "greatest interest")
-  )
+    Interest == 5 ~ "greatest interest"
+  ))
 
 lecture_learning <- lecture_learning %>%
   mutate(Motivation_single = case_when(
@@ -81,15 +83,15 @@ lecture_learning <- lecture_learning %>%
     Motivation_single == 2 ~ "somewhat unmotivated",
     Motivation_single == 3 ~ "neutral",
     Motivation_single == 4 ~ "somewhat motivated",
-    Motivation_single == 5 ~ "very motivated")
-  )
+    Motivation_single == 5 ~ "very motivated"
+  ))
 
 lecture_learning <- lecture_learning %>%
   mutate(Motivation_both = case_when(
     Motivation_both == 1 ~ "Video",
     Motivation_both == 2 ~ "Live",
-    Motivation_both == 3 ~ "Equally Motivated")
- ) %>%
+    Motivation_both == 3 ~ "Equally Motivated"
+  )) %>%
   janitor::clean_names()
 
 # save

@@ -50,13 +50,19 @@ usa <- map_data("state")
 
 ggplot(data = usa, aes(x = long, y = lat)) +
   geom_polygon(aes(group = group), color = "black", fill = "white") +
-  geom_point(data = summarized_temp,
-             aes(x = longitude + plot_shift, y = latitude,
-                 color = tmax_med, shape = year)) +
+  geom_point(
+    data = summarized_temp,
+    aes(
+      x = longitude + plot_shift, y = latitude,
+      color = tmax_med, shape = year
+    )
+  ) +
   scale_color_gradient(high = IMSCOL["red", 1], low = IMSCOL["yellow", 1]) +
   ggtitle("Median of the daily high temp, 1950 & 2022") +
-  labs(x = "longitude",
-       color = "median high temp") +
+  labs(
+    x = "longitude",
+    color = "median high temp"
+  ) +
   guides(shape = guide_legend(override.aes = list(color = "black")))
 }
 \keyword{datasets}

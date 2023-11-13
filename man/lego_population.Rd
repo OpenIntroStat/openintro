@@ -42,7 +42,7 @@ library(ggplot2)
 library(dplyr)
 
 lego_population \%>\%
-  filter(theme == "Friends" | theme == "City" ) \%>\%
+  filter(theme == "Friends" | theme == "City") \%>\%
   ggplot(aes(x = pieces, y = amazon_price)) +
   geom_point(alpha = 0.3) +
   labs(

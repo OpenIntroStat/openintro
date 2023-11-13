@@ -7,7 +7,7 @@ library(dplyr)
 lego_population_raw <- read_excel(
   here::here("data-raw/lego_population/lego_population.xlsx"),
   na = c("", "NA")
-  )
+)
 
 # cleaning ----------------------------------------------------------------------
 
@@ -20,4 +20,3 @@ lego_population <- lego_population_raw %>%
 # save --------------------------------------------------------------------------
 
 usethis::use_data(lego_population, overwrite = TRUE)
-

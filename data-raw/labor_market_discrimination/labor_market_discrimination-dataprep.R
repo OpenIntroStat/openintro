@@ -1,4 +1,3 @@
-
 # load libraries ----------------------------------------------------------------
 library(dplyr)
 
@@ -37,7 +36,7 @@ labor_market_discrimination <- labor_market_discrimination %>%
     l_med_hh_inc_emp_zip = lmedhhinc_empzip,
     frac_dropout_emp_zip = fracdropout_empzip,
     frac_colp_emp_zip = fraccolp_empzip,
-    l_inc_emp_zip  = linc_empzip,
+    l_inc_emp_zip = linc_empzip,
     off_support = offsupport,
     sales_rep = salesrep,
     retail_sales = retailsales,
@@ -52,7 +51,7 @@ labor_market_discrimination <- labor_market_discrimination %>%
     oth_service = othservice,
     miss_ind = missind
   ) %>%
-  select(-c(id, ad)) #removed as it's unclear what these represent
+  select(-c(id, ad)) # removed as it's unclear what these represent
 
 # save --------------------------------------------------------------------------
 usethis::use_data(labor_market_discrimination, overwrite = TRUE)
