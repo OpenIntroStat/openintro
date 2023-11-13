@@ -31,7 +31,7 @@ ggplot(plot_data, aes(iq, fill = twin)) +
   facet_wrap(~twin) +
   theme_minimal() +
   labs(
-  title = "IQ of identical twins",
+    title = "IQ of identical twins",
     subtitle = "Separated at birth",
     x = "IQ",
     y = "Count",

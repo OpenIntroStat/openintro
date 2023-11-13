@@ -46,5 +46,4 @@
 #'     x = "Number of votes (in thousands)",
 #'     y = ""
 #'   )
-
 "iran"

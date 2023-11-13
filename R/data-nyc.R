@@ -2,7 +2,7 @@
 #'
 #' Zagat is a public survey where anyone can provide scores to a restaurant. The scores from the general public are then gathered to produce ratings. This data set contains a list of 168 NYC restaurants and their Zagat Ratings.
 #'
-#'For each category the scales are as follows:
+#' For each category the scales are as follows:
 #'
 #' 0 - 9: poor to fair
 #' 10 - 15: fair to good
@@ -32,13 +32,12 @@
 #'
 #' ggplot(nyc, mapping = aes(x = price, group = east, fill = east)) +
 #'   geom_boxplot(alpha = 0.5) +
-#'  facet_grid(east ~ ., labeller = labeller(east = location_labs)) +
-#'  labs(
-#'    title = "Is food more expensive east of 5th Avenue?",
-#'    x = "Price (US$)"
-#'  ) +
-#'  guides(fill = "none") +
-#'  theme_minimal() +
-#'  theme(axis.text.y = element_blank())
-
+#'   facet_grid(east ~ ., labeller = labeller(east = location_labs)) +
+#'   labs(
+#'     title = "Is food more expensive east of 5th Avenue?",
+#'     x = "Price (US$)"
+#'   ) +
+#'   guides(fill = "none") +
+#'   theme_minimal() +
+#'   theme(axis.text.y = element_blank())
 "nyc"

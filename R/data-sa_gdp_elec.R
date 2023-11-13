@@ -20,10 +20,12 @@
 #' @examples
 #' library(ggplot2)
 #'
-#' ggplot(sa_gdp_elec, aes(year, access_elec))+
-#'  geom_point(alpha = 0.3) +
-#'  labs( x= "Year",
-#'        y = "Percent of Population",
-#'        title = "Access to Electricity in South Africa 2003 - 2018")
+#' ggplot(sa_gdp_elec, aes(year, access_elec)) +
+#'   geom_point(alpha = 0.3) +
+#'   labs(
+#'     x = "Year",
+#'     y = "Percent of Population",
+#'     title = "Access to Electricity in South Africa 2003 - 2018"
+#'   )
 #'
 "sa_gdp_elec"

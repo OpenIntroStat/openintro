@@ -42,14 +42,15 @@ edaPlot <- function(dataFrame,
     x <- dataFrame[, dataX]
     y <- dataFrame[, dataY]
 
-    pMethods <- matrix(c(
-      "scatterPlot", "boxPlot",
-      "histogram", "barPlot",
-      "mosaicPlot", "",
-      "fitLinear", "fitNormal"
-    ),
-    ncol = 2,
-    byrow = TRUE
+    pMethods <- matrix(
+      c(
+        "scatterPlot", "boxPlot",
+        "histogram", "barPlot",
+        "mosaicPlot", "",
+        "fitLinear", "fitNormal"
+      ),
+      ncol = 2,
+      byrow = TRUE
     )
 
     # ===> create the first plot <===#
@@ -359,14 +360,15 @@ createEdaOptions <- function(dataFrame, dataX, dataY, plotMethod, Col) {
   }
   rect(0.4, 0, 1, 1, col = Col[4], border = Col[4])
 
-  pMethods <- matrix(c(
-    "scatterPlot", "boxPlot",
-    "histogram", "barPlot",
-    "mosaicPlot", "",
-    "fitLinear", "fitNormal"
-  ),
-  ncol = 2,
-  byrow = TRUE
+  pMethods <- matrix(
+    c(
+      "scatterPlot", "boxPlot",
+      "histogram", "barPlot",
+      "mosaicPlot", "",
+      "fitLinear", "fitNormal"
+    ),
+    ncol = 2,
+    byrow = TRUE
   )
   graphics::text(mean(c(0.45, 0.9)), 0.95, "Plotting method")
   for (i in 0:3) {

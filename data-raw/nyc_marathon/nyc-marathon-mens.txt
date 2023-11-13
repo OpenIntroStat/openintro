@@ -52,3 +52,4 @@ year | name 					| country       | time    | note
 2020 | Kevin Quinn	 			| United Kingdom| 2:23:48 |	Virtual event held due to the COVID-19
 2021 | Albert Korir	 			| Kenya | 2:08:22 |
 2022 | Evans Chebet	 			| Kenya | 2:08:41 |
+2023 | Tamirat Tola                     | Ethiopia      | 2:04:58 | Current course record

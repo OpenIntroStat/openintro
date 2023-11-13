@@ -34,7 +34,7 @@
 #' @examples
 #'
 #' library(ggplot2)
-#' 
-#' ggplot(pm25_2022_durham, aes(x = date,  y = daily_mean_pm2_5_concentration, group = 1)) +
+#'
+#' ggplot(pm25_2022_durham, aes(x = date, y = daily_mean_pm2_5_concentration, group = 1)) +
 #'   geom_line()
 "pm25_2022_durham"

@@ -98,7 +98,7 @@ world_pop \%>\%
   select(
     country, year_1960, year_1970, year_1980, year_1990,
     year_2000, year_2010, year_2020
-    ) \%>\%
+  ) \%>\%
   filter(country \%in\% c("China", "India", "United States")) \%>\%
   pivot_longer(
     cols = c(year_1960, year_1970, year_1980, year_1990, year_2000, year_2010, year_2020),

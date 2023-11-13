@@ -12,13 +12,13 @@ library(tidyverse)
 pm25_2011_durham_raw <- openintro::pm25_2011_durham
 
 pm25_2011_durham <- pm25_2011_durham_raw |>
-    mutate(
-        date = as.character(date),
-        date = mdy(date),
-    ) |>
-    mutate(across(where(is.factor), as.character)) |>
-    relocate(csa_code, csa_name, .after = site_longitude) |>
-    mutate(aqs_parameter_desc = as.factor(aqs_parameter_desc))
+  mutate(
+    date = as.character(date),
+    date = mdy(date),
+  ) |>
+  mutate(across(where(is.factor), as.character)) |>
+  relocate(csa_code, csa_name, .after = site_longitude) |>
+  mutate(aqs_parameter_desc = as.factor(aqs_parameter_desc))
 
 # save data --------------------------------------------------------------------
 

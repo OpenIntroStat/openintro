@@ -40,12 +40,15 @@ library(ggplot2)
 
 # Highway gas mileage
 ggplot(cars04, aes(x = hwy_mpg)) +
- geom_histogram(bins = 15, color = "white",
- fill = openintro::IMSCOL["green", "full"]) +
- theme_minimal() +
- labs(
- title = "Highway gas milage for cars from 2004",
- x = "Gas Mileage (miles per gallon)",
- y = "Number of cars")
+  geom_histogram(
+    bins = 15, color = "white",
+    fill = openintro::IMSCOL["green", "full"]
+  ) +
+  theme_minimal() +
+  labs(
+    title = "Highway gas milage for cars from 2004",
+    x = "Gas Mileage (miles per gallon)",
+    y = "Number of cars"
+  )
 }
 \keyword{datasets}

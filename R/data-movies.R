@@ -28,5 +28,4 @@
 #'     color = "Genre"
 #'   )
 #'
-
 "movies"

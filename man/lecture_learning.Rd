@@ -69,8 +69,12 @@ ggplot(lecture_learning, aes(x = method, y = memory, fill = gender)) +
   )
 
 # Use a paired t-test to determine whether memory test proportion score
-# differed by delivery method.
-t.test(memory ~ method, data = lecture_learning, paired = TRUE)
+# differed by delivery method. Note that paired t-tests are identical
+# to one sample t-test on the difference between the Live and Video methods.
+learning_diff <- lecture_learning |>
+  tidyr::pivot_wider(id_cols = student, names_from = method, values_from = memory) |>
+  mutate(time_diff = Live - Video)
+t.test(time_diff ~ 1, data = learning_diff)
 
 # Calculating the proportion of students who were most motivated to remain
 # attentive in each delivery method.

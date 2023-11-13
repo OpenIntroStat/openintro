@@ -29,5 +29,4 @@
 #'     x = "Square feet",
 #'     y = "List price"
 #'   )
-
 "LAhomes"

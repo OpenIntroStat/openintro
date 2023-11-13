@@ -33,5 +33,4 @@
 #'     x = "Number of Votes (in thousands)
 #'     "
 #'   )
-
 "iowa"
