@@ -25,15 +25,15 @@
 #' library(ggplot2)
 #'
 #' # List percent of total for each race
-#' mn_police_use_of_force %>%
-#'   count(race) %>%
-#'   mutate(percent = round(n / sum(n) * 100, 2)) %>%
+#' mn_police_use_of_force |>
+#'   count(race) |>
+#'   mutate(percent = round(n / sum(n) * 100, 2)) |>
 #'   arrange(desc(percent))
 #'
 #' # Display use of force count by three races
 #' race_sub <- c("Asian", "White", "Black")
 #' ggplot(
-#'   mn_police_use_of_force %>% filter(race %in% race_sub),
+#'   mn_police_use_of_force |> filter(race %in% race_sub),
 #'   aes(force_type, ..count..)
 #' ) +
 #'   geom_point(stat = "count", size = 4) +

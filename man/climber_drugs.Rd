@@ -28,13 +28,13 @@ Anonymous data was collected from urine samples at huts along the climb of Mont 
 library(dplyr)
 
 # Calculate the average concentration of each substance and number of occurrences.
-climber_drugs \%>\%
-  group_by(substance) \%>\%
+climber_drugs |>
+  group_by(substance) |>
   summarize(count = n(), mean_con = mean(concentration))
 
 # Proportion samples in which each substance was detected.
-climber_drugs \%>\%
-  group_by(substance) \%>\%
+climber_drugs |>
+  group_by(substance) |>
   summarize(prop = n() / 154)
 
 }

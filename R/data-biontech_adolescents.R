@@ -25,7 +25,7 @@
 #' library(dplyr)
 #' library(ggplot2)
 #'
-#' biontech_adolescents %>%
+#' biontech_adolescents |>
 #'   count(group, outcome)
 #'
 #' ggplot(biontech_adolescents, aes(y = group, fill = outcome)) +

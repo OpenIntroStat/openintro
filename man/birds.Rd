@@ -56,7 +56,7 @@ library(forcats)
 library(tidyr)
 
 # Phase of the flight during which the collision occurred, tabular
-birds \%>\%
+birds |>
   count(phase_of_flt, sort = TRUE)
 
 # Phase of the flight during which the collision occurred, barplot
@@ -68,8 +68,8 @@ ggplot(birds, aes(y = fct_infreq(phase_of_flt))) +
 summary(birds$height)
 
 # Phase of flight vs. effect of crash
-birds \%>\%
-  drop_na(phase_of_flt, effect) \%>\%
+birds |>
+  drop_na(phase_of_flt, effect) |>
   ggplot(aes(y = phase_of_flt, fill = effect)) +
   geom_bar(position = "fill") +
   labs(x = "Proportion", y = "Phase of flight", fill = "Effect")

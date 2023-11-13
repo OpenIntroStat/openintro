@@ -2,7 +2,7 @@
 library(dplyr)
 
 # load data ---------------------------------------------------------------------
-labor_market_discrimination <- rio::import(here::here("data-raw/labor_market_discrimination/lakisha_aer.dta")) %>% as_tibble()
+labor_market_discrimination <- rio::import(here::here("data-raw/labor_market_discrimination/lakisha_aer.dta")) |> as_tibble()
 
 # cleaning ----------------------------------------------------------------------
 
@@ -11,7 +11,7 @@ labor_market_discrimination <- haven::zap_formats(labor_market_discrimination)
 labor_market_discrimination <- haven::zap_label(labor_market_discrimination)
 
 # rename vars using snake case
-labor_market_discrimination <- labor_market_discrimination %>%
+labor_market_discrimination <- labor_market_discrimination |>
   rename(
     n_jobs = ofjobs,
     years_exp = yearsexp,
@@ -50,7 +50,7 @@ labor_market_discrimination <- labor_market_discrimination %>%
     bus_service = busservice,
     oth_service = othservice,
     miss_ind = missind
-  ) %>%
+  ) |>
   select(-c(id, ad)) # removed as it's unclear what these represent
 
 # save --------------------------------------------------------------------------

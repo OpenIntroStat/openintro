@@ -5,7 +5,7 @@ library(tidyverse)
 # original data from https://doi.org/10.3886/ICPSR36461.v1
 full_births <- read_delim("data-raw/births14/36461-0001-Data.tsv", "\t", escape_double = FALSE, trim_ws = TRUE)
 
-births <- full_births %>%
+births <- full_births |>
   rename(
     fage_cat = FAGEREC11,
     mage = MAGER,
@@ -17,13 +17,13 @@ births <- full_births %>%
     habit = CIG_REC,
     marital = DMAR,
     whitemom = MBRACE
-  ) %>%
+  ) |>
   select(
     fage_cat, mage, weeks, visits,
     gained, weight_g, sex, habit, marital, whitemom
   )
 
-births <- births %>%
+births <- births |>
   mutate(
     fage_cat = case_when(
       fage_cat == 1 ~ "Under 15 years",
@@ -84,7 +84,7 @@ births <- births %>%
       TRUE ~ "not white"
     )
   )
-births <- births %>%
+births <- births |>
   select(
     fage_cat, mage, mature, weeks, premie, visits,
     gained, weight, lowbirthweight, sex, habit,
@@ -105,22 +105,22 @@ simulate_ages <- function(.x, .y) {
     sample(age:(age + 4), size = nrow(.x), replace = TRUE)
   }
 }
-births <- births %>%
-  group_by(fage_cat) %>%
-  nest() %>%
-  mutate(fage = map2(data, fage_cat, simulate_ages)) %>%
-  unnest(cols = c(data, fage)) %>%
+births <- births |>
+  group_by(fage_cat) |>
+  nest() |>
+  mutate(fage = map2(data, fage_cat, simulate_ages)) |>
+  unnest(cols = c(data, fage)) |>
   ungroup()
 
-births <- births %>%
-  mutate(weight = round(weight, digits = 2)) %>%
+births <- births |>
+  mutate(weight = round(weight, digits = 2)) |>
   select(
     fage, mage, mature, weeks, premie, visits,
     gained, weight, lowbirthweight, sex, habit,
     marital, whitemom
   )
 set.seed(42)
-births14 <- births %>%
+births14 <- births |>
   sample_n(1000)
 
 # Save ------------------------------------------------------------------------

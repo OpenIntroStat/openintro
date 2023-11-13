@@ -9,8 +9,8 @@ raw_data <- read_csv(here::here("data-raw/nba_finals_teams/nba_finals_teams.csv"
 
 # Cleaning: ------------------------------------------------------------------
 
-nba_finals_teams <- raw_data %>%
-  janitor::clean_names() %>%
+nba_finals_teams <- raw_data |>
+  janitor::clean_names() |>
   mutate(
     win = as.integer(ifelse(win == "—", 0, win)),
     loss = as.integer(ifelse(loss == "—", 0, loss)),

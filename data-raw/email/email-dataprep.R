@@ -6,7 +6,7 @@ library(tidyverse)
 library(usethis)
 
 # Make categorical variables factor
-email <- openintro::email %>%
+email <- openintro::email |>
   mutate(
     spam        = factor(spam, levels = c(0, 1)),
     to_multiple = factor(to_multiple, levels = c(0, 1)),
@@ -17,7 +17,7 @@ email <- openintro::email %>%
     urgent_subj = factor(urgent_subj, levels = c(0, 1))
   )
 
-email50 <- openintro::email50 %>%
+email50 <- openintro::email50 |>
   mutate(
     spam        = factor(spam, levels = c(0, 1)),
     to_multiple = factor(to_multiple, levels = c(0, 1)),
