@@ -51,7 +51,7 @@ ggplot(fact_opinion, aes(x = age_group, y = opinion_correct)) +
   )
 
 # Replicating the figure from Pew report (see source for link)
-fact_opinion \%>\%
+fact_opinion |>
   mutate(
     facts = case_when(
       fact_correct <= 2 ~ "Two or fewer",
@@ -65,9 +65,9 @@ fact_opinion \%>\%
       opinion_correct == 5 ~ "All five"
     ),
     opinions = fct_relevel(opinions, "Two or fewer", "Three or four", "All five")
-  ) \%>\%
-  select(-fact_correct, -opinion_correct) \%>\%
-  pivot_longer(cols = -age_group, names_to = "question_type", values_to = "n_correct") \%>\%
+  ) |>
+  select(-fact_correct, -opinion_correct) |>
+  pivot_longer(cols = -age_group, names_to = "question_type", values_to = "n_correct") |>
   ggplot(aes(y = fct_rev(age_group), fill = n_correct)) +
   geom_bar(position = "fill") +
   facet_wrap(~question_type, ncol = 1) +

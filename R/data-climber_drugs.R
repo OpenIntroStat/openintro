@@ -19,13 +19,13 @@
 #' library(dplyr)
 #'
 #' # Calculate the average concentration of each substance and number of occurrences.
-#' climber_drugs %>%
-#'   group_by(substance) %>%
+#' climber_drugs |>
+#'   group_by(substance) |>
 #'   summarize(count = n(), mean_con = mean(concentration))
 #'
 #' # Proportion samples in which each substance was detected.
-#' climber_drugs %>%
-#'   group_by(substance) %>%
+#' climber_drugs |>
+#'   group_by(substance) |>
 #'   summarize(prop = n() / 154)
 #'
 "climber_drugs"

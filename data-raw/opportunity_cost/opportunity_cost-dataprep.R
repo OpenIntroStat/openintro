@@ -9,7 +9,7 @@ opportunity_cost <- tibble(
     rep("buy video", 56), rep("not buy video", 19),
     rep("buy video", 41), rep("not buy video", 34)
   )
-) %>%
+) |>
   mutate(
     group = as.factor(group),
     decision = as.factor(decision)

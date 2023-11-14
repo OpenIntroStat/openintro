@@ -9,7 +9,7 @@ earthquakes <- read_csv("data-raw/earthquakes/earthquakes.csv")
 
 # cleaning: clean names -------------------------------
 
-earthquakes <- earthquakes %>%
+earthquakes <- earthquakes |>
   clean_names()
 
 # save --------------------------------------------------------------------------

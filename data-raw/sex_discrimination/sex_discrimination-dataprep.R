@@ -6,7 +6,7 @@ library(tidyverse)
 library(usethis)
 
 # Make categorical variables factor
-sex_discrimination <- openintro::gender_discrimination %>%
+sex_discrimination <- openintro::gender_discrimination |>
   rename(sex = gender)
 
 # Add to package

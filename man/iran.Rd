@@ -31,18 +31,18 @@ library(ggplot2)
 library(tidyr)
 library(stringr)
 
-plot_data <- iran \%>\%
+plot_data <- iran |>
   summarize(
     ahmadinejad = sum(ahmadinejad) / 1000,
     rezai = sum(rezai) / 1000,
     karrubi = sum(karrubi) / 1000,
     mousavi = sum(mousavi) / 1000
-  ) \%>\%
+  ) |>
   pivot_longer(
     cols = c(ahmadinejad, rezai, karrubi, mousavi),
     names_to = "candidate",
     values_to = "votes"
-  ) \%>\%
+  ) |>
   mutate(candidate = str_to_title(candidate))
 
 ggplot(plot_data, aes(votes, candidate)) +

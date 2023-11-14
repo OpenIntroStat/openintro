@@ -6,7 +6,7 @@ library(tidyverse)
 library(usethis)
 
 # Make categorical variables factor
-gender_discrimination <- openintro::gender_discrimination %>%
+gender_discrimination <- openintro::gender_discrimination |>
   mutate(
     decision = as.character(decision),
     decision = if_else(decision == "not", "not promoted", decision),

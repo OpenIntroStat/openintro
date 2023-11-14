@@ -17,6 +17,6 @@
 #'
 #' library(dplyr)
 #'
-#' family_college %>%
+#' family_college |>
 #'   count(teen, parents)
 "family_college"

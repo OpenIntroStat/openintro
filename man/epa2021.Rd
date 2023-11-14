@@ -63,9 +63,9 @@ ggplot(epa2021, aes(x = city_mpg, y = hwy_mpg, color = guzzler)) +
   facet_wrap(~guzzler, ncol = 1)
 
 # Compare to 2012
-epa2021 \%>\%
-  bind_rows(epa2012) \%>\%
-  group_by(model_yr) \%>\%
+epa2021 |>
+  bind_rows(epa2012) |>
+  group_by(model_yr) |>
   summarise(
     mean_city = mean(city_mpg),
     mean_hwy  = mean(hwy_mpg)

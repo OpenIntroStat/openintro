@@ -11,9 +11,9 @@ biontech_adolescents_table <- tribble(
   "placebo", 18,          1129 - 18
 )
 
-biontech_adolescents <- biontech_adolescents_table %>%
-  pivot_longer(cols = -group, names_to = "outcome", values_to = "n") %>%
-  uncount(weights = n) %>%
+biontech_adolescents <- biontech_adolescents_table |>
+  pivot_longer(cols = -group, names_to = "outcome", values_to = "n") |>
+  uncount(weights = n) |>
   mutate(
     group   = factor(group, levels = c("vaccine", "placebo")),
     outcome = factor(outcome, levels = c("COVID-19", "no COVID-19"))

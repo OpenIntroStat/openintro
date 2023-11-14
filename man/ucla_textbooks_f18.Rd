@@ -89,10 +89,10 @@ ggplot(ucla_textbooks_f18, aes(x = bookstore_new, y = amazon_new)) +
   )
 
 # The following outliers were double checked for accuracy
-ucla_textbooks_f18_with_diff <- ucla_textbooks_f18 \%>\%
+ucla_textbooks_f18_with_diff <- ucla_textbooks_f18 |>
   mutate(diff = bookstore_new - amazon_new)
 
-ucla_textbooks_f18_with_diff \%>\%
+ucla_textbooks_f18_with_diff |>
   filter(diff > 20 | diff < -20)
 
 # Distribution of price differences

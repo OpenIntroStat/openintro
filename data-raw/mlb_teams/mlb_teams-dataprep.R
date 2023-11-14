@@ -53,11 +53,11 @@ raw_data %<>%
     HomeAttendance = attendance,
     BattersParkFactor = BPF,
     PitchersParkFactor = PPF
-  ) %>%
+  ) |>
   janitor::clean_names()
 
 # drop some columns
-mlb_teams <- subset(raw_data, select = -c(team_idbr, team_i_dlahman45, team_i_dretro, team_id, franchise_id, batters_park_factor, pitchers_park_factor)) %>%
+mlb_teams <- subset(raw_data, select = -c(team_idbr, team_i_dlahman45, team_i_dretro, team_id, franchise_id, batters_park_factor, pitchers_park_factor)) |>
   filter(league_id %in% c("AL", "NL"))
 
 # save --------------------------------------------------------------------------

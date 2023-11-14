@@ -34,7 +34,7 @@ in the placebo group (n = 1,129) versus none in the vaccinated group (n = 1,131)
 library(dplyr)
 library(ggplot2)
 
-biontech_adolescents \%>\%
+biontech_adolescents |>
   count(group, outcome)
 
 ggplot(biontech_adolescents, aes(y = group, fill = outcome)) +

@@ -14,8 +14,8 @@ names(raw_data)[1] <- "country"
 options(scipen = 999)
 
 # set data type to numeric
-raw_data %>%
-  mutate_at("year_1960", as.numeric) %>%
+raw_data |>
+  mutate_at("year_1960", as.numeric) |>
   str()
 
 gdp_countries <- raw_data

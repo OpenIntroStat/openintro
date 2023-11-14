@@ -98,6 +98,7 @@ reference:
   - earthquakes
   - ebola_survey
   - elmhurst
+  - email_test
   - email
   - email50
   - env_regulation
@@ -255,12 +256,13 @@ reference:
   - tourism
   - transplant
   - twins
+  - ucb_admit
   - ucla_f18
   - ucla_textbooks_f18
   - ukdemo
   - unempl
   - unemploy_pres
-  - usb_admit
+  - us_temperature
   - winery_cars
   - world_pop
   - xom

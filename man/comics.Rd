@@ -33,7 +33,7 @@ library(dplyr)
 
 # Good v Bad
 
-plot_data <- comics \%>\%
+plot_data <- comics |>
   filter(align == "Good" | align == "Bad")
 
 ggplot(plot_data, aes(x = align, fill = align)) +

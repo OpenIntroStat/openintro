@@ -34,11 +34,11 @@
 #'
 #' facebook <- tibble(text = ipo$facebook, company = "Facebook")
 #'
-#' facebook %>%
-#'   unnest_tokens(word, text) %>%
-#'   anti_join(stop_words) %>%
-#'   count(word, sort = TRUE) %>%
-#'   slice_head(n = 20) %>%
+#' facebook |>
+#'   unnest_tokens(word, text) |>
+#'   anti_join(stop_words) |>
+#'   count(word, sort = TRUE) |>
+#'   slice_head(n = 20) |>
 #'   ggplot(aes(y = fct_reorder(word, n), x = n, fill = n)) +
 #'   geom_col() +
 #'   labs(
@@ -54,14 +54,14 @@
 #'
 #' ipo_texts <- bind_rows(facebook, google, linkedin)
 #'
-#' ipo_texts %>%
-#'   unnest_tokens(word, text) %>%
-#'   count(company, word, sort = TRUE) %>%
-#'   bind_tf_idf(word, company, n) %>%
-#'   arrange(desc(tf_idf)) %>%
-#'   group_by(company) %>%
-#'   slice_max(tf_idf, n = 15) %>%
-#'   ungroup() %>%
+#' ipo_texts |>
+#'   unnest_tokens(word, text) |>
+#'   count(company, word, sort = TRUE) |>
+#'   bind_tf_idf(word, company, n) |>
+#'   arrange(desc(tf_idf)) |>
+#'   group_by(company) |>
+#'   slice_max(tf_idf, n = 15) |>
+#'   ungroup() |>
 #'   ggplot(aes(tf_idf, fct_reorder(word, tf_idf), fill = company)) +
 #'   geom_col(show.legend = FALSE) +
 #'   facet_wrap(~company, ncol = 3, scales = "free") +

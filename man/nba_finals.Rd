@@ -33,23 +33,23 @@ library(ggplot2)
 library(tidyr)
 
 # Top 5 Appearing Coaches
-nba_finals \%>\%
+nba_finals |>
   pivot_longer(
     cols = c("western_coach", "eastern_coach"),
     names_to = "conference", values_to = "coach"
-  ) \%>\%
-  count(coach, sort = TRUE) \%>\%
+  ) |>
+  count(coach, sort = TRUE) |>
   slice_head(n = 5)
 
 # Top 5 Winning Coaches
-nba_finals \%>\%
+nba_finals |>
   mutate(
     winning_coach = case_when(
       western_wins == 4 ~ western_coach,
       eastern_wins == 4 ~ eastern_coach
     )
-  ) \%>\%
-  count(winning_coach, sort = TRUE) \%>\%
+  ) |>
+  count(winning_coach, sort = TRUE) |>
   slice_head(n = 5)
 
 }

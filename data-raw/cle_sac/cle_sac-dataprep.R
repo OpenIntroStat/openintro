@@ -5,7 +5,7 @@ library(openintro)
 library(tidyverse)
 library(usethis)
 
-cle_sac <- cle_sac %>%
+cle_sac <- cle_sac |>
   mutate(
     race = case_when(
       str_detect(race, "White") ~ "White",

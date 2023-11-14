@@ -16,7 +16,7 @@
 #' library(ggplot2)
 #' library(dplyr)
 #'
-#' plot_data <- ucb_admit %>%
+#' plot_data <- ucb_admit |>
 #'   count(dept, gender, admit)
 #'
 #' ggplot(plot_data, aes(dept, n, fill = gender)) +

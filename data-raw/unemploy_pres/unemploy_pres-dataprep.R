@@ -9,7 +9,7 @@ unemploy_pres_orig <- unemploy_pres
 
 # Create other columns ---------------------------------------------------------
 
-unemploy_pres <- unemploy_pres_orig %>%
+unemploy_pres <- unemploy_pres_orig |>
   mutate(
     party = if_else(party == "Democrate", "Democratic", "Republican"),
     party = as.factor(party)

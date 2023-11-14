@@ -41,9 +41,9 @@
 #'
 #' pipa <- filter(piracy, chamber == "senate")
 #'
-#' pipa %>%
-#'   group_by(stance) %>%
-#'   summarise(money_pro_mean = mean(money_pro, na.rm = TRUE)) %>%
+#' pipa |>
+#'   group_by(stance) |>
+#'   summarise(money_pro_mean = mean(money_pro, na.rm = TRUE)) |>
 #'   ggplot(aes(x = stance, y = money_pro_mean)) +
 #'   geom_col() +
 #'   labs(
@@ -68,12 +68,12 @@
 #'     subtitle = "Computer and internet companies"
 #'   )
 #'
-#' pipa %>%
+#' pipa |>
 #'   filter(
 #'     money_pro > 0,
 #'     money_con > 0
-#'   ) %>%
-#'   mutate(for_pipa = ifelse(stance == "yes", "yes", "no")) %>%
+#'   ) |>
+#'   mutate(for_pipa = ifelse(stance == "yes", "yes", "no")) |>
 #'   ggplot(aes(x = money_pro, y = money_con, color = for_pipa)) +
 #'   geom_point() +
 #'   scale_color_manual(values = c("gray", "red")) +

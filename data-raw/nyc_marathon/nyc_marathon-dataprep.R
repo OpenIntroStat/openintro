@@ -9,7 +9,7 @@ library(lubridate)
 
 mens_raw <- read_delim("data-raw/nyc_marathon/nyc-marathon-mens.txt", delim = "|", trim_ws = TRUE)
 
-mens <- mens_raw %>%
+mens <- mens_raw |>
   mutate(
     time_hms = hms(time),
     time_hr = hour(time_hms),
@@ -18,13 +18,13 @@ mens <- mens_raw %>%
     time_hrs = time_hr + time_min / 60 + time_sec / (60 * 60),
     division = "Men",
     name = iconv(name, from = "latin1", to = "ASCII", "")
-  ) %>%
-  select(-time_hms, -time_hr, -time_min, -time_sec) %>%
+  ) |>
+  select(-time_hms, -time_hr, -time_min, -time_sec) |>
   relocate(note, .after = division)
 
 womens_raw <- read_delim("data-raw/nyc_marathon/nyc-marathon-womens.txt", delim = "|", trim_ws = TRUE)
 
-womens <- womens_raw %>%
+womens <- womens_raw |>
   mutate(
     time_hms = hms(time),
     time_hr = hour(time_hms),
@@ -33,11 +33,11 @@ womens <- womens_raw %>%
     time_hrs = time_hr + time_min / 60 + time_sec / (60 * 60),
     division = "Women",
     name = iconv(name, from = "latin1", to = "ASCII", "")
-  ) %>%
-  select(-time_hms, -time_hr, -time_min, -time_sec) %>%
+  ) |>
+  select(-time_hms, -time_hr, -time_min, -time_sec) |>
   relocate(note, .after = division)
 
-nyc_marathon <- bind_rows(mens, womens) %>%
+nyc_marathon <- bind_rows(mens, womens) |>
   arrange(year, division)
 
 # Add to package

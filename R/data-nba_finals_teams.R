@@ -26,7 +26,7 @@
 #' library(dplyr)
 #' library(openintro)
 #'
-#' teams_with_apps <- nba_finals_teams %>%
+#' teams_with_apps <- nba_finals_teams |>
 #'   filter(apps != 0)
 #'
 #' ggplot(teams_with_apps, aes(x = win)) +

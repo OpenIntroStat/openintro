@@ -10,7 +10,7 @@ epa2021_raw <- read_excel(here::here("data-raw/epa2021/2021 FE Guide for DOE-rel
   sheet = 1
 )
 
-epa2021_selected <- epa2021_raw %>%
+epa2021_selected <- epa2021_raw |>
   select(
     `Model Year`:`Comb FE (Guide) - Conventional Fuel`,
     `Guzzler?`:`Trans Desc`,
@@ -23,7 +23,7 @@ epa2021_selected <- epa2021_raw %>%
 names(epa2021_selected) <- names(epa2012)
 
 # Make empty levels NAs and fix date type
-epa2021 <- epa2021_selected %>%
+epa2021 <- epa2021_selected |>
   mutate(
     guzzler = case_when(
       guzzler == "G" ~ "Y",

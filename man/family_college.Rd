@@ -25,7 +25,7 @@ A simulated data set based on real population summaries.
 
 library(dplyr)
 
-family_college \%>\%
+family_college |>
   count(teen, parents)
 }
 \keyword{datasets}

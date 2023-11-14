@@ -38,8 +38,8 @@ ggplot(exam_grades, aes(x = exam2, y = course_grade)) +
   geom_point()
 
 # Semester averages
-exam_grades \%>\%
-  group_by(semester) \%>\%
+exam_grades |>
+  group_by(semester) |>
   summarise(across(exam1:course_grade, mean, na.rm = TRUE))
 }
 \keyword{datasets}

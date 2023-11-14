@@ -17,6 +17,6 @@
 #'
 #' library(dplyr)
 #'
-#' drone_blades %>%
+#' drone_blades |>
 #'   count(supplier, inspection)
 "drone_blades"

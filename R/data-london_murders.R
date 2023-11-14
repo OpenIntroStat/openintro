@@ -40,13 +40,13 @@
 #' library(ggplot2)
 #' library(lubridate)
 #'
-#' london_murders %>%
+#' london_murders |>
 #'   mutate(
 #'     day_count = as.numeric(date - ymd("2006-01-01")),
 #'     date_cut = cut(day_count, seq(0, 2160, 90))
-#'   ) %>%
-#'   group_by(date_cut) %>%
-#'   add_tally() %>%
+#'   ) |>
+#'   group_by(date_cut) |>
+#'   add_tally() |>
 #'   ggplot(aes(x = date_cut, y = n)) +
 #'   geom_col() +
 #'   theme(axis.text.x = element_blank(), axis.ticks.x = element_blank()) +

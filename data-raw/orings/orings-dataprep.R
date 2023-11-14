@@ -9,15 +9,15 @@ orings_orig <- orings
 
 # Create other columns ---------------------------------------------------------
 
-orings <- orings_orig %>%
+orings <- orings_orig |>
   rename(
     temperature = temp,
     damaged = damage
-  ) %>%
+  ) |>
   mutate(
     mission = 1:nrow(orings),
     undamaged = 6 - damaged
-  ) %>%
+  ) |>
   relocate(mission)
 
 # Save -------------------------------------------------------------------------

@@ -22,7 +22,7 @@ been made up for an example.
 
 library(dplyr)
 
-drone_blades \%>\%
+drone_blades |>
   count(supplier, inspection)
 }
 \references{

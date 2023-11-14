@@ -39,9 +39,9 @@ any infections to be treated effectively.
 library(dplyr)
 
 # Calculate conditional probabilities of infection after vaccine/placebo
-malaria \%>\%
-  count(treatment, outcome) \%>\%
-  group_by(treatment) \%>\%
+malaria |>
+  count(treatment, outcome) |>
+  group_by(treatment) |>
   mutate(prop = n / sum(n))
 
 # Fisher's exact text

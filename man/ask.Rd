@@ -47,7 +47,7 @@ library(dplyr)
 library(ggplot2)
 
 # Distribution of responses based on question type
-ask \%>\%
+ask |>
   count(question_class, response)
 
 # Visualize relative frequencies of responses based on question type

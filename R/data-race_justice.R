@@ -19,9 +19,9 @@
 #' library(dplyr)
 #'
 #' # Conditional probabilities of response for each race/ethnicity
-#' race_justice %>%
-#'   count(race_eth, response) %>%
-#'   group_by(race_eth) %>%
+#' race_justice |>
+#'   count(race_eth, response) |>
+#'   group_by(race_eth) |>
 #'   mutate(prop = n / sum(n))
 #'
 #' # Stacked bar plot of counts

@@ -23,7 +23,7 @@ library(ggplot2)
 library(dplyr)
 library(tidyr)
 
-plot_data <- twins \%>\%
+plot_data <- twins |>
   pivot_longer(cols = c(foster, biological), names_to = "twin", values_to = "iq")
 
 ggplot(plot_data, aes(iq, fill = twin)) +

@@ -8,8 +8,8 @@ raw_data <- read_csv(here::here("data-raw/comics/comics.csv"))
 
 # cleaning: none required
 
-comics <- raw_data %>%
-  filter(!is.na(appearances)) %>%
+comics <- raw_data |>
+  filter(!is.na(appearances)) |>
   mutate(publisher = ifelse(publisher == "dc", "DC", "Marvel"))
 
 

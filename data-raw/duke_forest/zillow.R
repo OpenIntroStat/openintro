@@ -12,20 +12,20 @@ page3 <- read_html("https://www.zillow.com/homes/recently_sold/3_p/?searchQueryS
 # function: read_zillow --------------------------------------------------------
 
 read_zillow <- function(page) {
-  addresses <- page %>%
-    html_nodes(".list-card-addr") %>%
+  addresses <- page |>
+    html_nodes(".list-card-addr") |>
     html_text()
 
-  prices <- page %>%
-    html_nodes(".list-card-price") %>%
+  prices <- page |>
+    html_nodes(".list-card-price") |>
     html_text()
 
-  details <- page %>%
-    html_nodes(".list-card-details") %>%
+  details <- page |>
+    html_nodes(".list-card-details") |>
     html_text()
 
-  links_double <- page %>%
-    html_nodes(".list-card-link") %>%
+  links_double <- page |>
+    html_nodes(".list-card-link") |>
     html_attr("href")
 
   links <- links_double[seq(1, length(links_double), 2)]
@@ -48,21 +48,21 @@ df_raw <- bind_rows(df1, df2, df3)
 
 # clean data -------------------------------------------------------------------
 
-df_raw <- df_raw %>%
+df_raw <- df_raw |>
   mutate(
     price = parse_number(price),
     price = if_else(price < 100, price * 1000000, price)
-  ) %>%
+  ) |>
   filter(
     !str_detect(details, "lot"),
     !str_detect(details, "-- bds-- ba-- sqft"),
     !str_detect(details, "Studio")
-  ) %>%
+  ) |>
   mutate(
     details = str_replace(details, "bds", "bds - "),
     details = str_replace(details, "ba", "ba - ")
-  ) %>%
-  separate(details, into = c("bed", "bath", "area"), sep = " - ") %>%
+  ) |>
+  separate(details, into = c("bed", "bath", "area"), sep = " - ") |>
   mutate(
     bed = parse_number(bed),
     bath = parse_number(bath),
@@ -76,31 +76,31 @@ get_features <- function(url) {
 
   Sys.sleep(rpois(1, lambda = 1))
 
-  page %>%
-    html_nodes(".ds-home-facts-and-features") %>%
-    html_nodes(".ds-home-fact-list>li") %>%
-    html_text() %>%
-    strsplit(":") %>%
+  page |>
+    html_nodes(".ds-home-facts-and-features") |>
+    html_nodes(".ds-home-fact-list>li") |>
+    html_text() |>
+    strsplit(":") |>
     map(
       ~ setNames(.x[2], .x[1])
-    ) %>%
+    ) |>
     unlist()
 }
 
 # get features -----------------------------------------------------------------
 
-df_with_features <- df_raw %>%
+df_with_features <- df_raw |>
   mutate(features = map(link, get_features))
 
-df <- df_with_features %>%
-  unnest_wider(features) %>%
+df <- df_with_features |>
+  unnest_wider(features) |>
   janitor::clean_names()
 
-df <- df %>%
+df <- df |>
   mutate(
     lot = parse_number(lot),
     lot = if_else(lot > 100, round(lot / 43560, 2), lot)
-  ) %>%
+  ) |>
   filter(type == "Single Family")
 
 # write csv --------------------------------------------------------------------
