@@ -1,13 +1,20 @@
-# openintro 2.4.0
+# openintro 2.5.0
 
 * Added new datasets:
   * `fish_age`, `nba_finals` and `nba_finals_teams` by [@npaterno](https://github.com/npaterno)
   * `lego_population` and `lego_sample` by [@mmeece](https://github.com/mmeece)
   * `lecture_learning` by [@jonathanaakin](https://github.com/jonathanaakin)
+  * `cars04`, `life_exp`, `comics`, `nyc`, `gss_wordsum_class`, `manhattan`, `iran`, `iowa`, `twins`, `LAhomes`, `movies`, `ucb_admit`, `soda` ported from IMS Tutorials by [@npaterno](https://github.com/npaterno)
+  * `nyc_marathon`, `paralympic_1500`, `pm25_2011_durham`, `pm25_2022_durham`, `us_temperature`, by [@hardin47](https://github.com/hardin47)
 * Fix HTML version of manual
 * Remove some URLs that no longer work
-* Added new datasets:
-  * `cars04`, `life_exp`, `comics`, `nyc`, `gss_wordsum_class`, `manhattan`, `iran`, `iowa`, `twins`, `LAhomes`, `movies`, `ucb_admit`, `soda` ported from IMS Tutorials by [@npaterno](https://github.com/npaterno)
+* Updated docs to use the base pipe
+* Enhance `contTable` to allow user-supplied caption and label, by [@sjvrensburg](https://github.com/sjvrensburg)
+
+# openintro 2.4.0
+
+* Fix HTML version of manual
+* Remove some URLs that no longer work
 
 # openintro 2.3.0
 
