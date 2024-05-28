@@ -1,7 +1,7 @@
 ## Test environments
 
-* local OS X install, R 4.2.1
-* GitHub Actions (ubuntu-22.04): release, devel
+* local OS X install, R 4.3.3
+* GitHub Actions (ubuntu-22.04.4): release, devel
 * GitHub Actions (windows): release
 * Github Actions (macOS): release
 * win-builder: devel
@@ -14,7 +14,7 @@ There were no ERRORs or WARNINGs.
 There was 1 NOTE, explained below.
 
 * checking installed package size ... NOTE
-    installed size is  6.0Mb
+    installed size is  6.1Mb
     sub-directories of 1Mb or more:
       data   5.0Mb
       
