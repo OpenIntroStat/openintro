@@ -18,7 +18,8 @@ A data frame with 67 observations on the following 5 variables.
 Presidents of the United States (table) -- infoplease.com (visited:
 Nov 2nd, 2010)
 
-\url{http://www.infoplease.com/ce6/history/A0840075.html}
+\url{https://www.infoplease.com/us/government/executive-branch/presidents} and
+\url{https://www.infoplease.com/us/government/executive-branch/vice-presidents}
 }
 \usage{
 president

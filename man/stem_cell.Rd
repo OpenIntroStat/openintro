@@ -13,7 +13,7 @@ A data frame with 18 observations on the following 3 variables.
 }
 }
 \source{
-\url{https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(05)67380-1/fulltext}
+\doi{10.1016/S0140-6736(05)67380-1}
 }
 \usage{
 stem_cell

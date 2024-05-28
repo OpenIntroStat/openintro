@@ -42,5 +42,5 @@
 #'     title = "Homes for sale in Duke Forest, Durham, NC",
 #'     subtitle = "Data are from November 2020"
 #'   )
-#' @source Data were collected from [Zillow.com](https://www.zillow.com/) in November 2020.
+#' @source Data were collected from Zillow in November 2020.
 "duke_forest"

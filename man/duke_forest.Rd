@@ -23,7 +23,7 @@ A data frame with 98 rows and 13 variables.
 }
 }
 \source{
-Data were collected from \href{https://www.zillow.com/}{Zillow.com} in November 2020.
+Data were collected from Zillow in November 2020.
 }
 \usage{
 duke_forest

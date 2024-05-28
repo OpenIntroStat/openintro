@@ -21,7 +21,7 @@
 #'   \item{undamaged}{Number of undamaged O-rings (out of 6).}
 #'   }
 #' @source
-#' \url{https://archive.ics.uci.edu/ml/datasets/Challenger+USA+Space+Shuttle+O-Ring}
+#' \url{https://archive.ics.uci.edu/dataset/92/challenger+usa+space+shuttle+o+ring}
 #' @keywords datasets
 #' @examples
 #'

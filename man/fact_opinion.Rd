@@ -13,7 +13,7 @@ A data frame with 5,035 rows and 3 variables.
 }
 }
 \source{
-\href{https://www.pewresearch.org/fact-tank/2018/10/23/younger-americans-are-better-than-older-americans-at-telling-factual-news-statements-from-opinions/}{Younger Americans are better than older Americans at telling factual news statements from opinions}, Pew Research Center, October 23, 2018.
+\href{https://www.pewresearch.org/short-reads/2018/10/23/younger-americans-are-better-than-older-americans-at-telling-factual-news-statements-from-opinions/}{Younger Americans are better than older Americans at telling factual news statements from opinions}, Pew Research Center, October 23, 2018.
 }
 \usage{
 fact_opinion

@@ -15,7 +15,7 @@
 #' }
 #' @source
 #' - [World Bank I](https://databank.worldbank.org/source/world-development-indicators)
-#' - [World Bank II](https://www.worldbank.org/en/programs/business-enabling-environment)
+#' - [World Bank II](https://www.worldbank.org/en/businessready?topic=trading-across-borders)
 #' - [Carbon Dioxide Information Analysis Center, Environmental Sciences Division, Oak Ridge National Laboratory](https://www.climatewatchdata.org)
 #' @examples
 #' library(ggplot2)

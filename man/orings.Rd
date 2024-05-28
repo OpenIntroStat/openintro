@@ -14,7 +14,7 @@ A data frame with 23 observations on the following 4 variables.
 }
 }
 \source{
-\url{https://archive.ics.uci.edu/ml/datasets/Challenger+USA+Space+Shuttle+O-Ring}
+\url{https://archive.ics.uci.edu/dataset/92/challenger+usa+space+shuttle+o+ring}
 }
 \usage{
 orings

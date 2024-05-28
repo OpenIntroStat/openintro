@@ -27,7 +27,7 @@ A data frame with 515 observations on the following 17 variables.
 }
 }
 \source{
-The original source is \url{fastfoodnutrition.com}. Retrieved from \href{https://github.com/rfordatascience/tidytuesday/tree/master/data/2018/2018-09-04}{Tidy Tuesday Fast food entree data}.
+Retrieved from \href{https://github.com/rfordatascience/tidytuesday/tree/master/data/2018/2018-09-04}{Tidy Tuesday Fast food entree data}.
 }
 \usage{
 fastfood

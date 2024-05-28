@@ -63,7 +63,7 @@
 #'   group_by(team_name) |>
 #'   summarize(mean_wins = mean(wins), mean_losses = mean(losses)) |>
 #'   arrange((team_name))
-#' @source [Lahmans Baseball Database](https://www.seanlahman.com/baseball-archive/statistics/)
+#' @source [Lahmans Baseball Database](https://www.seanlahman.com/)
 #' @keywords datasets
 #'
 "mlb_teams"

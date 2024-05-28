@@ -25,7 +25,7 @@
 #'   \item{calcium}{Calcium}
 #'   \item{salad}{Salad or not}
 #'   }
-#' @source The original source is [fastfoodnutrition.com](fastfoodnutrition.com). Retrieved from [Tidy Tuesday Fast food entree data](https://github.com/rfordatascience/tidytuesday/tree/master/data/2018/2018-09-04).
+#' @source Retrieved from [Tidy Tuesday Fast food entree data](https://github.com/rfordatascience/tidytuesday/tree/master/data/2018/2018-09-04).
 #' @keywords datasets
 #'
 "fastfood"

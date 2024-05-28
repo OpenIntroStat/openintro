@@ -38,8 +38,8 @@
 #'     subtitle = "Friends and City Themes"
 #'   )
 #'
-#' @source [Peterson, A. D., & Ziegler, L. (2021). Building a multiple linear regression model with LEGO brick data. Journal of Statistics and Data Science Education, 29(3),1-7. doi.org/10.1080/26939169.2021.1946450  ](https://www.tandfonline.com/doi/full/10.1080/26939169.2021.1946450)
-#' @source [BrickInstructions.com. (n.d.). Retrieved February 2, 2021 from](lego.brickinstructions.com)
+#' @source Peterson, A. D., & Ziegler, L. (2021). Building a multiple linear regression model with LEGO brick data. Journal of Statistics and Data Science Education, 29(3),1-7. \doi{10.1080/26939169.2021.1946450}
+#' @source [BrickInstructions.com. (n.d.). Retrieved February 2, 2021 from](https://lego.brickinstructions.com/)
 #' @source [Brickset. (n.d.). BRICKSET: Your LEGO® set guide. Retrieved February 2, 2021 from](https://brickset.com)
 #' @keywords datasets
 #'
