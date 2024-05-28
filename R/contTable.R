@@ -45,7 +45,8 @@ contTable <- function(x, prop = c("none", "row", "col"), show = FALSE, digits = 
   custom_caption <- !is.null(caption)
   custom_label <- !is.null(label)
   if (is.data.frame(x) & !custom_caption) {
-    caption <- paste(colnames(x), collapse = "-and-")
+    caption <- paste(colnames(x), collapse = " and ")
+    caption <- gsub("\\_", "\\\\_", caption)
   }
   if (!is.data.frame(x) & !custom_caption) {
     caption <- ""
