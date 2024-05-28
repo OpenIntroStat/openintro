@@ -39,13 +39,13 @@ names(location_labs) <- c(0, 1)
 
 ggplot(nyc, mapping = aes(x = price, group = east, fill = east)) +
   geom_boxplot(alpha = 0.5) +
- facet_grid(east ~ ., labeller = labeller(east = location_labs)) +
- labs(
-   title = "Is food more expensive east of 5th Avenue?",
-   x = "Price (US$)"
- ) +
- guides(fill = "none") +
- theme_minimal() +
- theme(axis.text.y = element_blank())
+  facet_grid(east ~ ., labeller = labeller(east = location_labs)) +
+  labs(
+    title = "Is food more expensive east of 5th Avenue?",
+    x = "Price (US$)"
+  ) +
+  guides(fill = "none") +
+  theme_minimal() +
+  theme(axis.text.y = element_blank())
 }
 \keyword{datasets}

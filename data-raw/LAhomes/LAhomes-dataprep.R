@@ -8,8 +8,8 @@ raw_data <- read_csv(here::here("data-raw/LAhomes/LAhomes.csv"))
 
 # cleaning: none required
 
-LAhomes <- raw_data %>%
-  select(-spa) %>%
+LAhomes <- raw_data |>
+  select(-spa) |>
   mutate(
     pool = replace_na(raw_data$pool, "N"),
     garage = as.double(case_when(

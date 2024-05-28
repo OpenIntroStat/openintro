@@ -14,9 +14,8 @@
 #'
 #' library(dplyr)
 #'
-#' gss_wordsum_class %>%
-#'   group_by(class) %>%
+#' gss_wordsum_class |>
+#'   group_by(class) |>
 #'   summarize(mean_wordsum = mean(wordsum))
 #'
-
 "gss_wordsum_class"

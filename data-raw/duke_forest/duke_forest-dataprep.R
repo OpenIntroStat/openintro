@@ -9,7 +9,7 @@ duke_forest_raw <- read_csv("data-raw/duke_forest/duke-forest.csv")
 
 # clean data -------------------------------------------------------------------
 
-duke_forest <- duke_forest_raw %>%
+duke_forest <- duke_forest_raw |>
   mutate(
     cooling = case_when(
       cooling == "Central" ~ "central",
@@ -17,8 +17,8 @@ duke_forest <- duke_forest_raw %>%
       TRUE ~ "other"
     ),
     cooling = fct_rev(cooling)
-  ) %>%
-  rename(url = link) %>%
+  ) |>
+  rename(url = link) |>
   relocate(url, .after = last_col())
 
 # Save ------------------------------------------------------------------------

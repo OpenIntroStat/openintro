@@ -5,7 +5,7 @@
 \alias{nyc_marathon}
 \title{New York City Marathon Times}
 \format{
-A data frame with 102 observations on the following 7 variables.
+A data frame with 108 observations on the following 7 variables.
 \describe{
 \item{year}{Year of marathom.}
 \item{name}{Name of winner.}
@@ -17,14 +17,14 @@ A data frame with 102 observations on the following 7 variables.
 }
 }
 \source{
-Wikipedia, \href{https://en.wikipedia.org/wiki/List_of_winners_of_the_New_York_City_Marathon}{List of winners of the New York City Marathon}. Retrieved 28 April, 2021.
+Wikipedia, \href{https://en.wikipedia.org/wiki/List_of_winners_of_the_New_York_City_Marathon}{List of winners of the New York City Marathon}. Retrieved 6 November, 2023.
 }
 \usage{
 nyc_marathon
 }
 \description{
 Marathon times of runners in the Men and Women divisions of the New York
-City Marathon, 1970 - 2020.
+City Marathon, 1970 - 2023.
 }
 \examples{
 library(ggplot2)

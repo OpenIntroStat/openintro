@@ -27,19 +27,18 @@
 #'
 #' # Good v Bad
 #'
-#' plot_data <- comics %>%
-#'  filter(align == "Good" | align == "Bad")
+#' plot_data <- comics |>
+#'   filter(align == "Good" | align == "Bad")
 #'
 #' ggplot(plot_data, aes(x = align, fill = align)) +
-#'  geom_bar() +
-#'  facet_wrap(~publisher)+
-#'  scale_fill_manual(values = c(IMSCOL["red", "full"], IMSCOL["blue", "full"])) +
-#'  theme_minimal() +
-#'  labs(
-#'    title = "Is there a balance of power",
-#'    x = "",
-#'    y = "Number of characters",
-#'    fill = ""
-#'  )
-
+#'   geom_bar() +
+#'   facet_wrap(~publisher) +
+#'   scale_fill_manual(values = c(IMSCOL["red", "full"], IMSCOL["blue", "full"])) +
+#'   theme_minimal() +
+#'   labs(
+#'     title = "Is there a balance of power",
+#'     x = "",
+#'     y = "Number of characters",
+#'     fill = ""
+#'   )
 "comics"

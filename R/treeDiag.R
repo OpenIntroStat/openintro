@@ -64,7 +64,6 @@ treeDiag <- function(main,
                      cex.main = 1.3,
                      col.main = "#999999",
                      showWork = FALSE) {
-
   # _____ Checks _____ #
   SBS <- rep(SBS, 2)
   if (length(p1) != length(out1)) {

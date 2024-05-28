@@ -21,7 +21,7 @@ A randomly generated data set of soda preference (cola or orange) based on locat
 
 library(dplyr)
 
-soda \%>\%
+soda |>
   count(location, drink)
 }
 \keyword{datasets}

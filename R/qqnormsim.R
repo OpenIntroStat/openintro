@@ -20,12 +20,13 @@ qqnormsim <- function(sample, data) {
   )
   df <- data.frame(
     x = c(y, simnorm),
-    plotnum = rep(c(
-      "data", "sim 1", "sim 2",
-      "sim 3", "sim 4", "sim 5",
-      "sim 6", "sim 7", "sim 8"
-    ),
-    each = length(y)
+    plotnum = rep(
+      c(
+        "data", "sim 1", "sim 2",
+        "sim 3", "sim 4", "sim 5",
+        "sim 6", "sim 7", "sim 8"
+      ),
+      each = length(y)
     )
   )
   ggplot2::ggplot(data = df, ggplot2::aes_string(sample = "x")) +

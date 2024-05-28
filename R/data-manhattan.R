@@ -22,5 +22,4 @@
 #'     x = "Rent (in US$)",
 #'     caption = "Source: Craigslist"
 #'   )
-
 "manhattan"

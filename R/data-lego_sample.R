@@ -27,8 +27,8 @@
 #' library(ggplot2)
 #' library(dplyr)
 #'
-#' lego_sample %>%
-#'   filter(theme == "Friends" | theme == "City" ) %>%
+#' lego_sample |>
+#'   filter(theme == "Friends" | theme == "City") |>
 #'   ggplot(aes(x = pieces, y = amazon_price)) +
 #'   geom_point(alpha = 0.3) +
 #'   labs(

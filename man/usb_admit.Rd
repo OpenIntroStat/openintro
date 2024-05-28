@@ -24,7 +24,7 @@ Data from a study carried out by the graduate Division of the University of Cali
 library(ggplot2)
 library(dplyr)
 
-plot_data <- ucb_admit \%>\%
+plot_data <- ucb_admit |>
   count(dept, gender, admit)
 
 ggplot(plot_data, aes(dept, n, fill = gender)) +
@@ -32,7 +32,7 @@ ggplot(plot_data, aes(dept, n, fill = gender)) +
   facet_wrap(~admit) +
   theme_minimal() +
   labs(
-   title = "Does gender discrimination play a role in college admittance?",
+    title = "Does gender discrimination play a role in college admittance?",
     x = "Department",
     y = "Number of Students",
     fill = "Gender",

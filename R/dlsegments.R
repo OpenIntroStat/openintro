@@ -160,7 +160,6 @@ dlsegments <-
 
     # ___ Intersection ___#
     if (tolower(substr(type, 1, 1)) == "i") {
-
       # ___ x1 < x2 ___#
       left <- max(x1[1], x2[1])
       right <- min(x1[2], x2[2])
@@ -185,7 +184,6 @@ dlsegments <-
           pch = pch, col = COL[1]
         )
       } else if (left == right) {
-
         # ___ Intersection Is Point ___#
         pch1 <- ifelse(x1[1] < x2[1], l[2], l[1])
         pch2 <- ifelse(x1[2] < x2[2], r[1], r[2])

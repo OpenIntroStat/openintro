@@ -6,7 +6,7 @@ library(tidyverse)
 library(usethis)
 
 # Make empty levels NAs and fix date type
-epa2012 <- openintro::epa2012 %>%
+epa2012 <- openintro::epa2012 |>
   mutate(
     across(where(is.factor), str_replace, "^$", NA_character_),
     across(where(is.character), as.factor),

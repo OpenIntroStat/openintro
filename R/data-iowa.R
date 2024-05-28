@@ -18,9 +18,9 @@
 #' library(ggplot2)
 #' library(dplyr)
 #'
-#' plot_data <- iowa %>%
-#'   filter(candidate != "Total") %>%
-#'   group_by(candidate) %>%
+#' plot_data <- iowa |>
+#'   filter(candidate != "Total") |>
+#'   group_by(candidate) |>
 #'   summarize(total_votes = sum(votes) / 1000)
 #'
 #' ggplot(plot_data, aes(total_votes, candidate)) +
@@ -33,5 +33,4 @@
 #'     x = "Number of Votes (in thousands)
 #'     "
 #'   )
-
 "iowa"

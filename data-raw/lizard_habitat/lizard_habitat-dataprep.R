@@ -10,7 +10,7 @@ lizard_habitat <- read_excel(here::here("data-raw/lizard_habitat/S. occidentalis
   skip = 14
 )
 
-lizard_habitat <- lizard_habitat %>%
+lizard_habitat <- lizard_habitat |>
   mutate(
     site = as.factor(site),
     sunlight = as.factor(sunlight),
