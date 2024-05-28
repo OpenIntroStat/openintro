@@ -1,6 +1,6 @@
 #' Simulated data for association plots
 #'
-#' Simulated data set.
+#' Simulated dataset.
 #'
 #'
 #' @name association

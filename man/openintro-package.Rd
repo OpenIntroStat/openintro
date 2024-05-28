@@ -4,11 +4,11 @@
 \name{openintro-package}
 \alias{openintro}
 \alias{openintro-package}
-\title{openintro: Data Sets and Supplemental Functions from 'OpenIntro' Textbooks and Labs}
+\title{openintro: Datasets and Supplemental Functions from 'OpenIntro' Textbooks and Labs}
 \description{
 \if{html}{\figure{logo.png}{options: style='float: right' alt='logo' width='120'}}
 
-Supplemental functions and data for 'OpenIntro' resources, which includes open-source textbooks and resources for introductory statistics (\url{https://www.openintro.org/}). The package contains data sets used in our open-source textbooks along with custom plotting functions for reproducing book figures. Note that many functions and examples include color transparency; some plotting elements may not show up properly (or at all) when run in some versions of Windows operating system.
+Supplemental functions and data for 'OpenIntro' resources, which includes open-source textbooks and resources for introductory statistics (\url{https://www.openintro.org/}). The package contains datasets used in our open-source textbooks along with custom plotting functions for reproducing book figures. Note that many functions and examples include color transparency; some plotting elements may not show up properly (or at all) when run in some versions of Windows operating system.
 }
 \seealso{
 Useful links:

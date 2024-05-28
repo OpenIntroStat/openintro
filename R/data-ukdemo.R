@@ -1,6 +1,6 @@
 #' United Kingdom Demographic Data
 #'
-#' This data set comes from the Guardian's Data Blog and includes five
+#' This dataset comes from the Guardian's Data Blog and includes five
 #' financial demographic variables.
 #'
 #'

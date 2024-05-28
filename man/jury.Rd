@@ -3,7 +3,7 @@
 \docType{data}
 \name{jury}
 \alias{jury}
-\title{Simulated juror data set}
+\title{Simulated juror dataset}
 \format{
 A data frame with 275 observations on the following variable.
 \describe{\item{race}{a factor with levels \code{black} \code{hispanic}
@@ -13,7 +13,7 @@ A data frame with 275 observations on the following variable.
 jury
 }
 \description{
-Simulated data set of registered voters proportions and representation on
+Simulated dataset of registered voters proportions and representation on
 juries.
 }
 \examples{

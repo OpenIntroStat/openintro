@@ -4,7 +4,7 @@
 #' recorded in the Greater London area by the Metropolitan Police from January
 #' 1, 2006 to September 7, 2011.
 #'
-#' To visualize this data set using a map, see the
+#' To visualize this dataset using a map, see the
 #' \code{\link{london_boroughs}} dataset, which contains the latitude and
 #' longitude of polygons that define the boundaries of the 32 boroughs of
 #' Greater London.

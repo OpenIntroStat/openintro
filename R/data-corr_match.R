@@ -1,4 +1,4 @@
-#' Sample data sets for correlation problems
+#' Sample datasets for correlation problems
 #'
 #' Simulated data.
 #'
@@ -18,7 +18,7 @@
 #'   \item{y7}{a numeric vector}
 #'   \item{y8}{a numeric vector}
 #'   }
-#' @source Simulated data set.
+#' @source Simulated dataset.
 #' @keywords datasets
 #' @examples
 #'

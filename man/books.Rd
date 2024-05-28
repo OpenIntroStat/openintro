@@ -15,7 +15,7 @@ A data frame with 95 observations on the following 2 variables.
 books
 }
 \description{
-Simulated data set.
+Simulated dataset.
 }
 \examples{
 

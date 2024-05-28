@@ -3,9 +3,9 @@
 #' This dataset contains demographic information on every member of the US
 #' armed forces including gender, race, and rank.
 #'
-#' The branches covered by this data set include the Army, Navy, Air Force, and
-#' Marine Corps.  Demographic information on the Coast Guard is contained in
-#' the original data set but has not been included here.
+#' The branches covered by this dataset include the Army, Navy, Air Force, and
+#' Marine Corps. Demographic information on the Coast Guard is contained in
+#' the original dataset but has not been included here.
 #'
 #' @name military
 #' @docType data

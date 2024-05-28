@@ -53,7 +53,7 @@ Available at \url{https://www.earth.columbia.edu/news/2005/images/ESI2005_policy
 esi
 }
 \description{
-This data set comes from the 2005 Environmental Sustainability Index:
+This dataset comes from the 2005 Environmental Sustainability Index:
 Benchmarking National Environmental Stewardship.  Countries are given an
 overall sustainability score as well as scores in each of several different
 environmental areas.

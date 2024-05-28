@@ -11,7 +11,7 @@
 #'   \item{suit}{Card suit, which takes one of four values: \code{Club}, \code{Diamond}, \code{Heart}, or \code{Spade}.}
 #'   \item{face_card}{Whether the card counts as a face card.}
 #' }
-#' @source This extremely complex data set was generated from scratch.
+#' @source This extremely complex dataset was generated from scratch.
 #' @keywords datasets
 #' @examples
 #'

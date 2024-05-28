@@ -1,6 +1,6 @@
 #' College credits.
 #'
-#' A simulated data set of number of credits taken by college students each
+#' A simulated dataset of number of credits taken by college students each
 #' semester.
 #'
 #'

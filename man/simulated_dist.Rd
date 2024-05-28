@@ -3,12 +3,12 @@
 \docType{data}
 \name{simulated_dist}
 \alias{simulated_dist}
-\title{Simulated data sets, not necessarily drawn from a normal distribution.}
+\title{Simulated datasets, not necessarily drawn from a normal distribution.}
 \format{
-The format is: List of 4 $ d1: data set of 100 observations.  $ d2:
-data set of 50 observations.  $ d3: num data set of 500 observations.  $ d4:
-data set of 15 observations.  $ d5: num data set of 25 observations.  $ d6:
-data set of 50 observations.
+The format is: List of 4 $ d1: dataset of 100 observations.  $ d2:
+dataset of 50 observations.  $ d3: num dataset of 500 observations.  $ d4:
+dataset of 15 observations.  $ d5: num dataset of 25 observations.  $ d6:
+dataset of 50 observations.
 }
 \usage{
 simulated_dist

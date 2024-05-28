@@ -15,7 +15,7 @@ A data frame with 60 observations on the following 2 variables.
 soda
 }
 \description{
-A randomly generated data set of soda preference (cola or orange) based on location.
+A randomly generated dataset of soda preference (cola or orange) based on location.
 }
 \examples{
 

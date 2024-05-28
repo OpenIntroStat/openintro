@@ -26,7 +26,7 @@ the legislation were in flux at the time of data collection.
 piracy
 }
 \description{
-This data set contains observations on all 100 US Senators and 434 of the
+This dataset contains observations on all 100 US Senators and 434 of the
 325 US Congressional Representatives related to their support of anti-piracy
 legislation that was introduced at the end of 2011.
 }
@@ -36,7 +36,7 @@ The Stop Online Piracy Act (SOPA) and the Protect Intellectual Property Act
 US Senate, respectively, to curtail copyright infringement.  The bill was
 controversial because there were concerns the bill limited free speech
 rights.  ProPublica, the independent and non-profit news organization,
-compiled this data set to compare the stance of legislators towards the
+compiled this dataset to compare the stance of legislators towards the
 bills with the amount of campaign funds that they received from groups
 considered to be supportive of or in opposition to the legislation.
 

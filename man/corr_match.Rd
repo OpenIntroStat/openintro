@@ -4,7 +4,7 @@
 \name{corr_match}
 \alias{corr_match}
 \alias{corr.match}
-\title{Sample data sets for correlation problems}
+\title{Sample datasets for correlation problems}
 \format{
 A data frame with 121 observations on the following 9 variables.
 \describe{
@@ -20,7 +20,7 @@ A data frame with 121 observations on the following 9 variables.
 }
 }
 \source{
-Simulated data set.
+Simulated dataset.
 }
 \usage{
 corr_match

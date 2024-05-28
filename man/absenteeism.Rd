@@ -19,7 +19,7 @@ slow learner (\code{SL}).}
 Venables WN, Ripley BD. 2002. Modern Applied Statistics with S.
 Fourth Edition. New York: Springer.
 
-Data can also be found in the R \code{MASS} package under the data set name
+Data can also be found in the R \code{MASS} package under the dataset name
 \code{quine}.
 }
 \usage{

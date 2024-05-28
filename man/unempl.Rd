@@ -43,7 +43,7 @@ during those years. The methods are described in detail by Coen and Romer.
 unempl
 }
 \description{
-A compilation of two data sets that provides an estimate of unemployment
+A compilation of two datasets that provides an estimate of unemployment
 from 1890 to 2010.
 }
 \examples{

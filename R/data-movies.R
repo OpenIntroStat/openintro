@@ -1,6 +1,6 @@
 #' movies
 #'
-#' A data set with information about movies released in 2003.
+#' A dataset with information about movies released in 2003.
 #'
 #' @name movies
 #' @docType data

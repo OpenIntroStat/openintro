@@ -35,7 +35,7 @@ get on a school night?}
 yrbss_samp
 }
 \description{
-A sample of the \code{\link{yrbss}} data set.
+A sample of the \code{\link{yrbss}} dataset.
 }
 \examples{
 

@@ -15,7 +15,7 @@
 #'   \item{boys}{number of male christenings (births)}
 #'   \item{girls}{number of female christenings (births)}
 #' }
-#' @source These data are excerpted from the `Arbuthnot` data set in the
+#' @source These data are excerpted from the `Arbuthnot` dataset in the
 #' [HistData](https://CRAN.R-project.org/package=HistData) package.
 #' @examples
 #'

@@ -4,7 +4,7 @@
 #' corresponding textbook prices were collected from the UCLA bookstore and
 #' also from Amazon.
 #'
-#' A past data set was collected from UCLA courses in Spring 2010, and Amazon
+#' A past dataset was collected from UCLA courses in Spring 2010, and Amazon
 #' at that time was found to be almost uniformly lower than those of the UCLA
 #' bookstore's.  Now in 2018, the UCLA bookstore is about even with Amazon on
 #' the vast majority of titles, and there is no statistical difference in the

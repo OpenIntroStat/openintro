@@ -1,6 +1,6 @@
-#' Simulated data set for ANOVA
+#' Simulated dataset for ANOVA
 #'
-#' Simulated data set for getting a better understanding of intuition that
+#' Simulated dataset for getting a better understanding of intuition that
 #' ANOVA is based off of.
 #'
 #'

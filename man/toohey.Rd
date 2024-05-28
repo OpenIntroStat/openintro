@@ -3,7 +3,7 @@
 \docType{data}
 \name{toohey}
 \alias{toohey}
-\title{Simulated polling data set}
+\title{Simulated polling dataset}
 \format{
 A data frame with 500 observations on the following variable.
 \describe{

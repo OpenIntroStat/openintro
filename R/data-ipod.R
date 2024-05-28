@@ -1,6 +1,6 @@
 #' Length of songs on an iPod
 #'
-#' A simulated data set on lengths of songs on an iPod.
+#' A simulated dataset on lengths of songs on an iPod.
 #'
 #'
 #' @name ipod

@@ -58,7 +58,7 @@ mlb_teams
 }
 \description{
 A subset of data on Major League Baseball teams from
-Lahman's Baseball Database. The full data set is available
+Lahman's Baseball Database. The full dataset is available
 in the \href{https://github.com/cdalzell/Lahman}{Lahman R package}.
 }
 \examples{

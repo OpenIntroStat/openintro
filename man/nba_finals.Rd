@@ -25,7 +25,7 @@ A data frame with 73 rows and 9 variables:
 nba_finals
 }
 \description{
-This data set contains information about the teams who played in the NBA Finals from 1950 - 2022.
+This dataset contains information about the teams who played in the NBA Finals from 1950 - 2022.
 }
 \examples{
 library(dplyr)

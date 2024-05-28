@@ -1,4 +1,4 @@
-#' Simulated data set on student housing
+#' Simulated dataset on student housing
 #'
 #' Each observation represents a simulated rent price for a student.
 #'

@@ -3,7 +3,7 @@
 \docType{data}
 \name{outliers}
 \alias{outliers}
-\title{Simulated data sets for different types of outliers}
+\title{Simulated datasets for different types of outliers}
 \format{
 A data frame with 50 observations on the following 5 variables.
 \describe{

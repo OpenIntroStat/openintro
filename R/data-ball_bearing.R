@@ -1,6 +1,6 @@
 #' Lifespan of ball bearings
 #'
-#' A simulated data set on lifespan of ball bearings.
+#' A simulated dataset on lifespan of ball bearings.
 #'
 #'
 #' @name ball_bearing

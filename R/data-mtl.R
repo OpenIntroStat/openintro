@@ -48,7 +48,7 @@
 #' \doi{10.1371/journal.pone.0195549}.
 #'
 #' Thank you to Professor Silas Bergen of Winona State University for pointing
-#' us to this data set!
+#' us to this dataset!
 #' @keywords datasets
 #' @examples
 #'

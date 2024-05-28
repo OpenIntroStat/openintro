@@ -21,7 +21,7 @@ A data frame with 140 observations on the following 5 variables.
 movies
 }
 \description{
-A data set with information about movies released in 2003.
+A dataset with information about movies released in 2003.
 }
 \examples{
 

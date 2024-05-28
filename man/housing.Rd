@@ -3,7 +3,7 @@
 \docType{data}
 \name{housing}
 \alias{housing}
-\title{Simulated data set on student housing}
+\title{Simulated dataset on student housing}
 \format{
 A data frame with 75 observations on the following variable.
 \describe{\item{cost}{a numeric vector} }

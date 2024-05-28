@@ -1,4 +1,4 @@
-#' Simulated data sets, drawn from a normal distribution.
+#' Simulated datasets, drawn from a normal distribution.
 #'
 #' Data were simulated using \code{\link{rnorm}}.
 #'

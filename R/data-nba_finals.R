@@ -1,6 +1,6 @@
 #' NBA Finals History
 #'
-#' This data set contains information about the teams who played in the NBA Finals from 1950 - 2022.
+#' This dataset contains information about the teams who played in the NBA Finals from 1950 - 2022.
 #'
 #' @name nba_finals
 #' @docType data

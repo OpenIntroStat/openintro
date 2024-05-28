@@ -13,7 +13,7 @@ A data frame with 52 observations on the following 2 variables.
 }
 }
 \source{
-This extremely complex data set was generated from scratch.
+This extremely complex dataset was generated from scratch.
 }
 \usage{
 playing_cards

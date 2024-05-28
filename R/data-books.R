@@ -1,6 +1,6 @@
 #' Sample of books on a shelf
 #'
-#' Simulated data set.
+#' Simulated dataset.
 #'
 #'
 #' @name books

@@ -29,7 +29,7 @@ possum
 }
 \description{
 Data representing possums in Australia and New Guinea. This is a copy of the
-data set by the same name in the \code{DAAG} package, however, the data set
+dataset by the same name in the \code{DAAG} package, however, the dataset
 included here includes fewer variables.
 }
 \examples{

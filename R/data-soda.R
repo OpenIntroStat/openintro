@@ -1,6 +1,6 @@
 #' soda
 #'
-#' A randomly generated data set of soda preference (cola or orange) based on location.
+#' A randomly generated dataset of soda preference (cola or orange) based on location.
 #'
 #' @name soda
 #' @docType data

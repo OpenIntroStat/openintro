@@ -1,6 +1,6 @@
 #' Sample of 50 emails
 #'
-#' This is a subsample of the \code{\link{email}} data set.
+#' This is a subsample of the \code{\link{email}} dataset.
 #'
 #'
 #' @name email50

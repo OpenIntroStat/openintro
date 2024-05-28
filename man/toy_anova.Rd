@@ -3,7 +3,7 @@
 \docType{data}
 \name{toy_anova}
 \alias{toy_anova}
-\title{Simulated data set for ANOVA}
+\title{Simulated dataset for ANOVA}
 \format{
 A data frame with 70 observations on the following 3 variables.
 \describe{
@@ -15,7 +15,7 @@ A data frame with 70 observations on the following 3 variables.
 toy_anova
 }
 \description{
-Simulated data set for getting a better understanding of intuition that
+Simulated dataset for getting a better understanding of intuition that
 ANOVA is based off of.
 }
 \examples{

@@ -14,8 +14,8 @@ downloads](http://cranlogs.r-pkg.org/badges/openintro)](https://cran.r-project.o
 
 Supplemental functions and data for OpenIntro resources, which includes
 open-source textbooks and resources for introductory statistics at
-[openintro.org](https://www.openintro.org/). The package contains data
-sets used in our open-source textbooks along with custom plotting
+[openintro.org](https://www.openintro.org/). The package contains
+datasets used in our open-source textbooks along with custom plotting
 functions for reproducing book figures. The package also contains the
 datasets used in OpenIntro labs. Note that many functions and examples
 include color transparency; some plotting elements may not show up
@@ -73,14 +73,14 @@ Process for adding new data to the package
 
 The following steps use the **devtools** and **usethis** packages for
 various steps. We recommend using this process when suggesting new
-datasets to be added to the package. If the dataset is large (>500MB) or
-you’d like to add a function, please open an issue first for discussion
-before making the pull request.
+datasets to be added to the package. If the dataset is large (\>500MB)
+or you’d like to add a function, please open an issue first for
+discussion before making the pull request.
 
 1.  Fork and clone the repo with
     `usethis::create_from_github("OpenIntroStat/openintro")`
-    -   Note: If you have write access to the repo, you can skip this
-        step.
+    - Note: If you have write access to the repo, you can skip this
+      step.
 2.  Start a new pull request with `usethis::pr_init("BRANCH-NAME")`,
     where `BRANCH-NAME` is an informative branch name.
 3.  If adding a file that is not an .rda file to begin with (Excel, csv,

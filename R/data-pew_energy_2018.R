@@ -4,7 +4,7 @@
 #' including solar, wind, offshore drilling, hydrolic fracturing ("fracking"),
 #' coal, and nuclear.
 #'
-#' We did not have access to individual responses in original data set, so we
+#' We did not have access to individual responses in original dataset, so we
 #' took the published percentages and backed out the breakdown
 #'
 #' @name pew_energy_2018

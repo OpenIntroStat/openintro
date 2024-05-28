@@ -3,7 +3,7 @@
 \docType{data}
 \name{simulated_normal}
 \alias{simulated_normal}
-\title{Simulated data sets, drawn from a normal distribution.}
+\title{Simulated datasets, drawn from a normal distribution.}
 \format{
 The format is: List of 3 $ n40 : 40 observations from a standard
 normal distribution.  $ n100: 100 observations from a standard normal

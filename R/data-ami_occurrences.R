@@ -1,6 +1,6 @@
 #' Acute Myocardial Infarction (Heart Attack) Events
 #'
-#' This data set is simulated but contains realistic occurrences of AMI in NY
+#' This dataset is simulated but contains realistic occurrences of AMI in NY
 #' City.
 #'
 #'

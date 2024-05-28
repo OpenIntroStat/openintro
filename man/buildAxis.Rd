@@ -9,7 +9,7 @@ buildAxis(side, limits, n, nMin = 2, nMax = 10, extend = 2, eps = 10^-12, ...)
 \arguments{
 \item{side}{The side of the plot where to add the axis.}
 
-\item{limits}{Either lower and upper limits on the axis or a data set.}
+\item{limits}{Either lower and upper limits on the axis or a dataset.}
 
 \item{n}{The preferred number of axis labels.}
 
@@ -32,8 +32,8 @@ of labels on the axis. This function is still under development.
 }
 \details{
 The primary reason behind building this function was to allow a plot to be
-created with similar features but with different data sets. For instance, if
-a set of code was written for one data set and the function \code{axis} had
+created with similar features but with different datasets. For instance, if
+a set of code was written for one dataset and the function \code{axis} had
 been utilized with pre-specified values, the axis may not match the plot of
 a new set of data. The function \code{buildAxis} addresses this problem by
 allowing the number of axis labels to be specified and controlled.

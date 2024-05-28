@@ -23,7 +23,7 @@ A data frame with 33 rows and 7 variables:
 nba_finals_teams
 }
 \description{
-A data set with individual team summaries for the NBA Finals series from 1950 to 2022. To win the Finals, a team must win 4 games. The maximum number of games in a series is 7.
+A dataset with individual team summaries for the NBA Finals series from 1950 to 2022. To win the Finals, a team must win 4 games. The maximum number of games in a series is 7.
 }
 \details{
 Notes:

@@ -5,8 +5,9 @@ library(tidyr)
 
 # Load data ------------------------------------------------------------------
 
-### Create a folder in the "data-raw" folder with the same name as the data
-### set. Place the raw data file (.csv, .tsv, .xlsx, etc) here, then adjust ### the code below to match your data set.
+### Create a folder in the "data-raw" folder with the same name as the dataset.
+### Place the raw data file (.csv, .tsv, .xlsx, etc) here, then adjust
+### the code below to match your dataset.
 
 raw_data <- read_csv(here::here("data-raw/simpsons_paradox_covid/simpsons_paradox.csv"))
 

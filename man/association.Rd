@@ -31,7 +31,7 @@ A data frame with 121 observations on the following 4 variables.
 association
 }
 \description{
-Simulated data set.
+Simulated dataset.
 }
 \examples{
 

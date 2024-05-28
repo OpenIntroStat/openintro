@@ -13,7 +13,7 @@ A tbl_df with with 82 rows and 3 variables:
 }
 }
 \source{
-These data are excerpted from the \code{Arbuthnot} data set in the
+These data are excerpted from the \code{Arbuthnot} dataset in the
 \href{https://CRAN.R-project.org/package=HistData}{HistData} package.
 }
 \usage{

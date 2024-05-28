@@ -1,4 +1,4 @@
-#' Simulated polling data set
+#' Simulated polling dataset
 #'
 #' Simulated data for a fake political candidate.
 #'

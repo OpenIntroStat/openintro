@@ -32,7 +32,7 @@ government regulations.
 
 The actual sample size was 1012. However, the original data were not from a
 simple random sample; after accounting for the design, the equivalent sample
-size was about 705, which was what was used for the data set here to keep
+size was about 705, which was what was used for the dataset here to keep
 things simpler for intro stat analyses.
 }
 \examples{

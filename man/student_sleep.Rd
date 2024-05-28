@@ -17,7 +17,7 @@ Simulated data.
 student_sleep
 }
 \description{
-A simulated data set for how much 110 college students each slept in a
+A simulated dataset for how much 110 college students each slept in a
 single night.
 }
 \examples{

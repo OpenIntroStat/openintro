@@ -25,7 +25,7 @@ retrieved 2011-11-01.
 ukdemo
 }
 \description{
-This data set comes from the Guardian's Data Blog and includes five
+This dataset comes from the Guardian's Data Blog and includes five
 financial demographic variables.
 }
 \examples{

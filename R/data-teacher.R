@@ -1,6 +1,6 @@
 #' Teacher Salaries in St. Louis, Michigan
 #'
-#' This data set contains teacher salaries from 2009-2010 for 71 teachers
+#' This dataset contains teacher salaries from 2009-2010 for 71 teachers
 #' employed by the St. Louis Public School in Michigan, as well as several
 #' covariates.
 #'

@@ -18,7 +18,7 @@ The data are simulated / hypothetical.
 photo_classify
 }
 \description{
-This is a simulated data set for photo classifications based on a machine
+This is a simulated dataset for photo classifications based on a machine
 learning algorithm versus what the true classification is for those photos.
 While the data are not real, they resemble performance that would be
 reasonable to expect in a well-built classifier.

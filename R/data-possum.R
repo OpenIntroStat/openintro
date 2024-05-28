@@ -1,7 +1,7 @@
 #' Possums in Australia and New Guinea
 #'
 #' Data representing possums in Australia and New Guinea. This is a copy of the
-#' data set by the same name in the `DAAG` package, however, the data set
+#' dataset by the same name in the `DAAG` package, however, the dataset
 #' included here includes fewer variables.
 #'
 #' @name possum

@@ -20,7 +20,7 @@
 #' @source Venables WN, Ripley BD. 2002. Modern Applied Statistics with S.
 #' Fourth Edition. New York: Springer.
 #'
-#' Data can also be found in the R `MASS` package under the data set name
+#' Data can also be found in the R `MASS` package under the dataset name
 #' `quine`.
 #' @keywords datasets
 #' @examples

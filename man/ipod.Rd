@@ -17,7 +17,7 @@ Simulated data.
 ipod
 }
 \description{
-A simulated data set on lengths of songs on an iPod.
+A simulated dataset on lengths of songs on an iPod.
 }
 \examples{
 

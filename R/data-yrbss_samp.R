@@ -1,6 +1,6 @@
 #' Sample of Youth Risk Behavior Surveillance System (YRBSS)
 #'
-#' A sample of the \code{\link{yrbss}} data set.
+#' A sample of the \code{\link{yrbss}} dataset.
 #'
 #'
 #' @name yrbss_samp

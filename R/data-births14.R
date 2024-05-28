@@ -1,10 +1,10 @@
 #' US births
 #'
-#' Every year, the US releases to the public a large data set containing
-#' information on births recorded in the country. This data set has been of
+#' Every year, the US releases to the public a large dataset containing
+#' information on births recorded in the country. This dataset has been of
 #' interest to medical researchers who are studying the relation between habits
 #' and practices of expectant mothers and the birth of their children. This is a
-#' random sample of 1,000 cases from the data set released in 2014.
+#' random sample of 1,000 cases from the dataset released in 2014.
 #'
 #' @source United States Department of Health and Human Services.
 #' Centers for Disease Control and Prevention.

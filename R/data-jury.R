@@ -1,6 +1,6 @@
-#' Simulated juror data set
+#' Simulated juror dataset
 #'
-#' Simulated data set of registered voters proportions and representation on
+#' Simulated dataset of registered voters proportions and representation on
 #' juries.
 #'
 #'

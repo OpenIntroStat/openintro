@@ -1,4 +1,4 @@
-#' CPR data set
+#' CPR dataset
 #'
 #' These patients were randomly divided into a treatment group where they
 #' received a blood thinner or the control group where they did not receive a

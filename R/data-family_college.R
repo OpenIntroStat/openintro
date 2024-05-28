@@ -1,6 +1,6 @@
 #' Simulated sample of parent / teen college attendance
 #'
-#' A simulated data set based on real population summaries.
+#' A simulated dataset based on real population summaries.
 #'
 #'
 #' @name family_college

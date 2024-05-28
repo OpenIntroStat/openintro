@@ -1,7 +1,7 @@
 #' Sample Responses to Two Public Health Questions
 #'
 #' Public health has improved and evolved, but has the public's knowledge
-#' changed with it? This data set explores sample responses for two survey
+#' changed with it? This dataset explores sample responses for two survey
 #' questions posed by Hans Rosling during lectures to a wide array of
 #' well-educated audiences.
 #'

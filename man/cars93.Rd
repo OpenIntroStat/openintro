@@ -26,7 +26,7 @@ cars93
 }
 \description{
 A data frame with 54 rows and 6 columns. This data is a subset of the
-\code{Cars93} data set from the \code{MASS} package.
+\code{Cars93} dataset from the \code{MASS} package.
 }
 \details{
 These cars represent a random sample for 1993 models that were in both

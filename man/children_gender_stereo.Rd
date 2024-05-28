@@ -11,7 +11,7 @@ the referenced paper, and these data frames each have variables (columns)
 that are among the following:
 \describe{
 \item{subject}{Subject ID. Note that Subject 1 in the first data frame
-(data set) does \bold{not} correspond to Subject 1 in the second data frame.}
+(dataset) does \bold{not} correspond to Subject 1 in the second data frame.}
 \item{gender}{Gender of the subject.}
 \item{age}{Age of the subject, in years.}
 \item{trait}{The trait that the children were making a judgement about,
@@ -50,7 +50,7 @@ children_gender_stereo
 \description{
 Stereotypes are common, but at what age do they start? This study
 investigates stereotypes in young children aged 5-7 years old. There are
-four studies reported in the paper, and all four data sets are provided here.
+four studies reported in the paper, and all four datasets are provided here.
 }
 \details{
 The structure of the data object is a little unusual, so we recommend
@@ -65,7 +65,7 @@ here.
 }
 \examples{
 
-# This data set is a little funny to work with.
+# This dataset is a little funny to work with.
 # If wanting to review the data for a study, we
 # recommend first assigning the corresponding
 # data frame to a new variable. For instance,

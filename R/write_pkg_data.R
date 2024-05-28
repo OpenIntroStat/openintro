@@ -2,7 +2,7 @@
 #'
 #' The function should be run with a path to a package directory.
 #' It will then look through the `data` directory of the package,
-#' and for all data sets that are data frames, create CSV variants
+#' and for all datasets that are data frames, create CSV variants
 #' in a `data-csv` directory.
 #'
 #' @param pkg The R package where we'd like to generate CSVs of any
@@ -27,7 +27,7 @@ write_pkg_data <- function(pkg, dir = paste0("data-", out_type), overwrite = FAL
   stopifnot(dir != "")
   data_sets <- utils::data(package = pkg)$results[, 3]
   if ("tmp_data" %in% data_sets) {
-    warning("Data set `tmp_data` was omitted.")
+    warning("dataset `tmp_data` was omitted.")
     data_sets <- data_sets[data_sets != "tmp_data"]
   }
   # If the directory path ends in a /, remove it.
@@ -95,10 +95,10 @@ write_pkg_data <- function(pkg, dir = paste0("data-", out_type), overwrite = FAL
   skipped_listed <-
     ifelse(skipped_listed == "  - ", "", skipped_listed)
   message(
-    "\n\n- ", written, " data sets were written.\n",
-    "- ", overwrite_skip, " data sets were skipped, because they already ",
+    "\n\n- ", written, " datasets were written.\n",
+    "- ", overwrite_skip, " datasets were skipped, because they already ",
     "existed.\n", overwrite_skip_listed,
-    "- ", skipped, " data sets were not matrices or data frames and so ",
+    "- ", skipped, " datasets were not matrices or data frames and so ",
     "could not be written.\n", skipped_listed
   )
 }

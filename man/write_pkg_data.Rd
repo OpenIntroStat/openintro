@@ -29,7 +29,7 @@ the object (\code{"R"}).}
 \description{
 The function should be run with a path to a package directory.
 It will then look through the \code{data} directory of the package,
-and for all data sets that are data frames, create CSV variants
+and for all datasets that are data frames, create CSV variants
 in a \code{data-csv} directory.
 }
 \examples{

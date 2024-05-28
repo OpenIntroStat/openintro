@@ -15,7 +15,7 @@ A data frame with 2000 observations on the following 2 variables.
 drone_blades
 }
 \description{
-Quality control data set for quadcopter drone blades, where this data has
+Quality control dataset for quadcopter drone blades, where this data has
 been made up for an example.
 }
 \examples{

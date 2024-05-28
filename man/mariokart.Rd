@@ -45,10 +45,10 @@ there are two outliers in the data. These serve as a nice example of what
 one should do when encountering an outlier: examine the data point and
 remove it only if there is a good reason. In these two cases, we can see
 from the auction titles that they included other items in their auctions
-besides the game, which justifies removing them from the data set.
+besides the game, which justifies removing them from the dataset.
 
-This data set includes all auctions for a full week in October 2009.
-Auctions were included in the data set if they satisfied a number of
+This dataset includes all auctions for a full week in October 2009.
+Auctions were included in the dataset if they satisfied a number of
 conditions. (1) They were included in a search for "wii mario kart" on
 ebay.com, (2) items were in the Video Games > Games > Nintendo Wii section
 of Ebay, (3) the listing was an auction and not exclusively a "Buy it Now"

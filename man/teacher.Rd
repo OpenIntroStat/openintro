@@ -24,7 +24,7 @@ Originally posted on SODA Developers (dev.socrata.com/data), removed in 2020.
 teacher
 }
 \description{
-This data set contains teacher salaries from 2009-2010 for 71 teachers
+This dataset contains teacher salaries from 2009-2010 for 71 teachers
 employed by the St. Louis Public School in Michigan, as well as several
 covariates.
 }

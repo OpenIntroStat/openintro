@@ -19,7 +19,7 @@ Simulation based off of summary information provided at
 family_college
 }
 \description{
-A simulated data set based on real population summaries.
+A simulated dataset based on real population summaries.
 }
 \examples{
 

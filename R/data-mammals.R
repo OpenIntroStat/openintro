@@ -1,6 +1,6 @@
 #' Sleep in Mammals
 #'
-#' This data set includes data for 39 species of mammals distributed over 13
+#' This dataset includes data for 39 species of mammals distributed over 13
 #' orders. The data were used for analyzing the relationship between
 #' constitutional and ecological factors and sleeping in mammals. Two
 #' qualitatively different sleep variables (dreaming and non dreaming) were

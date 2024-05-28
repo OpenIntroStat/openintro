@@ -37,7 +37,7 @@ David Diez's Gmail Account, early months of 2012. All personally identifiable in
 email50
 }
 \description{
-This is a subsample of the \code{\link{email}} data set.
+This is a subsample of the \code{\link{email}} dataset.
 }
 \examples{
 

@@ -3,7 +3,7 @@
 \docType{data}
 \name{cpr}
 \alias{cpr}
-\title{CPR data set}
+\title{CPR dataset}
 \format{
 A data frame with 90 observations on the following 2 variables.
 \describe{

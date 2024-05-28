@@ -1,4 +1,4 @@
-#' Simulated data sets for different types of outliers
+#' Simulated datasets for different types of outliers
 #'
 #' Data sets for showing different types of outliers
 #'

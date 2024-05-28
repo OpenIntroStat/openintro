@@ -1,7 +1,7 @@
 #' Major League Baseball Teams Data.
 #'
 #' A subset of data on Major League Baseball teams from
-#' Lahman's Baseball Database. The full data set is available
+#' Lahman's Baseball Database. The full dataset is available
 #' in the [Lahman R package](https://github.com/cdalzell/Lahman).
 #'
 #' @name mlb_teams

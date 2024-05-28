@@ -1,6 +1,8 @@
 #' nyc
 #'
-#' Zagat is a public survey where anyone can provide scores to a restaurant. The scores from the general public are then gathered to produce ratings. This data set contains a list of 168 NYC restaurants and their Zagat Ratings.
+#' Zagat is a public survey where anyone can provide scores to a restaurant.
+#' The scores from the general public are then gathered to produce ratings.
+#' This dataset contains a list of 168 NYC restaurants and their Zagat Ratings.
 #'
 #' For each category the scales are as follows:
 #'
