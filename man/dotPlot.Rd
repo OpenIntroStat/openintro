@@ -75,7 +75,7 @@ dotPlot(cars93$price,
 )
 
 # Hours worked by educational attainment or degree
-gss2010_nona <- gss2010 \%>\%
+gss2010_nona <- gss2010 |>
   filter(!is.na(hrs1) & !is.na(degree))
 
 dotPlot(gss2010_nona$hrs1,

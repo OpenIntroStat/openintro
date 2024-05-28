@@ -6,7 +6,7 @@ library(usethis)
 
 fastfood <- read_csv(here::here("data-raw/fastfood", "fastfood.csv"))
 
-fastfood <- fastfood %>%
+fastfood <- fastfood |>
   select(-X1)
 
 # Save -------------------------------------------------------------------------

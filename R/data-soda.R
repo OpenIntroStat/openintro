@@ -14,6 +14,6 @@
 #'
 #' library(dplyr)
 #'
-#' soda %>%
+#' soda |>
 #'   count(location, drink)
 "soda"

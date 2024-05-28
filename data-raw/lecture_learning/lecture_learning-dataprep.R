@@ -11,10 +11,10 @@ raw_data <- read_spss(here::here("data-raw/lecture_learning/memory.sav"))
 
 # remove all attributes imported from spss using zap_ functions
 
-raw_data <- raw_data %>%
-  zap_label() %>%
-  zap_labels() %>%
-  zap_formats() %>%
+raw_data <- raw_data |>
+  zap_label() |>
+  zap_labels() |>
+  zap_formats() |>
   zap_widths()
 
 
@@ -31,44 +31,44 @@ colnames(raw_data) <- c(
 # for each of the four measurements: mindwandering, memory, interest,
 # and motivation
 
-MW <- raw_data %>%
-  select(Student, Gender, MWlive, MWvideo) %>%
-  rename(Live = MWlive) %>%
-  rename(Video = MWvideo) %>%
+MW <- raw_data |>
+  select(Student, Gender, MWlive, MWvideo) |>
+  rename(Live = MWlive) |>
+  rename(Video = MWvideo) |>
   pivot_longer(cols = c(Live, Video), names_to = "Method", values_to = "Mindwander")
 
-MEM <- raw_data %>%
-  select(Student, MEMlive, MEMvideo) %>%
-  rename(Live = MEMlive) %>%
-  rename(Video = MEMvideo) %>%
+MEM <- raw_data |>
+  select(Student, MEMlive, MEMvideo) |>
+  rename(Live = MEMlive) |>
+  rename(Video = MEMvideo) |>
   pivot_longer(cols = c(Live, Video), names_to = "Method", values_to = "Memory")
 
-INT <- raw_data %>%
-  select(Student, INTlive, INTvideo) %>%
-  rename(Live = INTlive) %>%
-  rename(Video = INTvideo) %>%
+INT <- raw_data |>
+  select(Student, INTlive, INTvideo) |>
+  rename(Live = INTlive) |>
+  rename(Video = INTvideo) |>
   pivot_longer(cols = c(Live, Video), names_to = "Method", values_to = "Interest")
 
-MOT <- raw_data %>%
-  select(Student, MOTlive, MOTvideo, MOTcompare) %>%
-  rename(Live = MOTlive) %>%
-  rename(Video = MOTvideo) %>%
-  rename(Motivation_both = MOTcompare) %>%
+MOT <- raw_data |>
+  select(Student, MOTlive, MOTvideo, MOTcompare) |>
+  rename(Live = MOTlive) |>
+  rename(Video = MOTvideo) |>
+  rename(Motivation_both = MOTcompare) |>
   pivot_longer(cols = c(Live, Video), names_to = "Method", values_to = "Motivation_single")
 
 # make one big tidy dataset called lecture_learning by joining together in
 
-lecture_learning <- MW %>%
-  full_join(MEM) %>%
-  full_join(INT) %>%
+lecture_learning <- MW |>
+  full_join(MEM) |>
+  full_join(INT) |>
   full_join(MOT)
 
 # change coded values in lecture_learning
 
-lecture_learning <- lecture_learning %>%
+lecture_learning <- lecture_learning |>
   mutate(Gender = ifelse(Gender == "0", "Male", "Female"))
 
-lecture_learning <- lecture_learning %>%
+lecture_learning <- lecture_learning |>
   mutate(Interest = case_when(
     Interest == 1 ~ "least interest",
     Interest == 2 ~ "little interest",
@@ -77,7 +77,7 @@ lecture_learning <- lecture_learning %>%
     Interest == 5 ~ "greatest interest"
   ))
 
-lecture_learning <- lecture_learning %>%
+lecture_learning <- lecture_learning |>
   mutate(Motivation_single = case_when(
     Motivation_single == 1 ~ "very unmotivated",
     Motivation_single == 2 ~ "somewhat unmotivated",
@@ -86,12 +86,12 @@ lecture_learning <- lecture_learning %>%
     Motivation_single == 5 ~ "very motivated"
   ))
 
-lecture_learning <- lecture_learning %>%
+lecture_learning <- lecture_learning |>
   mutate(Motivation_both = case_when(
     Motivation_both == 1 ~ "Video",
     Motivation_both == 2 ~ "Live",
     Motivation_both == 3 ~ "Equally Motivated"
-  )) %>%
+  )) |>
   janitor::clean_names()
 
 # save

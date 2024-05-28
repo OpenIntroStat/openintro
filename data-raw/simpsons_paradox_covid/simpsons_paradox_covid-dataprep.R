@@ -12,15 +12,15 @@ raw_data <- read_csv(here::here("data-raw/simpsons_paradox_covid/simpsons_parado
 
 # Cleaning: ------------------------------------------------------------------
 
-clean_data <- raw_data %>%
+clean_data <- raw_data |>
   mutate(
     v_survived = v_cases - v_death,
     uv_survived = uv_cases - uv_death
-  ) %>%
-  select(-c(v_cases, uv_cases)) %>%
-  pivot_longer(cols = -age_group, names_to = "outcome", values_to = "n") %>%
-  uncount(weight = n) %>%
-  separate(outcome, into = c("vaccine_status", "outcome"), sep = "_") %>%
+  ) |>
+  select(-c(v_cases, uv_cases)) |>
+  pivot_longer(cols = -age_group, names_to = "outcome", values_to = "n") |>
+  uncount(weight = n) |>
+  separate(outcome, into = c("vaccine_status", "outcome"), sep = "_") |>
   mutate(vaccine_status = case_when(
     vaccine_status == "v" ~ "vaccinated",
     vaccine_status == "uv" ~ "unvaccinated"

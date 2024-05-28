@@ -43,7 +43,7 @@ library(ggplot2)
 library(dplyr)
 library(scales)
 
-mlbbat10_200 <- mlbbat10 \%>\%
+mlbbat10_200 <- mlbbat10 |>
   filter(mlbbat10$at_bat > 200)
 
 # On-base percentage across positions
@@ -67,9 +67,9 @@ ggplot(mlbbat10_200, aes(x = bat_avg, fill = position)) +
   )
 
 # Mean number of home runs across positions
-mlbbat10_200 \%>\%
-  group_by(position) \%>\%
-  summarise(mean_home_run = mean(home_run)) \%>\%
+mlbbat10_200 |>
+  group_by(position) |>
+  summarise(mean_home_run = mean(home_run)) |>
   ggplot(aes(x = position, y = mean_home_run, fill = position)) +
   geom_col(show.legend = FALSE) +
   labs(

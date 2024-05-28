@@ -39,7 +39,7 @@ library(ggplot2)
 library(forcats)
 
 # Proportion of females in military branches
-military \%>\%
+military |>
   ggplot(aes(x = branch, fill = gender)) +
   geom_bar(position = "fill") +
   labs(
@@ -48,11 +48,11 @@ military \%>\%
   )
 
 # Proportion of army officer females across ranks
-military \%>\%
+military |>
   filter(
     grade == "officer",
     branch == "army"
-  ) \%>\%
+  ) |>
   ggplot(aes(x = factor(rank), fill = fct_rev(gender))) +
   geom_bar(position = "fill") +
   labs(

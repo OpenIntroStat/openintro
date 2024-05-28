@@ -8,9 +8,9 @@ raw_data <- read_csv(here::here("data-raw/nyc/nyc.csv"))
 
 # cleaning: none required
 
-nyc <- raw_data %>%
-  janitor::clean_names() %>%
-  select(-case) %>%
+nyc <- raw_data |>
+  janitor::clean_names() |>
+  select(-case) |>
   mutate(east = as.integer(east))
 
 

@@ -13,8 +13,8 @@ lego_population_raw <- read_excel(
 
 # cleaning: Making Variables Snake Case
 
-lego_population <- lego_population_raw %>%
-  clean_names() %>%
+lego_population <- lego_population_raw |>
+  clean_names() |>
   select(-availability)
 
 # save --------------------------------------------------------------------------

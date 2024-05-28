@@ -61,13 +61,13 @@
 #'   geom_boxplot()
 #'
 #' # Replot without the outliers
-#' mariokart %>%
-#'   filter(total_pr < 80) %>%
+#' mariokart |>
+#'   filter(total_pr < 80) |>
 #'   ggplot(aes(x = total_pr, y = cond)) +
 #'   geom_boxplot()
 #'
 #' # Fit a multiple regression models
-#' mariokart_no <- mariokart %>% filter(total_pr < 80)
+#' mariokart_no <- mariokart |> filter(total_pr < 80)
 #' m1 <- lm(total_pr ~ cond + stock_photo + duration + wheels, data = mariokart_no)
 #' tidy(m1)
 #' m2 <- lm(total_pr ~ cond + stock_photo + wheels, data = mariokart_no)

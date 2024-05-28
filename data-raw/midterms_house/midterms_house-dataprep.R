@@ -7,7 +7,7 @@ library(usethis)
 
 midterms_house_orig <- midterms_house
 
-midterms_house <- midterms_house_orig %>%
+midterms_house <- midterms_house_orig |>
   mutate(
     party = as.character(party),
     party = if_else(party == "Democratic", "Democrat", party),
