@@ -52,23 +52,21 @@ reference:
   - acs12
   - age_at_mar
   - ames
-  - ami_occurrences
   - antibiotics
   - arbuthnot
   - ask
   - assortative_mating
+  - assortive_mating
   - avandia
   - babies_crawl
   - babies
   - bac
-  - ball_bearing
   - bdims
   - biontech_adolescents
   - birds
   - births
   - births14
   - blizzard_salary
-  - books
   - burger
   - cancer_in_dogs
   - cards
@@ -84,11 +82,9 @@ reference:
   - climber_drugs
   - coast_starlight
   - comics
-  - corr_match
   - country_iso
   - cpr
   - cpu
-  - credits
   - daycare_fines
   - diabetes2
   - dream
@@ -145,7 +141,6 @@ reference:
   - infmortrate
   - iowa
   - ipo
-  - ipod
   - iran
   - kobe_basket
   - labor_market_discrimination
@@ -165,7 +160,6 @@ reference:
   - mail_me
   - major_survey
   - malaria
-  - male_heights_fcid
   - male_heights
   - mammals
   - mammogram
@@ -252,7 +246,6 @@ reference:
   - supreme_court
   - teacher
   - textbooks
-  - tips
   - tourism
   - transplant
   - twins
@@ -274,14 +267,21 @@ reference:
     These are simulated datasets, primarly used in the textbooks for illustrating
     a particular concept or showcasing features of a particular methodology.
   contents:
+  - ami_occurrences
   - association
+  - ball_bearing
+  - books
   - cchousing
   - classdata
+  - corr_match
+  - credits
   - family_college
   - gradestv
   - gsearch
   - housing
+  - ipod
   - jury
+  - male_heights_fcid
   - outliers
   - res_demo_1
   - res_demo_2
@@ -292,6 +292,7 @@ reference:
   - student_housing
   - student_sleep
   - thanksgiving_spend
+  - tips
   - toohey
   - toy_anova
 - title: Color palettes
