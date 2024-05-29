@@ -55,6 +55,9 @@
     <loc>https://openintrostat.github.io/openintro/reference/IMSCOL.html</loc>
   </url>
   <url>
+    <loc>https://openintrostat.github.io/openintro/reference/LAhomes.html</loc>
+  </url>
+  <url>
     <loc>https://openintrostat.github.io/openintro/reference/MosaicPlot.html</loc>
   </url>
   <url>
@@ -145,6 +148,9 @@
     <loc>https://openintrostat.github.io/openintro/reference/cards.html</loc>
   </url>
   <url>
+    <loc>https://openintrostat.github.io/openintro/reference/cars04.html</loc>
+  </url>
+  <url>
     <loc>https://openintrostat.github.io/openintro/reference/cars93.html</loc>
   </url>
   <url>
@@ -179,6 +185,9 @@
   </url>
   <url>
     <loc>https://openintrostat.github.io/openintro/reference/coast_starlight.html</loc>
+  </url>
+  <url>
+    <loc>https://openintrostat.github.io/openintro/reference/comics.html</loc>
   </url>
   <url>
     <loc>https://openintrostat.github.io/openintro/reference/contTable.html</loc>
@@ -349,6 +358,9 @@
     <loc>https://openintrostat.github.io/openintro/reference/gss2010.html</loc>
   </url>
   <url>
+    <loc>https://openintrostat.github.io/openintro/reference/gss_wordsum_class.html</loc>
+  </url>
+  <url>
     <loc>https://openintrostat.github.io/openintro/reference/health_coverage.html</loc>
   </url>
   <url>
@@ -391,10 +403,16 @@
     <loc>https://openintrostat.github.io/openintro/reference/infmortrate.html</loc>
   </url>
   <url>
+    <loc>https://openintrostat.github.io/openintro/reference/iowa.html</loc>
+  </url>
+  <url>
     <loc>https://openintrostat.github.io/openintro/reference/ipo.html</loc>
   </url>
   <url>
     <loc>https://openintrostat.github.io/openintro/reference/ipod.html</loc>
+  </url>
+  <url>
+    <loc>https://openintrostat.github.io/openintro/reference/iran.html</loc>
   </url>
   <url>
     <loc>https://openintrostat.github.io/openintro/reference/jury.html</loc>
@@ -422,6 +440,9 @@
   </url>
   <url>
     <loc>https://openintrostat.github.io/openintro/reference/lego_sample.html</loc>
+  </url>
+  <url>
+    <loc>https://openintrostat.github.io/openintro/reference/life_exp.html</loc>
   </url>
   <url>
     <loc>https://openintrostat.github.io/openintro/reference/linResPlot.html</loc>
@@ -475,6 +496,9 @@
     <loc>https://openintrostat.github.io/openintro/reference/mammogram.html</loc>
   </url>
   <url>
+    <loc>https://openintrostat.github.io/openintro/reference/manhattan.html</loc>
+  </url>
+  <url>
     <loc>https://openintrostat.github.io/openintro/reference/marathon.html</loc>
   </url>
   <url>
@@ -508,6 +532,9 @@
     <loc>https://openintrostat.github.io/openintro/reference/mn_police_use_of_force.html</loc>
   </url>
   <url>
+    <loc>https://openintrostat.github.io/openintro/reference/movies.html</loc>
+  </url>
+  <url>
     <loc>https://openintrostat.github.io/openintro/reference/mtl.html</loc>
   </url>
   <url>
@@ -536,6 +563,9 @@
   </url>
   <url>
     <loc>https://openintrostat.github.io/openintro/reference/nuclear_survey.html</loc>
+  </url>
+  <url>
+    <loc>https://openintrostat.github.io/openintro/reference/nyc.html</loc>
   </url>
   <url>
     <loc>https://openintrostat.github.io/openintro/reference/nyc_marathon.html</loc>
@@ -574,6 +604,9 @@
     <loc>https://openintrostat.github.io/openintro/reference/outliers.html</loc>
   </url>
   <url>
+    <loc>https://openintrostat.github.io/openintro/reference/paralympic_1500.html</loc>
+  </url>
+  <url>
     <loc>https://openintrostat.github.io/openintro/reference/penelope.html</loc>
   </url>
   <url>
@@ -596,6 +629,9 @@
   </url>
   <url>
     <loc>https://openintrostat.github.io/openintro/reference/pm25_2011_durham.html</loc>
+  </url>
+  <url>
+    <loc>https://openintrostat.github.io/openintro/reference/pm25_2022_durham.html</loc>
   </url>
   <url>
     <loc>https://openintrostat.github.io/openintro/reference/poker.html</loc>
@@ -700,6 +736,9 @@
     <loc>https://openintrostat.github.io/openintro/reference/socialexp.html</loc>
   </url>
   <url>
+    <loc>https://openintrostat.github.io/openintro/reference/soda.html</loc>
+  </url>
+  <url>
     <loc>https://openintrostat.github.io/openintro/reference/solar.html</loc>
   </url>
   <url>
@@ -781,6 +820,9 @@
     <loc>https://openintrostat.github.io/openintro/reference/treeDiag.html</loc>
   </url>
   <url>
+    <loc>https://openintrostat.github.io/openintro/reference/twins.html</loc>
+  </url>
+  <url>
     <loc>https://openintrostat.github.io/openintro/reference/ucla_f18.html</loc>
   </url>
   <url>
@@ -794,6 +836,12 @@
   </url>
   <url>
     <loc>https://openintrostat.github.io/openintro/reference/unemploy_pres.html</loc>
+  </url>
+  <url>
+    <loc>https://openintrostat.github.io/openintro/reference/us_temperature.html</loc>
+  </url>
+  <url>
+    <loc>https://openintrostat.github.io/openintro/reference/usb_admit.html</loc>
   </url>
   <url>
     <loc>https://openintrostat.github.io/openintro/reference/winery_cars.html</loc>
