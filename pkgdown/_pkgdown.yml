@@ -52,8 +52,10 @@ reference:
   - acs12
   - age_at_mar
   - ames
+  - ami_occurances
   - antibiotics
   - arbuthnot
+  - arenosa
   - ask
   - assortative_mating
   - assortive_mating
@@ -72,6 +74,9 @@ reference:
   - cards
   - cars04
   - cars93
+  - cdc
+  - cdc.samp
+  - census.2010
   - census
   - cherry
   - children_gender_stereo
@@ -85,7 +90,10 @@ reference:
   - country_iso
   - cpr
   - cpu
+  - danish.ed.primary
+  - danish.ed.validation
   - daycare_fines
+  - dds.discr
   - diabetes2
   - dream
   - drone_blades
@@ -107,13 +115,16 @@ reference:
   - exams
   - exclusive_relationship
   - fact_opinion
+  - famuss
   - fastfood
   - fcid
   - fheights
   - fish_age
   - fish_oil_18
   - flow_rates
+  - forest.birds
   - friday
+  - frog
   - full_body_scan
   - gdp_countries
   - gear_company
@@ -137,7 +148,10 @@ reference:
   - house
   - hsb2
   - husbands_wives
+  - hyperuricemia
+  - hyperuricemia.samp
   - immigration
+  - infant_mortality_2022
   - infmortrate
   - iowa
   - ipo
@@ -146,6 +160,7 @@ reference:
   - labor_market_discrimination
   - LAhomes
   - law_resume
+  - LEAP
   - lecture_learning
   - leg_mari
   - lego_population
@@ -166,6 +181,7 @@ reference:
   - manhattan
   - marathon
   - mariokart
+  - mcas
   - mcu_films
   - midterms_house
   - migraine
@@ -183,11 +199,16 @@ reference:
   - nba_heights
   - nba_players_19
   - ncbirths
+  - nhaes.samp.adult.500
+  - nhanes.samp.adult
+  - nhanes.samp
   - nuclear_survey
   - nyc_marathon
   - nyc
   - nycflights
   - offshore_drilling
+  - opp_insights_colleges
+  - opp_insights_colleges_4year
   - opportunity_cost
   - orings
   - oscars
@@ -206,6 +227,8 @@ reference:
   - ppp_201503
   - present
   - president
+  - prevend
+  - prevend.samp
   - prison
   - prius_mpg
   - race_justice
@@ -242,10 +265,15 @@ reference:
   - stent30
   - stent365
   - stocks_18
+  - sugar.levels.A
+  - sugar.levels.B
   - sulphinpyrazone
   - supreme_court
+  - swim
+  - tb.interruption
   - teacher
   - textbooks
+  - thermometry
   - tourism
   - transplant
   - twins
@@ -256,6 +284,7 @@ reference:
   - unempl
   - unemploy_pres
   - us_temperature
+  - wdi_2022
   - winery_cars
   - world_pop
   - xom
