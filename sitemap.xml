@@ -1,867 +1,319 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://openintrostat.github.io/openintro/404.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/CODE_OF_CONDUCT.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/LICENSE.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/articles/datasets.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/articles/index.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/authors.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/index.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/news/index.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/ArrowLines.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/AxisInDollars.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/AxisInPercent.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/BG.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/Braces.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/CCP.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/COL.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/CT2DF.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/ChiSquareTail.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/IMSCOL.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/LAhomes.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/MosaicPlot.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/PlotWLine.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/absenteeism.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/acs12.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/age_at_mar.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/ames.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/ami_occurrences.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/antibiotics.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/arbuthnot.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/ask.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/association.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/assortive_mating.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/avandia.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/babies.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/babies_crawl.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/bac.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/ball_bearing.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/bdims.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/biontech_adolescents.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/birds.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/births.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/births14.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/blizzard_salary.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/books.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/boxPlot.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/buildAxis.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/burger.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/calc_streak.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/cancer_in_dogs.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/cards.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/cars04.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/cars93.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/cchousing.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/census.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/cherry.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/children_gender_stereo.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/china.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/cia_factbook.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/classdata.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/cle_sac.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/climate70.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/climber_drugs.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/coast_starlight.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/comics.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/contTable.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/corr_match.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/country_iso.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/cpr.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/cpu.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/credits.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/daycare_fines.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/densityPlot.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/diabetes2.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/dlsegments.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/dotPlot.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/dotPlotStack.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/dream.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/drone_blades.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/drug_use.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/duke_forest.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/earthquakes.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/ebola_survey.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/edaPlot.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/elmhurst.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/email.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/email50.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/env_regulation.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/epa2012.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/epa2021.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/esi.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/ethanol.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/evals.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/exam_grades.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/exams.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/exclusive_relationship.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/fact_opinion.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/fadeColor.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/family_college.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/fastfood.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/fcid.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/fheights.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/fish_age.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/fish_oil_18.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/flow_rates.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/friday.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/full_body_scan.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/gdp_countries.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/gear_company.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/gender_discrimination.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/get_it_dunn_run.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/gifted.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/global_warming_pew.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/goog.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/gov_poll.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/gpa.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/gpa_iq.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/gpa_study_hours.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/gradestv.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/gsearch.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/gss2010.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/gss_wordsum_class.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/health_coverage.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/healthcare_law_survey.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/heart_transplant.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/helium.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/helmet.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/hfi.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/histPlot.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/house.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/housing.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/hsb2.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/husbands_wives.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/immigration.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/index.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/infmortrate.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/iowa.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/ipo.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/ipod.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/iran.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/jury.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/kobe_basket.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/lab_report.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/labor_market_discriminiation.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/law_resume.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/lecture_learning.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/leg_mari.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/lego_population.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/lego_sample.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/life_exp.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/linResPlot.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/lizard_habitat.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/lizard_run.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/lmPlot.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/loans_full_schema.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/london_boroughs.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/london_murders.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/loop.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/lsegments.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/mail_me.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/major_survey.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/makeTube.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/malaria.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/male_heights.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/male_heights_fcid.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/mammals.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/mammogram.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/manhattan.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/marathon.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/mariokart.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/mcu_films.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/midterms_house.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/migraine.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/military.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/mlb.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/mlb_players_18.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/mlb_teams.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/mlbbat10.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/mn_police_use_of_force.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/movies.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/mtl.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/murders.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/myPDF.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/nba_finals.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/nba_finals_teams.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/nba_heights.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/nba_players_19.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/ncbirths.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/normTail.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/nuclear_survey.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/nyc.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/nyc_marathon.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/nycflights.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/offshore_drilling.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/openintro-package.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/openintro_colors.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/openintro_cols.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/openintro_pal.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/openintro_palettes.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/opportunity_cost.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/orings.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/oscars.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/outliers.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/paralympic_1500.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/penelope.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/penetrating_oil.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/penny_ages.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/pew_energy_2018.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/photo_classify.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/piracy.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/playing_cards.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/pm25_2011_durham.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/pm25_2022_durham.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/poker.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/possum.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/ppp_201503.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/present.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/president.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/prison.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/prius_mpg.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/qqnormsim.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/race_justice.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/reddit_finance.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/res_demo_1.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/res_demo_2.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/resume.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/rosling_responses.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/russian_influence_on_us_election_2016.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/sa_gdp_elec.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/salinity.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/sat_improve.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/satgpa.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/scale_color_openintro.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/scale_fill_openintro.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/scotus_healthcare.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/seattlepets.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/sex_discrimination.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/simpsons_paradox_covid.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/simulated_dist.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/simulated_normal.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/simulated_scatter.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/sinusitis.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/sleep_deprivation.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/smallpox.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/smoking.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/snowfall.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/socialexp.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/soda.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/solar.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/sowc_child_mortality.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/sowc_demographics.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/sowc_maternal_newborn.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/sp500.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/sp500_1950_2018.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/sp500_seq.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/speed_gender_height.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/ssd_speed.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/starbucks.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/stats_scores.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/stem_cell.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/stent30.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/stocks_18.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/student_housing.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/student_sleep.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/sulphinpyrazone.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/supreme_court.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/teacher.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/textbooks.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/thanksgiving_spend.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/tips.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/toohey.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/tourism.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/toy_anova.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/transplant.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/treeDiag.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/twins.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/ucla_f18.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/ucla_textbooks_f18.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/ukdemo.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/unempl.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/unemploy_pres.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/us_temperature.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/usb_admit.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/winery_cars.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/world_pop.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/write_pkg_data.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/xom.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/yawn.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/yrbss.html</loc>
-  </url>
-  <url>
-    <loc>https://openintrostat.github.io/openintro/reference/yrbss_samp.html</loc>
-  </url>
+<urlset xmlns = 'http://www.sitemaps.org/schemas/sitemap/0.9'>
+<url><loc>https://openintrostat.github.io/openintro/404.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/CODE_OF_CONDUCT.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/LICENSE.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/articles/datasets.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/articles/index.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/authors.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/index.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/news/index.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/ArrowLines.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/AxisInDollars.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/AxisInPercent.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/BG.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/Braces.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/CCP.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/COL.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/CT2DF.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/ChiSquareTail.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/IMSCOL.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/LAhomes.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/LEAP.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/MosaicPlot.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/PlotWLine.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/absenteeism.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/acs12.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/age_at_mar.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/ames.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/ami_occurrences.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/antibiotics.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/arbuthnot.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/arenosa.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/ask.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/association.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/assortive_mating.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/avandia.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/babies.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/babies_crawl.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/bac.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/ball_bearing.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/bdims.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/biontech_adolescents.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/birds.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/births.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/births14.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/blizzard_salary.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/books.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/boxPlot.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/buildAxis.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/burger.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/calc_streak.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/cancer_in_dogs.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/cards.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/cars04.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/cars93.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/cchousing.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/cdc.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/cdc.samp.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/census.2010.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/census.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/cherry.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/children_gender_stereo.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/china.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/cia_factbook.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/classdata.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/cle_sac.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/climate70.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/climber_drugs.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/coast_starlight.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/comics.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/contTable.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/corr_match.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/country_iso.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/cpr.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/cpu.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/credits.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/danish.ed.primary.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/danish.ed.validation.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/daycare_fines.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/dds.dscr.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/densityPlot.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/diabetes2.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/dlsegments.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/dotPlot.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/dotPlotStack.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/dream.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/drone_blades.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/drug_use.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/duke_forest.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/earthquakes.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/ebola_survey.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/edaPlot.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/elmhurst.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/email.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/email50.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/env_regulation.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/epa2012.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/epa2021.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/esi.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/ethanol.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/evals.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/exam_grades.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/exams.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/exclusive_relationship.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/fact_opinion.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/fadeColor.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/family_college.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/famuss.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/fastfood.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/fcid.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/fheights.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/fish_age.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/fish_oil_18.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/flow_rates.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/forest.birds.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/friday.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/frog.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/full_body_scan.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/gdp_countries.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/gear_company.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/gender_discrimination.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/get_it_dunn_run.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/gifted.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/global_warming_pew.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/goog.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/gov_poll.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/gpa.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/gpa_iq.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/gpa_study_hours.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/gradestv.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/gsearch.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/gss2010.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/gss_wordsum_class.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/health_coverage.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/healthcare_law_survey.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/heart_transplant.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/helium.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/helmet.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/hfi.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/histPlot.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/house.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/housing.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/hsb2.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/husbands_wives.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/hyperuricemia.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/hyperuricemia.samp.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/immigration.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/index.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/infant_mortality_2022.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/infmortrate.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/iowa.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/ipo.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/ipod.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/iran.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/jury.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/kobe_basket.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/lab_report.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/labor_market_discriminiation.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/law_resume.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/lecture_learning.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/leg_mari.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/lego_population.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/lego_sample.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/life_exp.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/linResPlot.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/lizard_habitat.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/lizard_run.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/lmPlot.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/loans_full_schema.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/london_boroughs.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/london_murders.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/loop.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/lsegments.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/mail_me.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/major_survey.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/makeTube.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/malaria.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/male_heights.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/male_heights_fcid.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/mammals.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/mammogram.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/manhattan.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/marathon.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/mariokart.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/mcas.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/mcu_films.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/midterms_house.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/migraine.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/military.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/mlb.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/mlb_players_18.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/mlb_teams.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/mlbbat10.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/mn_police_use_of_force.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/movies.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/mtl.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/murders.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/myPDF.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/nba_finals.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/nba_finals_teams.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/nba_heights.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/nba_players_19.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/ncbirths.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/nhanes.samp.adult.500.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/nhanes.samp.adult.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/nhanes.samp.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/normTail.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/nuclear_survey.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/nyc.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/nyc_marathon.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/nycflights.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/offshore_drilling.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/openintro-package.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/openintro_colors.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/openintro_cols.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/openintro_pal.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/openintro_palettes.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/opp_insights_colleges.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/opp_insights_colleges_4year.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/opportunity_cost.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/orings.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/oscars.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/outliers.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/paralympic_1500.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/penelope.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/penetrating_oil.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/penny_ages.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/pew_energy_2018.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/photo_classify.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/piracy.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/playing_cards.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/pm25_2011_durham.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/pm25_2022_durham.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/poker.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/possum.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/ppp_201503.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/present.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/president.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/prevend.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/prevend.samp.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/prison.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/prius_mpg.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/qqnormsim.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/race_justice.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/reddit_finance.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/res_demo_1.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/res_demo_2.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/resume.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/rosling_responses.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/russian_influence_on_us_election_2016.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/sa_gdp_elec.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/salinity.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/sat_improve.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/satgpa.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/scale_color_openintro.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/scale_fill_openintro.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/scotus_healthcare.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/seattlepets.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/sex_discrimination.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/simpsons_paradox_covid.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/simulated_dist.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/simulated_normal.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/simulated_scatter.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/sinusitis.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/sleep_deprivation.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/smallpox.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/smoking.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/snowfall.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/socialexp.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/soda.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/solar.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/sowc_child_mortality.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/sowc_demographics.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/sowc_maternal_newborn.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/sp500.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/sp500_1950_2018.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/sp500_seq.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/speed_gender_height.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/ssd_speed.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/starbucks.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/stats_scores.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/stem_cell.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/stent30.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/stocks_18.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/student_housing.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/student_sleep.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/sugar.levels.A.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/sugar.levels.B.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/sulphinpyrazone.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/supreme_court.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/swim.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/tb.interruption.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/teacher.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/textbooks.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/thanksgiving_spend.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/thermometry.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/tips.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/toohey.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/tourism.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/toy_anova.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/transplant.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/treeDiag.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/twins.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/ucla_f18.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/ucla_textbooks_f18.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/ukdemo.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/unempl.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/unemploy_pres.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/us_temperature.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/usb_admit.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/wdi_2022.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/winery_cars.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/world_pop.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/write_pkg_data.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/xom.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/yawn.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/yrbss.html</loc></url>
+<url><loc>https://openintrostat.github.io/openintro/reference/yrbss_samp.html</loc></url>
 </urlset>
+
