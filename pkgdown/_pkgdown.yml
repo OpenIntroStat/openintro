@@ -52,7 +52,7 @@ reference:
   - acs12
   - age_at_mar
   - ames
-  - ami_occurances
+  - ami_occurrences
   - antibiotics
   - arbuthnot
   - arenosa
@@ -199,7 +199,7 @@ reference:
   - nba_heights
   - nba_players_19
   - ncbirths
-  - nhaes.samp.adult.500
+  - nhanes.samp.adult.500
   - nhanes.samp.adult
   - nhanes.samp
   - nuclear_survey
