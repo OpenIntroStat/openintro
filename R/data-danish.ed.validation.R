@@ -1,0 +1,50 @@
+#' Data from a Danish study on triage in an emergency department (ED)
+#'
+#' Data from a prospective cohort study of triage scoring for an emergency
+#' department (ED).  The study examined whether the use of patient level
+#' measurements would improve an existing triage score. These data were used as
+#' a test set (called validation in the manuscript) to examine the performance
+#' of the model built using the training (primary) cohort. Some variable names
+#' have been changed for readability and for consistency with the primary dataset,
+#' but the data on 18 variables for the 6,383 participants are otherwise unchanged.
+#' Some variables in the primary dataset do not appear in these data.
+#'
+#' @name danish.ed.validation
+#' @docType data
+#' @format A tibble with 6383 rows and 18 variables:
+#' \describe{
+#'    \item{\code{mort30}}{numeric, 1 if patient died within 30 days of admission, 0
+#'    otherwise}
+#'    \item{\code{triage}}{factor, triage score given at arrival to ED.
+#'    Values \code{blue}, \code{green}, \code{yellow}, \code{orange}, \code{red},
+#'    from lowest to highest priority
+#'    for treatment.  The value \code{blue} normally denotes severity not
+#'    warranting admission to the ED.  Participants coded \code{blue}
+#'    are in these data but not in the primary data.}
+#'    \item{\code{age}}{numeric, age in years, rounded to lower integer}
+#'    \item{\code{sex}}{factor, \code{female}, \code{male}}
+#'    \item{\code{albumin}}{numeric, serum albumin, in g/L}
+#'    \item{\code{creatinine}}{numeric, serum creatinine, in umol/L}
+#'    \item{\code{hemaglobin}}{numeric, serum hemaglobin, in mmol/L }
+#'    \item{\code{potassium}}{numeric, serum potassium, in mmol/L}
+#'    \item{\code{leuk.count}}{blood leukocyte count, in 10E9/L}
+#'    \item{\code{sodium}}{numeric, serum sodium, in mmol/L}
+#'    \item{\code{c.react.protein}}{numeric, serum C-reactive protein}
+#'    \item{\code{oxygen.sat}}{numeric, peripheral arterial oxygen saturation, %}
+#'    \item{\code{resp.rate}}{numeric, respiratory rate per minute}
+#'    \item{\code{heart.rate}}{numeric, heart rate, beats/min}
+#'    \item{\code{systolic.bp}}{numeric, systolic blood pressure, in mmHg}
+#'    \item{\code{readmit.hosp}}{factor, readmitted to hospital within 30 days,
+#'    with values \code{yes}, \code{no}}
+#'    \item{\code{days.in.hosp}}{numeric, number of days admitted to hospital}
+#'    \item{\code{icu.status}}{factor, patient admitted to ICU, with values
+#'    \code{yes}, \code{no}}
+#'    }
+#' @references Kristensen, Michael, et al. "Routine blood tests are associated
+#' with short term mortality and can improve emergency department triage: a cohort
+#'  study of> 12,000 patients." Scandinavian Journal of Trauma, Resuscitation and
+#'  Emergency Medicine 25 (2017): 1-8.
+#' \url{https://sjtrem.biomedcentral.com/articles/10.1186/s13049-017-0458-x?report=reader}
+#' @source \url{doi:10.5061/dryad.m2bq5}
+#'
+"danish.ed.validation"

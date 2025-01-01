@@ -1,0 +1,56 @@
+#' Data used to model a triage scoring scale for a Danish emergency department.
+#'
+#' The Lackey study was a prospective cohort study of adult smear-positive
+#' tuberculosis (TB) patients enrolled between January 2010 and December 2011
+#'  with no prior TB disease.  Data from the cohort was used to model the association
+#'  of several predictors with a treatment interruption before the complete
+#'  courses of therapy. The analysis of treatment outcome in original article
+#'  uses methods for binary data.  A time-to-event analysis might be more
+#'  appropriate but the dataset does not have data sufficient for that analysis.
+#'
+#' @name tb.interruption
+#' @docType data
+#' @format A tibble with 1293 rows and 18 variables:
+#' \describe{
+#'     \item{\code{id}}{Character vector, unique participant ID}
+#'     \item{\code{age.group}}{A factor with 4 levels: \code{21 and younger}; \code{22 to 26};
+#'     \code{27 to 37}; \code{38 and older}}
+#'     \item{\code{bmi}}{a factor with 3 levels: \code{Normal}; \code{Overweight/Obese};
+#'     \code{Underweight}.
+#'     These categories reflect older WHO coding and do not apply to all populations.}
+#'     \item{\code{chronic.disease}}{a factor with two levels: \code{No},
+#'     no other chronic disease; \code{Yes}, other
+#'     chronic diseases present in the participant}
+#'     \item{\code{hiv.test}}{Outcome of HIV test, a factor with 3 levels: \code{Negative};
+#'     \code{Positive}; \code{Test not Done}}
+#'     \item{\code{marital.status}}{a factor with 4 levels: \code{Divorced/separated};
+#'     \code{Married/cohabitating}; \code{Single}; \code{Widowed}}
+#'     \item{\code{poverty}}{socioeconomic status, a factor with two levels: \code{No}, not living in
+#'     extreme poverty; \code{Yes}, living in extreme poverty}
+#'     \item{\code{prison.history}}{a factor with 2 levels: \code{No}, no history of having been
+#'     incarcerated; \code{Yes}, participant has been incarcerated}
+#'     \item{\code{education}}{a factor with 2 levels: \code{No}, participant does not have at least a
+#'     secondary school education; \code{Yes}, participant does have a secondary school education}
+#'     \item{\code{tobacco.use}}{a factor with 3 levels: \code{Currently smokes};
+#'     \code{Never smoked}; \code{Used to Smoke}}
+#'     \item{\code{alcohol.use}}{a factor with 2 levels: \code{No}, participant does not use alcohol
+#'     at least weekly; \code{Yes}, participant does use alcohol at least weekly}
+#'     \item{\code{drug.use}}{a factor with 2 levels: \code{No}, history of illicit drug use;
+#'     \code{Yes}, a history of illicit drug use}
+#'     \item{\code{rehab.history}}{a factor with 2 levels: \code{No}, no history of residence in a
+#'     rehabilitation facility; \code{Yes}, prior residence in a rehabilitation facility}
+#'     \item{\code{mdr.tb}}{a factor with two levels: \code{No}, participant has not been treated for
+#'     multi-drug resistant TB; \code{Yes}, participant has been treated for MDR TB}
+#'     \item{\code{diabetes}}{a factor with 2 levels: \code{No}, participant does not have type 2
+#'     diabetes; \code{Yes}, participant does  have diabetes}
+#'     \item{\code{trt.outcome}}{a factor with 4 levels denoting treatment outcome: \code{Cured};
+#'     \code{Default} (treatment was  interrupted before 2 months); \code{Died};
+#'     \code{Still in treatment}; \code{Transferred out}}
+#'     }
+#' @references Lackey, Brian, et al. "Patient characteristics associated with tuberculosis
+#' treatment default: a cohort study in a high-incidence area of Lima, Peru."
+#' PLoS One 10.6 (2015): e0128541. doi:10.1371/journal.pone.0128541
+#' @source doi:10.5061/dryad.fp94d
+#'
+
+"tb.interruption"

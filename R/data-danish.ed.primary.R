@@ -1,0 +1,56 @@
+#' danish.ed.primary
+#'
+#' Data from a Danish study on triage in an emergency department (ED)
+#'
+#' Data from a prospective cohort study of triage scoring for an emergency
+#' department (ED).  The study examined whether the use of patient level
+#' measurements would improve an existing triage score. These data are the
+#' training data (called primary data in the original manuscript) used for model
+#' building. Some variable names have been changed for readability, but the data
+#' on 21 variables for the 6,249 participants are otherwise unchanged.
+#'
+#' @name danish.ed.primary
+#' @docType data
+#' @format A tibble with 6249 rows and 21 variables:
+#' \describe{
+#'    \item{\code{mort30}}{numeric, 1 if patient died within 30 days of admission, 0
+#'    otherwise}
+#'    \item{\code{triage}}{factor, triage score given at arrival to ED.
+#'    Values \code{green}, \code{yellow}, \code{orange}, \code{red}, from lowest
+#'    to highest priority
+#'    for treatment.  The value \code{blue} normally denotes severity not
+#'    warranting admission to the ED, but no participants coded blue
+#'    are in these data.}
+#'    \item{\code{age}}{numeric, age in years, rounded to lower integer}
+#'    \item{\code{sex}}{factor, values \code{female}, \code{male}}
+#'    \item{\code{albumin}}{numeric, serum albumin, in g/L}
+#'    \item{\code{creatinine}}{numeric, serum creatinine, in umol/L}
+#'    \item{\code{hemaglobin}}{numeric, serum hemaglobin, in mmol/L }
+#'    \item{\code{potassium}}{numeric, serum potassium, in mmol/L}
+#'    \item{\code{leuk.count}}{blood leukocyte count, in 10E9/L}
+#'    \item{\code{sodium}}{numeric, serum sodium, in mmol/L}
+#'    \item{\code{c.react.protein}}{numeric, serum C-reactive protein}
+#'    \item{\code{oxygen.sat}}{numeric, peripheral arterial oxygen saturation, as a percent}
+#'    \item{\code{resp.rate}}{numeric, respiratory rate per minute}
+#'    \item{\code{heart.rate}}{numeric, heart rate, beats/min}
+#'    \item{\code{systolic.bp}}{numeric, systolic blood pressure, in mmHg}
+#'    \item{\code{glasgow.coma.scale}}{numeric, extent
+#'    of impaired consciousness in patients with acute medical condition or
+#'    trauma, scored between 3 and 15, 3 being the worst and 15 the best. Score
+#'    is based on 3 subscales, best eye, verbal and motor responses.}
+#'    \item{\code{readmit.hosp}}{factor, readmitted to hospital within 30 days,
+#'    values \code{yes}, \code{no}}
+#'    \item{\code{days.in.hosp}}{numeric, number of days admitted to hospital}
+#'    \item{\code{icu.time}}{numeric, number of days in the intensive care unit.
+#'    value 99999 indicates patient not admitted to ICU}
+#'    \item{\code{icu.status}}{factor, patient admitted to ICU, values \code{yes},
+#'    \code{no}}
+#'    }
+#'    #' @references Kristensen, Michael, et al. "Routine blood tests are associated
+#' with short term mortality and can improve emergency department triage: a cohort
+#'  study of> 12,000 patients." Scandinavian Journal of Trauma, Resuscitation and
+#'  Emergency Medicine 25 (2017): 1-8.
+#' \url{https://sjtrem.biomedcentral.com/articles/10.1186/s13049-017-0458-x?report=reader}
+#' @source \url{doi:10.5061/dryad.m2bq5}
+#'
+"danish.ed.primary"
