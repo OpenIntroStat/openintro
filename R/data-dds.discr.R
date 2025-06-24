@@ -10,7 +10,7 @@
 #' protect the rights and privacy of specific individual consumers. The provided
 #' data set is based on actual attributes of consumers."
 #'
-#' @name dds.dscr
+#' @name dds.discr
 #' @docType data
 #' @format A dataframe with 1000 rows and 6 variables:
 #'    \describe{
@@ -27,10 +27,9 @@
 #'       \code{Multi Race}, \code{Native Hawaiian}, \code{Other},
 #'       \code{White not Hispanic}}
 #'   }
-#'   #' @references www.amstat.org/publications/jse/v22n1/mickel.pdf Taylor, Stanley A.,
-#'   and Amy E. Mickel. Simpson's paradox: A data set and discrimination case study
-#'   exercise. Journal of Statistics Education 22.1 (2014).
-#'   Data contained in supplement B of Taylor and Mickel.
+#'   @references Taylor, Stanley A., and Amy E. Mickel. Simpson's paradox: A data
+#'   set and discrimination case study exercise. Journal of Statistics Education
+#'   22.1 (2014). Data contained in supplement B of Taylor and Mickel.
 #'
 "dds.discr"
 
