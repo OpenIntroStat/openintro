@@ -2,7 +2,8 @@
 #'
 #' A dataset from the 2000 Behavioral Risk Factors Surveillance System (BRFSS)
 #' conducted by the US Centers for Disease Control and Prevention used to
-#' illustrate inference on demographic data.
+#' illustrate inference on demographic data. The dataset is a random sample of 20,000
+#' participants drawn from 350,000 interviews from that year.
 #'
 #' @name cdc
 #' @docType data
@@ -22,6 +23,6 @@
 #'    \item{\code{age}}{Numeric;  respondent's age in years.}
 #'    \item{\code{gender}}{Factor with two levels \code{m} \code{f}}
 #'    }
-#' @source("https://www.cdc.gov/brfss/index.html")
+#' @source \url{https://www.cdc.gov/brfss/index.html}
 #'
 "cdc"

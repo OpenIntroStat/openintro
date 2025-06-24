@@ -71,6 +71,6 @@ Random sample of size 500 from the 4,095 cases in the prevend dataset with all
 31 variables.
 }
 \references{
-{https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0115755}
+\url{https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0115755}
 }
 \keyword{datasets}

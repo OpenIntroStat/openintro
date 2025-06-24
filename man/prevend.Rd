@@ -74,6 +74,6 @@ which participants completed in 2003-2006;
 data are provided for 4,095 individuals who completed cognitive testing with RFFT.
 }
 \references{
-{https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0115755}
+\url{https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0115755}
 }
 \keyword{datasets}

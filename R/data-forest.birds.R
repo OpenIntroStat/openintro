@@ -35,6 +35,6 @@
 #'     Saunders DA, Arnold GW, Burbridge AA, and Hopkins AJM eds. Surrey Beatty and Sons,
 #'     Chipping Norton, NSW, 65-77, 1987.  Logan, M 2011 Biostatistical Design and
 #'     Analysis Using R.  Wiley-Blackwell, Chapter 9
-#' @source https://users.monash.edu.au/~murray/BDAR/  Listed under chapter 9 datasets
+#' @source \url{https://users.monash.edu.au/~murray/BDAR/}  Listed under chapter 9 datasets
 #'
 "forest.birds"

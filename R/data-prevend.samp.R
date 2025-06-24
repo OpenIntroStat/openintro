@@ -59,7 +59,7 @@
 #'   \item{\code{Match_2}}{Numeric, statin users and non-users matched 1:1 on Framingham risk score.
 #'   Matched pairs share a common integer label. -1 indicates participant not matched}
 #' }
-#' @references{https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0115755}
+#' @references \url{https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0115755}
 #' @source \url{http://doi.org/10.5061/dryad.6qs53}
 #'
 "prevend.samp"
