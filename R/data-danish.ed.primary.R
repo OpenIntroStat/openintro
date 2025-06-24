@@ -46,7 +46,7 @@
 #'    \item{\code{icu.status}}{factor, patient admitted to ICU, values \code{yes},
 #'    \code{no}}
 #'    }
-#'    #' @references Kristensen, Michael, et al. "Routine blood tests are associated
+#' @references Kristensen, Michael, et al. "Routine blood tests are associated
 #' with short term mortality and can improve emergency department triage: a cohort
 #'  study of> 12,000 patients." Scandinavian Journal of Trauma, Resuscitation and
 #'  Emergency Medicine 25 (2017): 1-8.

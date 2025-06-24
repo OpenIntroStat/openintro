@@ -40,11 +40,6 @@ value 99999 indicates patient not admitted to ICU}
 \item{\code{icu.status}}{factor, patient admitted to ICU, values \code{yes},
 \code{no}}
 }
-#' @references Kristensen, Michael, et al. "Routine blood tests are associated
-with short term mortality and can improve emergency department triage: a cohort
-study of> 12,000 patients." Scandinavian Journal of Trauma, Resuscitation and
-Emergency Medicine 25 (2017): 1-8.
-\url{https://sjtrem.biomedcentral.com/articles/10.1186/s13049-017-0458-x?report=reader}
 }
 \source{
 \url{doi:10.5061/dryad.m2bq5}
@@ -62,5 +57,12 @@ measurements would improve an existing triage score. These data are the
 training data (called primary data in the original manuscript) used for model
 building. Some variable names have been changed for readability, but the data
 on 21 variables for the 6,249 participants are otherwise unchanged.
+}
+\references{
+Kristensen, Michael, et al. "Routine blood tests are associated
+with short term mortality and can improve emergency department triage: a cohort
+study of> 12,000 patients." Scandinavian Journal of Trauma, Resuscitation and
+Emergency Medicine 25 (2017): 1-8.
+\url{https://sjtrem.biomedcentral.com/articles/10.1186/s13049-017-0458-x?report=reader}
 }
 \keyword{datasets}
