@@ -21,7 +21,7 @@
 #'     \item{\code{velocity.diff}}{Numeric, \code{wet.suit.velocity
 #'          - swim.suit.velocity}}
 #'  }
-#'  #' @source \url{https://doi.org/10.1016/S1440-2440(00)80042-0}
+#' @source \url{https://doi.org/10.1016/S1440-2440(00)80042-0}
 #' @references Table 3 of De Lucas, Ricardo Dantas, et al. The effects of wet
 #'       suits on physiological and biomechanical indices during swimming.
 #'       Journal of Science and Medicine in Sport 3.1 (2000): 1-8.

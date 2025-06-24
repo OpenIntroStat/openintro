@@ -18,7 +18,9 @@ a swim suit, in meters/sec}
 \item{\code{velocity.diff}}{Numeric, \code{wet.suit.velocity
          - swim.suit.velocity}}
 }
-#' @source \url{https://doi.org/10.1016/S1440-2440(00)80042-0}
+}
+\source{
+\url{https://doi.org/10.1016/S1440-2440(00)80042-0}
 }
 \usage{
 swim

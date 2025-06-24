@@ -15,7 +15,7 @@ A tibble with 130 rows and 3 variables:
 }
 }
 \source{
-{http://jse.amstat.org/v4n2/datasets.shoemaker.html}
+\url{http://jse.amstat.org/v4n2/datasets.shoemaker.html}
 }
 \usage{
 thermometry
