@@ -177,7 +177,7 @@ summary(lm(out ~ as.factor(gp)))
 #> 
 #> Residuals:
 #>       Min        1Q    Median        3Q       Max 
-#> -0.157819 -0.024819 -0.001385  0.027062  0.140181 
+#> -0.157819 -0.024819 -0.001385  0.027063  0.140181 
 #> 
 #> Coefficients:
 #>                 Estimate Std. Error t value             Pr(>|t|)    

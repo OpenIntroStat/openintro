@@ -29,7 +29,7 @@ A data frame with 62 observations on the following 11 variables.
 
 - brain_wt:
 
-  Brain weight of the mammal (in kg)
+  Brain weight of the mammal (in g)
 
 - non_dreaming:
 
