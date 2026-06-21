@@ -3,8 +3,7 @@
 #' Explore different plotting methods using a click interface.
 #'
 #'
-#' @aliases edaPlot createEdaOptions guessMethod plotNothing fitNormal
-#' makePlotIcon
+#' @aliases edaPlot createEdaOptions guessMethod plotNothing fitNormal makePlotIcon
 #' @param dataFrame A data frame.
 #' @param Col A vector containing six colors. The colors may be given in any
 #' form.
@@ -21,11 +20,17 @@
 #' data(mariokart)
 #' mk <- mariokart[mariokart$total_pr < 100, ]
 #' # edaPlot(mk)
-edaPlot <- function(dataFrame,
-                    Col = c(
-                      "#888888", "#FF0000", "#222222",
-                      "#FFFFFF", "#CCCCCC", "#3377AA"
-                    )) {
+edaPlot <- function(
+  dataFrame,
+  Col = c(
+    "#888888",
+    "#FF0000",
+    "#222222",
+    "#FFFFFF",
+    "#CCCCCC",
+    "#3377AA"
+  )
+) {
   graphics::par(fin = c(6, 3))
   n <- dim(dataFrame)[2]
   vNames <- names(dataFrame)
@@ -44,10 +49,14 @@ edaPlot <- function(dataFrame,
 
     pMethods <- matrix(
       c(
-        "scatterPlot", "boxPlot",
-        "histogram", "barPlot",
-        "mosaicPlot", "",
-        "fitLinear", "fitNormal"
+        "scatterPlot",
+        "boxPlot",
+        "histogram",
+        "barPlot",
+        "mosaicPlot",
+        "",
+        "fitLinear",
+        "fitNormal"
       ),
       ncol = 2,
       byrow = TRUE
@@ -67,14 +76,18 @@ edaPlot <- function(dataFrame,
       if (length(y) == 0) {
         plot(x, main = "plot(x)", xlab = vNames[dataX])
       } else {
-        plot(x, y,
+        plot(
+          x,
+          y,
           main = "plot(x, y)",
           xlab = vNames[dataX],
           ylab = vNames[dataY]
         )
       }
       if (!is.numeric(x) | !is.numeric(y)) {
-        cat("warning: x and/or y is not numerical, i.e. this plot may not look like a scatterplot.\n")
+        cat(
+          "warning: x and/or y is not numerical, i.e. this plot may not look like a scatterplot.\n"
+        )
       }
     } else if (plotMethod == "boxPlot") {
       if (length(x) == 0) {
@@ -85,7 +98,11 @@ edaPlot <- function(dataFrame,
       }
       if (length(y) == 0) {
         if (is.numeric(x)) {
-          graphics::boxplot(x, main = "graphics::boxplot(x)", xlab = vNames[dataX])
+          graphics::boxplot(
+            x,
+            main = "graphics::boxplot(x)",
+            xlab = vNames[dataX]
+          )
         } else {
           cat(
             "warning: x-variable coerced",
@@ -95,16 +112,19 @@ edaPlot <- function(dataFrame,
         }
       } else {
         if (is.numeric(y)) {
-          graphics::boxplot(y ~ x,
+          graphics::boxplot(
+            y ~ x,
             main = "graphics::boxplot(y ~ x)",
-            xlab = vNames[dataX], ylab = vNames[dataY]
+            xlab = vNames[dataX],
+            ylab = vNames[dataY]
           )
         } else {
           cat(
             "warning: y-variable coerced into",
             "a numerical status.\n"
           )
-          graphics::boxplot(as.numeric(y) ~ x,
+          graphics::boxplot(
+            as.numeric(y) ~ x,
             main = "graphics::boxplot(as.numeric(y) ~ x)",
             xlab = vNames[dataX],
             ylab = vNames[dataY]
@@ -119,7 +139,8 @@ edaPlot <- function(dataFrame,
         y <- dataFrame[, dataY]
       }
       if (!is.numeric(x)) {
-        graphics::hist(as.numeric(x),
+        graphics::hist(
+          as.numeric(x),
           main = "hist(as.numeric(x))",
           xlab = vNames[dataX]
         )
@@ -141,7 +162,8 @@ edaPlot <- function(dataFrame,
         y <- dataFrame[, dataY]
       }
       if (length(y) == 0) {
-        graphics::barplot(table(x),
+        graphics::barplot(
+          table(x),
           main = "graphics::barplot(table(x))",
           xlab = vNames[dataX]
         )
@@ -150,7 +172,8 @@ edaPlot <- function(dataFrame,
           "being loaded into graphics::barplot().\n"
         )
       } else {
-        graphics::barplot(table(x),
+        graphics::barplot(
+          table(x),
           table(y),
           main = "graphics::barplot(table(x), table(y))",
           xlab = vNames[dataX],
@@ -169,7 +192,8 @@ edaPlot <- function(dataFrame,
         y <- dataFrame[, dataY]
       }
       if (length(y) == 0) {
-        graphics::mosaicplot(table(x),
+        graphics::mosaicplot(
+          table(x),
           main = "graphics::mosaicplot(table(x))",
           xlab = vNames[dataX]
         )
@@ -178,7 +202,8 @@ edaPlot <- function(dataFrame,
           "loaded into graphics::mosaicplot().\n"
         )
       } else {
-        graphics::mosaicplot(table(data.frame(x, y)),
+        graphics::mosaicplot(
+          table(data.frame(x, y)),
           main = "graphics::mosaicplot(table(data.frame(x,y)))",
           xlab = vNames[dataX],
           ylab = vNames[dataY]
@@ -194,7 +219,9 @@ edaPlot <- function(dataFrame,
       if (length(y) == 0) {
         plot(x, main = "plot(x)", xlab = vNames[dataX])
       } else {
-        plot(x, y,
+        plot(
+          x,
+          y,
           main = "plot(x, y)",
           xlab = vNames[dataX],
           ylab = vNames[dataY]
@@ -232,7 +259,6 @@ edaPlot <- function(dataFrame,
     } else {
       plotNothing()
     }
-
 
     graphics::par(mar = rep(0, 4))
     graphics::plot(c(-0.05, 1.07), c(-0.02, 1.01), type = "n", axes = FALSE)
@@ -303,14 +329,16 @@ plotNothing <- function(mar = rep(0, 4), main = "") {
 
 fitNormal <- function(x, y, Col, ...) {
   if (!is.numeric(x)) {
-    graphics::hist(as.numeric(x),
+    graphics::hist(
+      as.numeric(x),
       probability = TRUE,
       main = "hist(as.numeric(x), probability=TRUE)",
       ...
     )
     cat("warning: data coerced into numeric status.\n")
   } else {
-    graphics::hist(x,
+    graphics::hist(
+      x,
       probability = TRUE,
       main = "hist(x, probability=TRUE)",
       ...
@@ -341,7 +369,9 @@ createEdaOptions <- function(dataFrame, dataX, dataY, plotMethod, Col) {
   for (i in 1:n) {
     y <- 0.85 - 2 * (i - 1) * L
     COL <- ifelse(i %in% c(dataX, dataY), Col[2], Col[3])
-    graphics::text(L, y + L / 2,
+    graphics::text(
+      L,
+      y + L / 2,
       names(dataFrame)[i],
       pos = 4,
       col = COL,
@@ -362,10 +392,14 @@ createEdaOptions <- function(dataFrame, dataX, dataY, plotMethod, Col) {
 
   pMethods <- matrix(
     c(
-      "scatterPlot", "boxPlot",
-      "histogram", "barPlot",
-      "mosaicPlot", "",
-      "fitLinear", "fitNormal"
+      "scatterPlot",
+      "boxPlot",
+      "histogram",
+      "barPlot",
+      "mosaicPlot",
+      "",
+      "fitLinear",
+      "fitNormal"
     ),
     ncol = 2,
     byrow = TRUE
@@ -379,10 +413,7 @@ createEdaOptions <- function(dataFrame, dataX, dataY, plotMethod, Col) {
         0.65 + j * 0.25,
         0.9 - 0.17 - i * 0.22
       )
-      COL <- ifelse(pMethods[i + 1, j + 1] == plotMethod,
-        Col[2],
-        Col[3]
-      )
+      COL <- ifelse(pMethods[i + 1, j + 1] == plotMethod, Col[2], Col[3])
       if (plotMethod == "fitLine" & i == 0 & j == 0) {
         COL <- Col[2]
       }
@@ -399,15 +430,15 @@ createEdaOptions <- function(dataFrame, dataX, dataY, plotMethod, Col) {
 
 
 makePlotIcon <- function(coord, plotMethod, COL) {
-  rect(coord[1], coord[2],
-    coord[3], coord[4],
+  rect(
+    coord[1],
+    coord[2],
+    coord[3],
+    coord[4],
     col = "#FFFFFF",
     border = "#FFFFFF"
   )
-  rect(coord[1], coord[2],
-    coord[3], coord[4],
-    border = COL
-  )
+  rect(coord[1], coord[2], coord[3], coord[4], border = COL)
   scaleX <- abs(coord[3] - coord[1])
   scaleY <- abs(coord[4] - coord[2])
   lowerX <- min(c(coord[1], coord[3]))
@@ -416,10 +447,19 @@ makePlotIcon <- function(coord, plotMethod, COL) {
   if (plotMethod == "scatterPlot") {
     x <- c(1:9, 5) / 10
     y <- c(
-      0.212, 0.322, 0.37, 0.297, 0.369,
-      0.48, 0.768, 0.637, 0.759, 0.467
+      0.212,
+      0.322,
+      0.37,
+      0.297,
+      0.369,
+      0.48,
+      0.768,
+      0.637,
+      0.759,
+      0.467
     )
-    graphics::points(x * scaleX + lowerX,
+    graphics::points(
+      x * scaleX + lowerX,
       y * scaleY + lowerY,
       pch = 20,
       cex = 0.5,
@@ -431,12 +471,18 @@ makePlotIcon <- function(coord, plotMethod, COL) {
     pX <- lowerX + c(1.15, 2.85) * scaleX / 4 # - scaleX/12
     pY1 <- lowerY + scaleY * c(10, 19, 25, 37, 64, 82) / 100
     pY2 <- lowerY + scaleY * c(10, 25, 37, 54, 87) / 100
-    graphics::rect(pX[1] - scaleX / 9, pY1[2],
-      pX[1] + scaleX / 9, pY1[4],
+    graphics::rect(
+      pX[1] - scaleX / 9,
+      pY1[2],
+      pX[1] + scaleX / 9,
+      pY1[4],
       border = COL
     )
-    graphics::rect(pX[2] - scaleX / 9, pY2[2],
-      pX[2] + scaleX / 9, pY2[4],
+    graphics::rect(
+      pX[2] - scaleX / 9,
+      pY2[2],
+      pX[2] + scaleX / 9,
+      pY2[4],
       border = COL
     )
     graphics::lines(pX[1] + scaleX * c(-1, 1) / 9, rep(pY1[1], 2), col = COL)
@@ -458,8 +504,10 @@ makePlotIcon <- function(coord, plotMethod, COL) {
     heights <- tmp * scaleY / 100 + lowerY
     for (i in 2:length(breaks)) {
       rect(
-        breaks[i - 1], lowerY + scaleY / 30,
-        breaks[i], heights[i - 1] + scaleY / 30
+        breaks[i - 1],
+        lowerY + scaleY / 30,
+        breaks[i],
+        heights[i - 1] + scaleY / 30
       )
     }
   }
@@ -467,16 +515,26 @@ makePlotIcon <- function(coord, plotMethod, COL) {
   if (plotMethod == "barPlot") {
     sX <- scaleX / 21
     sY <- scaleY / 21
-    rect(lowerX + sX, lowerY + sY, lowerX + 5 * sX, lowerY + 9 * sY,
+    rect(lowerX + sX, lowerY + sY, lowerX + 5 * sX, lowerY + 9 * sY, col = COL)
+    rect(
+      lowerX + 6 * sX,
+      lowerY + sY,
+      lowerX + 10 * sX,
+      lowerY + 18 * sY,
       col = COL
     )
-    rect(lowerX + 6 * sX, lowerY + sY, lowerX + 10 * sX, lowerY + 18 * sY,
+    rect(
+      lowerX + 11 * sX,
+      lowerY + sY,
+      lowerX + 15 * sX,
+      lowerY + 2 * sY,
       col = COL
     )
-    rect(lowerX + 11 * sX, lowerY + sY, lowerX + 15 * sX, lowerY + 2 * sY,
-      col = COL
-    )
-    rect(lowerX + 16 * sX, lowerY + sY, lowerX + 20 * sX, lowerY + 5 * sY,
+    rect(
+      lowerX + 16 * sX,
+      lowerY + sY,
+      lowerX + 20 * sX,
+      lowerY + 5 * sY,
       col = COL
     )
   }
@@ -497,10 +555,20 @@ makePlotIcon <- function(coord, plotMethod, COL) {
   if (plotMethod == "fitLinear") {
     x <- c(1:9, 5) / 10
     y <- c(
-      0.212, 0.322, 0.37, 0.297, 0.369,
-      0.48, 0.768, 0.637, 0.759, 0.467
+      0.212,
+      0.322,
+      0.37,
+      0.297,
+      0.369,
+      0.48,
+      0.768,
+      0.637,
+      0.759,
+      0.467
     )
-    graphics::points(x * scaleX + lowerX, y * scaleY + lowerY,
+    graphics::points(
+      x * scaleX + lowerX,
+      y * scaleY + lowerY,
       pch = 20,
       cex = 0.5,
       col = COL
@@ -517,8 +585,10 @@ makePlotIcon <- function(coord, plotMethod, COL) {
     heights <- tmp * scaleY / 100 + lowerY
     for (i in 2:length(breaks)) {
       rect(
-        breaks[i - 1], lowerY + scaleY / 30,
-        breaks[i], heights[i - 1] + scaleY / 30
+        breaks[i - 1],
+        lowerY + scaleY / 30,
+        breaks[i],
+        heights[i - 1] + scaleY / 30
       )
     }
     X <- seq(0, 1, 0.01)

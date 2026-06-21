@@ -34,8 +34,7 @@
 #' transplant data." Journal of the American Statistical Association, vol. 69,
 #' pp. 74-80.
 #' @source \url{http://www.stat.ucla.edu/~jsanchez/data/stanford.txt}
-#' @keywords datasets heart transplant categorical data contingency tables
-#' randomization tests
+#' @keywords datasets heart transplant categorical data contingency tables randomization tests
 #' @examples
 #'
 #' library(ggplot2)
