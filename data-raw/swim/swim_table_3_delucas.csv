@@ -1,0 +1,13 @@
+swimmer.number,swimmer.sex,swimmer.class,wet.suit.velocity,swim.suit.velocity
+1,female,swimmer,1.57,1.49
+2,female,triathlete,1.47,1.37
+3,female,swimmer,1.42,1.35
+4,female,triathlete,1.35,1.27
+5,female,triathlete,1.22,1.12
+6,male,swimmer,1.75,1.64
+7,male,swimmer,1.64,1.59
+8,male,triathlete,1.57,1.52
+9,male,triathlete,1.56,1.5
+10,male,triathlete,1.53,1.45
+11,male,triathlete,1.49,1.44
+12,male,triathlete,1.51,1.41

@@ -1,0 +1,11 @@
+
+
+Essentially, you just need to go to BioMart, and
+
+select "Ensembl Genes 96" (the number will change if the version changes) as the database and "uman Genes" as the dataset.
+
+Click on "Filters", and set Gene type to coding and Transcript type to protein_coding.
+
+From "Attributes", select whatever you want to see. The "CDS Length" is under "Structures".
+
+Note structures no longer an option

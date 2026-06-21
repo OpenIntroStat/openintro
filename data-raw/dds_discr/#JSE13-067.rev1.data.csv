@@ -1,0 +1,1001 @@
+ID ,Age Cohort,Age,Gender,Expenditures,Ethnicity
+10210,13-17,17,Female,2113 ,White not Hispanic
+10409,22-50,37,Male,41924 ,White not Hispanic
+10486, 0 - 5,3,Male,1454,Hispanic
+10538,18-21,19,Female,6400 ,Hispanic
+10568,13-17,13,Male,4412 ,White not Hispanic
+10690,13-17,15,Female,4566 ,Hispanic
+10711,13-17,13,Female,3915 ,White not Hispanic
+10778,13-17,17,Male,3873 ,Black
+10820,13-17,14,Female,5021 ,White not Hispanic
+10823,13-17,13,Male,2887 ,Hispanic
+11000,13-17,13,Female,4154 ,White not Hispanic
+11024,13-17,14,Male,3048 ,Hispanic
+11115,13-17,15,Female,2757 ,White not Hispanic
+11189,13-17,17,Male,5340 ,Multi Race
+11201,18-21,20,Male,10047 ,Hispanic
+11210,22-50,25,Female,34795 ,Black
+11379,22-50,23,Female,43025 ,White not Hispanic
+11380,22-50,41,Male,54115 ,Asian
+11441, 0 - 5,5,Female,1748,Hispanic
+11466,13-17,15,Female,4515 ,Hispanic
+11812, 0 - 5,5,Male,1861,Hispanic
+11842, 0 - 5,5,Male,1598,Hispanic
+11922,22-50,22,Female,46571 ,Hispanic
+11935, 0 - 5,3,Male,1066,Hispanic
+12127,13-17,16,Female,3867 ,Black
+12137, 51 +,71,Female,57928 ,White not Hispanic
+12207,13-17,13,Female,4002 ,White not Hispanic
+12530,18-21,18,Female,10434 ,Asian
+12589, 51 +,63,Female,56134 ,White not Hispanic
+12834, 0 - 5,1,Male,1070,White not Hispanic
+12850,13-17,13,Male,3775 ,Multi Race
+12990,22-50,27,Female,35284 ,White not Hispanic
+13119,18-21,21,Male,7219 ,White not Hispanic
+13120,13-17,14,Male,4681 ,White not Hispanic
+13195,13-17,15,Female,4629 ,Asian
+13621, 0 - 5,3,Female,2750,White not Hispanic
+13692,13-17,15,Female,3392 ,Asian
+13722,13-17,14,Male,5696 ,Black
+13826,22-50,30,Female,46660 ,White not Hispanic
+14233,6-12,6,Female,2354 ,Hispanic
+14367,22-50,33,Male,40781 ,White not Hispanic
+14427,6-12,10,Female,2559 ,Black
+14520,22-50,25,Female,36428 ,White not Hispanic
+14523, 0 - 5,3,Male,674,Hispanic
+14648,22-50,26,Male,39844 ,Asian
+14653,13-17,17,Male,4046 ,White not Hispanic
+14665,22-50,33,Male,36184 ,White not Hispanic
+14845,13-17,16,Male,4968 ,Hispanic
+15034,22-50,24,Male,36901 ,White not Hispanic
+15060, 51 +,63,Female,50419 ,White not Hispanic
+15111, 0 - 5,1,Female,340,White not Hispanic
+15205,22-50,24,Female,42192 ,Black
+15366, 51 +,75,Female,49239 ,White not Hispanic
+15422,22-50,27,Male,36057 ,White not Hispanic
+15448,6-12,8,Female,2895 ,Hispanic
+15487,22-50,24,Male,31512 ,White not Hispanic
+15778,6-12,10,Female,1915 ,Hispanic
+15801,13-17,16,Male,4091 ,Hispanic
+15888,13-17,13,Male,4798 ,Hispanic
+15970, 51 +,51,Female,54267 ,White not Hispanic
+16048,6-12,6,Female,1783 ,Asian
+16052,13-17,16,Female,3212 ,Hispanic
+16306,13-17,15,Female,2029 ,White not Hispanic
+16440,22-50,22,Male,37727 ,White not Hispanic
+16515,18-21,20,Male,11998 ,Hispanic
+16525,22-50,45,Male,50304 ,Hispanic
+16981, 0 - 5,5,Female,1130,Hispanic
+17191,22-50,24,Female,45412 ,White not Hispanic
+17276,22-50,32,Male,38310 ,Hispanic
+17354,13-17,13,Female,3638 ,Hispanic
+17361, 51 +,74,Female,54616 ,Asian
+17456,22-50,26,Female,30504 ,Asian
+17604,18-21,19,Male,7621 ,Hispanic
+17605,18-21,18,Male,13677 ,White not Hispanic
+17744,6-12,6,Female,1423 ,Hispanic
+17799,13-17,17,Female,4395 ,Hispanic
+18015,22-50,29,Male,38236 ,White not Hispanic
+18057,13-17,17,Male,6798 ,White not Hispanic
+18080,13-17,13,Female,4052 ,White not Hispanic
+18095,22-50,48,Female,49424 ,White not Hispanic
+18127,22-50,34,Female,39521 ,Hispanic
+18223,6-12,9,Female,2471 ,Asian
+18262,18-21,18,Male,15018 ,Hispanic
+18313,13-17,16,Male,2924 ,White not Hispanic
+18383, 0 - 5,0,Male,1149,Multi Race
+18421,13-17,15,Female,4525 ,Hispanic
+18482,13-17,16,Male,3796 ,Hispanic
+18492,18-21,18,Female,8730 ,Black
+18655,22-50,28,Male,37247 ,Black
+18656,22-50,28,Female,31027 ,White not Hispanic
+18671,22-50,22,Male,27364 ,White not Hispanic
+18749,22-50,27,Female,30998 ,White not Hispanic
+18867, 51 +,66,Female,49851 ,Asian
+18894, 0 - 5,3,Male,1057,White not Hispanic
+19107,22-50,22,Male,42623 ,White not Hispanic
+19147, 0 - 5,1,Male,1363,Hispanic
+19148,13-17,13,Female,5324 ,Black
+19228,22-50,22,Male,46513 ,Black
+19247,13-17,15,Female,2521 ,White not Hispanic
+19250, 51 +,94,Female,60871 ,Hispanic
+19251,22-50,41,Female,42139 ,White not Hispanic
+19290, 0 - 5,5,Male,1713,Hispanic
+19373,6-12,6,Female,1814 ,Asian
+19412, 51 +,60,Female,57702 ,White not Hispanic
+19510,22-50,23,Female,36607 ,White not Hispanic
+19517,22-50,36,Male,29144 ,White not Hispanic
+19571,18-21,21,Female,7193 ,White not Hispanic
+19661,22-50,23,Female,49028 ,Hispanic
+19662, 51 +,80,Female,54309 ,White not Hispanic
+19663,6-12,6,Female,987 ,White not Hispanic
+19825,22-50,25,Female,41107 ,White not Hispanic
+19917, 0 - 5,0,Male,904,White not Hispanic
+20057, 51 +,65,Female,56752 ,White not Hispanic
+20073, 0 - 5,4,Female,1977,Hispanic
+20380,6-12,12,Female,3450 ,Hispanic
+20641,18-21,19,Male,10716 ,White not Hispanic
+20810,18-21,20,Male,9161 ,Hispanic
+20832,6-12,12,Female,3007 ,Hispanic
+20872,22-50,33,Male,34558 ,White not Hispanic
+20876,13-17,15,Male,3269 ,Hispanic
+20918,22-50,24,Female,40980 ,Hispanic
+20976, 0 - 5,4,Male,1196,Hispanic
+20984,18-21,18,Male,4814 ,Black
+21140, 0 - 5,5,Male,1997,White not Hispanic
+21158,22-50,24,Female,51149 ,Hispanic
+21167,18-21,18,Female,11038 ,Hispanic
+21296,18-21,21,Male,3988 ,Asian
+21305,18-21,18,Female,12306 ,White not Hispanic
+21351,18-21,19,Female,12649 ,Hispanic
+21503,22-50,24,Male,37416 ,White not Hispanic
+21585,6-12,11,Female,2664 ,Hispanic
+21591, 51 +,66,Female,59926 ,Hispanic
+21742,18-21,20,Female,10696 ,Asian
+22056,18-21,19,Male,9972 ,Hispanic
+22124,13-17,14,Female,5920 ,Hispanic
+22125, 0 - 5,5,Male,2549,Hispanic
+22446,13-17,17,Male,2686 ,Hispanic
+22534,22-50,34,Female,40277 ,Hispanic
+22541,22-50,27,Female,42702 ,White not Hispanic
+22682,22-50,37,Female,42455 ,White not Hispanic
+22697,13-17,13,Male,4097 ,Hispanic
+22700, 0 - 5,4,Male,1957,Hispanic
+22764, 0 - 5,5,Male,1646,Hispanic
+22879, 0 - 5,4,Male,1525,Hispanic
+22964, 0 - 5,4,Male,1294,Hispanic
+22988,13-17,16,Male,4664 ,Multi Race
+23032,22-50,22,Male,43292 ,White not Hispanic
+23450,13-17,16,Female,1432 ,Asian
+23493, 0 - 5,0,Male,1435,Hispanic
+23505, 0 - 5,4,Male,1631,White not Hispanic
+23559,18-21,20,Male,8687 ,Black
+23617,18-21,19,Female,8096 ,Hispanic
+23651, 0 - 5,3,Male,1123,Hispanic
+23861, 51 +,77,Female,55015 ,Asian
+23890, 0 - 5,4,Male,1644,White not Hispanic
+23915,13-17,17,Female,3678 ,Hispanic
+24042,18-21,18,Male,8999 ,White not Hispanic
+24078,13-17,16,Male,1740 ,Hispanic
+24128,18-21,21,Female,15176 ,Hispanic
+24171,22-50,35,Male,27417 ,White not Hispanic
+24270,18-21,18,Female,9078 ,White not Hispanic
+24341,6-12,9,Female,1963 ,Hispanic
+24510,13-17,15,Male,4670 ,Hispanic
+24545, 0 - 5,4,Male,2553,White not Hispanic
+24617,13-17,14,Male,3394 ,Hispanic
+24635, 0 - 5,0,Female,995,Hispanic
+24731, 0 - 5,0,Female,1068,White not Hispanic
+24786,13-17,15,Male,4818 ,White not Hispanic
+24838, 0 - 5,2,Male,650,White not Hispanic
+24847,18-21,21,Female,15179 ,White not Hispanic
+24850,18-21,21,Female,16237 ,Hispanic
+24895,22-50,27,Female,47242 ,White not Hispanic
+24959, 51 +,82,Female,58922 ,White not Hispanic
+25000,18-21,21,Male,9592 ,Hispanic
+25184,18-21,21,Male,10008 ,White not Hispanic
+25281,22-50,28,Female,42346 ,White not Hispanic
+25300,6-12,6,Female,2119 ,Hispanic
+25321,22-50,40,Male,42840 ,White not Hispanic
+25370,18-21,19,Female,10292 ,Hispanic
+25457,13-17,16,Female,3501 ,Hispanic
+25575,22-50,23,Male,40992 ,White not Hispanic
+25613, 0 - 5,0,Male,741,Hispanic
+25649,22-50,42,Male,37916 ,White not Hispanic
+25743,6-12,11,Female,1339 ,White not Hispanic
+25747, 51 +,74,Female,54266 ,White not Hispanic
+25765, 0 - 5,4,Male,1016,Hispanic
+26071,6-12,6,Female,1582 ,Hispanic
+26099,18-21,20,Male,13345 ,Asian
+26169,22-50,33,Female,47204 ,White not Hispanic
+26423,13-17,17,Male,4723 ,Hispanic
+26427,13-17,13,Male,2460 ,Hispanic
+26437, 0 - 5,0,Male,2296,Multi Race
+26457,13-17,16,Female,5718 ,Hispanic
+26648,18-21,21,Female,7571 ,Asian
+27029,18-21,18,Male,7207 ,Asian
+27031, 0 - 5,4,Male,1028,Hispanic
+27150,6-12,12,Female,3141 ,Hispanic
+27311,13-17,17,Male,4556 ,White not Hispanic
+27356,22-50,25,Female,49142 ,White not Hispanic
+27484,6-12,11,Male,3585 ,Hispanic
+27547,6-12,7,Female,2039 ,Hispanic
+27561,6-12,12,Female,2431 ,White not Hispanic
+27824,6-12,11,Male,1024 ,White not Hispanic
+27921,22-50,22,Female,43858 ,Hispanic
+28013, 0 - 5,1,Male,762,Hispanic
+28053, 51 +,62,Female,49749 ,White not Hispanic
+28066,18-21,20,Male,7081 ,Hispanic
+28083, 0 - 5,5,Female,2291,Hispanic
+28085,6-12,9,Female,3374 ,White not Hispanic
+28189, 0 - 5,4,Male,2359,Hispanic
+28384,22-50,33,Female,40809 ,Hispanic
+28469, 0 - 5,4,Male,2211,Hispanic
+28502,18-21,19,Male,11527 ,Hispanic
+28514,13-17,15,Female,3959 ,Hispanic
+28728,18-21,20,Male,12854 ,White not Hispanic
+28948, 0 - 5,1,Male,966,Hispanic
+29038,18-21,21,Male,7339 ,Hispanic
+29193,22-50,24,Male,46703 ,White not Hispanic
+29411,6-12,8,Female,3378 ,Hispanic
+29440,6-12,8,Male,2807 ,White not Hispanic
+29447,22-50,30,Male,46246 ,White not Hispanic
+29458,13-17,17,Male,4513 ,Hispanic
+29506, 51 +,56,Female,48215 ,White not Hispanic
+29574,13-17,16,Male,2357 ,White not Hispanic
+29795,18-21,20,Male,9597 ,White not Hispanic
+29804,13-17,14,Male,386 ,Asian
+29840,6-12,7,Female,1473 ,Hispanic
+29885,13-17,16,Male,4112 ,Hispanic
+29902,18-21,19,Female,8530 ,Asian
+29914, 0 - 5,5,Male,1315,Asian
+30012,13-17,14,Male,4653 ,Hispanic
+30234, 51 +,78,Female,55430 ,American Indian
+30385,6-12,9,Male,722 ,White not Hispanic
+30438,18-21,19,Female,7667 ,Hispanic
+30481,18-21,20,Male,12587 ,Hispanic
+30517,6-12,7,Male,1725 ,Asian
+30617, 0 - 5,4,Female,791,White not Hispanic
+30673,6-12,10,Female,2189 ,White not Hispanic
+30689, 0 - 5,3,Male,668,Hispanic
+30780,18-21,20,Female,6218 ,Hispanic
+30909,13-17,17,Male,2015 ,Hispanic
+31063,18-21,21,Male,8948 ,Hispanic
+31163, 51 +,71,Female,52472 ,White not Hispanic
+31168,6-12,11,Female,2918 ,Multi Race
+31277, 0 - 5,2,Male,561,Hispanic
+31307, 51 +,88,Female,54655 ,White not Hispanic
+31437, 51 +,70,Female,59622 ,Hispanic
+31632,22-50,23,Male,32344 ,Asian
+31642,6-12,11,Female,3335 ,White not Hispanic
+31658, 51 +,60,Female,46873 ,Black
+31859,6-12,10,Male,2380 ,White not Hispanic
+31910,13-17,17,Female,4921 ,Hispanic
+31919,6-12,10,Male,1455 ,White not Hispanic
+31960,22-50,25,Male,38730 ,White not Hispanic
+31973,22-50,38,Female,35088 ,Hispanic
+32161,6-12,11,Female,2059 ,Asian
+32186,13-17,16,Female,4054 ,Asian
+32326,6-12,7,Male,1212 ,Black
+32395,18-21,19,Male,12178 ,White not Hispanic
+32398,6-12,11,Male,1084 ,Hispanic
+32519,13-17,15,Female,3529 ,Asian
+32604,18-21,20,Female,11775 ,White not Hispanic
+32664,22-50,24,Female,36279 ,White not Hispanic
+32745,22-50,27,Female,47021 ,White not Hispanic
+32781,6-12,8,Male,641 ,Asian
+32893,18-21,20,Male,6362 ,White not Hispanic
+33032,6-12,11,Female,3695 ,Hispanic
+33305, 0 - 5,4,Male,1437,Asian
+33339,6-12,11,Male,1582 ,White not Hispanic
+33360,22-50,25,Female,41984 ,Asian
+33375, 0 - 5,2,Male,1347,White not Hispanic
+33464,18-21,18,Female,13593 ,White not Hispanic
+33509, 0 - 5,1,Female,1767,Hispanic
+33551,6-12,12,Female,2880 ,White not Hispanic
+33643,13-17,13,Male,4483 ,Asian
+33886,13-17,13,Male,4003 ,White not Hispanic
+34146, 51 +,69,Male,67884 ,White not Hispanic
+34278,22-50,23,Female,46590 ,White not Hispanic
+34522,22-50,31,Male,39007 ,White not Hispanic
+34681,18-21,21,Male,10046 ,White not Hispanic
+34751,6-12,9,Male,2695 ,Asian
+34763, 51 +,85,Male,64898 ,White not Hispanic
+34821,22-50,26,Female,36738 ,Hispanic
+34983,22-50,27,Male,34394 ,White not Hispanic
+34997, 51 +,68,Male,49502 ,Hispanic
+35066,13-17,13,Male,4554 ,Black
+35093,6-12,9,Male,1824 ,Asian
+35298,22-50,30,Female,43134 ,White not Hispanic
+35360,6-12,10,Female,1622 ,Multi Race
+35503,13-17,13,Male,3522 ,Hispanic
+35590,6-12,8,Male,2776 ,Hispanic
+35630,18-21,18,Female,14578 ,White not Hispanic
+35656,18-21,21,Male,10150 ,Hispanic
+35666,18-21,20,Female,9207 ,White not Hispanic
+35684,18-21,20,Female,7605 ,Hispanic
+35799,6-12,8,Male,2954 ,Hispanic
+35970,13-17,13,Male,2797 ,Black
+36123, 51 +,59,Male,42739 ,Asian
+36179,13-17,15,Female,2900 ,Asian
+36391, 0 - 5,1,Female,384,White not Hispanic
+36459,18-21,21,Female,9504 ,Asian
+36576,22-50,27,Female,38031 ,Hispanic
+36578,18-21,19,Male,7083 ,White not Hispanic
+36720,6-12,9,Male,2877 ,White not Hispanic
+36802,6-12,6,Male,1173 ,Hispanic
+37075,18-21,21,Female,12083 ,Hispanic
+37287,18-21,19,Male,3157 ,White not Hispanic
+37297,13-17,15,Male,4533 ,Hispanic
+37335,13-17,17,Female,3694 ,White not Hispanic
+37415,18-21,18,Female,8299 ,White not Hispanic
+37454, 51 +,76,Male,62097 ,Hispanic
+37524,18-21,18,Male,11935 ,Hispanic
+37694,18-21,20,Male,11034 ,Hispanic
+37731,18-21,19,Male,12481 ,White not Hispanic
+37846,18-21,18,Female,9200 ,Asian
+38017,18-21,20,Female,10294 ,Hispanic
+38104,18-21,21,Male,11668 ,Asian
+38121,22-50,37,Female,37948 ,White not Hispanic
+38584,13-17,14,Female,5530 ,White not Hispanic
+38732,13-17,16,Male,3909 ,Black
+38889,13-17,16,Male,5041 ,Asian
+38975,22-50,24,Female,39345 ,White not Hispanic
+39060,18-21,18,Female,16310 ,Hispanic
+39095,18-21,20,Female,6272 ,White not Hispanic
+39131, 0 - 5,0,Female,685,White not Hispanic
+39134,6-12,9,Male,2490 ,Hispanic
+39287, 51 +,59,Female,44734 ,White not Hispanic
+39672, 51 +,54,Female,52833 ,White not Hispanic
+39767,6-12,10,Female,2341 ,Black
+39795, 0 - 5,5,Female,1088,White not Hispanic
+39942,13-17,14,Male,3399 ,Multi Race
+39999,18-21,21,Female,11811 ,Hispanic
+40105,13-17,17,Male,3945 ,Hispanic
+40159, 51 +,73,Female,60198 ,Asian
+40277,6-12,9,Female,2781 ,Hispanic
+40313, 0 - 5,4,Female,374,Asian
+40409,22-50,30,Male,36469 ,White not Hispanic
+40412,6-12,12,Male,2269 ,White not Hispanic
+40847,18-21,21,Female,10973 ,White not Hispanic
+40892,13-17,13,Male,1597 ,Hispanic
+40952,22-50,25,Female,48684 ,Hispanic
+40987,13-17,14,Female,2366 ,White not Hispanic
+41163,22-50,32,Female,45017 ,White not Hispanic
+41176,22-50,32,Male,43545 ,Black
+41831,6-12,7,Male,1645 ,White not Hispanic
+41850,13-17,13,Male,4975 ,Hispanic
+41968,13-17,14,Female,3257 ,Hispanic
+42216,18-21,18,Male,7878 ,Asian
+42229,13-17,16,Female,3977 ,White not Hispanic
+42262,6-12,6,Male,2247 ,Hispanic
+42265,13-17,16,Female,4215 ,White not Hispanic
+42348, 51 +,74,Male,52041 ,White not Hispanic
+42489,6-12,9,Male,1758 ,Hispanic
+42590,22-50,24,Male,51392 ,Hispanic
+42593, 0 - 5,0,Female,1398,Black
+42657, 51 +,86,Male,60452 ,White not Hispanic
+42732,13-17,17,Female,4495 ,Hispanic
+42804,13-17,15,Female,2744 ,Hispanic
+42905, 51 +,74,Female,57760 ,White not Hispanic
+43039,13-17,16,Male,3561 ,Hispanic
+43188,18-21,21,Female,10063 ,White not Hispanic
+43245,6-12,11,Female,2906 ,Hispanic
+43291,6-12,11,Male,2140 ,Multi Race
+43308,22-50,34,Female,46325 ,White not Hispanic
+43455, 51 +,57,Male,48363 ,White not Hispanic
+43478,13-17,16,Female,5637 ,Hispanic
+43516,13-17,16,Female,3740 ,White not Hispanic
+43574,13-17,13,Male,4014 ,Asian
+43586,6-12,8,Female,2904 ,Hispanic
+43735,6-12,9,Female,2854 ,White not Hispanic
+43762,22-50,28,Female,39147 ,Hispanic
+43767,13-17,15,Female,4036 ,White not Hispanic
+43768,6-12,12,Male,3196 ,Asian
+43881,13-17,17,Female,3677 ,White not Hispanic
+43984,18-21,20,Male,6397 ,Hispanic
+43990,22-50,27,Female,48745 ,White not Hispanic
+44297,18-21,20,Male,7446 ,Hispanic
+44312,6-12,12,Male,1109 ,White not Hispanic
+44401,13-17,17,Male,5163 ,Hispanic
+44451, 51 +,67,Male,52243 ,Hispanic
+44613,22-50,26,Male,40637 ,White not Hispanic
+44669,13-17,14,Female,4774 ,Hispanic
+44973,22-50,28,Male,41464 ,White not Hispanic
+45104, 51 +,52,Male,51777 ,Hispanic
+45274, 51 +,57,Female,42897 ,White not Hispanic
+45319, 51 +,76,Male,59829 ,White not Hispanic
+45468,13-17,16,Male,3141 ,Hispanic
+45476,6-12,9,Male,2028 ,Asian
+45499,13-17,14,Female,4363 ,White not Hispanic
+45540,22-50,27,Female,37778 ,Asian
+45600,6-12,8,Male,1332 ,White not Hispanic
+45625,22-50,22,Female,36691 ,Hispanic
+45679, 51 +,73,Male,53211 ,Hispanic
+45755,6-12,11,Male,1144 ,Multi Race
+45798,6-12,11,Female,1217 ,White not Hispanic
+45827, 51 +,89,Female,58304 ,White not Hispanic
+45828, 0 - 5,2,Female,1113,White not Hispanic
+45958, 51 +,73,Male,47997 ,White not Hispanic
+45962,18-21,19,Female,10502 ,White not Hispanic
+46063,13-17,13,Male,5872 ,White not Hispanic
+46251,22-50,33,Male,27090 ,White not Hispanic
+46272,22-50,32,Female,37697 ,Black
+46389,13-17,17,Female,5040 ,Hispanic
+46498,6-12,7,Male,2415 ,White not Hispanic
+46628,6-12,11,Male,2167 ,Hispanic
+46637,22-50,26,Male,41144 ,Asian
+46726, 51 +,95,Male,55187 ,Hispanic
+46876, 51 +,66,Male,49056 ,Black
+46945,22-50,35,Female,32529 ,White not Hispanic
+46977,13-17,16,Female,3738 ,White not Hispanic
+47043,22-50,25,Male,38619 ,Multi Race
+47059,22-50,30,Male,44910 ,Black
+47217,6-12,7,Female,2797 ,Hispanic
+47236,13-17,16,Male,4975 ,Hispanic
+47553,13-17,16,Male,4067 ,Asian
+47748,13-17,17,Male,4918 ,Black
+47809,22-50,31,Female,47778 ,Asian
+47887,6-12,9,Male,2755 ,Hispanic
+47979,22-50,22,Male,27058 ,White not Hispanic
+47997, 51 +,64,Male,57119 ,White not Hispanic
+48101,13-17,15,Female,3728 ,Asian
+48169,13-17,16,Male,4550 ,White not Hispanic
+48328, 51 +,81,Female,75098 ,Asian
+48353,6-12,9,Female,2016 ,Hispanic
+48653,6-12,7,Male,1974 ,Asian
+48882,18-21,21,Male,12259 ,Black
+48938,22-50,39,Male,36576 ,Black
+49026,13-17,13,Male,2810 ,Hispanic
+49094,13-17,16,Male,3745 ,Hispanic
+49199,6-12,10,Female,2854 ,Hispanic
+49285, 0 - 5,1,Female,1592,Hispanic
+49463,13-17,13,Male,4245 ,White not Hispanic
+49506,13-17,16,Male,3445 ,Hispanic
+49533,18-21,18,Male,3153 ,Asian
+49598, 51 +,65,Male,52076 ,Asian
+49631,6-12,10,Male,676 ,White not Hispanic
+49818,13-17,16,Female,4696 ,Hispanic
+49889,13-17,16,Female,4949 ,Black
+49977,22-50,25,Female,44916 ,White not Hispanic
+50053,18-21,18,Female,11125 ,Asian
+50112,6-12,6,Female,4163 ,Hispanic
+50140,13-17,14,Male,4608 ,Hispanic
+50208,22-50,25,Female,41752 ,White not Hispanic
+50222,18-21,19,Female,7564 ,Multi Race
+50270,22-50,25,Male,46951 ,Hispanic
+50349,13-17,16,Female,3555 ,White not Hispanic
+50478,6-12,12,Female,3562 ,Hispanic
+50559,6-12,8,Male,2746 ,Hispanic
+50652,13-17,15,Male,3015 ,White not Hispanic
+50674,18-21,20,Male,9369 ,Asian
+50783,18-21,21,Female,8469 ,Hispanic
+50849,22-50,25,Female,48021 ,Black
+50913,18-21,18,Male,11723 ,White not Hispanic
+50989,13-17,14,Male,4219 ,Hispanic
+51150, 51 +,75,Male,52147 ,Hispanic
+51253,6-12,7,Female,633 ,White not Hispanic
+51259,6-12,11,Female,1363 ,Hispanic
+51290,13-17,14,Male,3113 ,Hispanic
+51420,13-17,13,Male,3417 ,White not Hispanic
+51577,6-12,7,Male,776 ,Hispanic
+51635,22-50,32,Female,36827 ,Hispanic
+51712,22-50,23,Female,43333 ,White not Hispanic
+51754,13-17,16,Male,2054 ,White not Hispanic
+51954,6-12,6,Female,1335 ,Asian
+52067,6-12,6,Female,1790 ,Black
+52073,18-21,19,Female,10531 ,Asian
+52177,6-12,12,Female,3539 ,Hispanic
+52217,18-21,19,Male,10230 ,Hispanic
+52373,22-50,27,Female,42969 ,White not Hispanic
+52722,22-50,24,Male,48694 ,White not Hispanic
+52727,22-50,30,Male,33721 ,Asian
+52794,22-50,30,Female,42703 ,White not Hispanic
+52868,22-50,30,Male,35523 ,White not Hispanic
+52887,18-21,18,Female,8869 ,Hispanic
+52969, 51 +,55,Male,49554 ,White not Hispanic
+53008,13-17,16,Female,2018 ,Other
+53083,6-12,10,Female,2455 ,White not Hispanic
+53225,6-12,6,Female,3379 ,Hispanic
+53288,13-17,14,Female,3580 ,Hispanic
+53339, 51 +,71,Male,46719 ,White not Hispanic
+53435,22-50,31,Female,46437 ,White not Hispanic
+53658,13-17,14,Male,5514 ,White not Hispanic
+53690,13-17,17,Female,5228 ,Hispanic
+53719,22-50,33,Female,42265 ,White not Hispanic
+53903,18-21,21,Female,13129 ,Hispanic
+53996,18-21,19,Female,8714 ,Asian
+54054,18-21,20,Male,13248 ,White not Hispanic
+54067,6-12,12,Female,1262 ,White not Hispanic
+54110,22-50,29,Male,41013 ,Asian
+54223,13-17,17,Female,2948 ,White not Hispanic
+54252, 51 +,71,Female,55428 ,Asian
+54406,22-50,25,Male,38085 ,Black
+54675,13-17,13,Female,4005 ,White not Hispanic
+55043,6-12,10,Female,4152 ,Hispanic
+55056, 51 +,95,Female,54680 ,Black
+55115,13-17,15,Female,3190 ,Hispanic
+55162,13-17,15,Male,3443 ,Hispanic
+55300,22-50,45,Male,46132 ,Black
+55314,13-17,17,Female,2184 ,Hispanic
+55345,13-17,16,Male,5412 ,Hispanic
+55424,22-50,24,Male,37133 ,White not Hispanic
+55442, 0 - 5,0,Female,2532,Asian
+55877,13-17,15,Female,4527 ,Hispanic
+55882,13-17,15,Female,3055 ,White not Hispanic
+55958,22-50,32,Male,40587 ,White not Hispanic
+56063,18-21,21,Male,7488 ,White not Hispanic
+56109,18-21,20,Female,9540 ,White not Hispanic
+56202,6-12,12,Female,3003 ,Hispanic
+56203,18-21,19,Female,7122 ,Hispanic
+56309,6-12,7,Female,2191 ,Hispanic
+56318, 51 +,68,Male,57363 ,Hispanic
+56400,13-17,16,Female,1641 ,Hispanic
+56533,22-50,26,Male,37347 ,White not Hispanic
+56539,18-21,20,Female,15278 ,White not Hispanic
+56552,18-21,20,Female,11070 ,White not Hispanic
+56576,18-21,21,Female,9805 ,White not Hispanic
+56592, 51 +,88,Male,54875 ,Hispanic
+56736,18-21,18,Female,11054 ,Multi Race
+56738, 51 +,72,Male,53834 ,White not Hispanic
+56802,22-50,29,Female,42041 ,Hispanic
+56808,18-21,21,Female,11202 ,White not Hispanic
+56855, 51 +,64,Female,60774 ,White not Hispanic
+57039,22-50,22,Female,47954 ,Hispanic
+57141,22-50,23,Male,36180 ,White not Hispanic
+57419, 0 - 5,5,Female,1632,Hispanic
+57420,6-12,6,Male,3948 ,Black
+57504,18-21,19,Female,12882 ,White not Hispanic
+57550,18-21,19,Female,8700 ,Asian
+57601,18-21,19,Male,11986 ,Hispanic
+57670, 51 +,62,Male,47420 ,Hispanic
+57874,13-17,17,Male,4300 ,Hispanic
+57961,13-17,13,Male,4787 ,Hispanic
+58075,6-12,12,Female,2339 ,Hispanic
+58136,13-17,15,Female,4345 ,Hispanic
+58293,13-17,14,Female,4768 ,White not Hispanic
+58317, 51 +,80,Male,57821 ,White not Hispanic
+58357,18-21,20,Female,9061 ,Hispanic
+58565,6-12,6,Female,3530 ,Asian
+58680,18-21,21,Male,4931 ,Hispanic
+58838,18-21,21,Male,10385 ,Asian
+58862,13-17,17,Male,3904 ,White not Hispanic
+58870,6-12,8,Male,2590 ,White not Hispanic
+58884,22-50,34,Female,41522 ,Black
+59001,22-50,27,Female,40156 ,White not Hispanic
+59079,18-21,18,Male,11479 ,Hispanic
+59154,13-17,15,Female,4798 ,Hispanic
+59206, 51 +,83,Male,58803 ,White not Hispanic
+59275,18-21,21,Male,16133 ,White not Hispanic
+59332, 51 +,64,Male,51599 ,Asian
+59343,22-50,26,Female,45507 ,White not Hispanic
+59467,6-12,8,Female,3544 ,White not Hispanic
+59660,6-12,9,Female,1713 ,Hispanic
+59753,13-17,14,Female,2462 ,Hispanic
+59881,18-21,19,Male,11816 ,White not Hispanic
+60002,13-17,17,Male,4531 ,White not Hispanic
+60018,22-50,35,Female,36607 ,White not Hispanic
+60037,13-17,15,Female,4884 ,Hispanic
+60292,13-17,14,Male,4058 ,Hispanic
+60348, 0 - 5,5,Female,2019,White not Hispanic
+60352,6-12,7,Female,3464 ,Hispanic
+60372,6-12,12,Male,1539 ,Hispanic
+60425,13-17,16,Male,5224 ,White not Hispanic
+60508, 51 +,62,Female,49075 ,Asian
+60572, 51 +,69,Male,59682 ,White not Hispanic
+60676,18-21,21,Female,5066 ,Hispanic
+60864,18-21,20,Male,5583 ,Black
+61004, 0 - 5,4,Female,456,Hispanic
+61019, 0 - 5,0,Female,1147,Hispanic
+61051,22-50,37,Male,30627 ,White not Hispanic
+61120,6-12,7,Male,3000 ,Multi Race
+61187,6-12,11,Male,2885 ,Multi Race
+61192,18-21,20,Male,6255 ,Asian
+61329,18-21,18,Female,10068 ,White not Hispanic
+61449,13-17,14,Male,5025 ,Black
+61467, 0 - 5,1,Female,2157,Asian
+61498,13-17,13,Female,3726 ,American Indian
+61570,6-12,11,Male,1286 ,Hispanic
+61588,22-50,24,Female,47674 ,White not Hispanic
+61654,18-21,21,Female,4731 ,Hispanic
+61680,13-17,16,Male,3839 ,White not Hispanic
+61785,13-17,13,Female,1195 ,White not Hispanic
+61806,22-50,24,Female,46911 ,Asian
+61887,13-17,17,Male,3629 ,Hispanic
+61944, 51 +,52,Female,48826 ,White not Hispanic
+61951,18-21,21,Male,15718 ,White not Hispanic
+61954,18-21,19,Female,5616 ,Hispanic
+62150,22-50,29,Male,34708 ,White not Hispanic
+62191,13-17,17,Male,3075 ,Asian
+62282,18-21,21,Female,6669 ,White not Hispanic
+62302,22-50,23,Male,39693 ,White not Hispanic
+62342,6-12,9,Male,3552 ,White not Hispanic
+62485,22-50,23,Female,27845 ,Hispanic
+62691,6-12,10,Female,2409 ,Hispanic
+62913,6-12,8,Female,2122 ,White not Hispanic
+62935,22-50,33,Female,42458 ,White not Hispanic
+62957,22-50,22,Male,40648 ,White not Hispanic
+63343,22-50,27,Male,36712 ,Asian
+63363,22-50,22,Male,31138 ,White not Hispanic
+63384,13-17,15,Female,2917 ,Asian
+63810, 51 +,68,Male,43945 ,White not Hispanic
+63833,22-50,27,Male,49793 ,White not Hispanic
+63959,18-21,20,Female,10247 ,Hispanic
+63992, 51 +,59,Male,33110 ,White not Hispanic
+64041,6-12,6,Female,1722 ,White not Hispanic
+64083, 51 +,75,Male,50261 ,White not Hispanic
+64181,6-12,8,Male,2153 ,Hispanic
+64182,6-12,12,Male,847 ,Hispanic
+64192, 51 +,66,Female,50910 ,White not Hispanic
+64319,18-21,20,Male,11470 ,Hispanic
+64421,6-12,10,Female,3584 ,Black
+64429,13-17,17,Female,2722 ,White not Hispanic
+64820, 51 +,63,Male,48614 ,White not Hispanic
+64829,18-21,18,Male,6991 ,White not Hispanic
+64899,13-17,16,Female,3698 ,Hispanic
+65036,22-50,28,Male,33278 ,Asian
+65255, 51 +,54,Female,50141 ,Native Hawaiian
+65274, 0 - 5,5,Female,2308,Hispanic
+65331,13-17,17,Male,4527 ,Hispanic
+65394,6-12,6,Female,1254 ,Hispanic
+65419,13-17,16,Male,4017 ,White not Hispanic
+65431, 51 +,53,Male,53457 ,White not Hispanic
+65619,18-21,20,Male,6829 ,White not Hispanic
+65675,6-12,10,Male,1110 ,Hispanic
+65787,13-17,15,Male,3423 ,Hispanic
+65901,6-12,12,Male,1184 ,Hispanic
+65907,6-12,12,Male,1854 ,Black
+66098,6-12,12,Male,1689 ,Hispanic
+66116,18-21,18,Male,10535 ,Asian
+66375,6-12,10,Male,1560 ,Hispanic
+66446,18-21,18,Male,6620 ,Asian
+66577,18-21,19,Male,14729 ,Hispanic
+66734,22-50,23,Female,40394 ,White not Hispanic
+66769,13-17,17,Male,3520 ,White not Hispanic
+66818,18-21,19,Female,14926 ,Hispanic
+66840,22-50,26,Female,44588 ,White not Hispanic
+66841, 51 +,52,Male,39536 ,White not Hispanic
+67058,22-50,24,Female,45735 ,White not Hispanic
+67230,6-12,11,Female,2143 ,Hispanic
+67231,22-50,22,Female,44002 ,White not Hispanic
+67248,18-21,18,Male,8511 ,Hispanic
+67343, 51 +,65,Male,55442 ,Black
+67403,18-21,18,Male,9846 ,Asian
+67408,22-50,23,Male,49548 ,Hispanic
+67535,6-12,6,Male,2493 ,Hispanic
+67616,18-21,20,Female,13579 ,Hispanic
+67660,22-50,33,Male,44765 ,White not Hispanic
+67740,22-50,39,Male,36621 ,Hispanic
+67805,22-50,27,Male,50301 ,White not Hispanic
+67978,22-50,27,Female,32886 ,Asian
+68112,22-50,36,Male,38400 ,Black
+68296,18-21,18,Male,10299 ,White not Hispanic
+68353,22-50,25,Male,34425 ,White not Hispanic
+68357,22-50,27,Male,38331 ,White not Hispanic
+68378,6-12,11,Male,2498 ,Hispanic
+68507,18-21,20,Female,6771 ,Asian
+68570,18-21,20,Male,12265 ,Asian
+68685,22-50,27,Male,50353 ,White not Hispanic
+68697,13-17,16,Female,2797 ,Hispanic
+68724,6-12,8,Female,1733 ,Black
+68759,6-12,10,Female,992 ,White not Hispanic
+68824, 0 - 5,5,Female,1339,Asian
+68830,6-12,8,Male,1594 ,Asian
+68863,13-17,13,Female,3332 ,White not Hispanic
+68944,13-17,13,Male,4963 ,Hispanic
+68956,6-12,8,Female,1417 ,Hispanic
+69156,18-21,18,Female,10969 ,White not Hispanic
+69282,6-12,9,Male,2643 ,Hispanic
+69499,18-21,20,Male,10976 ,Asian
+69542, 0 - 5,5,Female,1053,Multi Race
+69581,6-12,7,Female,1903 ,Hispanic
+69608,13-17,16,Male,2760 ,Hispanic
+69614,18-21,18,Female,8567 ,White not Hispanic
+69616,18-21,21,Female,12172 ,White not Hispanic
+69726,18-21,19,Female,6690 ,Hispanic
+69933,18-21,19,Female,11629 ,Hispanic
+70035,22-50,30,Female,40727 ,Native Hawaiian
+70210,13-17,17,Female,5055 ,Hispanic
+70230,13-17,17,Male,3052 ,White not Hispanic
+70244,22-50,39,Female,56716 ,White not Hispanic
+70290,13-17,15,Male,3911 ,Hispanic
+70594,13-17,14,Female,3060 ,Asian
+70609,18-21,18,Male,3225 ,Hispanic
+70727,18-21,20,Male,11242 ,White not Hispanic
+70807,13-17,17,Male,4152 ,Hispanic
+70929,18-21,19,Female,7805 ,Hispanic
+71045,13-17,15,Male,3702 ,Hispanic
+71073,13-17,14,Female,5062 ,Multi Race
+71233,6-12,9,Female,1690 ,White not Hispanic
+71271,22-50,27,Female,39454 ,Asian
+71346, 51 +,53,Male,49380 ,White not Hispanic
+71422,18-21,20,Female,16677 ,Hispanic
+71440,13-17,13,Male,3395 ,Hispanic
+71526, 51 +,65,Female,54874 ,White not Hispanic
+71763,6-12,6,Female,3099 ,Hispanic
+71846,13-17,17,Female,3088 ,Hispanic
+71847,18-21,18,Male,14221 ,Hispanic
+71928,18-21,20,Male,12392 ,Asian
+71969,13-17,16,Male,4166 ,Black
+72028,18-21,19,Female,11032 ,White not Hispanic
+72101,22-50,34,Male,40546 ,White not Hispanic
+72341,6-12,6,Male,2597 ,Asian
+72365,18-21,19,Male,11068 ,White not Hispanic
+72418,6-12,9,Female,2634 ,Hispanic
+72424,22-50,34,Female,45409 ,Hispanic
+72511, 51 +,56,Male,52618 ,Black
+72593,22-50,22,Female,31853 ,Black
+72606,18-21,18,Female,3829 ,Hispanic
+72613,18-21,21,Female,7166 ,White not Hispanic
+72729,13-17,16,Male,4615 ,Other
+72808,18-21,18,Male,11282 ,Asian
+72893,13-17,16,Female,3060 ,Hispanic
+72903, 0 - 5,5,Female,1702,Hispanic
+72982,18-21,21,Male,6977 ,Hispanic
+73085,18-21,20,Male,10898 ,White not Hispanic
+73176,13-17,13,Male,3419 ,Asian
+73402,13-17,14,Female,3633 ,Hispanic
+73569,18-21,18,Female,12603 ,Hispanic
+73713, 51 +,62,Female,50219 ,White not Hispanic
+73750,6-12,8,Male,2261 ,Black
+73758,6-12,6,Male,3203 ,Hispanic
+73772,22-50,35,Female,42329 ,White not Hispanic
+73907,6-12,8,Female,1609 ,Hispanic
+74044,18-21,18,Male,11176 ,Hispanic
+74146,18-21,19,Female,8398 ,White not Hispanic
+74185,6-12,7,Male,1728 ,White not Hispanic
+74272,18-21,19,Male,11180 ,Hispanic
+74463,22-50,27,Female,28581 ,Asian
+74521,6-12,12,Male,1416 ,Hispanic
+74523,13-17,15,Male,3677 ,Hispanic
+74683,13-17,15,Male,4616 ,White not Hispanic
+74721, 51 +,90,Female,58392 ,American Indian
+74878,6-12,9,Male,1661 ,Hispanic
+74891, 0 - 5,5,Female,1611,Black
+74906,18-21,21,Male,9363 ,White not Hispanic
+74924,13-17,17,Female,5347 ,Hispanic
+74925,13-17,14,Female,4378 ,Hispanic
+74970,18-21,20,Female,10815 ,White not Hispanic
+75037,6-12,10,Female,2368 ,White not Hispanic
+75049,22-50,30,Female,40572 ,Hispanic
+75122, 51 +,72,Female,50198 ,White not Hispanic
+75138,6-12,11,Male,793 ,Hispanic
+75140,13-17,14,Male,2551 ,White not Hispanic
+75193,18-21,19,Female,8804 ,White not Hispanic
+75607,6-12,10,Female,2865 ,Hispanic
+75696, 0 - 5,3,Female,1167,Hispanic
+75753,13-17,13,Female,5098 ,White not Hispanic
+75806,13-17,15,Male,5304 ,Hispanic
+75960,22-50,36,Male,38246 ,White not Hispanic
+76011,6-12,12,Male,1776 ,Hispanic
+76065,18-21,20,Female,15711 ,Hispanic
+76344,6-12,12,Male,3704 ,Hispanic
+76353, 51 +,66,Male,47006 ,White not Hispanic
+76461,13-17,13,Male,4710 ,Asian
+76518, 51 +,88,Female,56415 ,White not Hispanic
+76533,18-21,18,Male,11240 ,White not Hispanic
+76547, 51 +,79,Female,58469 ,White not Hispanic
+76701,13-17,14,Male,4842 ,White not Hispanic
+76737,13-17,14,Male,2701 ,White not Hispanic
+76776, 51 +,90,Female,57845 ,White not Hispanic
+76834,18-21,21,Male,6482 ,White not Hispanic
+76865,18-21,20,Male,9162 ,Hispanic
+76990,18-21,21,Female,12552 ,White not Hispanic
+77021,22-50,32,Male,30791 ,White not Hispanic
+77155,18-21,19,Female,9341 ,Hispanic
+77193,22-50,30,Male,48121 ,Hispanic
+77349,13-17,16,Male,3047 ,White not Hispanic
+77450,18-21,18,Male,3707 ,Asian
+77463, 51 +,71,Female,52421 ,Asian
+77587,18-21,18,Female,18435 ,Asian
+77596,22-50,24,Male,37367 ,Hispanic
+77607,13-17,15,Female,4260 ,Hispanic
+77654, 0 - 5,0,Female,1458,Hispanic
+77715,18-21,20,Male,12234 ,Asian
+77829,22-50,39,Male,33259 ,White not Hispanic
+77916,6-12,6,Female,1804 ,Hispanic
+77933, 51 +,51,Female,52105 ,White not Hispanic
+78026,6-12,10,Female,1934 ,Hispanic
+78221,22-50,30,Male,40268 ,White not Hispanic
+78254,22-50,23,Male,37479 ,Native Hawaiian
+78364, 51 +,75,Female,65581 ,Hispanic
+78374, 51 +,66,Male,42160 ,White not Hispanic
+78383,6-12,7,Female,3125 ,Black
+78532,18-21,21,Female,7683 ,Asian
+78612,22-50,35,Female,33070 ,White not Hispanic
+78803,22-50,32,Male,32704 ,White not Hispanic
+79152,18-21,21,Male,11491 ,Black
+79204,18-21,19,Male,5303 ,White not Hispanic
+79379,22-50,25,Female,46437 ,Hispanic
+79645,22-50,32,Male,28205 ,American Indian
+79659, 0 - 5,0,Female,1704,White not Hispanic
+79711,22-50,31,Male,33051 ,White not Hispanic
+79930,22-50,23,Male,50542 ,Asian
+80142,22-50,27,Male,37708 ,Hispanic
+80225,6-12,6,Female,987 ,Hispanic
+80338,6-12,10,Female,1590 ,Hispanic
+80426,18-21,19,Female,15527 ,White not Hispanic
+80439,13-17,17,Female,4496 ,Hispanic
+80464,18-21,20,Female,13264 ,Asian
+80529,6-12,8,Female,2459 ,White not Hispanic
+80534, 51 +,71,Male,58594 ,Black
+80636,18-21,21,Male,13468 ,Hispanic
+80688,22-50,22,Female,40240 ,Asian
+80955,6-12,11,Male,2727 ,White not Hispanic
+81195,18-21,21,Male,9923 ,Asian
+81203,22-50,37,Male,41550 ,White not Hispanic
+81394,22-50,23,Male,36521 ,White not Hispanic
+81488,6-12,11,Female,1905 ,Hispanic
+81512,18-21,20,Female,7237 ,White not Hispanic
+81530,22-50,22,Male,28061 ,Black
+81669,22-50,24,Female,42746 ,White not Hispanic
+81703,22-50,26,Male,34915 ,White not Hispanic
+81816,18-21,18,Female,7144 ,White not Hispanic
+81823,13-17,15,Female,3251 ,Hispanic
+81913,22-50,30,Male,42070 ,Hispanic
+81916,22-50,23,Male,40159 ,Hispanic
+82022,22-50,22,Male,37201 ,White not Hispanic
+82126, 51 +,53,Male,50176 ,Hispanic
+82186,6-12,7,Male,1691 ,Asian
+82230,22-50,29,Female,46356 ,White not Hispanic
+82254,22-50,33,Male,38762 ,White not Hispanic
+82355, 51 +,72,Male,60808 ,Black
+82582, 51 +,62,Male,47709 ,White not Hispanic
+82743,18-21,18,Female,10439 ,Hispanic
+82904,18-21,20,Female,11810 ,Hispanic
+82928,22-50,31,Male,34021 ,Hispanic
+83000, 51 +,80,Male,68890 ,White not Hispanic
+83149, 51 +,70,Male,50230 ,Hispanic
+83212,22-50,29,Male,36658 ,White not Hispanic
+83224, 51 +,73,Male,51455 ,White not Hispanic
+83404,18-21,20,Male,9932 ,Hispanic
+83443,18-21,20,Female,11803 ,Asian
+83495,22-50,40,Male,48064 ,Asian
+83771,13-17,13,Female,4473 ,White not Hispanic
+83851,22-50,24,Male,30803 ,Asian
+83897,22-50,32,Female,37637 ,White not Hispanic
+83972, 51 +,62,Male,44111 ,White not Hispanic
+84259,18-21,18,Male,8985 ,White not Hispanic
+84336,22-50,28,Female,48968 ,Asian
+84362,6-12,6,Male,2924 ,Hispanic
+84388, 0 - 5,2,Female,697,Multi Race
+84436,22-50,24,Female,37663 ,Hispanic
+84477,18-21,19,Male,9675 ,Black
+84484,13-17,17,Female,4216 ,Asian
+84737,13-17,14,Female,5576 ,White not Hispanic
+84833,22-50,25,Male,31943 ,Hispanic
+84949,6-12,7,Female,2834 ,Black
+84996,6-12,12,Male,1531 ,White not Hispanic
+85005,13-17,15,Female,5254 ,White not Hispanic
+85129,22-50,23,Male,44219 ,White not Hispanic
+85179,22-50,28,Male,26178 ,Hispanic
+85261,13-17,14,Female,3189 ,White not Hispanic
+85301,6-12,12,Female,3732 ,Hispanic
+85491,22-50,23,Male,25348 ,Asian
+85501,18-21,21,Female,8957 ,Hispanic
+85633,13-17,14,Female,5280 ,Hispanic
+85639,22-50,33,Male,39010 ,White not Hispanic
+85741,22-50,41,Female,49223 ,White not Hispanic
+85775,18-21,19,Female,12243 ,Asian
+86019,22-50,25,Male,40999 ,Asian
+86084,18-21,20,Female,3749 ,Hispanic
+86328,6-12,9,Female,1416 ,Hispanic
+86396,22-50,32,Female,33630 ,White not Hispanic
+86416,22-50,26,Male,33634 ,Asian
+86565,18-21,19,Male,9760 ,Hispanic
+86579,22-50,42,Female,51084 ,Black
+86599,6-12,11,Male,1984 ,White not Hispanic
+86667,22-50,30,Male,40927 ,White not Hispanic
+86893,22-50,39,Female,31076 ,White not Hispanic
+87080,13-17,16,Female,4915 ,White not Hispanic
+87143,13-17,17,Female,3747 ,Hispanic
+87358,18-21,21,Female,9700 ,White not Hispanic
+87444,13-17,14,Female,1893 ,Multi Race
+87697,13-17,17,Female,4221 ,Hispanic
+87737, 51 +,91,Male,54481 ,Asian
+87869,6-12,10,Female,3060 ,Hispanic
+87923,22-50,24,Female,34274 ,Asian
+88118,18-21,19,Female,12523 ,Hispanic
+88132, 51 +,71,Female,56365 ,White not Hispanic
+88276, 0 - 5,4,Female,1645,Asian
+88284,6-12,11,Male,2839 ,Hispanic
+88508,6-12,8,Female,3572 ,White not Hispanic
+88618,22-50,31,Male,39172 ,White not Hispanic
+88739,6-12,8,Female,1714 ,Hispanic
+88757, 51 +,72,Male,43957 ,White not Hispanic
+88930, 51 +,62,Female,58480 ,White not Hispanic
+89102,22-50,26,Female,43109 ,Black
+89108,6-12,7,Female,1875 ,Hispanic
+89124, 51 +,63,Male,50030 ,White not Hispanic
+89132,18-21,21,Male,8707 ,Hispanic
+89286,6-12,8,Female,2717 ,Hispanic
+89316, 0 - 5,5,Female,1684,Hispanic
+89334,18-21,20,Male,7743 ,White not Hispanic
+89361,18-21,19,Female,7475 ,Asian
+89611,6-12,9,Male,2753 ,White not Hispanic
+89809,18-21,19,Female,8820 ,Asian
+89925,18-21,19,Female,5988 ,Hispanic
+90037,18-21,21,Male,11327 ,Black
+90151,13-17,16,Female,3702 ,Hispanic
+90220,13-17,13,Female,3887 ,Hispanic
+90233,18-21,19,Male,9979 ,Asian
+90239,18-21,18,Female,13730 ,Hispanic
+90299,18-21,19,Male,7570 ,White not Hispanic
+90432,22-50,27,Female,35720 ,White not Hispanic
+90644,18-21,19,Female,7061 ,Black
+90670,13-17,13,Female,5546 ,White not Hispanic
+90814,13-17,16,Male,3666 ,White not Hispanic
+90953,6-12,10,Female,669 ,Multi Race
+90996,22-50,29,Female,40755 ,White not Hispanic
+91011,22-50,32,Female,35435 ,Hispanic
+91064,18-21,21,Male,6904 ,Hispanic
+91288,22-50,29,Male,41268 ,White not Hispanic
+91383,6-12,12,Male,1996 ,White not Hispanic
+91756,13-17,14,Male,3703 ,Hispanic
+91766,6-12,7,Female,2669 ,White not Hispanic
+91966,13-17,14,Male,3319 ,Hispanic
+92055,13-17,17,Female,3478 ,Hispanic
+92109,18-21,20,Male,8359 ,White not Hispanic
+92198,13-17,17,Male,4791 ,Hispanic
+92207,6-12,6,Male,1898 ,Hispanic
+92215,6-12,9,Female,2632 ,White not Hispanic
+92265,22-50,32,Female,43662 ,White not Hispanic
+92381,6-12,11,Female,620 ,White not Hispanic
+92494, 51 +,73,Female,49088 ,White not Hispanic
+92628,22-50,33,Male,40517 ,Hispanic
+92700, 0 - 5,4,Female,2543,White not Hispanic
+92718,6-12,6,Male,1997 ,Hispanic
+92766,6-12,8,Female,1189 ,Hispanic
+92789,22-50,25,Male,39849 ,White not Hispanic
+93080,22-50,23,Male,48349 ,White not Hispanic
+93118,13-17,16,Male,4031 ,Asian
+93194,6-12,8,Male,2623 ,Asian
+93415,22-50,22,Female,50795 ,White not Hispanic
+93495,6-12,10,Female,2484 ,Hispanic
+93600,22-50,31,Male,39577 ,White not Hispanic
+93628,6-12,6,Male,3259 ,Multi Race
+93673,18-21,18,Male,9080 ,Asian
+93702,22-50,27,Female,44293 ,Asian
+93727, 0 - 5,4,Female,1219,Asian
+93757,18-21,18,Female,10298 ,White not Hispanic
+93763,6-12,8,Male,2430 ,Hispanic
+93871,13-17,14,Female,3792 ,Hispanic
+94072,6-12,11,Female,1360 ,White not Hispanic
+94273,13-17,15,Male,3099 ,Asian
+94371,22-50,30,Male,51486 ,White not Hispanic
+94442,6-12,11,Male,2212 ,Hispanic
+94480,13-17,17,Female,5183 ,Black
+94503, 0 - 5,0,Male,1360,Hispanic
+94540,22-50,25,Female,40952 ,White not Hispanic
+94595, 0 - 5,4,Female,2335,Multi Race
+94648,22-50,40,Female,43175 ,White not Hispanic
+94785,13-17,14,Male,4680 ,Hispanic
+94819,18-21,20,Female,14003 ,Hispanic
+94852, 0 - 5,3,Female,1485,Hispanic
+95110,22-50,29,Male,43048 ,White not Hispanic
+95270,22-50,38,Male,29709 ,White not Hispanic
+95313, 51 +,79,Female,57497 ,Asian
+95673, 51 +,60,Female,62717 ,Hispanic
+95812,22-50,38,Female,37378 ,Hispanic
+95861,18-21,18,Male,12651 ,Asian
+96081,13-17,16,Female,2104 ,Hispanic
+96097, 0 - 5,5,Female,222,Hispanic
+96188,22-50,23,Male,42560 ,Asian
+96258,22-50,29,Male,40614 ,Asian
+96279, 0 - 5,5,Female,1003,Hispanic
+96367,22-50,26,Male,36440 ,Hispanic
+96426,6-12,9,Male,2544 ,White not Hispanic
+96466,13-17,17,Female,5241 ,Hispanic
+96684,13-17,14,Male,3524 ,White not Hispanic
+96739,22-50,30,Female,40125 ,White not Hispanic
+96746,6-12,10,Male,3382 ,Asian
+96840, 51 +,51,Female,48622 ,White not Hispanic
+96974,13-17,17,Female,5276 ,White not Hispanic
+97057,22-50,41,Male,50202 ,White not Hispanic
+97122,22-50,44,Male,46144 ,Hispanic
+97211, 0 - 5,5,Female,240,Black
+97268,22-50,23,Male,35016 ,White not Hispanic
+97316, 51 +,75,Female,55956 ,White not Hispanic
+97426, 0 - 5,1,Female,2359,Multi Race
+97793,6-12,9,Female,1048 ,Multi Race
+97930, 51 +,69,Female,53561 ,White not Hispanic
+98015,22-50,46,Male,52222 ,Hispanic
+98235,22-50,28,Male,29588 ,Hispanic
+98268,18-21,18,Female,10393 ,White not Hispanic
+98269,22-50,38,Male,54191 ,White not Hispanic
+98382, 51 +,54,Female,46312 ,White not Hispanic
+98428,22-50,24,Male,49449 ,Asian
+98522,13-17,13,Female,3097 ,White not Hispanic
+98547,13-17,13,Female,3392 ,White not Hispanic
+98562,13-17,15,Female,3641 ,Hispanic
+98683,6-12,8,Male,2441 ,Hispanic
+98792, 0 - 5,5,Male,1411,Hispanic
+99046,22-50,30,Female,35231 ,White not Hispanic
+99114,18-21,18,Male,5298 ,Hispanic
+99147,18-21,20,Male,7288 ,Asian
+99529, 0 - 5,2,Male,2258,Multi Race
+99622, 51 +,86,Female,57055 ,White not Hispanic
+99715,18-21,20,Male,7494 ,Hispanic
+99718,13-17,17,Female,3673 ,Multi Race
+99791,6-12,10,Male,3638 ,Hispanic
+99898,22-50,23,Male,26702 ,White not Hispanic
