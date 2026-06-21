@@ -16,7 +16,7 @@
 #' \describe{
 #'   \item{species}{Species of mammals}
 #'   \item{body_wt}{Total body weight of the mammal (in kg)}
-#'   \item{brain_wt}{Brain weight of the mammal (in kg)}
+#'   \item{brain_wt}{Brain weight of the mammal (in g)}
 #'   \item{non_dreaming}{Number of hours of non dreaming sleep}
 #'   \item{dreaming}{Number of hours of dreaming sleep}
 #'   \item{total_sleep}{Total number of hours of sleep}
