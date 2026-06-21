@@ -1,7 +1,9 @@
-# Developmental
+# openintro 2.5.1
 
 * Added new datasets:
   * `LEAP`, `arenosa`, `cdc`, `cdc.samp`, `census.2010`, `danish.ed.primary`, `danish.ed.validation`, `dds.discr`, `famuss`, `forest.birds`, `frog`, `hyperuricemia`, `hyperuricemia.samp`, `infant_mortality_2022`, `mcas`, `nhanes.samp`, `nhanes.samp.adult`, `nhanes.samp.adult.500`, `opp_insights_colleges`, `opp_insights_colleges_4year`, `prevend`, `prevend.samp`, `sugar.levels.A`, `sugar.levels.B`, `swim`, `tb.interruption`, `thermometry`, `wdi_2022` ported from ISLBS by [@npaterno](https://github.com/npaterno)
+
+* Fix documentation for `mammals`
 
 # openintro 2.5.0
 
