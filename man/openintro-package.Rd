@@ -24,6 +24,7 @@ Useful links:
 
 Authors:
 \itemize{
+  \item Mine Çetinkaya-Rundel \email{cetinkaya.mine@gmail.com} (\href{https://orcid.org/0000-0001-6452-2420}{ORCID})
   \item David Diez \email{david.m.diez@gmail.com}
   \item Andrew Bray \email{andrew.bray@gmail.com}
   \item Albert Y. Kim \email{albert.ys.kim@gmail.com} (\href{https://orcid.org/0000-0001-7824-306X}{ORCID})

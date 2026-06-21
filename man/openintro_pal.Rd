@@ -11,7 +11,7 @@ openintro_pal(palette = "main", reverse = FALSE, ...)
 
 \item{reverse}{Boolean indicating whether the palette should be reversed}
 
-\item{...}{Additional arguments to pass to \code{\link[grDevices:colorRamp]{grDevices::colorRampPalette()}}}
+\item{...}{Additional arguments to pass to \code{\link[grDevices:colorRampPalette]{grDevices::colorRampPalette()}}}
 }
 \description{
 Not exported
