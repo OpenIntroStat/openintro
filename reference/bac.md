@@ -29,9 +29,8 @@ A data frame with 16 observations on the following 3 variables.
 
 J. Malkevitch and L.M. Lesser. For All Practical Purposes: Mathematical
 Literacy in Today's World. WH Freeman & Co, 2008. The data origin is
-given in the [Electronic Encyclopedia of Statistical Examples and
-Exercises](https://bcs.whfreeman.com/WebPub/Statistics/shared_resources/EESEE/BloodAlcoholContent/index.html),
-1992.
+given in the Electronic Encyclopedia of Statistical Examples and
+Exercises, 1992.
 
 ## Examples
 

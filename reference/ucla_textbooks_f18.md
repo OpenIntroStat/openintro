@@ -100,7 +100,7 @@ A data frame with 201 observations on the following 20 variables.
 
 <https://ucla.verbacompare.com>
 
-<https://www.amazon.com>
+Amazon.com
 
 ## Details
 

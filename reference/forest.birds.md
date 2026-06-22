@@ -56,11 +56,6 @@ A tibble with 56 rows and 8 variables:
   Numeric vector. Number of years of isolation at the time study was
   conducted (1983).Computed as 1983 - year.of.isolation
 
-## Source
-
-<https://users.monash.edu.au/~murray/BDAR/> Listed under chapter 9
-datasets
-
 ## References
 
 Loyn R.H. 1987 Effects of patch area and habitat on bird abundances,

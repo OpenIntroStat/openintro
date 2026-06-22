@@ -62,4 +62,4 @@ A tibble with 5168 rows and 8 variables:
 
 Wang, Yi-lun, et al. "Association between dietary magnesium intake and
 hyperuricemia." PLoS One 10.11 (2015): e0141079.
-[10.1371/journal.pone.0141079](https://openintrostat.github.io/openintro/reference/10.1371/journal.pone.0141079)
+[doi:10.1371/journal.pone.0141079](https://doi.org/10.1371/journal.pone.0141079)

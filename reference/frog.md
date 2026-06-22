@@ -48,10 +48,10 @@ A data frame with 431 observations on the following 6 variables.
 
 ## Source
 
-<https://dx.doi.org/10.5061/dryad.6v0c1>
+[doi:10.5061/dryad.6v0c1](https://doi.org/10.5061/dryad.6v0c1)
 
 ## References
 
 Chen, W., et al. Maternal investment increases with altitude in a frog
 on the Tibetan Plateau. Journal of evolutionary biology 26.12 (2013):
-2710-2715. <https://doi.org/10.1111/jeb.12271>
+2710-2715. [doi:10.1111/jeb.12271](https://doi.org/10.1111/jeb.12271)

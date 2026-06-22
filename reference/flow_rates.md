@@ -30,7 +30,7 @@ A data frame with 31 rows and 3 variables.
 ## Source
 
 [Pierce County Water Data
-Viewer](https://waterquality.piercecountywa.org/applications/public.html?publicuser=Guest#waterdata/stationoverview).
+Viewer](https://waterquality.piercecountywa.gov/applications/public.html?publicuser=Guest#waterdata/stationoverview).
 
 ## Examples
 

@@ -63,8 +63,7 @@ A data frame with 875 rows and 12 variables.
 
 ## Source
 
-[TechPowerUp CPU
-Database](https://www.techpowerup.com/cpu-specs/?released=2019&sort=name).
+[TechPowerUp CPU Database](https://www.techpowerup.com/cpu-specs/).
 
 ## Examples
 

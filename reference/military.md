@@ -46,7 +46,7 @@ A data frame with 1,414,593 observations on the following 6 variables.
 ## Source
 
 Data provided by the Department of Defense and made available at
-<https://catalog.data.gov/dataset/personnel-trends-by-gender-race>,
+<https://catalog-old.data.gov/dataset/personnel-trends-by-gender-race>,
 retrieved 2012-02-20.
 
 ## Details

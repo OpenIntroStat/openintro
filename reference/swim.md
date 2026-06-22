@@ -42,7 +42,7 @@ A dataframe with 12 rows and 6 columns
 
 ## Source
 
-<https://doi.org/10.1016/S1440-2440(00)80042-0>
+[doi:10.1016/S1440-2440(00)80042-0](https://doi.org/10.1016/S1440-2440%2800%2980042-0)
 
 ## References
 

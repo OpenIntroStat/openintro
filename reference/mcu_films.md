@@ -44,7 +44,7 @@ A data frame with 23 rows and 7 variables.
 
 ## Source
 
-[Internet Movie Database](https://www.imdb.com/).
+Internet Movie Database
 
 ## Details
 

@@ -32,5 +32,5 @@ A data frame with 51 rows and 3 columns.
 
 ## Source
 
-<https://www.cdc.gov/nchs/pressroom/sosmap/infant_mortality_rates/infant_mortality.htm>,
+<https://www.cdc.gov/nchs/state-stats/deaths/infant-mortality.html?CDC_AAref_Val=https://www.cdc.gov/nchs/pressroom/sosmap/infant_mortality_rates/infant_mortality.htm>,
 <https://www.ncbi.nlm.nih.gov/books/NBK569310/table/ch2.tab16/>

@@ -3,6 +3,7 @@
 ## openintro 2.5.1
 
 - Added new datasets:
+
   - `LEAP`, `arenosa`, `cdc`, `cdc.samp`, `census.2010`,
     `danish.ed.primary`, `danish.ed.validation`, `dds.discr`, `famuss`,
     `forest.birds`, `frog`, `hyperuricemia`, `hyperuricemia.samp`,
@@ -12,7 +13,10 @@
     `sugar.levels.A`, `sugar.levels.B`, `swim`, `tb.interruption`,
     `thermometry`, `wdi_2022` ported from ISLBS by
     [@npaterno](https://github.com/npaterno)
+
 - Fix documentation for `mammals`
+
+- Fix URLs that are no longer working
 
 ## openintro 2.5.0
 
