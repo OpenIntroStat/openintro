@@ -20,7 +20,7 @@ a swim suit, in meters/sec}
 }
 }
 \source{
-\url{https://doi.org/10.1016/S1440-2440(00)80042-0}
+\doi{10.1016/S1440-2440(00)80042-0}
 }
 \usage{
 swim

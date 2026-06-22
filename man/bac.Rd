@@ -15,7 +15,7 @@ A data frame with 16 observations on the following 3 variables.
 \source{
 J. Malkevitch and L.M. Lesser. For All Practical Purposes:
 Mathematical Literacy in Today's World. WH Freeman & Co, 2008.  The data
-origin is given in the \href{https://bcs.whfreeman.com/WebPub/Statistics/shared_resources/EESEE/BloodAlcoholContent/index.html}{Electronic Encyclopedia of Statistical Examples and Exercises}, 1992.
+origin is given in the Electronic Encyclopedia of Statistical Examples and Exercises, 1992.
 }
 \usage{
 bac

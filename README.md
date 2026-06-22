@@ -56,7 +56,7 @@ or used reprex before, you’re in for a treat! Seriously, reprex will
 make all of your R-question-asking endeavors easier (which is a pretty
 insane ROI for the five to ten minutes it’ll take you to learn what it’s
 all about). For additional reprex pointers, check out the [Get
-help!](https://www.tidyverse.org/help/) section of the tidyverse site.
+help!](https://tidyverse.org/help/) section of the tidyverse site.
 
 Before opening a new issue, be sure to [search issues and pull
 requests](https://github.com/openintrostat/openintro/issues) to make

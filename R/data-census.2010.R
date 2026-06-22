@@ -8,7 +8,7 @@
 #' 2009 and the data on physicians from 2007.  Both measurements are subject to
 #' change annually, so these data are not current and should not be used for
 #' inference about infant mortality. More current data can be found at the US
-#' Centers for Disease Control and Prevention (\url{https://www.cdc.gov/nchs/pressroom/sosmap/infant_mortality_rates/infant_mortality.htm}), and in the dataset \code{infant_mort_2022}.
+#' Centers for Disease Control and Prevention (\url{https://www.cdc.gov/nchs/state-stats/deaths/infant-mortality.html?CDC_AAref_Val=https://www.cdc.gov/nchs/pressroom/sosmap/infant_mortality_rates/infant_mortality.htm}), and in the dataset \code{infant_mort_2022}.
 #'
 #' @name census.2010
 #' @docType data
@@ -23,4 +23,3 @@
 #'    \url{https://www.census.gov/library/publications/2009/compendia/statab/129ed/health-nutrition.html}
 #'
 "census.2010"
-

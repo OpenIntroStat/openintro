@@ -21,6 +21,6 @@
 #' @source \url{doi:10.5061/dryad.n5j23}
 #' @references Wang, Yi-lun, et al. "Association between dietary magnesium intake and
 #'      hyperuricemia." PLoS One 10.11 (2015): e0141079.
-#'      \url{10.1371/journal.pone.0141079}
+#'      \doi{10.1371/journal.pone.0141079}
 #'
 "hyperuricemia.samp"

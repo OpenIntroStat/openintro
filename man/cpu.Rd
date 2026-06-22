@@ -22,7 +22,7 @@ A data frame with 875 rows and 12 variables.
 }
 }
 \source{
-\href{https://www.techpowerup.com/cpu-specs/?released=2019&sort=name}{TechPowerUp CPU Database}.
+\href{https://www.techpowerup.com/cpu-specs/}{TechPowerUp CPU Database}.
 }
 \usage{
 cpu

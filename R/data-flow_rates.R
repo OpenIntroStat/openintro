@@ -32,6 +32,6 @@
 #'     y = expression(paste("Flow (ft"^3 * "/s)")),
 #'     color = "Site", shape = "Site"
 #'   )
-#' @source [Pierce County Water Data Viewer](https://waterquality.piercecountywa.org/applications/public.html?publicuser=Guest#waterdata/stationoverview).
+#' @source [Pierce County Water Data Viewer](https://waterquality.piercecountywa.gov/applications/public.html?publicuser=Guest#waterdata/stationoverview).
 #'
 "flow_rates"

@@ -39,6 +39,6 @@
 #'     y = "Boost Clock (GHz)",
 #'     title = "Process node size vs. boost speed"
 #'   )
-#' @source [TechPowerUp CPU Database](https://www.techpowerup.com/cpu-specs/?released=2019&sort=name).
+#' @source [TechPowerUp CPU Database](https://www.techpowerup.com/cpu-specs/).
 #'
 "cpu"

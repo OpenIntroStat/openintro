@@ -5,7 +5,7 @@
 * GitHub Actions (windows): release
 * Github Actions (macOS): release
 * win-builder: devel
-* r-hub: windows, ubuntu-gcc12
+* r-hub: linux, m1-san, macos, macos-arm64, windows, ubuntu-gcc12
 
 ## R CMD check results
 

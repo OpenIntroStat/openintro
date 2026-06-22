@@ -14,7 +14,7 @@
 #'        and 1 year of age}
 #'    \item{\code{doctors}}{Numeric, number of  physicians in patient care per 100,000 population}
 #'   }
-#' @source \url{https://www.cdc.gov/nchs/pressroom/sosmap/infant_mortality_rates/infant_mortality.htm},
+#' @source \url{https://www.cdc.gov/nchs/state-stats/deaths/infant-mortality.html?CDC_AAref_Val=https://www.cdc.gov/nchs/pressroom/sosmap/infant_mortality_rates/infant_mortality.htm},
 #'           \url{https://www.ncbi.nlm.nih.gov/books/NBK569310/table/ch2.tab16/}
 #'
 "infant_mortality_2022"

@@ -25,9 +25,6 @@ livestock grazing. The categories are: "light", "less than average",
 time study was conducted (1983).Computed as 1983 - year.of.isolation}
 }
 }
-\source{
-\url{https://users.monash.edu.au/~murray/BDAR/}  Listed under chapter 9 datasets
-}
 \usage{
 forest.birds
 }

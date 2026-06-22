@@ -19,7 +19,7 @@
 #'   \item{rank}{The numeric rank of the service member (higher number indicates higher rank).}
 #' }
 #' @source Data provided by the Department of Defense and made available at
-#' \url{https://catalog.data.gov/dataset/personnel-trends-by-gender-race},
+#' \url{https://catalog-old.data.gov/dataset/personnel-trends-by-gender-race},
 #' retrieved 2012-02-20.
 #' @keywords datasets military demographics
 #' @examples

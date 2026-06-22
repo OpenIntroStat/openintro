@@ -61,7 +61,7 @@ Matched pairs share a common integer label. -1 indicates participant not matched
 }
 }
 \source{
-\url{https://doi.org/10.5061/dryad.6qs53}
+\doi{10.5061/dryad.6qs53}
 }
 \usage{
 prevend.samp

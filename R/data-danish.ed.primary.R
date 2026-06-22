@@ -50,7 +50,7 @@
 #' with short term mortality and can improve emergency department triage: a cohort
 #'  study of> 12,000 patients." Scandinavian Journal of Trauma, Resuscitation and
 #'  Emergency Medicine 25 (2017): 1-8.
-#' \url{https://sjtrem.biomedcentral.com/articles/10.1186/s13049-017-0458-x?report=reader}
+#' \url{https://link.springer.com/article/10.1186/s13049-017-0458-x?report=reader}
 #' @source \url{doi:10.5061/dryad.m2bq5}
 #'
 "danish.ed.primary"

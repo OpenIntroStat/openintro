@@ -63,7 +63,7 @@
 #'
 #' \url{https://ucla.verbacompare.com}
 #'
-#' \url{https://www.amazon.com}
+#' Amazon.com
 #' @keywords datasets
 #' @examples
 #'

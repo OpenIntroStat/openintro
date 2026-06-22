@@ -5,6 +5,8 @@
 
 * Fix documentation for `mammals`
 
+* Fix URLs that are no longer working
+
 # openintro 2.5.0
 
 * Added new datasets:

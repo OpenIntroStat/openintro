@@ -121,10 +121,9 @@
 #'   applicant.}
 #'   \item{paid_late_fees}{Late fees paid by the applicant.}
 #' }
-#' @source This data comes from Lending Club
-#' (\url{https://www.lendingclub.com/info/statistics.action}), which
-#' provides a very large, open set of data on the people who received loans
-#' through their platform.
+#' @source This data comes from Lending Club, which provided a very large,
+#' open set of data on the people who received loans through their platform.
+#' This company has rebranded to Happen Bank as of April 2026.
 #' @keywords datasets
 #' @examples
 #'

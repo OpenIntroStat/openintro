@@ -34,7 +34,7 @@ A data frame with 201 observations on the following 20 variables.
 
 \url{https://ucla.verbacompare.com}
 
-\url{https://www.amazon.com}
+Amazon.com
 }
 \usage{
 ucla_textbooks_f18

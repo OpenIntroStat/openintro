@@ -17,7 +17,7 @@ A data frame with 1,414,593 observations on the following 6 variables.
 }
 \source{
 Data provided by the Department of Defense and made available at
-\url{https://catalog.data.gov/dataset/personnel-trends-by-gender-race},
+\url{https://catalog-old.data.gov/dataset/personnel-trends-by-gender-race},
 retrieved 2012-02-20.
 }
 \usage{

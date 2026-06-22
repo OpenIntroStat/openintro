@@ -13,7 +13,7 @@ A data frame with 31 rows and 3 variables.
 }
 }
 \source{
-\href{https://waterquality.piercecountywa.org/applications/public.html?publicuser=Guest#waterdata/stationoverview}{Pierce County Water Data Viewer}.
+\href{https://waterquality.piercecountywa.gov/applications/public.html?publicuser=Guest#waterdata/stationoverview}{Pierce County Water Data Viewer}.
 }
 \usage{
 flow_rates

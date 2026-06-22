@@ -22,9 +22,9 @@
 #'    \item{\code{clutch.volume}}{Numeric, volume of egg clutch in mm^3.}
 #'    \item{\code{egg.size}}{Numeric, average diameter of an individual egg to the 0.01mm.}
 #'    }
-#' @source \url{https://dx.doi.org/10.5061/dryad.6v0c1}
+#' @source \doi{10.5061/dryad.6v0c1}
 #' @references Chen, W., et al. Maternal investment increases with altitude in a frog on
 #'     the Tibetan Plateau. Journal of evolutionary biology 26.12 (2013): 2710-2715.
-#'     \url{https://doi.org/10.1111/jeb.12271}
+#'     \doi{10.1111/jeb.12271}
 #'
 "frog"
