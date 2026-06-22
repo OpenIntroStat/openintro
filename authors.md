@@ -26,13 +26,13 @@ Source:
 
 Çetinkaya-Rundel M, Diez D, Bray A, Kim A, Baumer B, Ismay C, Paterno N,
 Barr C (2026). *openintro: Datasets and Supplemental Functions from
-'OpenIntro' Textbooks and Labs*. R package version 2.5.0,
-<http://openintrostat.github.io/openintro/>.
+'OpenIntro' Textbooks and Labs*. R package version 2.5.1,
+<https://openintrostat.github.io/openintro/>.
 
     @Manual{,
       title = {openintro: Datasets and Supplemental Functions from 'OpenIntro' Textbooks and Labs},
       author = {Mine Çetinkaya-Rundel and David Diez and Andrew Bray and Albert Y. Kim and Ben Baumer and Chester Ismay and Nick Paterno and Christopher Barr},
       year = {2026},
-      note = {R package version 2.5.0},
-      url = {http://openintrostat.github.io/openintro/},
+      note = {R package version 2.5.1},
+      url = {https://openintrostat.github.io/openintro/},
     }

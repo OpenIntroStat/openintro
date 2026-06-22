@@ -12,7 +12,7 @@ at all) when run in some versions of Windows operating system.
 
 Useful links:
 
-- <http://openintrostat.github.io/openintro/>
+- <https://openintrostat.github.io/openintro/>
 
 - <https://github.com/OpenIntroStat/openintro/>
 

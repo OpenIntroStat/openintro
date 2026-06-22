@@ -57,10 +57,6 @@ A data frame with 103 observations on the following 8 variables.
 
   Waiting Time for Transplant
 
-## Source
-
-<http://www.stat.ucla.edu/~jsanchez/data/stanford.txt>
-
 ## References
 
 Turnbull B, Brown B, and Hu M (1974). "Survivorship of heart transplant

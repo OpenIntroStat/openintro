@@ -18,7 +18,7 @@ yellow, red, black, gray, and light gray.
 ## Source
 
 Colors selected by OpenIntro's in-house graphic designer, [Meenal
-Patel](http://www.meenalpatel.com).
+Patel](https://www.meenalpatelstudio.com/).
 
 ## Examples
 

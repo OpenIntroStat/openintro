@@ -55,4 +55,4 @@ A tibble with 60 rows and 9 variables:
 
 ## Source
 
-<http://www.openintro.org/stat/data/cdc.R>
+<https://www.openintro.org/stat/data/cdc.R>

@@ -167,7 +167,7 @@ A tibble with 500 rows and 31 variables:
 
 ## Source
 
-<http://doi.org/10.5061/dryad.6qs53>
+<https://doi.org/10.5061/dryad.6qs53>
 
 ## References
 

@@ -30,7 +30,7 @@ A data frame with 300 rows and 3 variables:
 
 Henrik Madsen, Paul Thyregod. 2011. Introduction to General and
 Generalized Linear Models CRC Press. Boca Raton, FL. ISBN:
-978-1-4200-9155-7 [Website](http://www.imm.dtu.dk/~hmad/GLM/)
+978-1-4200-9155-7 [Website](https://www.imm.dtu.dk/~hmad/GLM/)
 
 ## Examples
 

@@ -28,7 +28,7 @@ A tibble with 130 rows and 3 variables:
 
 ## Source
 
-[http://jse.amstat.org/v4n2/datasets.shoemaker.html](http://jse.amstat.org/v4n2/datasets.shoemaker.md)
+<https://jse.amstat.org/v4n2/datasets.shoemaker.html>
 
 ## References
 

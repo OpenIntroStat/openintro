@@ -98,7 +98,7 @@ A data frame with 449 observations on the following 20 variables.
 ## Source
 
 US Environmental Protection Agency, AirData, 2011.
-[http://www3.epa.gov/airdata/ad_data_daily.html](http://www3.epa.gov/airdata/ad_data_daily.md)
+<https://www.epa.gov/outdoor-air-quality-data>
 
 ## Examples
 

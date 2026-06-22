@@ -49,7 +49,7 @@ These cars represent a random sample for 1993 models that were in both
 `small`, `midsize`, and `large` were include.
 
 Further description can be found in Lock (1993). Use the URL
-[http://jse.amstat.org/v1n1/datasets.lock.html](http://jse.amstat.org/v1n1/datasets.lock.md).
+<https://jse.amstat.org/v1n1/datasets.lock.html>.
 
 ## Examples
 

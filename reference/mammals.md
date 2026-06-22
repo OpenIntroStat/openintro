@@ -69,7 +69,7 @@ A data frame with 62 observations on the following 11 variables.
 
 ## Source
 
-<http://www.statsci.org/data/general/sleep.txt>
+<https://gksmyth.github.io/ozdasl/general/sleep.txt>
 
 ## References
 
@@ -85,6 +85,6 @@ library(ggplot2)
 ggplot(mammals, aes(x = log(body_wt), y = log(brain_wt))) +
   geom_point() +
   geom_smooth(method = "lm") +
-  labs(x = "Log of body weight", x = "Log of brain weight")
+  labs(x = "Log of body weight", y = "Log of brain weight")
 #> `geom_smooth()` using formula = 'y ~ x'
 ```

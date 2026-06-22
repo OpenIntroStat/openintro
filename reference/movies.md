@@ -35,7 +35,7 @@ A data frame with 140 observations on the following 5 variables.
 ## Source
 
 [Investigating Statistical Concepts, Applications and
-Methods](http://www.rossmanchance.com/iscam2/data/movies03.txt)
+Methods](https://www.rossmanchance.com/iscam2/data/movies03.txt)
 
 ## Examples
 

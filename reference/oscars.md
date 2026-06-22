@@ -59,7 +59,7 @@ A data frame with 182 observations on the following 10 variables.
 ## Source
 
 Journal of Statistical Education,
-<http://jse.amstat.org/datasets/oscars.dat.txt>, updated through 2019
+<https://jse.amstat.org/datasets/oscars.dat.txt>, updated through 2019
 using information from Oscars.org and Wikipedia.org.
 
 ## Details
