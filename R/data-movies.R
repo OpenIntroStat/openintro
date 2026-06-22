@@ -13,7 +13,7 @@
 #'   \item{box_office}{Millions of dollars earned at the box office in the US and Canada.}
 #' }
 #' @keywords datasets
-#' @source [Investigating Statistical Concepts, Applications and Methods](http://www.rossmanchance.com/iscam2/data/movies03.txt)
+#' @source [Investigating Statistical Concepts, Applications and Methods](https://www.rossmanchance.com/iscam2/data/movies03.txt)
 #' @examples
 #'
 #' library(ggplot2)

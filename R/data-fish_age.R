@@ -17,7 +17,7 @@
 #' CRC Press.
 #' Boca Raton, FL.
 #' ISBN: 978-1-4200-9155-7
-#' [Website](http://www.imm.dtu.dk/~hmad/GLM/)
+#' [Website](https://www.imm.dtu.dk/~hmad/GLM/)
 #'
 #' @keywords datasets
 #'

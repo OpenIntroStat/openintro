@@ -10,7 +10,7 @@
 #' @format A 7-by-13 matrix of 7 colors with thirteen fading scales: blue,
 #' green, yellow, red, black, gray, and light gray.
 #' @source Colors selected by OpenIntro's in-house graphic designer,
-#' [Meenal Patel](http://www.meenalpatel.com).
+#' [Meenal Patel](https://www.meenalpatelstudio.com/).
 #' @keywords datasets
 #' @examples
 #'

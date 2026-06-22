@@ -31,7 +31,7 @@
 #'   \item{csa_name}{a factor with levels \code{Raleigh-Durham-Cary, NC}}
 #'   }
 #' @source US Environmental Protection Agency, AirData, 2011.
-#' \url{http://www3.epa.gov/airdata/ad_data_daily.html}
+#' \url{https://www.epa.gov/outdoor-air-quality-data}
 #' @keywords datasets
 #' @examples
 #'

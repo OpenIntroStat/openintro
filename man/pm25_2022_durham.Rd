@@ -30,7 +30,7 @@ A data frame with 356 observations on the following 20 variables.
 }
 \source{
 US Environmental Protection Agency, AirData, 2022.
-\url{http://www3.epa.gov/airdata/ad_data_daily.html}
+\url{https://www.epa.gov/outdoor-air-quality-data}
 }
 \usage{
 pm25_2022_durham

@@ -19,7 +19,7 @@ Introduction to General and Generalized Linear Models
 CRC Press.
 Boca Raton, FL.
 ISBN: 978-1-4200-9155-7
-\href{http://www.imm.dtu.dk/~hmad/GLM/}{Website}
+\href{https://www.imm.dtu.dk/~hmad/GLM/}{Website}
 }
 \usage{
 fish_age

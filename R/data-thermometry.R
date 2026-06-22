@@ -14,7 +14,7 @@
 #'      \code{female}, \code{male}}
 #'    \item{\code{heart.rate}}{Numeric, heart rate, in beats per minute}
 #'    }
-#' @source \url{http://jse.amstat.org/v4n2/datasets.shoemaker.html}
+#' @source \url{https://jse.amstat.org/v4n2/datasets.shoemaker.html}
 #' @references Mackowiak, P. A., Wasserman, S. S., and Levine, M. M. (1992),
 #'      A Critical Appraisal of 98.6 Degrees F, the Upper Limit of the
 #'      Normal Body Temperature, and Other Legacies of Carl Reinhold August Wunderlich,

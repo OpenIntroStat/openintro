@@ -10,7 +10,7 @@ green, yellow, red, black, gray, and light gray.
 }
 \source{
 Colors selected by OpenIntro's in-house graphic designer,
-\href{http://www.meenalpatel.com}{Meenal Patel}.
+\href{https://www.meenalpatelstudio.com/}{Meenal Patel}.
 }
 \usage{
 COL

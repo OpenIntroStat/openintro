@@ -22,7 +22,7 @@ A data frame with 182 observations on the following 10 variables.
 }
 \source{
 Journal of Statistical Education,
-\url{http://jse.amstat.org/datasets/oscars.dat.txt}, updated through 2019 using
+\url{https://jse.amstat.org/datasets/oscars.dat.txt}, updated through 2019 using
 information from Oscars.org and Wikipedia.org.
 }
 \usage{

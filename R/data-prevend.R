@@ -63,7 +63,6 @@
 #'   Matched pairs share a common integer label. -1 indicates participant not matched}
 #' }
 #' @references \url{https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0115755}
-#' @source \url{http://doi.org/10.5061/dryad.6qs53}
+#' @source \url{https://doi.org/10.5061/dryad.6qs53}
 
 "prevend"
-

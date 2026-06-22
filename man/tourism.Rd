@@ -15,7 +15,7 @@ A data frame with 47 observations on the following 3 variables.
 \source{
 Association of Turkish Travel Agencies, Foreign Visitors Figure &
 Tourist Spendings By Years.
-\url{http://www.tursab.org.tr/en/statistics/foreign-visitors-figure-tourist-spendings-by-years_1083.html}
+\url{https://www.tursab.org.tr/en/statistics/foreign-visitors-figure-tourist-spendings-by-years_1083.html}
 }
 \usage{
 tourism

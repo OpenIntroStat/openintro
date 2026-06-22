@@ -21,6 +21,6 @@
 #'    \item{\code{age}}{Numeric;  respondent's age in years.}
 #'    \item{\code{gender}}{Factor with two levels \code{m} \code{f}}
 #'    }
-#' @source \url{http://www.openintro.org/stat/data/cdc.R}
+#' @source \url{https://www.openintro.org/stat/data/cdc.R}
 #'
 "cdc.samp"

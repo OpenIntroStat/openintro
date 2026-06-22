@@ -22,9 +22,6 @@ receive a transplant) and \code{treatment} (received a transplant).}
 \item{wait}{Waiting Time for Transplant}
 }
 }
-\source{
-\url{http://www.stat.ucla.edu/~jsanchez/data/stanford.txt}
-}
 \usage{
 heart_transplant
 }

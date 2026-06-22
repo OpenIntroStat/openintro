@@ -15,7 +15,7 @@ A data frame with 140 observations on the following 5 variables.
 }
 }
 \source{
-\href{http://www.rossmanchance.com/iscam2/data/movies03.txt}{Investigating Statistical Concepts, Applications and Methods}
+\href{https://www.rossmanchance.com/iscam2/data/movies03.txt}{Investigating Statistical Concepts, Applications and Methods}
 }
 \usage{
 movies

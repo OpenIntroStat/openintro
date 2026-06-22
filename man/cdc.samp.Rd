@@ -23,7 +23,7 @@ cigarettes in their entire life and 0 otherwise.}
 }
 }
 \source{
-\url{http://www.openintro.org/stat/data/cdc.R}
+\url{https://www.openintro.org/stat/data/cdc.R}
 }
 \usage{
 cdc.samp
