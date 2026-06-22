@@ -2,6 +2,8 @@
 
 ## openintro 2.5.1
 
+CRAN release: 2026-06-22
+
 - Added new datasets:
 
   - `LEAP`, `arenosa`, `cdc`, `cdc.samp`, `census.2010`,
