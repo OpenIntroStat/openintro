@@ -1,0 +1,49 @@
+Added 14 Jun 2015
+https://github.com/OpenIntroStat/openintro/commit/a30c1b2ec996c8473721503c238cd2cb038bb59c
+
+http://www.openintro.org/r?go=cdc_yrbss_2013&r=r_package_man_file
+
+> count(yrbss, race)
+# A tibble: 6 x 2
+  race                                          n
+* <chr>                                     <int>
+1 American Indian or Alaska Native            323
+2 Asian                                       552
+3 Black or African American                  3229
+4 Native Hawaiian or Other Pacific Islander   258
+5 White                                      6416
+6 NA                                         2805
+> count(yrbss13, race)
+# A tibble: 8 x 2
+  race                          n
+* <chr>                     <int>
+1 Am Indian / Alaska Native   121
+2 Asian                       491
+3 Black or African American  2993
+4 Hispanic/Latino            3395
+5 Multiple - Non-Hispanic     681
+6 Native Hawaiian/other PI    135
+7 White                      5449
+8 NA                          318
+> count(yrbss13, hispanic)
+# A tibble: 5 x 2
+  hispanic                      n
+* <chr>                     <int>
+1 All other races            1428
+2 Black or African American  2993
+3 Hispanic/Latino            3395
+4 White                      5449
+5 NA                          318
+> count(yrbss, hispanic)
+# A tibble: 3 x 2
+  hispanic     n
+* <chr>    <int>
+1 hispanic  3424
+2 not       9928
+3 NA         231
+
+
+
+
+
+
