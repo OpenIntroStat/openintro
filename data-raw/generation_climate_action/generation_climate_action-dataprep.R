@@ -12,7 +12,7 @@ generation_climate_action <- data.frame(
   response = c(rep("Took action", 292), rep("Didn't take action", 620),
                rep("Took action", 885), rep("Didn't take action", 2275),
                rep("Took action", 809), rep("Didn't take action", 2709),
-               rep("Took action", 1276), rep("Didn't take action", 4798))
+               rep("Took action", 1276), rep("Did't take action", 4798))
 )
 
 # Save -------------------------------------------------------------------------
