@@ -184,6 +184,9 @@ observational studies, or experiments.
 - [`blizzard_salary`](https://openintrostat.github.io/openintro/reference/blizzard_salary.md)
   : Blizzard Employee Voluntary Salary Info.
 
+- [`Brazil_death_anxiety`](https://openintrostat.github.io/openintro/reference/Brazil_death_anxiety.md)
+  : Brazil death anxiety
+
 - [`burger`](https://openintrostat.github.io/openintro/reference/burger.md)
   : Burger preferences
 
@@ -237,6 +240,9 @@ observational studies, or experiments.
 
 - [`comics`](https://openintrostat.github.io/openintro/reference/comics.md)
   : comics
+
+- [`county_2023`](https://openintrostat.github.io/openintro/reference/county_2023.md)
+  : county_2023
 
 - [`country_iso`](https://openintrostat.github.io/openintro/reference/country_iso.md)
   : Country ISO information
@@ -308,6 +314,9 @@ observational studies, or experiments.
 - [`evals`](https://openintrostat.github.io/openintro/reference/evals.md)
   : Professor evaluations and beauty
 
+- [`EVs_region`](https://openintrostat.github.io/openintro/reference/EVs_region.md)
+  : Electric vehicles
+
 - [`exam_grades`](https://openintrostat.github.io/openintro/reference/exam_grades.md)
   : Exam and course grades for statistics students
 
@@ -363,6 +372,9 @@ observational studies, or experiments.
 
 - [`gender_discrimination`](https://openintrostat.github.io/openintro/reference/gender_discrimination.md)
   : Bank manager recommendations based on gender
+
+- [`generation_climate_action`](https://openintrostat.github.io/openintro/reference/generation_climate_action.md)
+  : Poll on climate change activism
 
 - [`get_it_dunn_run`](https://openintrostat.github.io/openintro/reference/get_it_dunn_run.md)
   : Get it Dunn Run, Race Times
@@ -708,6 +720,9 @@ observational studies, or experiments.
 - [`scotus_healthcare`](https://openintrostat.github.io/openintro/reference/scotus_healthcare.md)
   : Public Opinion with SCOTUS ruling on American Healthcare Act
 
+- [`sdea`](https://openintrostat.github.io/openintro/reference/sdea.md)
+  : Spatial distancing, emotional arousal
+
 - [`seattlepets`](https://openintrostat.github.io/openintro/reference/seattlepets.md)
   : Names of pets in Seattle
 
@@ -719,6 +734,9 @@ observational studies, or experiments.
 
 - [`sinusitis`](https://openintrostat.github.io/openintro/reference/sinusitis.md)
   : Sinusitis and antibiotic experiment
+
+- [`skill_acquisition`](https://openintrostat.github.io/openintro/reference/skill_acquisition.md)
+  : Skill Acquisition
 
 - [`sleep_deprivation`](https://openintrostat.github.io/openintro/reference/sleep_deprivation.md)
   : Survey on sleep deprivation and transportation workers

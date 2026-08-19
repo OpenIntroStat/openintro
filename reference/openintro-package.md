@@ -25,9 +25,6 @@ Useful links:
 
 Authors:
 
-- Mine Çetinkaya-Rundel <cetinkaya.mine@gmail.com>
-  ([ORCID](https://orcid.org/0000-0001-6452-2420))
-
 - David Diez <david.m.diez@gmail.com>
 
 - Andrew Bray <andrew.bray@gmail.com>
