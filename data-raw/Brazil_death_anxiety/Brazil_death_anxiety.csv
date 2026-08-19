@@ -1,0 +1,201 @@
+Participant,Country,Gender,Year_Born,Age in 2015,Ethnicity,Marital_Status,Employment_Fulltime,Occupation,Fivefears_1,Fivefears_2,Fivefears_3,Fivefears_4,Fivefears_5,worry_death,incomplete_bucket_list,deathly_ill,concern_for_others,painful_death,loved_ones,die_alone,cognitive_function,expenses_burden,as_you_wish,buried_alive,left_behind,remembered,permenant,after_death
+1,Brazil,M,14,30,Branco,Married,Full-time,Manager,The dark/darkness,End of the world.,Death,Single.,Anabelle,7,7,6,7,7,7,8,7,7,6,6,7,7,7,7
+2,Brazil,F,34,50,Caucasiano,Married,Full-time,Desk,Getting old,Not having money.,Being forgotten.,Getting fat,Getting ugly,6,7,6,7,6,7,6,5,7,6,7,7,6,7,7
+3,Brazil,M,14,30,Branco,Committed,Full-time,Tax Analyst - Head of Department,Being without salvation.,Getting left behind.,Dieing in sin,Suffering.,Pain,5,8,7,4,4,0,0,3,7,0,3,8,0,4,0
+4,Brazil,M,26,42,branco,Married,Full-time,director ti,Death,Illness,Disability.,Sadness,Defeat,8,8,7,6,5,6,7,7,6,4,4,8,7,8,7
+5,Brazil,M,9,25,Branco,Single,Full-time,Administrator,Snakes.,Loneliness,Losing somebody I love,Going blind,Amnesia,5,7,4,8,6,0,8,8,1,0,1,8,6,0,4
+6,Brazil,F,6,22,Caucasiana,Married,Part-time,Director / CEO of an IT company,The dark/darkness,Ghosts,Vampires,Not getting the job/work I want,Living a monotonous life,4,8,6,8,7,5,2,8,5,2,8,8,5,6,8
+7,Brazil,M,15,31,Pardo,Single,Full-time,HR Manager,Illness,Losing relatives.,Not having money,Loneliness,Violence,7,8,8,7,8,8,7,7,7,8,8,8,4,7,6
+8,Brazil,M,13,29,pardo,Single,Full-time,director of a construction company,The end of relationships,Prejudice.,Illness,Loneliness,Anxiety,7,8,3,8,8,0,0,8,0,0,0,8,0,4,8
+9,Brazil,M,17,33,Branco,Married,Full-time,Board administrator,Losing my mother,Faculties/school,Planes,Heights,Rats,7,4,5,5,4,4,3,2,4,3,4,3,4,2,3
+10,Brazil,M,12,28,Negro,Committed,Full-time,IT,Heights,The future,Traffic/transit,n/a,n/a,2,1,1,1,2,1,1,2,1,1,0,2,2,2,1
+11,Brazil,F,5,21,Branca,Married,Full-time,-,Children,Spider,Snakes.,Shadows,Ghosts,8,8,6,8,1,8,4,3,8,5,2,8,8,8,3
+12,Brazil,M,17,33,Branco,Married,Full-time,CIO,Health,Money,Safety,Old age,Home.,8,6,7,7,7,8,8,2,6,2,1,7,7,6,2
+13,Brazil,F,36,52,Branca,Committed,Retired,-,Unemployment,Loneliness,Hunger,Kidnapping.,Illness,8,8,8,8,8,8,8,8,8,6,8,8,5,6,8
+14,Brazil,F,27,43,Branca,Married,Full-time,Professor,Failing.,Illness,Family.,Losing my vision.,Not having time.,0,0,8,0,0,0,0,8,0,0,0,0,0,0,0
+15,Brazil,M,14,30,parda,Single,Full-time,Civil Engineering,Snakes.,Losing the one I love the most,Demons.,Spiders,Doing poorly at work.,8,8,8,8,7,7,5,4,8,0,8,8,2,8,6
+16,Brazil,F,16,32,Branca,Single,Full-time,Process Analyst,Death,Snakes.,Cockroaches,Needles.,Pain,5,8,6,4,8,5,5,8,1,0,8,8,0,6,7
+17,Brazil,F,5,21,branca,Single,"Unemployed, looking",student,Unhappiness.,Death,Not realizing my full professional potential.,Ending up alone,Not having water in the city.,8,8,8,8,7,7,8,7,6,7,5,8,4,8,7
+18,Brazil,F,28,44,Morena Claro,Married,Part-time,IT Profisssional,Illness,Losses,Unhealthy senescence.,Climate change.,Loneliness,0,4,8,8,0,4,4,8,8,4,4,8,2,0,0
+19,Brazil,F,15,31,branca,Single,dona de casa,-,Death,Not realizing my full professional potential.,Crowds.,Speaking in public,Relationships,8,6,7,8,8,7,6,8,7,6,8,7,6,6,8
+20,Brazil,F,16,32,Misturada,Single,Full-time,Cab,Health,Family.,Money,Well-being.,Comfort.,4,7,7,7,5,6,4,7,7,2,8,6,3,3,2
+21,Brazil,F,11,27,Caucasiano,Single,"Unemployed, looking, Bolsista de mestrado",-,Fear of failure.,Fear of being ridiculed.,Fear of violence.,Fear of crowded places.,Fear of new things,2,3,8,2,8,0,0,0,5,4,0,3,1,0,0
+22,Brazil,M,4,20,Pardo,Single,Part-time,Trainee,Death,Loneliness,Losing friends.,Getting married.,The death of family members,8,8,8,6,6,1,8,8,3,1,2,7,5,8,8
+23,Brazil,M,19,35,catolico,Married,Full-time,Electronics Technician,Not paying the bills.,Becoming an invalid/disabled.,Fear of flying,Earthquakes.,Illness,8,8,8,8,8,8,8,8,0,4,8,8,2,8,6
+24,Brazil,M,12,28,Pardo,Married,Full-time,Editor,Fear of driving.,Fear of not paying the bills.,Fear of accidents.,Bills to pay,I don't know.,4,7,7,7,6,8,4,4,5,3,2,8,4,4,8
+25,Brazil,F,9,25,caucasiana,Single,Part-time,Researcher and professor,Losing my parents.,Not being successful.,Not being able to support my family financially.,The consequences of losing control of my emotions.,Not being able to properly educate/raise my children.,5,8,8,5,7,6,7,7,2,4,8,5,0,0,6
+26,Brazil,M,33,49,caboclo,Committed,Full-time,Civil Servant,Supernatural things.,The dark(ness),Venomous animals,Isolated placed,Suffocation,2,7,8,7,8,4,0,7,2,0,4,3,1,0,2
+27,Brazil,M,15,31,Branco,Married,Full-time,Production manager,Death,Illness,Hunger,Violence,Unemployment,8,6,8,8,8,8,8,6,0,6,0,8,0,0,1
+28,Brazil,F,14,30,Brasileira,Married,Full-time,Psychotherapist,Failure,Loneliness,Professional.,Relationship,Money,4,4,4,0,0,0,0,4,0,0,0,8,0,0,0
+29,Brazil,F,6,22,europeu/alemão,Single,Estudante,-,Not having work,Fear of displeasing God,Death,Debilitating illness,Failing in life.,5,8,8,7,5,6,2,8,8,7,7,8,5,0,0
+30,Brazil,M,12,28,Americano,Married,Full-time,-,Death,Getting in debt,Getting hurt,Getting ill,Losing a loved one,6,5,7,7,6,6,5,7,6,4,0,7,6,6,0
+31,Brazil,M,12,28,BRASILEIRO,Married,Full-time,GOVERNMENT,Employment,Assault,Death,Accidents,Losing my mother,4,7,8,5,8,7,6,6,7,7,6,7,7,7,7
+32,Brazil,M,5,21,Branco,Single,Estudante,-,Faculties/school,Exchange,The future,Health,Employment,5,5,5,5,5,5,4,5,3,4,4,5,4,4,5
+33,Brazil,M,16,32,pardo,Single,"Unemployed, looking, autonomo",traffic instructor,Death,Illness,Loneliness,Violence,Water,4,8,5,5,5,0,0,3,0,0,0,8,0,8,0
+34,Brazil,M,20,36,Afro,Married,Full-time,Counter,Death,Illness,Poverty,Loneliness,Pain,8,8,8,7,8,5,8,8,1,8,8,5,5,8,8
+35,Brazil,M,11,27,Branco,Married,Full-time,Administrator,Loneliness,Illness,Disability.,Betrayal,Sadness,6,8,5,7,7,6,6,5,7,6,6,8,6,5,5
+36,Brazil,F,9,25,Parda,Single,Full-time,Technical Adm,Being alone for ever.,Losing the people I like,Losing my way in life.,Death,Being unhappy.,6,7,6,7,6,7,8,8,7,5,6,6,8,6,7
+37,Brazil,M,39,55,Indo-Europeu,Married,Full-time,Federal Government,Illness,Invalidity,Debt.,Divorce.,Death,7,5,7,6,5,6,4,8,7,4,4,6,4,6,5
+38,Brazil,M,8,24,Negro,Committed,Full-time,Director of Technology and Medias,The future,Snails,Violence,Technology,Humans,0,2,0,2,0,3,5,5,5,0,0,3,0,3,0
+39,Brazil,F,13,29,branca,Single,Full-time,Biologist,Failure,Ending up alone,Falling ill,Not having a family,Not having a good job,7,8,8,0,8,3,1,1,8,5,4,7,3,0,2
+40,Brazil,F,9,25,parda,Married,Full-time,Manager,Loss,of not being somebody important,Not graduating,Health,Life,5,8,8,8,7,8,8,5,4,5,5,7,5,5,5
+41,Brazil,M,37,53,Branco espanico,Divorced,Part-time,Agriculture,Health,Money,Safety,Inflation.,Age,5,8,7,8,4,8,4,7,4,5,0,8,2,7,7
+42,Brazil,M,21,37,branco,Married,Full-time,Employee public,Death,Old age,Illness,Loss of a loved one,Loneliness,8,8,8,8,8,8,8,8,6,7,8,8,8,8,8
+43,Brazil,F,43,59,negra,Single,Retired,-,Lack of faith,Poor health,Having my own home,Loss of friends,Lack of money,1,6,5,4,0,2,1,6,0,2,1,3,2,1,0
+44,Brazil,F,12,28,parda,Married,Full-time,director,Insecurity,Violence,War,Financial problems,Injustice,6,6,8,6,8,7,2,6,0,0,7,6,0,0,0
+45,Brazil,M,17,33,parda,Single,Part-time,freelancer,Speaking in public,Violence,Illness,Loneliness,Pain,7,6,8,6,6,6,6,8,7,6,7,6,4,5,5
+46,Brazil,M,15,31,Caucasiano,Married,Full-time,Engineer,Death,Accidents,Failure/bankruptcy,Work,Relationship,8,8,6,8,7,7,6,5,7,5,5,8,6,8,7
+47,Brazil,M,3,19,Caucasiano,Committed,"Unemployed, looking",Unemployed,Death,The dark/darkness,Cemeteries,Fire,Death,4,4,8,8,8,8,4,8,4,0,8,8,0,0,4
+48,Brazil,M,19,35,pardo,Married,Full-time,technical,Inflation,Getting ill,Violence,Water running out,If it stopped raining,8,8,8,8,8,8,0,8,8,4,8,8,5,8,6
+49,Brazil,Other,35,51,parda,Single,Full-time,adminstrativo assistant,Death,Losing my mother,Not having somewhere to live,Becoming an invalid/disabled.,Going blind,8,6,8,8,8,8,7,8,7,5,8,8,7,8,8
+50,Brazil,M,10,26,nao sei rs,Single,Full-time,secretary executive,Spiders,Losing somebody I love,Getting ill,Losing a family member,Being alone/not having anyone,7,7,8,8,8,8,8,7,6,5,8,8,7,8,7
+51,Brazil,M,19,35,Branco,Married,Full-time,IT Manager,Coffee,Tea,Computers,Belt,Slippers,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8
+52,Brazil,F,38,54,parda,Seperated,Autonomo,Saleswoman,Getting old,Loneliness,Illness,Unemployment,Death,7,8,8,8,8,8,8,8,8,3,8,8,4,8,7
+53,Brazil,M,4,20,caucasiano,Single,Part-time,attendant,Heights,Death,Going bald,Losing my job,Anxious for the arrival of Saturday,6,7,6,4,5,7,3,7,4,5,2,6,8,7,8
+54,Brazil,F,4,20,white,Committed,Part-time,Translator,The future,Money,Career,Family,Violence,0,6,6,3,0,0,6,6,0,0,0,5,0,0,0
+55,Brazil,M,15,31,Branco,Married,Full-time,Production manager,Death,Illness,Accidents,Poverty,Storms,8,8,8,8,8,8,8,8,0,0,8,8,0,8,8
+56,Brazil,Other,5,21,pardo,"Single, Committed","Unemployed, looking, Estudante",-,Losing salvation,Death,Heights,Graduating,Starting a family.,8,6,5,6,3,7,5,6,4,0,2,8,4,2,0
+57,Brazil,F,21,37,Branco,Married,Full-time,Operator,Dead people,The dark/darkness,Ghosts,An early death,Heights,4,7,7,2,5,6,7,6,3,1,6,7,5,3,6
+58,Brazil,F,6,22,branca,Single,Estudante,-,The death of my parents.,Not having a home.,Not having food to eat,Cockroaches,The dark/darkness,8,8,8,8,7,8,7,8,6,4,8,4,1,7,8
+59,Brazil,M,44,60,branca caucasiana,Married,"Retired, autônomo",Counter,Being dependent on others.,Heights,Ending up alone,Death,Falling.,7,2,8,5,4,6,5,2,4,5,7,8,3,8,6
+60,Brazil,M,23,39,LATINA,Married,Part-time,OFFICE ASSISTANT,Death,Unemployment,Betrayal,Suffering.,Deficiencies,8,4,4,8,4,0,0,4,8,0,8,8,4,4,4
+61,Brazil,M,13,29,negro,Single,"Unemployed, looking",-,Violence,Health,Depression.,Prejudice.,Politics,5,8,8,8,8,8,8,8,8,0,8,8,8,5,4
+62,Brazil,M,28,44,Branco,Married,Full-time,-,Assault,Poor health,Floods/overflows,Corruption,High places.,2,6,8,4,8,6,2,8,7,8,8,8,8,0,0
+63,Brazil,M,56,72,BRAMCO,Married,Retired,I exercise ALSO PEACE JUDGE FUNCTION,Debt,Death,Enemies,Personal finances.,The well-being of my family,8,8,8,4,4,0,0,8,4,8,0,7,0,4,0
+64,Brazil,F,32,48,Branco,Married,Full-time,Manager,The dark/darkness,Being called,Losing my job,Losing mobility,Death,4,5,8,8,8,5,8,8,0,0,8,8,0,0,0
+65,Brazil,M,11,27,Branco,Married,Full-time,-,Death,Unemployment,Hunger,Loss,Winning,8,8,2,0,4,0,0,2,8,0,8,8,2,0,0
+66,Brazil,M,4,20,Caucasiana,Single,Estudante,-,Not being somebody (important),Disappointing my family.,Failing.,Not achieving my dreams.,Being unhappy.,4,8,8,8,8,8,8,8,7,8,8,8,8,8,7
+67,Brazil,F,12,28,branca,Single,Full-time,events,Death,A masculine touch,Cockroaches,Scorpions,Snakes.,8,8,8,8,8,8,8,8,4,6,8,8,6,8,8
+68,Brazil,F,3,19,Branca,Committed,"Unemployed, not looking",-,The death of family members,Not having work,Spirits,The dark/darkness,Weight,8,7,1,6,4,8,2,7,2,0,0,8,5,6,4
+69,Brazil,F,13,29,branco,Single,Estudante,student,Violence,The economy,Unemployment,Illness,Loneliness,5,6,8,3,3,4,7,8,6,3,6,5,0,1,5
+70,Brazil,M,21,37,Pardo,Single,"Unemployed, looking",Technical Buildings,Not having money,Dieing without kids.,Not getting married.,Becoming destitute,Being killed by psycho,0,8,6,6,5,1,0,6,1,3,0,0,0,0,0
+71,Brazil,M,43,59,cristao,Divorced,Full-time,driver \ particular security,Health,Debt,Ending up alone,Safety,Children,0,8,8,2,4,8,8,8,0,4,0,8,0,0,0
+72,Brazil,M,21,37,branco,Married,Full-time,counter,Speaking in public,Pressure,Death,Heights,Shyness,4,4,4,3,6,5,6,6,4,4,3,5,5,4,6
+73,Brazil,M,39,55,caucasiano,Married,Full-time,CEO,Financial bankruptcy,Violence,Poverty,Dependence,Illness,4,6,8,6,7,2,3,8,1,2,3,6,0,4,6
+74,Brazil,F,11,27,branca,Married,Full-time,executive director,Unemployment,Inflation.,Death,Not working any more.,Being alone/single,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8
+75,Brazil,M,27,43,Branco,Married,Full-time,Commercial Director,Not being healthy.,Not having adequate financial security for retirement.,Being attacked.,Natural catastrophes,Not having a source of income,3,6,8,6,3,6,3,8,3,8,3,6,3,5,3
+76,Brazil,M,14,30,GERMANICA,Committed,Full-time,Finance manager,Violence,War,Lack of food and water,Safety,Stability,0,5,2,0,1,0,0,5,5,5,4,3,0,0,0
+77,Brazil,M,22,38,branco,Divorced,Full-time,autonomous,Poverty,Death,Loneliness,Hunger,Lack of water,4,3,7,8,8,0,8,3,0,3,1,8,0,0,0
+78,Brazil,M,39,55,branca,Married,Full-time,Draftsman,Poor health,Lack of safety,Unemployment,Lack of money,Lack of friends,8,8,8,8,6,6,6,7,8,6,8,8,8,8,5
+79,Brazil,M,14,30,branco,Committed,Full-time,administrative assistant,Corruption,Illness,Unemployment,Lack of water,Lack of energy,0,0,8,4,5,2,3,0,8,2,4,4,0,0,0
+80,Brazil,M,27,43,Branca,Married,Full-time,IT Manager,Health,Safety,Heights,Unemployment,Violence,8,8,8,8,8,8,8,7,7,7,5,8,7,8,8
+81,Brazil,M,20,36,negro,Married,Full-time,workman,Injustice,Planes,Heights,Dentist,Hospital,1,0,0,0,2,8,0,0,3,5,8,6,8,0,0
+82,Brazil,M,34,50,Branca,Married,Full-time,sales,Children,Money,Home.,Crime,Drugs,4,8,7,6,4,7,5,8,4,6,6,8,4,7,2
+83,Brazil,F,23,39,BRANCA,Married,Part-time,FINANCIAL ANALYST,Attack,Rape,Rays (lightening),Storms,Snakes,7,4,6,7,7,8,8,6,7,4,8,8,6,7,6
+84,Brazil,F,17,33,BRANCA,Single,Full-time,IMPORT,Death,Losing my job,Illness,Depending on somebody due to illness,Doing poorly financially.,7,8,8,7,6,7,7,8,8,8,6,6,7,7,8
+85,Brazil,F,11,27,Brasileira,Married,"Unemployed, not looking",-,Violence,Death,Heights,Panic,Phobias,6,6,7,7,6,7,6,4,6,3,6,7,4,5,4
+86,Brazil,F,27,43,caucasiana,"Single, Committed",Full-time,Bilingual operator,Abuse of power,Assault,Violence,Hunger,Death,7,2,7,3,4,4,7,1,8,8,8,4,7,4,7
+87,Brazil,M,3,19,Branco,Single,Estudante,-,Losing somebody,Sadness,Illness,Disappointment,Enemies,4,8,8,5,5,8,4,4,2,4,8,7,7,0,0
+88,Brazil,M,19,35,Branco,Single,Full-time,Seller,Death,Illness,Unhappiness.,Not reaching my goals,Financial instability,7,8,7,5,6,4,4,6,3,6,6,7,2,6,8
+89,Brazil,M,6,22,pardo,Single,Full-time,full time,My family,Other people hurting others,Not making the right decisions,Others,Others,7,8,7,8,6,4,5,6,8,5,8,8,6,7,6
+90,Brazil,M,10,26,Branco,Single,"Unemployed, not looking",-,Ending up alone,Assault,Strangers,Irrelevance,Spider,0,6,6,1,1,2,0,6,8,0,3,1,0,5,0
+91,Brazil,M,19,35,braco,Married,Full-time,executive,Death,Hunger,Lack of money,Loneliness,Prison,8,8,6,8,8,7,7,8,7,7,8,7,8,7,8
+92,Brazil,M,6,22,pardo,Married,Full-time,Mechanical designer,Spiders,Snakes.,Being weak,Not being intelligent,Death,4,7,7,4,4,0,0,6,7,0,0,5,7,0,0
+93,Brazil,M,4,20,baiano,Single,Full-time,aux administrative,Snakes.,Man.,Weapons,The future,Losing somebody,0,0,2,3,0,0,0,0,0,0,3,4,0,0,0
+94,Brazil,M,26,42,Caucasiano,Divorced,Full-time,Sub-editor,Death,Loneliness,Anger,The future,Frustration,8,8,7,7,8,7,6,8,1,1,4,7,3,8,7
+95,Brazil,F,17,33,BRANCO,Married,Full-time,WARRANTY SUPERVISOR QUALITY AND SHOPPING,Lack of water,Illness,Death,Suffering,Accidents,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8
+96,Brazil,M,51,67,negra,Married,Retired,-,Suffering from serious illness,Public and political uncertainty,Terrorism,Communism in Brazil,Losing faith in Jesus Christ.,0,0,8,0,0,0,0,0,8,0,8,0,0,0,8
+97,Brazil,F,40,56,Branco,Seperated,Retired,I am retired,Death,Becoming an invalid/disabled.,Losing a family member,Taking care of my family,Not being able to study,7,6,8,8,5,8,8,8,7,4,2,8,4,4,4
+98,Brazil,F,13,29,Parda,Married,Full-time,Administrator,Death,Not having money,Changes/moves,Not pleasing (others),Losing my loved ones.,0,0,2,0,4,0,0,2,4,0,0,8,0,0,0
+99,Brazil,F,16,32,branca,Married,Full-time,manager,Loneliness,Snakes.,Thieves,Heights,Water,3,8,8,7,5,6,1,4,0,0,0,8,0,4,4
+100,Brazil,F,28,44,Parda,Married,Full-time,Teacher,Violence,Illness,Accidents,Heights,Loneliness,1,2,6,6,2,3,2,1,2,0,0,0,0,0,1
+101,Brazil,M,4,20,Branco,Committed,Part-time,Manager,Admonishment,Not being able to support my family financially.,Taking tests,Not being a good entrepreneur,Loss,5,8,8,7,8,8,0,8,8,8,8,6,0,5,3
+102,Brazil,F,9,25,BRANCO,Married,Part-time,TEC.AUTOMOCAO INDUSTRIAL,Ending up alone,Horseback riding,Fear of snakes.,Fear of roaches.,Fear of rats.,1,5,3,7,2,3,7,5,6,6,4,4,6,1,3
+103,Brazil,M,3,19,branco,Single,Full-time,production assistant,Fear of public places.,Loneliness,Dieing without having done anything (important),Failing.,Impotence,4,8,6,4,8,6,8,8,3,6,8,4,7,3,5
+104,Brazil,M,14,30,Caucasiano,Committed,Full-time,Managing Director,Death,Illness,Suffering.,Pain,The future,6,7,8,7,7,6,7,7,2,0,3,6,5,3,1
+105,Brazil,F,17,33,branca,Single,"Unemployed, looking",-,Being the center of attention,Love,Flying insects,Being dependent on others,Being a mother,0,4,7,5,3,0,0,8,3,0,0,3,0,0,0
+106,Brazil,F,11,27,Caucasiana,Single,"Full-time, Autonoma",Hand-made confectionery,Lack of money in the future,Illness,Lack of water in the world,Not being a mother,Ending up alone,2,6,6,7,2,4,6,8,8,0,6,8,1,2,3
+107,Brazil,F,16,32,Branca,Committed,Full-time,Secretary,Violence,Lack of water,Health,Pollution,Unemployment,1,2,4,4,5,2,1,2,0,0,0,3,0,0,0
+108,Brazil,F,46,62,brasileira,Divorced,Retired,-,Illness,Suffocation,Fire,Surgery,Assault,6,0,8,8,8,8,7,8,0,0,8,7,0,0,6
+109,Brazil,F,13,29,Branca,Committed,Full-time,Techniques in Business Administration,Death,The dark/darkness,Storms,Insomnia,Illness,8,8,8,8,8,8,8,8,1,8,8,8,7,7,8
+110,Brazil,F,37,53,Branca,Committed,Full-time,Road Trip ticket issuer,Death,Loss of family members,Suffering from illness,Assaults,Failing in my responsibilities,7,8,8,8,8,7,6,7,8,0,8,7,4,7,7
+111,Brazil,F,34,50,Branca,Married,Full-time,IT Manager,Heights,Animals,The dark/darkness,Panic,Being arrested,8,8,8,8,8,8,8,8,8,7,8,8,7,8,8
+112,Brazil,M,19,35,Negro,Married,Full-time,Manager,The dark/darkness,High speeds,Questions,Doubts,Answers,4,7,7,4,7,4,7,4,7,4,7,7,6,7,4
+113,Brazil,F,19,35,branco,Married,Full-time,sales manager,Insecurity,Politics,Theft,Unemployment,Accidents,0,5,4,3,4,3,0,2,3,5,0,8,4,0,0
+114,Brazil,M,15,31,Germanico,Married,Full-time,manager,Poverty,Illness,Climate,Violence,Death,4,5,3,4,3,4,3,3,3,5,4,4,4,4,4
+115,Brazil,F,26,42,Branca,Married,Full-time,auxiliary accounting,Dieing and leaving my child behind,Not seeing my child progress,Losing my child,Getting ill,Suffering an accident,8,8,8,8,8,7,4,7,4,8,8,8,4,8,8
+116,Brazil,M,16,32,branco,Married,Full-time,IT manager,Illness,Financial problems,Death of family members,Children,Freedom,7,8,8,8,7,7,8,7,7,7,7,8,8,8,8
+117,Brazil,M,22,38,Branco,Married,Full-time,Tecnico Informatica,Loss of a loved one,Death,The future,Insecurity,War,7,7,7,6,6,6,7,8,7,6,8,8,1,6,6
+118,Brazil,M,19,35,brasileiro,Married,Full-time,Minister,Heights,War,Insects,Violence,Crime,4,8,7,8,4,0,0,8,8,2,0,7,0,0,0
+119,Brazil,F,7,23,Branca,Single,Full-time,saleswoman,Poor health,Lack of money,Unemployment,Loneliness,Sadness,8,8,8,8,8,8,8,5,7,0,8,8,8,8,8
+120,Brazil,M,22,38,branco,Married,Full-time,director,Debt,Sadness,Unhappiness.,Illness,Prison,0,8,8,8,4,8,2,8,3,0,0,0,0,0,0
+121,Brazil,F,12,28,BRANCA,Committed,Full-time,AUX ADMINISTRATIVE,Loneliness,Death,Losing my job,Loss of family,Losing friends.,6,7,7,7,8,7,7,5,5,6,7,7,7,6,7
+122,Brazil,F,12,28,branca,Single,Part-time,Attorney,Unemployment,Life,Death,Loneliness,Falling out of love,3,8,3,4,4,5,6,4,5,7,8,8,5,3,8
+123,Brazil,F,26,42,BRANCA,Seperated,Full-time,ANALYST,Death,The unknown,The dark,roaches,Rats,8,8,8,8,8,8,8,8,8,4,8,8,8,8,8
+124,Brazil,M,12,28,Branco,Married,Full-time,Analyst Automation Systems,Brochures,Death,Accidents,Bankruptcy,Loneliness,5,6,8,7,7,6,4,8,8,2,1,7,4,5,4
+125,Brazil,M,16,32,Pardo,Married,Full-time,Nutritionist,Failure,Group tragedy,Death by stabbing,Asphyxia,Open fracture,1,8,0,4,8,0,0,0,3,2,0,0,0,0,0
+126,Brazil,M,36,52,branca,Married,Retired,-,Financial situation,Falling ill,Being attacked.,Losing my child,Injustice,4,7,8,8,6,8,8,8,3,4,8,7,7,6,8
+127,Brazil,M,38,54,Branco,Married,Full-time,chief of staff department,Unemployment,Death,Becoming an invalid/disabled.,Accidents,Losing my child,8,8,8,5,4,6,8,8,4,5,8,8,7,7,6
+128,Brazil,M,9,25,Branco,Committed,Full-time,Supervisor IT,Death,Ending up alone,Fear of closed spaces,Fear of heights.,Losing somebody I love,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8
+129,Brazil,M,11,27,Asiático,Single,Part-time,Operator Call Center,Failure,The unknown,Heights,Death,Supernatural things.,6,8,6,4,7,4,4,8,8,5,1,4,2,3,7
+130,Brazil,M,28,44,negro,Single,Part-time,lawyer,Rats,Heights,Money,Dogs,Unemployment,3,3,6,1,2,4,2,3,6,0,3,5,4,0,0
+131,Brazil,F,9,25,Brasileira,Married,Full-time,General manager,Financial troubles,Falling ill,Ending up alone,The big crisis in my country,Insecurity,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8
+132,Brazil,F,11,27,branco,Single,Part-time,Desk,Being raped,Being attacked.,Being kidnapped,Death,The death of those close to me,6,8,8,8,6,4,4,5,1,1,6,8,7,5,6
+133,Brazil,M,8,24,Pardo,Single,"Unemployed, looking",-,Death,Heights,Unemployment,Craziness,Blackmail,8,7,5,5,6,5,6,6,3,5,7,6,5,8,6
+134,Brazil,M,10,26,Pardo,Committed,Full-time,Student,Ending up alone,Waiting,Finishing my course,Losing my child,Closed spaces,8,8,8,8,7,7,8,7,7,8,8,7,8,7,5
+135,Brazil,F,39,55,PARDA,Seperated,Retired,BANK,Streets,Streets,Agglomerations,Elevators,Planes,0,0,0,0,0,0,0,0,1,0,0,7,0,0,0
+136,Brazil,M,4,20,Negro,Single,Part-time,teacher,Unemployment,Lack of attention,Technology,Education,Health,0,2,6,0,0,4,0,3,5,0,4,6,0,0,0
+137,Brazil,M,45,61,branco,Married,Retired,retired,Illness,Accidents,Fights,Arguments,Death,8,8,8,8,8,8,8,8,8,8,8,8,0,8,8
+138,Brazil,M,14,30,branco,Single,Full-time,Geophysical,Death,Loneliness,Chronic conditions,Snakes.,Large arachnids,8,8,8,8,8,8,8,7,8,2,4,8,6,4,5
+139,Brazil,M,35,51,calcaziano,Committed,Autonoma,Property manager,Loss of family,Death,Being disabled,Unemployment,Traffic/transit,7,6,8,7,8,7,8,6,5,5,7,5,4,7,6
+140,Brazil,M,9,25,hispanico,Single,Part-time,freelancer / autonomous,Not graduating,Assaults,Faith,"Being ""nothing""",Being bedridden for a long time,0,5,8,2,2,0,0,7,6,1,0,1,1,1,0
+141,Brazil,M,22,38,Parda,Committed,Full-time,IT Manager,Fear of death,Fear of unemployment,Solitude,Being vulnerable,Public uncertainty/insecurity,5,6,8,7,4,8,8,8,7,7,4,8,4,4,4
+142,Brazil,F,37,53,Brasileiro,Married,Full-time,ADMINISTRATIVE ASSISTANT,Losing my job,Getting old alone,Losing th woman I love,Being ill and bedridden,Seeing my children get sick,0,8,8,8,0,0,0,8,8,0,8,0,0,0,0
+143,Brazil,M,19,35,Parda,Married,Full-time,Operations Manager,Loneliness,Unemployment,Illness,Violence,Lack of money,5,5,6,5,5,6,7,6,6,0,7,4,0,0,0
+144,Brazil,M,29,45,Brasileiro,Married,Full-time,Chief,Venomous animals,Closed spaces,Heights,Agoraphobia,Frights,8,8,8,8,8,2,8,8,0,0,8,8,3,8,8
+145,Brazil,M,25,41,AFRO DESCENDENTE,Single,Full-time,Officials PUBLIC,Natural disasters,Physical dependence,Serious accidents,Public safety,The well-being of my family,4,5,8,8,8,6,5,8,7,4,8,7,4,4,5
+146,Brazil,M,14,30,caucasiano,"Single, Committed","Part-time, desenvolvendo outros trabalhos autonomos durante o tempo livre",and administrative manager,Going without food,Losing somebody I love,Becoming depressed,Not having money,Losing my house,1,8,7,8,4,2,5,8,8,2,8,6,1,2,6
+147,Brazil,F,17,33,Branca,Single,-,Organizational Psychologist,Losing my job,Debt,The death of my parents.,Getting ill,Urban violence,4,8,7,5,0,7,7,1,4,0,5,6,4,2,1
+148,Brazil,M,7,23,pardo,Married,"Unemployed, looking",Graphic design,Lying,Death,Going to hell,Not having money.,Not having water,6,6,5,4,5,5,6,6,6,5,6,5,7,6,4
+149,Brazil,M,7,23,branco,Single,Full-time,administrative public position,Spiders,Fear of snakes.,Fear of death.,Being impatient,Getting angry easily,6,6,7,5,8,6,5,4,6,3,8,6,3,6,6
+150,Brazil,M,19,35,BRANCO,Married,Full-time,SUPERVISOR,Health,Money,The future,Children,Work,8,7,7,8,7,8,8,7,6,8,6,8,5,8,8
+151,Brazil,F,19,35,parda,"Single, Committed",Part-time,autonomous,Death,Snakes.,Hunger,Violence,Illness,7,8,8,7,7,8,8,7,0,6,8,8,7,8,6
+152,Brazil,F,47,63,Branca,-,Part-time,Assistant in Oral Health,Health,Money,The environment,Lack of water,Safety,0,0,8,0,6,0,0,8,8,0,0,0,0,0,0
+153,Brazil,F,25,41,Branca,Married,Full-time,University Professor,Unemployment,Illness,Loneliness,Injustice,Invalidity,0,0,8,0,8,8,8,8,8,8,8,0,8,0,0
+154,Brazil,M,41,57,branco,-,Part-time,agropecuaria,Health,Finance,Safety,Family,Climate,0,6,2,0,1,0,1,2,1,2,1,5,1,4,3
+155,Brazil,M,29,45,branco,Single,Full-time,micro-entrepreneur,Falling ill,Ending up alone,Being misunderstood,Losing loved ones,Being undervalued,0,8,8,6,0,8,8,4,0,8,8,0,0,0,0
+156,Brazil,F,5,21,Parda,Committed,Estudande,-,Fear of disappointing others.,Fear of failure.,Fear of being forgotten.,Fear of causing fights,Speaking in public,7,5,7,7,7,5,3,6,7,7,7,7,7,5,7
+157,Brazil,M,20,36,Branco,Married,Full-time,Government employee,Death,Money,Loneliness,Acceptance,The unknown,6,8,7,4,6,6,6,3,5,8,8,7,7,5,6
+158,Brazil,M,34,50,Negro,Committed,Full-time,Civil Servant,Losing my job,Becoming gravely ill,Loss of family,The amputation of a limb,Going blind,0,8,8,7,8,6,7,8,6,8,6,8,0,0,0
+159,Brazil,M,38,54,branco,Married,beneficiario do INSS,-,Death,Invalidity,Heights,Serious illnesses,Not being able to support (myself/others),8,8,8,8,7,8,8,8,7,8,8,8,8,8,3
+160,Brazil,M,16,32,negro,"Committed, Married",Full-time,distributor driver,Not winning,Not being successful,Poor health,Dissatisfaction,Not being able to take care of my family,4,8,8,8,8,7,3,6,5,4,8,8,5,8,5
+161,Brazil,M,45,61,italiana,Married,Full-time,company director,War,Armed assaults,The Brazilian government,Climate,Neglect of humanity,2,8,6,7,3,1,2,3,1,0,0,8,0,1,0
+162,Brazil,M,39,55,Branca,Married,Part-time,technical electronic,Health,Financial matters,Missing my wife,The death of my parents,The death of my siblings,5,0,6,5,6,6,0,6,0,0,6,6,0,0,0
+163,Brazil,M,12,28,pardo,Single,Full-time,official,Fear of dying too young,Fear of the future,Fear of ending up totally disabled,Fear of dieing alone.,Fear of death.,8,8,4,4,8,8,8,7,8,8,5,8,8,8,8
+164,Brazil,M,9,25,Branco,Single,Full-time,IT,Death,Public,Nervousness,Hunger,Pain,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8
+165,Brazil,M,8,24,Pardo,Married,"Unemployed, looking",-,Loss of family,Loss of a limb,Going without food,Death,Spider,7,8,8,8,8,8,6,6,7,4,8,8,4,8,8
+166,Brazil,M,18,34,Caucasiana,Married,Full-time,CIO,Lack of sex,Lack of money,Health problems,Family problems,Dissatisfactio with my work,2,5,6,6,8,4,2,7,5,0,2,2,1,0,1
+167,Brazil,M,28,44,Mestiço,Married,Part-time,Operations manager,Unemployment,Violence,Illness,War,Catastrophes,8,8,8,8,8,0,0,0,6,0,8,8,7,0,0
+168,Brazil,M,51,67,BRANCO,Married,Part-time,QUALIFIED WORKER,Prolonged illness,Lack of money,Loneliness,Being unappreciated,Death,8,7,8,8,8,7,8,2,7,2,8,7,7,6,8
+169,Brazil,M,34,50,BRANCA,Married,Part-time,ASSISTANT ADMINISTIVO,Safety,Lack of money,War,Lack of water,Lack of money,2,0,0,3,0,0,0,2,8,0,0,6,0,0,0
+170,Brazil,F,20,36,Branco,Married,Autonomo,"Speaker, training",The security/safety of my family,Automobile accidents,Domestic accidents,Financial situation,Assessment of people,4,2,7,8,2,8,8,8,6,0,0,2,8,0,0
+171,Brazil,M,30,46,branca,Married,"unemployed, looking",-,Heights,Unemployment,Money,Health,Age,1,5,7,6,6,6,8,7,6,3,8,6,5,0,0
+172,Brazil,M,18,34,parda,Married,Full-time,Government company,Heights,The dark(ness),Closed spaces,Scorpions,Planes,0,8,0,0,0,7,0,0,0,0,7,7,0,0,0
+173,Brazil,F,13,29,Parda,Committed,estudante,student,Being far from my kids,Death,Not having a job,Finishing school,Heights,4,7,8,8,7,7,6,3,4,4,5,8,6,6,5
+174,Brazil,M,18,34,hispânica,Married,Full-time,Board of Directors,Heights,Bats,Suffocating,Burning,Death,6,7,7,6,7,6,7,8,4,5,7,7,5,8,8
+175,Brazil,M,24,40,branca,Married,Full-time,teacher,Heights,Commitments,Snakes.,Spiders,Death,8,8,8,8,8,8,7,8,8,7,8,8,7,7,8
+176,Brazil,F,28,44,latina,Married,Full-time,beautifying automotive,Lack of money,Feeling useless,Old age,Car and motorcycle accidents,Fires,0,8,8,8,4,4,8,8,8,0,8,4,0,0,4
+177,Brazil,F,22,38,latian,Married,Part-time,merchant,Falling ill,Getting old,Not having money,Unemployment,Ending up alone,5,7,8,6,7,6,6,8,5,5,8,8,7,4,2
+178,Brazil,M,17,33,Branco/Caucasiano,Married,Full-time,Director of Technology,The death of those I love,Losing my job,The general situation in my country,Achieving a higher position at my company,Not being able to spend as much time with my children as I would like,8,8,8,8,4,8,6,8,8,4,7,8,4,8,7
+179,Brazil,M,18,34,pardo,Married,Full-time,micro-entrepreneur,Employment,Loneliness,Illness,An impasse,Shame,6,8,8,4,3,8,8,6,5,5,1,7,6,2,3
+180,Brazil,M,27,43,AFRO AMERICANO,Married,Full-time,Archival,Violence,Hunger,Unemployment,Illness,War,2,7,8,0,8,8,3,3,2,5,0,8,5,1,2
+181,Brazil,M,26,42,Branca,Married,Full-time,Sales Manager,Death,The security/safety of my family,Losing money,Injustice,Health,6,7,7,4,7,6,6,6,6,5,6,8,4,6,4
+182,Brazil,M,13,29,alema/indigena,Single,Full-time,math teacher,Failure,Loneliness,Being ambushed,Snakes.,Death,6,8,5,8,6,8,7,8,5,5,5,8,6,7,5
+183,Brazil,M,14,30,afro-descendente,Single,estudante,I do well in tests and study,Bees,The death of loved ones,Being useless,Horror films,My uncle Valério,2,2,7,7,4,4,0,5,0,1,8,7,5,3,8
+184,Brazil,M,30,46,latina,Single,Full-time,"autonomous, independent professional",Falshoods,Loneliness,Failure,The future,Illness,4,7,6,1,4,2,2,8,0,0,3,1,1,0,2
+185,Brazil,M,25,41,branco,Married,Full-time,administrator,Death,Not having money,Suffocating,Being kidnapped,Being abducted,7,8,8,7,8,7,8,7,6,3,6,7,7,7,7
+186,Brazil,F,20,36,branca,Single,Full-time,Assistant,Being burnt alive,Fear of roaches.,Losing a limb,Not having my mobility,A car accident,5,3,8,4,5,3,3,3,1,0,8,4,2,1,5
+187,Brazil,F,10,26,negro,Committed,Full-time,administrative assistant,Not having somewhere to live,Going without food,Loss of a loved one,Getting ill,Fear of the dark,4,6,3,8,4,4,6,6,6,5,5,4,3,3,5
+188,Brazil,F,8,24,Parda,Committed,Full-time,telemarketing,Death,Cockroaches,Loneliness,Not having money.,Pain,5,8,6,5,8,6,8,3,0,4,8,7,6,8,3
+189,Brazil,M,23,39,branca,Single,Full-time,banking,Death,Illness,Old age,Falling.,Loneliness,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6
+190,Brazil,M,13,29,Branco,Committed,Full-time,Director of Services,Lack of money,Lack of friends,Not having my own house soon,Failure of my company,Failing at my plans,1,8,6,6,1,6,3,8,3,7,1,6,8,1,4
+191,Brazil,F,6,22,latino,Single,"Unemployed, looking",trainee,Losing my faith,Being run over,Death by asphyxiation,Being burnt alive,Being in a coma,1,5,8,0,1,1,0,7,1,1,0,2,1,1,1
+192,Brazil,M,26,42,branca,Married,Full-time,systems analyst,Falling ill,Burning,Going without food,Suffocating,Going blind,6,8,8,8,6,8,7,6,6,7,8,6,4,7,5
+193,Brazil,M,10,26,Branco,Single,Full-time,Administrative Assistant,Death,Loneliness,Losing my mother,Not achieving my goals,Not succeeding in life,8,8,8,7,7,8,7,8,7,2,2,7,7,8,8
+194,Brazil,F,27,43,branca,Married,"Unemployed, looking",Unemployed,Assault,Accidents,Unemployment,Illness,Death,3,8,8,7,3,8,5,7,6,8,4,8,6,6,0
+195,Brazil,F,29,45,NEGRA,Married,AUTONOMA,PHYSICAL THERAPIST,Closed spaces,Catastrophes,Wars,Illness,Attack,0,8,8,8,8,3,8,8,8,0,8,8,5,0,1
+196,Brazil,F,12,28,pardo,Married,Full-time,consultant,Losing my job,Being alone,Falling ill,Freaking out,Death,7,7,8,8,8,8,8,8,8,8,8,8,8,7,8
+197,Brazil,M,14,30,Branco/ Caucasiano,Single,Full-time,IT Director,Not achieving my professional goals,Financial instability,Loss of family members,Physical violence,Illness,6,6,6,7,6,7,7,6,7,6,5,7,5,6,6
+198,Brazil,M,32,48,BRANCA,Married,Full-time,CIVIL SERVANT,Violence,Debt,Lack of money,Illness,Death,7,8,7,7,7,7,7,7,7,7,6,7,7,7,7
+199,Brazil,M,5,21,branco,Single,Part-time,programmer,Death,Loneliness,Unemployment,Dangerous animals,Crime,8,8,8,4,8,3,6,8,5,4,8,4,0,8,8
+200,Brazil,M,6,22,Branca,Single,Part-time,Ecommerce,Injections,Tests,Relationships,Needles.,Venomous animals,6,5,7,4,6,5,3,2,3,2,2,8,1,7,6

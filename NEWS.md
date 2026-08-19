@@ -1,3 +1,11 @@
+# Developmental
+
+* Added new datasets: 
+  * `county_2023`, `EVs_region`, `generation_climate_action` added by [@npaterno](https://github.com/npaterno)
+  * `sdea` added by William Krenzer & Siobhán Griffin
+  * `Brazil_death_anxiety` added by Isaac Handley-Miner, Yuichi Shoda and Christian Unkelbach
+  * `skill_aquisition` added by Y. Andre Wang, Gareth Yu and Julia, G. Bottesini
+
 # openintro 2.5.1
 
 * Added new datasets:

@@ -1,0 +1,12 @@
+#' Poll on climate change activism
+#'
+#' A Pew Research poll published in May of 2021 looks at how Americans' attitudes about climate change differ by generation, party and other factors.
+#'
+#' @format A data frame with 13664 observations on the following 2 variables.
+#' \describe{
+#'    \item{\code{generation}}{a factor with levels \code{Gen Z, Millenial, Gen X} and \code{Boomer & older}}
+#'    \item{\code{response}}{a factor with levels \code{Took action} and \code{Did not take action}}
+#'  }
+#'
+#' @source Pew Research Center, American Trends Panel. Survey conducted April 20 - 29, 2021. "Gen Z, Millennials Stand Out for Climate Change Activism, Social Media Engagement With Issue"
+"generation_climate_action"
