@@ -69,6 +69,7 @@ reference:
   - births
   - births14
   - blizzard_salary
+  - Brazil_death_anxiety
   - burger
   - cancer_in_dogs
   - cards
@@ -87,6 +88,7 @@ reference:
   - climber_drugs
   - coast_starlight
   - comics
+  - county_2023
   - country_iso
   - cpr
   - cpu
@@ -111,6 +113,7 @@ reference:
   - esi
   - ethanol
   - evals
+  - EVs_region
   - exam_grades
   - exams
   - exclusive_relationship
@@ -129,6 +132,7 @@ reference:
   - gdp_countries
   - gear_company
   - gender_discrimination
+  - generation_climate_action
   - get_it_dunn_run
   - gifted
   - global_warming_pew
@@ -240,10 +244,12 @@ reference:
   - salinity
   - satgpa
   - scotus_healthcare
+  - sdea
   - seattlepets
   - sex_discrimination
   - simpsons_paradox_covid
   - sinusitis
+  - skill_acquisition
   - sleep_deprivation
   - smallpox
   - smoking
